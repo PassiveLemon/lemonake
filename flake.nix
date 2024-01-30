@@ -1,7 +1,9 @@
 {
   description = "Lemon's Flakes";
 
-  nixpkgs.url = "github:nixos/nixpkgs";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs";
+  };
 
   outputs = { self, nixpkgs }:
   let
