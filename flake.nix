@@ -2,7 +2,7 @@
   description = "Lemon's Flakes";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs-unstable";
   };
 
   outputs = { self, nixpkgs }:
