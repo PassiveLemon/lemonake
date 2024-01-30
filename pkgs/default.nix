@@ -8,6 +8,6 @@ with pkgs; rec {
   gfm = callPackage ./gfm { };
   poepyautopot = python3Packages.callPackage ./poepyautopot { };
   pulsemeeter = python3Packages.callPackage ./pulsemeeter { };
-  tilp2 = callPackage ./tilp2 { gfm };
+  tilp2 = callPackage ./tilp2 { };
   xclicker = callPackage ./xclicker { };
 }
