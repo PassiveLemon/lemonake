@@ -4,7 +4,7 @@ This is my collection of packages and modules in a flake. </br>
 
 ## Usage </br>
 Add the flake to your inputs: </br>
-```
+```nix
 # flake.nix
 {
   lemonake.url = "github:passivelemon/lemonake";
@@ -34,7 +34,7 @@ Packages: </br>
 The only architecture currently supported is `x86_64-linux`. Others may be supported in the future. </br>
 
 ## Binary cache:
-```
+```nix
 # flake.nix
 {
   outputs = {
