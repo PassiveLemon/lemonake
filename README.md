@@ -18,7 +18,7 @@ Add the flake to your inputs: </br>
 ## Features </br>
 Modules: </br>
 - Can be imported with `inputs.lemonake.nixosModules.<module>`
-- ALVR (https://github.com/NixOS/nixpkgs/pull/284154#issuecomment-1913739121)
+- ALVR (https://github.com/NixOS/nixpkgs/pull/284154)
 
 Packages: </br>
 - Can be installed with `inputs.lemonake.packages.${pkgs.system}.<package>`
