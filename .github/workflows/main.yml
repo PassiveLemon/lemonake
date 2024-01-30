@@ -1,0 +1,28 @@
+name: Automatic Update
+on:
+  push:
+  schedule:
+    - cron:  '0 2 * * *'
+
+jobs:
+  setup-build-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - uses: gautamkrishnar/keepalive-workflow@v1
+
+    - name: Install nix
+      uses: cachix/install-nix-action@v25
+      with:
+        nix-path: nixpkgs=channel:nixpkgs-unstable
+        extra_nix_config: |
+          experimental-features = nix-command flakes
+
+    - name: Build packages
+      uses: cachix/cachix-action@v14
+      with:
+        name: passivelemon
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+    - run: nix build -L .#alvr .#animdl .#gdlauncher .#gdlauncher-carbon .#gfm .#poepyautopot .#tilp2 .#xclicker
+    - run: nix flake check
