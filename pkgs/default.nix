@@ -1,5 +1,5 @@
 { inputs, self, ... }: {
-  imports = [inputs.flake-parts.flakeModules.easyOverlay];
+  imports = [ inputs.flake-parts.flakeModules.easyOverlay ];
 
   systems = [ "x86_64-linux" ];
 
