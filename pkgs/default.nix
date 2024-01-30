@@ -3,7 +3,7 @@
 with pkgs; rec {
   alvr = callPackage ./alvr { };
   animdl = python3Packages.callPackage ./animdl { };
-  gdlauncher = callPackage ./gdlauncer { };
+  gdlauncher = callPackage ./gdlauncher { };
   gdlauncher-carbon = callPackage ./gdlauncher-carbon { };
   gfm = callPackage ./gfm { };
   poepyautopot = python3Packages.callPackage ./poepyautopot { };
