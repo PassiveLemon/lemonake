@@ -19,6 +19,13 @@ Add the flake to your inputs: </br>
 Modules: </br>
 - Can be imported with `inputs.lemonake.nixosModules.<module>`
 - ALVR (https://github.com/NixOS/nixpkgs/pull/284154)
+  - ```
+    programs.alvr = {
+      enable = true;
+      package = inputs.lemonake.packages.${pkgs.system}.alvr;     # Until ALVR gets merged.
+      openFirewall = true;
+    };
+    ```
 
 Packages: </br>
 - Can be installed with `inputs.lemonake.packages.${pkgs.system}.<package>`
