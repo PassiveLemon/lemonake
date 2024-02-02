@@ -29,8 +29,8 @@ appimageTools.wrapType2 {
     homepage = "https://github.com/alvr-org/ALVR/";
     changelog = "https://github.com/alvr-org/ALVR/releases/tag/v${version}";
     license = licenses.mit;
-    mainProgram = "alvr";
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
+    mainProgram = "alvr";
   };
 }

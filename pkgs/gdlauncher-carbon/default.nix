@@ -30,8 +30,8 @@ appimageTools.wrapType2 {
     description = "A simple, yet powerful Minecraft custom launcher with a strong focus on the user experience";
     homepage = "https://gdlauncher.com/";
     license = licenses.bsl11;
-    mainProgram = "gdlauncher-carbon";
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
+    mainProgram = "gdlauncher-carbon";
   };
 }

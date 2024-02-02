@@ -29,8 +29,8 @@ appimageTools.wrapType2 {
     homepage = "https://gdlauncher.com/";
     changelog = "https://github.com/gorilla-devs/GDLauncher/releases/tag/v${version}";
     license = licenses.gpl3Only;
-    mainProgram = "gdlauncher";
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
+    mainProgram = "gdlauncher";
   };
 }
