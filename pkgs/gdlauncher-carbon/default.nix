@@ -4,10 +4,10 @@
 }:
 let
   pname = "gdlauncher-carbon";
-  version = "beta.1708997748";
+  version = "beta.1709163930";
   src = fetchurl {
     url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.0-${version}__linux__x64.AppImage";
-    hash = "sha256-X9HtLZVrJ7gSvr8H+F8xRTh0nygFnU5L8F+v2xPEzNk=";
+    hash = "sha256-y2mKScsA6ncoFXF3y4AJ5uHvxPoK/N/PFNONWfs/jG0=";
   };
 
   appimageContents = appimageTools.extractType2 { inherit pname version src; };
