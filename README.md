@@ -18,7 +18,7 @@ Add the flake to your inputs: </br>
 ## Features </br>
 Modules: </br>
 - Can be imported with `inputs.lemonake.nixosModules.<module>`
-- ALVR (https://github.com/NixOS/nixpkgs/pull/284154)
+- `alvr` (https://github.com/NixOS/nixpkgs/pull/284154)
   - ```
     programs.alvr = {
       enable = true;
@@ -29,14 +29,14 @@ Modules: </br>
 
 Packages: </br>
 - Can be installed with `inputs.lemonake.packages.${pkgs.system}.<package>`
-- ALVR (For use with the module)
-- Animdl (Already in Nixpkgs)
-- GDLauncher (Legacy)
-- GDLauncher-Carbon
-- GFM (For use with TILP2)
-- PoEPyAutopot
-- TILP2
-- XClicker
+- `alvr` (For use with the module)
+- `animdl` (Already in Nixpkgs)
+- `gdlauncher` (Legacy)
+- `gdlauncher-carbon`
+- `gfm` (For use with TILP2)
+- `poepyautopot`
+- `tilp2`
+- `xclicker`
 
 The only architecture currently supported is `x86_64-linux`. Others may be supported in the future. </br>
 
