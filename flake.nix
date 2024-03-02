@@ -9,11 +9,13 @@
 
   outputs = { self, ... } @ inputs:
   inputs.flake-parts.lib.mkFlake { inherit inputs; } {
-    flake.nixosModules = {
-      alvr = import ./modules/alvr.nix;
-    };
     imports = [
       ./pkgs
     ];
+    flake = {
+      nixosModules = {
+        alvr = import ./modules/alvr.nix;
+      };
+    };
   };
 }
