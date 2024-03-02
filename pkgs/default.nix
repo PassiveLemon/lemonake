@@ -17,6 +17,7 @@
       gdlauncher = callPackage ./gdlauncher { };
       gdlauncher-carbon = callPackage ./gdlauncher-carbon { };
       gfm = callPackage ./gfm { };
+      hd2pystratmacro = python3Packages.callPackage ./hd2pystratmacro { };
       poepyautopot = python3Packages.callPackage ./poepyautopot { };
       tilp2 = callPackage ./tilp2 { inherit gfm; };
       xclicker = callPackage ./xclicker { };
