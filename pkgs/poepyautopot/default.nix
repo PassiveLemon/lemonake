@@ -11,13 +11,13 @@
 
 buildPythonApplication rec {
   pname = "poepyautopot";
-  version = "1.2.3";
+  version = "1.3.5";
 
   src = fetchFromGitHub {
     owner = "passivelemon";
     repo = "poepyautopot";
     rev = "${version}";
-    hash = "sha256-K0e3E0Ba0Hm+L6ofJ0Dj0RNgW/QFsPR1gRxvFeR8Ysc=";
+    hash = "sha256-eLp3WBAh/ILM2oASgz1IZVoU4+wZZgFDQav4qiG5LAY=";
   };
 
   nativeBuildInputs = [
