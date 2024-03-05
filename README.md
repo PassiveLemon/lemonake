@@ -34,6 +34,7 @@ Packages: </br>
 - `gdlauncher` (Legacy)
 - `gdlauncher-carbon`
 - `gfm` (For use with TILP2)
+- `hd2pystratmacro`
 - `poepyautopot`
 - `tilp2`
 - `xclicker`
