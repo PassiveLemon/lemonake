@@ -20,6 +20,7 @@
       hd2pystratmacro = python3Packages.callPackage ./hd2pystratmacro { };
       poepyautopot = python3Packages.callPackage ./poepyautopot { };
       tilp2 = callPackage ./tilp2 { inherit gfm; };
+      wivrn = callPackage ./wivrn { };
     };
   };
 }

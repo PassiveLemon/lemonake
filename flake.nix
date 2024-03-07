@@ -15,6 +15,7 @@
     flake = {
       nixosModules = {
         alvr = import ./modules/alvr.nix;
+        wivrn = import ./modules/wivrn.nix;
       };
     };
   };

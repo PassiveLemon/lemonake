@@ -18,19 +18,29 @@ Add the flake to your inputs: </br>
 ## Features </br>
 Modules: </br>
 - Can be imported with `inputs.lemonake.nixosModules.<module>`
-- `alvr` (https://github.com/NixOS/nixpkgs/pull/284154)
-  - ```
+- `alvr` (In Nixpkgs)
+  - ```nix
     programs.alvr = {
       enable = true;
-      package = inputs.lemonake.packages.${pkgs.system}.alvr;     # Until ALVR gets merged.
+      package = pkgs.alvr;
       openFirewall = true;
+    };
+    ```
+- `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)
+  - ```nix
+    programs.wivrn = {
+      enable = true;
+      package = inputs.lemonake.packages.${pkgs.system}.wivrn;     # Until WiVRn gets merged.
+      openFirewall = true;
+      highPriority = true;
+      defaultRuntime = false;
     };
     ```
 
 Packages: </br>
-- Can be installed with `inputs.lemonake.packages.${pkgs.system}.<package>`
-- `alvr` (For use with the module)
-- `animdl` (Already in Nixpkgs)
+- Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
+- `alvr`
+- `animdl` (In Nixpkgs)
 - `gdlauncher` (Legacy)
 - `gdlauncher-carbon`
 - `gfm` (For use with TILP2)
@@ -38,6 +48,9 @@ Packages: </br>
 - `poepyautopot`
 - `tilp2`
 - `xclicker`
+- `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)
+
+Run `nix flake show github:passivelemon/lemonake` to see all outputs.
 
 The only architecture currently supported is `x86_64-linux`. Others may be supported in the future. </br>
 
@@ -45,7 +58,7 @@ The only architecture currently supported is `x86_64-linux`. Others may be suppo
 ```nix
 # flake.nix
 {
-  outputs = {
+  outputs = { self, ... } @ inputs: {
     ...
 
     nixConfig = {
