@@ -20,10 +20,7 @@ in
         runtime in a writable XDG_CONFIG_DIRS location like `~/.config.`
       '';
 
-      highPriority = mkEnableOption {
-        default = true;
-        description = mdDoc "high priority capability for wivrn-server";
-      };
+      highPriority = mkEnableOption "high priority capability for wivrn-server";
     };
   };
 
@@ -75,7 +72,7 @@ in
     };
 
     services = {
-      udev.packages = with pkgs; [ unstable.xr-hardware ];
+      udev.packages = with pkgs; [ xr-hardware ];
       avahi = {
         enable = true;
         publish = {
