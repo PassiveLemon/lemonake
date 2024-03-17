@@ -7,16 +7,11 @@ in
 {
   options = {
     programs.alvr = {
-      enable = mkEnableOption "Whether to enable ALVR, the VR desktop streamer";
+      enable = mkEnableOption "ALVR, the VR desktop streamer";
 
-      package = mkPackageOption pkgs "alvr" { };
+      package = mkPackageOption pkgs "ALVR" { };
 
-      openFirewall = mkOption {
-        type = types.bool;
-        description = mdDoc ''
-          Whether to open the default ports in the firewall for the ALVR server.
-        '';
-      };
+      openFirewall = mkEnableOption "the default ports in the firewall for the ALVR server";
     };
   };
 

@@ -18,7 +18,6 @@
 , libpulseaudio
 , libX11
 , libXrandr
-, monado
 , nlohmann_json
 , onnxruntime
 , openxr-loader
@@ -33,34 +32,36 @@
 , vulkan-tools
 , x264
 }:
-let
-  vendorMonado = monado.overrideAttrs rec {
-    # Version stated in CMakeList for WiVRn 0.11
-    version = "57e937383967c7e7b38b5de71297c8f537a2489d";
-
-    src = fetchFromGitLab {
-      domain = "gitlab.freedesktop.org";
-      owner = "monado";
-      repo = "monado";
-      rev = version;
-      hash = "sha256-O/Td2WccTr4Fa8U64/lVfnidSIH5t3gWuFXCsEVf7bk=";
-    };
-
-    postInstall = ''
-      mv src/xrt/compositor/libcomp_main.a $out/lib/libcomp_main.a
-    '';
-  };
-in
-stdenv.mkDerivation rec {
+stdenv.mkDerivation (finalAttrs: {
   pname = "wivrn";
-  version = "0.11";
+  version = "0.12";
 
   src = fetchFromGitHub {
     owner = "meumeu";
     repo = "wivrn";
-    rev = "v${version}";
-    hash = "sha256-E48JYhkBVZfb7S/FW0F8RbMtx4GIJwfXfs4KAF3gn8A=";
+    rev = "v${finalAttrs.version}";
+    hash = "sha256-O6Eq7EQ427hOcN16Z33I74CevnHlX/a4ZAcljgc+vk8=";
   };
+
+  monadoSrc = fetchFromGitLab {
+    domain = "gitlab.freedesktop.org";
+    owner = "monado";
+    repo = "monado";
+    # Version stated in CMakeList for WiVRn 0.12
+    rev = "ffb71af26f8349952f5f820c268ee4774613e200";
+    hash = "sha256-+RTHS9ShicuzhiAVAXf38V6k4SVr+Bc2xUjpRWZoB0c=";
+  };
+
+  # The library path to the OpenXR runtime requires a relative path from the config file to the binary in the nix store
+  # The config file is usually located at ~/.config/openxr/1/ but the wivrn module puts it at /etc/xdg/openxr/1/
+  # The CMakeList has relative directory paths that cause malformation of the path. https://github.com/Meumeu/WiVRn/issues/47
+  # What it is: ../../..//nix/store/...
+  # What it should be: ../../../../nix/store/...
+  # Details about the required path here (Section 3): https://monado.freedesktop.org/valve-index-setup.html
+  patchPhase = ''
+    substituteInPlace ./server/CMakeLists.txt \
+      --replace "../../../" "../../../.."
+  '';
 
   nativeBuildInputs = [
     cmake
@@ -104,12 +105,8 @@ stdenv.mkDerivation rec {
     (lib.cmakeBool "WIVRN_USE_X264" true)
     (lib.cmakeBool "WIVRN_USE_NVENC" false)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
-    (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${vendorMonado.src}")
+    (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monadoSrc}")
   ];
-
-  postFixup = ''
-    substituteInPlace $out/share/openxr/1/openxr_wivrn.json --replace "../../../" "../../../../.."
-  '';
 
   meta = with lib; {
     description = "An OpenXR streaming application to a standalone headset";
@@ -117,7 +114,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/Meumeu/WiVRn/releases/tag/v${version}";
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ passivelemon ];
-    platforms = [ "x86_64-linux" ];
+    platforms = platforms.linux;
     mainProgram = "wivrn-server";
   };
-}
+})

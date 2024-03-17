@@ -18,28 +18,12 @@ Add the flake to your inputs: </br>
 ## Features </br>
 Modules: </br>
 - Can be imported with `inputs.lemonake.nixosModules.<module>`
-- `alvr` (In Nixpkgs)
-  - ```nix
-    programs.alvr = {
-      enable = true;
-      package = pkgs.alvr;
-      openFirewall = true;
-    };
-    ```
-- `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)
-  - ```nix
-    programs.wivrn = {
-      enable = true;
-      package = inputs.lemonake.packages.${pkgs.system}.wivrn;     # Until WiVRn gets merged.
-      openFirewall = true;
-      highPriority = true;
-      defaultRuntime = false;
-    };
-    ```
+- [`alvr`](./modules/alvr/README.md) (In Nixpkgs)
+- [`wivrn`](./modules/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/293058)
 
 Packages: </br>
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
-- `alvr`
+- `alvr` (In Nixpkgs)
 - `animdl` (In Nixpkgs)
 - `gdlauncher` (Legacy)
 - `gdlauncher-carbon`
@@ -47,7 +31,6 @@ Packages: </br>
 - `hd2pystratmacro`
 - `poepyautopot`
 - `tilp2`
-- `xclicker`
 - `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)
 
 Run `nix flake show github:passivelemon/lemonake` to see all outputs.
