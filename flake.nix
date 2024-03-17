@@ -17,7 +17,7 @@
         alvr = import ./modules/nixos/alvr;
         wivrn = import ./modules/nixos/wivrn;
       };
-      homeModules = {
+      homeManagerModules = {
         steamvr = import ./modules/home-manager/steamvr;
       };
     };

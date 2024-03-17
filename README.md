@@ -17,12 +17,12 @@ Add the flake to your inputs: </br>
 
 ## Features </br>
 Modules: </br>
-- NixOS
+- NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
   - [`alvr`](./modules/nixos/alvr/README.md) (In Nixpkgs)
   - [`wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/293058)
-- Home Manager
-  - Can be imported with `inputs.lemonake.homeModules.<module>`
+- Home Manager (Do not use in nixos configuration)
+  - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
   - [`steamvr`](./modules/home-manager/steamvr/README.md)
 
 Packages: </br>
