@@ -1,5 +1,5 @@
 {
-  description = "Lemon's Flakes";
+  description = "Lemon's flake repo";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -14,8 +14,11 @@
     ];
     flake = {
       nixosModules = {
-        alvr = import ./modules/alvr.nix;
-        wivrn = import ./modules/wivrn.nix;
+        alvr = import ./modules/nixos/alvr;
+        wivrn = import ./modules/nixos/wivrn;
+      };
+      homeModules = {
+        steamvr = import ./modules/home-manager/steamvr;
       };
     };
   };

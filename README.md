@@ -17,9 +17,13 @@ Add the flake to your inputs: </br>
 
 ## Features </br>
 Modules: </br>
-- Can be imported with `inputs.lemonake.nixosModules.<module>`
-- [`alvr`](./modules/alvr/README.md) (In Nixpkgs)
-- [`wivrn`](./modules/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/293058)
+- NixOS
+  - Can be imported with `inputs.lemonake.nixosModules.<module>`
+  - [`alvr`](./modules/nixos/alvr/README.md) (In Nixpkgs)
+  - [`wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/293058)
+- Home Manager
+  - Can be imported with `inputs.lemonake.homeModules.<module>`
+  - [`steamvr`](./modules/home-manager/steamvr/README.md)
 
 Packages: </br>
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`

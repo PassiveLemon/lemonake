@@ -23,7 +23,7 @@ services.wivrn = {
   enable = { type = bool; default = true; };
   package = {
     type = package;
-    default = inputs.lemonake.packages.${pkgs.system}.wivrn; # Until WiVRn gets merged.
+    default = pkgs.wivrn;
   };
   openFirewall = { type = bool; default = false; };
   highPriority = { type = bool; default = true; };
