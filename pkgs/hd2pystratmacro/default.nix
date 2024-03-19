@@ -8,13 +8,13 @@
 
 buildPythonApplication rec {
   pname = "hd2pystratmacro";
-  version = "1.0.1";
+  version = "1.0.2";
 
   src = fetchFromGitHub {
     owner = "passivelemon";
     repo = "hd2pystratmacro";
     rev = "${version}";
-    hash = "sha256-WgQz/3KEKrBEszTnK4pPMufKtJSPQpODJtEEBH34snA=";
+    hash = "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=";
   };
 
   nativeBuildInputs = [

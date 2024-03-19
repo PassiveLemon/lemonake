@@ -38,6 +38,7 @@ Packages: </br>
 - `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)
 
 Run `nix flake show github:passivelemon/lemonake` to see all outputs.
+- Note: Home Manager modules will show as unknown.
 
 The only architecture currently supported is `x86_64-linux`. Others may be supported in the future. </br>
 
