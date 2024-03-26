@@ -1,13 +1,14 @@
-{ lib,
-  appimageTools,
-  fetchurl,
+{ lib
+, appimageTools
+, fetchurl
+, version
+, hash
 }:
 let
   pname = "gdlauncher-carbon";
-  version = "2.0.1";
   src = fetchurl {
+    inherit version hash;
     url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__${version}__linux__x64.AppImage";
-    hash = "sha256-pQnLjJx+Gy++YYWXWfV3qAIiMKxbniWCAhKEgKg/vYA=";
   };
 
   appimageContents = appimageTools.extractType2 { inherit pname version src; };

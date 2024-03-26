@@ -1,4 +1,4 @@
-{ inputs, self, ... }: {
+{ inputs, config, lib, ... }: {
   imports = [ inputs.flake-parts.flakeModules.easyOverlay ];
 
   systems = [ "x86_64-linux" ];
@@ -9,17 +9,28 @@
       config.allowUnfree = true;
     };
 
-    overlayAttrs = config.packages;
-
-    packages = with pkgs; rec {
+    packages = with pkgs;
+    let
+      gdlauncherPackages = (import ./gdlauncher { inherit pkgs; });
+    in
+    rec {
       alvr = callPackage ./alvr { };
+
       animdl = python3Packages.callPackage ./animdl { };
-      gdlauncher = callPackage ./gdlauncher { };
-      gdlauncher-carbon = callPackage ./gdlauncher-carbon { };
+
+      gdlauncher-legacy = gdlauncherPackages.legacy;
+      gdlauncher-carbon = gdlauncherPackages.stable;
+      gdlauncher-carbon-unstable = gdlauncherPackages.unstable;
+      gdlauncher = lib.warn "The gdlauncher package will alias to gdlauncher-carbon on June 1, 2024. Please use gdlauncher-legacy instead." gdlauncher-legacy;
+
       gfm = callPackage ./gfm { };
+
       hd2pystratmacro = python3Packages.callPackage ./hd2pystratmacro { };
+
       poepyautopot = python3Packages.callPackage ./poepyautopot { };
+
       tilp2 = callPackage ./tilp2 { inherit gfm; };
+
       wivrn = callPackage ./wivrn { };
     };
   };

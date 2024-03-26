@@ -1,6 +1,7 @@
 # lemonake </br>
 
 This is my collection of packages and modules in a flake. </br>
+Some of these are already in Nixpkgs or in the process of getting merged but I provide faster updates here. </br>
 
 ## Usage </br>
 Add the flake to your inputs: </br>
@@ -29,8 +30,10 @@ Packages: </br>
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
 - `alvr` (In Nixpkgs)
 - `animdl` (In Nixpkgs)
-- `gdlauncher` (Legacy)
+- `gdlauncher-legacy`
 - `gdlauncher-carbon`
+- `gdlauncher-carbon-unstable`
+- `gdlauncher` (Aliased to `legacy` until June 1, 2024)
 - `gfm` (For use with TILP2)
 - `hd2pystratmacro`
 - `poepyautopot`
