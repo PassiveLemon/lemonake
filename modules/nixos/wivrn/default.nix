@@ -1,8 +1,8 @@
 { config, pkgs, lib, ... }:
 
 let
+  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault mdDoc types getExe' maintainers;
   cfg = config.services.wivrn;
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption mkDefault mdDoc types getExe' maintainers;
 in
 {
   options = {
@@ -21,20 +21,12 @@ in
       '' // { default = true; };
 
       highPriority = mkEnableOption "high priority capability for wivrn-server" // { default = true; };
-
-      monadoEnvironment = mkOption {
-        type = types.attrsOf types.str;
-        description = mdDoc "Environment variables passed to Monado.";
-        # Default options
-        # https://gitlab.freedesktop.org/monado/monado/-/blob/4548e1738591d0904f8db4df8ede652ece889a76/src/xrt/targets/service/monado.in.service#L12
-        default = {
-          XRT_COMPOSITOR_LOG = "debug";
-          XRT_PRINT_OPTIONS = "on";
-          IPC_EXIT_ON_DISCONNECT = "off";
-        };
-      };
     };
   };
+
+  imports = [
+    (mkAliasOptionModule ["services" "wivrn" "monadoEnvironment"] ["systemd" "user" "services" "wivrn" "environment"])
+  ];
 
   config = mkIf cfg.enable {
     security.wrappers."wivrn-server" = mkIf cfg.highPriority {
@@ -51,11 +43,6 @@ in
         description = "WiVRn XR runtime service module";
         requires = [ "wivrn.socket" ];
         unitConfig.ConditionUser = "!root";
-        environment = cfg.monadoEnvironment // {
-          XRT_COMPOSITOR_LOG = if builtins.hasAttr "XRT_COMPOSITOR_LOG" cfg.monadoEnvironment then cfg.monadoEnvironment.XRT_COMPOSITOR_LOG else "debug";
-          XRT_PRINT_OPTIONS = if builtins.hasAttr "XRT_PRINT_OPTIONS" cfg.monadoEnvironment then cfg.monadoEnvironment.XRT_PRINT_OPTIONS else "on";
-          IPC_EXIT_ON_DISCONNECT = if builtins.hasAttr "IPC_EXIT_ON_DISCONNECT" cfg.monadoEnvironment then cfg.monadoEnvironment.IPC_EXIT_ON_DISCONNECT else "off";
-        };
         serviceConfig = {
           ExecStart =
             if cfg.highPriority
@@ -82,6 +69,11 @@ in
     };
 
     services = {
+      wivrn.monadoEnvironment = {
+        XRT_COMPOSITOR_LOG = mkDefault "debug";
+        XRT_PRINT_OPTIONS = mkDefault "on";
+        IPC_EXIT_ON_DISCONNECT = mkDefault "off";
+      };
       udev.packages = with pkgs; [ xr-hardware ];
       avahi = {
         enable = true;
