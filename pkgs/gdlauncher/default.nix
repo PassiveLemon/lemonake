@@ -7,14 +7,14 @@ with pkgs; rec {
 
   carbon = callPackage ./carbon.nix {
     version = "2.0.4";
-    hash = "sha256-qzRWoeWNL/aY9AN/LvPqy37RjkTaPnHsvm1Lm7L44H0=";
+    hash = "sha256-4yTYiIOLBxDP8oT/AKFApKREtfRAnRi0gYKBP57Uotg=";
   };
 
   stable = carbon;
 
   carbon-unstable = carbon.override {
     version = "2.0.4";
-    hash = "sha256-qzRWoeWNL/aY9AN/LvPqy37RjkTaPnHsvm1Lm7L44H0=";
+    hash = "sha256-4yTYiIOLBxDP8oT/AKFApKREtfRAnRi0gYKBP57Uotg=";
   };
 
   unstable = carbon-unstable;
