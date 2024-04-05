@@ -13,8 +13,8 @@ with pkgs; rec {
   stable = carbon;
 
   carbon-unstable = carbon.override {
-    version = "2.0.4";
-    hash = "sha256-qzRWoeWNL/aY9AN/LvPqy37RjkTaPnHsvm1Lm7L44H0=";
+    version = "2.0.7-beta.1712331855";
+    hash = "sha256-EX7v8L5FN3rcVHR3ZjYVV/X7DkduW6ZsniBQ7Hj2UXk=";
   };
 
   unstable = carbon-unstable;
