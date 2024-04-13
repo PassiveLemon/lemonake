@@ -54,6 +54,7 @@ buildPythonApplication {
     substituteInPlace pyproject.toml \
       --replace 'comtypes = "~=1.1.11"' "" \
       --replace 'httpx = "~=0.23.0"' 'httpx = ">=0.23.0"' \
+      --replace 'packaging = ">=22,<24"' 'packaging = ">=22"' \
       --replace 'pycryptodomex = "~=3.14.1"' 'pycryptodomex = ">=3.14.1"' \
       --replace 'regex = "~=2022.10.31"' 'regex = ">=2022.10.31"' \
       --replace 'rich = ">=13.3.1,<13.3.4"' 'rich = ">=13.3.1"' \

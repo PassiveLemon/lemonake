@@ -15,7 +15,7 @@
     flake = {
       nixosModules = {
         alvr = import ./modules/nixos/alvr;
-        
+
         wivrn = import ./modules/nixos/wivrn;
       };
       homeManagerModules = {
