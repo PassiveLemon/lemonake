@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault mdDoc types getExe' maintainers;
+  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault types getExe' maintainers;
   cfg = config.services.wivrn;
 in
 {
@@ -25,7 +25,7 @@ in
   };
 
   imports = [
-    (mkAliasOptionModule ["services" "wivrn" "monadoEnvironment"] ["systemd" "user" "services" "wivrn" "environment"])
+    (mkAliasOptionModule [ "services" "wivrn" "monadoEnvironment" ] [ "systemd" "user" "services" "wivrn" "environment" ])
   ];
 
   config = mkIf cfg.enable {
@@ -70,11 +70,13 @@ in
 
     services = {
       wivrn.monadoEnvironment = {
+        # Default options
+        # https://gitlab.freedesktop.org/monado/monado/-/blob/4548e1738591d0904f8db4df8ede652ece889a76/src/xrt/targets/service/monado.in.service#L12
         XRT_COMPOSITOR_LOG = mkDefault "debug";
         XRT_PRINT_OPTIONS = mkDefault "on";
         IPC_EXIT_ON_DISCONNECT = mkDefault "off";
       };
-      udev.packages = with pkgs; [ xr-hardware ];
+      udev.packages = with pkgs; [ xr-hardware ]; # WiVRn can be used with some wired headsets
       avahi = {
         enable = true;
         publish = {
