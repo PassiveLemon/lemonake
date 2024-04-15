@@ -36,6 +36,7 @@ Packages: </br>
 - `gdlauncher` (Aliased to `legacy` until June 1, 2024)
 - `gfm` (For use with TILP2)
 - `hd2pystratmacro`
+- `monado-vulkan-layers`
 - `poepyautopot`
 - `tilp2`
 - `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)

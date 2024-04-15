@@ -1,6 +1,9 @@
 # WiVRn
 [GitHub](https://github.com/Meumeu/WiVRn)
 
+If you use Nvidia, it is recommended to install the `monado-vulkan-layers` (In this repo) package to mitigate crashes with OpenXR.
+You can install it in `hardware.opengl.extraPackages`.
+
 ## Example usage
 ```nix
 services.wivrn = {
