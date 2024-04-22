@@ -10,12 +10,8 @@ with pkgs; rec {
     hash = "sha256-4yTYiIOLBxDP8oT/AKFApKREtfRAnRi0gYKBP57Uotg=";
   };
 
-  stable = carbon;
-
   carbon-unstable = carbon.override {
-    version = "2.0.7-beta.1712331855";
-    hash = "sha256-EX7v8L5FN3rcVHR3ZjYVV/X7DkduW6ZsniBQ7Hj2UXk=";
+    version = "2.0.7-beta.1713800316";
+    hash = "sha256-LnBPr7PiYK7yupq18+GUyHS2UYMzDoI6KlxjND8dxiU=";
   };
-
-  unstable = carbon-unstable;
 }

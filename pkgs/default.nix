@@ -19,8 +19,8 @@
       animdl = python3Packages.callPackage ./animdl { };
 
       gdlauncher-legacy = gdlauncherPackages.legacy;
-      gdlauncher-carbon = gdlauncherPackages.stable;
-      gdlauncher-carbon-unstable = gdlauncherPackages.unstable;
+      gdlauncher-carbon = gdlauncherPackages.carbon;
+      gdlauncher-carbon-unstable = gdlauncherPackages.carbon-unstable;
       gdlauncher = lib.warn "The gdlauncher package will alias to gdlauncher-carbon on June 1, 2024. Please use gdlauncher-legacy instead." gdlauncher-legacy;
 
       gfm = callPackage ./gfm { };
