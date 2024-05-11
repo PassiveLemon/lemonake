@@ -17,8 +17,6 @@ appimageTools.wrapType2 {
   inherit pname version src;
 
   extraInstallCommands = ''
-    mv $out/bin/gdlauncher-carbon-${version} $out/bin/gdlauncher-carbon
-
     install -Dm444 ${appimageContents}/@gddesktop.desktop -t $out/share/applications
     install -Dm444 ${appimageContents}/@gddesktop.png $out/share/pixmaps/gdlauncher-carbon.png
     substituteInPlace $out/share/applications/@gddesktop.desktop \
