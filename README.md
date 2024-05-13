@@ -21,7 +21,7 @@ Modules: </br>
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
   - [`alvr`](./modules/nixos/alvr/README.md) (In Nixpkgs)
-  - [`wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/293058)
+  - [`wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/299830)
 - Home Manager (Do not use in nixos configuration)
   - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
   - [`steamvr`](./modules/home-manager/steamvr/README.md)
@@ -39,7 +39,7 @@ Packages: </br>
 - `monado-vulkan-layers`
 - `poepyautopot`
 - `tilp2`
-- `wivrn` (https://github.com/NixOS/nixpkgs/pull/293058)
+- `wivrn` (https://github.com/NixOS/nixpkgs/pull/299830)
 
 Run `nix flake show github:passivelemon/lemonake` to see all outputs.
 - Note: Home Manager modules will show as unknown.
