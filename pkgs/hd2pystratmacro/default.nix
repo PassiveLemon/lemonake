@@ -5,16 +5,15 @@
 , pyyaml
 , setuptools
 }:
-
 buildPythonApplication rec {
   pname = "hd2pystratmacro";
-  version = "1.0.2";
+  version = "1.0.3";
 
   src = fetchFromGitHub {
     owner = "passivelemon";
     repo = "hd2pystratmacro";
-    rev = "${version}";
-    hash = "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=";
+    rev = version;
+    hash = "sha256-dinijveo5/FrJdLWildK7JwY9ZciAJ+PUWvFw5dUluA=";
   };
 
   nativeBuildInputs = [
@@ -25,7 +24,7 @@ buildPythonApplication rec {
     evdev
     pyyaml
   ];
-  
+
   doCheck = false;
 
   meta = with lib; {
