@@ -7,17 +7,23 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "monado-vulkan-layers";
-  version = "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2";
+  version = "0-unstable-2024-02-21";
 
   src = fetchFromGitLab {
     domain = "gitlab.freedesktop.org";
     owner = "monado";
     repo = "utilities/vulkan-layers";
-    rev = finalAttrs.version;
+    rev = "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2";
     sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
   };
 
-  nativeBuildInputs = [ cmake ];
+  patches = [
+    ./absolute-layer-path.patch
+  ];
+
+  nativeBuildInputs = [
+    cmake
+  ];
   buildInputs = [
     vulkan-headers
     vulkan-loader
@@ -28,6 +34,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers";
     platforms = platforms.linux;
     license = licenses.boost;
-    maintainers = with maintainers; [ passivelemon ];
+    maintainers = with maintainers; [ scrumplex passivelemon ];
   };
 })
