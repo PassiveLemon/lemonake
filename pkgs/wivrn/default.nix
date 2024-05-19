@@ -1,4 +1,5 @@
-{ lib
+{ config
+, lib
 , stdenv
 , fetchFromGitHub
 , fetchFromGitLab
@@ -6,7 +7,8 @@
 , avahi
 , boost
 , cmake
-, cudaPackages
+, cudaPackages ? { }
+, cudaSupport ? config.cudaSupport
 , eigen
 , ffmpeg
 , freetype
@@ -23,6 +25,7 @@
 , nlohmann_json
 , onnxruntime
 , openxr-loader
+, pipewire
 , pkg-config
 , python3
 , shaderc
@@ -88,16 +91,16 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [
     cmake
-    cudaPackages.cuda_nvcc
     git
     pkg-config
     python3
+  ] ++ lib.optionals cudaSupport [
+    cudaPackages.autoAddOpenGLRunpathHook
   ];
 
   buildInputs = [
     avahi
     boost
-    cudaPackages.cuda_cudart
     eigen
     ffmpeg
     freetype
@@ -113,6 +116,7 @@ stdenv.mkDerivation (finalAttrs: {
     nlohmann_json
     onnxruntime
     openxr-loader
+    pipewire
     shaderc
     spdlog
     systemd
@@ -121,13 +125,15 @@ stdenv.mkDerivation (finalAttrs: {
     vulkan-loader
     vulkan-tools
     x264
+  ] ++ lib.optionals cudaSupport [
+    cudaPackages.cudatoolkit
   ];
 
   cmakeFlags = [
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
     (lib.cmakeBool "WIVRN_USE_VAAPI" true)
     (lib.cmakeBool "WIVRN_USE_X264" true)
-    (lib.cmakeBool "WIVRN_USE_NVENC" true)
+    (lib.cmakeBool "WIVRN_USE_NVENC" cudaSupport)
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monadoSrc}")
