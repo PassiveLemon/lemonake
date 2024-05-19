@@ -36,18 +36,18 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "wivrn";
-  version = "0.14.1";
+  version = "0.15";
 
   src = fetchFromGitHub {
     owner = "meumeu";
     repo = "wivrn";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-dnc9UNETDzT+sqo9bSTP1qZs/7kWftDo50yRgP94Mh4=";
+    hash = "sha256-RVRbL9hqy9pMKjvzwaP+9HGEfdpAhmlnnvqZsEGxlCw=";
   };
 
   monadoSrc = stdenv.mkDerivation (finalAttrs: {
     pname = "monado";
-    # Version stated in CMakeList for WiVRn 0.14.1
+    # Version stated in CMakeList for WiVRn 0.15
     version = "ffb71af26f8349952f5f820c268ee4774613e200";
 
     src = fetchFromGitLab {
@@ -127,7 +127,7 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
     (lib.cmakeBool "WIVRN_USE_VAAPI" true)
     (lib.cmakeBool "WIVRN_USE_X264" true)
-    (lib.cmakeBool "WIVRN_USE_NVENC" false)
+    (lib.cmakeBool "WIVRN_USE_NVENC" true)
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monadoSrc}")
