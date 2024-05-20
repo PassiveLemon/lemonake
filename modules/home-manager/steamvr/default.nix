@@ -29,22 +29,22 @@ in
     };
   };
 
-  config = mkIf cfg.runtimeOverride.enable {
+  config = {
     xdg.configFile = {
       "openvr/openvrpaths.vrpath" = mkIf cfg.runtimeOverride.enable {
         text = ''
           {
-            "config" : 
+            "config" :
             [
               "${config.home.homeDirectory}/.local/share/Steam/config"
             ],
             "external_drivers" : null,
             "jsonid" : "vrpathreg",
-            "log" : 
+            "log" :
             [
               "${config.home.homeDirectory}/.local/share/Steam/logs"
             ],
-            "runtime" : 
+            "runtime" :
             [
               "${cfg.runtimeOverride.path}"
             ],
