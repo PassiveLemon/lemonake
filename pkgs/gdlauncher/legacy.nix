@@ -17,8 +17,6 @@ appimageTools.wrapType2 {
   inherit pname version src;
 
   extraInstallCommands = ''
-    mv $out/bin/gdlauncher-${version} $out/bin/gdlauncher
-
     install -Dm444 ${appimageContents}/gdlauncher.desktop -t $out/share/applications
 
     substituteInPlace $out/share/applications/gdlauncher.desktop \
