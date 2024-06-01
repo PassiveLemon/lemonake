@@ -21,7 +21,7 @@
       gdlauncher-legacy = gdlauncherPackages.legacy;
       gdlauncher-carbon = gdlauncherPackages.carbon;
       gdlauncher-carbon-unstable = gdlauncherPackages.carbon-unstable;
-      gdlauncher = lib.warn "The gdlauncher package will alias to gdlauncher-carbon on June 1, 2024. Please use gdlauncher-legacy instead." gdlauncher-legacy;
+      gdlauncher = gdlauncher-carbon;
 
       gfm = callPackage ./gfm { };
 
