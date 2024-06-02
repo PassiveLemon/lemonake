@@ -6,12 +6,12 @@ with pkgs; rec {
   };
 
   carbon = callPackage ./carbon.nix {
-    version = "2.0.9";
-    hash = "sha256-S46r/iZ92f7m+OMLVGq2WhH2Za4Pb32zpY3bVQ+ga3Q=";
+    version = "2.0.14";
+    hash = "sha256-lDpCgF71b3Ec54IGzVbT9nCyXhP9goLew1KCzCXEYHc=";
   };
 
   carbon-unstable = carbon.override {
-    version = "2.0.11-beta.1716503686";
-    hash = "sha256-MLRrzH84LuqZZMZ9Tval6xZ/TKWqPq6T9e+VWeOcbkU=";
+    version = "2.0.14";
+    hash = "sha256-lDpCgF71b3Ec54IGzVbT9nCyXhP9goLew1KCzCXEYHc=";
   };
 }
