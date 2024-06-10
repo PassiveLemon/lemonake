@@ -68,8 +68,8 @@ stdenv.mkDerivation (finalAttrs: {
 
     mkdir -p $out/share/applications
     cp -r $src/* $out
-    install -Dm444 $alvrSrc/alvr/xtask/resources/alvr.desktop -t $out/share/applications/alvr.desktop
-    install -Dm444 $alvrSrc/resources/alvr.png -t $out/share/icons/hicolor/256x256/apps/alvr.png
+    install -Dm444 $alvrSrc/alvr/xtask/resources/alvr.desktop -t $out/share/applications
+    install -Dm444 $alvrSrc/resources/alvr.png -t $out/share/icons/hicolor/256x256/apps
 
     runHook postInstall
   '';
