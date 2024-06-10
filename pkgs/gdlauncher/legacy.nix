@@ -18,10 +18,10 @@ appimageTools.wrapType2 {
 
   extraInstallCommands = ''
     install -Dm444 ${appimageContents}/gdlauncher.desktop -t $out/share/applications
+    cp -r ${appimageContents}/usr/share/icons $out/share
 
     substituteInPlace $out/share/applications/gdlauncher.desktop \
       --replace 'Exec=AppRun --no-sandbox %U' 'Exec=gdlauncher'
-    cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 
   meta = with lib; {

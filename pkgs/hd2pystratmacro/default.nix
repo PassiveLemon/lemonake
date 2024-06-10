@@ -5,14 +5,14 @@
 , pyyaml
 , setuptools
 }:
-buildPythonApplication rec {
+buildPythonApplication (finalAttrs: {
   pname = "hd2pystratmacro";
   version = "1.0.3";
 
   src = fetchFromGitHub {
     owner = "passivelemon";
     repo = "hd2pystratmacro";
-    rev = version;
+    rev = finalAttrs.version;
     hash = "sha256-dinijveo5/FrJdLWildK7JwY9ZciAJ+PUWvFw5dUluA=";
   };
 
@@ -36,4 +36,4 @@ buildPythonApplication rec {
     platforms = [ "x86_64-linux" ];
     mainProgram = "hd2pystratmacro";
   };
-}
+})

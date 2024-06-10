@@ -19,11 +19,11 @@ appimageTools.wrapType2 {
   extraInstallCommands = ''
     install -Dm444 ${appimageContents}/@gddesktop.desktop -t $out/share/applications
     install -Dm444 ${appimageContents}/@gddesktop.png $out/share/pixmaps/gdlauncher-carbon.png
+    cp -r ${appimageContents}/usr/share/icons $out/share
 
     substituteInPlace $out/share/applications/@gddesktop.desktop \
       --replace 'Exec=AppRun --no-sandbox %U' 'Exec=gdlauncher-carbon' \
       --replace 'Icon=@gddesktop' 'Icon=gdlauncher-carbon'
-    cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 
   meta = with lib; {

@@ -33,6 +33,7 @@ buildPythonApplication {
   nativeBuildInputs = [
     poetry-core
   ];
+
   propagatedBuildInputs = [
     anchor-kr
     anitopy

@@ -24,6 +24,7 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     cmake
   ];
+
   buildInputs = [
     vulkan-headers
     vulkan-loader
