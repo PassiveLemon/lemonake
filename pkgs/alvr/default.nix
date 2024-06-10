@@ -1,35 +1,88 @@
 { lib
-, appimageTools
-, fetchurl
+, stdenv
+, fetchzip
+, fetchFromGitHub
+, alsa-lib
+, autoPatchelfHook
+, brotli
+, ffmpeg
+, libdrm
+, libGL
+, libunwind
+, libva
+, libvdpau
+, libxkbcommon
+, nix-update-script
+, openssl
+, vulkan-loader
+, wayland
+, x264
+, xorg
+, xvidcore
 }:
-let
+stdenv.mkDerivation (finalAttrs: {
   pname = "alvr";
-  version = "20.6.1";
-  src = fetchurl {
-    url = "https://github.com/alvr-org/ALVR/releases/download/v${version}/ALVR-x86_64.AppImage";
-    hash = "sha256-IYw3D18xUGWiFu74c4d8d4tohZztAD6mmZCYsDNxR+A=";
+  version = "20.8.1";
+
+  src = fetchzip {
+    url = "https://github.com/alvr-org/ALVR/releases/download/v${finalAttrs.version}/alvr_streamer_linux.tar.gz";
+    hash = "sha256-8bQpEnzK4ZGE5P49Gh/fmxgyCBFTzD511q6aZxe0B/Y=";
   };
 
-  appimageContents = appimageTools.extractType2 { inherit pname version src; };
-in
-appimageTools.wrapType2 {
-  inherit pname version src;
+  alvrSrc = fetchFromGitHub {
+    owner = "alvr-org";
+    repo = "ALVR";
+    rev = "v${finalAttrs.version}";
+    hash = "sha256-znIRSax4thuBIpxW8BNqJSUYgIeY8g06qA9P/i8awvQ=";
+  };
 
-  extraInstallCommands = ''
-    install -Dm444 ${appimageContents}/alvr.desktop -t $out/share/applications
+  nativeBuildInputs = [
+    autoPatchelfHook
+  ];
 
-    substituteInPlace $out/share/applications/alvr.desktop \
-      --replace 'Exec=alvr_dashboard' 'Exec=alvr'
-    cp -r ${appimageContents}/usr/share/icons $out/share
+  buildInputs = [
+    alsa-lib
+    libunwind
+    libva
+    libvdpau
+    vulkan-loader
+  ];
+
+  runtimeDependencies = [
+    brotli
+    ffmpeg
+    openssl
+    libdrm
+    libGL
+    libxkbcommon
+    wayland
+    x264
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libxcb
+    xorg.libXi
+  ];
+
+  installPhase = ''
+    runHook preInstall
+
+    mkdir -p $out/share/applications
+    cp -r $src/* $out
+    install -Dm444 $alvrSrc/alvr/xtask/resources/alvr.desktop -t $out/share/applications/alvr.desktop
+    install -Dm444 $alvrSrc/resources/alvr.png -t $out/share/icons/hicolor/256x256/apps/alvr.png
+
+    runHook postInstall
   '';
+
+  passthru.updateScript = nix-update-script { };
 
   meta = with lib; {
     description = "Stream VR games from your PC to your headset via Wi-Fi";
     homepage = "https://github.com/alvr-org/ALVR/";
-    changelog = "https://github.com/alvr-org/ALVR/releases/tag/v${version}";
+    changelog = "https://github.com/alvr-org/ALVR/releases/tag/v${finalAttrs.version}";
     license = licenses.mit;
+    mainProgram = "alvr_dashboard";
     maintainers = with maintainers; [ passivelemon ];
-    platforms = [ "x86_64-linux" ];
-    mainProgram = "alvr";
+    platforms = platforms.linux;
   };
-}
+})
