@@ -81,8 +81,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/alvr-org/ALVR/";
     changelog = "https://github.com/alvr-org/ALVR/releases/tag/v${finalAttrs.version}";
     license = licenses.mit;
-    mainProgram = "alvr_dashboard";
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
+    mainProgram = "alvr_dashboard";
   };
 })
