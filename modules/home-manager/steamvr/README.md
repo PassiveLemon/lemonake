@@ -3,34 +3,37 @@ Custom module to allow you to override the SteamVR `openvrpaths.vrpath` runtime 
 
 ## Example usage
 ```nix
-services.steamvr = {
-  runtimeOverride = {
-    enable = true;
-    path = "${pkgs.opencomposite}/lib/opencomposite";
+# home.nix
+{
+  services.steamvr = {
+    runtimeOverride = {
+      enable = true;
+      path = "${pkgs.opencomposite}/lib/opencomposite";
+    };
+    activeRuntimeOverride = {
+      enable = true;
+      path = "${pkgs.wivrn}/share/openxr/1/openxr_wivrn.json"; # WiVRn is not merged yet
+    };
   };
-  activeRuntimeOverride = {
-    enable = true;
-    path = "${pkgs.wivrn}/share/openxr/1/openxr_wivrn.json"; # WiVRn is not merged yet
-  };
-};
+}
 ```
 
 ## Full overview
 ```nix
-services.steamvr = {
-  runtimeOverride = {
-    enable = { type = bool; default = true; };
-    path = {
-      type = path;
-      default = "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR";
+# home.nix
+{
+  services.steamvr = {
+    runtimeOverride = {
+      enable = { type = bool; default = true; };
+      path = {
+        type = path;
+        default = "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR";
+      };
+    };
+    activeRuntimeOverride = {
+      enable = { type = bool; default = true; };
+      path = { type = path; default = ""; };
     };
   };
-  activeRuntimeOverride = {
-    enable = { type = bool; default = true; };
-    path = {
-      type = path;
-      default = "";
-    };
-  };
-};
+}
 ```

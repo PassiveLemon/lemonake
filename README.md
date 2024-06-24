@@ -30,9 +30,10 @@ Packages: </br>
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
 - `alvr` (24.05)
 - `animdl` (24.05)
-- `gdlauncher-legacy`
-- `gdlauncher-carbon` (`gdlauncher`)
+- `gdlauncher` (`gdlauncher-carbon`)
+- `gdlauncher-carbon`
 - `gdlauncher-carbon-unstable`
+- `gdlauncher-legacy`
 - `gfm` (For use with TILP2)
 - `hd2pystratmacro`
 - `monado-vulkan-layers`

@@ -23,6 +23,7 @@ in
         path = mkOption {
           type = types.path;
           description = mdDoc "The active_runtime.json path to symlink to `XDG_CONFIG_HOME/openxr/1/active_runtime.json`";
+          default = "";
           example = literalExpression "${pkgs.wivrn}/share/openxr/1/openxr_wivrn.json";
         };
       };
