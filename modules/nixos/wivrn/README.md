@@ -15,38 +15,32 @@ You can install it in `hardware.opengl.extraPackages`.
     highPriority = true;
     defaultRuntime = true;
     monadoEnvironment = {
-      XRT_COMPOSITOR_LOG = "debug";
-      XRT_PRINT_OPTIONS = "on";
-      IPC_EXIT_ON_DISCONNECT = "off";
+      XRT_COMPOSITOR_LOG = "warning";
     };
     config = {
       enable = true;
       json = {
-        scale = 1.0;
+        scale = 0.8;
         bitrate = 100000000;
         encoders = [
           {
             encoder = "nvenc";
             codec = "h264";
-            width = 0.5;
+            width = 1.0;
             height = 1.0;
             offset_x = 0.0;
             offset_y = 0.0;
           }
-          {
-            encoder = "nvenc";
-            codec = "h264";
-            width = 0.5;
-            height = 1.0;
-            offset_x = 0.5;
-            offset_y = 0.0;
-          }
         ];
+        application = [ pkgs.wlx-overlay-s ];
+        tcp_only = true;
       };
     };
   };
 }
 ```
+> [!NOTE]
+> Note that the application option must be either a package or a list with package as the first element.
 
 ## Full overview
 ```nix
