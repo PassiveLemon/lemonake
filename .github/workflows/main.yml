@@ -1,8 +1,14 @@
 name: Automatic Update
 on:
   push:
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/**'
+      - 'pkgs/**'
+      - 'flake.lock'
   schedule:
-    - cron:  '0 2 * * *'
+    - cron: '0 2 * * *'
 
 jobs:
   setup-build-push:
