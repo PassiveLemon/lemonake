@@ -1,23 +1,39 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault optionalString getExe literalExpression maintainers;
+  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault optional optionalString optionalAttrs isDerivation getExe literalExpression maintainers;
   cfg = config.services.wivrn;
   configFormat = pkgs.formats.json { };
+
   # For the application option to work with systemd PATH, we find the store binary path of
   # the package, concat all of the following strings, and then update the application attribute.
-  # Application can either be a package or a list.
-  applicationBinary = (
-    if builtins.isList cfg.config.json.application
-    then (builtins.head cfg.config.json.application)
-    else cfg.config.json.application
+  # Application can either be a package or a list that has a package as the first element.
+  applicationConfig = cfg.config.json.application;
+  applicationExists = builtins.hasAttr "application" cfg.config.json;
+  applicationListNotEmpty = (
+    if builtins.isList applicationConfig
+    then if builtins.length applicationConfig == 0
+      then false
+      else true
+    else true
   );
-  applicationStrings = builtins.tail cfg.config.json.application;
+  applicationCheck = applicationExists && applicationListNotEmpty;
+
+  applicationBinary = (
+    if builtins.isList applicationConfig
+    then (builtins.head applicationConfig)
+    else applicationConfig
+  );
+  applicationStrings = builtins.tail applicationConfig;
+
+  applicationPath = mkIf applicationCheck applicationBinary;
+
   applicationConcat = (
-    if builtins.isList cfg.config.json.application
+    if builtins.isList applicationConfig
     then builtins.concatStringsSep " " ([ (getExe applicationBinary) ] ++ applicationStrings)
     else (getExe applicationBinary)
   );
-  configFile = configFormat.generate "config.json" (cfg.config.json // { application = applicationConcat; });
+  applicationUpdate = cfg.config.json // optionalAttrs applicationCheck { application = applicationConcat; };
+  configFile = configFormat.generate "config.json" applicationUpdate;
 in
 {
   options = {
@@ -36,7 +52,7 @@ in
         runtime in a writable XDG_CONFIG_DIRS location like `~/.config`
       '' // { default = true; };
 
-      highPriority = mkEnableOption "high priority capability for wivrn-server" // { default = true; };
+      highPriority = mkEnableOption "high priority capability for asynchronous reprojection" // { default = true; };
 
       config = {
         enable = mkEnableOption "configuration for WiVRn";
@@ -79,6 +95,13 @@ in
   ];
 
   config = mkIf cfg.enable {
+    assertions = [
+      (mkIf applicationCheck {
+        assertion = isDerivation applicationBinary;
+        message = "The application in WiVRn configuration is not a package. Please ensure that the application is a package or that a package is the first element in the list.";
+      })
+    ];
+
     security.wrappers."wivrn-server" = mkIf cfg.highPriority {
       setuid = false;
       owner = "root";
@@ -89,55 +112,71 @@ in
     };
 
     systemd.user = {
-      services.wivrn = {
-        description = "WiVRn XR runtime service module";
-        unitConfig.ConditionUser = "!root";
-        serviceConfig = {
-          ExecStart = (
-            if cfg.highPriority
-            then "${config.security.wrapperDir}/wivrn-server"
-            else getExe cfg.package
-          ) + optionalString cfg.config.enable " -f ${configFile}";
-          Restart = "no";
-          # Hardening options
-          BindPaths = [
-            "/run/user/%U"
+      services = {
+        # The WiVRn server runs in a hardened service and starts it's applications in a different service
+        wivrn = {
+          description = "WiVRn XR runtime service";
+          unitConfig.ConditionUser = "!root";
+          serviceConfig = {
+            ExecStart = (
+              if cfg.highPriority
+              then "${config.security.wrapperDir}/wivrn-server"
+              else getExe cfg.package
+            ) + " --systemd"
+              + optionalString cfg.config.enable " -f ${configFile}";
+            # Hardening options
+            BindPaths = [
+              "/run/user/%U"
+            ];
+            CapabilityBoundingSet = [ "" ];
+            KeyringMode = "private";
+            LockPersonality = true;
+            MemoryDenyWriteExecute = true;
+            NoNewPrivileges = true;
+            PrivateTmp = true;
+            ProcSubset = "pid";
+            ProtectControlGroups = true;
+            ProtectClock = true;
+            ProtectHome = "tmpfs";
+            ProtectHostname = true;
+            ProtectKernelLogs = true;
+            ProtectKernelModules = true;
+            ProtectKernelTunables = true;
+            ProtectProc = "invisible";
+            ProtectSystem = "strict";
+            RemoveIPC = true;
+            RestrictAddressFamilies= [
+              "AF_UNIX"
+              "AF_INET"
+              "AF_INET6"
+              "AF_NETLINK"
+            ];
+            RestrictNamespaces = true;
+            RestrictRealtime = true;
+            RestrictSUIDSGID = true;
+          };
+          restartTriggers = [
+            cfg.package
+            configFile
           ];
-          CapabilityBoundingSet = [
-            "CAP_SETPCAP"
-            "CAP_SYS_ADMIN"
-            "CAP_SYS_NICE"
-          ];
-          KeyringMode = "private";
-          LockPersonality = true;
-          MemoryDenyWriteExecute = true;
-          PrivateTmp = true;
-          ProcSubset = "pid";
-          ProtectControlGroups = true;
-          ProtectClock = true;
-          ProtectHome = "read-only";
-          ProtectHostname = true;
-          ProtectKernelLogs = true;
-          ProtectKernelModules = true;
-          ProtectKernelTunables = true;
-          ProtectProc = "invisible";
-          ProtectSystem = "strict";
-          RestrictAddressFamilies= [
-            "AF_UNIX"
-            "AF_INET"
-            "AF_INET6"
-            "AF_NETLINK"
-          ];
-          RestrictNamespaces = true;
-          RestrictRealtime = true;
-          RestrictSUIDSGID = true;
         };
-        # We need to add the application to PATH so WiVRn can find it
-        path = [ applicationBinary ];
-        restartTriggers = [
-          cfg.package
-          configFile
-        ];
+        wivrn-application = {
+          description = "WiVRn application service";
+          requires = [ "wivrn.service" ];
+          unitConfig.ConditionUser = "!root";
+          serviceConfig = {
+            ExecStart = (
+              (getExe cfg.package)
+              + " --application"
+              + optionalString cfg.config.enable " -f ${configFile}"
+            );
+            Restart = "on-failure";
+            RestartSec = 0;
+            PrivateTmp = true;
+          };
+          # We need to add the application to PATH so WiVRn can find it
+          path = [ applicationPath ];
+        };
       };
     };
 
