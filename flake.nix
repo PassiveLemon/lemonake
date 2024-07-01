@@ -12,9 +12,12 @@
     imports = [
       ./pkgs
     ];
+
     flake = {
       nixosModules = {
         alvr = import ./modules/nixos/alvr;
+
+        autoadb = import ./modules/nixos/autoadb;
 
         wivrn = import ./modules/nixos/wivrn;
       };
