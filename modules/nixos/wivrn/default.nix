@@ -7,11 +7,10 @@ let
   # For the application option to work with systemd PATH, we find the store binary path of
   # the package, concat all of the following strings, and then update the application attribute.
   # Application can either be a package or a list that has a package as the first element.
-  applicationConfig = cfg.config.json.application;
   applicationExists = builtins.hasAttr "application" cfg.config.json;
   applicationListNotEmpty = (
-    if builtins.isList applicationConfig
-    then if builtins.length applicationConfig == 0
+    if builtins.isList cfg.config.json.application
+    then if builtins.length cfg.config.json.application == 0
       then false
       else true
     else true
@@ -19,16 +18,16 @@ let
   applicationCheck = applicationExists && applicationListNotEmpty;
 
   applicationBinary = (
-    if builtins.isList applicationConfig
-    then (builtins.head applicationConfig)
-    else applicationConfig
+    if builtins.isList cfg.config.json.application
+    then (builtins.head cfg.config.json.application)
+    else cfg.config.json.application
   );
-  applicationStrings = builtins.tail applicationConfig;
+  applicationStrings = builtins.tail cfg.config.json.application;
 
   applicationPath = mkIf applicationCheck applicationBinary;
 
   applicationConcat = (
-    if builtins.isList applicationConfig
+    if builtins.isList cfg.config.json.application
     then builtins.concatStringsSep " " ([ (getExe applicationBinary) ] ++ applicationStrings)
     else (getExe applicationBinary)
   );
@@ -112,71 +111,23 @@ in
     };
 
     systemd.user = {
-      services = {
-        # The WiVRn server runs in a hardened service and starts it's applications in a different service
-        wivrn = {
-          description = "WiVRn XR runtime service";
-          unitConfig.ConditionUser = "!root";
-          serviceConfig = {
-            ExecStart = (
-              if cfg.highPriority
-              then "${config.security.wrapperDir}/wivrn-server"
-              else getExe cfg.package
-            ) + " --systemd"
-              + optionalString cfg.config.enable " -f ${configFile}";
-            # Hardening options
-            BindPaths = [
-              "/run/user/%U"
-            ];
-            CapabilityBoundingSet = [ "" ];
-            KeyringMode = "private";
-            LockPersonality = true;
-            MemoryDenyWriteExecute = true;
-            NoNewPrivileges = true;
-            PrivateTmp = true;
-            ProcSubset = "pid";
-            ProtectControlGroups = true;
-            ProtectClock = true;
-            ProtectHome = "tmpfs";
-            ProtectHostname = true;
-            ProtectKernelLogs = true;
-            ProtectKernelModules = true;
-            ProtectKernelTunables = true;
-            ProtectProc = "invisible";
-            ProtectSystem = "strict";
-            RemoveIPC = true;
-            RestrictAddressFamilies= [
-              "AF_UNIX"
-              "AF_INET"
-              "AF_INET6"
-              "AF_NETLINK"
-            ];
-            RestrictNamespaces = true;
-            RestrictRealtime = true;
-            RestrictSUIDSGID = true;
-          };
-          restartTriggers = [
-            cfg.package
-            configFile
-          ];
+      services.wivrn = {
+        description = "WiVRn XR runtime service module";
+        unitConfig.ConditionUser = "!root";
+        serviceConfig = {
+          ExecStart = (
+            if cfg.highPriority
+            then "${config.security.wrapperDir}/wivrn-server"
+            else getExe cfg.package
+          ) + optionalString cfg.config.enable " -f ${configFile}";
+          Restart = "no";
         };
-        wivrn-application = {
-          description = "WiVRn application service";
-          requires = [ "wivrn.service" ];
-          unitConfig.ConditionUser = "!root";
-          serviceConfig = {
-            ExecStart = (
-              (getExe cfg.package)
-              + " --application"
-              + optionalString cfg.config.enable " -f ${configFile}"
-            );
-            Restart = "on-failure";
-            RestartSec = 0;
-            PrivateTmp = true;
-          };
-          # We need to add the application to PATH so WiVRn can find it
-          path = [ applicationPath ];
-        };
+        # We need to add the application to PATH so WiVRn can find it
+        path = [ applicationPath ];
+        restartTriggers = [
+          cfg.package
+          configFile
+        ];
       };
     };
 
