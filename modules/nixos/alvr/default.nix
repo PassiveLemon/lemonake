@@ -1,8 +1,8 @@
 { config, pkgs, lib, ... }:
 
 let
+  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption maintainers;
   cfg = config.programs.alvr;
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption mdDoc types maintainers;
 in
 {
   options = {

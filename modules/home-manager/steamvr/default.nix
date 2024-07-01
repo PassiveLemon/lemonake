@@ -1,8 +1,8 @@
 { config, pkgs, lib, ... }:
 
 let
+  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression types maintainers;
   cfg = config.services.steamvr;
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption mdDoc literalExpression types maintainers;
 in
 {
   options = {
@@ -12,7 +12,7 @@ in
 
         path = mkOption {
           type = types.path;
-          description = mdDoc "The path within the runtime package. `pkgs.steam` will use the default steam runtime.";
+          description = "The path within the runtime package. `pkgs.steam` will use the default steam runtime.";
           default = "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR";
           example = literalExpression "${pkgs.opencomposite}/lib/opencomposite";
         };
@@ -22,7 +22,7 @@ in
 
         path = mkOption {
           type = types.path;
-          description = mdDoc "The active_runtime.json path to symlink to `XDG_CONFIG_HOME/openxr/1/active_runtime.json`";
+          description = "The active_runtime.json path to symlink to `XDG_CONFIG_HOME/openxr/1/active_runtime.json`";
           default = "";
           example = literalExpression "${pkgs.wivrn}/share/openxr/1/openxr_wivrn.json";
         };
