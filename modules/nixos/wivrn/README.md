@@ -47,7 +47,7 @@ You can install it in `hardware.opengl.extraPackages`.
 # configuration.nix
 {
   services.wivrn = {
-    enable = { type = bool; default = true; };
+    enable = { type = bool; default = false; };
     package = { type = package; default = pkgs.wivrn; };
     openFirewall = { type = bool; default = false; };
     highPriority = { type = bool; default = true; };

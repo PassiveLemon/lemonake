@@ -19,7 +19,7 @@
 # configuration.nix
 {
   services.autoadb = {
-    enable = { type = bool; default = true; };
+    enable = { type = bool; default = false; };
     package = { type = package; default = pkgs.autoadb; };
     command = { type = str; default = ""; };
     extraPackages = { type = listOf package; default = [ ]; };

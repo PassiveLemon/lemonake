@@ -1,5 +1,5 @@
 # SteamVR
-Custom module to allow you to override the SteamVR `openvrpaths.vrpath` runtime and system OpenXR `active_runtime.json`
+Custom module to allow you to override the SteamVR `openvrpaths.vrpath` runtime and user OpenXR `active_runtime.json`
 
 ## Example usage
 ```nix
@@ -24,14 +24,14 @@ Custom module to allow you to override the SteamVR `openvrpaths.vrpath` runtime 
 {
   services.steamvr = {
     runtimeOverride = {
-      enable = { type = bool; default = true; };
+      enable = { type = bool; default = false; };
       path = {
         type = path;
         default = "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR";
       };
     };
     activeRuntimeOverride = {
-      enable = { type = bool; default = true; };
+      enable = { type = bool; default = false; };
       path = { type = path; default = ""; };
     };
   };

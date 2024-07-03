@@ -1,5 +1,4 @@
 { config, pkgs, lib, ... }:
-
 let
   inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression types maintainers;
   cfg = config.services.steamvr;

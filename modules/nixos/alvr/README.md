@@ -18,7 +18,7 @@
 # configuration.nix
 {
   programs.alvr = {
-    enable = { type = bool; default = true; };
+    enable = { type = bool; default = false; };
     package = { type = package; default = pkgs.alvr; };
     openFirewall = { type = bool; default = false; };
   };
