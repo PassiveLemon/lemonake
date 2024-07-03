@@ -25,6 +25,7 @@ Modules: </br>
 - Home Manager (Do not use in NixOS configuration)
   - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
   - [`steamvr`](./modules/home-manager/steamvr/README.md)
+  - [`tmodloader-dotnet-fix`](./modules/home-manager/tmodloader-dotnetfix/README.md)
 
 Packages: </br>
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
