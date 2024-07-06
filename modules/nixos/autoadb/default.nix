@@ -3,9 +3,14 @@ let
   inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression types maintainers;
   cfg = config.services.autoadb;
 
-  shellScript = pkgs.writeScript "autoadbScript.sh" ''
+  # We make a separate shell script so we can just run that script and execute multiple commands
+  commandScript = pkgs.writeScript "commandScript.sh" ''
     #!${pkgs.runtimeShell}
-    autoadb ${cfg.command}
+    ${cfg.command}
+  '';
+  autoadbScript = pkgs.writeScript "autoadbScript.sh" ''
+    #!${pkgs.runtimeShell}
+    autoadb ${commandScript}
   '';
 in
 {
@@ -20,9 +25,12 @@ in
 
       command = mkOption {
         type = types.str;
-        description = "The command to run whenever a device connects to adb.";
+        description = "The command to run whenever a device connects to adb. Multiple commands on new lines can be entered.";
         default = "";
-        example = literalExpression "scrcpy -s '{}'";
+        example = literalExpression ''
+          adb shell settings put global sem_enhanced_cpu_responsiveness 1
+          scrcpy -s '{}'
+        '';
       };
 
       extraPackages = mkOption {
@@ -43,14 +51,15 @@ in
           StartLimitIntervalSec = 500;
         };
         serviceConfig = {
-          ExecStart = shellScript;
+          ExecStart = autoadbScript;
           Restart = "on-failure";
           RestartSec = "5s";
         };
         path = [ cfg.package pkgs.android-tools ] ++ cfg.extraPackages;
         restartTriggers = [
           cfg.package
-          shellScript
+          commandScript
+          autoadbScript
         ];
       };
     };
