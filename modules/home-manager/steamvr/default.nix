@@ -34,21 +34,18 @@ in
       "openvr/openvrpaths.vrpath" = mkIf cfg.runtimeOverride.enable {
         text = ''
           {
-            "config" :
-            [
+            "config": [
               "${config.home.homeDirectory}/.local/share/Steam/config"
             ],
-            "external_drivers" : null,
-            "jsonid" : "vrpathreg",
-            "log" :
-            [
+            "external_drivers": null,
+            "jsonid": "vrpathreg",
+            "log": [
               "${config.home.homeDirectory}/.local/share/Steam/logs"
             ],
-            "runtime" :
-            [
+            "runtime": [
               "${cfg.runtimeOverride.path}"
             ],
-            "version" : 1
+            "version": 1
           }
         '';
       };
