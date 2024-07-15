@@ -55,6 +55,7 @@ in
           Restart = "on-failure";
           RestartSec = "5s";
         };
+        wantedBy = [ "default.target" ];
         path = [ cfg.package pkgs.android-tools ] ++ cfg.extraPackages;
         restartTriggers = [
           cfg.package
