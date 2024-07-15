@@ -41,13 +41,13 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "wivrn";
-  version = "0.16";
+  version = "0.17";
 
   src = fetchFromGitHub {
     owner = "meumeu";
     repo = "wivrn";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-6qBx/DwzEU4f4JiyfOH7aaBwM4tP93TekgFqpgoQHMI=";
+    hash = "";
   };
 
   monado = applyPatches {
@@ -55,16 +55,18 @@ stdenv.mkDerivation (finalAttrs: {
       domain = "gitlab.freedesktop.org";
       owner = "monado";
       repo = "monado";
-      rev = "598080453545c6bf313829e5780ffb7dde9b79dc";
-      hash = "sha256-9LsKvIXAQpr+rpv8gDr4YfoNN+MSkXfccbIwLrWcIXg=";
+      rev = "28cb225be12a8a55c221f22103c235aff6de3883";
+      hash = "";
     };
 
     patches = [
-      ("${finalAttrs.src}/patches/monado/0001-c-multi-disable-dropping-of-old-frames.patch")
-      ("${finalAttrs.src}/patches/monado/0002-ipc-server-Always-listen-to-stdin.patch")
-      ("${finalAttrs.src}/patches/monado/0003-c-multi-Don-t-log-frame-time-diff.patch")
+      "${finalAttrs.src}/patches/monado/0001-c-multi-disable-dropping-of-old-frames.patch"
+      "${finalAttrs.src}/patches/monado/0002-ipc-server-Always-listen-to-stdin.patch"
+      "${finalAttrs.src}/patches/monado/0003-c-multi-Don-t-log-frame-time-diff.patch"
     ];
   };
+
+  strictDeps = true;
 
   postUnpack = ''
     # Let's make sure our monado source revision matches what is used by WiVRn upstream
@@ -136,7 +138,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "An OpenXR streaming application to a standalone headset";
     homepage = "https://github.com/Meumeu/WiVRn/";
-    changelog = "https://github.com/Meumeu/WiVRn/releases/tag/v${finalAttrs.version}";
+    changelog = "https://github.com/Meumeu/WiVRn/releases/";
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;

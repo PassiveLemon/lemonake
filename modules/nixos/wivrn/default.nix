@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault optional optionalString optionalAttrs isDerivation getExe literalExpression maintainers;
+  inherit (lib) mkAliasOptionModule mkIf mkEnableOption mkPackageOption mkOption mkDefault optional optionalString optionalAttrs isDerivation recursiveUpdate getExe literalExpression types maintainers;
   cfg = config.services.wivrn;
   configFormat = pkgs.formats.json { };
 
@@ -10,16 +10,14 @@ let
   applicationExists = builtins.hasAttr "application" cfg.config.json;
   applicationListNotEmpty = (
     if builtins.isList cfg.config.json.application
-    then if builtins.length cfg.config.json.application == 0
-      then false
-      else true
+    then (builtins.length cfg.config.json.application) != 0
     else true
   );
   applicationCheck = applicationExists && applicationListNotEmpty;
 
   applicationBinary = (
     if builtins.isList cfg.config.json.application
-    then (builtins.head cfg.config.json.application)
+    then builtins.head cfg.config.json.application
     else cfg.config.json.application
   );
   applicationStrings = builtins.tail cfg.config.json.application;
@@ -31,7 +29,7 @@ let
     then builtins.concatStringsSep " " ([ (getExe applicationBinary) ] ++ applicationStrings)
     else (getExe applicationBinary)
   );
-  applicationUpdate = cfg.config.json // optionalAttrs applicationCheck { application = applicationConcat; };
+  applicationUpdate = recursiveUpdate cfg.config.json (optionalAttrs applicationCheck { application = applicationConcat; });
   configFile = configFormat.generate "config.json" applicationUpdate;
 in
 {
@@ -51,7 +49,17 @@ in
         runtime in a writable XDG_CONFIG_DIRS location like `~/.config`
       '' // { default = true; };
 
-      highPriority = mkEnableOption "high priority capability for asynchronous reprojection" // { default = true; };
+      autoStart = mkEnableOption "start the service by default";
+
+      monadoEnvironment = mkOption {
+        type = types.attrs;
+        description = "Environment variables to be passed to the Monado environment.";
+        default = {
+          XRT_COMPOSITOR_LOG = "debug";
+          XRT_PRINT_OPTIONS = "on";
+          IPC_EXIT_ON_DISCONNECT = "off";
+        };
+      };
 
       config = {
         enable = mkEnableOption "configuration for WiVRn";
@@ -89,10 +97,6 @@ in
     };
   };
 
-  imports = [
-    (mkAliasOptionModule [ "services" "wivrn" "monadoEnvironment" ] [ "systemd" "user" "services" "wivrn" "environment" ])
-  ];
-
   config = mkIf cfg.enable {
     assertions = [
       (mkIf applicationCheck {
@@ -101,44 +105,68 @@ in
       })
     ];
 
-    security.wrappers."wivrn-server" = mkIf cfg.highPriority {
-      setuid = false;
-      owner = "root";
-      group = "root";
-      # We need cap_sys_nice for asynchronous reprojection
-      capabilities = "cap_sys_nice+eip";
-      source = getExe cfg.package;
-    };
-
     systemd.user = {
-      services.wivrn = {
-        description = "WiVRn XR runtime service module";
-        unitConfig.ConditionUser = "!root";
-        serviceConfig = {
-          ExecStart = (
-            if cfg.highPriority
-            then "${config.security.wrapperDir}/wivrn-server"
-            else getExe cfg.package
-          ) + optionalString cfg.config.enable " -f ${configFile}";
-          Restart = "no";
+      services = {
+        # The WiVRn server runs in a hardened service and starts the applications in a different service
+        wivrn = {
+          description = "WiVRn XR runtime service";
+          environment = {
+            # Default options
+            # https://gitlab.freedesktop.org/monado/monado/-/blob/598080453545c6bf313829e5780ffb7dde9b79dc/src/xrt/targets/service/monado.in.service#L12
+            XRT_COMPOSITOR_LOG = "debug";
+            XRT_PRINT_OPTIONS = "on";
+            IPC_EXIT_ON_DISCONNECT = "off";
+          } // cfg.monadoEnvironment;
+          serviceConfig = {
+            ExecStart = (
+              (getExe cfg.package)
+              + " --systemd"
+              + optionalString cfg.config.enable " -f ${configFile}"
+            );
+            # Hardening options
+            CapabilityBoundingSet = [ "CAP_SYS_NICE" ];
+            AmbientCapabilities = [ "CAP_SYS_NICE" ];
+            LockPersonality = true;
+            NoNewPrivileges = true;
+            PrivateTmp = true;
+            ProtectClock = true;
+            ProtectControlGroups = true;
+            ProtectKernelLogs = true;
+            ProtectKernelModules = true;
+            ProtectKernelTunables = true;
+            ProtectProc = "invisible";
+            ProtectSystem = "strict";
+            RemoveIPC = true;
+            RestrictNamespaces = true;
+            RestrictSUIDSGID = true;
+          };
+          wantedBy = mkIf cfg.autoStart [ "default.target" ];
+          restartTriggers = [
+            cfg.package
+            configFile
+          ];
         };
-        # We need to add the application to PATH so WiVRn can find it
-        path = [ applicationPath ];
-        restartTriggers = [
-          cfg.package
-          configFile
-        ];
+        wivrn-application = {
+          description = "WiVRn application service";
+          requires = [ "wivrn.service" ];
+          serviceConfig = {
+            ExecStart = (
+              (getExe cfg.package)
+              + " --application"
+              + optionalString cfg.config.enable " -f ${configFile}"
+            );
+            Restart = "on-failure";
+            RestartSec = 0;
+            PrivateTmp = true;
+          };
+          wantedBy = mkIf cfg.autoStart [ "default.target" ];
+          # We need to add the application to PATH so WiVRn can find it
+          path = [ applicationPath ];
+        };
       };
     };
 
     services = {
-      wivrn.monadoEnvironment = {
-        # Default options
-        # https://gitlab.freedesktop.org/monado/monado/-/blob/598080453545c6bf313829e5780ffb7dde9b79dc/src/xrt/targets/service/monado.in.service#L12
-        XRT_COMPOSITOR_LOG = mkDefault "debug";
-        XRT_PRINT_OPTIONS = mkDefault "on";
-        IPC_EXIT_ON_DISCONNECT = mkDefault "off";
-      };
       # WiVRn can be used with some wired headsets so we include xr-hardware
       udev.packages = with pkgs; [
         android-udev-rules
@@ -159,7 +187,10 @@ in
     };
 
     environment = {
-      systemPackages = [ cfg.package ];
+      systemPackages = [
+        cfg.package
+        applicationPath
+      ];
       pathsToLink = [ "/share/openxr" ];
       etc."xdg/openxr/1/active_runtime.json" = mkIf cfg.defaultRuntime {
         source = "${cfg.package}/share/openxr/1/openxr_wivrn.json";
