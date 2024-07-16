@@ -14,6 +14,7 @@
 , libxkbcommon
 , nix-update-script
 , openssl
+, SDL2
 , vulkan-loader
 , wayland
 , x264
@@ -22,18 +23,18 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "alvr";
-  version = "20.8.1";
+  version = "20.9.1";
 
   src = fetchzip {
     url = "https://github.com/alvr-org/ALVR/releases/download/v${finalAttrs.version}/alvr_streamer_linux.tar.gz";
-    hash = "sha256-8bQpEnzK4ZGE5P49Gh/fmxgyCBFTzD511q6aZxe0B/Y=";
+    hash = "sha256-S8GeUskAqxzPqKC5XDiRDezV++vestlHLAzK001wkXQ=";
   };
 
   alvrSrc = fetchFromGitHub {
     owner = "alvr-org";
     repo = "ALVR";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-HRXBagh6NClm0269ip0SlhOWCoI8CQXEtr7veSRgvwE=";
+    hash = "sha256-kw/UGh9nxZMVnvxyXV4CUm3HZegyjWolNoHHNindc5s=";
   };
 
   nativeBuildInputs = [
@@ -46,6 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     libva
     libvdpau
     vulkan-loader
+    SLD2
   ];
 
   runtimeDependencies = [
