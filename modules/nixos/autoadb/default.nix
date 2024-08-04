@@ -1,16 +1,12 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression types maintainers;
+  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption getExe literalExpression types maintainers;
   cfg = config.services.autoadb;
 
   # We make a separate shell script so we can just run that script and execute multiple commands
   commandScript = pkgs.writeScript "commandScript.sh" ''
     #!${pkgs.runtimeShell}
     ${cfg.command}
-  '';
-  autoadbScript = pkgs.writeScript "autoadbScript.sh" ''
-    #!${pkgs.runtimeShell}
-    autoadb ${commandScript}
   '';
 in
 {
@@ -51,7 +47,10 @@ in
           StartLimitIntervalSec = 500;
         };
         serviceConfig = {
-          ExecStart = autoadbScript;
+          ExecStart = (
+            (getExe cfg.package)
+            + " ${commandScript}"
+          );
           Restart = "on-failure";
           RestartSec = "5s";
         };
@@ -60,7 +59,6 @@ in
         restartTriggers = [
           cfg.package
           commandScript
-          autoadbScript
         ];
       };
     };
@@ -71,3 +69,4 @@ in
   };
   meta.maintainers = with maintainers; [ passivelemon ];
 }
+
