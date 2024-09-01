@@ -20,6 +20,9 @@
 , x264
 , xorg
 , xvidcore
+, config
+, cudaPackages
+, cudaSupport ? config.cudaSupport
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "alvr";
@@ -63,6 +66,13 @@ stdenv.mkDerivation (finalAttrs: {
     xorg.libXcursor
     xorg.libxcb
     xorg.libXi
+  ]
+  ++ lib.optionals cudaSupport [
+    cudaPackages.cuda_nvcc
+    cudaPackages.cuda_cudart
+    cudaPackages.libnpp
+    libva
+    libdrm
   ];
 
   installPhase = ''
