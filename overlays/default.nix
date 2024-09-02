@@ -8,8 +8,8 @@
         archive = getPackage "alvr-archive" prev;
       in
       prev.callPackage ../pkgs/alvr {
-        inherit (package) version src;
-        alvrSrc = archive.src;
+        inherit (archive) version src;
+        alvrSrc = package.src;
       };
 
       animdl = lib.warn "The package animdl has been renamed to animdl-git and may be removed in the future" animdl-git;
@@ -65,12 +65,21 @@
       wivrn = let
         package = getPackage "wivrn" prev;
       in
-      prev.callPackage ../pkgs/wivrn { inherit (package) version src; };
+      prev.callPackage ../pkgs/wivrn {
+        inherit (package) version src;
+        # Kinda sucks that we have to do this but the Monado version is only occasionally updated
+        monadoVersion = "dfc602288ab05131584a3f2be18031a13fccd061";
+        monadoHash = "sha256-4HZs3cgqOWWpXQb5kfG513f7+znO0hJvAbj2rxrqmeI=";
+      };
 
       wivrn-git = let
         package = getPackage "wivrn-git" prev;
       in
-      wivrn.override { inherit (package) version src; };
+      wivrn.override {
+        inherit (package) version src;
+        monadoVersion = "2d3978b1b0d0f1ce9fc20f435c7080a07124362a";
+        monadoHash = "sha256-1qnokZYCA4h88eQmTpKYnHczeLh19Pjw2fM6y9rzn/Q=";
+      };
     };
   };
 }

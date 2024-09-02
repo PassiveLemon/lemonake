@@ -1,5 +1,7 @@
 { version
 , src
+, monadoVersion
+, monadoHash
 , config
 , lib
 , stdenv
@@ -51,8 +53,8 @@ stdenv.mkDerivation (finalAttrs: {
       domain = "gitlab.freedesktop.org";
       owner = "monado";
       repo = "monado";
-      rev = "dfc602288ab05131584a3f2be18031a13fccd061";
-      hash = "sha256-4HZs3cgqOWWpXQb5kfG513f7+znO0hJvAbj2rxrqmeI=";
+      rev = monadoVersion;
+      hash = monadoHash;
     };
 
     patches = [
