@@ -1,4 +1,6 @@
-{ lib
+{ version
+, src
+, lib
 , buildPythonApplication
 , fetchFromGitHub
 , evdev
@@ -7,14 +9,7 @@
 }:
 buildPythonApplication rec {
   pname = "hd2pystratmacro";
-  version = "1.0.3";
-
-  src = fetchFromGitHub {
-    owner = "passivelemon";
-    repo = "hd2pystratmacro";
-    rev = version;
-    hash = "sha256-dinijveo5/FrJdLWildK7JwY9ZciAJ+PUWvFw5dUluA=";
-  };
+  inherit version src;
 
   nativeBuildInputs = [
     setuptools
@@ -37,3 +32,4 @@ buildPythonApplication rec {
     mainProgram = "hd2pystratmacro";
   };
 }
+

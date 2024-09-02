@@ -9,10 +9,25 @@
 
   outputs = { self, ... } @ inputs:
   inputs.flake-parts.lib.mkFlake { inherit inputs; } {
-    imports = [
-      ./pkgs
-    ];
+    imports = [ ./overlays ];
+    systems = [ "x86_64-linux" ];
 
+    _module.args.getPackage = pname: pkgs: (pkgs.callPackage ./_sources/generated.nix { }).${pname};
+
+    perSystem = { lib, system, ... }:
+    let
+      pkgs = import inputs.nixpkgs {
+        inherit system;
+        allowUnfree = true;
+        overlays = [ self.overlays.default ];
+      };
+    in
+    {
+      _module.args.pkgs = pkgs;
+
+      packages = self.overlays.linux pkgs pkgs;
+    };
+    
     flake = {
       nixosModules = {
         alvr = import ./modules/nixos/alvr;
@@ -29,3 +44,4 @@
     };
   };
 }
+

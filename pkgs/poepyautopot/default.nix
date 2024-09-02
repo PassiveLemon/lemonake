@@ -1,4 +1,6 @@
-{ lib
+{ version
+, src
+, lib
 , buildPythonApplication
 , fetchFromGitHub
 , colorama
@@ -10,14 +12,7 @@
 }:
 buildPythonApplication rec {
   pname = "poepyautopot";
-  version = "1.3.6";
-
-  src = fetchFromGitHub {
-    owner = "passivelemon";
-    repo = "poepyautopot";
-    rev = version;
-    hash = "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=";
-  };
+  inherit version src;
 
   nativeBuildInputs = [
     setuptools
@@ -43,3 +38,4 @@ buildPythonApplication rec {
     mainProgram = "poepyautopot";
   };
 }
+

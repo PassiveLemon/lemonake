@@ -1,4 +1,6 @@
-{ config
+{ version
+, src
+, config
 , lib
 , stdenv
 , fetchFromGitHub
@@ -42,14 +44,7 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "wivrn";
-  version = "0.18";
-
-  src = fetchFromGitHub {
-    owner = "wivrn";
-    repo = "wivrn";
-    rev = "v${finalAttrs.version}";
-    hash = "sha256-JFiDjx2iQfBDD1yRWHPx0UiIAqEk8+nzf967o/HXYqs=";
-  };
+  inherit version src;
 
   monado = applyPatches {
     src = fetchFromGitLab {

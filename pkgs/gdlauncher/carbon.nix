@@ -1,8 +1,8 @@
-{ lib
+{ version
+, hash
+, lib
 , appimageTools
 , fetchurl
-, version
-, hash
 }:
 let
   pname = "gdlauncher-carbon";
@@ -35,3 +35,4 @@ appimageTools.wrapType2 {
     mainProgram = "gdlauncher-carbon";
   };
 }
+

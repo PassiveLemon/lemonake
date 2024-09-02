@@ -1,8 +1,8 @@
-{ lib
+{ version
+, hash
+, lib
 , appimageTools
 , fetchurl
-, version
-, hash
 }:
 let
   pname = "gdlauncher";
@@ -34,3 +34,4 @@ appimageTools.wrapType2 {
     mainProgram = "gdlauncher";
   };
 }
+

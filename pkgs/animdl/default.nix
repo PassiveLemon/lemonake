@@ -1,4 +1,6 @@
-{ lib
+{ version
+, src
+, lib
 , buildPythonApplication
 , fetchFromGitHub
 , poetry-core
@@ -19,16 +21,9 @@
 }:
 buildPythonApplication {
   pname = "animdl";
-  version = "1.7.27";
-  format = "pyproject";
+  inherit version src;
 
-  src = fetchFromGitHub {
-    owner = "justfoolingaround";
-    repo = "animdl";
-    # Using the commit hash because upstream does not have releases. https://github.com/justfoolingaround/animdl/issues/277
-    rev = "c7c3b79198e66695e0bbbc576f9d9b788616957f";
-    hash = "sha256-kn6vCCFhJNlruxoO+PTHVIwTf1E5j1aSdBhrFuGzUq4=";
-  };
+  format = "pyproject";
 
   nativeBuildInputs = [
     poetry-core
@@ -75,3 +70,4 @@ buildPythonApplication {
     mainProgram = "animdl";
   };
 }
+

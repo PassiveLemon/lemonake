@@ -1,0 +1,40 @@
+[alvr]
+src.github = "alvr-org/ALVR"
+fetch.github = "alvr-org/ALVR"
+
+[alvr-archive]
+src.github = "alvr-org/ALVR"
+fetch.tarball = "https://github.com/alvr-org/ALVR/releases/download/$ver/alvr_streamer_linux.tar.gz"
+
+[animdl-git]
+src.git = "https://github.com/justfoolingaround/animdl"
+fetch.github = "justfoolingaround/animdl"
+
+[hd2pystratmacro]
+src.github = "PassiveLemon/hd2pystratmacro"
+fetch.github = "PassiveLemon/hd2pystratmacro"
+
+[hd2pystratmacro-git]
+src.git = "https://github.com/PassiveLemon/hd2pystratmacro"
+fetch.github = "PassiveLemon/hd2pystratmacro"
+
+[monado-vulkan-layers-git]
+src.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers"
+fetch.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
+
+[poepyautopot]
+src.github = "PassiveLemon/poepyautopot"
+fetch.github = "PassiveLemon/poepyautopot"
+
+[poepyautopot-git]
+src.git = "https://github.com/PassiveLemon/poepyautopot"
+fetch.github = "PassiveLemon/poepyautopot"
+
+[wivrn]
+src.github = "WiVRn/WiVRn"
+fetch.github = "WiVRn/WiVRn"
+
+[wivrn-git]
+src.git = "https://github.com/WiVRn/WiVRn"
+fetch.github = "WiVRn/WiVRn"
+

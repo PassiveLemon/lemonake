@@ -1,4 +1,7 @@
-{ lib
+{ version
+, src
+, alvrSrc
+, lib
 , stdenv
 , fetchzip
 , fetchFromGitHub
@@ -26,19 +29,7 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "alvr";
-  version = "20.9.1";
-
-  src = fetchzip {
-    url = "https://github.com/alvr-org/ALVR/releases/download/v${finalAttrs.version}/alvr_streamer_linux.tar.gz";
-    hash = "sha256-S8GeUskAqxzPqKC5XDiRDezV++vestlHLAzK001wkXQ=";
-  };
-
-  alvrSrc = fetchFromGitHub {
-    owner = "alvr-org";
-    repo = "ALVR";
-    rev = "v${finalAttrs.version}";
-    hash = "sha256-kw/UGh9nxZMVnvxyXV4CUm3HZegyjWolNoHHNindc5s=";
-  };
+  inherit version src alvrSrc;
 
   nativeBuildInputs = [
     autoPatchelfHook
@@ -98,3 +89,4 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "alvr_dashboard";
   };
 })
+

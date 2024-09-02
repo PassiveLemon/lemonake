@@ -1,10 +1,9 @@
-# lemonake </br>
+# lemonake
+This is my collection of packages and modules in a flake.
+Some of these are already in Nixpkgs or in the process of getting merged but I provide faster updates here.
 
-This is my collection of packages and modules in a flake. </br>
-Some of these are already in Nixpkgs or in the process of getting merged but I provide faster updates here. </br>
-
-## Usage </br>
-Add the flake to your inputs: </br>
+## Usage
+Add the flake to your inputs:
 ```nix
 # flake.nix
 {
@@ -16,8 +15,11 @@ Add the flake to your inputs: </br>
 }
 ```
 
-## Features </br>
-Modules: </br>
+## Features
+Run `nix flake show github:passivelemon/lemonake` to see all outputs.
+- Note: Home Manager modules will show as unknown.
+
+Modules:
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
   - [`alvr`](./modules/nixos/alvr/README.md) (24.05)
@@ -28,27 +30,30 @@ Modules: </br>
   - [`steamvr`](./modules/home-manager/steamvr/README.md)
   - [`tmodloader-dotnet-fix`](./modules/home-manager/tmodloader-dotnetfix/README.md)
 
-Packages: </br>
+Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
 - `alvr` (24.05)
-- `animdl` (24.05)
+- `animdl` (24.05, Git)
 - `gdlauncher` (`gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-carbon-unstable`
 - `gdlauncher-legacy`
-- `gfm` (For use with TILP2)
-- `hd2pystratmacro`
-- `monado-vulkan-layers`
-- `poepyautopot`
+- `gfm`
+- `hd2pystratmacro` (Git)
+- `monado-vulkan-layers` (Git)
+- `poepyautopot` (Git)
 - `tilp2`
-- `wivrn` (https://github.com/NixOS/nixpkgs/pull/316975)
+- `wivrn` (Git, https://github.com/NixOS/nixpkgs/pull/316975)
 
-Run `nix flake show github:passivelemon/lemonake` to see all outputs.
-- Note: Home Manager modules will show as unknown.
+If it has a ... in parenthesis:
+- NixOS version: It was merged in that release.
+- Git: It either is a git or has a git package.
+- PR: It is in an open pull request.
+- Package: It is an alias to that package.
 
-The only architecture currently supported is `x86_64-linux`. Others may be supported in the future. </br>
+The only architecture currently supported is `x86_64-linux`. Others may be supported in the future.
 
-## Binary cache:
+## Binary cache
 ```nix
 # flake.nix
 {
@@ -62,3 +67,7 @@ The only architecture currently supported is `x86_64-linux`. Others may be suppo
   };
 }
 ```
+
+## Credits
+- [moni-dz/nixpkgs-f2k](https://github.com/moni-dz/nixpkgs-f2k/) for inspiration
+

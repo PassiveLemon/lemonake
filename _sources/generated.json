@@ -1,0 +1,195 @@
+{
+    "alvr": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "alvr",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "alvr-org",
+            "repo": "ALVR",
+            "rev": "v20.10.0",
+            "sha256": "sha256-1kguRVzGTqUh/LLh+u6MBuypGrK7aZ2ZO1ZimNcS9TE=",
+            "type": "github"
+        },
+        "version": "v20.10.0"
+    },
+    "alvr-archive": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "alvr-archive",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-9PS63eF+39yXztOvV+Z6LJt0K20EUy9/8H1GsA+e8Jg=",
+            "type": "tarball",
+            "url": "https://github.com/alvr-org/ALVR/releases/download/v20.10.0/alvr_streamer_linux.tar.gz"
+        },
+        "version": "v20.10.0"
+    },
+    "animdl-git": {
+        "cargoLocks": null,
+        "date": "2023-10-17",
+        "extract": null,
+        "name": "animdl-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "justfoolingaround",
+            "repo": "animdl",
+            "rev": "c7c3b79198e66695e0bbbc576f9d9b788616957f",
+            "sha256": "sha256-kn6vCCFhJNlruxoO+PTHVIwTf1E5j1aSdBhrFuGzUq4=",
+            "type": "github"
+        },
+        "version": "c7c3b79198e66695e0bbbc576f9d9b788616957f"
+    },
+    "hd2pystratmacro": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "hd2pystratmacro",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "hd2pystratmacro",
+            "rev": "1.0.2",
+            "sha256": "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=",
+            "type": "github"
+        },
+        "version": "1.0.2"
+    },
+    "hd2pystratmacro-git": {
+        "cargoLocks": null,
+        "date": "2024-05-18",
+        "extract": null,
+        "name": "hd2pystratmacro-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "hd2pystratmacro",
+            "rev": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470",
+            "sha256": "sha256-O2m+FLGmNadou6+/5qzPbxOgJC1MT48BDkTS29E7TO0=",
+            "type": "github"
+        },
+        "version": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470"
+    },
+    "monado-vulkan-layers-git": {
+        "cargoLocks": null,
+        "date": "2024-02-21",
+        "extract": null,
+        "name": "monado-vulkan-layers-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2",
+            "sha256": "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=",
+            "type": "git",
+            "url": "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
+        },
+        "version": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2"
+    },
+    "poepyautopot": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "poepyautopot",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "poepyautopot",
+            "rev": "1.3.6",
+            "sha256": "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=",
+            "type": "github"
+        },
+        "version": "1.3.6"
+    },
+    "poepyautopot-git": {
+        "cargoLocks": null,
+        "date": "2024-05-18",
+        "extract": null,
+        "name": "poepyautopot-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "poepyautopot",
+            "rev": "c0bff056ee6b7be698104b996e77a32e8c89fded",
+            "sha256": "sha256-m8c3UwrLshlKsHM5xbJUCBCkC+QKBU4E7XJcequ1w5s=",
+            "type": "github"
+        },
+        "version": "c0bff056ee6b7be698104b996e77a32e8c89fded"
+    },
+    "wivrn": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "wivrn",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "WiVRn",
+            "repo": "WiVRn",
+            "rev": "v0.18",
+            "sha256": "sha256-JFiDjx2iQfBDD1yRWHPx0UiIAqEk8+nzf967o/HXYqs=",
+            "type": "github"
+        },
+        "version": "v0.18"
+    },
+    "wivrn-git": {
+        "cargoLocks": null,
+        "date": "2024-09-01",
+        "extract": null,
+        "name": "wivrn-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "WiVRn",
+            "repo": "WiVRn",
+            "rev": "71f22135ef394fd68aa3c28dfb7c2026cdfc5a6b",
+            "sha256": "sha256-cXioHA5XTO+9weLDe00UxkG9l6rcgucgEmWvZQoLbK4=",
+            "type": "github"
+        },
+        "version": "71f22135ef394fd68aa3c28dfb7c2026cdfc5a6b"
+    }
+}
