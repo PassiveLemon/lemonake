@@ -1,0 +1,29 @@
+name: Automatic Update
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - uses: gautamkrishnar/keepalive-workflow@v2
+
+    - name: Install nix
+      uses: cachix/install-nix-action@v27
+      with:
+        nix-path: nixpkgs=channel:nixpkgs-unstable
+        extra_nix_config: |
+          experimental-features = nix-command flakes
+
+    - name: Update flake and sources
+    - run: nix flake update
+    - run: nix run github:berberman/nvfetcher
+
+    - name: Commit
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Chore: Update flake and sources"
+
