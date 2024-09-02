@@ -31,5 +31,6 @@ jobs:
         name: passivelemon
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
       # https://www.reddit.com/r/NixOS/comments/vohopf/is_there_an_easy_way_to_build_all_the_packages_of/
+      # Potential future solution: https://github.com/NixOS/nix/issues/7165
     - run: nix flake show --json | jq '.packages."x86_64-linux"|keys[]' | xargs -I {} nix build .#{}
 
