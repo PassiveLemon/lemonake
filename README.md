@@ -1,6 +1,9 @@
 # lemonake
 This is my collection of packages and modules in a flake.
+
 Some of these are already in Nixpkgs or in the process of getting merged but I provide faster updates here.
+
+Packages and the flake are automatically updated every day and pushed to Cachix.
 
 ## Usage
 Add the flake to your inputs:
