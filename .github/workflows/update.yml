@@ -15,7 +15,7 @@ jobs:
     - name: Install nix
       uses: cachix/install-nix-action@v27
       with:
-        nix-path: nixpkgs=channel:nixpkgs-unstable
+        nix_path: nixpkgs=channel:nixpkgs-unstable
         extra_nix_config: |
           experimental-features = nix-command flakes
 
