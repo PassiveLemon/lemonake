@@ -20,7 +20,7 @@ jobs:
           experimental-features = nix-command flakes
 
     - name: Update flake and sources
-    - run: | 
+      run: | 
         nix flake update
         nix run github:berberman/nvfetcher
 
