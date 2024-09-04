@@ -15,6 +15,7 @@
             "repo": "ALVR",
             "rev": "v20.10.0",
             "sha256": "sha256-1kguRVzGTqUh/LLh+u6MBuypGrK7aZ2ZO1ZimNcS9TE=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v20.10.0"
@@ -49,6 +50,7 @@
             "repo": "animdl",
             "rev": "c7c3b79198e66695e0bbbc576f9d9b788616957f",
             "sha256": "sha256-kn6vCCFhJNlruxoO+PTHVIwTf1E5j1aSdBhrFuGzUq4=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c7c3b79198e66695e0bbbc576f9d9b788616957f"
@@ -69,6 +71,7 @@
             "repo": "hd2pystratmacro",
             "rev": "1.0.2",
             "sha256": "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.0.2"
@@ -89,6 +92,7 @@
             "repo": "hd2pystratmacro",
             "rev": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470",
             "sha256": "sha256-O2m+FLGmNadou6+/5qzPbxOgJC1MT48BDkTS29E7TO0=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470"
@@ -107,6 +111,7 @@
             "name": null,
             "rev": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2",
             "sha256": "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
         },
@@ -128,6 +133,7 @@
             "repo": "poepyautopot",
             "rev": "1.3.6",
             "sha256": "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.3.6"
@@ -148,6 +154,7 @@
             "repo": "poepyautopot",
             "rev": "c0bff056ee6b7be698104b996e77a32e8c89fded",
             "sha256": "sha256-m8c3UwrLshlKsHM5xbJUCBCkC+QKBU4E7XJcequ1w5s=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c0bff056ee6b7be698104b996e77a32e8c89fded"
@@ -168,13 +175,14 @@
             "repo": "WiVRn",
             "rev": "v0.18",
             "sha256": "sha256-JFiDjx2iQfBDD1yRWHPx0UiIAqEk8+nzf967o/HXYqs=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.18"
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-09-01",
+        "date": "2024-09-04",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -186,10 +194,11 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "71f22135ef394fd68aa3c28dfb7c2026cdfc5a6b",
-            "sha256": "sha256-cXioHA5XTO+9weLDe00UxkG9l6rcgucgEmWvZQoLbK4=",
+            "rev": "a4522d2ad7569013ab612e736cbc56e10afecf23",
+            "sha256": "sha256-OUBZ4ujRUHrfPBt4UtpRt76XOZU+AiEjXiz+YaiNKZQ=",
+            "sparseCheckout": [],
             "type": "github"
         },
-        "version": "71f22135ef394fd68aa3c28dfb7c2026cdfc5a6b"
+        "version": "a4522d2ad7569013ab612e736cbc56e10afecf23"
     }
 }
