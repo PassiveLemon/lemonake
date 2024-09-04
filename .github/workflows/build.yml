@@ -5,6 +5,7 @@ on:
       - 'master'
     paths:
       - '.github/workflows/**'
+      - '_sources/**'
       - 'pkgs/**'
       - 'flake.lock'
 
