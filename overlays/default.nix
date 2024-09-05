@@ -1,8 +1,12 @@
-{ self, lib, getPackage, ... }: {
+{ self, lib, ... }:
+let
+  getPackage = pname: pkgs: (pkgs.callPackage ../_sources/generated.nix { }).${pname};
+in
+{
   flake.overlays = {
     default = self.overlays.linux;
-  
-    linux = _: prev: rec {
+
+    linux = final: prev: {
       alvr = let
         package = getPackage "alvr" prev;
         archive = getPackage "alvr-archive" prev;
@@ -12,28 +16,36 @@
         alvrSrc = package.src;
       };
 
-      animdl = lib.warn "The package animdl has been renamed to animdl-git and may be removed in the future" animdl-git;
+      animdl = lib.warn "The package animdl has been renamed to animdl-git. This alias may be removed in the future" final.animdl-git;
 
       animdl-git = let
         package = getPackage "animdl-git" prev;
       in
       prev.python3Packages.callPackage ../pkgs/animdl { inherit (package) version src; };
 
-      gdlauncher-legacy = prev.callPackage ../pkgs/gdlauncher/legacy.nix {
-        version = "1.1.30";
-        hash = "sha256-4cXT3exhoMAK6gW3Cpx1L7cm9Xm0FK912gGcRyLYPwM=";
-      };
-      gdlauncher-carbon = prev.callPackage ../pkgs/gdlauncher/carbon.nix {
-        version = "2.0.20";
-        hash = "sha256-tI9RU8qO3MHbImOGw2Wl1dksNbhqrYFyGemqms8aAio=";
-      };
-      gdlauncher-carbon-unstable = gdlauncher-carbon.override {
-        version = "2.0.20";
-        hash = "sha256-tI9RU8qO3MHbImOGw2Wl1dksNbhqrYFyGemqms8aAio=";
-      };
-      gdlauncher = gdlauncher-carbon;
+      gdlauncher-legacy = let
+        package = getPackage "gdlauncher-legacy" prev;
+      in
+      prev.callPackage ../pkgs/gdlauncher/legacy.nix { inherit (package) version src; };
 
-      gfm = prev.callPackage ../pkgs/gfm { };
+      gdlauncher-carbon = let
+        package = getPackage "gdlauncher-carbon" prev;
+      in
+      prev.callPackage ../pkgs/gdlauncher/carbon.nix { inherit (package) version src; };
+
+      gdlauncher-carbon-unstable = lib.warn "The package gdlauncher-carbon-unstable has been removed. It is aliased to gdlauncher-carbon and may be removed in the future." final.gdlauncher-carbon;
+
+      gdlauncher = final.gdlauncher-carbon;
+
+      gfm = let
+        package = getPackage "tilp2-gfm" prev;
+      in
+      prev.callPackage ../pkgs/gfm { inherit (package) version src; };
+
+      gfm-git = let
+        package = getPackage "tilp2-gfm-git" prev;
+      in
+      final.gfm.override { inherit (package) version src; };
 
       hd2pystratmacro = let
         package = getPackage "hd2pystratmacro" prev;
@@ -43,7 +55,9 @@
       hd2pystratmacro-git = let
         package = getPackage "hd2pystratmacro-git" prev;
       in
-      hd2pystratmacro.override { inherit (package) version src; };
+      final.hd2pystratmacro.override { inherit (package) version src; };
+
+      monado-vulkan-layers = lib.warn "The package monado-vulkan-layers has been renamed to monado-vulkan-layers-git. This alias may be removed in the future" final.monado-vulkan-layers-git;
 
       monado-vulkan-layers-git = let
         package = getPackage "monado-vulkan-layers-git" prev;
@@ -54,31 +68,44 @@
         package = getPackage "poepyautopot" prev;
       in
       prev.python3Packages.callPackage ../pkgs/poepyautopot { inherit (package) version src; };
-      
+
       poepyautopot-git = let
         package = getPackage "poepyautopot-git" prev;
       in
-      poepyautopot.override { inherit (package) version src; };
+      final.poepyautopot.override { inherit (package) version src; };
 
-      tilp2 = prev.callPackage ../pkgs/tilp2 { inherit gfm; };
+      tilp2 = let
+        package = getPackage "tilp2-gfm" prev;
+      in
+      prev.callPackage ../pkgs/tilp2 {
+        inherit (package) version src;
+        gfm = final.gfm;
+      };
+
+      tilp2-git = let
+        package = getPackage "tilp2-gfm-git" prev;
+      in
+      final.tilp2.override {
+        inherit (package) version src;
+        gfm = final.gfm-git;
+      };
 
       wivrn = let
         package = getPackage "wivrn" prev;
+        monado = getPackage "wivrn-monado" prev;
       in
       prev.callPackage ../pkgs/wivrn {
         inherit (package) version src;
-        # Kinda sucks that we have to do this but the Monado version is only occasionally updated
-        monadoVersion = "dfc602288ab05131584a3f2be18031a13fccd061";
-        monadoHash = "sha256-4HZs3cgqOWWpXQb5kfG513f7+znO0hJvAbj2rxrqmeI=";
+        monadoSrc = monado.src;
       };
 
       wivrn-git = let
         package = getPackage "wivrn-git" prev;
+        monado = getPackage "wivrn-git-monado" prev;
       in
-      wivrn.override {
+      final.wivrn.override {
         inherit (package) version src;
-        monadoVersion = "2d3978b1b0d0f1ce9fc20f435c7080a07124362a";
-        monadoHash = "sha256-1qnokZYCA4h88eQmTpKYnHczeLh19Pjw2fM6y9rzn/Q=";
+        monadoSrc = monado.src;
       };
     };
   };

@@ -35,21 +35,25 @@ Modules:
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
 - `alvr` (24.05)
-- `animdl` (24.05, Git)
+- `animdl-git` (24.05)
 - `gdlauncher` (`gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-carbon-unstable`
 - `gdlauncher-legacy`
 - `gfm`
-- `hd2pystratmacro` (Git)
-- `monado-vulkan-layers` (Git)
-- `poepyautopot` (Git)
+- `gfm-git`
+- `hd2pystratmacro`
+- `hd2pystratmacro-git`
+- `monado-vulkan-layers-git`
+- `poepyautopot`
+- `poepyautopot-git`
 - `tilp2`
-- `wivrn` (Git, https://github.com/NixOS/nixpkgs/pull/316975)
+- `tilp2-git`
+- `wivrn` (https://github.com/NixOS/nixpkgs/pull/316975)
+- `wivrn-git`
 
 If it has a ... in parenthesis:
 - NixOS version: It was merged in that release.
-- Git: It either is a git or has a git package.
 - PR: It is in an open pull request.
 - Package: It is an alias to that package.
 

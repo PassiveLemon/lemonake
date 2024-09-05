@@ -2,7 +2,6 @@
 , src
 , lib
 , stdenv
-, fetchFromGitLab
 , cmake
 , vulkan-headers
 , vulkan-loader

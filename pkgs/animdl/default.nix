@@ -2,7 +2,6 @@
 , src
 , lib
 , buildPythonApplication
-, fetchFromGitHub
 , poetry-core
 , anchor-kr
 , anitopy

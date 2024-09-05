@@ -1,30 +1,22 @@
-{ stdenv
+{ version
+, src
 , lib
-, fetchurl
+, stdenv
 , fetchpatch
-, pkg-config
 , autoreconfHook
-, gnome2
 , glib
-, libtifiles2
+, gnome2
 , libticables2
 , libticalcs2
 , libticonv
+, libtifiles2
+, pkg-config
 }:
-
 stdenv.mkDerivation rec {
   pname = "gfm";
-  version = "1.08";
-  src = fetchurl {
-    url = "mirror://sourceforge/tilp/${pname}-${version}.tar.bz2";
-    sha256 = "0zq1a9mm54zr18dz2mqh79w1a126xwqz6dcrpjlbd1pnmg01l0q9";
-  };
+  inherit version src;
 
-  patches = fetchpatch {
-    name = "remove-broken-kde-support.patch";
-    url = "https://aur.archlinux.org/cgit/aur.git/plain/remove-broken-kde-support.patch?h=gfm";
-    sha256 = "03yc8s2avicmv04f2ygg3r3q8l7kpsc94mhp6clp584kmjpjqag5";
-  };
+  sourceRoot = "source/gfm/trunk";
 
   nativeBuildInputs = [
     autoreconfHook
@@ -32,23 +24,25 @@ stdenv.mkDerivation rec {
   ];
 
   buildInputs = [
+    glib
     gnome2.gtk
     gnome2.libglade
-    glib
-    libtifiles2
     libticables2
     libticalcs2
     libticonv
+    libtifiles2
   ];
 
   NIX_CFLAGS_COMPILE = "-I${libticables2}/include/tilp2";
 
   meta = with lib; {
-    changelog = "http://lpg.ticalc.org/prj_tilp/news.html";
     description = "Group File Manager (GFM) allows manipulation of single/group/tigroup files";
     homepage = "http://lpg.ticalc.org/prj_gfm/index.html";
+    changelog = "http://lpg.ticalc.org/prj_tilp/news.html";
     license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ siraben luc65r ];
-    platforms = with platforms; linux ++ darwin;
+    maintainers = with maintainers; [ passivelemon ];
+    platforms = platforms.linux;
+    mainProgram = "gfm";
   };
 }
+

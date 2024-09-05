@@ -10,6 +10,14 @@ fetch.tarball = "https://github.com/alvr-org/ALVR/releases/download/$ver/alvr_st
 src.git = "https://github.com/justfoolingaround/animdl"
 fetch.github = "justfoolingaround/animdl"
 
+[gdlauncher-legacy]
+src.github = "gorilla-devs/GDLauncher"
+fetch.url = "https://github.com/gorilla-devs/GDLauncher/releases/download/$ver/GDLauncher-linux-setup.AppImage"
+
+[gdlauncher-carbon]
+src.cmd = "curl https://gdlauncher.com/download/linux | awk 'match($0,/GDLauncher__([0-9]*\\.[0-9]*\\.[0-9]*)/,a){print a[1]}'"
+fetch.url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__$ver__linux__x64.AppImage"
+
 [hd2pystratmacro]
 src.github = "PassiveLemon/hd2pystratmacro"
 fetch.github = "PassiveLemon/hd2pystratmacro"
@@ -30,11 +38,29 @@ fetch.github = "PassiveLemon/poepyautopot"
 src.git = "https://github.com/PassiveLemon/poepyautopot"
 fetch.github = "PassiveLemon/poepyautopot"
 
+[tilp2-gfm]
+src.github_tag = "debrouxl/tilp_and_gfm"
+fetch.github = "debrouxl/tilp_and_gfm"
+
+[tilp2-gfm-git]
+src.git = "https://github.com/debrouxl/tilp_and_gfm"
+fetch.github = "debrouxl/tilp_and_gfm"
+
 [wivrn]
 src.github = "WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
 
+[wivrn-monado]
+# Behold the abominable version fetcher! Needed a way to get the Monado version from the latest tag of WiVRn without checking out the repository.
+src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/CMakeLists.txt | awk 'match($0,/GIT_TAG[[:space:]]+([0-9a-zA-Z]+)/,a){print a[1]}'"
+fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
+
 [wivrn-git]
 src.git = "https://github.com/WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
+
+[wivrn-git-monado]
+src.webpage = "https://github.com/WiVRn/WiVRn/blob/master/CMakeLists.txt"
+src.regex = "GIT_TAG\\s*(\\w+)"
+fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 

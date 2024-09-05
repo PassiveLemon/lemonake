@@ -2,7 +2,6 @@
 , src
 , lib
 , buildPythonApplication
-, fetchFromGitHub
 , colorama
 , evdev
 , pillow

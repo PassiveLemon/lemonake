@@ -1,46 +1,36 @@
-# This and GFM were taken from an old package that was removed.
-
-{ stdenv
+{ version
+, src
 , lib
-, fetchurl
+, stdenv
 , fetchpatch
 , autoreconfHook
-, pkg-config
-, intltool
+, gfm
 , glib
 , gnome2
-, gfm
+, intltool
 , libticables2
 , libticalcs2
 , libticonv
 , libtifiles2
+, pkg-config
 }:
-
 stdenv.mkDerivation rec {
   pname = "tilp2";
-  version = "1.18";
-  src = fetchurl {
-    url = "mirror://sourceforge/tilp/${pname}-${version}.tar.bz2";
-    sha256 = "0isf73bjwk06baz2gm3vpdh600gqck9ca4aqxzb089dmxriv6fkv";
-  };
+  inherit version src;
 
-  patches = fetchpatch {
-    name = "remove-broken-kde-support.patch";
-    url = "https://aur.archlinux.org/cgit/aur.git/plain/remove-broken-kde-support.patch?h=tilp";
-    sha256 = "1fn6vh7r45spkwpmkvffkbn7zrcsdrs5mjmspd5rwi3jc12cy3ny";
-  };
+  sourceRoot = "source/tilp/trunk";
 
   nativeBuildInputs = [
     autoreconfHook
-    pkg-config
     intltool
+    pkg-config
   ];
 
   buildInputs = [
+    gfm
     glib
     gnome2.gtk
     gnome2.libglade
-    gfm
     libticables2
     libticalcs2
     libticonv
@@ -48,11 +38,13 @@ stdenv.mkDerivation rec {
   ];
 
   meta = with lib; {
-    changelog = "http://lpg.ticalc.org/prj_tilp/news.html";
     description = "Transfer data between Texas Instruments graphing calculators and a computer";
     homepage = "http://lpg.ticalc.org/prj_tilp/";
+    changelog = "http://lpg.ticalc.org/prj_tilp/news.html";
     license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ luc65r ];
-    platforms = with platforms; linux ++ darwin;
+    maintainers = with maintainers; [ passivelemon ];
+    platforms = platforms.linux;
+    mainProgram = "tilp";
   };
 }
+

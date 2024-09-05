@@ -1,12 +1,9 @@
 { version
 , src
-, monadoVersion
-, monadoHash
+, monadoSrc
 , config
 , lib
 , stdenv
-, fetchFromGitHub
-, fetchFromGitLab
 , applyPatches
 , autoAddDriverRunpath
 , avahi
@@ -49,13 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
   inherit version src;
 
   monado = applyPatches {
-    src = fetchFromGitLab {
-      domain = "gitlab.freedesktop.org";
-      owner = "monado";
-      repo = "monado";
-      rev = monadoVersion;
-      hash = monadoHash;
-    };
+    src = monadoSrc;
 
     patches = [
       "${finalAttrs.src}/patches/monado/0001-c-multi-disable-dropping-of-old-frames.patch"

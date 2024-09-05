@@ -1,15 +1,11 @@
 { version
-, hash
+, src
 , lib
 , appimageTools
 , fetchurl
 }:
 let
   pname = "gdlauncher";
-  src = fetchurl {
-    inherit version hash;
-    url = "https://github.com/gorilla-devs/GDLauncher/releases/download/v${version}/GDLauncher-linux-setup.AppImage";
-  };
 
   appimageContents = appimageTools.extractType2 { inherit pname version src; };
 in

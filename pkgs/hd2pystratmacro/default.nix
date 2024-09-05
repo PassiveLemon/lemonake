@@ -2,7 +2,6 @@
 , src
 , lib
 , buildPythonApplication
-, fetchFromGitHub
 , evdev
 , pyyaml
 , setuptools

@@ -3,8 +3,6 @@
 , alvrSrc
 , lib
 , stdenv
-, fetchzip
-, fetchFromGitHub
 , alsa-lib
 , autoPatchelfHook
 , brotli
