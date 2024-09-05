@@ -38,7 +38,6 @@ Packages:
 - `animdl-git` (24.05)
 - `gdlauncher` (`gdlauncher-carbon`)
 - `gdlauncher-carbon`
-- `gdlauncher-carbon-unstable`
 - `gdlauncher-legacy`
 - `gfm`
 - `gfm-git`

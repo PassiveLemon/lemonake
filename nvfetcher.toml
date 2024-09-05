@@ -51,8 +51,7 @@ src.github = "WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
 
 [wivrn-monado]
-# Behold the abominable version fetcher! Needed a way to get the Monado version from the latest tag of WiVRn without checking out the repository.
-src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/CMakeLists.txt | awk 'match($0,/GIT_TAG[[:space:]]+([0-9a-zA-Z]+)/,a){print a[1]}'"
+src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/CMakeLists.txt | grep GIT_TAG | awk '{print $2}'"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
 [wivrn-git]
