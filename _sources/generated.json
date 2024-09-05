@@ -15,7 +15,6 @@
             "repo": "ALVR",
             "rev": "v20.10.0",
             "sha256": "sha256-1kguRVzGTqUh/LLh+u6MBuypGrK7aZ2ZO1ZimNcS9TE=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v20.10.0"
@@ -50,10 +49,39 @@
             "repo": "animdl",
             "rev": "c7c3b79198e66695e0bbbc576f9d9b788616957f",
             "sha256": "sha256-kn6vCCFhJNlruxoO+PTHVIwTf1E5j1aSdBhrFuGzUq4=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c7c3b79198e66695e0bbbc576f9d9b788616957f"
+    },
+    "gdlauncher-carbon": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "gdlauncher-carbon",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-tI9RU8qO3MHbImOGw2Wl1dksNbhqrYFyGemqms8aAio=",
+            "type": "url",
+            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.20__linux__x64.AppImage"
+        },
+        "version": "2.0.20"
+    },
+    "gdlauncher-legacy": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "gdlauncher-legacy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-4cXT3exhoMAK6gW3Cpx1L7cm9Xm0FK912gGcRyLYPwM=",
+            "type": "url",
+            "url": "https://github.com/gorilla-devs/GDLauncher/releases/download/v1.1.30/GDLauncher-linux-setup.AppImage"
+        },
+        "version": "v1.1.30"
     },
     "hd2pystratmacro": {
         "cargoLocks": null,
@@ -71,7 +99,6 @@
             "repo": "hd2pystratmacro",
             "rev": "1.0.2",
             "sha256": "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.0.2"
@@ -92,7 +119,6 @@
             "repo": "hd2pystratmacro",
             "rev": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470",
             "sha256": "sha256-O2m+FLGmNadou6+/5qzPbxOgJC1MT48BDkTS29E7TO0=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470"
@@ -111,7 +137,6 @@
             "name": null,
             "rev": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2",
             "sha256": "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=",
-            "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
         },
@@ -133,7 +158,6 @@
             "repo": "poepyautopot",
             "rev": "1.3.6",
             "sha256": "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.3.6"
@@ -154,10 +178,49 @@
             "repo": "poepyautopot",
             "rev": "c0bff056ee6b7be698104b996e77a32e8c89fded",
             "sha256": "sha256-m8c3UwrLshlKsHM5xbJUCBCkC+QKBU4E7XJcequ1w5s=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c0bff056ee6b7be698104b996e77a32e8c89fded"
+    },
+    "tilp2-gfm": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tilp2-gfm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "debrouxl",
+            "repo": "tilp_and_gfm",
+            "rev": "1.18",
+            "sha256": "sha256-/XkxEfWzJiOkM5aoenp/GQSkkNg9qoXkFtcj/nenFEw=",
+            "type": "github"
+        },
+        "version": "1.18"
+    },
+    "tilp2-gfm-git": {
+        "cargoLocks": null,
+        "date": "2023-11-12",
+        "extract": null,
+        "name": "tilp2-gfm-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "debrouxl",
+            "repo": "tilp_and_gfm",
+            "rev": "5a2ea6337c4983b80375a50e3ada1f7c45f6e9ea",
+            "sha256": "sha256-sIwio294jvb21N0XTFhDGbd1uq/yFfgrxBRtMw+NVew=",
+            "type": "github"
+        },
+        "version": "5a2ea6337c4983b80375a50e3ada1f7c45f6e9ea"
     },
     "wivrn": {
         "cargoLocks": null,
@@ -175,14 +238,13 @@
             "repo": "WiVRn",
             "rev": "v0.18",
             "sha256": "sha256-JFiDjx2iQfBDD1yRWHPx0UiIAqEk8+nzf967o/HXYqs=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.18"
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-09-04",
+        "date": "2024-09-05",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -194,11 +256,48 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "a4522d2ad7569013ab612e736cbc56e10afecf23",
-            "sha256": "sha256-OUBZ4ujRUHrfPBt4UtpRt76XOZU+AiEjXiz+YaiNKZQ=",
-            "sparseCheckout": [],
+            "rev": "2141c66c6eb5c2135c955d2fcdb4e800fc7c93d6",
+            "sha256": "sha256-ZkOoDD6TsqMYXihye015DJ3e7ZuThVzPcGJUQrysG2A=",
             "type": "github"
         },
-        "version": "a4522d2ad7569013ab612e736cbc56e10afecf23"
+        "version": "2141c66c6eb5c2135c955d2fcdb4e800fc7c93d6"
+    },
+    "wivrn-git-monado": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "wivrn-git-monado",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "2d3978b1b0d0f1ce9fc20f435c7080a07124362a",
+            "sha256": "sha256-1qnokZYCA4h88eQmTpKYnHczeLh19Pjw2fM6y9rzn/Q=",
+            "type": "git",
+            "url": "https://gitlab.freedesktop.org/monado/monado.git"
+        },
+        "version": "2d3978b1b0d0f1ce9fc20f435c7080a07124362a"
+    },
+    "wivrn-monado": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "wivrn-monado",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "dfc602288ab05131584a3f2be18031a13fccd061",
+            "sha256": "sha256-4HZs3cgqOWWpXQb5kfG513f7+znO0hJvAbj2rxrqmeI=",
+            "type": "git",
+            "url": "https://gitlab.freedesktop.org/monado/monado.git"
+        },
+        "version": "dfc602288ab05131584a3f2be18031a13fccd061"
     }
 }
