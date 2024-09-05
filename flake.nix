@@ -38,8 +38,6 @@
       };
       homeManagerModules = {
         steamvr = import ./modules/home-manager/steamvr;
-
-        tmodloader-dotnetfix = import ./modules/home-manager/tmodloader-dotnetfix;
       };
     };
   };
