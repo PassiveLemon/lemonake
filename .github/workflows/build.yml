@@ -1,4 +1,4 @@
-name: Automatic Build
+name: Build
 on:
   push:
     branches:
@@ -8,6 +8,10 @@ on:
       - '_sources/**'
       - 'pkgs/**'
       - 'flake.lock'
+  workflow_run:
+    workflows: [ "Update" ]
+    types:
+      - completed
 
 jobs:
   build:

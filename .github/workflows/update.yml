@@ -1,5 +1,7 @@
-name: Automatic Update
+name: Update
 on:
+  release:
+    types: [ published ]
   schedule:
   - cron: '0 2 * * *'
 
