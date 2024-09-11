@@ -13,12 +13,12 @@
             "name": null,
             "owner": "alvr-org",
             "repo": "ALVR",
-            "rev": "v20.10.0",
-            "sha256": "sha256-1kguRVzGTqUh/LLh+u6MBuypGrK7aZ2ZO1ZimNcS9TE=",
+            "rev": "v20.11.0",
+            "sha256": "sha256-niayCDmBW1W8zC6Hs+n0BN6p3MvsaPGdta5sJrZAccI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v20.10.0"
+        "version": "v20.11.0"
     },
     "alvr-archive": {
         "cargoLocks": null,
@@ -28,11 +28,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-9PS63eF+39yXztOvV+Z6LJt0K20EUy9/8H1GsA+e8Jg=",
+            "sha256": "sha256-GfoXYzW3TUgpM5TXuHmsfhE9rP2M8iJpflF48tpmwIs=",
             "type": "tarball",
-            "url": "https://github.com/alvr-org/ALVR/releases/download/v20.10.0/alvr_streamer_linux.tar.gz"
+            "url": "https://github.com/alvr-org/ALVR/releases/download/v20.11.0/alvr_streamer_linux.tar.gz"
         },
-        "version": "v20.10.0"
+        "version": "v20.11.0"
     },
     "animdl-git": {
         "cargoLocks": null,
@@ -254,7 +254,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-09-09",
+        "date": "2024-09-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -266,12 +266,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "27608ca019fe01cb395e1181d36d897a786b717e",
-            "sha256": "sha256-dKBlU4qmzaDcpc99nNLI/6NKTgPOOTPmKJ9jSmlyqsM=",
+            "rev": "97aa8e3947feae862949a75cc727d16cd7776d7f",
+            "sha256": "sha256-DDx2roktQMJcv/8zO/5rvxg6awDEHjJmm+QzEuccOQA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "27608ca019fe01cb395e1181d36d897a786b717e"
+        "version": "97aa8e3947feae862949a75cc727d16cd7776d7f"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
