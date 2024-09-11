@@ -2,12 +2,6 @@
 let
   inherit (lib) mkIf mkEnableOption mkPackageOption mkOption getExe literalExpression types maintainers;
   cfg = config.services.autoadb;
-
-  # We make a separate shell script so we can just run that script and execute multiple commands
-  commandScript = pkgs.writeScript "commandScript.sh" ''
-    #!${pkgs.runtimeShell}
-    ${cfg.command}
-  '';
 in
 {
   options = {
@@ -47,13 +41,12 @@ in
           StartLimitIntervalSec = 500;
         };
         serviceConfig = {
-          ExecStart = (
-            (getExe cfg.package)
-            + " ${commandScript}"
-          );
           Restart = "on-failure";
           RestartSec = "5s";
         };
+        script = ''
+          ${cfg.command}
+        '';
         wantedBy = [ "default.target" ];
         path = [ cfg.package pkgs.android-tools ] ++ cfg.extraPackages;
         restartTriggers = [
