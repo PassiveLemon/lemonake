@@ -1,12 +1,12 @@
 { ... }: {
   flake = {
     nixosModules = {
-      alvr = import ./modules/nixos/alvr;
-      autoadb = import ./modules/nixos/autoadb;
-      wivrn = import ./modules/nixos/wivrn;
+      alvr = import ./nixos/alvr;
+      autoadb = import ./nixos/autoadb;
+      wivrn = import ./nixos/wivrn;
     };
     homeManagerModules = {
-      steamvr = import ./modules/home-manager/steamvr;
+      steamvr = import ./home-manager/steamvr;
     };
   };
 }
