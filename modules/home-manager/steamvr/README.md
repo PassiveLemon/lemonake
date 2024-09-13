@@ -48,7 +48,7 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
   services.steamvr = {
     openvrRuntimeOverride = {
       enable = { type = bool; default = false; };
-      config = { type = enum [ "json" "test" ]; default = "json"; };
+      config = { type = enum [ "json" "text" ]; default = "json"; };
       json = {
         type = formats.json;
         default = {
@@ -88,7 +88,7 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
     };
     openxrRuntimeOverride = {
       enable = { type = bool; default = false; };
-      config = { type = enum [ "path" "json" "test" ]; default = "json"; };
+      config = { type = enum [ "path" "json" "text" ]; default = "json"; };
       path = { type = path; default = ""; };
       json = {
         type = formats.json;
