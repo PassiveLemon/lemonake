@@ -1,18 +1,41 @@
 # SteamVR
-Custom module to allow you to override the SteamVR `openvrpaths.vrpath` runtime and user OpenXR `active_runtime.json`
+Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. Only one configuration format can be used for each: json, text, or path.
 
 ## Example usage
 ```nix
 # home.nix
 {
   services.steamvr = {
-    runtimeOverride = {
+    openvrRuntimeOverride = {
       enable = true;
-      path = "${pkgs.opencomposite}/lib/opencomposite";
+      config = "json";
+      json = {
+        config = [
+          "${config.home.homeDirectory}/.local/share/Steam/config"
+        ];
+        external_drivers = [ ];
+        jsonid = "vrpathreg";
+        log = [
+          "${config.home.homeDirectory}/.local/share/Steam/logs"
+        ];
+        runtime = [
+          "${pkgs.opencomposite}/lib/opencomposite"
+        ];
+        version = 1;
+      };
     };
-    activeRuntimeOverride = {
+    openxrRuntimeOverride = {
       enable = true;
-      path = "${pkgs.wivrn}/share/openxr/1/openxr_wivrn.json"; # WiVRn is not merged yet
+      config = "json";
+      json = {
+        file_format_version = "1.0.0";
+        runtime = {
+          name = "Monado";
+          # Note: WiVRn is not merged yet!
+          library_path = "${pkgs.wivrn}/lib/wivrn/libopenxr_wivrn.so";
+          MND_libmonado_path = "${pkgs.wivrn}/lib/wivrn/libmonado.so";
+        };
+      };
     };
   };
 }
@@ -23,17 +46,76 @@ Custom module to allow you to override the SteamVR `openvrpaths.vrpath` runtime 
 # home.nix
 {
   services.steamvr = {
-    runtimeOverride = {
+    openvrRuntimeOverride = {
       enable = { type = bool; default = false; };
-      path = {
-        type = path;
-        default = "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR";
+      config = { type = enum [ "json" "test" ]; default = "json"; };
+      json = {
+        type = formats.json;
+        default = {
+          config = [
+            "${config.home.homeDirectory}/.local/share/Steam/config"
+          ];
+          external_drivers = [ ];
+          jsonid = "vrpathreg";
+          log = [
+            "${config.home.homeDirectory}/.local/share/Steam/logs"
+          ];
+          runtime = [
+            "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR"
+          ];
+          version = 1;
+        };
+      };
+      text = {
+        type = str;
+        default = ''
+          {
+            "config": [
+              "~/.local/share/Steam/config"
+            ],
+            "external_drivers": [ ],
+            "jsonid": "vrpathreg",
+            "log": [
+              "~/.local/share/Steam/logs"
+            ],
+            "runtime": [
+              "~/.local/share/Steam/steamapps/common/SteamVR"
+            ],
+            "version": 1
+          }
+        '';
       };
     };
-    activeRuntimeOverride = {
+    openxrRuntimeOverride = {
       enable = { type = bool; default = false; };
+      config = { type = enum [ "path" "json" "test" ]; default = "json"; };
       path = { type = path; default = ""; };
+      json = {
+        type = formats.json;
+        default = {
+          file_format_version = "1.0.0";
+          runtime = {
+            name = "SteamVR";
+            VALVE_runtime_is_steamvr = true;
+            library_path = "${config.home.homeDirectory}/.local/share/Steam/steamapps/common/SteamVR/bin/linux64/vrclient.so";
+          };
+        };
+      text = {
+        type = str;
+        default = ''
+          {
+            "file_format_version": "1.0.0",
+            "runtime": 
+            {
+              "name": "SteamVR",
+              "VALVE_runtime_is_steamvr": true,
+              "library_path": "~/.local/share/Steam/steamapps/common/SteamVR/bin/linux64/vrclient.so",
+            }
+          }
+        '';
+      };
     };
   };
 }
 ```
+
