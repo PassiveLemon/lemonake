@@ -1,6 +1,9 @@
 # SteamVR
 Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. Only one configuration format can be used for each: json, text, or path.
 
+>[!NOTE]
+> Tildes (`~`) get expanded to your home path. For example, `~/.local/share/` will literally get evaluated to `/home/(user)/.local/share/`
+
 ## Example usage
 ```nix
 # home.nix
@@ -105,7 +108,7 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
         default = ''
           {
             "file_format_version": "1.0.0",
-            "runtime": 
+            "runtime":
             {
               "name": "SteamVR",
               "VALVE_runtime_is_steamvr": true,
