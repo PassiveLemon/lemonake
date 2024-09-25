@@ -44,6 +44,9 @@ Packages:
 - `hd2pystratmacro`
 - `hd2pystratmacro-git`
 - `monado-vulkan-layers-git`
+- `picom`
+- `picom-tag`
+- `picom-git`
 - `poepyautopot`
 - `poepyautopot-git`
 - `tilp2`

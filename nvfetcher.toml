@@ -30,6 +30,18 @@ fetch.github = "PassiveLemon/hd2pystratmacro"
 src.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers"
 fetch.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
 
+[picom]
+src.github = "yshui/picom"
+fetch.github = "yshui/picom"
+
+[picom-tag]
+src.github_tag = "yshui/picom"
+fetch.github = "yshui/picom"
+
+[picom-git]
+src.git = "https://github.com/yshui/picom"
+fetch.github = "yshui/picom"
+
 [poepyautopot]
 src.github = "PassiveLemon/poepyautopot"
 fetch.github = "PassiveLemon/poepyautopot"
