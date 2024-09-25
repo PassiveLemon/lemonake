@@ -34,8 +34,8 @@ Modules:
 
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
-- `alvr` (24.05)
-- `animdl-git` (24.05)
+- `alvr`
+- `animdl-git`
 - `gdlauncher` (`gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
@@ -54,8 +54,12 @@ Packages:
 - `wivrn` (https://github.com/NixOS/nixpkgs/pull/316975)
 - `wivrn-git`
 
+Naming scheme:
+- Latest release: `package`
+- Latest tag: `package-tag`
+- Latest commit: `package-git`
+
 If it has a ... in parenthesis:
-- NixOS version: It was merged in that release.
 - PR: It is in an open pull request.
 - Package: It is an alias to that package.
 
