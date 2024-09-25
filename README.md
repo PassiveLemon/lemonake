@@ -85,4 +85,5 @@ Any sort of warning or assertion will be removed exactly 3 months after it was i
 
 ## Credits
 - [moni-dz/nixpkgs-f2k](https://github.com/moni-dz/nixpkgs-f2k/) for inspiration
+- [nix-community/nixpkgs-xr](https://github.com/nix-community/nixpkgs-xr/) for inspiration
 
