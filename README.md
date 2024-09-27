@@ -44,6 +44,7 @@ Packages:
 - `hd2pystratmacro`
 - `hd2pystratmacro-git`
 - `monado-vulkan-layers-git`
+- `opencomposite-git`
 - `picom`
 - `picom-tag`
 - `picom-git`

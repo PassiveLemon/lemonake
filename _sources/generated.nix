@@ -80,43 +80,55 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
   };
+  opencomposite-git = {
+    pname = "opencomposite-git";
+    version = "f8db7aa35831753f00215a2d9ba7197a80d7bacd";
+    src = fetchgit {
+      url = "https://gitlab.com/znixian/OpenOVR.git";
+      rev = "f8db7aa35831753f00215a2d9ba7197a80d7bacd";
+      fetchSubmodules = true;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-ksOXSeVskfv/d9kz6Zc5PQjGSTOTxVGEeQNiqCuDpsA=";
+    };
+    date = "2024-09-13";
+  };
   picom = {
     pname = "picom";
-    version = "v11.2";
+    version = "v12";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v11.2";
+      rev = "v12";
       fetchSubmodules = false;
-      sha256 = "sha256-7ohtI890CutwprPEY5njqWou0fD6T9eu51EBSQ2/lWs=";
+      sha256 = "sha256-7XpZEYQtjsBAcMMEJXlfSaZ1jdDxDBnzkSAtTbW7Br4=";
     };
   };
   picom-git = {
     pname = "picom-git";
-    version = "3899d2c4cdd902623592aab7839c8da91fbce86c";
+    version = "72fce70ef7596678bd995426fcc5f9c9a69f9e8d";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "3899d2c4cdd902623592aab7839c8da91fbce86c";
+      rev = "72fce70ef7596678bd995426fcc5f9c9a69f9e8d";
       fetchSubmodules = false;
-      sha256 = "sha256-zB9Vr8n44zLnk9sQl8oObE21mhp2s8OKwo7MUsmJnJM=";
+      sha256 = "sha256-7XpZEYQtjsBAcMMEJXlfSaZ1jdDxDBnzkSAtTbW7Br4=";
     };
-    date = "2024-09-13";
+    date = "2024-09-27";
   };
   picom-tag = {
     pname = "picom-tag";
-    version = "v12-rc4";
+    version = "v12";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12-rc4";
+      rev = "v12";
       fetchSubmodules = false;
-      sha256 = "sha256-C85BmA86HA/UsUee26BWTMTxxNZ3frDU6ObCpJbQDCI=";
+      sha256 = "sha256-7XpZEYQtjsBAcMMEJXlfSaZ1jdDxDBnzkSAtTbW7Br4=";
     };
   };
   poepyautopot = {
@@ -178,15 +190,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3deef22b18ff2e3feb9a8648f3778d8166f77f8f";
+    version = "56da7af334cfe98642b0184c8872c359e9501cef";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3deef22b18ff2e3feb9a8648f3778d8166f77f8f";
+      rev = "56da7af334cfe98642b0184c8872c359e9501cef";
       fetchSubmodules = false;
-      sha256 = "sha256-blhGY3CBlTM7/13/Rg3OnNRxLOVDogjk208tIrWfJlA=";
+      sha256 = "sha256-5J9pkNPWfn8S5mNjI5/Ts1Ea6VnbXuLj8Cjn8CEhXVM=";
     };
-    date = "2024-09-25";
+    date = "2024-09-27";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -197,7 +209,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-FDWBaT6QaeYZozWHK8c5+GBC+2qQyfUstM+ANt+8POU=";
     };
   };
@@ -210,7 +221,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-sh5slHROcuC3Dgenu1+hm8U5lUOW48JUbiluYvc3NiQ=";
     };
   };
