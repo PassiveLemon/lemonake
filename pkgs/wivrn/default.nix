@@ -16,6 +16,7 @@
 , ffmpeg
 , freetype
 , git
+, glib
 , glm
 , glslang
 , harfbuzz
@@ -75,6 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     cmake
     git
+    glib
     glslang
     pkg-config
     python3
@@ -89,6 +91,7 @@ stdenv.mkDerivation (finalAttrs: {
     eigen
     ffmpeg
     freetype
+    glib
     glm
     harfbuzz
     libdrm
