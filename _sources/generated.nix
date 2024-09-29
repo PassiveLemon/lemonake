@@ -87,50 +87,50 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "f8db7aa35831753f00215a2d9ba7197a80d7bacd";
+    version = "09e2b33669eade2a9bc83fcc10b68cecbf474bca";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "f8db7aa35831753f00215a2d9ba7197a80d7bacd";
+      rev = "09e2b33669eade2a9bc83fcc10b68cecbf474bca";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ksOXSeVskfv/d9kz6Zc5PQjGSTOTxVGEeQNiqCuDpsA=";
+      sha256 = "sha256-e8XD1AOswqH3YK2l7tJmGthgOkDALqI2LoZu5a7x1ow=";
     };
-    date = "2024-09-13";
+    date = "2024-09-29";
   };
   picom = {
     pname = "picom";
-    version = "v12";
+    version = "v12.1";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12";
+      rev = "v12.1";
       fetchSubmodules = false;
-      sha256 = "sha256-7XpZEYQtjsBAcMMEJXlfSaZ1jdDxDBnzkSAtTbW7Br4=";
+      sha256 = "sha256-XBFSPSrG6C4n5oQUQbWXyy9iCuEdrdaxU0CPR73juzk=";
     };
   };
   picom-git = {
     pname = "picom-git";
-    version = "72fce70ef7596678bd995426fcc5f9c9a69f9e8d";
+    version = "5c4f11008cd4a371f7ab7b6431b99a7f36a92134";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "72fce70ef7596678bd995426fcc5f9c9a69f9e8d";
+      rev = "5c4f11008cd4a371f7ab7b6431b99a7f36a92134";
       fetchSubmodules = false;
-      sha256 = "sha256-7XpZEYQtjsBAcMMEJXlfSaZ1jdDxDBnzkSAtTbW7Br4=";
+      sha256 = "sha256-jp3DAa08Nz3LbJl58waBAmK/uejmgQbH6iziEXFc5e0=";
     };
-    date = "2024-09-27";
+    date = "2024-09-29";
   };
   picom-tag = {
     pname = "picom-tag";
-    version = "v12";
+    version = "v12.1";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12";
+      rev = "v12.1";
       fetchSubmodules = false;
-      sha256 = "sha256-7XpZEYQtjsBAcMMEJXlfSaZ1jdDxDBnzkSAtTbW7Br4=";
+      sha256 = "sha256-XBFSPSrG6C4n5oQUQbWXyy9iCuEdrdaxU0CPR73juzk=";
     };
   };
   poepyautopot = {
