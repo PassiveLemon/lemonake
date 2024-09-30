@@ -56,6 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
       "${finalAttrs.src}/patches/monado/0005-distortion-images.patch"
       "${finalAttrs.src}/patches/monado/0008-Use-mipmaps-for-distortion-shader.patch"
       "${finalAttrs.src}/patches/monado/0009-convert-to-YCbCr-in-monado.patch"
+      ./force-enable-steamvr_lh.patch
     ];
   };
 
@@ -123,6 +124,7 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_USE_SYSTEMD" true)
     (lib.cmakeBool "WIVRN_USE_PIPEWIRE" true)
     (lib.cmakeBool "WIVRN_USE_PULSEAUDIO" true)
+    (lib.cmakeBool "WIVRN_FEATURE_STEAMVR_LIGHTHOUSE" true)
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
