@@ -87,17 +87,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "3db678581e5dd7fec9b206e76f567ae8a12b9305";
+    version = "3f6778f55d12b052b6788c4dcf9b8e3517e20015";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "3db678581e5dd7fec9b206e76f567ae8a12b9305";
+      rev = "3f6778f55d12b052b6788c4dcf9b8e3517e20015";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-FmJkUHxBQe3grictkOGAz6djJmWevj9UMgEVUHMVUHE=";
+      sha256 = "sha256-n/Y7E5VJO7uFweYFkRvjQfcbXpILr5IAA/s+0myD8s4=";
     };
-    date = "2024-09-29";
+    date = "2024-09-30";
   };
   picom = {
     pname = "picom";
@@ -112,15 +112,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "5c4f11008cd4a371f7ab7b6431b99a7f36a92134";
+    version = "cd09736e28fd5de6651b8306d91525c4115f0974";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "5c4f11008cd4a371f7ab7b6431b99a7f36a92134";
+      rev = "cd09736e28fd5de6651b8306d91525c4115f0974";
       fetchSubmodules = false;
-      sha256 = "sha256-jp3DAa08Nz3LbJl58waBAmK/uejmgQbH6iziEXFc5e0=";
+      sha256 = "sha256-AjKDuKUBAJspzJtpYm1MDr8tlzcxAeoOEeVJiapTfEo=";
     };
-    date = "2024-09-29";
+    date = "2024-10-02";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -192,15 +192,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "2a6000a6e194167e60c3b4b22e5f70229ac0ce2f";
+    version = "910d5af5745afbe245d9d54b39cd546dc1bb1799";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "2a6000a6e194167e60c3b4b22e5f70229ac0ce2f";
+      rev = "910d5af5745afbe245d9d54b39cd546dc1bb1799";
       fetchSubmodules = false;
-      sha256 = "sha256-L2+PPz0HYJ128sOzZbtAV6qCuWZ/U2PA73vzzKFYvyE=";
+      sha256 = "sha256-FZ6X2BrrsVV4OfwnEX/vhxpORPlvu57TZmBJehgPDdA=";
     };
-    date = "2024-09-29";
+    date = "2024-10-02";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
