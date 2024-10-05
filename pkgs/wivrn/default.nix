@@ -59,6 +59,8 @@
 , pipewire
 , pkg-config
 , python3
+, qtbase
+, qttools
 , SDL2
 , shaderc
 , spdlog
@@ -69,6 +71,7 @@
 , wayland
 , wayland-protocols
 , wayland-scanner
+, wrapQtAppsHook
 , x264
 }:
 stdenv.mkDerivation (finalAttrs: {
@@ -109,6 +112,7 @@ stdenv.mkDerivation (finalAttrs: {
     glslang
     pkg-config
     python3
+    wrapQtAppsHook
   ] ++ lib.optionals cudaSupport [
     autoAddDriverRunpath
   ];
@@ -152,6 +156,8 @@ stdenv.mkDerivation (finalAttrs: {
     onnxruntime
     orc
     pipewire
+    qtbase
+    qttools
     SDL2
     shaderc
     spdlog
@@ -177,6 +183,7 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_FEATURE_STEAMVR_LIGHTHOUSE" true)
     (lib.cmakeBool "WIVRN_FEATURE_SOLARXR" false) # Requires flatcc but can't find flatcc_cli when it's added to inputs
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
+    (lib.cmakeBool "WIVRN_BUILD_DASHBOARD" true)
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")

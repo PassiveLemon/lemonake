@@ -121,7 +121,7 @@ in
         package = getPackage "wivrn" prev;
         monado = getPackage "wivrn-monado" prev;
       in
-      prev.callPackage ../pkgs/wivrn {
+      prev.qt6Packages.callPackage ../pkgs/wivrn {
         inherit (package) version src;
         monadoSrc = monado.src;
       };
