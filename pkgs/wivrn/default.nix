@@ -4,42 +4,71 @@
 , config
 , lib
 , stdenv
+, fetchFromGitHub
+, fetchFromGitLab
 , applyPatches
 , autoAddDriverRunpath
 , avahi
+, bluez
 , boost
+, cjson
 , cli11
 , cmake
 , cudaPackages ? { }
 , cudaSupport ? config.cudaSupport
+, dbus
+# depthai
+, doxygen
 , eigen
+, elfutils
 , ffmpeg
 , freetype
 , git
 , glib
 , glm
 , glslang
+, gst_all_1
 , harfbuzz
-, libdrm
+, hidapi
+# leapsdk
+# leapv2
 , libGL
-, libva
-, libpulseaudio
 , libX11
 , libXrandr
+, libbsd
+, libdrm
+, libdwg
+, libjpeg
+, libmd
+, libpulseaudio
+, librealsense
+, libsurvive
+, libunwind
+, libusb1
+, libuvc
+, libva
 , nix-update-script
 , nlohmann_json
 , onnxruntime
+, opencv4
+, openhmd
+, openvr
 , openxr-loader
+, orc
+# percetto
 , pipewire
 , pkg-config
 , python3
+, SDL2
 , shaderc
 , spdlog
 , systemd
 , udev
 , vulkan-headers
 , vulkan-loader
-, vulkan-tools
+, wayland
+, wayland-protocols
+, wayland-scanner
 , x264
 }:
 stdenv.mkDerivation (finalAttrs: {
@@ -74,6 +103,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [
     cmake
+    doxygen
     git
     glib
     glslang
@@ -86,43 +116,66 @@ stdenv.mkDerivation (finalAttrs: {
   buildInputs = [
     avahi
     boost
+    bluez
+    cjson
     cli11
+    dbus
     eigen
+    elfutils
     ffmpeg
     freetype
-    glib
     glm
+    gst_all_1.gst-plugins-base
+    gst_all_1.gstreamer
     harfbuzz
+    hidapi
+    libbsd
     libdrm
+    libdwg
     libGL
+    libjpeg
+    libmd
+    librealsense
+    libsurvive
+    libunwind
+    libusb1
+    libuvc
     libva
     libX11
     libXrandr
     libpulseaudio
     nlohmann_json
-    onnxruntime
+    opencv4
+    openhmd
+    openvr
     openxr-loader
+    onnxruntime
+    orc
     pipewire
+    SDL2
     shaderc
     spdlog
     systemd
     udev
     vulkan-headers
     vulkan-loader
-    vulkan-tools
+    wayland
+    wayland-protocols
+    wayland-scanner
     x264
   ] ++ lib.optionals cudaSupport [
     cudaPackages.cudatoolkit
   ];
 
   cmakeFlags = [
+    (lib.cmakeBool "WIVRN_USE_NVENC" cudaSupport)
     (lib.cmakeBool "WIVRN_USE_VAAPI" true)
     (lib.cmakeBool "WIVRN_USE_X264" true)
-    (lib.cmakeBool "WIVRN_USE_NVENC" cudaSupport)
-    (lib.cmakeBool "WIVRN_USE_SYSTEMD" true)
     (lib.cmakeBool "WIVRN_USE_PIPEWIRE" true)
     (lib.cmakeBool "WIVRN_USE_PULSEAUDIO" true)
+    (lib.cmakeBool "WIVRN_USE_SYSTEMD" true)
     (lib.cmakeBool "WIVRN_FEATURE_STEAMVR_LIGHTHOUSE" true)
+    (lib.cmakeBool "WIVRN_FEATURE_SOLARXR" false) # Requires flatcc but can't find flatcc_cli when it's added to inputs
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
