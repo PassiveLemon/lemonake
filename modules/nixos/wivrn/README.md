@@ -1,6 +1,14 @@
 # WiVRn
 [GitHub](https://github.com/Meumeu/WiVRn)
 
+In order to compile WiVRn with Nvenc, you must have cudaSupport set in your NixOS configuration (`nixpkgs.config.cudaSupport`).
+
+>[!NOTE]
+> There is an issue where Lemonake won't inherit your cudaSupport resulting in Nvenc never being built. For now, override the value like so: `inputs.lemonake.packages.${pkgs.system}.wivrn-git.override { cudaSupport = true; }`
+
+>[!NOTE]
+> If you are using `wivrn-git`, make sure your ipc socket is at `$XDG_RUNTIME_DIR/wivrn/comp_ipc`. Commit `b6a09ea11acdd638d7aaed10a5f60247840f6983` changed this and it's not in a release yet.
+
 If you use Nvidia, it is recommended to install the `monado-vulkan-layers` (In this repo) package to mitigate crashes with OpenXR.
 You can install it in `hardware.opengl.extraPackages`.
 
@@ -67,3 +75,4 @@ You can install it in `hardware.opengl.extraPackages`.
   };
 }
 ```
+
