@@ -1,14 +1,14 @@
 { config, pkgs, lib, ... }:
 let
   inherit (lib) mkIf mkEnableOption mkPackageOption mkOption mkRenamedOptionModule optionals literalExpression types maintainers;
-  cfg = config.services.steamvr;
+  cfg = config.programs.steamvr;
   configFormat = pkgs.formats.json { };
   openvrRuntimeOverrideConfigFile = configFormat.generate "openvrpaths.vrpath" cfg.openvrRuntimeOverride.json;
   openxrRuntimeOverrideConfigFile = configFormat.generate "active_runtime.json" cfg.openxrRuntimeOverride.json;
 in
 {
   options = {
-    services.steamvr = {
+    programs.steamvr = {
       openvrRuntimeOverride = {
         enable = mkEnableOption "a runtime override for SteamVR OpenVR";
 
@@ -177,16 +177,17 @@ in
 
   imports = [
     # Remove on Dec 13 2024
-    (mkRenamedOptionModule [ "services" "steamvr" "runtimeOverride" ] [ "services" "steamvr" "openvrRuntimeOverride" ])
-    (mkRenamedOptionModule [ "services" "steamvr" "activeRuntimeOverride" ] [ "services" "steamvr" "openxrRuntimeOverride" ])
+    (mkRenamedOptionModule [ "services" "steamvr" ] [ "programs" "steamvr" ])
+    (mkRenamedOptionModule [ "programs" "steamvr" "runtimeOverride" ] [ "programs" "steamvr" "openvrRuntimeOverride" ])
+    (mkRenamedOptionModule [ "programs" "steamvr" "activeRuntimeOverride" ] [ "programs" "steamvr" "openxrRuntimeOverride" ])
   ];
 
   config = {
     # Remove on Dec 13 2024
     assertions = [
       {
-        assertion = (config.services.steamvr.openvrRuntimeOverride.path == "");
-        message = "The services.steamvr.openvrRuntimeOverride.path configuration type has been removed. Consider the json configuration instead.";
+        assertion = (config.programs.steamvr.openvrRuntimeOverride.path == "");
+        message = "The programs.steamvr.openvrRuntimeOverride.path configuration type has been removed. Consider the json configuration instead.";
       }
     ];
     

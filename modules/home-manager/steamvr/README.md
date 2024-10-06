@@ -8,7 +8,7 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
 ```nix
 # home.nix
 {
-  services.steamvr = {
+  programs.steamvr = {
     openvrRuntimeOverride = {
       enable = true;
       config = "json";
@@ -48,7 +48,7 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
 ```nix
 # home.nix
 {
-  services.steamvr = {
+  programs.steamvr = {
     openvrRuntimeOverride = {
       enable = { type = bool; default = false; };
       config = { type = enum [ "json" "text" ]; default = "json"; };
