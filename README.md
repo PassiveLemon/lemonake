@@ -25,12 +25,12 @@ Run `nix flake show github:passivelemon/lemonake` to see all outputs.
 Modules:
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
-  - [`alvr`](./modules/nixos/alvr/README.md)
-  - [`autoadb`](./modules/nixos/autoadb/README.md)
-  - [`wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/316975)
+  - [`programs.alvr`](./modules/nixos/alvr/README.md)
+  - [`services.autoadb`](./modules/nixos/autoadb/README.md)
+  - [`services.wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/316975)
 - Home Manager (Do not use in NixOS configuration)
   - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
-  - [`steamvr`](./modules/home-manager/steamvr/README.md)
+  - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
 
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
