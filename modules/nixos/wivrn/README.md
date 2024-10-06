@@ -28,7 +28,7 @@ You can install it in `hardware.opengl.extraPackages`.
     config = {
       enable = true;
       json = {
-        scale = 0.8;
+        scale = 0.5;
         bitrate = 100000000;
         encoders = [
           {
@@ -41,7 +41,6 @@ You can install it in `hardware.opengl.extraPackages`.
           }
         ];
         application = [ pkgs.wlx-overlay-s ];
-        tcp_only = true;
       };
     };
   };
