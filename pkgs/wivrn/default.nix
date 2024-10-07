@@ -47,6 +47,7 @@
 , libusb1
 , libuvc
 , libva
+, makeDesktopItem
 , nix-update-script
 , nlohmann_json
 , onnxruntime
@@ -187,6 +188,19 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
+  ];
+
+  desktopItems = [
+    (makeDesktopItem {
+      name = "WiVRn Server";
+      desktopName = "WiVRn Server";
+      genericName = "WiVRn Server";
+      comment = "Play your PC VR games on a standalone headset";
+      icon = "io.github.wivrn.wivrn";
+      exec = "wivrn-dashboard";
+      type = "Application";
+      categories = [ "Network" "Game" ];
+    })
   ];
 
   passthru.updateScript = nix-update-script { };
