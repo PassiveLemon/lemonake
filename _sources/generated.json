@@ -108,7 +108,7 @@
     },
     "hd2pystratmacro-git": {
         "cargoLocks": null,
-        "date": "2024-05-18",
+        "date": "2024-10-06",
         "extract": null,
         "name": "hd2pystratmacro-git",
         "passthru": null,
@@ -120,12 +120,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "hd2pystratmacro",
-            "rev": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470",
-            "sha256": "sha256-O2m+FLGmNadou6+/5qzPbxOgJC1MT48BDkTS29E7TO0=",
+            "rev": "60d1ed307273f52836b768f287bcbba1e4c8d08c",
+            "sha256": "sha256-aFlzDes59pYz0Cr7gOhZtz5qPz3fLuR6wkpn+Q4J/GQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e4b8a2e90aa7e94680cee23fcb429ec43fd07470"
+        "version": "60d1ed307273f52836b768f287bcbba1e4c8d08c"
     },
     "monado-vulkan-layers-git": {
         "cargoLocks": null,
@@ -149,7 +149,7 @@
     },
     "opencomposite-git": {
         "cargoLocks": null,
-        "date": "2024-10-04",
+        "date": "2024-10-06",
         "extract": null,
         "name": "opencomposite-git",
         "passthru": null,
@@ -159,13 +159,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "9d2c9d99583fdbbfe1644206da20dab5f4750dfe",
-            "sha256": "sha256-9pPvaQ6tV8eZz5RXQbNNjGkLb8+bODe+tsk+T6X9NTI=",
+            "rev": "67ef46ce8027e2cad22b0b3759ee33e495bb2985",
+            "sha256": "sha256-EvvoP7OJFsOBMEXqrJdY5YoBGopsqNxO5hCZ0DDUTUQ=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "9d2c9d99583fdbbfe1644206da20dab5f4750dfe"
+        "version": "67ef46ce8027e2cad22b0b3759ee33e495bb2985"
     },
     "picom": {
         "cargoLocks": null,
@@ -190,7 +190,7 @@
     },
     "picom-git": {
         "cargoLocks": null,
-        "date": "2024-10-02",
+        "date": "2024-10-06",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -202,12 +202,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "904a111033e4359e9b112ea574fc56389743e4b3",
-            "sha256": "sha256-sNG/KrUCvXG75ztWmLhXqXbjkA9FEF0cmksiCmCLtUY=",
+            "rev": "383cde7512a25740fb7d1f5d814e8a691c47d342",
+            "sha256": "sha256-tRKCJwyvoeZ24pDHMtMFpmyeXAK8vTAHOu1AJ6xygh8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "904a111033e4359e9b112ea574fc56389743e4b3"
+        "version": "383cde7512a25740fb7d1f5d814e8a691c47d342"
     },
     "picom-tag": {
         "cargoLocks": null,
@@ -253,7 +253,7 @@
     },
     "poepyautopot-git": {
         "cargoLocks": null,
-        "date": "2024-05-18",
+        "date": "2024-10-06",
         "extract": null,
         "name": "poepyautopot-git",
         "passthru": null,
@@ -265,12 +265,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "poepyautopot",
-            "rev": "c0bff056ee6b7be698104b996e77a32e8c89fded",
-            "sha256": "sha256-m8c3UwrLshlKsHM5xbJUCBCkC+QKBU4E7XJcequ1w5s=",
+            "rev": "2b124ab6029efb929dc7c249d7fd4ea3f01ff427",
+            "sha256": "sha256-TxQkQOeIVWsPx6+l71IRYxrnlysacSSAFttdHSsbN3g=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c0bff056ee6b7be698104b996e77a32e8c89fded"
+        "version": "2b124ab6029efb929dc7c249d7fd4ea3f01ff427"
     },
     "tilp2-gfm": {
         "cargoLocks": null,
@@ -337,7 +337,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-10-05",
+        "date": "2024-10-06",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -349,12 +349,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "554c0f7ad647d9cd66e380f567f2e842fff6a27a",
-            "sha256": "sha256-LPO1/ysI7iKsmTFjfOZN3jozQib7Q3oAqZP049Sp9W8=",
+            "rev": "80688b817ea95673ae274d35e10c8753d73e026c",
+            "sha256": "sha256-hMfvxQPMNQpEcdsQs3SbUcvBWb8ZVP0pFWVhO8bgQ/w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "554c0f7ad647d9cd66e380f567f2e842fff6a27a"
+        "version": "80688b817ea95673ae274d35e10c8753d73e026c"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,

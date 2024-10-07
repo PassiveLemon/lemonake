@@ -61,15 +61,15 @@
   };
   hd2pystratmacro-git = {
     pname = "hd2pystratmacro-git";
-    version = "e4b8a2e90aa7e94680cee23fcb429ec43fd07470";
+    version = "60d1ed307273f52836b768f287bcbba1e4c8d08c";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "hd2pystratmacro";
-      rev = "e4b8a2e90aa7e94680cee23fcb429ec43fd07470";
+      rev = "60d1ed307273f52836b768f287bcbba1e4c8d08c";
       fetchSubmodules = false;
-      sha256 = "sha256-O2m+FLGmNadou6+/5qzPbxOgJC1MT48BDkTS29E7TO0=";
+      sha256 = "sha256-aFlzDes59pYz0Cr7gOhZtz5qPz3fLuR6wkpn+Q4J/GQ=";
     };
-    date = "2024-05-18";
+    date = "2024-10-06";
   };
   monado-vulkan-layers-git = {
     pname = "monado-vulkan-layers-git";
@@ -87,17 +87,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "9d2c9d99583fdbbfe1644206da20dab5f4750dfe";
+    version = "67ef46ce8027e2cad22b0b3759ee33e495bb2985";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "9d2c9d99583fdbbfe1644206da20dab5f4750dfe";
+      rev = "67ef46ce8027e2cad22b0b3759ee33e495bb2985";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-9pPvaQ6tV8eZz5RXQbNNjGkLb8+bODe+tsk+T6X9NTI=";
+      sha256 = "sha256-EvvoP7OJFsOBMEXqrJdY5YoBGopsqNxO5hCZ0DDUTUQ=";
     };
-    date = "2024-10-04";
+    date = "2024-10-06";
   };
   picom = {
     pname = "picom";
@@ -112,15 +112,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "904a111033e4359e9b112ea574fc56389743e4b3";
+    version = "383cde7512a25740fb7d1f5d814e8a691c47d342";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "904a111033e4359e9b112ea574fc56389743e4b3";
+      rev = "383cde7512a25740fb7d1f5d814e8a691c47d342";
       fetchSubmodules = false;
-      sha256 = "sha256-sNG/KrUCvXG75ztWmLhXqXbjkA9FEF0cmksiCmCLtUY=";
+      sha256 = "sha256-tRKCJwyvoeZ24pDHMtMFpmyeXAK8vTAHOu1AJ6xygh8=";
     };
-    date = "2024-10-02";
+    date = "2024-10-06";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -146,15 +146,15 @@
   };
   poepyautopot-git = {
     pname = "poepyautopot-git";
-    version = "c0bff056ee6b7be698104b996e77a32e8c89fded";
+    version = "2b124ab6029efb929dc7c249d7fd4ea3f01ff427";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "poepyautopot";
-      rev = "c0bff056ee6b7be698104b996e77a32e8c89fded";
+      rev = "2b124ab6029efb929dc7c249d7fd4ea3f01ff427";
       fetchSubmodules = false;
-      sha256 = "sha256-m8c3UwrLshlKsHM5xbJUCBCkC+QKBU4E7XJcequ1w5s=";
+      sha256 = "sha256-TxQkQOeIVWsPx6+l71IRYxrnlysacSSAFttdHSsbN3g=";
     };
-    date = "2024-05-18";
+    date = "2024-10-06";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -192,15 +192,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "554c0f7ad647d9cd66e380f567f2e842fff6a27a";
+    version = "80688b817ea95673ae274d35e10c8753d73e026c";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "554c0f7ad647d9cd66e380f567f2e842fff6a27a";
+      rev = "80688b817ea95673ae274d35e10c8753d73e026c";
       fetchSubmodules = false;
-      sha256 = "sha256-LPO1/ysI7iKsmTFjfOZN3jozQib7Q3oAqZP049Sp9W8=";
+      sha256 = "sha256-hMfvxQPMNQpEcdsQs3SbUcvBWb8ZVP0pFWVhO8bgQ/w=";
     };
-    date = "2024-10-05";
+    date = "2024-10-06";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
