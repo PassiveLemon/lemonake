@@ -20,10 +20,10 @@
 
     imports = [
       inputs.devshell.flakeModule
-      ./shells
       ./modules
-      ./overlays
-      ./pkgs
+      ./parts/overlays.nix
+      ./parts/pkgs.nix
+      ./parts/devshells.nix
     ];
   };
 }

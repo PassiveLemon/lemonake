@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{
   perSystem = { pkgs, ... }: {
     devshells = {
       dotnet = {

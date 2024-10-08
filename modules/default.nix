@@ -1,4 +1,4 @@
-{ ... }: {
+{
   flake = {
     nixosModules = {
       alvr = import ./nixos/alvr;
