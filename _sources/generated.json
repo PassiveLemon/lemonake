@@ -159,13 +159,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "402aff64a7f60dc142fd50d0da6ae5214cdfdc49",
-            "sha256": "sha256-PfeEVaaaiGuSTvMuDVQ+IRwjWxTXZRlHnhaTMF7kGlU=",
+            "rev": "e664f625e07a8249fb0e4f9dab179e47f3596d46",
+            "sha256": "sha256-qykGfzlgEI3odLZTnnnk1NKHGBeYoM9yk2xtFTZkA+8=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "402aff64a7f60dc142fd50d0da6ae5214cdfdc49"
+        "version": "e664f625e07a8249fb0e4f9dab179e47f3596d46"
     },
     "picom": {
         "cargoLocks": null,
@@ -190,7 +190,7 @@
     },
     "picom-git": {
         "cargoLocks": null,
-        "date": "2024-10-10",
+        "date": "2024-10-11",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -202,12 +202,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "dadfe5a70ee67a19ca11f5bdacae51572db12d47",
-            "sha256": "sha256-UlRIfUSrAUZFHHYmiZXJ6hc5WqtAkv3J4nc7DmPX7Ik=",
+            "rev": "6caa76a281e906784deb05038e38919e878be6e0",
+            "sha256": "sha256-05jiIVNubAv8Dby/Tbkag6uB4U/aX58gTKI2NxbKqCU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dadfe5a70ee67a19ca11f5bdacae51572db12d47"
+        "version": "6caa76a281e906784deb05038e38919e878be6e0"
     },
     "picom-tag": {
         "cargoLocks": null,
@@ -337,7 +337,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-10-10",
+        "date": "2024-10-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -349,12 +349,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "2bb1f8278ce6e3d49c584e39979b31945516feff",
-            "sha256": "sha256-VcGLFvKqzQpP6MsSmGCHrttrkszRFPSd92VhQqy5cJ0=",
+            "rev": "1a54b0c23655d7a3615bf8abeda943fdadaa97e6",
+            "sha256": "sha256-+Y/MumS69uVTsYRcsRMOcEeNABuNZgjyPw5sPLVTiCg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2bb1f8278ce6e3d49c584e39979b31945516feff"
+        "version": "1a54b0c23655d7a3615bf8abeda943fdadaa97e6"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
