@@ -2,7 +2,6 @@
 , src
 , lib
 , appimageTools
-, fetchurl
 }:
 let
   pname = "gdlauncher-carbon";

@@ -2,7 +2,6 @@
 , src
 , lib
 , stdenv
-, fetchpatch
 , autoreconfHook
 , glib
 , gnome2
@@ -12,7 +11,7 @@
 , libtifiles2
 , pkg-config
 }:
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "gfm";
   inherit version src;
 

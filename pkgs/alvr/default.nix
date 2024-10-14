@@ -55,6 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     xorg.libXcursor
     xorg.libxcb
     xorg.libXi
+    xvidcore
   ]
   ++ lib.optionals cudaSupport [
     cudaPackages.cuda_nvcc

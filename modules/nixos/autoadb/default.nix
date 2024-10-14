@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption getExe literalExpression types maintainers;
+  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression types maintainers;
   cfg = config.services.autoadb;
 in
 {

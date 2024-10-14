@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption mkRenamedOptionModule optionals literalExpression types maintainers;
+  inherit (lib) mkIf mkEnableOption mkOption mkRenamedOptionModule literalExpression types maintainers;
   cfg = config.programs.steamvr;
   configFormat = pkgs.formats.json { };
   openvrRuntimeOverrideConfigFile = configFormat.generate "openvrpaths.vrpath" cfg.openvrRuntimeOverride.json;

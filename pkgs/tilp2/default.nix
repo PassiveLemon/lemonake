@@ -2,7 +2,6 @@
 , src
 , lib
 , stdenv
-, fetchpatch
 , autoreconfHook
 , gfm
 , glib
@@ -14,7 +13,7 @@
 , libtifiles2
 , pkg-config
 }:
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "tilp2";
   inherit version src;
 

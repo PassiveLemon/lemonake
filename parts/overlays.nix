@@ -1,4 +1,4 @@
-{ self, lib, inputs, ... }:
+{ self, lib, ... }:
 let
   getPackage = pname: pkgs: (pkgs.callPackage ../_sources/generated.nix { }).${pname};
 in

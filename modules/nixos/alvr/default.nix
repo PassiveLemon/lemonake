@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption maintainers;
+  inherit (lib) mkIf mkEnableOption mkPackageOption maintainers;
   cfg = config.programs.alvr;
 in
 {
@@ -24,3 +24,4 @@ in
   };
   meta.maintainers = with maintainers; [ passivelemon ];
 }
+
