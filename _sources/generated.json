@@ -190,7 +190,7 @@
     },
     "picom-git": {
         "cargoLocks": null,
-        "date": "2024-10-16",
+        "date": "2024-10-17",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -202,12 +202,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "5af574d77ec031a285ea1bcee721d0fe24023528",
-            "sha256": "sha256-a4h5EwaA1fQEZMup/vi8CwST5VukbWAnCaaPWq6ixDg=",
+            "rev": "88480bdc8fba9c2322e3af4aab45241ea161f89d",
+            "sha256": "sha256-roDEpHv/ntoPi1dBJWGjOaO5FCIP/vWr+9VcvhjbEAk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5af574d77ec031a285ea1bcee721d0fe24023528"
+        "version": "88480bdc8fba9c2322e3af4aab45241ea161f89d"
     },
     "picom-tag": {
         "cargoLocks": null,

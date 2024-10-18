@@ -112,15 +112,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "5af574d77ec031a285ea1bcee721d0fe24023528";
+    version = "88480bdc8fba9c2322e3af4aab45241ea161f89d";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "5af574d77ec031a285ea1bcee721d0fe24023528";
+      rev = "88480bdc8fba9c2322e3af4aab45241ea161f89d";
       fetchSubmodules = false;
-      sha256 = "sha256-a4h5EwaA1fQEZMup/vi8CwST5VukbWAnCaaPWq6ixDg=";
+      sha256 = "sha256-roDEpHv/ntoPi1dBJWGjOaO5FCIP/vWr+9VcvhjbEAk=";
     };
-    date = "2024-10-16";
+    date = "2024-10-17";
   };
   picom-tag = {
     pname = "picom-tag";
