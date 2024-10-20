@@ -127,6 +127,7 @@ stdenv.mkDerivation (finalAttrs: {
     elfutils
     ffmpeg
     freetype
+    glib
     glm
     gst_all_1.gst-plugins-base
     gst_all_1.gstreamer
@@ -178,11 +179,11 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_USE_X264" true)
     (lib.cmakeBool "WIVRN_USE_PIPEWIRE" true)
     (lib.cmakeBool "WIVRN_USE_PULSEAUDIO" true)
-    (lib.cmakeBool "WIVRN_USE_SYSTEMD" true)
+    (lib.cmakeBool "WIVRN_USE_SYSTEMD" false)
     (lib.cmakeBool "WIVRN_FEATURE_STEAMVR_LIGHTHOUSE" true)
-    (lib.cmakeBool "WIVRN_FEATURE_SOLARXR" false) # Requires flatcc but can't find flatcc_cli when it's added to inputs
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
     (lib.cmakeBool "WIVRN_BUILD_DASHBOARD" true)
+    (lib.cmakeBool "WIVRN_CHECK_CAPSYSNICE" false)
     (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
