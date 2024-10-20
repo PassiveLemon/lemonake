@@ -205,8 +205,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = with lib; {
     description = "An OpenXR streaming application to a standalone headset";
-    homepage = "https://github.com/Meumeu/WiVRn/";
-    changelog = "https://github.com/Meumeu/WiVRn/releases/";
+    homepage = "https://github.com/WiVRn/WiVRn/";
+    changelog = "https://github.com/WiVRn/WiVRn/releases/";
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
