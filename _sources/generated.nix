@@ -192,15 +192,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "08d19bd94d0ba01a5b59c2030c4d9c3a8f9bf537";
+    version = "281b04cbc2ad76542220d338ab547709afd1223b";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "08d19bd94d0ba01a5b59c2030c4d9c3a8f9bf537";
+      rev = "281b04cbc2ad76542220d338ab547709afd1223b";
       fetchSubmodules = false;
-      sha256 = "sha256-7omPuPJZK2mwopBqVyk4GikfmnARcn8clV+St6tNw9c=";
+      sha256 = "sha256-aGUlJ494/PPxRXPgrijAfVdtDROw4v4p/Iz9k29WkU0=";
     };
-    date = "2024-10-21";
+    date = "2024-10-22";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
