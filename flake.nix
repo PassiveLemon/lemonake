@@ -21,8 +21,7 @@
     imports = [
       inputs.devshell.flakeModule
       ./modules
-      ./parts/overlays.nix
-      ./parts/pkgs.nix
+      ./pkgs
       ./parts/devshells.nix
     ];
   };

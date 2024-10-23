@@ -1,34 +1,13 @@
-{ version
-, src
-, lib
-, stdenv
-, cmake
-, vulkan-headers
-, vulkan-loader
-}:
-stdenv.mkDerivation (finalAttrs: {
-  pname = "monado-vulkan-layers";
-  inherit version src;
+{ lib, getPackage, ... }: {
+  flake.overlays = {
+    monado-vulkan-layers = final: prev: {
+      monado-vulkan-layers = lib.warn "The package monado-vulkan-layers has been renamed to monado-vulkan-layers-git. This alias may be removed in the future" final.monado-vulkan-layers-git;
 
-  patches = [
-    ./absolute-layer-path.patch
-  ];
-
-  nativeBuildInputs = [
-    cmake
-  ];
-
-  buildInputs = [
-    vulkan-headers
-    vulkan-loader
-  ];
-
-  meta = with lib; {
-    description = "Vulkan Layers for Monado";
-    homepage = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers";
-    platforms = platforms.linux;
-    license = licenses.boost;
-    maintainers = with maintainers; [ scrumplex passivelemon ];
+      monado-vulkan-layers-git = let
+        package = getPackage "monado-vulkan-layers-git" prev;
+      in
+      prev.callPackage ./package.nix { inherit (package) version src; };
+    };
   };
-})
+}
 
