@@ -22,9 +22,11 @@
         package = getPackage "wivrn-git" prev;
         monado = getPackage "wivrn-git-monado" prev;
       in
-      final.wivrn.override {
+      (final.wivrn.override {
         inherit (package) version src;
         monadoSrc = monado.src;
+      }).overrideAttrs {
+        patches = [ ];
       };
     };
   };
