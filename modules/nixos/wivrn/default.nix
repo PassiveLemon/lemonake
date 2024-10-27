@@ -73,7 +73,7 @@ in
         json = mkOption {
           type = configFormat.type;
           description = ''
-            Configuration for WiVRn. The attributes are serialized to JSON in config.json.
+            Configuration for WiVRn. The attributes are serialized to JSON in config.json. If a config or certain attributes are not provided, the server will default to stock values.
 
             Note that the application option must be either a package or a
             list with package as the first element.
