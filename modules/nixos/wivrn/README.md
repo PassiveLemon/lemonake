@@ -66,7 +66,11 @@ You can install it in `hardware.opengl.extraPackages`.
     };
     config = {
       enable = { type = bool; default = true; };
-      json = { type = formats.json ; default = { }; };
+      json = {
+        type = formats.json;
+        default = { };
+        application = "See note above";
+      };
     };
   };
 }
