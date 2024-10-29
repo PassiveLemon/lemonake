@@ -27,7 +27,7 @@ Modules:
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
   - [`programs.alvr`](./modules/nixos/alvr/README.md)
   - [`services.autoadb`](./modules/nixos/autoadb/README.md)
-  - [`services.wivrn`](./modules/nixos/wivrn/README.md) (https://github.com/NixOS/nixpkgs/pull/316975)
+  - [`services.wivrn`](./modules/nixos/wivrn/README.md)
 - Home Manager (Do not use in NixOS configuration)
   - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
   - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
@@ -52,7 +52,7 @@ Packages:
 - `poepyautopot-git`
 - `tilp2`
 - `tilp2-git`
-- `wivrn` (https://github.com/NixOS/nixpkgs/pull/316975)
+- `wivrn`
 - `wivrn-git`
 
 Naming scheme:
@@ -68,15 +68,11 @@ The only architecture currently supported is `x86_64-linux`. Others may be suppo
 
 ## Binary cache
 ```nix
-# flake.nix
+# configuration.nix
 {
-  outputs = { self, ... } @ inputs: {
-    ...
-
-    nixConfig = {
-      extra-substituters = [ "https://passivelemon.cachix.org" ];
-      extra-trusted-public-keys = [ "passivelemon.cachix.org-1:ScYjLCvvLi70S95SMMr8lMilpZHuafLP3CK/nZ9AaXM=" ];
-    };
+  nix.settings = {
+    extra-substituters = [ "https://passivelemon.cachix.org" ];
+    extra-trusted-public-keys = [ "passivelemon.cachix.org-1:ScYjLCvvLi70S95SMMr8lMilpZHuafLP3CK/nZ9AaXM=" ];
   };
 }
 ```
