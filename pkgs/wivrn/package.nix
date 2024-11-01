@@ -40,6 +40,7 @@
 , libmd
 , libpulseaudio
 , librealsense
+, librsvg
 , libsurvive
 , libunwind
 , libusb1
@@ -109,6 +110,7 @@ stdenv.mkDerivation (finalAttrs: {
     git
     glib
     glslang
+    librsvg
     pkg-config
     python3
     wrapQtAppsHook
