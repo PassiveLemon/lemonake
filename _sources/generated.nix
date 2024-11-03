@@ -80,6 +80,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
@@ -93,6 +94,7 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-+suq0gV8zRDhF3ApnzQCC/5st59VniU6v7TcDdght6Q=";
     };
     date = "2024-10-28";
@@ -179,24 +181,24 @@
   };
   wivrn = {
     pname = "wivrn";
-    version = "v0.21";
+    version = "v0.21.1";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "v0.21";
+      rev = "v0.21.1";
       fetchSubmodules = false;
-      sha256 = "sha256-SPcTm42By+qLk5niJPZfiMOfg4oVaVa8Nt3kba1BOM8=";
+      sha256 = "sha256-03KFVXD7/OTJi3sOHzTjYGLu5voUiz9YNqfO07rB7t4=";
     };
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "e00cd05742d13f2bd3f09174537cdf4d3a61aad6";
+    version = "88d013ebb9b480e8ef2771c972fdff7b7e9f180b";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "e00cd05742d13f2bd3f09174537cdf4d3a61aad6";
+      rev = "88d013ebb9b480e8ef2771c972fdff7b7e9f180b";
       fetchSubmodules = false;
-      sha256 = "sha256-sdSBZI9ZXd5goIRXiYFW90P5NiU2dHtmNz965XBgm5E=";
+      sha256 = "sha256-03KFVXD7/OTJi3sOHzTjYGLu5voUiz9YNqfO07rB7t4=";
     };
     date = "2024-11-03";
   };
@@ -209,6 +211,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-w48Xb1YI8LIV2exHFSgCaTz2FonXYAa55RqlvfauGvk=";
     };
   };
@@ -221,6 +224,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-w48Xb1YI8LIV2exHFSgCaTz2FonXYAa55RqlvfauGvk=";
     };
   };
