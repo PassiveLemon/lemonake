@@ -6,8 +6,7 @@ In order to compile WiVRn with Nvenc, you must have cudaSupport set in your NixO
 >[!NOTE]
 > There is an issue where Lemonake won't inherit your cudaSupport resulting in Nvenc never being built. For now, override the value like so: `inputs.lemonake.packages.${pkgs.system}.wivrn-git.override { cudaSupport = true; }`
 
-If you use Nvidia, it is recommended to install the `monado-vulkan-layers` (In this repo) package to mitigate crashes with OpenXR.
-You can install it in `hardware.opengl.extraPackages`.
+If you use Nvidia, it is recommended to install the `monado-vulkan-layers` package to mitigate crashes with OpenXR. Add it to `hardware.opengl.extraPackages`.
 
 ## Example usage
 ```nix
@@ -22,6 +21,7 @@ You can install it in `hardware.opengl.extraPackages`.
     monadoEnvironment = {
       XRT_COMPOSITOR_LOG = "warning";
     };
+    extraServerFlags = [ "--no-publish-service" ]
     config = {
       enable = true;
       json = {
@@ -37,7 +37,10 @@ You can install it in `hardware.opengl.extraPackages`.
             offset_y = 0.0;
           }
         ];
+        # Different application examples:
+        application = pkgs.wlx-overlay-s;
         application = [ pkgs.wlx-overlay-s ];
+        application = [ pkgs.wlx-overlay-s "--openxr" ];
       };
     };
   };
@@ -56,6 +59,18 @@ You can install it in `hardware.opengl.extraPackages`.
     openFirewall = { type = bool; default = false; };
     highPriority = { type = bool; default = true; };
     defaultRuntime = { type = bool; default = true; };
+    extraServerFlags = {
+      type = types.listOf types.str;
+      default = [ ];
+    };
+    extraApplicationFlags = {
+      type = types.listOf types.str;
+      default = [ ];
+    };
+    extraPackages = {
+      type = types.listOf types.package;
+      default = [ ];
+    };
     monadoEnvironment = {
       type = types.attrsOf types.str;
       default = {
