@@ -39,6 +39,21 @@
         },
         "version": "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b"
     },
+    "alcom": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "alcom",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-in3Ci6p9LuGrRHwTVz7BmOY3cRNjNvV6tMXBasQ+cig=",
+            "type": "url",
+            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v0.1.16-beta.2/alcom-0.1.16-beta.2-x86_64.AppImage"
+        },
+        "version": "0.1.16-beta.2"
+    },
     "alvr": {
         "cargoLocks": null,
         "date": null,

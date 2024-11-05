@@ -15,6 +15,7 @@
 
   imports = [
     ./adgobye
+    ./alcom
     ./alvr
     ./animdl
     ./gdlauncher
@@ -33,6 +34,7 @@
 
     linux = final: prev: with self.overlays;
       (adgobye final prev)
+      // (alcom final prev)
       // (alvr final prev)
       // (animdl final prev)
       // (gdlauncher final prev)

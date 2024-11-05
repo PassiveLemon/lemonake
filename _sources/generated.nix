@@ -24,6 +24,14 @@
     };
     date = "2024-10-05";
   };
+  alcom = {
+    pname = "alcom";
+    version = "0.1.16-beta.2";
+    src = fetchurl {
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v0.1.16-beta.2/alcom-0.1.16-beta.2-x86_64.AppImage";
+      sha256 = "sha256-in3Ci6p9LuGrRHwTVz7BmOY3cRNjNvV6tMXBasQ+cig=";
+    };
+  };
   alvr = {
     pname = "alvr";
     version = "v20.11.1";
