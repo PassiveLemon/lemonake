@@ -14,6 +14,7 @@
   _module.args.getPackage = pname: pkgs: (pkgs.callPackage ../_sources/generated.nix { }).${pname};
 
   imports = [
+    ./adgobye
     ./alvr
     ./animdl
     ./gdlauncher
@@ -31,7 +32,8 @@
     default = self.overlays.linux;
 
     linux = final: prev: with self.overlays;
-      (alvr final prev)
+      (adgobye final prev)
+      // (alvr final prev)
       // (animdl final prev)
       // (gdlauncher final prev)
       // (gfm final prev)

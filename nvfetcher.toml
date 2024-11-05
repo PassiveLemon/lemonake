@@ -1,3 +1,11 @@
+[adgobye]
+src.github = "AdGoBye/AdGoBye"
+fetch.github = "AdGoBye/AdGoBye"
+
+[adgobye-git]
+src.git = "https://github.com/AdGoBye/AdGoBye"
+fetch.github = "AdGoBye/AdGoBye"
+
 [alvr]
 src.github = "alvr-org/ALVR"
 fetch.github = "alvr-org/ALVR"
