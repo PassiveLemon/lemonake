@@ -8,6 +8,7 @@
 buildDotnetModule {
   pname = "adgobye";
   inherit src;
+  # Some manipulation of the version string to pass the "is not a valid version string" check
   version = (
     if lib.hasPrefix "v" versionRaw
     then  lib.removePrefix "v" versionRaw
