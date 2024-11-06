@@ -1,7 +1,11 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression types maintainers;
+  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption getExe literalExpression types maintainers;
   cfg = config.services.autoadb;
+  commandScript = pkgs.writeScript "commandScript.sh" ''
+    #!${pkgs.runtimeShell}
+    ${cfg.command}
+  '';
 in
 {
   options = {
@@ -41,10 +45,7 @@ in
           StartLimitIntervalSec = 500;
         };
         serviceConfig = {
-          ExecStart = pkgs.writeScript "execstart.sh" ''
-            #!${pkgs.runtimeShell}
-            ${cfg.command}
-          '';
+          ExecStart = "${getExe cfg.package} ${commandScript}";
           Restart = "on-failure";
           RestartSec = "5s";
         };
