@@ -41,17 +41,16 @@ in
           StartLimitIntervalSec = 500;
         };
         serviceConfig = {
+          ExecStart = pkgs.writeScript "execstart.sh" ''
+            #!${pkgs.runtimeShell}
+            ${cfg.command}
+          '';
           Restart = "on-failure";
           RestartSec = "5s";
         };
-        script = ''
-          ${cfg.command}
-        '';
         wantedBy = [ "default.target" ];
         path = [ cfg.package pkgs.android-tools ] ++ cfg.extraPackages;
-        restartTriggers = [
-          cfg.package
-        ];
+        restartTriggers = [ cfg.package ];
       };
     };
 
