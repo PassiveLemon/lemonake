@@ -29,7 +29,11 @@ let
   );
   applicationPackage = mkIf applicationCheck applicationAttr;
   applicationPackageExe = getExe applicationAttr;
-  serverPackageExe = getExe cfg.package;
+  serverPackageExe = (
+    if cfg.highPriority
+    then "${config.security.wrapperDir}/wivrn-server"
+    else getExe cfg.package
+  );
 
   # Managing strings
   applicationStrings = builtins.tail cfg.config.json.application;
@@ -66,6 +70,8 @@ in
       '';
 
       autoStart = mkEnableOption "starting the service by default";
+
+      highPriority = mkEnableOption "high priority capability for asynchronous reprojection";
 
       monadoEnvironment = mkOption {
         type = types.attrs;
@@ -140,6 +146,14 @@ in
       }
     ];
 
+    security.wrappers."wivrn-server" = mkIf cfg.highPriority {
+      setuid = false;
+      owner = "root";
+      group = "root";
+      capabilities = "cap_sys_nice+eip";
+      source = getExe cfg.package;
+    };
+
     systemd.user = {
       services = {
         # The WiVRn server runs in a hardened service and starts the application in a different service
@@ -152,25 +166,31 @@ in
             XRT_PRINT_OPTIONS = "on";
             IPC_EXIT_ON_DISCONNECT = "off";
           } // cfg.monadoEnvironment;
-          serviceConfig = {
-            ExecStart = serverExec;
-            # Hardening options
-            CapabilityBoundingSet = [ "CAP_SYS_NICE" ];
-            AmbientCapabilities = [ "CAP_SYS_NICE" ];
-            LockPersonality = true;
-            NoNewPrivileges = true;
-            PrivateTmp = true;
-            ProtectClock = true;
-            ProtectControlGroups = true;
-            ProtectKernelLogs = true;
-            ProtectKernelModules = true;
-            ProtectKernelTunables = true;
-            ProtectProc = "invisible";
-            ProtectSystem = "strict";
-            RemoveIPC = true;
-            RestrictNamespaces = true;
-            RestrictSUIDSGID = true;
-          };
+          serviceConfig = (
+            if !cfg.highPriority
+            then {
+              ExecStart = serverExec;
+              # Hardening options
+              CapabilityBoundingSet = [ "CAP_SYS_NICE" ];
+              AmbientCapabilities = [ "CAP_SYS_NICE" ];
+              LockPersonality = true;
+              NoNewPrivileges = true;
+              PrivateTmp = true;
+              ProtectClock = true;
+              ProtectControlGroups = true;
+              ProtectKernelLogs = true;
+              ProtectKernelModules = true;
+              ProtectKernelTunables = true;
+              ProtectProc = "invisible";
+              ProtectSystem = "strict";
+              RemoveIPC = true;
+              RestrictNamespaces = true;
+              RestrictSUIDSGID = true;
+            }
+            else {
+              ExecStart = serverExec;
+            }
+          );
           wantedBy = mkIf cfg.autoStart [ "default.target" ];
           restartTriggers = [ cfg.package ];
         };
