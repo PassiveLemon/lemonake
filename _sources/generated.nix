@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "0.1.16-beta.2";
+    version = "0.1.16";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v0.1.16-beta.2/alcom-0.1.16-beta.2-x86_64.AppImage";
-      sha256 = "sha256-in3Ci6p9LuGrRHwTVz7BmOY3cRNjNvV6tMXBasQ+cig=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v0.1.16/alcom-0.1.16-x86_64.AppImage";
+      sha256 = "sha256-Yf/MfzFynlC0g4B8qdYi/m30bvVFt5BoX+3dW65mlbQ=";
     };
   };
   alvr = {
@@ -118,50 +118,50 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "e162c7e9be2521a357fba4bee13af85437a1027b";
+    version = "34311dabf430d6051d7e97f6081842a5394d2a67";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "e162c7e9be2521a357fba4bee13af85437a1027b";
+      rev = "34311dabf430d6051d7e97f6081842a5394d2a67";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+suq0gV8zRDhF3ApnzQCC/5st59VniU6v7TcDdght6Q=";
+      sha256 = "sha256-sjgnai7RJemIXuviXhW6+L/zioz7UePaOUh3mVteGww=";
     };
-    date = "2024-10-28";
+    date = "2024-11-11";
   };
   picom = {
     pname = "picom";
-    version = "v12.3";
+    version = "v12.4";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12.3";
+      rev = "v12.4";
       fetchSubmodules = false;
-      sha256 = "sha256-FwjMlHP8xNJikkPpz+8BORrqqKYvRpkqm9GbExCoLAU=";
+      sha256 = "sha256-qhuRDmKJLeeR13H4fBHYviKXdj89ZXCsfdou1JZJIh4=";
     };
   };
   picom-git = {
     pname = "picom-git";
-    version = "4529db794c1f255b4c2de7acccf016b60f0a9151";
+    version = "d04840fab7636a6de7096b1b5c3ff661795ef906";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "4529db794c1f255b4c2de7acccf016b60f0a9151";
+      rev = "d04840fab7636a6de7096b1b5c3ff661795ef906";
       fetchSubmodules = false;
-      sha256 = "sha256-RzTbUzbI+JNPqfVWZr1edfYTayvxAc/abp6xHZje3uM=";
+      sha256 = "sha256-nbUhT2mA5TTrDOrU26KBGhjoQUzs8yOrVBYQcIx4Nzg=";
     };
-    date = "2024-11-07";
+    date = "2024-11-12";
   };
   picom-tag = {
     pname = "picom-tag";
-    version = "v12.3";
+    version = "v12.4";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12.3";
+      rev = "v12.4";
       fetchSubmodules = false;
-      sha256 = "sha256-FwjMlHP8xNJikkPpz+8BORrqqKYvRpkqm9GbExCoLAU=";
+      sha256 = "sha256-qhuRDmKJLeeR13H4fBHYviKXdj89ZXCsfdou1JZJIh4=";
     };
   };
   poepyautopot = {
@@ -223,15 +223,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3147f4465da26fdbfe10e1e3ad81eb66fc09b3b7";
+    version = "d8e023cbf4bac6f714f826104708b201d030e327";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3147f4465da26fdbfe10e1e3ad81eb66fc09b3b7";
+      rev = "d8e023cbf4bac6f714f826104708b201d030e327";
       fetchSubmodules = false;
-      sha256 = "sha256-5UYRtisFMwblg0yzcOD5pRGw80PHAO+TNB+6b0GtJtU=";
+      sha256 = "sha256-ZimTdrHNY5xjgUtkCKD5WbBXa9J/ZuJDGHwV6XjOOZs=";
     };
-    date = "2024-11-10";
+    date = "2024-11-11";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
