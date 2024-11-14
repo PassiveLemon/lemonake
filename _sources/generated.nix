@@ -132,36 +132,36 @@
   };
   picom = {
     pname = "picom";
-    version = "v12.4";
+    version = "v12.5";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12.4";
+      rev = "v12.5";
       fetchSubmodules = false;
-      sha256 = "sha256-qhuRDmKJLeeR13H4fBHYviKXdj89ZXCsfdou1JZJIh4=";
+      sha256 = "sha256-H8IbzzrzF1c63MXbw5mqoll3H+vgcSVpijrlSDNkc+o=";
     };
   };
   picom-git = {
     pname = "picom-git";
-    version = "d04840fab7636a6de7096b1b5c3ff661795ef906";
+    version = "5302d0edbe836502440383bc2db4dbad62232e8b";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "d04840fab7636a6de7096b1b5c3ff661795ef906";
+      rev = "5302d0edbe836502440383bc2db4dbad62232e8b";
       fetchSubmodules = false;
-      sha256 = "sha256-nbUhT2mA5TTrDOrU26KBGhjoQUzs8yOrVBYQcIx4Nzg=";
+      sha256 = "sha256-Z/z0im6/iqfYLUjaYO9s4m6NvywwUhr9lSn98gYY5fM=";
     };
-    date = "2024-11-12";
+    date = "2024-11-13";
   };
   picom-tag = {
     pname = "picom-tag";
-    version = "v12.4";
+    version = "v12.5";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "v12.4";
+      rev = "v12.5";
       fetchSubmodules = false;
-      sha256 = "sha256-qhuRDmKJLeeR13H4fBHYviKXdj89ZXCsfdou1JZJIh4=";
+      sha256 = "sha256-H8IbzzrzF1c63MXbw5mqoll3H+vgcSVpijrlSDNkc+o=";
     };
   };
   poepyautopot = {
