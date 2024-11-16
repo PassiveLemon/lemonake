@@ -8,7 +8,7 @@ in
     programs.alvr = {
       enable = mkEnableOption "ALVR, the VR desktop streamer";
 
-      package = mkPackageOption pkgs "ALVR" { };
+      package = mkPackageOption pkgs "alvr" { };
 
       openFirewall = mkEnableOption "the default ports in the firewall for the ALVR server";
     };

@@ -39,17 +39,21 @@
       owner = "alvr-org";
       repo = "ALVR";
       rev = "v20.11.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-boSS7eEfcKRJf5gt1LKk/DuyZEWMTun093P7mkIjUgs=";
+      fetchSubmodules = true;
+      sha256 = "sha256-d4KldPii8W1HcfnMSD8Fn+IGO/a3r8747APPjRCnbe8=";
     };
   };
-  alvr-archive = {
-    pname = "alvr-archive";
-    version = "v20.11.1";
-    src = fetchTarball {
-      url = "https://github.com/alvr-org/ALVR/releases/download/v20.11.1/alvr_streamer_linux.tar.gz";
-      sha256 = "sha256-/m5uyqI1qrWc82FSoU+baSzpvIGXOwjjJhObMeWPjfg=";
+  alvr-git = {
+    pname = "alvr-git";
+    version = "f86d34ec21a69eb0446ad8d1499612c20802f791";
+    src = fetchFromGitHub {
+      owner = "alvr-org";
+      repo = "ALVR";
+      rev = "f86d34ec21a69eb0446ad8d1499612c20802f791";
+      fetchSubmodules = true;
+      sha256 = "sha256-hTQeSoxEl76TIOqb3EPeSkWFkNgKyWby13IoHq9mp5Q=";
     };
+    date = "2024-11-14";
   };
   animdl-git = {
     pname = "animdl-git";
@@ -111,7 +115,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
@@ -125,7 +128,6 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-sjgnai7RJemIXuviXhW6+L/zioz7UePaOUh3mVteGww=";
     };
     date = "2024-11-11";
@@ -223,15 +225,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "de8638e9dae8ec319a3e94f791f984cb5684fff4";
+    version = "148ea1433b03fd29c4141d8b89bad9534151a8a5";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "de8638e9dae8ec319a3e94f791f984cb5684fff4";
+      rev = "148ea1433b03fd29c4141d8b89bad9534151a8a5";
       fetchSubmodules = false;
-      sha256 = "sha256-tiRQlQj6c1nJLxIh+1JUv0N7qyZBuAsK24pCkv41lpY=";
+      sha256 = "sha256-MGgF4iOB/r1D8eW5JkexPiNrXvQTr2iJru8dRhlyOs4=";
     };
-    date = "2024-11-15";
+    date = "2024-11-16";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -242,7 +244,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-8WAIzUyzSDuNrFqbrD2aqNiVfgh1qzBXO7rN4xGIMns=";
     };
   };
@@ -255,7 +256,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-w48Xb1YI8LIV2exHFSgCaTz2FonXYAa55RqlvfauGvk=";
     };
   };

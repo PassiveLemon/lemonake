@@ -38,6 +38,7 @@ Packages:
 - `adgobye-git`
 - `alcom`
 - `alvr`
+- `alvr-git`
 - `animdl-git`
 - `gdlauncher` (`gdlauncher-carbon`)
 - `gdlauncher-carbon`

@@ -3,12 +3,17 @@
     alvr = final: prev: {
       alvr = let
         package = getPackage "alvr" prev;
-        archive = getPackage "alvr-archive" prev;
       in
-      prev.callPackage ./package.nix {
-        inherit (archive) version src;
-        alvrSrc = package.src;
-      };
+      prev.alvr.overrideAttrs (prevAttrs: {
+        inherit (package) version src;
+      });
+
+      alvr-git = let
+        package = getPackage "alvr-git" prev;
+      in
+      prev.alvr.overrideAttrs (prevAttrs: {
+        inherit (package) version src;
+      });
     };
   };
 }

@@ -15,10 +15,12 @@ fetch.url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v$ver/alco
 [alvr]
 src.github = "alvr-org/ALVR"
 fetch.github = "alvr-org/ALVR"
+git.fetchSubmodules = true
 
-[alvr-archive]
-src.github = "alvr-org/ALVR"
-fetch.tarball = "https://github.com/alvr-org/ALVR/releases/download/$ver/alvr_streamer_linux.tar.gz"
+[alvr-git]
+src.git = "https://github.com/alvr-org/ALVR"
+fetch.github = "alvr-org/ALVR"
+git.fetchSubmodules = true
 
 [animdl-git]
 src.git = "https://github.com/justfoolingaround/animdl"
