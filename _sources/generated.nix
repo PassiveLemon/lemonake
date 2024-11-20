@@ -45,13 +45,13 @@
   };
   alvr-git = {
     pname = "alvr-git";
-    version = "944c9502e97b2d1e697e5c1a8d378e9b49a3062b";
+    version = "ec82fc3769c28f745a65f2fbb9bf6694cb76792b";
     src = fetchFromGitHub {
       owner = "alvr-org";
       repo = "ALVR";
-      rev = "944c9502e97b2d1e697e5c1a8d378e9b49a3062b";
+      rev = "ec82fc3769c28f745a65f2fbb9bf6694cb76792b";
       fetchSubmodules = true;
-      sha256 = "sha256-kiAweHWDH+9Cpgumzg9sitO9U8Ty08kh7x5QpLXpMHs=";
+      sha256 = "sha256-tsunPS0ZvluJ/Mhjh9t7ADtikn/YPyvZ98OFAPSLjhs=";
     };
     date = "2024-11-19";
   };
