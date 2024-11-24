@@ -14,7 +14,11 @@
       picom-git = let
         package = getPackage "picom-git" prev;
       in
-      prev.picom.overrideAttrs { inherit (package) version src; };
+      prev.picom.overrideAttrs {
+        inherit (package) version src;
+
+        nativeInstallCheckInputs = [ ];
+      };
     };
   };
 }
