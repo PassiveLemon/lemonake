@@ -30,11 +30,12 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
     openxrRuntimeOverride = {
       enable = true;
       config = "json";
+      # Note: Path is not used if config is set to json, this is just for an example.
+      path = "${pkgs.wivrn}/share/openxr/1/openxr_wivrn.json";
       json = {
         file_format_version = "1.0.0";
         runtime = {
           name = "Monado";
-          # Note: WiVRn is not merged yet!
           library_path = "${pkgs.wivrn}/lib/wivrn/libopenxr_wivrn.so";
           MND_libmonado_path = "${pkgs.wivrn}/lib/wivrn/libmonado.so";
         };
