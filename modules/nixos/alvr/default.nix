@@ -15,6 +15,10 @@ in
   };
 
   config = mkIf cfg.enable {
+    # Remove on Feb 24 2025
+    warnings = [
+      "ALVR is no longer being vendored in Lemonake. This warning will be removed in the future."
+    ]
     environment.systemPackages = [ cfg.package ];
 
     networking.firewall = mkIf cfg.openFirewall {

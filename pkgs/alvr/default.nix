@@ -1,19 +1,9 @@
-{ getPackage, ... }: {
+{ lib, ... }: {
   flake.overlays = {
     alvr = final: prev: {
-      alvr = let
-        package = getPackage "alvr" prev;
-      in
-      prev.alvr.overrideAttrs (prevAttrs: {
-        inherit (package) version src;
-      });
-
-      alvr-git = let
-        package = getPackage "alvr-git" prev;
-      in
-      prev.alvr.overrideAttrs (prevAttrs: {
-        inherit (package) version src;
-      });
+      # Remove on Feb 24 2025
+      alvr = lib.warn "ALVR is no longer being vendored in Lemonake. This warning will be removed in the future." prev.alvr;
+      alvr-git = final.alvr;
     };
   };
 }

@@ -25,7 +25,6 @@ Run `nix flake show github:passivelemon/lemonake` to see all outputs.
 Modules:
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
-  - [`programs.alvr`](./modules/nixos/alvr/README.md)
   - [`services.autoadb`](./modules/nixos/autoadb/README.md)
   - [`services.wivrn`](./modules/nixos/wivrn/README.md)
 - Home Manager (Do not use in NixOS configuration)
@@ -37,8 +36,6 @@ Packages:
 - `adgobye`
 - `adgobye-git`
 - `alcom`
-- `alvr`
-- `alvr-git`
 - `animdl-git`
 - `gdlauncher` (`gdlauncher-carbon`)
 - `gdlauncher-carbon`

@@ -35,6 +35,7 @@
     linux = final: prev: with self.overlays;
       (adgobye final prev)
       // (alcom final prev)
+      # Remove on Feb 24 2025
       // (alvr final prev)
       // (animdl final prev)
       // (gdlauncher final prev)
