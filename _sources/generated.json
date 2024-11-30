@@ -79,7 +79,7 @@
     },
     "alvr-git": {
         "cargoLocks": null,
-        "date": "2024-11-23",
+        "date": "2024-11-29",
         "extract": null,
         "name": "alvr-git",
         "passthru": null,
@@ -91,12 +91,12 @@
             "name": null,
             "owner": "alvr-org",
             "repo": "ALVR",
-            "rev": "c8d74f51def8e57e2f58c27319f02f0f9b00fd7c",
-            "sha256": "sha256-WItLqQ1ppBR2sANKvXrUOsuVDTgzASbemRZY/lwawyU=",
+            "rev": "597f5e9495752df576da494f8f63f753fe0c6857",
+            "sha256": "sha256-l9t6RPuXsvejytCzuYQb6JSiHV+a7tyxGW6xNF15+A8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c8d74f51def8e57e2f58c27319f02f0f9b00fd7c"
+        "version": "597f5e9495752df576da494f8f63f753fe0c6857"
     },
     "animdl-git": {
         "cargoLocks": null,
@@ -401,7 +401,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-11-28",
+        "date": "2024-11-29",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -413,12 +413,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "a6977ca27f8e8362f19a5bd95efb85d195b6de1d",
-            "sha256": "sha256-VDcw800lbAmO+pIYEBOKfnlJYVFJXKRZ6K4zOzhB8Pg=",
+            "rev": "bab3a2395352dfcc24ff489545af2e2df1c5057c",
+            "sha256": "sha256-EvD4XCDxerMfTLdRf0x76eYlkg6QsrkMCw8riR0BkTk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a6977ca27f8e8362f19a5bd95efb85d195b6de1d"
+        "version": "bab3a2395352dfcc24ff489545af2e2df1c5057c"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
