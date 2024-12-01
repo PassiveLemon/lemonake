@@ -59,8 +59,7 @@
 , pipewire
 , pkg-config
 , python3
-, qtbase
-, qttools
+, qt6
 , SDL2
 , shaderc
 , spdlog
@@ -71,7 +70,6 @@
 , wayland
 , wayland-protocols
 , wayland-scanner
-, wrapQtAppsHook
 , x264
 }:
 stdenv.mkDerivation (finalAttrs: {
@@ -113,7 +111,7 @@ stdenv.mkDerivation (finalAttrs: {
     librsvg
     pkg-config
     python3
-    wrapQtAppsHook
+    qt6.wrapQtAppsHook
   ] ++ lib.optionals cudaSupport [
     autoAddDriverRunpath
   ];
@@ -158,8 +156,8 @@ stdenv.mkDerivation (finalAttrs: {
     onnxruntime
     orc
     pipewire
-    qtbase
-    qttools
+    qt6.qtbase
+    qt6.qttools
     SDL2
     shaderc
     spdlog
