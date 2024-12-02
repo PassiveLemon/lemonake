@@ -79,7 +79,7 @@
     },
     "alvr-git": {
         "cargoLocks": null,
-        "date": "2024-11-29",
+        "date": "2024-12-01",
         "extract": null,
         "name": "alvr-git",
         "passthru": null,
@@ -91,12 +91,12 @@
             "name": null,
             "owner": "alvr-org",
             "repo": "ALVR",
-            "rev": "597f5e9495752df576da494f8f63f753fe0c6857",
-            "sha256": "sha256-l9t6RPuXsvejytCzuYQb6JSiHV+a7tyxGW6xNF15+A8=",
+            "rev": "91761f0eb50f9fb66a964a13327dc94a24cdedb0",
+            "sha256": "sha256-Yw9MojETORvmbPxX1h2XDdJceW2PAn4bo+BcPgdoXa8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "597f5e9495752df576da494f8f63f753fe0c6857"
+        "version": "91761f0eb50f9fb66a964a13327dc94a24cdedb0"
     },
     "animdl-git": {
         "cargoLocks": null,
@@ -359,7 +359,7 @@
     },
     "tilp2-gfm-git": {
         "cargoLocks": null,
-        "date": "2023-11-12",
+        "date": "2024-12-01",
         "extract": null,
         "name": "tilp2-gfm-git",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "debrouxl",
             "repo": "tilp_and_gfm",
-            "rev": "5a2ea6337c4983b80375a50e3ada1f7c45f6e9ea",
-            "sha256": "sha256-sIwio294jvb21N0XTFhDGbd1uq/yFfgrxBRtMw+NVew=",
+            "rev": "0a525619a07d92734b5eb5ba1d47c56f4de37458",
+            "sha256": "sha256-itPop4GO6ty40iucg31YgHEoK0W05eM+rD9tF+nAugE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5a2ea6337c4983b80375a50e3ada1f7c45f6e9ea"
+        "version": "0a525619a07d92734b5eb5ba1d47c56f4de37458"
     },
     "wivrn": {
         "cargoLocks": null,
@@ -401,7 +401,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-11-30",
+        "date": "2024-12-01",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -413,12 +413,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "cf55ff9b3a89c41d9c431f0c9d52136953997997",
-            "sha256": "sha256-mpMA9tNdz3f8NUcpJrIglnQcM2GioPiJ916CA6Fu1V4=",
+            "rev": "dfdff6f3e4d9bee3e5cd5470a2562d89e9502222",
+            "sha256": "sha256-r6REhAqtfGiQ5fEt19x6rfAP/C8GOk1YbMq/dKDpwko=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cf55ff9b3a89c41d9c431f0c9d52136953997997"
+        "version": "dfdff6f3e4d9bee3e5cd5470a2562d89e9502222"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
