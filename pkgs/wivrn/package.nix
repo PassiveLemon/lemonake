@@ -38,6 +38,7 @@
 , libdwg
 , libjpeg
 , libmd
+, libnotify
 , libpulseaudio
 , librealsense
 , librsvg
@@ -139,6 +140,7 @@ stdenv.mkDerivation (finalAttrs: {
     libGL
     libjpeg
     libmd
+    libnotify
     librealsense
     libsurvive
     libunwind
@@ -184,10 +186,10 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
     (lib.cmakeBool "WIVRN_BUILD_DASHBOARD" true)
     (lib.cmakeBool "WIVRN_CHECK_CAPSYSNICE" false)
-    (lib.cmakeBool "WIVRN_OPENXR_INSTALL_ABSOLUTE_RUNTIME_PATH" true)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
-    (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
+    (lib.cmakeFeature "WIVRN_OPENXR_MANIFEST_TYPE" "absolute")
     (lib.cmakeFeature "GIT_DESC" "${finalAttrs.version}")
+    (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
   ];
 
   desktopItems = [
