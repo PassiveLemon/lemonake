@@ -41,10 +41,10 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime. On
         };
       };
     };
-  };
-}
-```
-
+    helperScript = {
+      enable = true;
+      openvrRuntime = "opencomposite";
+      openxrRuntime = "wivrn";
     };
   };
 }
