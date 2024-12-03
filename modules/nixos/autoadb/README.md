@@ -19,15 +19,3 @@ Everything in the command attribute is turned into a shell script and passed to 
 }
 ```
 
-## Full overview
-```nix
-# configuration.nix
-{
-  services.autoadb = {
-    enable = { type = bool; default = false; };
-    package = { type = package; default = pkgs.autoadb; };
-    command = { type = str; default = ""; };
-    extraPackages = { type = listOf package; default = [ ]; };
-  };
-}
-```

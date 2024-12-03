@@ -5,6 +5,48 @@ let
   configFormat = pkgs.formats.json { };
   openvrRuntimeOverrideConfigFile = configFormat.generate "openvrpaths.vrpath" cfg.openvrRuntimeOverride.json;
   openxrRuntimeOverrideConfigFile = configFormat.generate "active_runtime.json" cfg.openxrRuntimeOverride.json;
+
+  openvrRuntimePackage = (
+    if cfg.helperScript.openvrRuntimePackage != ""
+    then cfg.helperScript.openvrRuntimePackage
+    else pkgs.opencomposite
+  );
+  openxrRuntimePackage = (
+    if cfg.helperScript.openxrRuntimePackage != ""
+    then cfg.helperScript.openxrRuntimePackage
+    else if cfg.helperScript.openxrRuntime == "wivrn"
+    then pkgs.wivrn
+    else pkgs.monado
+  );
+
+  vrOverride = (
+    if cfg.helperScript.openvrRuntime == "opencomposite"
+    then "${openvrRuntimePackage}/lib/opencomposite"
+    else ""
+  );
+  xrRuntimeJson = (
+    if cfg.helperScript.openxrRuntime == "monado"
+    then "${openxrRuntimePackage}/share/openxr/1/openxr_monado.json"
+    else if cfg.helperScript.openxrRuntime == "wivrn"
+    then "${openxrRuntimePackage}/share/openxr/1/openxr_wivrn.json"
+    else ""
+  );
+  pressureVesselFilesystemsReadWrite = (
+    if cfg.helperScript.openxrRuntime == "monado"
+    then "$XDG_RUNTIME_DIR/monado_comp_ipc"
+    else if cfg.helperScript.openxrRuntime == "wivrn"
+    then "$XDG_RUNTIME_DIR/wivrn/comp_ipc"
+    else ""
+  );
+  helperScriptE = pkgs.writeShellApplication {
+    name = "oc-helper";
+    text = ''
+      export VR_OVERRIDE=${vrOverride}
+      export XR_RUNTIME_JSON=${xrRuntimeJson}
+      export PRESSURE_VESSEL_FILESYSTEMS_RW=${pressureVesselFilesystemsReadWrite}
+      exec "$@"
+    '';
+  };
 in
 {
   options = {
@@ -18,6 +60,7 @@ in
           default = "json";
         };
 
+        # Remove on Dec 13 2024
         path = mkOption {
           type = types.str;
           description = "Deprecated configuration type.";
@@ -26,9 +69,7 @@ in
 
         json = mkOption {
           type = configFormat.type;
-          description = ''
-            Configuration for SteamVR OpenVR runtime. The attributes are serialized to JSON in `XDG_CONFIG_HOME/openxr/1/openvrpaths.vrpath`
-          '';
+          description = "Configuration for SteamVR OpenVR runtime. The attributes are serialized to JSON in `XDG_CONFIG_HOME/openxr/1/openvrpaths.vrpath`";
           default = {
             config = [
               "${config.home.homeDirectory}/.local/share/Steam/config"
@@ -63,9 +104,7 @@ in
 
         text = mkOption {
           type = types.str;
-          description = ''
-            Configuration for SteamVR OpenVR runtime. The text is placed in `XDG_CONFIG_HOME/openxr/1/openvrpaths.vrpath` verbatim.
-          '';
+          description = "Configuration for SteamVR OpenVR runtime. The text is placed in `XDG_CONFIG_HOME/openxr/1/openvrpaths.vrpath` verbatim.";
           default = literalExpression ''
             {
               "config": [
@@ -119,9 +158,7 @@ in
 
         json = mkOption {
           type = configFormat.type;
-          description = ''
-            Configuration for active OpenXR runtime. The attributes are serialized to JSON in `XDG_CONFIG_HOME/openxr/1/active_runtime.json`
-          '';
+          description = "Configuration for active OpenXR runtime. The attributes are serialized to JSON in `XDG_CONFIG_HOME/openxr/1/active_runtime.json`";
           default = {
             file_format_version = "1.0.0";
             runtime = {
@@ -145,9 +182,7 @@ in
 
         text = mkOption {
           type = types.str;
-          description = ''
-            Configuration for active OpenXR runtime. The text is placed in `XDG_CONFIG_HOME/openxr/1/active_runtime.json` verbatim.
-          '';
+          description = "Configuration for active OpenXR runtime. The text is placed in `XDG_CONFIG_HOME/openxr/1/active_runtime.json` verbatim.";
           default = literalExpression ''
             {
               "file_format_version": "1.0.0",
@@ -170,6 +205,30 @@ in
               }
             }
           '';
+        };
+      };
+
+      helperScript = {
+        enable = mkEnableOption "a helper script for setting SteamVR variables";
+        openvrRuntime = mkOption {
+          type = types.enum [ "opencomposite" ];
+          description = "The OpenVR runtime to set for `VR_OVERRIDE`";
+          default = "opencomposite";
+        };
+        openvrRuntimePackage = mkOption {
+          type = types.package;
+          description = "The path to the OpenVR runtime build. This is option is for overriding the openvrRuntime package.";
+          default = "";
+        };
+        openxrRuntime = mkOption {
+          type = types.enum [ "monado" "wivrn" ];
+          description = "The OpenXR runtime to set for `XR_RUNTIME_JSON` and `PRESSURE_VESSEL_FILESYSTEMS_RW`";
+          default = "monado";
+        };
+        openxrRuntimePackage = mkOption {
+          type = types.package;
+          description = "The path to the OpenXR runtime json. This is option is for overriding the openxrRuntime package.";
+          default = "";
         };
       };
     };
@@ -205,6 +264,10 @@ in
         text = mkIf (cfg.openxrRuntimeOverride.config == "text") cfg.openxrRuntimeOverride.text;
       };
     };
+
+    home.packages = mkIf cfg.helperScript.enable [
+      helperScriptE
+    ];
   };
   meta.maintainers = with maintainers; [ passivelemon ];
 }

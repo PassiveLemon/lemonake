@@ -13,14 +13,3 @@
 }
 ```
 
-## Full overview
-```nix
-# configuration.nix
-{
-  programs.alvr = {
-    enable = { type = bool; default = false; };
-    package = { type = package; default = pkgs.alvr; };
-    openFirewall = { type = bool; default = false; };
-  };
-}
-```
