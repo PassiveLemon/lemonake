@@ -85,7 +85,7 @@ stdenv.mkDerivation (finalAttrs: {
     ];
 
     postPatch = ''
-      ${finalAttrs.src}/patches/apply.sh ${finalAttrs.src}/patches/monado
+      ${finalAttrs.src}/patches/apply.sh ${finalAttrs.src}/patches/monado/*
     '';
   };
 
