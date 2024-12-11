@@ -122,17 +122,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "34311dabf430d6051d7e97f6081842a5394d2a67";
+    version = "d6b63a613acf4cf739d566b8cb32423c03a46060";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "34311dabf430d6051d7e97f6081842a5394d2a67";
+      rev = "d6b63a613acf4cf739d566b8cb32423c03a46060";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-sjgnai7RJemIXuviXhW6+L/zioz7UePaOUh3mVteGww=";
+      sha256 = "sha256-GN37pKyfjDmFz6QjwL3LaRQ+MqUrdcozeFX5DoJhvOE=";
     };
-    date = "2024-11-11";
+    date = "2024-12-10";
   };
   picom = {
     pname = "picom";
