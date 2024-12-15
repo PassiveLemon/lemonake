@@ -5,6 +5,7 @@
 , autoreconfHook
 , glib
 , gnome2
+, gtk2
 , libticables2
 , libticalcs2
 , libticonv
@@ -24,8 +25,8 @@ stdenv.mkDerivation {
 
   buildInputs = [
     glib
-    gnome2.gtk
     gnome2.libglade
+    gtk2
     libticables2
     libticalcs2
     libticonv

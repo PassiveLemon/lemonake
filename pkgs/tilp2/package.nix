@@ -6,6 +6,7 @@
 , gfm
 , glib
 , gnome2
+, gtk2
 , intltool
 , libticables2
 , libticalcs2
@@ -28,8 +29,8 @@ stdenv.mkDerivation {
   buildInputs = [
     gfm
     glib
-    gnome2.gtk
     gnome2.libglade
+    gtk2
     libticables2
     libticalcs2
     libticonv
