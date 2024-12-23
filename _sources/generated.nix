@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "0.1.17-beta.1";
+    version = "0.1.17";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v0.1.17-beta.1/alcom-0.1.17-beta.1-x86_64.AppImage";
-      sha256 = "sha256-Z+mOm1XCwGuYKVFc+oYPFz2ICWrkQsVBjyzVLJLTl6g=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v0.1.17/alcom-0.1.17-x86_64.AppImage";
+      sha256 = "sha256-pr9MTkyQtyF0blMoVXCeWd0nHxEAKr3rgJHqZuF+tjw=";
     };
   };
   alvr = {
@@ -45,15 +45,15 @@
   };
   alvr-git = {
     pname = "alvr-git";
-    version = "5c99680e8a8b6ab7e5dc500c977c8d75b050e531";
+    version = "17a79eadc926a2b9c701af6feefda12935f18e3c";
     src = fetchFromGitHub {
       owner = "alvr-org";
       repo = "ALVR";
-      rev = "5c99680e8a8b6ab7e5dc500c977c8d75b050e531";
+      rev = "17a79eadc926a2b9c701af6feefda12935f18e3c";
       fetchSubmodules = true;
-      sha256 = "sha256-CNl/3RsXNtSDZpq2FwCM8FTEJspcGRAq8v6wvh9zUcI=";
+      sha256 = "sha256-dwmsX2EAEoPrZhPumhKDgkJVQAym3L+0fuFA145oOHQ=";
     };
-    date = "2024-12-17";
+    date = "2024-12-22";
   };
   animdl-git = {
     pname = "animdl-git";
@@ -122,17 +122,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "b9069698f2ed420a5f1ae783c02b88fbde775fc2";
+    version = "7294b15d33a496681221677b85ee10711ca29945";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "b9069698f2ed420a5f1ae783c02b88fbde775fc2";
+      rev = "7294b15d33a496681221677b85ee10711ca29945";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ow10yTvZyB5fLTwgxspjS/atxK1QTGcLJtkWpQgYaeQ=";
+      sha256 = "sha256-Th+0+V/FD7wl6O4KCt+rRte/UNjPpwwEwFA3zCfDEjI=";
     };
-    date = "2024-12-20";
+    date = "2024-12-22";
   };
   picom = {
     pname = "picom";
