@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.0.0-rc.0";
+    version = "1.0.0-rc.1";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.0.0-rc.0/alcom-1.0.0-rc.0-x86_64.AppImage";
-      sha256 = "sha256-9jfSa9jww+5UTOrsgbwrsf4ycf7Mt43RWEXQd0cDfBM=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.0.0-rc.1/alcom-1.0.0-rc.1-x86_64.AppImage";
+      sha256 = "sha256-hjjE+B/nyRPnfgyUa+Vax0cb79/7tLSs8gtWsUMpgsI=";
     };
   };
   alvr = {
@@ -122,17 +122,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "c6e11da966d76873cda933206c525a0203a499cf";
+    version = "effe0a8783937c5a3cfe7a72cf6f81152150b6cb";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "c6e11da966d76873cda933206c525a0203a499cf";
+      rev = "effe0a8783937c5a3cfe7a72cf6f81152150b6cb";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-eKfE18DRIwi+nZL9EiDA4yTM+vUl/vhrhXmHccUXgYI=";
+      sha256 = "sha256-SV8E+4qu5J7MueHmdsdTDKNx4CH085fidgIJyewj8RQ=";
     };
-    date = "2024-12-23";
+    date = "2024-12-26";
   };
   picom = {
     pname = "picom";
