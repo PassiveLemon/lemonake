@@ -45,15 +45,15 @@
   };
   alvr-git = {
     pname = "alvr-git";
-    version = "17a79eadc926a2b9c701af6feefda12935f18e3c";
+    version = "7ece87b1cf56c9a5dd3dbd5ed913a80b1766e508";
     src = fetchFromGitHub {
       owner = "alvr-org";
       repo = "ALVR";
-      rev = "17a79eadc926a2b9c701af6feefda12935f18e3c";
+      rev = "7ece87b1cf56c9a5dd3dbd5ed913a80b1766e508";
       fetchSubmodules = true;
-      sha256 = "sha256-dwmsX2EAEoPrZhPumhKDgkJVQAym3L+0fuFA145oOHQ=";
+      sha256 = "sha256-0+sqpjYEfHIUtfBaKeZ4FeTrx68tXk/cL8ccElTbsx4=";
     };
-    date = "2024-12-22";
+    date = "2024-12-27";
   };
   animdl-git = {
     pname = "animdl-git";
