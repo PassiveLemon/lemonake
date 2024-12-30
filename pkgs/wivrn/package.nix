@@ -199,7 +199,7 @@ stdenv.mkDerivation (finalAttrs: {
       icon = "io.github.wivrn.wivrn";
       exec = "wivrn-dashboard";
       type = "Application";
-      categories = [ "Network" "Game" ];
+      categories = [ "Network" ];
     })
   ];
 
