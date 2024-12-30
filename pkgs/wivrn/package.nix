@@ -135,7 +135,6 @@ stdenv.mkDerivation (finalAttrs: {
     hidapi
     libbsd
     libdrm
-    libdwg
     libGL
     libjpeg
     libmd
