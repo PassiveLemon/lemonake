@@ -10,6 +10,8 @@ buildPythonApplication rec {
   pname = "hd2pystratmacro";
   inherit version src;
 
+  strictDeps = true;
+
   nativeBuildInputs = [
     setuptools
   ];
