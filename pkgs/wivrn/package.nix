@@ -35,7 +35,6 @@
 , libXrandr
 , libbsd
 , libdrm
-, libdwg
 , libjpeg
 , libmd
 , libnotify
