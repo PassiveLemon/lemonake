@@ -96,15 +96,15 @@
   };
   hd2pystratmacro-git = {
     pname = "hd2pystratmacro-git";
-    version = "60d1ed307273f52836b768f287bcbba1e4c8d08c";
+    version = "48da6bd37369277ed92ba1fe8a1fdb5acc330a79";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "hd2pystratmacro";
-      rev = "60d1ed307273f52836b768f287bcbba1e4c8d08c";
+      rev = "48da6bd37369277ed92ba1fe8a1fdb5acc330a79";
       fetchSubmodules = false;
-      sha256 = "sha256-aFlzDes59pYz0Cr7gOhZtz5qPz3fLuR6wkpn+Q4J/GQ=";
+      sha256 = "sha256-D1x4GcAaovvrkIa0FCQS/MApu0X/RD1qCcI8pB31HOc=";
     };
-    date = "2024-10-06";
+    date = "2024-12-30";
   };
   monado-vulkan-layers-git = {
     pname = "monado-vulkan-layers-git";
@@ -181,15 +181,15 @@
   };
   poepyautopot-git = {
     pname = "poepyautopot-git";
-    version = "2b124ab6029efb929dc7c249d7fd4ea3f01ff427";
+    version = "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "poepyautopot";
-      rev = "2b124ab6029efb929dc7c249d7fd4ea3f01ff427";
+      rev = "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b";
       fetchSubmodules = false;
-      sha256 = "sha256-TxQkQOeIVWsPx6+l71IRYxrnlysacSSAFttdHSsbN3g=";
+      sha256 = "sha256-odcC4KTImfJMWxtn8xAqwTbalcvUuxTw/DivAjvhyUw=";
     };
-    date = "2024-10-06";
+    date = "2024-12-30";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -227,15 +227,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "203cea18c9f91e1e725f04eb5d725538d799a9a5";
+    version = "50d614c492423d39af5d95c2675bc89b05a212c0";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "203cea18c9f91e1e725f04eb5d725538d799a9a5";
+      rev = "50d614c492423d39af5d95c2675bc89b05a212c0";
       fetchSubmodules = false;
-      sha256 = "sha256-TtMPHllaIRnmnge2p9cXMj2Q/+YCP8rSjvY5EZgkaNQ=";
+      sha256 = "sha256-D4zFMMV8BYGkDQsX8W7vNhUihjuJQWb86l/dEgIzZWU=";
     };
-    date = "2024-12-23";
+    date = "2024-12-30";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";

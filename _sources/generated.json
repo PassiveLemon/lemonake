@@ -172,7 +172,7 @@
     },
     "hd2pystratmacro-git": {
         "cargoLocks": null,
-        "date": "2024-10-06",
+        "date": "2024-12-30",
         "extract": null,
         "name": "hd2pystratmacro-git",
         "passthru": null,
@@ -184,12 +184,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "hd2pystratmacro",
-            "rev": "60d1ed307273f52836b768f287bcbba1e4c8d08c",
-            "sha256": "sha256-aFlzDes59pYz0Cr7gOhZtz5qPz3fLuR6wkpn+Q4J/GQ=",
+            "rev": "48da6bd37369277ed92ba1fe8a1fdb5acc330a79",
+            "sha256": "sha256-D1x4GcAaovvrkIa0FCQS/MApu0X/RD1qCcI8pB31HOc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "60d1ed307273f52836b768f287bcbba1e4c8d08c"
+        "version": "48da6bd37369277ed92ba1fe8a1fdb5acc330a79"
     },
     "monado-vulkan-layers-git": {
         "cargoLocks": null,
@@ -317,7 +317,7 @@
     },
     "poepyautopot-git": {
         "cargoLocks": null,
-        "date": "2024-10-06",
+        "date": "2024-12-30",
         "extract": null,
         "name": "poepyautopot-git",
         "passthru": null,
@@ -329,12 +329,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "poepyautopot",
-            "rev": "2b124ab6029efb929dc7c249d7fd4ea3f01ff427",
-            "sha256": "sha256-TxQkQOeIVWsPx6+l71IRYxrnlysacSSAFttdHSsbN3g=",
+            "rev": "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b",
+            "sha256": "sha256-odcC4KTImfJMWxtn8xAqwTbalcvUuxTw/DivAjvhyUw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2b124ab6029efb929dc7c249d7fd4ea3f01ff427"
+        "version": "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b"
     },
     "tilp2-gfm": {
         "cargoLocks": null,
@@ -401,7 +401,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2024-12-23",
+        "date": "2024-12-30",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -413,12 +413,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "203cea18c9f91e1e725f04eb5d725538d799a9a5",
-            "sha256": "sha256-TtMPHllaIRnmnge2p9cXMj2Q/+YCP8rSjvY5EZgkaNQ=",
+            "rev": "50d614c492423d39af5d95c2675bc89b05a212c0",
+            "sha256": "sha256-D4zFMMV8BYGkDQsX8W7vNhUihjuJQWb86l/dEgIzZWU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "203cea18c9f91e1e725f04eb5d725538d799a9a5"
+        "version": "50d614c492423d39af5d95c2675bc89b05a212c0"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
