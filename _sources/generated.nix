@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.0.0-rc.2";
+    version = "1.0.0";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.0.0-rc.2/alcom-1.0.0-rc.2-x86_64.AppImage";
-      sha256 = "sha256-5Ufe9vgAUzOj3L+a6t3Ao4VZ3kPlabN4AQwnuEnGCdo=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.0.0/alcom-1.0.0-x86_64.AppImage";
+      sha256 = "sha256-HZ7IPXCHkhMeP0vipgx3sTVB602PEtzs9/HUN1sVDlw=";
     };
   };
   alvr = {
