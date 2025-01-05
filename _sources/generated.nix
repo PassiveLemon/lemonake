@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.0.0";
+    version = "1.0.1-beta.1";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.0.0/alcom-1.0.0-x86_64.AppImage";
-      sha256 = "sha256-HZ7IPXCHkhMeP0vipgx3sTVB602PEtzs9/HUN1sVDlw=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.0.1-beta.1/alcom-1.0.1-beta.1-x86_64.AppImage";
+      sha256 = "sha256-1Ee1O/3Va+bBvCBhpZNrZQPXXkNE/8nO9WTKWY0ksg4=";
     };
   };
   alvr = {
@@ -45,15 +45,15 @@
   };
   alvr-git = {
     pname = "alvr-git";
-    version = "7ece87b1cf56c9a5dd3dbd5ed913a80b1766e508";
+    version = "8f1deb95fa1786d4597a47126301645931838a85";
     src = fetchFromGitHub {
       owner = "alvr-org";
       repo = "ALVR";
-      rev = "7ece87b1cf56c9a5dd3dbd5ed913a80b1766e508";
+      rev = "8f1deb95fa1786d4597a47126301645931838a85";
       fetchSubmodules = true;
-      sha256 = "sha256-0+sqpjYEfHIUtfBaKeZ4FeTrx68tXk/cL8ccElTbsx4=";
+      sha256 = "sha256-ODj4Zu+iIwbtRbWkXFFPt1ww6n/US9vVFyHeqgHt7qY=";
     };
-    date = "2024-12-27";
+    date = "2025-01-04";
   };
   animdl-git = {
     pname = "animdl-git";
