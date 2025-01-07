@@ -12,16 +12,6 @@ src.include_regex = "gui-v(.*)"
 src.prefix = "gui-v"
 fetch.url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v$ver/alcom-$ver-x86_64.AppImage"
 
-[alvr]
-src.github = "alvr-org/ALVR"
-fetch.github = "alvr-org/ALVR"
-git.fetchSubmodules = true
-
-[alvr-git]
-src.git = "https://github.com/alvr-org/ALVR"
-fetch.github = "alvr-org/ALVR"
-git.fetchSubmodules = true
-
 [animdl-git]
 src.git = "https://github.com/justfoolingaround/animdl"
 fetch.github = "justfoolingaround/animdl"
