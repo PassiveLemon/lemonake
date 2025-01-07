@@ -81,7 +81,7 @@ The only architecture currently supported is `x86_64-linux`. Others may be suppo
 ```
 
 ## Other
-Any sort of warning or assertion will be removed exactly 3 months after it was introduced to keep the code clean.
+Any sort of warning or assertion will be removed about 3 months after it was introduced to keep the code clean.
 
 ## Credits
 - [moni-dz/nixpkgs-f2k](https://github.com/moni-dz/nixpkgs-f2k/) for inspiration
