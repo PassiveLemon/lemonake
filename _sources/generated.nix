@@ -45,15 +45,15 @@
   };
   alvr-git = {
     pname = "alvr-git";
-    version = "80d78cd5721fdd7c8d460e79cca676503455600a";
+    version = "ff67074fef88400430d3b3cdf953bc0ad1aeae27";
     src = fetchFromGitHub {
       owner = "alvr-org";
       repo = "ALVR";
-      rev = "80d78cd5721fdd7c8d460e79cca676503455600a";
+      rev = "ff67074fef88400430d3b3cdf953bc0ad1aeae27";
       fetchSubmodules = true;
-      sha256 = "sha256-+2cIIzISQadgHhY02X0030D6h0EAw1MXeHzCEqz5oII=";
+      sha256 = "sha256-Mrb96nTlec8yYFo7Tcwv/p2t/17ZQVuZidbYqtLzTs4=";
     };
-    date = "2025-01-05";
+    date = "2025-01-07";
   };
   animdl-git = {
     pname = "animdl-git";
@@ -227,13 +227,13 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "c8449a7891c048de5ccb6afda33ab10a6768ddfd";
+    version = "42fa5970a3c0c503774078edebe68a85840df3b6";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "c8449a7891c048de5ccb6afda33ab10a6768ddfd";
+      rev = "42fa5970a3c0c503774078edebe68a85840df3b6";
       fetchSubmodules = false;
-      sha256 = "sha256-zwlKz6qHQDfnZFKXEjSHCpMH/XVIibTUN2Uy16QIOTk=";
+      sha256 = "sha256-WLxmtI3ElyqzvJoUNl0SyekBs3CsiRw/7hNBYwqOV1E=";
     };
     date = "2025-01-05";
   };
