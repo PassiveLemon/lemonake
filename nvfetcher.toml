@@ -86,3 +86,11 @@ src.webpage = "https://github.com/WiVRn/WiVRn/blob/master/CMakeLists.txt"
 src.regex = "GIT_TAG\\s*(\\w+)"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
+[xrizer]
+src.github = "Supreeeme/xrizer"
+fetch.github = "Supreeeme/xrizer"
+
+[xrizer-git]
+src.git = "https://github.com/Supreeeme/xrizer"
+fetch.github = "Supreeeme/xrizer"
+

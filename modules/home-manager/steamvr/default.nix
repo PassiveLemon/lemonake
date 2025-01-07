@@ -1,14 +1,39 @@
-{ config, pkgs, lib, ... }:
+{ config, lib, pkgs, getPackage, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkOption mkRenamedOptionModule literalExpression types maintainers;
+  inherit (lib) mkIf mkEnableOption mkOption literalExpression types maintainers;
   cfg = config.programs.steamvr;
   configFormat = pkgs.formats.json { };
-  openvrRuntimeOverrideConfigFile = configFormat.generate "openvrpaths.vrpath" cfg.openvrRuntimeOverride.json;
+
+  openvrRuntimeOverrideJson = (
+    if cfg.openvrRuntimeOverride.config == "path"
+    then {
+      config = [
+        "${config.home.homeDirectory}/.local/share/Steam/config"
+      ];
+      external_drivers = [ ];
+      jsonid = "vrpathreg";
+      log = [
+        "${config.home.homeDirectory}/.local/share/Steam/logs"
+      ];
+      runtime = [
+        cfg.openvrRuntimeOverride.path
+      ];
+      version = 1;
+    }
+    else cfg.openvrRuntimeOverride.json
+  );
+  openvrRuntimeOverrideConfigFile = configFormat.generate "openvrpaths.vrpath" openvrRuntimeOverrideJson;
   openxrRuntimeOverrideConfigFile = configFormat.generate "active_runtime.json" cfg.openxrRuntimeOverride.json;
+
+  # Temporary
+  xrizer-package = getPackage "xrizer" pkgs;
+  xrizer = pkgs.callPackage ../../../xrizer/package.nix { inherit (xrizer-package) version src; };
 
   openvrRuntimePackage = (
     if cfg.helperScript.openvrRuntimePackage != ""
     then cfg.helperScript.openvrRuntimePackage
+    else if cfg.helperScript.openvrRuntime == "xrizer"
+    then xrizer
     else pkgs.opencomposite
   );
   openxrRuntimePackage = (
@@ -22,6 +47,8 @@ let
   vrOverride = (
     if cfg.helperScript.openvrRuntime == "opencomposite"
     then "${openvrRuntimePackage}/lib/opencomposite"
+    else if cfg.helperScript.openvrRuntime == "xrizer"
+    then "${openxrRuntimePackage}/lib"
     else ""
   );
   xrRuntimeJson = (
@@ -38,8 +65,8 @@ let
     then "$XDG_RUNTIME_DIR/wivrn/comp_ipc"
     else ""
   );
-  helperScriptE = pkgs.writeShellApplication {
-    name = "oc-helper";
+  helperScript = pkgs.writeShellApplication {
+    name = "vr-helper";
     text = ''
       export VR_OVERRIDE=${vrOverride}
       export XR_RUNTIME_JSON=${xrRuntimeJson}
@@ -51,20 +78,22 @@ in
 {
   options = {
     programs.steamvr = {
+      enable = mkEnableOption "runtime overrides for SteamVR";
+
       openvrRuntimeOverride = {
         enable = mkEnableOption "a runtime override for SteamVR OpenVR";
 
         config = mkOption {
-          type = types.enum [ "json" "text" ];
+          type = types.enum [ "path" "json" "text" ];
           description = "Set the configuration type for openvrRuntimeOverride.";
           default = "json";
         };
 
-        # Remove on Dec 13 2024
         path = mkOption {
-          type = types.str;
-          description = "Deprecated configuration type.";
+          type = types.path;
+          description = "The openvr runtime to use in `XDG_CONFIG_HOME/openvr/openvrpaths.vrpath`. This only configures the runtime field of the default json.";
           default = "";
+          example = literalExpression "${pkgs.opencomposite}/lib/opencomposite";
         };
 
         json = mkOption {
@@ -211,7 +240,7 @@ in
       helperScript = {
         enable = mkEnableOption "a helper script for setting SteamVR variables";
         openvrRuntime = mkOption {
-          type = types.enum [ "opencomposite" ];
+          type = types.enum [ "opencomposite" "xrizer" ];
           description = "The OpenVR runtime to set for `VR_OVERRIDE`";
           default = "opencomposite";
         };
@@ -234,25 +263,10 @@ in
     };
   };
 
-  imports = [
-    # Remove on Dec 13 2024
-    (mkRenamedOptionModule [ "services" "steamvr" ] [ "programs" "steamvr" ])
-    (mkRenamedOptionModule [ "programs" "steamvr" "runtimeOverride" ] [ "programs" "steamvr" "openvrRuntimeOverride" ])
-    (mkRenamedOptionModule [ "programs" "steamvr" "activeRuntimeOverride" ] [ "programs" "steamvr" "openxrRuntimeOverride" ])
-  ];
-
-  config = {
-    # Remove on Dec 13 2024
-    assertions = [
-      {
-        assertion = (config.programs.steamvr.openvrRuntimeOverride.path == "");
-        message = "The programs.steamvr.openvrRuntimeOverride.path configuration type has been removed. Consider the json configuration instead.";
-      }
-    ];
-    
+  config = mkIf cfg.enable {
     xdg.configFile = {
       "openvr/openvrpaths.vrpath" = mkIf cfg.openvrRuntimeOverride.enable {
-        source = mkIf (cfg.openvrRuntimeOverride.config == "json") openvrRuntimeOverrideConfigFile;
+        source = mkIf ((cfg.openvrRuntimeOverride.config == "json") || (cfg.openvrRuntimeOverride.config == "path")) openvrRuntimeOverrideConfigFile;
         text = mkIf (cfg.openvrRuntimeOverride.config == "text") cfg.openvrRuntimeOverride.text;
       };
       "openxr/1/active_runtime.json" = mkIf cfg.openxrRuntimeOverride.enable {
@@ -266,7 +280,7 @@ in
     };
 
     home.packages = mkIf cfg.helperScript.enable [
-      helperScriptE
+      helperScript
     ];
   };
   meta.maintainers = with maintainers; [ passivelemon ];

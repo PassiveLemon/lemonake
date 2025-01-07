@@ -55,6 +55,8 @@ Packages:
 - `tilp2-git`
 - `wivrn`
 - `wivrn-git`
+- `xrizer`
+- `xrizer-git`
 
 Naming scheme:
 - Latest release: `package`

@@ -26,6 +26,7 @@
     ./poepyautopot
     ./tilp2
     ./wivrn
+    ./xrizer
   ];
 
   flake.overlays = {
@@ -43,7 +44,8 @@
       // (picom final prev)
       // (poepyautopot final prev)
       // (tilp2 final prev)
-      // (wivrn final prev);
+      // (wivrn final prev)
+      // (xrizer final prev);
   };
 }
 
