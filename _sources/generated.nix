@@ -32,29 +32,6 @@
       sha256 = "sha256-1Ee1O/3Va+bBvCBhpZNrZQPXXkNE/8nO9WTKWY0ksg4=";
     };
   };
-  alvr = {
-    pname = "alvr";
-    version = "v20.11.1";
-    src = fetchFromGitHub {
-      owner = "alvr-org";
-      repo = "ALVR";
-      rev = "v20.11.1";
-      fetchSubmodules = true;
-      sha256 = "sha256-d4KldPii8W1HcfnMSD8Fn+IGO/a3r8747APPjRCnbe8=";
-    };
-  };
-  alvr-git = {
-    pname = "alvr-git";
-    version = "8f1deb95fa1786d4597a47126301645931838a85";
-    src = fetchFromGitHub {
-      owner = "alvr-org";
-      repo = "ALVR";
-      rev = "8f1deb95fa1786d4597a47126301645931838a85";
-      fetchSubmodules = true;
-      sha256 = "sha256-ODj4Zu+iIwbtRbWkXFFPt1ww6n/US9vVFyHeqgHt7qY=";
-    };
-    date = "2025-01-04";
-  };
   animdl-git = {
     pname = "animdl-git";
     version = "c7c3b79198e66695e0bbbc576f9d9b788616957f";
@@ -115,6 +92,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
@@ -128,6 +106,7 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-SV8E+4qu5J7MueHmdsdTDKNx4CH085fidgIJyewj8RQ=";
     };
     date = "2024-12-26";
@@ -225,15 +204,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3a09e2fb1fdf9483e87121db166a3b5c353783f0";
+    version = "55620a15ddbf7178d9714d9593767fee7dc0e484";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3a09e2fb1fdf9483e87121db166a3b5c353783f0";
+      rev = "55620a15ddbf7178d9714d9593767fee7dc0e484";
       fetchSubmodules = false;
-      sha256 = "sha256-2wiHz/m46kla+dB22Z7MDv5WjJA0GPXEzDWMFLq7wq4=";
+      sha256 = "sha256-cn/MwfQ+MCdvGeY4IhY66wnG54bwkaTFm2249gF0gb8=";
     };
-    date = "2025-01-03";
+    date = "2025-01-07";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -244,6 +223,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-cbrB6bPzCXjvmp2GlzA3QV18FDAWd+nF8DnjqHrNSL4=";
     };
   };
@@ -256,6 +236,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-yfHtkMvX/gyVG0UgpSB6KjSDdCym6Reb9LRb3OortaI=";
     };
   };
