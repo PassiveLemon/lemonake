@@ -83,6 +83,18 @@
     };
     date = "2024-12-30";
   };
+  lua-pam-git = {
+    pname = "lua-pam-git";
+    version = "373de20d6784f77d59abc1ffc1d0302f28ed46cd";
+    src = fetchFromGitHub {
+      owner = "RMTT";
+      repo = "lua-pam";
+      rev = "373de20d6784f77d59abc1ffc1d0302f28ed46cd";
+      fetchSubmodules = false;
+      sha256 = "sha256-AFCAudWQa3UiNvum4Ir6SY1WhGMaBSjgKyu6jG5efAA=";
+    };
+    date = "2023-11-26";
+  };
   monado-vulkan-layers-git = {
     pname = "monado-vulkan-layers-git";
     version = "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2";
@@ -92,7 +104,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
@@ -106,7 +117,6 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-SV8E+4qu5J7MueHmdsdTDKNx4CH085fidgIJyewj8RQ=";
     };
     date = "2024-12-26";
@@ -204,27 +214,26 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "55620a15ddbf7178d9714d9593767fee7dc0e484";
+    version = "a434094055beef644e51b4cfbe530b182f459e19";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "55620a15ddbf7178d9714d9593767fee7dc0e484";
+      rev = "a434094055beef644e51b4cfbe530b182f459e19";
       fetchSubmodules = false;
-      sha256 = "sha256-cn/MwfQ+MCdvGeY4IhY66wnG54bwkaTFm2249gF0gb8=";
+      sha256 = "sha256-GbE3OLAz6AhfwtscPlqnB5csTyJPs5Ps3pj7D+K420k=";
     };
     date = "2025-01-07";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "59c34e17b4d9da228c84d94db552426b78a52508";
+    version = "e5f5461dff2d745b3abd19cd05785d815304b2c6";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "59c34e17b4d9da228c84d94db552426b78a52508";
+      rev = "e5f5461dff2d745b3abd19cd05785d815304b2c6";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-cbrB6bPzCXjvmp2GlzA3QV18FDAWd+nF8DnjqHrNSL4=";
+      sha256 = "sha256-dv6uubsngOhj4OX38ZMMYpw0ldWaLit990jNrlX2xLs=";
     };
   };
   wivrn-monado = {
@@ -236,7 +245,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-yfHtkMvX/gyVG0UgpSB6KjSDdCym6Reb9LRb3OortaI=";
     };
   };

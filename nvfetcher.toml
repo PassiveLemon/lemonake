@@ -32,6 +32,10 @@ fetch.github = "PassiveLemon/hd2pystratmacro"
 src.git = "https://github.com/PassiveLemon/hd2pystratmacro"
 fetch.github = "PassiveLemon/hd2pystratmacro"
 
+[lua-pam-git]
+src.git = "https://github.com/RMTT/lua-pam"
+fetch.github = "RMTT/lua-pam"
+
 [monado-vulkan-layers-git]
 src.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers"
 fetch.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"

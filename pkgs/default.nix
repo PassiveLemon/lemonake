@@ -20,6 +20,7 @@
     ./gdlauncher
     ./gfm
     ./hd2pystratmacro
+    ./lua-pam
     ./monado-vulkan-layers
     ./opencomposite
     ./picom
@@ -39,6 +40,7 @@
       // (gdlauncher final prev)
       // (gfm final prev)
       // (hd2pystratmacro final prev)
+      // (lua-pam final prev)
       // (monado-vulkan-layers final prev)
       // (opencomposite final prev)
       // (picom final prev)

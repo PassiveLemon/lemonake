@@ -44,6 +44,7 @@ Packages:
 - `gfm-git`
 - `hd2pystratmacro`
 - `hd2pystratmacro-git`
+- `lua-pam-git`
 - `monado-vulkan-layers-git`
 - `opencomposite-git`
 - `picom`
