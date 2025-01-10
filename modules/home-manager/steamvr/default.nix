@@ -1,4 +1,4 @@
-{ config, lib, pkgs, getPackage, ... }:
+{ config, lib, pkgs, ... }:
 let
   inherit (lib) mkIf mkEnableOption mkOption literalExpression types maintainers;
   cfg = config.programs.steamvr;
@@ -25,15 +25,11 @@ let
   openvrRuntimeOverrideConfigFile = configFormat.generate "openvrpaths.vrpath" openvrRuntimeOverrideJson;
   openxrRuntimeOverrideConfigFile = configFormat.generate "active_runtime.json" cfg.openxrRuntimeOverride.json;
 
-  # Temporary
-  xrizer-package = getPackage "xrizer" pkgs;
-  xrizer = pkgs.callPackage ../../../xrizer/package.nix { inherit (xrizer-package) version src; };
-
   openvrRuntimePackage = (
     if cfg.helperScript.openvrRuntimePackage != ""
     then cfg.helperScript.openvrRuntimePackage
     else if cfg.helperScript.openvrRuntime == "xrizer"
-    then xrizer
+    then pkgs.xrizer
     else pkgs.opencomposite
   );
   openxrRuntimePackage = (
