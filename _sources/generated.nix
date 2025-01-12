@@ -111,17 +111,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "bdb830a4bcd04196ba13e8c08a07a4530363aa4b";
+    version = "5c1439711084a1dfb5b9c5c2d87271685e84be0d";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "bdb830a4bcd04196ba13e8c08a07a4530363aa4b";
+      rev = "5c1439711084a1dfb5b9c5c2d87271685e84be0d";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-y8djMkjcWA0TSI+3Pc7pAqTGaE5MSGIJpq4/ee7LWQs=";
+      sha256 = "sha256-WxSPmLAi8mdfj3NZDQK0MNUP861Y/D/T+NvAJe+LNYU=";
     };
-    date = "2025-01-10";
+    date = "2025-01-11";
   };
   picom = {
     pname = "picom";
@@ -216,15 +216,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "e4e61e2b0ac53e5dbb2b0772ab9a90880b05929c";
+    version = "820df671ca06736a5e5fb442257e543aec8d4fdd";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "e4e61e2b0ac53e5dbb2b0772ab9a90880b05929c";
+      rev = "820df671ca06736a5e5fb442257e543aec8d4fdd";
       fetchSubmodules = false;
-      sha256 = "sha256-yTtC/UmsTlht4BG3AsfltDPe5IzN/MO6QZGCuwHL/R4=";
+      sha256 = "sha256-5X7noNc7ycCY20Px4wrOD0rlO4ZO2KqjRbxSvSLYKIw=";
     };
-    date = "2025-01-10";
+    date = "2025-01-11";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -265,14 +265,14 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "fb71963e363e6646e316e77050772adbf6957369";
+    version = "1babbac76a275749ee4c93a57f64431bd5d71e6f";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "fb71963e363e6646e316e77050772adbf6957369";
+      rev = "1babbac76a275749ee4c93a57f64431bd5d71e6f";
       fetchSubmodules = false;
-      sha256 = "sha256-s53kzUPRlJZzifIzJzr4cH7QoOR3AWZ6rGuzmXtIzcY=";
+      sha256 = "sha256-KDRih95IcYDDOd6QMxqZI33TaCWI3/xOfzczlS1SyVI=";
     };
-    date = "2025-01-04";
+    date = "2025-01-11";
   };
 }

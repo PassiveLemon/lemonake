@@ -192,7 +192,7 @@
     },
     "opencomposite-git": {
         "cargoLocks": null,
-        "date": "2025-01-10",
+        "date": "2025-01-11",
         "extract": null,
         "name": "opencomposite-git",
         "passthru": null,
@@ -202,13 +202,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bdb830a4bcd04196ba13e8c08a07a4530363aa4b",
-            "sha256": "sha256-y8djMkjcWA0TSI+3Pc7pAqTGaE5MSGIJpq4/ee7LWQs=",
+            "rev": "5c1439711084a1dfb5b9c5c2d87271685e84be0d",
+            "sha256": "sha256-WxSPmLAi8mdfj3NZDQK0MNUP861Y/D/T+NvAJe+LNYU=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "bdb830a4bcd04196ba13e8c08a07a4530363aa4b"
+        "version": "5c1439711084a1dfb5b9c5c2d87271685e84be0d"
     },
     "picom": {
         "cargoLocks": null,
@@ -380,7 +380,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-01-10",
+        "date": "2025-01-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -392,12 +392,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "e4e61e2b0ac53e5dbb2b0772ab9a90880b05929c",
-            "sha256": "sha256-yTtC/UmsTlht4BG3AsfltDPe5IzN/MO6QZGCuwHL/R4=",
+            "rev": "820df671ca06736a5e5fb442257e543aec8d4fdd",
+            "sha256": "sha256-5X7noNc7ycCY20Px4wrOD0rlO4ZO2KqjRbxSvSLYKIw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e4e61e2b0ac53e5dbb2b0772ab9a90880b05929c"
+        "version": "820df671ca06736a5e5fb442257e543aec8d4fdd"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -462,7 +462,7 @@
     },
     "xrizer-git": {
         "cargoLocks": null,
-        "date": "2025-01-04",
+        "date": "2025-01-11",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -474,11 +474,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "fb71963e363e6646e316e77050772adbf6957369",
-            "sha256": "sha256-s53kzUPRlJZzifIzJzr4cH7QoOR3AWZ6rGuzmXtIzcY=",
+            "rev": "1babbac76a275749ee4c93a57f64431bd5d71e6f",
+            "sha256": "sha256-KDRih95IcYDDOd6QMxqZI33TaCWI3/xOfzczlS1SyVI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "fb71963e363e6646e316e77050772adbf6957369"
+        "version": "1babbac76a275749ee4c93a57f64431bd5d71e6f"
     }
 }
