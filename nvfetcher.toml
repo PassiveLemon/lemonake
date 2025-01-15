@@ -73,6 +73,14 @@ fetch.github = "debrouxl/tilp_and_gfm"
 src.git = "https://github.com/debrouxl/tilp_and_gfm"
 fetch.github = "debrouxl/tilp_and_gfm"
 
+[webfisher]
+src.github = "PassiveLemon/webfisher"
+fetch.github = "PassiveLemon/webfisher"
+
+[webfisher-git]
+src.git = "https://github.com/PassiveLemon/webfisher"
+fetch.github = "PassiveLemon/webfisher"
+
 [wivrn]
 src.github = "WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"

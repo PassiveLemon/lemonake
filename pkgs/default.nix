@@ -26,6 +26,7 @@
     ./picom
     ./poepyautopot
     ./tilp2
+    ./webfisher
     ./wivrn
     ./xrizer
   ];
@@ -46,6 +47,7 @@
       // (picom final prev)
       // (poepyautopot final prev)
       // (tilp2 final prev)
+      // (webfisher final prev)
       // (wivrn final prev)
       // (xrizer final prev);
   };

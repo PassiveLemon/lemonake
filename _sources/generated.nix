@@ -104,24 +104,22 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "5c1439711084a1dfb5b9c5c2d87271685e84be0d";
+    version = "6573b9aa8966da3c0ec603689eb88c83d35cf6f1";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "5c1439711084a1dfb5b9c5c2d87271685e84be0d";
+      rev = "6573b9aa8966da3c0ec603689eb88c83d35cf6f1";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-WxSPmLAi8mdfj3NZDQK0MNUP861Y/D/T+NvAJe+LNYU=";
+      sha256 = "sha256-K27yeGUfSb4I8Xv3s4UEXrgUscGZUzsXS4++5NfSJTs=";
     };
-    date = "2025-01-11";
+    date = "2025-01-15";
   };
   picom = {
     pname = "picom";
@@ -203,6 +201,29 @@
     };
     date = "2024-12-01";
   };
+  webfisher = {
+    pname = "webfisher";
+    version = "0.2.0";
+    src = fetchFromGitHub {
+      owner = "PassiveLemon";
+      repo = "webfisher";
+      rev = "0.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-H9plg0FriVqejhUNh5bS23mJaEfUhiiZzBGcUuXbAd0=";
+    };
+  };
+  webfisher-git = {
+    pname = "webfisher-git";
+    version = "b3c9c659ee1457d2ef745ecffef1cf5822f30a43";
+    src = fetchFromGitHub {
+      owner = "PassiveLemon";
+      repo = "webfisher";
+      rev = "b3c9c659ee1457d2ef745ecffef1cf5822f30a43";
+      fetchSubmodules = false;
+      sha256 = "sha256-H9plg0FriVqejhUNh5bS23mJaEfUhiiZzBGcUuXbAd0=";
+    };
+    date = "2025-01-15";
+  };
   wivrn = {
     pname = "wivrn";
     version = "v0.22";
@@ -216,15 +237,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "fbc10de9c7c47f966c88368ea0d4621f15c42d24";
+    version = "88e7eb3c73ca1cd4a5c1ca3ac779cb617b63d298";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "fbc10de9c7c47f966c88368ea0d4621f15c42d24";
+      rev = "88e7eb3c73ca1cd4a5c1ca3ac779cb617b63d298";
       fetchSubmodules = false;
-      sha256 = "sha256-yb7IPl9MM9V4jbcw7TSW0ILdfWSP4DkH6ITOob0sjs4=";
+      sha256 = "sha256-j971QkhMAMf32ss2W+UL57qeiQ7M0NkWQgwu2hjy0MU=";
     };
-    date = "2025-01-14";
+    date = "2025-01-15";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -235,7 +256,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-dv6uubsngOhj4OX38ZMMYpw0ldWaLit990jNrlX2xLs=";
     };
   };
@@ -248,7 +268,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-yfHtkMvX/gyVG0UgpSB6KjSDdCym6Reb9LRb3OortaI=";
     };
   };

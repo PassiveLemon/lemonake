@@ -15,7 +15,6 @@
             "repo": "AdGoBye",
             "rev": "v4.0.2+v4IsBrokenPullMe",
             "sha256": "sha256-YDrSmLNQti6Jk6uljpN47f3GirtStcGuPc0GCz9OTBA=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v4.0.2+v4IsBrokenPullMe"
@@ -36,7 +35,6 @@
             "repo": "AdGoBye",
             "rev": "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b",
             "sha256": "sha256-96WEFSWe1YaCAs702md5UTmgovx6FjiFUfr6wnQXnv4=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b"
@@ -72,7 +70,6 @@
             "repo": "animdl",
             "rev": "c7c3b79198e66695e0bbbc576f9d9b788616957f",
             "sha256": "sha256-kn6vCCFhJNlruxoO+PTHVIwTf1E5j1aSdBhrFuGzUq4=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c7c3b79198e66695e0bbbc576f9d9b788616957f"
@@ -123,7 +120,6 @@
             "repo": "hd2pystratmacro",
             "rev": "1.0.2",
             "sha256": "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.0.2"
@@ -144,7 +140,6 @@
             "repo": "hd2pystratmacro",
             "rev": "48da6bd37369277ed92ba1fe8a1fdb5acc330a79",
             "sha256": "sha256-D1x4GcAaovvrkIa0FCQS/MApu0X/RD1qCcI8pB31HOc=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "48da6bd37369277ed92ba1fe8a1fdb5acc330a79"
@@ -165,7 +160,6 @@
             "repo": "lua-pam",
             "rev": "373de20d6784f77d59abc1ffc1d0302f28ed46cd",
             "sha256": "sha256-AFCAudWQa3UiNvum4Ir6SY1WhGMaBSjgKyu6jG5efAA=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "373de20d6784f77d59abc1ffc1d0302f28ed46cd"
@@ -184,7 +178,6 @@
             "name": null,
             "rev": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2",
             "sha256": "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=",
-            "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
         },
@@ -192,7 +185,7 @@
     },
     "opencomposite-git": {
         "cargoLocks": null,
-        "date": "2025-01-11",
+        "date": "2025-01-15",
         "extract": null,
         "name": "opencomposite-git",
         "passthru": null,
@@ -202,13 +195,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "5c1439711084a1dfb5b9c5c2d87271685e84be0d",
-            "sha256": "sha256-WxSPmLAi8mdfj3NZDQK0MNUP861Y/D/T+NvAJe+LNYU=",
-            "sparseCheckout": [],
+            "rev": "6573b9aa8966da3c0ec603689eb88c83d35cf6f1",
+            "sha256": "sha256-K27yeGUfSb4I8Xv3s4UEXrgUscGZUzsXS4++5NfSJTs=",
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "5c1439711084a1dfb5b9c5c2d87271685e84be0d"
+        "version": "6573b9aa8966da3c0ec603689eb88c83d35cf6f1"
     },
     "picom": {
         "cargoLocks": null,
@@ -226,7 +218,6 @@
             "repo": "picom",
             "rev": "v12.5",
             "sha256": "sha256-H8IbzzrzF1c63MXbw5mqoll3H+vgcSVpijrlSDNkc+o=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v12.5"
@@ -247,7 +238,6 @@
             "repo": "picom",
             "rev": "fcb4a2dc9c2ac9f50b087e4039fdc1ec5da119f5",
             "sha256": "sha256-RoRu6L63wm9jAszRkzMtaxwpR9iPWcrxdNaySLY0M9E=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "fcb4a2dc9c2ac9f50b087e4039fdc1ec5da119f5"
@@ -268,7 +258,6 @@
             "repo": "picom",
             "rev": "v12.5",
             "sha256": "sha256-H8IbzzrzF1c63MXbw5mqoll3H+vgcSVpijrlSDNkc+o=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v12.5"
@@ -289,7 +278,6 @@
             "repo": "poepyautopot",
             "rev": "1.3.6",
             "sha256": "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.3.6"
@@ -310,7 +298,6 @@
             "repo": "poepyautopot",
             "rev": "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b",
             "sha256": "sha256-odcC4KTImfJMWxtn8xAqwTbalcvUuxTw/DivAjvhyUw=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b"
@@ -331,7 +318,6 @@
             "repo": "tilp_and_gfm",
             "rev": "1.18",
             "sha256": "sha256-/XkxEfWzJiOkM5aoenp/GQSkkNg9qoXkFtcj/nenFEw=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1.18"
@@ -352,10 +338,49 @@
             "repo": "tilp_and_gfm",
             "rev": "0a525619a07d92734b5eb5ba1d47c56f4de37458",
             "sha256": "sha256-itPop4GO6ty40iucg31YgHEoK0W05eM+rD9tF+nAugE=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "0a525619a07d92734b5eb5ba1d47c56f4de37458"
+    },
+    "webfisher": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "webfisher",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "webfisher",
+            "rev": "0.2.0",
+            "sha256": "sha256-H9plg0FriVqejhUNh5bS23mJaEfUhiiZzBGcUuXbAd0=",
+            "type": "github"
+        },
+        "version": "0.2.0"
+    },
+    "webfisher-git": {
+        "cargoLocks": null,
+        "date": "2025-01-15",
+        "extract": null,
+        "name": "webfisher-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "webfisher",
+            "rev": "b3c9c659ee1457d2ef745ecffef1cf5822f30a43",
+            "sha256": "sha256-H9plg0FriVqejhUNh5bS23mJaEfUhiiZzBGcUuXbAd0=",
+            "type": "github"
+        },
+        "version": "b3c9c659ee1457d2ef745ecffef1cf5822f30a43"
     },
     "wivrn": {
         "cargoLocks": null,
@@ -373,14 +398,13 @@
             "repo": "WiVRn",
             "rev": "v0.22",
             "sha256": "sha256-i/CG+zD64cwnu0z1BRkRn7Wm67KszE+wZ5geeAvrvMY=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.22"
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-01-14",
+        "date": "2025-01-15",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -392,12 +416,11 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "fbc10de9c7c47f966c88368ea0d4621f15c42d24",
-            "sha256": "sha256-yb7IPl9MM9V4jbcw7TSW0ILdfWSP4DkH6ITOob0sjs4=",
-            "sparseCheckout": [],
+            "rev": "88e7eb3c73ca1cd4a5c1ca3ac779cb617b63d298",
+            "sha256": "sha256-j971QkhMAMf32ss2W+UL57qeiQ7M0NkWQgwu2hjy0MU=",
             "type": "github"
         },
-        "version": "fbc10de9c7c47f966c88368ea0d4621f15c42d24"
+        "version": "88e7eb3c73ca1cd4a5c1ca3ac779cb617b63d298"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -413,7 +436,6 @@
             "name": null,
             "rev": "e5f5461dff2d745b3abd19cd05785d815304b2c6",
             "sha256": "sha256-dv6uubsngOhj4OX38ZMMYpw0ldWaLit990jNrlX2xLs=",
-            "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
@@ -433,7 +455,6 @@
             "name": null,
             "rev": "aa2b0f9f1d638becd6bb9ca3c357ac2561a36b07",
             "sha256": "sha256-yfHtkMvX/gyVG0UgpSB6KjSDdCym6Reb9LRb3OortaI=",
-            "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
@@ -455,7 +476,6 @@
             "repo": "xrizer",
             "rev": "v0.1",
             "sha256": "sha256-0szkc/EURm4N0gl+tSFhLeQTYPX7ZgBHXwpP11Ju8Ng=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.1"
@@ -476,7 +496,6 @@
             "repo": "xrizer",
             "rev": "1babbac76a275749ee4c93a57f64431bd5d71e6f",
             "sha256": "sha256-KDRih95IcYDDOd6QMxqZI33TaCWI3/xOfzczlS1SyVI=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1babbac76a275749ee4c93a57f64431bd5d71e6f"
