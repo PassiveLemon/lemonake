@@ -104,6 +104,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
     };
     date = "2024-02-21";
@@ -117,6 +118,7 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-K27yeGUfSb4I8Xv3s4UEXrgUscGZUzsXS4++5NfSJTs=";
     };
     date = "2025-01-15";
@@ -203,24 +205,24 @@
   };
   webfisher = {
     pname = "webfisher";
-    version = "0.2.0";
+    version = "0.2.1";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "0.2.0";
+      rev = "0.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-H9plg0FriVqejhUNh5bS23mJaEfUhiiZzBGcUuXbAd0=";
+      sha256 = "sha256-nOdMYhyx7t9zvlgjpknSCGN4uRrTgcFQ2rJtm2iW7tg=";
     };
   };
   webfisher-git = {
     pname = "webfisher-git";
-    version = "b3c9c659ee1457d2ef745ecffef1cf5822f30a43";
+    version = "65a1f664ab16a14f7484ba656d41d329583f297e";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "b3c9c659ee1457d2ef745ecffef1cf5822f30a43";
+      rev = "65a1f664ab16a14f7484ba656d41d329583f297e";
       fetchSubmodules = false;
-      sha256 = "sha256-H9plg0FriVqejhUNh5bS23mJaEfUhiiZzBGcUuXbAd0=";
+      sha256 = "sha256-nOdMYhyx7t9zvlgjpknSCGN4uRrTgcFQ2rJtm2iW7tg=";
     };
     date = "2025-01-15";
   };
@@ -256,6 +258,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-dv6uubsngOhj4OX38ZMMYpw0ldWaLit990jNrlX2xLs=";
     };
   };
@@ -268,6 +271,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-yfHtkMvX/gyVG0UgpSB6KjSDdCym6Reb9LRb3OortaI=";
     };
   };
