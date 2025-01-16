@@ -205,24 +205,24 @@
   };
   webfisher = {
     pname = "webfisher";
-    version = "0.2.1";
+    version = "0.3.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "0.2.1";
+      rev = "0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-nOdMYhyx7t9zvlgjpknSCGN4uRrTgcFQ2rJtm2iW7tg=";
+      sha256 = "sha256-4vsvPSyQ+cebPwfMv9h6azw+rXbElrhF7vvvu9a5dWc=";
     };
   };
   webfisher-git = {
     pname = "webfisher-git";
-    version = "65a1f664ab16a14f7484ba656d41d329583f297e";
+    version = "2368420d3170db208a2ac39b47a0a04414742502";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "65a1f664ab16a14f7484ba656d41d329583f297e";
+      rev = "2368420d3170db208a2ac39b47a0a04414742502";
       fetchSubmodules = false;
-      sha256 = "sha256-nOdMYhyx7t9zvlgjpknSCGN4uRrTgcFQ2rJtm2iW7tg=";
+      sha256 = "sha256-4vsvPSyQ+cebPwfMv9h6azw+rXbElrhF7vvvu9a5dWc=";
     };
     date = "2025-01-15";
   };
@@ -239,13 +239,13 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "88e7eb3c73ca1cd4a5c1ca3ac779cb617b63d298";
+    version = "4c0c47f8075ec04f07a1a27d1e0aa857c7fe4aca";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "88e7eb3c73ca1cd4a5c1ca3ac779cb617b63d298";
+      rev = "4c0c47f8075ec04f07a1a27d1e0aa857c7fe4aca";
       fetchSubmodules = false;
-      sha256 = "sha256-j971QkhMAMf32ss2W+UL57qeiQ7M0NkWQgwu2hjy0MU=";
+      sha256 = "sha256-cWfPwV0tPz4y7Q/CpWuULd6Tmk+YP7qKdWoh45UGYgA=";
     };
     date = "2025-01-15";
   };
