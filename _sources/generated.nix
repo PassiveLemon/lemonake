@@ -46,10 +46,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.20";
+    version = "2.0.21";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.20__linux__x64.AppImage";
-      sha256 = "sha256-tI9RU8qO3MHbImOGw2Wl1dksNbhqrYFyGemqms8aAio=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.21__linux__x64.AppImage";
+      sha256 = "sha256-0rAdr+P7tRmTQAwBuONQutzHOodGYN8qYYGdxfP3oIw=";
     };
   };
   gdlauncher-legacy = {
