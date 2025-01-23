@@ -288,14 +288,14 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "1babbac76a275749ee4c93a57f64431bd5d71e6f";
+    version = "680833891ec7b849d06879063578fc7b7d2dd982";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "1babbac76a275749ee4c93a57f64431bd5d71e6f";
+      rev = "680833891ec7b849d06879063578fc7b7d2dd982";
       fetchSubmodules = false;
-      sha256 = "sha256-KDRih95IcYDDOd6QMxqZI33TaCWI3/xOfzczlS1SyVI=";
+      sha256 = "sha256-2tBi4UI8rovHFFi0fEzBrzLVV2RkWArcHRCdCg7jVSE=";
     };
-    date = "2025-01-11";
+    date = "2025-01-22";
   };
 }

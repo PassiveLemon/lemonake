@@ -504,7 +504,7 @@
     },
     "xrizer-git": {
         "cargoLocks": null,
-        "date": "2025-01-11",
+        "date": "2025-01-22",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -516,11 +516,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "1babbac76a275749ee4c93a57f64431bd5d71e6f",
-            "sha256": "sha256-KDRih95IcYDDOd6QMxqZI33TaCWI3/xOfzczlS1SyVI=",
+            "rev": "680833891ec7b849d06879063578fc7b7d2dd982",
+            "sha256": "sha256-2tBi4UI8rovHFFi0fEzBrzLVV2RkWArcHRCdCg7jVSE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1babbac76a275749ee4c93a57f64431bd5d71e6f"
+        "version": "680833891ec7b849d06879063578fc7b7d2dd982"
     }
 }
