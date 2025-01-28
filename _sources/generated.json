@@ -371,16 +371,16 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "webfisher",
-            "rev": "0.3.0",
-            "sha256": "sha256-4vsvPSyQ+cebPwfMv9h6azw+rXbElrhF7vvvu9a5dWc=",
+            "rev": "0.4.0",
+            "sha256": "sha256-Dh9gtOrcK3UVd7DdKhOIUHObfRWrJ5WQl+16w+8LvAw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.3.0"
+        "version": "0.4.0"
     },
     "webfisher-git": {
         "cargoLocks": null,
-        "date": "2025-01-15",
+        "date": "2025-01-27",
         "extract": null,
         "name": "webfisher-git",
         "passthru": null,
@@ -392,12 +392,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "webfisher",
-            "rev": "2368420d3170db208a2ac39b47a0a04414742502",
-            "sha256": "sha256-4vsvPSyQ+cebPwfMv9h6azw+rXbElrhF7vvvu9a5dWc=",
+            "rev": "114afae7c82eca264eb5ad0dd9409ff92207c463",
+            "sha256": "sha256-Dh9gtOrcK3UVd7DdKhOIUHObfRWrJ5WQl+16w+8LvAw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2368420d3170db208a2ac39b47a0a04414742502"
+        "version": "114afae7c82eca264eb5ad0dd9409ff92207c463"
     },
     "wivrn": {
         "cargoLocks": null,
@@ -422,7 +422,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-01-26",
+        "date": "2025-01-27",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -434,12 +434,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "bcc8286ad426c3f64d9e92237ac9dfecefec657e",
-            "sha256": "sha256-OzPI2JTQyuXwsUveGmCGutpsfQozTbY9HekhSrBAzaw=",
+            "rev": "4d5fd82b9bb1bbd9dba6cbbfc805ad3f4230fba9",
+            "sha256": "sha256-zSfngTpDhmK25iJcTi5c4AxSWgl047OI6Ya5NK7BZsU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bcc8286ad426c3f64d9e92237ac9dfecefec657e"
+        "version": "4d5fd82b9bb1bbd9dba6cbbfc805ad3f4230fba9"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -516,11 +516,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "aff6db75eeeac2a03de0d3e7b5879892e9b1bf1e",
-            "sha256": "sha256-uTK7jvqNjsU9KVrTon6wvYGULPP6oFAj68eAqcRLEuU=",
+            "rev": "1e29911899caaee9e051db7235ccae7545400693",
+            "sha256": "sha256-Bx78zsRxUNsGChzmh0a70v4WQpadqmerNTtostW1+WI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "aff6db75eeeac2a03de0d3e7b5879892e9b1bf1e"
+        "version": "1e29911899caaee9e051db7235ccae7545400693"
     }
 }

@@ -205,26 +205,26 @@
   };
   webfisher = {
     pname = "webfisher";
-    version = "0.3.0";
+    version = "0.4.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "0.3.0";
+      rev = "0.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-4vsvPSyQ+cebPwfMv9h6azw+rXbElrhF7vvvu9a5dWc=";
+      sha256 = "sha256-Dh9gtOrcK3UVd7DdKhOIUHObfRWrJ5WQl+16w+8LvAw=";
     };
   };
   webfisher-git = {
     pname = "webfisher-git";
-    version = "2368420d3170db208a2ac39b47a0a04414742502";
+    version = "114afae7c82eca264eb5ad0dd9409ff92207c463";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "2368420d3170db208a2ac39b47a0a04414742502";
+      rev = "114afae7c82eca264eb5ad0dd9409ff92207c463";
       fetchSubmodules = false;
-      sha256 = "sha256-4vsvPSyQ+cebPwfMv9h6azw+rXbElrhF7vvvu9a5dWc=";
+      sha256 = "sha256-Dh9gtOrcK3UVd7DdKhOIUHObfRWrJ5WQl+16w+8LvAw=";
     };
-    date = "2025-01-15";
+    date = "2025-01-27";
   };
   wivrn = {
     pname = "wivrn";
@@ -239,15 +239,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "bcc8286ad426c3f64d9e92237ac9dfecefec657e";
+    version = "4d5fd82b9bb1bbd9dba6cbbfc805ad3f4230fba9";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "bcc8286ad426c3f64d9e92237ac9dfecefec657e";
+      rev = "4d5fd82b9bb1bbd9dba6cbbfc805ad3f4230fba9";
       fetchSubmodules = false;
-      sha256 = "sha256-OzPI2JTQyuXwsUveGmCGutpsfQozTbY9HekhSrBAzaw=";
+      sha256 = "sha256-zSfngTpDhmK25iJcTi5c4AxSWgl047OI6Ya5NK7BZsU=";
     };
-    date = "2025-01-26";
+    date = "2025-01-27";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -288,13 +288,13 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "aff6db75eeeac2a03de0d3e7b5879892e9b1bf1e";
+    version = "1e29911899caaee9e051db7235ccae7545400693";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "aff6db75eeeac2a03de0d3e7b5879892e9b1bf1e";
+      rev = "1e29911899caaee9e051db7235ccae7545400693";
       fetchSubmodules = false;
-      sha256 = "sha256-uTK7jvqNjsU9KVrTon6wvYGULPP6oFAj68eAqcRLEuU=";
+      sha256 = "sha256-Bx78zsRxUNsGChzmh0a70v4WQpadqmerNTtostW1+WI=";
     };
     date = "2025-01-26";
   };
