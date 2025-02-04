@@ -357,6 +357,27 @@
         },
         "version": "0a525619a07d92734b5eb5ba1d47c56f4de37458"
     },
+    "vapor-git": {
+        "cargoLocks": null,
+        "date": "2025-02-01",
+        "extract": null,
+        "name": "vapor-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "micheal65536",
+            "repo": "VapoR",
+            "rev": "a20012c826b17293266c10df5ab9af86697a75db",
+            "sha256": "sha256-1rYEs0akbrewBFD9PJ0FmyxjelR5RXorNGWnCE9gc7g=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "a20012c826b17293266c10df5ab9af86697a75db"
+    },
     "webfisher": {
         "cargoLocks": null,
         "date": null,

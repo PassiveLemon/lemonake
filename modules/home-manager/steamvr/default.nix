@@ -30,6 +30,9 @@ let
     then cfg.helperScript.openvrRuntimePackage
     else if cfg.helperScript.openvrRuntime == "xrizer"
     then pkgs.xrizer
+    else if cfg.helperScript.openvrRuntime == "vapor"
+    #then pkgs.vapor
+    then (pkgs.callPackage ../../../pkgs/vapor/package.nix { })
     else pkgs.opencomposite
   );
   openxrRuntimePackage = (
@@ -44,7 +47,9 @@ let
     if cfg.helperScript.openvrRuntime == "opencomposite"
     then "${openvrRuntimePackage}/lib/opencomposite"
     else if cfg.helperScript.openvrRuntime == "xrizer"
-    then "${openxrRuntimePackage}/lib"
+    then "${openxrRuntimePackage}/lib/xrizer"
+    else if cfg.helperScript.openvrRuntime == "vapor"
+    then "${openxrRuntimePackage}/lib/vapor"
     else ""
   );
   xrRuntimeJson = (
@@ -236,7 +241,7 @@ in
       helperScript = {
         enable = mkEnableOption "a helper script for setting SteamVR variables";
         openvrRuntime = mkOption {
-          type = types.enum [ "opencomposite" "xrizer" ];
+          type = types.enum [ "opencomposite" "xrizer" "vapor" ];
           description = "The OpenVR runtime to set for `VR_OVERRIDE`";
           default = "opencomposite";
         };

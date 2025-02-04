@@ -73,6 +73,10 @@ fetch.github = "debrouxl/tilp_and_gfm"
 src.git = "https://github.com/debrouxl/tilp_and_gfm"
 fetch.github = "debrouxl/tilp_and_gfm"
 
+[vapor-git]
+src.git = "https://github.com/micheal65536/VapoR"
+fetch.github = "micheal65536/VapoR"
+
 [webfisher]
 src.github = "PassiveLemon/webfisher"
 fetch.github = "PassiveLemon/webfisher"

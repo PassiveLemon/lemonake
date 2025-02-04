@@ -203,6 +203,18 @@
     };
     date = "2024-12-01";
   };
+  vapor-git = {
+    pname = "vapor-git";
+    version = "a20012c826b17293266c10df5ab9af86697a75db";
+    src = fetchFromGitHub {
+      owner = "micheal65536";
+      repo = "VapoR";
+      rev = "a20012c826b17293266c10df5ab9af86697a75db";
+      fetchSubmodules = false;
+      sha256 = "sha256-1rYEs0akbrewBFD9PJ0FmyxjelR5RXorNGWnCE9gc7g=";
+    };
+    date = "2025-02-01";
+  };
   webfisher = {
     pname = "webfisher";
     version = "0.4.0";
