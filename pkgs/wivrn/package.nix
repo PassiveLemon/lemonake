@@ -1,3 +1,4 @@
+# Commented packages are not currently in nixpkgs. They don't appear to cause a problem when not present.
 { version
 , src
 , monadoSrc
@@ -28,6 +29,7 @@
 , gst_all_1
 , harfbuzz
 , hidapi
+, kdePackages
 # leapsdk
 # leapv2
 , libGL
@@ -93,7 +95,7 @@ stdenv.mkDerivation (finalAttrs: {
   postUnpack = ''
     # Let's make sure our monado source revision matches what is used by WiVRn upstream
     ourMonadoRev="${finalAttrs.monado.src.rev}"
-    theirMonadoRev=$(grep "GIT_TAG" ${finalAttrs.src.name}/CMakeLists.txt | awk '{print $2}')
+    theirMonadoRev=$(sed -n '/FetchContent_Declare(monado/,/)/p' ${finalAttrs.src.name}/CMakeLists.txt | grep "GIT_TAG" | awk '{print $2}')
     if [ ! "$theirMonadoRev" == "$ourMonadoRev" ]; then
       echo "Our Monado source revision doesn't match CMakeLists.txt." >&2
       echo "  theirs: $theirMonadoRev" >&2
@@ -133,6 +135,12 @@ stdenv.mkDerivation (finalAttrs: {
     gst_all_1.gstreamer
     harfbuzz
     hidapi
+    kdePackages.kcoreaddons
+    kdePackages.ki18n
+    kdePackages.kiconthemes
+    kdePackages.kirigami
+    kdePackages.qcoro
+    kdePackages.qqc2-desktop-style
     libbsd
     libdrm
     libGL
@@ -176,7 +184,7 @@ stdenv.mkDerivation (finalAttrs: {
   cmakeFlags = [
     (lib.cmakeBool "WIVRN_USE_NVENC" cudaSupport)
     (lib.cmakeBool "WIVRN_USE_VAAPI" true)
-    (lib.cmakeBool "WIVRN_USE_VULKAN" true)
+    (lib.cmakeBool "WIVRN_USE_VULKAN_ENCODE" true)
     (lib.cmakeBool "WIVRN_USE_X264" true)
     (lib.cmakeBool "WIVRN_USE_PIPEWIRE" true)
     (lib.cmakeBool "WIVRN_USE_PULSEAUDIO" true)
@@ -186,7 +194,7 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_CHECK_CAPSYSNICE" false)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "WIVRN_OPENXR_MANIFEST_TYPE" "absolute")
-    (lib.cmakeFeature "GIT_DESC" "${finalAttrs.version}")
+    (lib.cmakeFeature "GIT_DESC" "v${finalAttrs.version}")
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
   ];
 
