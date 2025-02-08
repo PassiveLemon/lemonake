@@ -11,6 +11,7 @@ buildNimPackage (finalAttrs: {
 
   strictDeps = true;
 
+  # allow-import-from-derivation error. Need to vendor lock file :(
   lockFile = "${src}/lock.json";
 
   buildInputs = [

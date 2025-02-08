@@ -55,7 +55,10 @@ Packages:
 - `proton-ge-rtsp` (Please only use with `programs.steam.extraCompatPackages`)
 - `tilp2`
 - `tilp2-git`
+- `vapor-git`
 - `wayvr-dashboard-git`
+- `webfisher`
+- `webfisher-git`
 - `wivrn`
 - `wivrn-git`
 - `wlx-overlay-s`
