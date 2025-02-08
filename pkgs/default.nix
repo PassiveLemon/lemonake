@@ -28,6 +28,7 @@
     ./proton-ge-rtsp
     ./tilp2
     ./vapor
+    ./wayvr-dashboard
     ./webfisher
     ./wivrn
     ./xrizer
@@ -51,6 +52,7 @@
       // (proton-ge-rtsp final prev)
       // (tilp2 final prev)
       // (vapor final prev)
+      // (wayvr-dashboard final prev)
       // (webfisher final prev)
       // (wivrn final prev)
       // (xrizer final prev);
