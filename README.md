@@ -58,6 +58,8 @@ Packages:
 - `wayvr-dashboard-git`
 - `wivrn`
 - `wivrn-git`
+- `wlx-overlay-s`
+- `wlx-overlay-s-git`
 - `xrizer`
 - `xrizer-git`
 

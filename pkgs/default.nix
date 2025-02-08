@@ -31,6 +31,7 @@
     ./wayvr-dashboard
     ./webfisher
     ./wivrn
+    ./wlx-overlay-s
     ./xrizer
   ];
 
@@ -55,6 +56,7 @@
       // (wayvr-dashboard final prev)
       // (webfisher final prev)
       // (wivrn final prev)
+      // (wlx-overlay-s final prev)
       // (xrizer final prev);
   };
 }
