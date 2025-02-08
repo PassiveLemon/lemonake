@@ -180,6 +180,14 @@
     };
     date = "2024-12-30";
   };
+  proton-ge-rtsp = {
+    pname = "proton-ge-rtsp";
+    version = "GE-Proton9-22-rtsp17";
+    src = fetchTarball {
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton9-22-rtsp17/GE-Proton9-22-rtsp17.tar.gz";
+      sha256 = "sha256-1zj0y7E9JWrnPC9HllFXos33rsdAt3q+NamoxNTmHHM=";
+    };
+  };
   tilp2-gfm = {
     pname = "tilp2-gfm";
     version = "1.18";
@@ -214,6 +222,18 @@
       sha256 = "sha256-1rYEs0akbrewBFD9PJ0FmyxjelR5RXorNGWnCE9gc7g=";
     };
     date = "2025-02-01";
+  };
+  wayvr-dashboard-git = {
+    pname = "wayvr-dashboard-git";
+    version = "cbb2cdbc3b912232ce3944aad259c96efb563f53";
+    src = fetchFromGitHub {
+      owner = "olekolek1000";
+      repo = "wayvr-dashboard";
+      rev = "cbb2cdbc3b912232ce3944aad259c96efb563f53";
+      fetchSubmodules = false;
+      sha256 = "sha256-+Krh9Ec1LhQxi7+uK9biOftlRJHqcAbearv8RAouy70=";
+    };
+    date = "2025-02-07";
   };
   webfisher = {
     pname = "webfisher";
@@ -286,6 +306,52 @@
       sparseCheckout = [ ];
       sha256 = "sha256-yfHtkMvX/gyVG0UgpSB6KjSDdCym6Reb9LRb3OortaI=";
     };
+  };
+  wlx-overlay-s = {
+    pname = "wlx-overlay-s";
+    version = "v0.6";
+    src = fetchFromGitHub {
+      owner = "galister";
+      repo = "wlx-overlay-s";
+      rev = "v0.6";
+      fetchSubmodules = false;
+      sha256 = "sha256-Gk/3m4eWFZqeQBphBUTGAUqe8SspXqut8n4JM8tTe6o=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./wlx-overlay-s-v0.6/Cargo.lock;
+      outputHashes = {
+        "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
+        "libmonado-rs-0.1.0" = "sha256-ja7OW/YSmfzaQoBhu6tec9v8fyNDknLekE2eY7McLPE=";
+        "vulkano-0.34.0" = "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=";
+        "ovr_overlay-0.0.0" = "sha256-5IMEI0IPTacbA/1gibYU7OT6r+Bj+hlQjDZ3Kg0L2gw=";
+        "wlx-capture-0.3.12" = "sha256-32WnAnNUSfsAA8WB9da3Wqb4acVlXh6HWsY9tPzCHEE=";
+      };
+    };
+  };
+  wlx-overlay-s-git = {
+    pname = "wlx-overlay-s-git";
+    version = "e44872f831c957a18c974d6667900787c61c42cb";
+    src = fetchFromGitHub {
+      owner = "galister";
+      repo = "wlx-overlay-s";
+      rev = "e44872f831c957a18c974d6667900787c61c42cb";
+      fetchSubmodules = false;
+      sha256 = "sha256-MfguHwtlviSvyRuxhd8dDj11sw497WbN+D7zXJpQB2s=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./wlx-overlay-s-git-e44872f831c957a18c974d6667900787c61c42cb/Cargo.lock;
+      outputHashes = {
+        "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
+        "libmonado-rs-0.1.0" = "sha256-ja7OW/YSmfzaQoBhu6tec9v8fyNDknLekE2eY7McLPE=";
+        "vulkano-0.34.0" = "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=";
+        "wlx-capture-0.4.2" = "sha256-uNOVG5EJ8ZBGvdBzq8XaS8agspj0Ko8dwPoYpLBM1UY=";
+        "smithay-0.3.0" = "sha256-Njw+deqcmUaR4iAmXZEzRTyNR2ZP+tshAGk0f6/CdAg=";
+        "wayvr_ipc-0.1.0" = "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E=";
+        "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
+        "ovr_overlay-0.0.0" = "sha256-5IMEI0IPTacbA/1gibYU7OT6r+Bj+hlQjDZ3Kg0L2gw=";
+      };
+    };
+    date = "2025-01-31";
   };
   xrizer = {
     pname = "xrizer";
