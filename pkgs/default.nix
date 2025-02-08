@@ -25,6 +25,7 @@
     ./opencomposite
     ./picom
     ./poepyautopot
+    ./proton-ge-rtsp
     ./tilp2
     ./vapor
     ./webfisher
@@ -47,6 +48,7 @@
       // (opencomposite final prev)
       // (picom final prev)
       // (poepyautopot final prev)
+      // (proton-ge-rtsp final prev)
       // (tilp2 final prev)
       // (vapor final prev)
       // (webfisher final prev)

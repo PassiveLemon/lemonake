@@ -52,6 +52,7 @@ Packages:
 - `picom-git`
 - `poepyautopot`
 - `poepyautopot-git`
+- `proton-ge-rtsp` (Please only use with `programs.steam.extraCompatPackages`)
 - `tilp2`
 - `tilp2-git`
 - `wivrn`
