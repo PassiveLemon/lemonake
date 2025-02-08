@@ -72,6 +72,7 @@ let
       export VR_OVERRIDE=${vrOverride}
       export XR_RUNTIME_JSON=${xrRuntimeJson}
       export PRESSURE_VESSEL_FILESYSTEMS_RW=${pressureVesselFilesystemsReadWrite}
+      ${cfg.helperScript.extraConfig}
       exec "$@"
     '';
   };
@@ -258,6 +259,11 @@ in
         openxrRuntimePackage = mkOption {
           type = types.package;
           description = "The path to the OpenXR runtime json. This is option is for overriding the openxrRuntime package.";
+          default = "";
+        };
+        extraConfig = mkOption {
+          type = types.str;
+          description = "Extra configuration to be passed to the vr-helper script.";
           default = "";
         };
       };
