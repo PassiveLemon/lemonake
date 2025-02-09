@@ -196,6 +196,8 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeFeature "WIVRN_OPENXR_MANIFEST_TYPE" "absolute")
     (lib.cmakeFeature "GIT_DESC" "v${finalAttrs.version}")
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
+  ] ++ lib.optionals cudaSupport [
+    (lib.cmakeFeature "CUDA_TOOLKIT_ROOT_DIR" "${cudaPackages.cudatoolkit}")
   ];
 
   desktopItems = [
@@ -221,6 +223,7 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
     mainProgram = "wivrn-server";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 })
 
