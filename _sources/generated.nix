@@ -111,17 +111,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "d37c9e7a4bc41f2b636282064eb39efb9e50d48b";
+    version = "175e3b3a5408ff120bd21036faa703deb57159fc";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "d37c9e7a4bc41f2b636282064eb39efb9e50d48b";
+      rev = "175e3b3a5408ff120bd21036faa703deb57159fc";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Bc+lQdQeiojaHjglj7gZhXB5BMho0vb/HErfh50pcmA=";
+      sha256 = "sha256-kwu8eM/rQBcZfs91loh7QAB46a01F9n5Xm1DmMd53MQ=";
     };
-    date = "2025-01-23";
+    date = "2025-02-08";
   };
   picom = {
     pname = "picom";
@@ -225,15 +225,15 @@
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
-    version = "cbb2cdbc3b912232ce3944aad259c96efb563f53";
+    version = "a927e7a20268c521e508c4a9521b12530f6e8422";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "cbb2cdbc3b912232ce3944aad259c96efb563f53";
+      rev = "a927e7a20268c521e508c4a9521b12530f6e8422";
       fetchSubmodules = false;
-      sha256 = "sha256-+Krh9Ec1LhQxi7+uK9biOftlRJHqcAbearv8RAouy70=";
+      sha256 = "sha256-lcL+igZdZB5GM2bZTZaR0sRy78Jx4kv58P+dBhrN7Ac=";
     };
-    date = "2025-02-07";
+    date = "2025-02-10";
   };
   webfisher = {
     pname = "webfisher";
@@ -271,15 +271,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "22186f00437de6e546f7e6f03e7405f63afbd535";
+    version = "e4a866f368144b5cab9ad0663486e663d3dfedef";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "22186f00437de6e546f7e6f03e7405f63afbd535";
+      rev = "e4a866f368144b5cab9ad0663486e663d3dfedef";
       fetchSubmodules = false;
-      sha256 = "sha256-1ua5EUNhAA77xsY6r3+bivO81wFcaxBH2pE04AFlo/w=";
+      sha256 = "sha256-Iv4UC4nhyP1quFELL7ojqVLD6fnDqOF3goB8ntHH0Hs=";
     };
-    date = "2025-02-07";
+    date = "2025-02-09";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
