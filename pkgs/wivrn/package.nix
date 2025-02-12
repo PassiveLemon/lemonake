@@ -165,6 +165,7 @@ stdenv.mkDerivation (finalAttrs: {
     orc
     pipewire
     qt6.qtbase
+    qt6.qtsvg
     qt6.qttools
     SDL2
     shaderc
@@ -199,6 +200,11 @@ stdenv.mkDerivation (finalAttrs: {
   ] ++ lib.optionals cudaSupport [
     (lib.cmakeFeature "CUDA_TOOLKIT_ROOT_DIR" "${cudaPackages.cudatoolkit}")
   ];
+
+  postFixup = ''
+    wrapProgram $out/bin/wivrn-dashboard \
+      --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [ vulkan-loader ]}
+  '';
 
   desktopItems = [
     (makeDesktopItem {
