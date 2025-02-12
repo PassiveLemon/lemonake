@@ -7,6 +7,7 @@
       prev.wlx-overlay-s.overrideAttrs {
         inherit (package) src;
         version = (lib.removePrefix "v" package.version);
+        cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
       };
 
       wlx-overlay-s-git = let
