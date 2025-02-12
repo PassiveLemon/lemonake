@@ -233,7 +233,7 @@
     },
     "picom-git": {
         "cargoLocks": null,
-        "date": "2024-11-21",
+        "date": "2025-02-12",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -245,12 +245,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "fcb4a2dc9c2ac9f50b087e4039fdc1ec5da119f5",
-            "sha256": "sha256-RoRu6L63wm9jAszRkzMtaxwpR9iPWcrxdNaySLY0M9E=",
+            "rev": "2bbe0e64c9d6b1820fd179abcf7a5195e99032d1",
+            "sha256": "sha256-uYpIUlWvjAGK4u0+pau5Pt3OCrxePrtLU5UcPs0PCNk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "fcb4a2dc9c2ac9f50b087e4039fdc1ec5da119f5"
+        "version": "2bbe0e64c9d6b1820fd179abcf7a5195e99032d1"
     },
     "picom-tag": {
         "cargoLocks": null,
@@ -478,7 +478,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-02-09",
+        "date": "2025-02-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -490,12 +490,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "e4a866f368144b5cab9ad0663486e663d3dfedef",
-            "sha256": "sha256-Iv4UC4nhyP1quFELL7ojqVLD6fnDqOF3goB8ntHH0Hs=",
+            "rev": "c42ff09e0dbcf7bf43eb761696372b3d362198cb",
+            "sha256": "sha256-UUc4HNvX9PQN3eQD9CPF7VFDqzra4DRq74XSiehdZzA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e4a866f368144b5cab9ad0663486e663d3dfedef"
+        "version": "c42ff09e0dbcf7bf43eb761696372b3d362198cb"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -572,7 +572,7 @@
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-e44872f831c957a18c974d6667900787c61c42cb/Cargo.lock",
+                "./wlx-overlay-s-git-bf3f3dafbe7d4392f42876d58459c3985126d8a2/Cargo.lock",
                 {
                     "libmonado-rs-0.1.0": "sha256-ja7OW/YSmfzaQoBhu6tec9v8fyNDknLekE2eY7McLPE=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
@@ -585,7 +585,7 @@
                 }
             ]
         },
-        "date": "2025-01-31",
+        "date": "2025-02-11",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -597,12 +597,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "e44872f831c957a18c974d6667900787c61c42cb",
-            "sha256": "sha256-MfguHwtlviSvyRuxhd8dDj11sw497WbN+D7zXJpQB2s=",
+            "rev": "bf3f3dafbe7d4392f42876d58459c3985126d8a2",
+            "sha256": "sha256-dQml+LPtzt771yJqS9iRcDxytKhHldKSYVCNSYK1b9Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e44872f831c957a18c974d6667900787c61c42cb"
+        "version": "bf3f3dafbe7d4392f42876d58459c3985126d8a2"
     },
     "xrizer": {
         "cargoLocks": null,
