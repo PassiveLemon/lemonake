@@ -4,7 +4,6 @@
 , stdenv
 , cmake
 , libGL
-, nix-update-script
 , nlohmann_json
 , openxr-loader
 , pkg-config
@@ -41,8 +40,6 @@ stdenv.mkDerivation {
 
     runHook postInstall
   '';
-
-  passthru.updateScript = nix-update-script { };
 
   meta = with lib; {
     description = "an implementation of an OpenVR runtime on top of OpenXR";

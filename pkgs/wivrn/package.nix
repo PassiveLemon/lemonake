@@ -49,7 +49,6 @@
 , libuvc
 , libva
 , makeDesktopItem
-, nix-update-script
 , nlohmann_json
 , onnxruntime
 , opencv4
@@ -218,8 +217,6 @@ stdenv.mkDerivation (finalAttrs: {
       categories = [ "Network" ];
     })
   ];
-
-  passthru.updateScript = nix-update-script { };
 
   meta = with lib; {
     description = "An OpenXR streaming application to a standalone headset";

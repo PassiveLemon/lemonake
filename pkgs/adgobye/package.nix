@@ -3,7 +3,6 @@
 , lib
 , buildDotnetModule
 , dotnetCorePackages
-, nix-update-script
 }:
 buildDotnetModule {
   pname = "adgobye";
@@ -24,8 +23,6 @@ buildDotnetModule {
   dotnet-runtime = dotnetCorePackages.runtime_8_0;
 
   executables = [ "AdGoBye" ];
-
-  passthru.updateScript = nix-update-script { };
 
   meta = with lib; {
     description = "Content / Adblock for Social VR";

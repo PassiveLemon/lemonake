@@ -5,7 +5,6 @@
 , cmake
 , linux-pam
 , lua
-, nix-update-script
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "lua-pam";
@@ -40,8 +39,6 @@ stdenv.mkDerivation (finalAttrs: {
 
     runHook postInstall
   '';
-
-  passthru.updateScript = nix-update-script { };
 
   meta = with lib; {
     description = "A module for lua to use PAM";
