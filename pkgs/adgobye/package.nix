@@ -1,4 +1,4 @@
-{ versionRaw
+{ version
 , src
 , lib
 , buildDotnetModule
@@ -6,13 +6,7 @@
 }:
 buildDotnetModule {
   pname = "adgobye";
-  inherit src;
-  # Some manipulation of the version string to pass the "is not a valid version string" check
-  version = (
-    if lib.hasPrefix "v" versionRaw
-    then  lib.removePrefix "v" versionRaw
-    else "0-${versionRaw}"
-  );
+  inherit version src;
 
   projectFile = "AdGoBye/AdGoBye.csproj";
   # dotnet restore --packages=packageDir AdGoBye.csproj && nuget-to-nix packageDir > deps.nix; rm -r packageDir

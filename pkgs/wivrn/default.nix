@@ -1,4 +1,4 @@
-{ getPackage, ... }: {
+{ lib, getPackage, ... }: {
   flake.overlays = {
     wivrn = final: prev: {
       wivrn = let
@@ -6,7 +6,8 @@
         monado = getPackage "wivrn-monado" prev;
       in
       prev.qt6Packages.callPackage ./package.nix {
-        inherit (package) version src;
+        inherit (package) src;
+        version = (lib.removePrefix "v" package.version);
         monadoSrc = monado.src;
       };
 
