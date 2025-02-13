@@ -469,12 +469,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "v0.23",
-            "sha256": "sha256-Ae25yLlkZ958gXr8nyWPv27leVLF5enljXAkCx+fDSk=",
+            "rev": "v0.23.1",
+            "sha256": "sha256-s/CPMZ89Rt9moTWsKBVxDMCRvW9V7CPh7cBEEf/iTpE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.23"
+        "version": "v0.23.1"
     },
     "wivrn-git": {
         "cargoLocks": null,

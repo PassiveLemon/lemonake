@@ -260,13 +260,13 @@
   };
   wivrn = {
     pname = "wivrn";
-    version = "v0.23";
+    version = "v0.23.1";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "v0.23";
+      rev = "v0.23.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Ae25yLlkZ958gXr8nyWPv27leVLF5enljXAkCx+fDSk=";
+      sha256 = "sha256-s/CPMZ89Rt9moTWsKBVxDMCRvW9V7CPh7cBEEf/iTpE=";
     };
   };
   wivrn-git = {
