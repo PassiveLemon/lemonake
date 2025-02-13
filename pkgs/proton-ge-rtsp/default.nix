@@ -4,7 +4,9 @@
       proton-ge-rtsp = let
         package = getPackage "proton-ge-rtsp" prev;
       in
-      prev.proton-ge-bin.overrideAttrs { inherit (package) version src; };
+      (prev.proton-ge-bin.overrideAttrs {
+        inherit (package) version src;
+      }).override { steamDisplayName = "GE-Proton-rtsp"; };
     };
   };
 }
