@@ -48,6 +48,7 @@ stdenv.mkDerivation {
     license = licenses.bsd2;
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

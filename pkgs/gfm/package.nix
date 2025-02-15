@@ -43,6 +43,7 @@ stdenv.mkDerivation {
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
     mainProgram = "gfm";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

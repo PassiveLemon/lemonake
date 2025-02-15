@@ -45,6 +45,7 @@ stdenv.mkDerivation {
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
     mainProgram = "tilp";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

@@ -46,6 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.mit;
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 })
 

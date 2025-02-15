@@ -83,6 +83,7 @@ rustPlatform.buildRustPackage rec {
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
     mainProgram = "wayvr_dashboard";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

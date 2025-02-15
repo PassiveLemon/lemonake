@@ -28,6 +28,7 @@ appimageTools.wrapType2 {
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "gdlauncher-carbon";
+    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
   };
 }
 

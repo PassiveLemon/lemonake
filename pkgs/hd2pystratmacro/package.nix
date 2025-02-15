@@ -31,6 +31,7 @@ buildPythonApplication rec {
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "hd2pystratmacro";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

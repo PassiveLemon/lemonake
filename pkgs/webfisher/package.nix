@@ -26,6 +26,7 @@ buildNimPackage (finalAttrs: {
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "webfisher";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 })
 

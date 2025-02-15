@@ -67,6 +67,7 @@ buildPythonApplication {
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "animdl";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

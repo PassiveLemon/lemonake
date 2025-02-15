@@ -26,6 +26,7 @@ buildDotnetModule {
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
     mainProgram = "adgobye";
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 }
 

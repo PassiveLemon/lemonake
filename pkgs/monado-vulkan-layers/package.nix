@@ -29,6 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
     platforms = platforms.linux;
     license = licenses.boost;
     maintainers = with maintainers; [ scrumplex passivelemon ];
+    sourceProvenance = with sourceTypes; [ fromSource ];
   };
 })
 
