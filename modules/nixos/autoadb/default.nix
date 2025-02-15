@@ -37,6 +37,8 @@ in
   };
 
   config = mkIf cfg.enable {
+    services.autoadb.package = lib.mkDefault (pkgs.callPackage ../../../pkgs/autoadb/package.nix { });
+  
     systemd.user = {
       services.autoadb = {
         description = "AutoAdb service";

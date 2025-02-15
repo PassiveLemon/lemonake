@@ -17,6 +17,7 @@
     ./adgobye
     ./alcom
     ./animdl
+    ./autoadb
     ./gdlauncher
     ./gfm
     ./hd2pystratmacro
@@ -42,6 +43,7 @@
       (adgobye final prev)
       // (alcom final prev)
       // (animdl final prev)
+      // (autoadb final prev)
       // (gdlauncher final prev)
       // (gfm final prev)
       // (hd2pystratmacro final prev)
