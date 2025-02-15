@@ -136,15 +136,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "cd4a25c995cb57797263588ed2d4f12d18382bac";
+    version = "38d2c4a4ed263e10e868a1f86efc89fab6a36a30";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "cd4a25c995cb57797263588ed2d4f12d18382bac";
+      rev = "38d2c4a4ed263e10e868a1f86efc89fab6a36a30";
       fetchSubmodules = false;
-      sha256 = "sha256-CQ7SWjMup3U088IBKOBZmLK5PA1HdcTzw8BQmsfhVek=";
+      sha256 = "sha256-UV63ajJX8YL0JZOcltoD8AgMMK3Fbt18LlhSxCgjPAQ=";
     };
-    date = "2025-02-12";
+    date = "2025-02-14";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -225,15 +225,15 @@
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
-    version = "a927e7a20268c521e508c4a9521b12530f6e8422";
+    version = "9246f42ddb00301fbc46d3c2999736894b2ae615";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "a927e7a20268c521e508c4a9521b12530f6e8422";
+      rev = "9246f42ddb00301fbc46d3c2999736894b2ae615";
       fetchSubmodules = false;
-      sha256 = "sha256-lcL+igZdZB5GM2bZTZaR0sRy78Jx4kv58P+dBhrN7Ac=";
+      sha256 = "sha256-EPpa6uJcim0DfgucxXEEQjqVyFDQUeoKZMsz7X6as0g=";
     };
-    date = "2025-02-10";
+    date = "2025-02-14";
   };
   webfisher = {
     pname = "webfisher";
@@ -271,15 +271,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "a6d4632f0f6ec47660379b960b579dd9fbee576f";
+    version = "0dbc4a5ef40c034ae888702d90eee2f433a17f46";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "a6d4632f0f6ec47660379b960b579dd9fbee576f";
+      rev = "0dbc4a5ef40c034ae888702d90eee2f433a17f46";
       fetchSubmodules = false;
-      sha256 = "sha256-s/CPMZ89Rt9moTWsKBVxDMCRvW9V7CPh7cBEEf/iTpE=";
+      sha256 = "sha256-fLuBG3ecRdzgh7jzzJpFjf4JFsdUoldewEb32Ql6Oe0=";
     };
-    date = "2025-02-12";
+    date = "2025-02-14";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -372,20 +372,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "d6a7831287f1343161209b5f9dcd4c8eabadab79";
+    version = "7659af1b10ec486ff2bbae803ac7606751653baa";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "d6a7831287f1343161209b5f9dcd4c8eabadab79";
+      rev = "7659af1b10ec486ff2bbae803ac7606751653baa";
       fetchSubmodules = false;
-      sha256 = "sha256-gHmhICKO2kzdfgPEhrFy+xJYrJkIQcwayvicS7r3VTw=";
+      sha256 = "sha256-4ImBn7RRBmMq5IBsK+OGRC/sMSrzLNxEg80M92H6MS0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-d6a7831287f1343161209b5f9dcd4c8eabadab79/Cargo.lock;
+      lockFile = ./xrizer-git-7659af1b10ec486ff2bbae803ac7606751653baa/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-02-12";
+    date = "2025-02-14";
   };
 }
