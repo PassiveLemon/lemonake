@@ -233,6 +233,13 @@
       fetchSubmodules = false;
       sha256 = "sha256-EPpa6uJcim0DfgucxXEEQjqVyFDQUeoKZMsz7X6as0g=";
     };
+    cargoLock."src-tauri/Cargo.lock" = {
+      lockFile = ./wayvr-dashboard-git-9246f42ddb00301fbc46d3c2999736894b2ae615/src-tauri/Cargo.lock;
+      outputHashes = {
+        "keyvalues-parser-0.2.0" = "sha256-zbpgA6q2mIfFN6RoM0tauIQQFWT091TZ+6CCnBcYLa0=";
+        "wayvr_ipc-0.1.0" = "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E=";
+      };
+    };
     date = "2025-02-14";
   };
   webfisher = {

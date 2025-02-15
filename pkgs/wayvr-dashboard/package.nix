@@ -24,12 +24,13 @@ rustPlatform.buildRustPackage rec {
 	sourceRoot = "${src.name}/src-tauri";
 
 	useFetchCargoVendor = true;
-	cargoHash = "sha256-2Rz51zr6O8eCez1UnjkD4FYjdkhmjS/0SvfHV90og1k=";
+	cargoHash = "";
 
 	frontend = buildNpmPackage {
 		inherit version src;
 		pname = "wayvr-dashboard-ui";
 
+		# Nvfetcher can't vendor npm hashes
 		npmDepsHash = "sha256-W2X9g0LFIgkLbZBdr4OqodeN7U/h3nVfl3mKV9dsZTg=";
 
 		nativeBuildInputs = [
