@@ -32,6 +32,9 @@
           ];
         };
       };
+      packages = {
+        default = pkgs.nvfetcher;
+      };
     };
   };
 }
