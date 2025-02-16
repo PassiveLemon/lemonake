@@ -3,7 +3,7 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime.
 
 Use the helper `vr-helper` to launch Steam games with the proper variables set: `vr-helper %command%`.
 
-Currently, the default runtimes for OpenXR and OpenVR are Monado and OpenComposite respectively, however There is also WiVRn for OpenXR and xrizer for OpenVR.
+Currently, the default runtimes for OpenXR and OpenVR are Monado and OpenComposite respectively. You can set runtime to a blank string `""` to disable that env variable.
 
 >[!NOTE]
 > Tildes (`~`) get expanded to your home path. For example, `~/.local/share/` will literally get evaluated to `/home/(user)/.local/share/`

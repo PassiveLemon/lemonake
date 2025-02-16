@@ -242,7 +242,7 @@ in
       helperScript = {
         enable = mkEnableOption "a helper script for setting SteamVR variables";
         openvrRuntime = mkOption {
-          type = types.enum [ "opencomposite" "xrizer" "vapor" ];
+          type = types.enum [ "opencomposite" "xrizer" "vapor" "" ];
           description = "The OpenVR runtime to set for `VR_OVERRIDE`";
           default = "opencomposite";
         };
@@ -252,7 +252,7 @@ in
           default = "";
         };
         openxrRuntime = mkOption {
-          type = types.enum [ "monado" "wivrn" ];
+          type = types.enum [ "monado" "wivrn" "" ];
           description = "The OpenXR runtime to set for `XR_RUNTIME_JSON` and `PRESSURE_VESSEL_FILESYSTEMS_RW`";
           default = "monado";
         };
