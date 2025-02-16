@@ -5,11 +5,17 @@
         package = getPackage "wivrn" prev;
         monado = getPackage "wivrn-monado" prev;
       in
-      prev.qt6Packages.callPackage ./package.nix {
+      (prev.qt6Packages.callPackage ./package.nix {
         inherit (package) src;
         version = (lib.removePrefix "v" package.version);
         monadoSrc = monado.src;
-      };
+      }).overrideAttrs (prevAttrs: {
+        cmakeFlags = (final.lib.subtractLists [
+          (lib.cmakeFeature "OVR_COMPAT_SEARCH_PATH" "${final.opencomposite}:${final.xrizer}")
+        ] prevAttrs.cmakeFlags) ++ [
+          (lib.cmakeFeature "OPENCOMPOSITE_SEARCH_PATH" "${final.opencomposite}")
+        ];
+      });
 
       wivrn-git = let
         package = getPackage "wivrn-git" prev;
