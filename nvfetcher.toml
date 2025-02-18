@@ -81,10 +81,10 @@ fetch.github = "debrouxl/tilp_and_gfm"
 src.git = "https://github.com/micheal65536/VapoR"
 fetch.github = "micheal65536/VapoR"
 
-# [wayvr-dashboard]
-# src.github = "olekolek1000/wayvr-dashboard"
-# fetch.github = "olekolek1000/wayvr-dashboard"
-# cargo_locks = [ "src-tauri/Cargo.lock" ]
+[wayvr-dashboard]
+src.github = "olekolek1000/wayvr-dashboard"
+fetch.github = "olekolek1000/wayvr-dashboard"
+cargo_locks = [ "src-tauri/Cargo.lock" ]
 
 [wayvr-dashboard-git]
 src.git = "https://github.com/olekolek1000/wayvr-dashboard"

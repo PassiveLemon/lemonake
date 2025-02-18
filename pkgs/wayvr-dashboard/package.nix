@@ -3,6 +3,7 @@
 , lib
 , rustPlatform
 , buildNpmPackage
+, importNpmLock
 , alsa-lib
 , autoPatchelfHook
 , curl
@@ -30,8 +31,11 @@ rustPlatform.buildRustPackage rec {
 		inherit version src;
 		pname = "wayvr-dashboard-ui";
 
-		# Nvfetcher can't vendor npm hashes
-		npmDepsHash = "sha256-W2X9g0LFIgkLbZBdr4OqodeN7U/h3nVfl3mKV9dsZTg=";
+		npmDeps = importNpmLock {
+			npmRoot = src;
+		};
+
+		npmConfigHook = importNpmLock.npmConfigHook;
 
 		nativeBuildInputs = [
 			autoPatchelfHook

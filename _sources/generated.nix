@@ -46,10 +46,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.22";
+    version = "2.0.23";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.22__linux__x64.AppImage";
-      sha256 = "sha256-b1d39cSuVJ17rx8vjlYlyIUvqkBbhCWXuq4Z96K1I3M=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.23__linux__x64.AppImage";
+      sha256 = "sha256-Tf1mGmKJWtUylJoisnaNHeNyO+uziWIyxcahRaMdPT0=";
     };
   };
   gdlauncher-legacy = {
@@ -222,6 +222,24 @@
       sha256 = "sha256-1rYEs0akbrewBFD9PJ0FmyxjelR5RXorNGWnCE9gc7g=";
     };
     date = "2025-02-01";
+  };
+  wayvr-dashboard = {
+    pname = "wayvr-dashboard";
+    version = "0.2.2";
+    src = fetchFromGitHub {
+      owner = "olekolek1000";
+      repo = "wayvr-dashboard";
+      rev = "0.2.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-vs4lk0B/D51WsHWOgqpTcPHf8WFaRJCkJyHZImDsdqk=";
+    };
+    cargoLock."src-tauri/Cargo.lock" = {
+      lockFile = ./wayvr-dashboard-0.2.2/src-tauri/Cargo.lock;
+      outputHashes = {
+        "keyvalues-parser-0.2.0" = "sha256-zbpgA6q2mIfFN6RoM0tauIQQFWT091TZ+6CCnBcYLa0=";
+        "wayvr_ipc-0.1.0" = "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E=";
+      };
+    };
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
