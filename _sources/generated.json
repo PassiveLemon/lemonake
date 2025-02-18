@@ -486,7 +486,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-02-16",
+        "date": "2025-02-17",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -498,12 +498,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "f0c2f01ffcf164b631551badd604d170744084ce",
-            "sha256": "sha256-YL3El7Hc7JBSvPNUYMvdDt+o8xwbzJIU3MY0lsrvjqg=",
+            "rev": "4238c9ad5027f08698ca1d956a799046100f78f6",
+            "sha256": "sha256-gBkwezkYluPK5SrEshzWe7l4HgCCIDnbj+7FvcBmXDc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f0c2f01ffcf164b631551badd604d170744084ce"
+        "version": "4238c9ad5027f08698ca1d956a799046100f78f6"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -643,13 +643,13 @@
     "xrizer-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./xrizer-git-b3e7b03eb43dc85ac826047b201d9a43d4b33e94/Cargo.lock",
+                "./xrizer-git-30c420d3ae1335f3467b4d89b6a30ab1ea125171/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-02-16",
+        "date": "2025-02-17",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -661,11 +661,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "b3e7b03eb43dc85ac826047b201d9a43d4b33e94",
-            "sha256": "sha256-Rzt6+7SLzo2cYrk75874AZA/4BYa1/PMp40UzIyhtAc=",
+            "rev": "30c420d3ae1335f3467b4d89b6a30ab1ea125171",
+            "sha256": "sha256-BDA6INvjoMUPYEYuALUMqk/pWGSKOhpKbzgmXvL7ujk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b3e7b03eb43dc85ac826047b201d9a43d4b33e94"
+        "version": "30c420d3ae1335f3467b4d89b6a30ab1ea125171"
     }
 }
