@@ -4,11 +4,16 @@
       wlx-overlay-s = let
         package = getPackage "wlx-overlay-s" prev;
       in
-      prev.wlx-overlay-s.overrideAttrs {
+      prev.wlx-overlay-s.overrideAttrs (prevAttrs: {
         inherit (package) src;
         version = (lib.removePrefix "v" package.version);
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
-      };
+
+        buildInputs = prevAttrs.buildInputs ++ (with prev; [
+          libGL
+          wayland
+        ]);
+      });
 
       wlx-overlay-s-git = let
         package = getPackage "wlx-overlay-s-git" prev;
