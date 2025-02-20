@@ -86,11 +86,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Tf1mGmKJWtUylJoisnaNHeNyO+uziWIyxcahRaMdPT0=",
+            "sha256": "sha256-d5ZvWSLA/7mY0540TDLMW9qmEFA5xC6Zd83IWakOmGo=",
             "type": "url",
-            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.23__linux__x64.AppImage"
+            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.24__linux__x64.AppImage"
         },
-        "version": "2.0.23"
+        "version": "2.0.24"
     },
     "gdlauncher-legacy": {
         "cargoLocks": null,
@@ -577,13 +577,16 @@
     "wlx-overlay-s": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-v0.6/Cargo.lock",
+                "./wlx-overlay-s-v25.2/Cargo.lock",
                 {
-                    "libmonado-rs-0.1.0": "sha256-ja7OW/YSmfzaQoBhu6tec9v8fyNDknLekE2eY7McLPE=",
+                    "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
+                    "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.18.0": "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=",
-                    "ovr_overlay-0.0.0": "sha256-5IMEI0IPTacbA/1gibYU7OT6r+Bj+hlQjDZ3Kg0L2gw=",
+                    "ovr_overlay-0.0.0": "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=",
+                    "smithay-0.4.0": "sha256-Z1AS2IsbUJVIRNowzmtZ7hq0AOgVkuVgDBS8f9dBMKQ=",
                     "vulkano-0.34.0": "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=",
-                    "wlx-capture-0.3.12": "sha256-32WnAnNUSfsAA8WB9da3Wqb4acVlXh6HWsY9tPzCHEE="
+                    "wayvr_ipc-0.1.0": "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E=",
+                    "wlx-capture-0.4.2": "sha256-uNOVG5EJ8ZBGvdBzq8XaS8agspj0Ko8dwPoYpLBM1UY="
                 }
             ]
         },
@@ -599,30 +602,30 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "v0.6",
-            "sha256": "sha256-Gk/3m4eWFZqeQBphBUTGAUqe8SspXqut8n4JM8tTe6o=",
+            "rev": "v25.2",
+            "sha256": "sha256-9xpc+q60TBMKnctu6pMT2bEXtIlSwdggbi/d3X0TQ6w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6"
+        "version": "v25.2"
     },
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-965174c7812274915f175d92a503f7ea9cd1468d/Cargo.lock",
+                "./wlx-overlay-s-git-507ff7353ed2dbc3701ebd674c4f2192fed32750/Cargo.lock",
                 {
-                    "libmonado-rs-0.1.0": "sha256-ja7OW/YSmfzaQoBhu6tec9v8fyNDknLekE2eY7McLPE=",
+                    "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.18.0": "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=",
-                    "ovr_overlay-0.0.0": "sha256-5IMEI0IPTacbA/1gibYU7OT6r+Bj+hlQjDZ3Kg0L2gw=",
-                    "smithay-0.3.0": "sha256-Njw+deqcmUaR4iAmXZEzRTyNR2ZP+tshAGk0f6/CdAg=",
+                    "ovr_overlay-0.0.0": "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=",
+                    "smithay-0.4.0": "sha256-Z1AS2IsbUJVIRNowzmtZ7hq0AOgVkuVgDBS8f9dBMKQ=",
                     "vulkano-0.34.0": "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=",
                     "wayvr_ipc-0.1.0": "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E=",
                     "wlx-capture-0.4.2": "sha256-uNOVG5EJ8ZBGvdBzq8XaS8agspj0Ko8dwPoYpLBM1UY="
                 }
             ]
         },
-        "date": "2025-02-12",
+        "date": "2025-02-20",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -634,12 +637,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "965174c7812274915f175d92a503f7ea9cd1468d",
-            "sha256": "sha256-uoKeWNwEKvmRAqhVEDl44zCg9Do4Ll3/SjKq8oPfmSI=",
+            "rev": "507ff7353ed2dbc3701ebd674c4f2192fed32750",
+            "sha256": "sha256-iyOn/RHX1QoB4CYk/uW4toemYLloTZCXq9zuLyutWjM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "965174c7812274915f175d92a503f7ea9cd1468d"
+        "version": "507ff7353ed2dbc3701ebd674c4f2192fed32750"
     },
     "xrizer": {
         "cargoLocks": {
