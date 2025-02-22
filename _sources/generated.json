@@ -233,7 +233,7 @@
     },
     "picom-git": {
         "cargoLocks": null,
-        "date": "2025-02-14",
+        "date": "2025-02-21",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -245,12 +245,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "38d2c4a4ed263e10e868a1f86efc89fab6a36a30",
-            "sha256": "sha256-UV63ajJX8YL0JZOcltoD8AgMMK3Fbt18LlhSxCgjPAQ=",
+            "rev": "b99537235bf858ccf527217bfc196d4923a3e3a1",
+            "sha256": "sha256-hHl20Sg2sYY0Jw8dHnIbEeG7DfqJE7oif1R3r6BNmaU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "38d2c4a4ed263e10e868a1f86efc89fab6a36a30"
+        "version": "b99537235bf858ccf527217bfc196d4923a3e3a1"
     },
     "picom-tag": {
         "cargoLocks": null,
@@ -424,14 +424,13 @@
     "wayvr-dashboard-git": {
         "cargoLocks": {
             "src-tauri/Cargo.lock": [
-                "./wayvr-dashboard-git-959bc6fee68ece0d9929b80a882e9dc04ab279d8/src-tauri/Cargo.lock",
+                "./wayvr-dashboard-git-3aa094acb3c9903cccf29ed8440bbd83ab5ee4ec/src-tauri/Cargo.lock",
                 {
-                    "keyvalues-parser-0.2.0": "sha256-zbpgA6q2mIfFN6RoM0tauIQQFWT091TZ+6CCnBcYLa0=",
-                    "wayvr_ipc-0.1.0": "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E="
+                    "keyvalues-parser-0.2.0": "sha256-zbpgA6q2mIfFN6RoM0tauIQQFWT091TZ+6CCnBcYLa0="
                 }
             ]
         },
-        "date": "2025-02-16",
+        "date": "2025-02-21",
         "extract": null,
         "name": "wayvr-dashboard-git",
         "passthru": null,
@@ -443,12 +442,12 @@
             "name": null,
             "owner": "olekolek1000",
             "repo": "wayvr-dashboard",
-            "rev": "959bc6fee68ece0d9929b80a882e9dc04ab279d8",
-            "sha256": "sha256-vs4lk0B/D51WsHWOgqpTcPHf8WFaRJCkJyHZImDsdqk=",
+            "rev": "3aa094acb3c9903cccf29ed8440bbd83ab5ee4ec",
+            "sha256": "sha256-PYV9ag+x8sLSjfn0lo4etQd3Fx5DQB1VWpgzJ2cwAa8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "959bc6fee68ece0d9929b80a882e9dc04ab279d8"
+        "version": "3aa094acb3c9903cccf29ed8440bbd83ab5ee4ec"
     },
     "webfisher": {
         "cargoLocks": null,
@@ -515,7 +514,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-02-20",
+        "date": "2025-02-21",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -527,12 +526,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "8495a9433cfd68fe792da10988a9ba0f6d2e6866",
-            "sha256": "sha256-HRw2Zy3s31UkfiqTi2c1V7Qhrxb6d7/deLCTxaw+1tk=",
+            "rev": "058b345a825560fdd93cf9db0fc54e1aac7324a5",
+            "sha256": "sha256-o0yXngk+Y7T/UxQGV1Q4dPvKdCRE+mVe0k0rNAWd+PQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8495a9433cfd68fe792da10988a9ba0f6d2e6866"
+        "version": "058b345a825560fdd93cf9db0fc54e1aac7324a5"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
