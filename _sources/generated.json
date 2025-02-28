@@ -516,7 +516,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-02-26",
+        "date": "2025-02-27",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -528,12 +528,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "b5575528f3757726e010f489bd0f079679ac08f0",
-            "sha256": "sha256-8CGfSVQdGs2N7u3Wm+iK2lDWzq0qRWSpWwBBbA4HJow=",
+            "rev": "3e6b53e16367804dd002f0187ed73c668bc220b2",
+            "sha256": "sha256-rTcv7Z/P/QPiUmUgrrvXYjcO6+rMnHybDnx2kMSdyYI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b5575528f3757726e010f489bd0f079679ac08f0"
+        "version": "3e6b53e16367804dd002f0187ed73c668bc220b2"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -613,7 +613,7 @@
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-507ff7353ed2dbc3701ebd674c4f2192fed32750/Cargo.lock",
+                "./wlx-overlay-s-git-e66a8d27c98968d0cbe4c7fdc57ef04c0723f40d/Cargo.lock",
                 {
                     "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
@@ -626,7 +626,7 @@
                 }
             ]
         },
-        "date": "2025-02-20",
+        "date": "2025-02-28",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -638,12 +638,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "507ff7353ed2dbc3701ebd674c4f2192fed32750",
-            "sha256": "sha256-iyOn/RHX1QoB4CYk/uW4toemYLloTZCXq9zuLyutWjM=",
+            "rev": "e66a8d27c98968d0cbe4c7fdc57ef04c0723f40d",
+            "sha256": "sha256-FmYw1opE2ZzJTZqf5kt5bFW+gtjnWjha+9DS4qVa0Ss=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "507ff7353ed2dbc3701ebd674c4f2192fed32750"
+        "version": "e66a8d27c98968d0cbe4c7fdc57ef04c0723f40d"
     },
     "xrizer": {
         "cargoLocks": {
