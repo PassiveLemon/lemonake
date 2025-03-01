@@ -192,7 +192,7 @@
     },
     "opencomposite-git": {
         "cargoLocks": null,
-        "date": "2025-02-08",
+        "date": "2025-02-28",
         "extract": null,
         "name": "opencomposite-git",
         "passthru": null,
@@ -202,13 +202,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "175e3b3a5408ff120bd21036faa703deb57159fc",
-            "sha256": "sha256-kwu8eM/rQBcZfs91loh7QAB46a01F9n5Xm1DmMd53MQ=",
+            "rev": "413e4d6b47074a12e064cd5daf8705dfc65ada1e",
+            "sha256": "sha256-/6Xox9jGjNt7htrDmOfaKAMKpm8ycmi2LMPWFOhCZtQ=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "175e3b3a5408ff120bd21036faa703deb57159fc"
+        "version": "413e4d6b47074a12e064cd5daf8705dfc65ada1e"
     },
     "picom": {
         "cargoLocks": null,
@@ -424,15 +424,15 @@
     "wayvr-dashboard-git": {
         "cargoLocks": {
             "src-tauri/Cargo.lock": [
-                "./wayvr-dashboard-git-1bb7b408958539aead121448f6ceea4dd9d5095c/src-tauri/Cargo.lock",
+                "./wayvr-dashboard-git-c82dc3cfbd1208e3d88dde59d0d834f90ff0496a/src-tauri/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.0": "sha256-zbpgA6q2mIfFN6RoM0tauIQQFWT091TZ+6CCnBcYLa0=",
                     "libmonado-1.3.1": "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=",
-                    "wayvr_ipc-0.1.0": "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E="
+                    "wayvr_ipc-0.1.0": "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc="
                 }
             ]
         },
-        "date": "2025-02-22",
+        "date": "2025-02-28",
         "extract": null,
         "name": "wayvr-dashboard-git",
         "passthru": null,
@@ -444,12 +444,12 @@
             "name": null,
             "owner": "olekolek1000",
             "repo": "wayvr-dashboard",
-            "rev": "1bb7b408958539aead121448f6ceea4dd9d5095c",
-            "sha256": "sha256-0GW5OvmoflVNSDdo6UBokvCsdzFLiEHOQgxuRAp8vUQ=",
+            "rev": "c82dc3cfbd1208e3d88dde59d0d834f90ff0496a",
+            "sha256": "sha256-JRZDfjdLVKSl77FINJZINn0xAvAVQ7W5+kA2jHFz/KI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1bb7b408958539aead121448f6ceea4dd9d5095c"
+        "version": "c82dc3cfbd1208e3d88dde59d0d834f90ff0496a"
     },
     "webfisher": {
         "cargoLocks": null,
@@ -613,7 +613,7 @@
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-e66a8d27c98968d0cbe4c7fdc57ef04c0723f40d/Cargo.lock",
+                "./wlx-overlay-s-git-075e55a8e8ef0e6c9fd71a4d797c0958a8a39c60/Cargo.lock",
                 {
                     "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
@@ -621,7 +621,7 @@
                     "ovr_overlay-0.0.0": "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=",
                     "smithay-0.4.0": "sha256-Z1AS2IsbUJVIRNowzmtZ7hq0AOgVkuVgDBS8f9dBMKQ=",
                     "vulkano-0.34.0": "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=",
-                    "wayvr_ipc-0.1.0": "sha256-o224e306Y0Rlmkci/jBQwCNsgeI7jlOpRkLuVveQP2E=",
+                    "wayvr_ipc-0.1.0": "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=",
                     "wlx-capture-0.4.2": "sha256-uNOVG5EJ8ZBGvdBzq8XaS8agspj0Ko8dwPoYpLBM1UY="
                 }
             ]
@@ -638,12 +638,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "e66a8d27c98968d0cbe4c7fdc57ef04c0723f40d",
-            "sha256": "sha256-FmYw1opE2ZzJTZqf5kt5bFW+gtjnWjha+9DS4qVa0Ss=",
+            "rev": "075e55a8e8ef0e6c9fd71a4d797c0958a8a39c60",
+            "sha256": "sha256-AkeJF4OmCcSWjU0YJMaQixvz81vCmxekBOE3A4h9lEE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e66a8d27c98968d0cbe4c7fdc57ef04c0723f40d"
+        "version": "075e55a8e8ef0e6c9fd71a4d797c0958a8a39c60"
     },
     "xrizer": {
         "cargoLocks": {
