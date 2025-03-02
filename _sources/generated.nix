@@ -111,17 +111,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "413e4d6b47074a12e064cd5daf8705dfc65ada1e";
+    version = "578a1a5c57204e7db31299351c8e312ead9ba7c4";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "413e4d6b47074a12e064cd5daf8705dfc65ada1e";
+      rev = "578a1a5c57204e7db31299351c8e312ead9ba7c4";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-/6Xox9jGjNt7htrDmOfaKAMKpm8ycmi2LMPWFOhCZtQ=";
+      sha256 = "sha256-LTC/RJdi4saj5hVli23GUm+ytKPv/Z94WHlo5s+tMeY=";
     };
-    date = "2025-02-28";
+    date = "2025-03-01";
   };
   picom = {
     pname = "picom";
@@ -297,15 +297,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3e6b53e16367804dd002f0187ed73c668bc220b2";
+    version = "20ae78f2d944ababab51c2002f3030c19d48afcb";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3e6b53e16367804dd002f0187ed73c668bc220b2";
+      rev = "20ae78f2d944ababab51c2002f3030c19d48afcb";
       fetchSubmodules = false;
-      sha256 = "sha256-rTcv7Z/P/QPiUmUgrrvXYjcO6+rMnHybDnx2kMSdyYI=";
+      sha256 = "sha256-cPwyw+5xO9rUTExe8AhCiDtWFx4iy2WvYGuybAg+OOA=";
     };
-    date = "2025-02-27";
+    date = "2025-03-01";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
