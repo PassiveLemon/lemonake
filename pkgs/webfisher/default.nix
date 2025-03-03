@@ -9,7 +9,7 @@
       webfisher-git = let
         package = getPackage "webfisher-git" prev;
       in
-      final.webfisher.overrideAttrs { inherit (package) version src; };
+      prev.callPackage ./package.nix { inherit (package) version src; };
     };
   };
 }

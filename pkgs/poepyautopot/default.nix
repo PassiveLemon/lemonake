@@ -9,7 +9,7 @@
       poepyautopot-git = let
         package = getPackage "poepyautopot-git" prev;
       in
-      final.poepyautopot.override { inherit (package) version src; };
+      prev.python3Packages.callPackage ./package.nix { inherit (package) version src; };
     };
   };
 }

@@ -21,10 +21,10 @@
         package = getPackage "wivrn-git" prev;
         monado = getPackage "wivrn-git-monado" prev;
       in
-      final.wivrn.override {
+      (prev.qt6Packages.callPackage ./package.nix {
         inherit (package) version src;
         monadoSrc = monado.src;
-      };
+      });
     };
   };
 }

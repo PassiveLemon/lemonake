@@ -12,7 +12,7 @@
       tilp2-git = let
         package = getPackage "tilp2-gfm-git" prev;
       in
-      final.tilp2.override {
+      prev.callPackage ./package.nix {
         inherit (package) version src;
         gfm = final.gfm-git;
       };
