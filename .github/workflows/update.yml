@@ -28,5 +28,5 @@ jobs:
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: "Chore: Update flake and sources"
+        commit_message: "chore: update flake and sources"
 
