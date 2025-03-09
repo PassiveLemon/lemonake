@@ -275,15 +275,15 @@
   };
   webfisher-git = {
     pname = "webfisher-git";
-    version = "114afae7c82eca264eb5ad0dd9409ff92207c463";
+    version = "98e72f76761339ee66d8b17ed6293b4a12fbf703";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "114afae7c82eca264eb5ad0dd9409ff92207c463";
+      rev = "98e72f76761339ee66d8b17ed6293b4a12fbf703";
       fetchSubmodules = false;
-      sha256 = "sha256-Dh9gtOrcK3UVd7DdKhOIUHObfRWrJ5WQl+16w+8LvAw=";
+      sha256 = "sha256-gtFTPst9jSj0tJ/8o9tNAvjIcqJVatsIvsUQ/mZWIGA=";
     };
-    date = "2025-01-27";
+    date = "2025-03-08";
   };
   wivrn = {
     pname = "wivrn";
@@ -360,16 +360,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "5cf6eeedb0654362534de6f888950848f7ff8d6e";
+    version = "fa3af63e893ec932aa6a8c578abd6488642eade6";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "5cf6eeedb0654362534de6f888950848f7ff8d6e";
+      rev = "fa3af63e893ec932aa6a8c578abd6488642eade6";
       fetchSubmodules = false;
-      sha256 = "sha256-UO2tsN+VUHvPJdHuhqBwsPgIpFrj0m7Dv6tyqTL6EXk=";
+      sha256 = "sha256-aYZuyLglK6pw02anl6UDtIfIak5oHh0R8HYmhcc9Te0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-git-5cf6eeedb0654362534de6f888950848f7ff8d6e/Cargo.lock;
+      lockFile = ./wlx-overlay-s-git-fa3af63e893ec932aa6a8c578abd6488642eade6/Cargo.lock;
       outputHashes = {
         "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
         "vulkano-0.34.0" = "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=";
@@ -378,10 +378,9 @@
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
         "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
         "libmonado-1.3.1" = "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=";
-        "smithay-0.4.0" = "sha256-Z1AS2IsbUJVIRNowzmtZ7hq0AOgVkuVgDBS8f9dBMKQ=";
       };
     };
-    date = "2025-03-04";
+    date = "2025-03-09";
   };
   xrizer = {
     pname = "xrizer";
