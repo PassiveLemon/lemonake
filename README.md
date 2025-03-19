@@ -56,6 +56,7 @@ Packages:
 - `tilp2`
 - `tilp2-git`
 - `vapor-git`
+- `wayvr-dashboard`
 - `wayvr-dashboard-git`
 - `webfisher`
 - `webfisher-git`
