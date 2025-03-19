@@ -11,9 +11,9 @@
         monadoSrc = monado.src;
       }).overrideAttrs (prevAttrs: {
         cmakeFlags = (final.lib.subtractLists [
-          (lib.cmakeFeature "OVR_COMPAT_SEARCH_PATH" "${final.opencomposite}:${final.xrizer}")
+          (lib.cmakeFeature "OVR_COMPAT_SEARCH_PATH" "${final.opencomposite}/lib/opencomposite:${final.xrizer}/lib/xrizer")
         ] prevAttrs.cmakeFlags) ++ [
-          (lib.cmakeFeature "OPENCOMPOSITE_SEARCH_PATH" "${final.opencomposite}")
+          (lib.cmakeFeature "OPENCOMPOSITE_SEARCH_PATH" "${final.opencomposite}/lib/opencomposite")
         ];
       });
 
