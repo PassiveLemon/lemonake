@@ -19,17 +19,16 @@ Add the flake to your inputs:
 ```
 
 ## Features
-Run `nix flake show github:passivelemon/lemonake` to see all outputs.
-- Note: Home Manager modules will show as unknown.
+Run `nix flake show github:passivelemon/lemonake` to see all outputs. Home Manager modules will show as unknown.
 
 Modules:
+- Home Manager (Do not use in NixOS configuration)
+  - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
+  - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
   - [`services.autoadb`](./modules/nixos/autoadb/README.md)
   - [`services.wivrn`](./modules/nixos/wivrn/README.md)
-- Home Manager (Do not use in NixOS configuration)
-  - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
-  - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
 
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
@@ -37,7 +36,7 @@ Packages:
 - `adgobye-git`
 - `alcom`
 - `animdl-git`
-- `gdlauncher` (`gdlauncher-carbon`)
+- `gdlauncher` (Alias to `gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
 - `gfm`
@@ -60,21 +59,17 @@ Packages:
 - `wayvr-dashboard-git`
 - `webfisher`
 - `webfisher-git`
-- `wivrn`
-- `wivrn-git`
+- [`wivrn`](./pkgs/wivrn/README.md)
+- [`wivrn-git`](./pkgs/wivrn/README.md)
 - `wlx-overlay-s`
 - `wlx-overlay-s-git`
 - `xrizer`
 - `xrizer-git`
 
 Naming scheme:
-- Latest release: `package`
-- Latest tag: `package-tag`
-- Latest commit: `package-git`
-
-If it has a ... in parenthesis:
-- PR: It is in an open pull request.
-- Package: It is an alias to that package.
+- Latest release: `<package>`
+- Latest tag: `<package>-tag`
+- Latest commit: `<package>-git`
 
 The only architecture currently supported is `x86_64-linux`. Others may be supported in the future.
 

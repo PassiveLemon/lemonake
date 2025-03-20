@@ -1,4 +1,4 @@
-# SteamVR
+# SteamVR Module
 Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime.
 
 Use the helper `vr-helper` to launch Steam games with the proper variables set: `vr-helper %command%`.
