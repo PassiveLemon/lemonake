@@ -10,10 +10,14 @@ Add the flake to your inputs:
 ```nix
 # flake.nix
 {
-  lemonake.url = "github:passivelemon/lemonake";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
-  outputs = { self, ... } @ inputs: {
-    ...
+    lemonake.url = "github:passivelemon/lemonake";
+  };
+
+  outputs = { ... } @ inputs: {
+    # ...
   };
 }
 ```
