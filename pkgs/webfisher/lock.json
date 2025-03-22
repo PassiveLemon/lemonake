@@ -3,6 +3,17 @@
     {
       "method": "fetchzip",
       "packages": [
+        "libevdev"
+      ],
+      "path": "/nix/store/ah8xajfp2qwmial57157c15a84k2d479-source",
+      "rev": "c509da320c45b3b77c2da2d45e695511ff457ba0",
+      "sha256": "0k3n1q6251d462lpnnq31zqz86wbb3n8cm4jlcvh37qsy4hjibxx",
+      "srcDir": "",
+      "url": "https://github.com/PassiveLemon/libevdev-nim/archive/c509da320c45b3b77c2da2d45e695511ff457ba0.tar.gz"
+    },
+    {
+      "method": "fetchzip",
+      "packages": [
         "x11"
       ],
       "path": "/nix/store/8qaywzr8nzsiddjba77nhf75hzmxx0d9-source",
