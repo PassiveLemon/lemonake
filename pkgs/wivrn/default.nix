@@ -10,9 +10,8 @@
         version = (lib.removePrefix "v" package.version);
         monadoSrc = monado.src;
       }).overrideAttrs (prevAttrs: {
-        cmakeFlags = (final.lib.subtractLists [
-          (lib.cmakeFeature "OVR_COMPAT_SEARCH_PATH" "${final.opencomposite}/lib/opencomposite:${final.xrizer}/lib/xrizer")
-        ] prevAttrs.cmakeFlags) ++ [
+        # Remove on next WiVRn release
+        cmakeFlags = prevAttrs.cmakeFlags ++ [
           (lib.cmakeFeature "OPENCOMPOSITE_SEARCH_PATH" "${final.opencomposite}/lib/opencomposite")
         ];
       });

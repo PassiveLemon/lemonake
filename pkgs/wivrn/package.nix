@@ -144,7 +144,7 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeBool "WIVRN_CHECK_CAPSYSNICE" false)
     (lib.cmakeBool "FETCHCONTENT_FULLY_DISCONNECTED" true)
     (lib.cmakeFeature "WIVRN_OPENXR_MANIFEST_TYPE" "absolute")
-    (lib.cmakeFeature "OVR_COMPAT_SEARCH_PATH" "${opencomposite}/lib/opencomposite:${xrizer}/lib/xrizer")
+    (lib.cmakeFeature "OVR_COMPAT_SEARCH_PATH" ovrCompatSearchPaths)
     (lib.cmakeFeature "GIT_DESC" "v${finalAttrs.version}")
     (lib.cmakeFeature "FETCHCONTENT_SOURCE_DIR_MONADO" "${finalAttrs.monado}")
   ] ++ lib.optionals cudaSupport [
