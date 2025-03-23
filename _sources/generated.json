@@ -529,12 +529,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "0e9b72c7761db8e873b140161e7e8b574ad5c4f5",
-            "sha256": "sha256-gf72OM5l2iuA49HuvYGDY1N2aSmA3LkzJF2GYL1yhXM=",
+            "rev": "d49a49c0363de414a2112f70cd5c12d6a67aa65a",
+            "sha256": "sha256-ASKLjvxd8cHC63vU1kQkMrDiHjhCg5HWp3kEcOPmNz8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0e9b72c7761db8e873b140161e7e8b574ad5c4f5"
+        "version": "d49a49c0363de414a2112f70cd5c12d6a67aa65a"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -676,13 +676,13 @@
     "xrizer-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./xrizer-git-8f6850d2019342bb0d4270bafce2cb8543f1fa6e/Cargo.lock",
+                "./xrizer-git-23b4ea80f0be6e658819afd5f41cfc62d4fe32ba/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-03-18",
+        "date": "2025-03-22",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -694,11 +694,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "8f6850d2019342bb0d4270bafce2cb8543f1fa6e",
-            "sha256": "sha256-3XrMsnc9qqh/dgyTFQw9ytHuPSuqcK8TK2XQ+cstOf4=",
+            "rev": "23b4ea80f0be6e658819afd5f41cfc62d4fe32ba",
+            "sha256": "sha256-uNTQzhcwxwXlOuvPrY1D/X1W+WYhZM0vi1e2A9ZPyAg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8f6850d2019342bb0d4270bafce2cb8543f1fa6e"
+        "version": "23b4ea80f0be6e658819afd5f41cfc62d4fe32ba"
     }
 }
