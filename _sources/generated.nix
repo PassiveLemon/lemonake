@@ -401,16 +401,16 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "90275171a28d5d1c76146db4149fa9c02fe5b46d";
+    version = "cb501c3a1a0f671cb30b4356be8a7129f05ad2d9";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "90275171a28d5d1c76146db4149fa9c02fe5b46d";
+      rev = "cb501c3a1a0f671cb30b4356be8a7129f05ad2d9";
       fetchSubmodules = false;
-      sha256 = "sha256-koQHyijrlQFCx0BiL+Nk+elSp7C3mp1PYvTh+MPT1b0=";
+      sha256 = "sha256-9m9WzNzVs7SFJoVVQFJ9WrUdwCy/C/lWyMkLCpI/S+M=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-90275171a28d5d1c76146db4149fa9c02fe5b46d/Cargo.lock;
+      lockFile = ./xrizer-git-cb501c3a1a0f671cb30b4356be8a7129f05ad2d9/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
