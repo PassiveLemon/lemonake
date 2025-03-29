@@ -192,7 +192,7 @@
     },
     "opencomposite-git": {
         "cargoLocks": null,
-        "date": "2025-03-01",
+        "date": "2025-03-28",
         "extract": null,
         "name": "opencomposite-git",
         "passthru": null,
@@ -202,13 +202,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "578a1a5c57204e7db31299351c8e312ead9ba7c4",
-            "sha256": "sha256-LTC/RJdi4saj5hVli23GUm+ytKPv/Z94WHlo5s+tMeY=",
+            "rev": "97bf852b446e1bd61c732663b9af192479ad7fe4",
+            "sha256": "sha256-ycKZXMJdoPsmb6kQvtf7u13dfuISIVqDIigwR/cDikw=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "578a1a5c57204e7db31299351c8e312ead9ba7c4"
+        "version": "97bf852b446e1bd61c732663b9af192479ad7fe4"
     },
     "picom": {
         "cargoLocks": null,
@@ -614,7 +614,7 @@
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-5f93bc9cac499196629ceff61d3c08fa8aff77a1/Cargo.lock",
+                "./wlx-overlay-s-git-60bc8b986ef627b32d936170fcc99bd7c533d654/Cargo.lock",
                 {
                     "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
@@ -626,7 +626,7 @@
                 }
             ]
         },
-        "date": "2025-03-24",
+        "date": "2025-03-29",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -638,12 +638,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "5f93bc9cac499196629ceff61d3c08fa8aff77a1",
-            "sha256": "sha256-8uWGejZD8asb+/ofJ/iaw/oIAtILDHCi0SpHIF3NQVA=",
+            "rev": "60bc8b986ef627b32d936170fcc99bd7c533d654",
+            "sha256": "sha256-pQvIe4WW3pjQJDvBK6LNkew2l9k3y7m+YOsPgyHrbm8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5f93bc9cac499196629ceff61d3c08fa8aff77a1"
+        "version": "60bc8b986ef627b32d936170fcc99bd7c533d654"
     },
     "xrizer": {
         "cargoLocks": {
