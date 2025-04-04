@@ -9,11 +9,6 @@
         inherit (package) src;
         version = (lib.removePrefix "v" package.version);
         monadoSrc = monado.src;
-      }).overrideAttrs (prevAttrs: {
-        # Remove on next WiVRn release
-        cmakeFlags = prevAttrs.cmakeFlags ++ [
-          (lib.cmakeFeature "OPENCOMPOSITE_SEARCH_PATH" "${final.opencomposite}/lib/opencomposite")
-        ];
       });
 
       wivrn-git = let

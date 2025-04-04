@@ -3,6 +3,9 @@ Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime.
 
 Use the helper `vr-helper` to launch Steam games with the proper variables set: `vr-helper %command%`.
 
+>[!NOTE]
+> Some games like VRChat do not like the `VROVERRIDE`` environment variable, which means you cannot use this script.
+
 Currently, the default runtimes for OpenXR and OpenVR are Monado and OpenComposite respectively. You can set runtime to a blank string `""` to disable that env variable.
 
 >[!NOTE]
