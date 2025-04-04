@@ -360,16 +360,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "60bc8b986ef627b32d936170fcc99bd7c533d654";
+    version = "55867e803fe9b14d58b3858523aec4b9e96564fa";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "60bc8b986ef627b32d936170fcc99bd7c533d654";
+      rev = "55867e803fe9b14d58b3858523aec4b9e96564fa";
       fetchSubmodules = false;
-      sha256 = "sha256-pQvIe4WW3pjQJDvBK6LNkew2l9k3y7m+YOsPgyHrbm8=";
+      sha256 = "sha256-sddB0DhtCRbCaj+yksm3UOdy0NJ5FVZeQx4eNkqLBqI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-git-60bc8b986ef627b32d936170fcc99bd7c533d654/Cargo.lock;
+      lockFile = ./wlx-overlay-s-git-55867e803fe9b14d58b3858523aec4b9e96564fa/Cargo.lock;
       outputHashes = {
         "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
         "vulkano-0.34.0" = "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=";
@@ -380,7 +380,7 @@
         "libmonado-1.3.1" = "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=";
       };
     };
-    date = "2025-03-29";
+    date = "2025-04-04";
   };
   xrizer = {
     pname = "xrizer";
@@ -401,20 +401,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "2ba2c4f2b9592e821e387d2840975a22db5c413f";
+    version = "68c00978f5c680aed22972418da531041a5af2aa";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "2ba2c4f2b9592e821e387d2840975a22db5c413f";
+      rev = "68c00978f5c680aed22972418da531041a5af2aa";
       fetchSubmodules = false;
-      sha256 = "sha256-gsOgvlh8xOOh9nk4mn/KXAXXqHuYfm5yHBELYakaWlQ=";
+      sha256 = "sha256-EAmX1HwifExtFV9QmqEgvx1mAx5Xm3Lr6VMtLgIkd9c=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-2ba2c4f2b9592e821e387d2840975a22db5c413f/Cargo.lock;
+      lockFile = ./xrizer-git-68c00978f5c680aed22972418da531041a5af2aa/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-04-02";
+    date = "2025-04-03";
   };
 }
