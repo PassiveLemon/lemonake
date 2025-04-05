@@ -244,23 +244,23 @@
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
-    version = "125900a3ca55a645ca297a216e52102452604cf9";
+    version = "a54268422f54d69973f9975c2043246a86f45b6c";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "125900a3ca55a645ca297a216e52102452604cf9";
+      rev = "a54268422f54d69973f9975c2043246a86f45b6c";
       fetchSubmodules = false;
-      sha256 = "sha256-5313JDxAVGamgNYpgnGY7Q4M9VMSQYqKP9wjWg02D8Q=";
+      sha256 = "sha256-Nvzmxp0HezkyiutDZnhF/l8nxlkNNDzNJ2T92TGy6tQ=";
     };
     cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./wayvr-dashboard-git-125900a3ca55a645ca297a216e52102452604cf9/src-tauri/Cargo.lock;
+      lockFile = ./wayvr-dashboard-git-a54268422f54d69973f9975c2043246a86f45b6c/src-tauri/Cargo.lock;
       outputHashes = {
         "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
         "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
         "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
       };
     };
-    date = "2025-03-23";
+    date = "2025-04-04";
   };
   webfisher = {
     pname = "webfisher";
@@ -336,16 +336,16 @@
   };
   wlx-overlay-s = {
     pname = "wlx-overlay-s";
-    version = "v25.3";
+    version = "v25.4.0";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "v25.3";
+      rev = "v25.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-m2YVXF9bEjovZOWa+X1CYHAUaAsUI4dBMG2ni3jP9L4=";
+      sha256 = "sha256-sddB0DhtCRbCaj+yksm3UOdy0NJ5FVZeQx4eNkqLBqI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-v25.3/Cargo.lock;
+      lockFile = ./wlx-overlay-s-v25.4.0/Cargo.lock;
       outputHashes = {
         "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
         "vulkano-0.34.0" = "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=";
@@ -354,7 +354,6 @@
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
         "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
         "libmonado-1.3.1" = "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=";
-        "smithay-0.4.0" = "sha256-Z1AS2IsbUJVIRNowzmtZ7hq0AOgVkuVgDBS8f9dBMKQ=";
       };
     };
   };

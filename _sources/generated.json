@@ -425,7 +425,7 @@
     "wayvr-dashboard-git": {
         "cargoLocks": {
             "src-tauri/Cargo.lock": [
-                "./wayvr-dashboard-git-125900a3ca55a645ca297a216e52102452604cf9/src-tauri/Cargo.lock",
+                "./wayvr-dashboard-git-a54268422f54d69973f9975c2043246a86f45b6c/src-tauri/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.0": "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=",
                     "libmonado-1.3.1": "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=",
@@ -433,7 +433,7 @@
                 }
             ]
         },
-        "date": "2025-03-23",
+        "date": "2025-04-04",
         "extract": null,
         "name": "wayvr-dashboard-git",
         "passthru": null,
@@ -445,12 +445,12 @@
             "name": null,
             "owner": "olekolek1000",
             "repo": "wayvr-dashboard",
-            "rev": "125900a3ca55a645ca297a216e52102452604cf9",
-            "sha256": "sha256-5313JDxAVGamgNYpgnGY7Q4M9VMSQYqKP9wjWg02D8Q=",
+            "rev": "a54268422f54d69973f9975c2043246a86f45b6c",
+            "sha256": "sha256-Nvzmxp0HezkyiutDZnhF/l8nxlkNNDzNJ2T92TGy6tQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "125900a3ca55a645ca297a216e52102452604cf9"
+        "version": "a54268422f54d69973f9975c2043246a86f45b6c"
     },
     "webfisher": {
         "cargoLocks": null,
@@ -579,13 +579,12 @@
     "wlx-overlay-s": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-v25.3/Cargo.lock",
+                "./wlx-overlay-s-v25.4.0/Cargo.lock",
                 {
                     "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.18.0": "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=",
                     "ovr_overlay-0.0.0": "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=",
-                    "smithay-0.4.0": "sha256-Z1AS2IsbUJVIRNowzmtZ7hq0AOgVkuVgDBS8f9dBMKQ=",
                     "vulkano-0.34.0": "sha256-0ZIxU2oItT35IFnS0YTVNmM775x21gXOvaahg/B9sj8=",
                     "wayvr_ipc-0.1.0": "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=",
                     "wlx-capture-0.4.2": "sha256-uNOVG5EJ8ZBGvdBzq8XaS8agspj0Ko8dwPoYpLBM1UY="
@@ -604,12 +603,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "v25.3",
-            "sha256": "sha256-m2YVXF9bEjovZOWa+X1CYHAUaAsUI4dBMG2ni3jP9L4=",
+            "rev": "v25.4.0",
+            "sha256": "sha256-sddB0DhtCRbCaj+yksm3UOdy0NJ5FVZeQx4eNkqLBqI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v25.3"
+        "version": "v25.4.0"
     },
     "wlx-overlay-s-git": {
         "cargoLocks": {
