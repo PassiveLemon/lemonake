@@ -18,6 +18,8 @@
       ./modules
       ./pkgs
       ./parts/devshells.nix
+      ./parts/redistributablePackages.nix
+      ./parts/nonRedistributablePackages.nix
     ];
 
     perSystem = { self', system, ... }:
@@ -28,7 +30,7 @@
       devShells = {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            nvfetcher
+            nvfetcher act
           ];
         };
       };

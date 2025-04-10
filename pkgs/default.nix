@@ -6,9 +6,22 @@
       config.allowUnfree = true;
       overlays = [ self.overlays.default ];
     };
+    lib = pkgs.lib;
+
+    flakePkgs = self.packages.${system};
+
+    isRedistributable = pkg:
+      pkg.meta ? license &&
+      pkg.meta.license ? free &&
+      pkg.meta.license.free;
+
+    redistributablePkgs = builtins.attrNames (lib.filterAttrs (_: pkg: isRedistributable pkg) flakePkgs);
+    nonRedistributablePkgs = builtins.attrNames (lib.filterAttrs (_: pkg: ! isRedistributable pkg) flakePkgs);
   in
   {
     packages = self.overlays.default pkgs pkgs;
+    redistributablePackages = redistributablePkgs;
+    nonRedistributablePackages = nonRedistributablePkgs;
   };
 
   _module.args.getPackage = pname: pkgs: (pkgs.callPackage ../_sources/generated.nix { }).${pname};
