@@ -10,11 +10,15 @@
 
     flakePkgs = self.packages.${system};
 
-    # TODO: Account for packages with a list of licenses
+    testLicense = license:
+      license ? redistributable &&
+      license.redistributable;
+
     isRedistributable = pkg:
       pkg.meta ? license &&
-      pkg.meta.license ? redistributable &&
-      pkg.meta.license.redistributable;
+      (if lib.isList pkg.meta.license
+      then lib.all testLicense pkg.meta.license
+      else testLicense pkg.meta.license);
 
     redistributablePkgs = builtins.attrNames (lib.filterAttrs (_: pkg: isRedistributable pkg) flakePkgs);
     nonRedistributablePkgs = builtins.attrNames (lib.filterAttrs (_: pkg: ! isRedistributable pkg) flakePkgs);
