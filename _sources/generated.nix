@@ -244,23 +244,23 @@
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
-    version = "5cd72339e251fe27d89f882af48f5f4852fd35f3";
+    version = "deb42bdfb301ef7e4a0142772e325244f69e2b59";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "5cd72339e251fe27d89f882af48f5f4852fd35f3";
+      rev = "deb42bdfb301ef7e4a0142772e325244f69e2b59";
       fetchSubmodules = false;
-      sha256 = "sha256-O858i4gxBoSXBKCbsgmOGjslXYihyUWM8gC8BujIvkg=";
+      sha256 = "sha256-/vcqE+QNK0zzbPmLOgptFJlM5jy/Ol+48kIyt9W6syw=";
     };
     cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./wayvr-dashboard-git-5cd72339e251fe27d89f882af48f5f4852fd35f3/src-tauri/Cargo.lock;
+      lockFile = ./wayvr-dashboard-git-deb42bdfb301ef7e4a0142772e325244f69e2b59/src-tauri/Cargo.lock;
       outputHashes = {
         "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
         "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
         "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
       };
     };
-    date = "2025-04-10";
+    date = "2025-04-13";
   };
   webfisher = {
     pname = "webfisher";
@@ -298,27 +298,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "b96fef7a24e4343d13f6e38c19395a693443b001";
+    version = "1c57dae421916047fd0e4b60147a955aaf16fe19";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "b96fef7a24e4343d13f6e38c19395a693443b001";
+      rev = "1c57dae421916047fd0e4b60147a955aaf16fe19";
       fetchSubmodules = false;
-      sha256 = "sha256-8/OtgnEFs8ZPYeqZPDvtyiYnjwKwV6C+PDxlIrQABuY=";
+      sha256 = "sha256-4aokns83WVsST82TTfhAm71ik9kC7gkXNAxNh/r6cdQ=";
     };
-    date = "2025-04-12";
+    date = "2025-04-13";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "848a24aa106758fd6c7afcab6d95880c57dbe450";
+    version = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "848a24aa106758fd6c7afcab6d95880c57dbe450";
+      rev = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+rax9/CG/3y8rLYwGqoWJa4FxH+Z3eREiwhuxDOUzLs=";
+      sha256 = "sha256-ciH26Hyr8FumB2rQB5sFcXqtcQ1R84XOlphkkLBjzvA=";
     };
   };
   wivrn-monado = {
