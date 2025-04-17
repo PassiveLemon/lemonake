@@ -612,7 +612,7 @@
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-adc96ab1b5c5a30ca7c9e85f08e4e6a37a896c9c/Cargo.lock",
+                "./wlx-overlay-s-git-9f2f3727aa78b1283d11629d4e15d6131367519b/Cargo.lock",
                 {
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.18.0": "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=",
@@ -622,7 +622,7 @@
                 }
             ]
         },
-        "date": "2025-04-15",
+        "date": "2025-04-16",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -634,12 +634,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "adc96ab1b5c5a30ca7c9e85f08e4e6a37a896c9c",
-            "sha256": "sha256-B7kVkbayABQJV+hBf2xKizpad8Qkg/T8YGXpJyMrZEo=",
+            "rev": "9f2f3727aa78b1283d11629d4e15d6131367519b",
+            "sha256": "sha256-sYFKnQHB4iIcNnErBgydchyngjhgAZ4WrRu1XmlDzkI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "adc96ab1b5c5a30ca7c9e85f08e4e6a37a896c9c"
+        "version": "9f2f3727aa78b1283d11629d4e15d6131367519b"
     },
     "xrizer": {
         "cargoLocks": {
@@ -672,13 +672,13 @@
     "xrizer-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./xrizer-git-68c00978f5c680aed22972418da531041a5af2aa/Cargo.lock",
+                "./xrizer-git-42e9dd2188635d054e799186af7d0b68498219af/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-04-03",
+        "date": "2025-04-16",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -690,11 +690,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "68c00978f5c680aed22972418da531041a5af2aa",
-            "sha256": "sha256-EAmX1HwifExtFV9QmqEgvx1mAx5Xm3Lr6VMtLgIkd9c=",
+            "rev": "42e9dd2188635d054e799186af7d0b68498219af",
+            "sha256": "sha256-0sRMPNDGopEUydku53baPzN+jOCTsqiQfJP5gun19w8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "68c00978f5c680aed22972418da531041a5af2aa"
+        "version": "42e9dd2188635d054e799186af7d0b68498219af"
     }
 }

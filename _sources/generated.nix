@@ -358,16 +358,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "adc96ab1b5c5a30ca7c9e85f08e4e6a37a896c9c";
+    version = "9f2f3727aa78b1283d11629d4e15d6131367519b";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "adc96ab1b5c5a30ca7c9e85f08e4e6a37a896c9c";
+      rev = "9f2f3727aa78b1283d11629d4e15d6131367519b";
       fetchSubmodules = false;
-      sha256 = "sha256-B7kVkbayABQJV+hBf2xKizpad8Qkg/T8YGXpJyMrZEo=";
+      sha256 = "sha256-sYFKnQHB4iIcNnErBgydchyngjhgAZ4WrRu1XmlDzkI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-git-adc96ab1b5c5a30ca7c9e85f08e4e6a37a896c9c/Cargo.lock;
+      lockFile = ./wlx-overlay-s-git-9f2f3727aa78b1283d11629d4e15d6131367519b/Cargo.lock;
       outputHashes = {
         "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
         "wlx-capture-0.5.2" = "sha256-rw6konHyvUeb9c5Ln+yUgjJIxymiJfaWKLUL8vDqjnM=";
@@ -376,7 +376,7 @@
         "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
       };
     };
-    date = "2025-04-15";
+    date = "2025-04-16";
   };
   xrizer = {
     pname = "xrizer";
@@ -397,20 +397,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "68c00978f5c680aed22972418da531041a5af2aa";
+    version = "42e9dd2188635d054e799186af7d0b68498219af";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "68c00978f5c680aed22972418da531041a5af2aa";
+      rev = "42e9dd2188635d054e799186af7d0b68498219af";
       fetchSubmodules = false;
-      sha256 = "sha256-EAmX1HwifExtFV9QmqEgvx1mAx5Xm3Lr6VMtLgIkd9c=";
+      sha256 = "sha256-0sRMPNDGopEUydku53baPzN+jOCTsqiQfJP5gun19w8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-68c00978f5c680aed22972418da531041a5af2aa/Cargo.lock;
+      lockFile = ./xrizer-git-42e9dd2188635d054e799186af7d0b68498219af/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-04-03";
+    date = "2025-04-16";
   };
 }
