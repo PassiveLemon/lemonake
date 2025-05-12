@@ -11,8 +11,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - uses: gautamkrishnar/keepalive-workflow@v2
-
     - name: Install nix
       uses: cachix/install-nix-action@v27
       with:
