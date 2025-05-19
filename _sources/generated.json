@@ -508,16 +508,16 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "v0.24.1",
-            "sha256": "sha256-aWQcGIrBoDAO7XqWb3dQLBKg5RZYxC7JxwZ+OBSwmEs=",
+            "rev": "v0.25",
+            "sha256": "sha256-dDf+BW0AZMWRlWl0ye5s3Muurz+CiM3U5+bYgaFIT7M=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.24.1"
+        "version": "v0.25"
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-05-15",
+        "date": "2025-05-18",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -529,12 +529,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "c5af415310fc9ff8662616556a937cd2c7cc8e1a",
-            "sha256": "sha256-mDmW1AhUVZzS4rQv9deOgNgGQfH9fYWMfATPYsXKZG4=",
+            "rev": "bb0c847b92e8c2f912cf9303a4b7a703f3c8f526",
+            "sha256": "sha256-JJLRMj3g4EEk0oFigiAmouh54nGGLf4G34SWtElUnoo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c5af415310fc9ff8662616556a937cd2c7cc8e1a"
+        "version": "bb0c847b92e8c2f912cf9303a4b7a703f3c8f526"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -568,13 +568,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "848a24aa106758fd6c7afcab6d95880c57dbe450",
-            "sha256": "sha256-+rax9/CG/3y8rLYwGqoWJa4FxH+Z3eREiwhuxDOUzLs=",
+            "rev": "2a6932d46dad9aa957205e8a47ec2baa33041076",
+            "sha256": "sha256-Bus9GTNC4+nOSwN8pUsMaFsiXjlpHYioQfBLxbQEF+0=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
-        "version": "848a24aa106758fd6c7afcab6d95880c57dbe450"
+        "version": "2a6932d46dad9aa957205e8a47ec2baa33041076"
     },
     "wlx-overlay-s": {
         "cargoLocks": {
