@@ -104,7 +104,8 @@ src.github = "WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
 
 [wivrn-monado]
-src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/CMakeLists.txt | sed -n '/FetchContent_Declare(monado/,/)/p' | grep GIT_TAG | awk '{print $2}'"
+# src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/monado-rev"
+src.manual = "2a6932d46dad9aa957205e8a47ec2baa33041076"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
 [wivrn-git]
@@ -112,8 +113,7 @@ src.git = "https://github.com/WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
 
 [wivrn-git-monado]
-src.webpage = "https://github.com/WiVRn/WiVRn/blob/master/CMakeLists.txt"
-src.regex = "FetchContent_Declare\\(monado[\\s\\S]*?GIT_TAG (\\w+)[\\s\\S]*?\\)"
+src.cmd = "curl https://raw.githubusercontent.com/WiVRn/WiVRn/refs/heads/master/monado-rev"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
 [wlx-overlay-s]
