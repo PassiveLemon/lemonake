@@ -9,9 +9,8 @@
         version = (lib.removePrefix "v" package.version);
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
 
-        buildInputs = prevAttrs.buildInputs ++ (with prev; [
-          libGL
-          wayland
+         nativeBuildInputs = prevAttrs.nativeBuildInputs ++ (with prev; [
+          cmake
         ]);
       });
 
@@ -22,9 +21,8 @@
         inherit (package) version src;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
 
-        buildInputs = prevAttrs.buildInputs ++ (with prev; [
-          libGL
-          wayland
+        nativeBuildInputs = prevAttrs.nativeBuildInputs ++ (with prev; [
+          cmake
         ]);
       });
     };
