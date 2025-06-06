@@ -27,7 +27,7 @@ Run `nix flake show github:passivelemon/lemonake` to see all outputs. Home Manag
 
 Modules:
 - Home Manager (Do not use in NixOS configuration)
-  - Can be imported with `inputs.lemonake.homeManagerModules.<module>`
+  - Can be imported with `inputs.lemonake.homeModules.<module>`
   - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
