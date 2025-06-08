@@ -1,6 +1,4 @@
 {
-  description = "Lemon's flake repo";
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
