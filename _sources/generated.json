@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-H7PWvcqQWwqo/HsbGhnjc0OSIg5iidF3tyb+icF0dtQ=",
+            "sha256": "sha256-YqFNiQAjgvw/wLv+VEofgtA0IYHgbhzxh/WYTmxo194=",
             "type": "url",
-            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.0-rc.1/alcom-1.1.0-rc.1-x86_64.AppImage"
+            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.0-rc.2/alcom-1.1.0-rc.2-x86_64.AppImage"
         },
-        "version": "1.1.0-rc.1"
+        "version": "1.1.0-rc.2"
     },
     "animdl-git": {
         "cargoLocks": null,

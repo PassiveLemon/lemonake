@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.1.0-rc.1";
+    version = "1.1.0-rc.2";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.0-rc.1/alcom-1.1.0-rc.1-x86_64.AppImage";
-      sha256 = "sha256-H7PWvcqQWwqo/HsbGhnjc0OSIg5iidF3tyb+icF0dtQ=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.0-rc.2/alcom-1.1.0-rc.2-x86_64.AppImage";
+      sha256 = "sha256-YqFNiQAjgvw/wLv+VEofgtA0IYHgbhzxh/WYTmxo194=";
     };
   };
   animdl-git = {
