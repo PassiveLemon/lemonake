@@ -517,7 +517,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-06-10",
+        "date": "2025-06-12",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -529,12 +529,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "52b0bb0c42657b5751c8cd1371e1a69b2304529c",
-            "sha256": "sha256-Ba0mo0sMMIX+Dh86kGAOht1hqvD2/s1QQxR6yjUNWFA=",
+            "rev": "40aeaab762dbaf80b8148823dcc42b9362dcf6c4",
+            "sha256": "sha256-rgpD4pi5irFQeBAiqD7fTvTBhcqFMpS0Y7sZ3Ut5FZY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "52b0bb0c42657b5751c8cd1371e1a69b2304529c"
+        "version": "40aeaab762dbaf80b8148823dcc42b9362dcf6c4"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
