@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sU+HzEPGgTR2CjdsWPdmvIit9L5mcasCBSh7pE86yS8=",
+            "sha256": "sha256-E1IvGrSXD9r1aaGcnTi/OcMPMcIUniio41v/+dOG1ME=",
             "type": "url",
-            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.0-rc.4/alcom-1.1.0-rc.4-x86_64.AppImage"
+            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.0-rc.5/alcom-1.1.0-rc.5-x86_64.AppImage"
         },
-        "version": "1.1.0-rc.4"
+        "version": "1.1.0-rc.5"
     },
     "animdl-git": {
         "cargoLocks": null,
@@ -517,7 +517,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-06-15",
+        "date": "2025-06-16",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -529,12 +529,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "f2050fbe5425db0aee1cb171c985208dce28859f",
-            "sha256": "sha256-p4dZHKxOYNUTgyct73dlT4RVmqfL891reWjVWLJ5V1U=",
+            "rev": "7e3b6d001e9f11af35637b07cc831c3ce34dd4d6",
+            "sha256": "sha256-zfPuVrgkkEPeuMjFSteg3NjnG7YVKcQw6IVUJAufwvo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f2050fbe5425db0aee1cb171c985208dce28859f"
+        "version": "7e3b6d001e9f11af35637b07cc831c3ce34dd4d6"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
