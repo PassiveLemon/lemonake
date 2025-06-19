@@ -13,14 +13,18 @@ rustPlatform.buildRustPackage {
     sha256 = "sha256-9Sv38dCtvbqvxSnRpq+HsIwF/rfLUVZbi0J+mltLres=";
   };
 
-  fetchCargoVendor = true;
-  cargoHash = "sha256-xxmBgJqtWq1FLWTaC8SjaBoSXkPcIZYrSOc+hCEN778=";
+  cargoLock = {
+    lockFile = ./Cargo.lock;
+  };
+
+  postPatch = ''
+    cp ${./Cargo.lock} Cargo.lock
+  '';
 
   meta = with lib; {
     description = "Execute a command whenever a device is adb-connected";
     homepage = "https://github.com/rom1v/autoadb";
-    # Set redistributable to false to skip build workflow because autoadb (seemingly deprecated) uses an older cargo format that isn't supported by fetchCargoVendor
-    license = licenses.asl20 // { redistributable = false; };
+    license = licenses.asl20;
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "autoadb";
