@@ -19,7 +19,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Execute a command whenever a device is adb-connected";
     homepage = "https://github.com/rom1v/autoadb";
-    license = licenses.asl20;
+    # Set redistributable to false to skip build workflow because autoadb (seemingly deprecated) uses an older cargo format that isn't supported by fetchCargoVendor
+    license = licenses.asl20 // { redistributable = false; };
     maintainers = with maintainers; [ passivelemon ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "autoadb";

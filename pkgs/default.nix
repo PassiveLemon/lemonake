@@ -20,8 +20,8 @@
       then lib.all testLicense pkg.meta.license
       else testLicense pkg.meta.license);
 
-    redistributablePkgs = builtins.attrNames (lib.filterAttrs (_: pkg: isRedistributable pkg) flakePkgs);
-    nonRedistributablePkgs = builtins.attrNames (lib.filterAttrs (_: pkg: ! isRedistributable pkg) flakePkgs);
+    redistributablePkgs = lib.attrNames (lib.filterAttrs (_: pkg: isRedistributable pkg) flakePkgs);
+    nonRedistributablePkgs = lib.attrNames (lib.filterAttrs (_: pkg: ! isRedistributable pkg) flakePkgs);
   in
   {
     packages = self.overlays.default pkgs pkgs;
