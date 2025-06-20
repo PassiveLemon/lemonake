@@ -47,15 +47,16 @@ buildPythonApplication {
 
   postConfigure = ''
     substituteInPlace pyproject.toml \
-      --replace 'comtypes = "~=1.1.11"' "" \
-      --replace 'httpx = "~=0.23.0"' 'httpx = ">=0.23.0"' \
-      --replace 'packaging = ">=22,<24"' 'packaging = ">=22"' \
-      --replace 'pycryptodomex = "~=3.14.1"' 'pycryptodomex = ">=3.14.1"' \
-      --replace 'regex = "~=2022.10.31"' 'regex = ">=2022.10.31"' \
-      --replace 'rich = ">=13.3.1,<13.3.4"' 'rich = ">=13.3.1"' \
-      --replace 'tqdm = ">=4.62.3,<4.66.0"' 'tqdm = ">=4.62.3"' \
-      --replace 'yarl = "~=1.8.1"' 'yarl = ">=1.8.1"' \
-      --replace 'version = "4.9.1"' 'version = ">=4.9.1"' #lxml
+      --replace-fail 'comtypes = "~=1.1.11"' "" \
+      --replace-fail 'cssselect = ">=1.1,<1.3"' 'cssselect = ">=1.1"' \
+      --replace-fail 'httpx = "~=0.23.0"' 'httpx = ">=0.23.0"' \
+      --replace-fail 'packaging = ">=22,<24"' 'packaging = ">=22"' \
+      --replace-fail 'pycryptodomex = "~=3.14.1"' 'pycryptodomex = ">=3.14.1"' \
+      --replace-fail 'regex = "~=2022.10.31"' 'regex = ">=2022.10.31"' \
+      --replace-fail 'rich = ">=13.3.1,<13.3.4"' 'rich = ">=13.3.1"' \
+      --replace-fail 'tqdm = ">=4.62.3,<4.66.0"' 'tqdm = ">=4.62.3"' \
+      --replace-fail 'yarl = "~=1.8.1"' 'yarl = ">=1.8.1"' \
+      --replace-fail 'version = "4.9.1"' 'version = ">=4.9.1"' #lxml
   '';
 
   doCheck = true;
