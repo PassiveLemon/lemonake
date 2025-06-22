@@ -50,11 +50,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Zwwg+jqCg7ENs+ZOK8nBnA+T5JumQMiB5Mm4mN8nUDA=",
+            "sha256": "sha256-uA2rN2pU+PM5QSylyxxl0mNED9JQXMDn2FgZI9YcMHw=",
             "type": "url",
-            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.1-rc.0/alcom-1.1.1-rc.0-x86_64.AppImage"
+            "url": "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.1/alcom-1.1.1-x86_64.AppImage"
         },
-        "version": "1.1.1-rc.0"
+        "version": "1.1.1"
     },
     "animdl-git": {
         "cargoLocks": null,
@@ -233,7 +233,7 @@
     },
     "picom-git": {
         "cargoLocks": null,
-        "date": "2025-02-21",
+        "date": "2025-06-21",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -245,12 +245,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "b99537235bf858ccf527217bfc196d4923a3e3a1",
-            "sha256": "sha256-hHl20Sg2sYY0Jw8dHnIbEeG7DfqJE7oif1R3r6BNmaU=",
+            "rev": "c067c2d59a5078688e311f0e355051964e9815ae",
+            "sha256": "sha256-0WEKz+7JlqVj15Y6Naf0/eY+ob2SuUw7q0u1E0d+tas=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b99537235bf858ccf527217bfc196d4923a3e3a1"
+        "version": "c067c2d59a5078688e311f0e355051964e9815ae"
     },
     "picom-tag": {
         "cargoLocks": null,
@@ -517,7 +517,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-06-20",
+        "date": "2025-06-21",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -529,12 +529,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "26ef107df4f0644d1eb61417b5ccb3863bea2c04",
-            "sha256": "sha256-uAPBwtBLPARXZZE1ntja/A5eg4FcLgIoYtSeieDnwQE=",
+            "rev": "b54d0c5dd58912515c5177f9c40ae01293081399",
+            "sha256": "sha256-ay/dAQOuHuuieKxWiVwbZy7roU0Fdn2StyMldY7WA/o=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "26ef107df4f0644d1eb61417b5ccb3863bea2c04"
+        "version": "b54d0c5dd58912515c5177f9c40ae01293081399"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,

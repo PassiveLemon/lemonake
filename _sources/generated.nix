@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.1.1-rc.0";
+    version = "1.1.1";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.1-rc.0/alcom-1.1.1-rc.0-x86_64.AppImage";
-      sha256 = "sha256-Zwwg+jqCg7ENs+ZOK8nBnA+T5JumQMiB5Mm4mN8nUDA=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.1/alcom-1.1.1-x86_64.AppImage";
+      sha256 = "sha256-uA2rN2pU+PM5QSylyxxl0mNED9JQXMDn2FgZI9YcMHw=";
     };
   };
   animdl-git = {
@@ -136,15 +136,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "b99537235bf858ccf527217bfc196d4923a3e3a1";
+    version = "c067c2d59a5078688e311f0e355051964e9815ae";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "b99537235bf858ccf527217bfc196d4923a3e3a1";
+      rev = "c067c2d59a5078688e311f0e355051964e9815ae";
       fetchSubmodules = false;
-      sha256 = "sha256-hHl20Sg2sYY0Jw8dHnIbEeG7DfqJE7oif1R3r6BNmaU=";
+      sha256 = "sha256-0WEKz+7JlqVj15Y6Naf0/eY+ob2SuUw7q0u1E0d+tas=";
     };
-    date = "2025-02-21";
+    date = "2025-06-21";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -298,15 +298,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "26ef107df4f0644d1eb61417b5ccb3863bea2c04";
+    version = "b54d0c5dd58912515c5177f9c40ae01293081399";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "26ef107df4f0644d1eb61417b5ccb3863bea2c04";
+      rev = "b54d0c5dd58912515c5177f9c40ae01293081399";
       fetchSubmodules = false;
-      sha256 = "sha256-uAPBwtBLPARXZZE1ntja/A5eg4FcLgIoYtSeieDnwQE=";
+      sha256 = "sha256-ay/dAQOuHuuieKxWiVwbZy7roU0Fdn2StyMldY7WA/o=";
     };
-    date = "2025-06-20";
+    date = "2025-06-21";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
