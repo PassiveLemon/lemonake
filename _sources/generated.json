@@ -517,7 +517,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-06-24",
+        "date": "2025-06-25",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -529,12 +529,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "b75714c93665872a225cfcbaf495cf1008b69cce",
-            "sha256": "sha256-Ld4jyMtQgdNBv8yMBr1cmopv75lkA8RlgwY4vGhzcdQ=",
+            "rev": "dbcf4f99f786d2708a0f85900bebba0949a339d4",
+            "sha256": "sha256-iytCXHQFLRFxU6efCH53kY00UdqwgqKpOD6Je6vFRlE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b75714c93665872a225cfcbaf495cf1008b69cce"
+        "version": "dbcf4f99f786d2708a0f85900bebba0949a339d4"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -672,13 +672,13 @@
     "xrizer-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./xrizer-git-898d41051d33f9404ea9a9e599f0c1118c82cc54/Cargo.lock",
+                "./xrizer-git-83be788ff4b353030320155dcb36825011269f2d/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-06-08",
+        "date": "2025-06-25",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -690,11 +690,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "898d41051d33f9404ea9a9e599f0c1118c82cc54",
-            "sha256": "sha256-quCljMhsx1sy385NgQl6oPuJe44CuyoO3FWcmS005Wk=",
+            "rev": "83be788ff4b353030320155dcb36825011269f2d",
+            "sha256": "sha256-ORusG6ja1JL26KFBz65rSmIHksEgicUaVGOtoYsFaJs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "898d41051d33f9404ea9a9e599f0c1118c82cc54"
+        "version": "83be788ff4b353030320155dcb36825011269f2d"
     }
 }
