@@ -91,6 +91,10 @@ src.git = "https://github.com/olekolek1000/wayvr-dashboard"
 fetch.github = "olekolek1000/wayvr-dashboard"
 cargo_locks = [ "src-tauri/Cargo.lock" ]
 
+[wayvr-dashboard-appimage]
+src.github = "olekolek1000/wayvr-dashboard"
+fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard.AppImage"
+
 [webfisher]
 src.github = "PassiveLemon/webfisher"
 fetch.github = "PassiveLemon/webfisher"
