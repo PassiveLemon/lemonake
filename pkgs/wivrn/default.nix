@@ -9,17 +9,6 @@
         inherit (package) src;
         version = (lib.removePrefix "v" package.version);
         monadoSrc = monado.src;
-      }).overrideAttrs (finalAttrs: {
-        postUnpack = ''
-          ourMonadoRev="${finalAttrs.monado.src.rev}"
-          theirMonadoRev=$(sed -n '/FetchContent_Declare(monado/,/)/p' ${finalAttrs.src.name}/CMakeLists.txt | grep "GIT_TAG" | awk '{print $2}')
-          if [ ! "$theirMonadoRev" == "$ourMonadoRev" ]; then
-            echo "Our Monado source revision doesn't match monado-rev." >&2
-            echo "  theirs: $theirMonadoRev" >&2
-            echo "    ours: $ourMonadoRev" >&2
-            return 1
-          fi
-        '';
       });
 
       wivrn-git = let

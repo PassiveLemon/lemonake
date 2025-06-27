@@ -104,8 +104,7 @@ src.github = "WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
 
 [wivrn-monado]
-# src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/monado-rev"
-src.manual = "2a6932d46dad9aa957205e8a47ec2baa33041076"
+src.cmd = "curl https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r \".tag_name\" | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/monado-rev"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
 [wivrn-git]
