@@ -287,26 +287,26 @@
   };
   wivrn = {
     pname = "wivrn";
-    version = "v0.25";
+    version = "v25.6";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "v0.25";
+      rev = "v25.6";
       fetchSubmodules = false;
-      sha256 = "sha256-dDf+BW0AZMWRlWl0ye5s3Muurz+CiM3U5+bYgaFIT7M=";
+      sha256 = "sha256-opl1zPQrdOMgDY0rYZccNNRpgba6FQZMHxvgKNS7svM=";
     };
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "dbcf4f99f786d2708a0f85900bebba0949a339d4";
+    version = "8691be26774de2ceb85b1a8ef7672c0f2ea9f85d";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "dbcf4f99f786d2708a0f85900bebba0949a339d4";
+      rev = "8691be26774de2ceb85b1a8ef7672c0f2ea9f85d";
       fetchSubmodules = false;
-      sha256 = "sha256-iytCXHQFLRFxU6efCH53kY00UdqwgqKpOD6Je6vFRlE=";
+      sha256 = "sha256-bn7W63s2gIvG1DYA3lSfqZIeqCH9QqKYZfqzjV6W1qI=";
     };
-    date = "2025-06-25";
+    date = "2025-06-26";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -358,16 +358,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "37bb0bb281b6db94da9433df72c920b4e5a4b9db";
+    version = "f4fbb416da50df86c39eface2eacbde2b05fb423";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "37bb0bb281b6db94da9433df72c920b4e5a4b9db";
+      rev = "f4fbb416da50df86c39eface2eacbde2b05fb423";
       fetchSubmodules = false;
-      sha256 = "sha256-qoDcvEt9sWBey9dF44u+oVdcgBj+6Ldr/6sbhhb9t3E=";
+      sha256 = "sha256-VDACjaBeDBpbfrQP4BteXdJ/zvn4I5jnoFPdt0TCNlU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-git-37bb0bb281b6db94da9433df72c920b4e5a4b9db/Cargo.lock;
+      lockFile = ./wlx-overlay-s-git-f4fbb416da50df86c39eface2eacbde2b05fb423/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
         "wlx-capture-0.5.3" = "sha256-1R5R9a9MSCWZ+S8GXu2oMBodoy9CCmCfAwH1eXBPqno=";
@@ -376,7 +376,7 @@
         "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
       };
     };
-    date = "2025-06-08";
+    date = "2025-06-26";
   };
   xrizer = {
     pname = "xrizer";
