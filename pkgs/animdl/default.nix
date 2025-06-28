@@ -1,10 +1,11 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packagerGit;
+in
+{
   flake.overlays = {
     animdl = final: prev: {
-      animdl-git = let
-        package = getPackage "animdl-git" prev;
-      in
-      prev.python3Packages.callPackage ./package.nix { inherit (package) version src; };
+      animdl-git = packagerGit "animdl-git" ./package.nix prev.python3Packages;
     };
   };
 }

@@ -1,4 +1,8 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) getPackage;
+in
+{
   flake.overlays = {
     tilp2 = final: prev: {
       tilp2 = let

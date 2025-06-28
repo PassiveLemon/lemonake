@@ -1,18 +1,13 @@
-{ lib, getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager;
+in
+{
   flake.overlays = {
     gdlauncher = final: prev: {
-      gdlauncher-legacy = let
-        package = getPackage "gdlauncher-legacy" prev;
-      in
-      prev.callPackage ./legacy.nix {
-        inherit (package) src;
-        version = (lib.removePrefix "v" package.version);
-      };
+      gdlauncher-legacy = packager "gdlauncher-legacy" ./legacy.nix prev;
 
-      gdlauncher-carbon = let
-        package = getPackage "gdlauncher-carbon" prev;
-      in
-      prev.callPackage ./carbon.nix { inherit (package) version src; };
+      gdlauncher-carbon = packager "gdlauncher-carbon" ./carbon.nix prev;
 
       gdlauncher = final.gdlauncher-carbon;
     };

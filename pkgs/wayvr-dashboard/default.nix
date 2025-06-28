@@ -1,4 +1,8 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) getPackage;
+in
+{
   flake.overlays = {
     wayvr-dashboard = final: prev: {
       wayvr-dashboard = let

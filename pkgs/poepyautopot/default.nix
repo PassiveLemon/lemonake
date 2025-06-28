@@ -1,15 +1,13 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager packagerGit;
+in
+{
   flake.overlays = {
     poepyautopot = final: prev: {
-      poepyautopot = let
-        package = getPackage "poepyautopot" prev;
-      in
-      prev.python3Packages.callPackage ./package.nix { inherit (package) version src; };
+      poepyautopot = packager "poepyautopot" ./package.nix prev.python3Packages;
 
-      poepyautopot-git = let
-        package = getPackage "poepyautopot-git" prev;
-      in
-      prev.python3Packages.callPackage ./package.nix { inherit (package) version src; };
+      poepyautopot-git = packagerGit "poepyautopot-git" ./package.nix prev.python3Packages;
     };
   };
 }

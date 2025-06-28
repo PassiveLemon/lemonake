@@ -1,15 +1,13 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager packagerGit;
+in
+{
   flake.overlays = {
     webfisher = final: prev: {
-      webfisher = let
-        package = getPackage "webfisher" prev;
-      in
-      prev.callPackage ./package.nix { inherit (package) version src; };
+      webfisher = packager "webfisher" ./package.nix prev;
 
-      webfisher-git = let
-        package = getPackage "webfisher-git" prev;
-      in
-      prev.callPackage ./package.nix { inherit (package) version src; };
+      webfisher-git = packagerGit "webfisher-git" ./package.nix prev;
     };
   };
 }

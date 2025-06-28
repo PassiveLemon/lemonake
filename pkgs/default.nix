@@ -1,12 +1,43 @@
-{ self, inputs, ... }: {
+{ self, inputs, config, lib, pkgs, ... }:
+let
+  libLemonake = import ../parts/lib.nix { inherit config lib pkgs; };
+
+  overlayPackages = [
+    "adgobye"
+    "alcom"
+    "animdl"
+    "autoadb"
+    "gdlauncher"
+    "gfm"
+    "hd2pystratmacro"
+    "lua-pam"
+    "monado-vulkan-layers"
+    "opencomposite"
+    "picom"
+    "poepyautopot"
+    "proton-ge-rtsp"
+    "tilp2"
+    "vapor"
+    "wayvr-dashboard"
+    "webfisher"
+    "wivrn"
+    "wlx-overlay-s"
+    "xrizer"
+  ];
+
+  overlayPaths = builtins.map (name: (libLemonake.subImport ./${name})) overlayPackages;
+in
+{
   perSystem = { system, ... }:
   let
-    pkgs = import inputs.nixpkgs {
+    systemPkgs = import inputs.nixpkgs {
       inherit system;
       config.allowUnfree = true;
       overlays = [ self.overlays.default ];
     };
-    lib = pkgs.lib;
+    systemLib = systemPkgs.lib;
+
+    inherit (systemLib) isList all attrNames filterAttrs;
 
     flakePkgs = self.packages.${system};
 
@@ -16,68 +47,29 @@
 
     isRedistributable = pkg:
       pkg.meta ? license &&
-      (if lib.isList pkg.meta.license
-      then lib.all testLicense pkg.meta.license
+      (if isList pkg.meta.license
+      then all testLicense pkg.meta.license
       else testLicense pkg.meta.license);
 
-    redistributablePkgs = lib.attrNames (lib.filterAttrs (_: pkg: isRedistributable pkg) flakePkgs);
-    nonRedistributablePkgs = lib.attrNames (lib.filterAttrs (_: pkg: ! isRedistributable pkg) flakePkgs);
+    redistributablePkgs = attrNames (filterAttrs (_: pkg: isRedistributable pkg) flakePkgs);
+    nonRedistributablePkgs = attrNames (filterAttrs (_: pkg: ! isRedistributable pkg) flakePkgs);
   in
   {
-    packages = self.overlays.default pkgs pkgs;
+    packages = self.overlays.default systemPkgs systemPkgs;
     redistributablePackages = redistributablePkgs;
     nonRedistributablePackages = nonRedistributablePkgs;
   };
 
-  _module.args.getPackage = pname: pkgs: (pkgs.callPackage ../_sources/generated.nix { }).${pname};
-
-  imports = [
-    ./adgobye
-    ./alcom
-    ./animdl
-    ./autoadb
-    ./gdlauncher
-    ./gfm
-    ./hd2pystratmacro
-    ./lua-pam
-    ./monado-vulkan-layers
-    ./opencomposite
-    ./picom
-    ./poepyautopot
-    ./proton-ge-rtsp
-    ./tilp2
-    ./vapor
-    ./wayvr-dashboard
-    ./webfisher
-    ./wivrn
-    ./wlx-overlay-s
-    ./xrizer
-  ];
+  imports = overlayPaths;
 
   flake.overlays = {
     default = self.overlays.linux;
 
-    linux = final: prev: with self.overlays;
-      (adgobye final prev)
-      // (alcom final prev)
-      // (animdl final prev)
-      // (autoadb final prev)
-      // (gdlauncher final prev)
-      // (gfm final prev)
-      // (hd2pystratmacro final prev)
-      // (lua-pam final prev)
-      // (monado-vulkan-layers final prev)
-      // (opencomposite final prev)
-      // (picom final prev)
-      // (poepyautopot final prev)
-      // (proton-ge-rtsp final prev)
-      // (tilp2 final prev)
-      // (vapor final prev)
-      // (wayvr-dashboard final prev)
-      // (webfisher final prev)
-      // (wivrn final prev)
-      // (wlx-overlay-s final prev)
-      // (xrizer final prev);
+    linux = final: prev:
+      let
+        overlayFns = builtins.map (name: self.overlays.${name}) overlayPackages;
+      in
+        builtins.foldl' (acc: f: acc // (f final prev)) { } overlayFns;
   };
 }
 

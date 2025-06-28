@@ -1,15 +1,13 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager packagerGit;
+in
+{
   flake.overlays = {
     hd2pystratmacro = final: prev: {
-      hd2pystratmacro = let
-        package = getPackage "hd2pystratmacro" prev;
-      in
-      prev.python3Packages.callPackage ./package.nix { inherit (package) version src; };
+      hd2pystratmacro = packager "hd2pystratmacro" ./package.nix prev.python3Packages;
 
-      hd2pystratmacro-git = let
-        package = getPackage "hd2pystratmacro-git" prev;
-      in
-      prev.python3Packages.callPackage ./package.nix { inherit (package) version src; };
+      hd2pystratmacro-git = packagerGit "hd2pystratmacro-git" ./package.nix prev.python3Packages;
     };
   };
 }

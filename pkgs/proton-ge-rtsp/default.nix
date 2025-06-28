@@ -1,4 +1,8 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) getPackage;
+in
+{
   flake.overlays = {
     proton-ge-rtsp = final: prev: {
       proton-ge-rtsp = let

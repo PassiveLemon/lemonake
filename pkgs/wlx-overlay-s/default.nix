@@ -1,4 +1,8 @@
-{ lib, getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) getPackage;
+in
+{
   flake.overlays = {
     wlx-overlay-s = final: prev: {
       wlx-overlay-s = let
