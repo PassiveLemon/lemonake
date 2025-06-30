@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.1.1";
+    version = "1.1.2-rc.0";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.1/alcom-1.1.1-x86_64.AppImage";
-      sha256 = "sha256-uA2rN2pU+PM5QSylyxxl0mNED9JQXMDn2FgZI9YcMHw=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.2-rc.0/alcom-1.1.2-rc.0-x86_64.AppImage";
+      sha256 = "sha256-yiMY6QfrqHfn4bANBUljBgQ/McNEq3dcEo5DYl21nuw=";
     };
   };
   animdl-git = {
@@ -295,26 +295,26 @@
   };
   wivrn = {
     pname = "wivrn";
-    version = "v25.6";
+    version = "v25.6.1";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "v25.6";
+      rev = "v25.6.1";
       fetchSubmodules = false;
-      sha256 = "sha256-opl1zPQrdOMgDY0rYZccNNRpgba6FQZMHxvgKNS7svM=";
+      sha256 = "sha256-DqgayLXI+RPIb8tLzJoHi+Z12px4pdzU50C0UBSa2u4=";
     };
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "55b7f0e6c75507e8927f2048aa32950429f942a4";
+    version = "eacca0785735c2a5d11852f3c8bb51bc41f24eb6";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "55b7f0e6c75507e8927f2048aa32950429f942a4";
+      rev = "eacca0785735c2a5d11852f3c8bb51bc41f24eb6";
       fetchSubmodules = false;
-      sha256 = "sha256-Xui2wWa8E5uslDyqL5hbivE23SbJwjFIeTOf0tmf7ck=";
+      sha256 = "sha256-DqgayLXI+RPIb8tLzJoHi+Z12px4pdzU50C0UBSa2u4=";
     };
-    date = "2025-06-28";
+    date = "2025-06-29";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
