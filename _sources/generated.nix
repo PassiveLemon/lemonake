@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.1.2";
+    version = "1.1.3-beta.1";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.2/alcom-1.1.2-x86_64.AppImage";
-      sha256 = "sha256-XxXY/X5mYYc3YcBFyUm5vRVBEhU9LgS4SBVXuK42u70=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.3-beta.1/alcom-1.1.3-beta.1-x86_64.AppImage";
+      sha256 = "sha256-S/ILiHP9P9wnmmntzoD1MRLgBpNu2RG4gwTjpXtSOZ8=";
     };
   };
   animdl-git = {
@@ -111,17 +111,17 @@
   };
   opencomposite-git = {
     pname = "opencomposite-git";
-    version = "8d43dc81dc31722dc2460fa21a21c6e18be0b2b4";
+    version = "a27e7e6a64bdcd1eff6b7fba1ea2ea34bcf1273d";
     src = fetchgit {
       url = "https://gitlab.com/znixian/OpenOVR.git";
-      rev = "8d43dc81dc31722dc2460fa21a21c6e18be0b2b4";
+      rev = "a27e7e6a64bdcd1eff6b7fba1ea2ea34bcf1273d";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-hM+xsokPt4B27C7NdOfiEdEoQVnx4BpwybisuHf//uI=";
+      sha256 = "sha256-AL1HtxSdZ3pJWRXxzuRSyIeIHmawhJIXqg5rU8rhMgY=";
     };
-    date = "2025-05-20";
+    date = "2025-07-08";
   };
   picom = {
     pname = "picom";
@@ -306,15 +306,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "88f03acfbf0ab4dfaf866d667652fe5429d176a0";
+    version = "a6660434e90922d181cd0925c480a5cb8c2179ec";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "88f03acfbf0ab4dfaf866d667652fe5429d176a0";
+      rev = "a6660434e90922d181cd0925c480a5cb8c2179ec";
       fetchSubmodules = false;
-      sha256 = "sha256-hz9p7oLSLwfuC6Dwq4M2oqtj/OYRuFNkUws6luSjePU=";
+      sha256 = "sha256-Ley7cctON8zM7lcnl+Kb5z0LcmnI3iksmDNBNP3mEp0=";
     };
-    date = "2025-07-06";
+    date = "2025-07-08";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -405,20 +405,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "801bb0501fb3097b155cb5c33763a54b64ba630c";
+    version = "4ea8f6135fa67d1cc4786c7891914c54d76a7f65";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "801bb0501fb3097b155cb5c33763a54b64ba630c";
+      rev = "4ea8f6135fa67d1cc4786c7891914c54d76a7f65";
       fetchSubmodules = false;
-      sha256 = "sha256-PmP0A0H5ATe6PEp00iRCtV/qBqAl9g/XWApk6qafS9Q=";
+      sha256 = "sha256-Q/afoS9k0EzfvHOQDO43AtUnS1AUBPhNgBnS0A/li2o=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-801bb0501fb3097b155cb5c33763a54b64ba630c/Cargo.lock;
+      lockFile = ./xrizer-git-4ea8f6135fa67d1cc4786c7891914c54d76a7f65/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-07-07";
+    date = "2025-07-08";
   };
 }
