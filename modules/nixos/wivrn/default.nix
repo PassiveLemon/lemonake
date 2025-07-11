@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption optionalString optionalAttrs isDerivation recursiveUpdate getExe literalExpression types maintainers;
+  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption literalExpression hasAttr toList length head tail concatStringsSep optionalString optionalAttrs isDerivation recursiveUpdate getExe types maintainers;
   cfg = config.services.wivrn;
   configFormat = pkgs.formats.json { };
 
@@ -10,23 +10,17 @@ let
   # Since the json config attribute type "configFormat.type" doesn't allow specifying types for
   # individual attributes, we have to type check manually.
 
-  # The application option must be either a package or a list with package as the first element.
+  # The application option should be a list with package as the first element, though a single package is also valid.
+  # Note that this module depends on the package containing the meta.mainProgram attribute.
 
-  # Checking if an application is provided
-  applicationAttrExists = builtins.hasAttr "application" cfg.config.json;
-  applicationListNotEmpty = (
-    if builtins.isList cfg.config.json.application
-    then (builtins.length cfg.config.json.application) != 0
-    else true
-  );
+  # Check if an application is provided
+  applicationAttrExists = hasAttr "application" cfg.config.json;
+  applicationList = toList cfg.config.json.application;
+  applicationListNotEmpty = length applicationList != 0;
   applicationCheck = applicationAttrExists && applicationListNotEmpty;
 
   # Manage packages and their exe paths
-  applicationAttr = (
-    if builtins.isList cfg.config.json.application
-    then builtins.head cfg.config.json.application
-    else cfg.config.json.application
-  );
+  applicationAttr = head applicationList;
   applicationPackage = mkIf applicationCheck applicationAttr;
   applicationPackageExe = getExe applicationAttr;
   serverPackageExe = (
@@ -35,13 +29,9 @@ let
     else getExe cfg.package
   );
 
-  # Managing strings
-  applicationStrings = builtins.tail cfg.config.json.application;
-  applicationConcat = (
-    if builtins.isList cfg.config.json.application
-    then builtins.concatStringsSep " " ([ applicationPackageExe ] ++ applicationStrings)
-    else applicationPackageExe
-  );
+  # Manage strings
+  applicationStrings = tail applicationList;
+  applicationConcat = concatStringsSep " " ([ applicationPackageExe ] ++ applicationStrings);
 
   # Manage config file
   applicationUpdate = recursiveUpdate cfg.config.json (optionalAttrs applicationCheck { application = applicationConcat; });
@@ -49,8 +39,8 @@ let
   enabledConfig = optionalString cfg.config.enable "-f ${configFile}";
 
   # Manage server executables and flags
-  serverExec = builtins.concatStringsSep " " ([ serverPackageExe "--systemd" enabledConfig ] ++ cfg.extraServerFlags);
-  applicationExec = builtins.concatStringsSep " " ([ serverPackageExe "--application" enabledConfig ] ++ cfg.extraApplicationFlags);
+  serverExec = concatStringsSep " " ([ serverPackageExe "--systemd" enabledConfig ] ++ cfg.extraServerFlags);
+  applicationExec = concatStringsSep " " ([ serverPackageExe "--application" enabledConfig ] ++ cfg.extraApplicationFlags);
 in
 {
   options = {
@@ -108,10 +98,10 @@ in
         json = mkOption {
           type = configFormat.type;
           description = ''
-            Configuration for WiVRn. The attributes are serialized to JSON in config.json. If a config or certain attributes are not provided, the server will default to stock values.
+            Configuration for WiVRn. The attributes are serialized to JSON in config.json. The server will fallback to default values for any missing attributes.
 
-            Note that the application option must be either a package or a
-            list with package as the first element.
+            Like upstream, the application option is a list including the application and it's flags. In the case of the NixOS module however, the first element of the list must be a package. The module will assert otherwise.
+            The application can be set to a single package because it gets passed to lib.toList, though this will not allow for flags to be passed.
 
             See https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md
           '';
