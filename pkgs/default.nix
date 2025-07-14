@@ -36,6 +36,7 @@
     ./alcom
     ./animdl
     ./autoadb
+    ./awmtt
     ./gdlauncher
     ./gfm
     ./hd2pystratmacro
@@ -62,6 +63,7 @@
       // (alcom final prev)
       // (animdl final prev)
       // (autoadb final prev)
+      // (awmtt final prev)
       // (gdlauncher final prev)
       // (gfm final prev)
       // (hd2pystratmacro final prev)
