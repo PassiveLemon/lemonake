@@ -1,4 +1,5 @@
-{ fetchFromGitHub
+{ lib
+, fetchFromGitHub
 , writeShellApplication
 , inotify-tools
 , xorg
@@ -12,12 +13,28 @@ let
   };
 in
 writeShellApplication {
-  name = "awmtt-${src.rev}";
-  runtimeInputs = [ xorg.xorgserver inotify-tools ];
+  name = "awmtt";
+
+  runtimeInputs = [
+    inotify-tools
+    xorg.xorgserver
+  ];
+
   text = ''
     set +u
     ${builtins.readFile "${src}/awmtt.sh"}
   '';
+
   checkPhase = "";
+
+  meta = with lib; {
+    description = "A testing tool for AwesomeWM";
+    homepage = "https://github.com/gmdfalk/awmtt/";
+    license = licenses.mit;
+    maintainers = with maintainers; [ passivelemon ];
+    platforms = platforms.linux;
+    mainProgram = "awmtt";
+    sourceProvenance = with sourceTypes; [ fromSource ];
+  };
 }
 
