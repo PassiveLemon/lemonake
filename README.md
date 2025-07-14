@@ -40,6 +40,7 @@ Packages:
 - `adgobye-git`
 - `alcom`
 - `animdl-git`
+- `awmtt-git`
 - `gdlauncher` (Alias to `gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
