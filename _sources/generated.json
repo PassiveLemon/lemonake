@@ -532,7 +532,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-07-09",
+        "date": "2025-07-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -544,12 +544,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "c5dab27f3c0a06091b0a5e99025cd30f74c5e3fa",
-            "sha256": "sha256-rxySoSSRFT20H9NLHx4QkyefesPfxHn5SfB2k0RC89A=",
+            "rev": "ec42db83bc3c8697db71aa05626107ca356ab027",
+            "sha256": "sha256-qISw8sEcJDxYSjfpGC6PFbf7WMdhhPJJmtOQt0kR/5k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c5dab27f3c0a06091b0a5e99025cd30f74c5e3fa"
+        "version": "ec42db83bc3c8697db71aa05626107ca356ab027"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
@@ -627,7 +627,7 @@
     "wlx-overlay-s-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wlx-overlay-s-git-f4fbb416da50df86c39eface2eacbde2b05fb423/Cargo.lock",
+                "./wlx-overlay-s-git-9dceaf30e54baed2d89686c6b03951cfd7ae5a7e/Cargo.lock",
                 {
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=",
@@ -637,7 +637,7 @@
                 }
             ]
         },
-        "date": "2025-06-26",
+        "date": "2025-07-11",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -649,12 +649,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "f4fbb416da50df86c39eface2eacbde2b05fb423",
-            "sha256": "sha256-VDACjaBeDBpbfrQP4BteXdJ/zvn4I5jnoFPdt0TCNlU=",
+            "rev": "9dceaf30e54baed2d89686c6b03951cfd7ae5a7e",
+            "sha256": "sha256-1ig8fQquYu6PTGroR1dbBFXQF8jPQJy2Cmg+AVF5m/g=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f4fbb416da50df86c39eface2eacbde2b05fb423"
+        "version": "9dceaf30e54baed2d89686c6b03951cfd7ae5a7e"
     },
     "xrizer": {
         "cargoLocks": {
@@ -687,13 +687,13 @@
     "xrizer-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./xrizer-git-4ea8f6135fa67d1cc4786c7891914c54d76a7f65/Cargo.lock",
+                "./xrizer-git-1e6281c7656717a78b5fb75bdd1c60ddbc3ee312/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-07-08",
+        "date": "2025-07-12",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -705,11 +705,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "4ea8f6135fa67d1cc4786c7891914c54d76a7f65",
-            "sha256": "sha256-Q/afoS9k0EzfvHOQDO43AtUnS1AUBPhNgBnS0A/li2o=",
+            "rev": "1e6281c7656717a78b5fb75bdd1c60ddbc3ee312",
+            "sha256": "sha256-W9auo5m42OTmxSbnO6gxS68hpKx60Tn11gXqPnaQc7w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4ea8f6135fa67d1cc4786c7891914c54d76a7f65"
+        "version": "1e6281c7656717a78b5fb75bdd1c60ddbc3ee312"
     }
 }
