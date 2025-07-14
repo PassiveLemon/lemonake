@@ -13,6 +13,8 @@ buildPythonApplication rec {
   pname = "poepyautopot";
   inherit version src;
 
+  format = "pyproject";
+
   strictDeps = true;
 
   nativeBuildInputs = [
