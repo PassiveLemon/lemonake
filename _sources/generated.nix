@@ -405,20 +405,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "a0679535696023bd4cac16b8dae020b9fe1d7e6c";
+    version = "70271e02892eb08509c072067daa5983320b83ce";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "a0679535696023bd4cac16b8dae020b9fe1d7e6c";
+      rev = "70271e02892eb08509c072067daa5983320b83ce";
       fetchSubmodules = false;
-      sha256 = "sha256-5sHotY9g858DditmXiHOWexRcvdjDYdofubVKYp8bME=";
+      sha256 = "sha256-FWV/eRm8MRLTAel7648tHubsJFI0r2IJjBHJI0lvzI8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-a0679535696023bd4cac16b8dae020b9fe1d7e6c/Cargo.lock;
+      lockFile = ./xrizer-git-70271e02892eb08509c072067daa5983320b83ce/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-07-14";
+    date = "2025-07-18";
   };
 }
