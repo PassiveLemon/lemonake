@@ -192,7 +192,7 @@
     },
     "opencomposite-git": {
         "cargoLocks": null,
-        "date": "2025-07-08",
+        "date": "2025-07-21",
         "extract": null,
         "name": "opencomposite-git",
         "passthru": null,
@@ -202,13 +202,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a27e7e6a64bdcd1eff6b7fba1ea2ea34bcf1273d",
-            "sha256": "sha256-AL1HtxSdZ3pJWRXxzuRSyIeIHmawhJIXqg5rU8rhMgY=",
+            "rev": "cff07db75c4823afe93ed7027b03d5f7bc86f164",
+            "sha256": "sha256-nie+8g/P9aZYimuLJxrzN+frfA772VyPDf2ThyguqBM=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/znixian/OpenOVR.git"
         },
-        "version": "a27e7e6a64bdcd1eff6b7fba1ea2ea34bcf1273d"
+        "version": "cff07db75c4823afe93ed7027b03d5f7bc86f164"
     },
     "picom": {
         "cargoLocks": null,
@@ -532,7 +532,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-07-16",
+        "date": "2025-07-22",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -544,12 +544,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "b845f30454a39dc4ac660453c0bd2284a867f5f6",
-            "sha256": "sha256-BlyXX6XHEm5JTZ64Pxu/zyxsm99ZLOJBmZ4CbvFObwk=",
+            "rev": "d3e10dc31b0835d73887c615100ce1b1efdfb810",
+            "sha256": "sha256-oYbaQfW2rdbxcvg0m3Ej3BF7BPEFWdQHqH/+ZkBs7+Q=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b845f30454a39dc4ac660453c0bd2284a867f5f6"
+        "version": "d3e10dc31b0835d73887c615100ce1b1efdfb810"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
