@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.1.3-beta.1";
+    version = "1.1.3-beta.2";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.3-beta.1/alcom-1.1.3-beta.1-x86_64.AppImage";
-      sha256 = "sha256-S/ILiHP9P9wnmmntzoD1MRLgBpNu2RG4gwTjpXtSOZ8=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.3-beta.2/alcom-1.1.3-beta.2-x86_64.AppImage";
+      sha256 = "sha256-xEFKyD4wLCN/Z/8am9qeq9Q9VTUYm9KZCpQ7kzcNSmE=";
     };
   };
   animdl-git = {
@@ -306,15 +306,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "d3e10dc31b0835d73887c615100ce1b1efdfb810";
+    version = "e358230a258d47ea14c31bdf891587496a48ac52";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "d3e10dc31b0835d73887c615100ce1b1efdfb810";
+      rev = "e358230a258d47ea14c31bdf891587496a48ac52";
       fetchSubmodules = false;
-      sha256 = "sha256-oYbaQfW2rdbxcvg0m3Ej3BF7BPEFWdQHqH/+ZkBs7+Q=";
+      sha256 = "sha256-MWn/oOJLCmzc41tp+rNTI5UO436qWmxeUriaRTY3sbg=";
     };
-    date = "2025-07-22";
+    date = "2025-07-23";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -405,20 +405,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "2fbce11c592a72db0a22ca97337d58d67f385bfa";
+    version = "366be00cdeb3156cf958fa48b49c39ce819cab86";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "2fbce11c592a72db0a22ca97337d58d67f385bfa";
+      rev = "366be00cdeb3156cf958fa48b49c39ce819cab86";
       fetchSubmodules = false;
-      sha256 = "sha256-nQx0CKfwemfRkfNdVSuhQLx2hvuZ6G/WX/MU2/bzQx8=";
+      sha256 = "sha256-4khkm1PU8YQ1AWN3ilBcn3Azg6hF71MvBv7sPQQ4ljM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-2fbce11c592a72db0a22ca97337d58d67f385bfa/Cargo.lock;
+      lockFile = ./xrizer-git-366be00cdeb3156cf958fa48b49c39ce819cab86/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-07-20";
+    date = "2025-07-23";
   };
 }
