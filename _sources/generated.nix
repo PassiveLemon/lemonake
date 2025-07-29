@@ -26,10 +26,10 @@
   };
   alcom = {
     pname = "alcom";
-    version = "1.1.3-beta.2";
+    version = "1.1.3";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.3-beta.2/alcom-1.1.3-beta.2-x86_64.AppImage";
-      sha256 = "sha256-xEFKyD4wLCN/Z/8am9qeq9Q9VTUYm9KZCpQ7kzcNSmE=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.3/alcom-1.1.3-x86_64.AppImage";
+      sha256 = "sha256-+0hcvh9Nc+hUrKRFsOUpxwBIIh4hcbLy4OYTqznfxYA=";
     };
   };
   animdl-git = {
@@ -306,15 +306,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "4fa33b183f3d8906c6023efabf280fbe1561331e";
+    version = "b72554ea027fd8f973f3242adb829fc0e56c0306";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "4fa33b183f3d8906c6023efabf280fbe1561331e";
+      rev = "b72554ea027fd8f973f3242adb829fc0e56c0306";
       fetchSubmodules = false;
-      sha256 = "sha256-loZVpr1SgzamodPVN1w3FA513w4/pWgQNVIo8ovstCo=";
+      sha256 = "sha256-BE9LF4q8VU8qfQsxbzJvW6vmSPRvz+zPkfIHnyUTlTo=";
     };
-    date = "2025-07-27";
+    date = "2025-07-28";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -405,20 +405,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "74c3462d27ce3bdeeee70011746c9cfdf83cb49b";
+    version = "58e85060c8cead8fe0f63efba10c71aef146c930";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "74c3462d27ce3bdeeee70011746c9cfdf83cb49b";
+      rev = "58e85060c8cead8fe0f63efba10c71aef146c930";
       fetchSubmodules = false;
-      sha256 = "sha256-Up4Qk3IvppjdT11VG0LBsn2EJo+TGPM6j2h/VLjJBxs=";
+      sha256 = "sha256-aDUkEW5XWP4QmJMXIF/SqNHvb2SYMlLtxWbujkXZdZk=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-74c3462d27ce3bdeeee70011746c9cfdf83cb49b/Cargo.lock;
+      lockFile = ./xrizer-git-58e85060c8cead8fe0f63efba10c71aef146c930/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-07-26";
+    date = "2025-07-28";
   };
 }
