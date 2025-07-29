@@ -54,9 +54,9 @@ rustPlatform.buildRustPackage rec {
 
 	postPatch = ''
 		substituteInPlace tauri.conf.json \
-			--replace-warn '"frontendDist": "../dist"' '"frontendDist": "${frontend}"'
+			--replace-fail '"frontendDist": "../dist"' '"frontendDist": "${frontend}"'
 		substituteInPlace tauri.conf.json \
-			--replace-warn '"npm run build"' '""'
+			--replace-fail '"npm run build"' '""'
 	'';
 
 	nativeBuildInputs = [

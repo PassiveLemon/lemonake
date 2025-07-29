@@ -17,8 +17,8 @@ appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
 
     substituteInPlace $out/share/applications/alcom.desktop \
-      --replace 'Exec=ALCOM' 'Exec=alcom' \
-      --replace 'Icon=ALCOM' 'Icon=alcom'
+      --replace-fail 'Exec=ALCOM' 'Exec=alcom' \
+      --replace-fail 'Icon=ALCOM' 'Icon=alcom'
   '';
 
   meta = with lib; {

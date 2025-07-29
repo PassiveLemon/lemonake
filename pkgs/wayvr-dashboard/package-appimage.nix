@@ -17,7 +17,7 @@ appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
 
     substituteInPlace $out/share/applications/wayvr-dashboard.desktop \
-      --replace 'Icon=wayvr-dashboard' 'Icon=wayvr-dashboard'
+      --replace-fail 'Icon=wayvr-dashboard' 'Icon=wayvr-dashboard'
   '';
 
   meta = with lib; {

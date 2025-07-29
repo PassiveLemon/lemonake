@@ -17,8 +17,8 @@ appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
 
     substituteInPlace $out/share/applications/@gddesktop.desktop \
-      --replace 'Exec=AppRun --no-sandbox %U' 'Exec=gdlauncher-carbon' \
-      --replace 'Icon=@gddesktop' 'Icon=gdlauncher-carbon'
+      --replace-fail 'Exec=AppRun --no-sandbox %U' 'Exec=gdlauncher-carbon' \
+      --replace-fail 'Icon=@gddesktop' 'Icon=gdlauncher-carbon'
   '';
 
   meta = with lib; {
