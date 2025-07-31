@@ -24,7 +24,6 @@ rustPlatform.buildRustPackage rec {
 
 	sourceRoot = "${src.name}/src-tauri";
 
-	useFetchCargoVendor = true;
 	cargoHash = "";
 
 	frontend = buildNpmPackage {
