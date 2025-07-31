@@ -11,7 +11,7 @@
 , glib
 , gtk3
 , librsvg
-, libsoup_2_4
+, libsoup_3
 , openssl
 , pkg-config
 , webkitgtk_4_1
@@ -72,7 +72,7 @@ rustPlatform.buildRustPackage rec {
 		glib
 		gtk3
 		librsvg
-		libsoup_2_4
+		libsoup_3
 		openssl
 		webkitgtk_4_1
 		wget
