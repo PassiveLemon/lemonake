@@ -34,17 +34,14 @@
   imports = [
     ./adgobye
     ./alcom
-    ./animdl
     ./autoadb
     ./awmtt
     ./gdlauncher
     ./gfm
-    ./hd2pystratmacro
     ./lua-pam
     ./monado-vulkan-layers
     ./opencomposite
     ./picom
-    ./poepyautopot
     ./proton-ge-rtsp
     ./tilp2
     ./vapor
@@ -61,17 +58,14 @@
     linux = final: prev: with self.overlays;
       (adgobye final prev)
       // (alcom final prev)
-      // (animdl final prev)
       // (autoadb final prev)
       // (awmtt final prev)
       // (gdlauncher final prev)
       // (gfm final prev)
-      // (hd2pystratmacro final prev)
       // (lua-pam final prev)
       // (monado-vulkan-layers final prev)
       // (opencomposite final prev)
       // (picom final prev)
-      // (poepyautopot final prev)
       // (proton-ge-rtsp final prev)
       // (tilp2 final prev)
       // (vapor final prev)
