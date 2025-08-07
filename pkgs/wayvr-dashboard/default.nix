@@ -19,6 +19,11 @@
         package = getPackage "wayvr-dashboard-appimage" prev;
       in
       (prev.callPackage ./package-appimage.nix { inherit (package) version src; });
+
+      wayvr-dashboard-binary = let
+        package = getPackage "wayvr-dashboard-binary" prev;
+      in
+      (prev.callPackage ./package-binary.nix { inherit (package) version src; });
     };
   };
 }

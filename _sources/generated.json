@@ -437,6 +437,21 @@
         },
         "version": "0.3.6"
     },
+    "wayvr-dashboard-binary": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "wayvr-dashboard-binary",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-MylHJ/LOoKfbD7H7TOPqX7NIBtg7rvTyKRN8jTMNrNo=",
+            "type": "url",
+            "url": "https://github.com/olekolek1000/wayvr-dashboard/releases/download/0.3.6/wayvr-dashboard"
+        },
+        "version": "0.3.6"
+    },
     "wayvr-dashboard-git": {
         "cargoLocks": {
             "src-tauri/Cargo.lock": [
@@ -532,7 +547,7 @@
     },
     "wivrn-git": {
         "cargoLocks": null,
-        "date": "2025-08-06",
+        "date": "2025-08-07",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -544,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "46ffc444f02f6237a43264ab779faec4c0517172",
-            "sha256": "sha256-+4AXycqevS1+rQjUr9m8AvBCvCQg2w7M5eKO2RHkX+I=",
+            "rev": "5097ecef3b3ee3654cfd643e12861c8257275916",
+            "sha256": "sha256-f5JmQu3KledFGgr2j2jw46pPoizmEV5UoJm8EH0JhXM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "46ffc444f02f6237a43264ab779faec4c0517172"
+        "version": "5097ecef3b3ee3654cfd643e12861c8257275916"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
