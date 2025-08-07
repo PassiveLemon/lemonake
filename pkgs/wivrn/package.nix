@@ -110,6 +110,7 @@ stdenv.mkDerivation (finalAttrs: {
     libGL
     libnotify
     libpulseaudio
+    librsvg
     libva
     libX11
     libXrandr
