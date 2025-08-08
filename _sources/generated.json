@@ -505,7 +505,7 @@
     },
     "webfisher-git": {
         "cargoLocks": null,
-        "date": "2025-08-06",
+        "date": "2025-08-07",
         "extract": null,
         "name": "webfisher-git",
         "passthru": null,
@@ -517,12 +517,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "webfisher",
-            "rev": "6a54355e710c8166cce98cde54f631259d28195e",
-            "sha256": "sha256-1Z75xuhERx9+P8hszucSFYp3rejgm8Bngi1PH4TTK+k=",
+            "rev": "f6d5acc5858987ebf99b78c58585b63ac381091c",
+            "sha256": "sha256-x4QwCkueZ/H9OODaPurcW3qn8VPw0kUkjtRbDo7KBAI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6a54355e710c8166cce98cde54f631259d28195e"
+        "version": "f6d5acc5858987ebf99b78c58585b63ac381091c"
     },
     "wivrn": {
         "cargoLocks": null,
@@ -598,13 +598,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bb9bcee2a3be75592de819d9e3fb2c8ed27bb7dc",
-            "sha256": "sha256-+PiWxnvMXaSFc+67r17GBRXo7kbjikSElawNMJCydrk=",
+            "rev": "5c137fe28b232fe460f9b03defa7749adc32ee48",
+            "sha256": "sha256-4P/ejRAitrYn8hXZPaDOcx27utfm+aVLjtqL6JxZYAg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
-        "version": "bb9bcee2a3be75592de819d9e3fb2c8ed27bb7dc"
+        "version": "5c137fe28b232fe460f9b03defa7749adc32ee48"
     },
     "wlx-overlay-s": {
         "cargoLocks": {
