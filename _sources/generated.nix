@@ -280,26 +280,26 @@
   };
   webfisher = {
     pname = "webfisher";
-    version = "1.0.0";
+    version = "1.1.1";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "1.0.0";
+      rev = "1.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-1Z75xuhERx9+P8hszucSFYp3rejgm8Bngi1PH4TTK+k=";
+      sha256 = "sha256-nBAiJOfJ/mEXdaMYYnvZRTlTjw/bqFSWYiWU6tvzeHQ=";
     };
   };
   webfisher-git = {
     pname = "webfisher-git";
-    version = "f6d5acc5858987ebf99b78c58585b63ac381091c";
+    version = "ba0e07a7c9325848fff01f0768c642810442677c";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "webfisher";
-      rev = "f6d5acc5858987ebf99b78c58585b63ac381091c";
+      rev = "ba0e07a7c9325848fff01f0768c642810442677c";
       fetchSubmodules = false;
-      sha256 = "sha256-x4QwCkueZ/H9OODaPurcW3qn8VPw0kUkjtRbDo7KBAI=";
+      sha256 = "sha256-nBAiJOfJ/mEXdaMYYnvZRTlTjw/bqFSWYiWU6tvzeHQ=";
     };
-    date = "2025-08-07";
+    date = "2025-08-08";
   };
   wivrn = {
     pname = "wivrn";
@@ -314,15 +314,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "5097ecef3b3ee3654cfd643e12861c8257275916";
+    version = "b036731b517903070e4e6fe7ab7688405cb638ed";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "5097ecef3b3ee3654cfd643e12861c8257275916";
+      rev = "b036731b517903070e4e6fe7ab7688405cb638ed";
       fetchSubmodules = false;
-      sha256 = "sha256-f5JmQu3KledFGgr2j2jw46pPoizmEV5UoJm8EH0JhXM=";
+      sha256 = "sha256-71ws4HgdxXvyiU6tFp4ce+mx1yXcdlhKKQ18TGLCSeg=";
     };
-    date = "2025-08-07";
+    date = "2025-08-09";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -339,15 +339,15 @@
   };
   wivrn-monado = {
     pname = "wivrn-monado";
-    version = "5c137fe28b232fe460f9b03defa7749adc32ee48";
+    version = "bb9bcee2a3be75592de819d9e3fb2c8ed27bb7dc";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "5c137fe28b232fe460f9b03defa7749adc32ee48";
+      rev = "bb9bcee2a3be75592de819d9e3fb2c8ed27bb7dc";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-4P/ejRAitrYn8hXZPaDOcx27utfm+aVLjtqL6JxZYAg=";
+      sha256 = "sha256-+PiWxnvMXaSFc+67r17GBRXo7kbjikSElawNMJCydrk=";
     };
   };
   wlx-overlay-s = {
