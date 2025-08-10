@@ -496,16 +496,16 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "webfisher",
-            "rev": "1.1.1",
-            "sha256": "sha256-nBAiJOfJ/mEXdaMYYnvZRTlTjw/bqFSWYiWU6tvzeHQ=",
+            "rev": "1.2.0",
+            "sha256": "sha256-hbu0GDyIBtgOEROQDRPns7pKvTZLNr1gnw+2itYhZE8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.1.1"
+        "version": "1.2.0"
     },
     "webfisher-git": {
         "cargoLocks": null,
-        "date": "2025-08-08",
+        "date": "2025-08-09",
         "extract": null,
         "name": "webfisher-git",
         "passthru": null,
@@ -517,12 +517,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "webfisher",
-            "rev": "ba0e07a7c9325848fff01f0768c642810442677c",
-            "sha256": "sha256-nBAiJOfJ/mEXdaMYYnvZRTlTjw/bqFSWYiWU6tvzeHQ=",
+            "rev": "eb5ad6aedfe40b55d62759ed5b5b27871f54108e",
+            "sha256": "sha256-hbu0GDyIBtgOEROQDRPns7pKvTZLNr1gnw+2itYhZE8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ba0e07a7c9325848fff01f0768c642810442677c"
+        "version": "eb5ad6aedfe40b55d62759ed5b5b27871f54108e"
     },
     "wivrn": {
         "cargoLocks": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "b036731b517903070e4e6fe7ab7688405cb638ed",
-            "sha256": "sha256-71ws4HgdxXvyiU6tFp4ce+mx1yXcdlhKKQ18TGLCSeg=",
+            "rev": "5ccc725ef73aa6b2bda6093a3d0b51f5b574c13d",
+            "sha256": "sha256-v8Sfz+c2ryVwXcrEeQlVFTuSvbSSGLvh9YGGLsgeLFc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b036731b517903070e4e6fe7ab7688405cb638ed"
+        "version": "5ccc725ef73aa6b2bda6093a3d0b51f5b574c13d"
     },
     "wivrn-git-monado": {
         "cargoLocks": null,
