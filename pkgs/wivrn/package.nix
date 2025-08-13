@@ -21,6 +21,7 @@
 , glslang
 , harfbuzz
 , kdePackages
+, libarchive
 , libdrm
 , libGL
 , libnotify
@@ -106,6 +107,7 @@ stdenv.mkDerivation (finalAttrs: {
     kdePackages.kirigami
     kdePackages.qcoro
     kdePackages.qqc2-desktop-style
+    libarchive
     libdrm
     libGL
     libnotify

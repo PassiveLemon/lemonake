@@ -9,6 +9,15 @@
         inherit (package) src;
         version = (lib.removePrefix "v" package.version);
         monadoSrc = monado.src;
+
+        patches = [
+          # Needed to allow WiVRn in-stream GUI to launch Steam games
+          (prev.fetchpatch {
+            name = "wivrn-allow-launching-steam-games.patch";
+            url = "https://github.com/WiVRn/WiVRn/commit/30ceab5b3082cbc545acf8bc8ca4a24279e6f738.diff";
+            hash = "sha256-BD6MhCET7hdjog8rkl7G2l7/zGfVATpNAhNie0efOlA=";
+          })
+        ];
       });
 
       wivrn-git = let

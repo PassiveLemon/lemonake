@@ -40,7 +40,6 @@ let
 
   # Manage server executables and flags
   serverExec = concatStringsSep " " ([ serverPackageExe "--systemd" enabledConfig ] ++ cfg.extraServerFlags);
-  applicationExec = concatStringsSep " " ([ serverPackageExe "--application" enabledConfig ] ++ cfg.extraApplicationFlags);
 in
 {
   options = {
@@ -52,7 +51,7 @@ in
       openFirewall = mkEnableOption "the default ports in the firewall for the WiVRn server";
 
       defaultRuntime = mkEnableOption ''
-        WiVRn Monado as the default OpenXR runtime on the system.
+        WiVRn as the default OpenXR runtime on the system.
         The config can be found at `/etc/xdg/openxr/1/active_runtime.json`.
 
         Note that applications can bypass this option by setting an active
@@ -66,11 +65,7 @@ in
       monadoEnvironment = mkOption {
         type = types.attrs;
         description = "Environment variables to be passed to the Monado environment.";
-        default = {
-          XRT_COMPOSITOR_LOG = "debug";
-          XRT_PRINT_OPTIONS = "on";
-          IPC_EXIT_ON_DISCONNECT = "off";
-        };
+        default = { };
       };
 
       extraServerFlags = mkOption {
@@ -80,17 +75,14 @@ in
         example = literalExpression ''[ "--no-publish-service" ]'';
       };
 
-      extraApplicationFlags = mkOption {
-        type = types.listOf types.str;
-        description = "Flags to add to the wivrn-application service. This is NOT the WiVRn startup application.";
-        default = [ ];
-      };
+      steam = {
+        importOXRRuntimes = mkEnableOption ''
+          Sets `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES` system-wide to allow Steam to automatically discover the WiVRn server.
 
-      extraPackages = mkOption {
-        type = types.listOf types.package;
-        description = "Packages to add to the wivrn-application service $PATH.";
-        default = [ ];
-        example = literalExpression "[ pkgs.bash pkgs.procps ]";
+          Note that you may have to logout for this variable to be visible
+        '';
+
+        package = mkPackageOption pkgs "steam" { };
       };
 
       config = {
@@ -146,19 +138,23 @@ in
 
     systemd.user = {
       services = {
-        # The WiVRn server runs in a hardened service and starts the application in a different service
         wivrn = {
           description = "WiVRn XR runtime service";
-          environment = {
+          environment = recursiveUpdate {
             # Default options
             # https://gitlab.freedesktop.org/monado/monado/-/blob/598080453545c6bf313829e5780ffb7dde9b79dc/src/xrt/targets/service/monado.in.service#L12
             XRT_COMPOSITOR_LOG = "debug";
             XRT_PRINT_OPTIONS = "on";
             IPC_EXIT_ON_DISCONNECT = "off";
-          } // cfg.monadoEnvironment;
+            PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES = mkIf cfg.steam.importOXRRuntimes "1";
+          } cfg.monadoEnvironment;
           serviceConfig = (
-            if !cfg.highPriority
+            if cfg.highPriority
             then {
+              ExecStart = serverExec;
+            }
+            # Hardening options break high-priority
+            else {
               ExecStart = serverExec;
               # Hardening options
               CapabilityBoundingSet = [ "CAP_SYS_NICE" ];
@@ -177,23 +173,13 @@ in
               RestrictNamespaces = true;
               RestrictSUIDSGID = true;
             }
-            else {
-              ExecStart = serverExec;
-            }
           );
+          path = [ cfg.steam.package ];
           wantedBy = mkIf cfg.autoStart [ "default.target" ];
-          restartTriggers = [ cfg.package ];
-        };
-        wivrn-application = mkIf applicationCheck {
-          description = "WiVRn application service";
-          requires = [ "wivrn.service" ];
-          serviceConfig = {
-            ExecStart = applicationExec;
-            Restart = "on-failure";
-            RestartSec = 0;
-            PrivateTmp = true;
-          };
-          path = [ applicationPackage ] ++ cfg.extraPackages;
+          restartTriggers = [
+            cfg.package
+            cfg.steam.package
+          ];
         };
       };
     };
@@ -219,6 +205,9 @@ in
         cfg.package
         applicationPackage
       ];
+      sessionVariables = mkIf cfg.steam.importOXRRuntimes {
+        PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES = "1";
+      };
       pathsToLink = [ "/share/openxr" ];
       etc."xdg/openxr/1/active_runtime.json" = mkIf cfg.defaultRuntime {
         source = "${cfg.package}/share/openxr/1/openxr_wivrn.json";
