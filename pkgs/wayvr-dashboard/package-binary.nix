@@ -1,9 +1,7 @@
 { version
 , src
 , lib
-, rustPlatform
-, buildNpmPackage
-, importNpmLock
+, stdenv
 , alsa-lib
 , autoPatchelfHook
 , curl
@@ -18,49 +16,17 @@
 , wget
 , wrapGAppsHook3
 }:
-rustPlatform.buildRustPackage rec {
+stdenv.mkDerivation {
 	pname = "wayvr-dashboard";
 	inherit version src;
 
-	sourceRoot = "${src.name}/src-tauri";
-
-	cargoHash = "";
-
-	frontend = buildNpmPackage {
-		inherit version src;
-		pname = "wayvr-dashboard-ui";
-
-		npmDeps = importNpmLock {
-			npmRoot = src;
-		};
-
-		npmConfigHook = importNpmLock.npmConfigHook;
-
-		nativeBuildInputs = [
-			autoPatchelfHook
-		];
-
-		dontAutoPatchelf = true;
-
-		preBuild = ''
-			autoPatchelf node_modules/sass-embedded-linux-x64/dart-sass/src/dart
-		'';
-
-		postBuild = ''
-			cp -r dist/ $out
-		'';
-	};
-
-	postPatch = ''
-		substituteInPlace tauri.conf.json \
-			--replace-fail '"frontendDist": "../dist"' '"frontendDist": "${frontend}"'
-		substituteInPlace tauri.conf.json \
-			--replace-fail '"npm run build"' '""'
-	'';
+	dontUnpack = true;
+	dontConfigure = true;
+	dontBuild = true;
 
 	nativeBuildInputs = [
+		autoPatchelfHook
 		pkg-config
-		rustPlatform.bindgenHook
 		wrapGAppsHook3
 	];
 
@@ -76,6 +42,14 @@ rustPlatform.buildRustPackage rec {
 		webkitgtk_4_1
 		wget
 	];
+
+	installPhase = ''
+		runHook preInstall
+	
+		install -m755 -D $src $out/bin/wayvr-dashboard
+
+		runHook postInstall
+	'';
 
 	doCheck = false;
 

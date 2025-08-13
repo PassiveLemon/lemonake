@@ -1,11 +1,11 @@
 { lib, ... }:
 let
-  inherit (lib) overlayPackagerGit;
+  inherit (lib) overlayPackager;
 in
 {
   flake.overlays = {
     opencomposite = final: prev: {
-      opencomposite-git = overlayPackagerGit "opencomposite-git" "opencomposite" prev;
+      opencomposite-git = overlayPackager "opencomposite-git" "opencomposite" prev { };
     };
   };
 }

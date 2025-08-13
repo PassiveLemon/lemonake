@@ -95,6 +95,10 @@ cargo_locks = [ "src-tauri/Cargo.lock" ]
 src.github = "olekolek1000/wayvr-dashboard"
 fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard.AppImage"
 
+[wayvr-dashboard-binary]
+src.github = "olekolek1000/wayvr-dashboard"
+fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard"
+
 [webfisher]
 src.github = "PassiveLemon/webfisher"
 fetch.github = "PassiveLemon/webfisher"

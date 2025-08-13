@@ -1,16 +1,11 @@
 { lib, ... }:
 let
-  inherit (lib) getPackage;
+  inherit (lib) overlayPackager;
 in
 {
   flake.overlays = {
     proton-ge-rtsp = final: prev: {
-      proton-ge-rtsp = let
-        package = getPackage "proton-ge-rtsp" prev;
-      in
-      (prev.proton-ge-bin.overrideAttrs {
-        inherit (package) version src;
-      }).override { steamDisplayName = "GE-Proton-rtsp"; };
+      proton-ge-rtsp = (overlayPackager "proton-ge-rtsp" "proton-ge-bin" prev { }).override { steamDisplayName = "GE-Proton-rtsp"; };
     };
   };
 }

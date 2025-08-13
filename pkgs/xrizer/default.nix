@@ -1,6 +1,6 @@
 { lib, ... }:
 let
-  inherit (lib) getPackage;
+  inherit (lib) getPackage versionFromPackage;
 in
 {
   flake.overlays = {
@@ -10,7 +10,7 @@ in
       in
       prev.xrizer.overrideAttrs {
         inherit (package) src;
-        version = (lib.removePrefix "v" package.version);
+        version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
       };
 
@@ -18,7 +18,8 @@ in
         package = getPackage "xrizer-git" prev;
       in
       prev.xrizer.overrideAttrs {
-        inherit (package) version src;
+        inherit (package) src;
+        version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
       };
     };

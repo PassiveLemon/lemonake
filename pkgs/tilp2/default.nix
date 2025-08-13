@@ -1,6 +1,6 @@
 { lib, ... }:
 let
-  inherit (lib) getPackage;
+  inherit (lib) getPackage versionFromPackage;
 in
 {
   flake.overlays = {
@@ -9,7 +9,8 @@ in
         package = getPackage "tilp2-gfm" prev;
       in
       prev.callPackage ./package.nix {
-        inherit (package) version src;
+        inherit (package) src;
+        version = versionFromPackage package;
         gfm = final.gfm;
       };
 
@@ -17,7 +18,8 @@ in
         package = getPackage "tilp2-gfm-git" prev;
       in
       prev.callPackage ./package.nix {
-        inherit (package) version src;
+        inherit (package) src;
+        version = versionFromPackage package;
         gfm = final.gfm-git;
       };
     };

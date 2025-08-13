@@ -1,6 +1,6 @@
 { lib, ... }:
 let
-  inherit (lib) getPackage;
+  inherit (lib) getPackage versionFromPackage;
 in
 {
   flake.overlays = {
@@ -10,7 +10,7 @@ in
       in
       prev.wlx-overlay-s.overrideAttrs (prevAttrs: {
         inherit (package) src;
-        version = (lib.removePrefix "v" package.version);
+        version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
 
          nativeBuildInputs = prevAttrs.nativeBuildInputs ++ (with prev; [
@@ -22,7 +22,8 @@ in
         package = getPackage "wlx-overlay-s-git" prev;
       in
       prev.wlx-overlay-s.overrideAttrs (prevAttrs: {
-        inherit (package) version src;
+        inherit (package) src;
+        version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
 
         nativeBuildInputs = prevAttrs.nativeBuildInputs ++ (with prev; [

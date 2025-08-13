@@ -10,35 +10,32 @@ extend (final: _: {
 
   getPackage = pname: pkgs: (pkgs.callPackage ../_sources/generated.nix { }).${pname};
 
-  # Implement some way to add optional overrideAttrs
-  packager = pname: path: pkgs:
-    let
-      package = final.getPackage pname pkgs;
-    in
-    pkgs.callPackage path {
-      inherit (package) src;
-      version = removePrefix "v" package.version;
-    };
+  versionRemovePrefix = version:
+    removePrefix "v" version;
 
-  packagerGit = pname: path: pkgs:
-    let
-      package = final.getPackage pname pkgs;
-    in
-    pkgs.callPackage path { inherit (package) version src; };
+  versionGitDateToUnstable = date:
+    "0-unstable-${date}";
 
-  overlayPackager = pname: overridePkg: pkgs:
-    let
-      package = final.getPackage pname pkgs;
-    in
-    pkgs.${overridePkg}.overrideAttrs {
-      inherit (package) src;
-      version = removePrefix "v" package.version;
-    };
+  versionFromPackage = pkg: (
+    if pkg ? "date"
+    then final.versionGitDateToUnstable pkg.date
+    else final.versionRemovePrefix pkg.version
+  );
 
-  overlayPackagerGit = pname: overridePkg: pkgs:
+  packager = pname: path: pkgs: overrideSet:
     let
-      package = final.getPackage pname pkgs;
+      pkg = final.getPackage pname pkgs;
+      src = pkg.src;
+      version = final.versionFromPackage pkg;
     in
-    pkgs.${overridePkg}.overrideAttrs { inherit (package) version src; };
+    (pkgs.callPackage path { inherit version src; }).overrideAttrs overrideSet;
+
+  overlayPackager = pname: overridePkg: pkgs: overrideSet:
+    let
+      pkg = final.getPackage pname pkgs;
+      src = pkg.src;
+      version = final.versionFromPackage pkg;
+    in
+    (pkgs.${overridePkg}.overrideAttrs { inherit version src; }).overrideAttrs overrideSet;
 })
 
