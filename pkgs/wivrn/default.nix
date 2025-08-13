@@ -13,7 +13,7 @@ in
         inherit (package) src;
         version = versionFromPackage package;
         monadoSrc = monado.src;
-
+      }).overrideAttrs {
         patches = [
           # Needed to allow WiVRn in-stream GUI to launch Steam games
           (prev.fetchpatch {
@@ -22,7 +22,7 @@ in
             hash = "sha256-BD6MhCET7hdjog8rkl7G2l7/zGfVATpNAhNie0efOlA=";
           })
         ];
-      });
+      };
 
       wivrn-git = let
         package = getPackage "wivrn-git" prev;
