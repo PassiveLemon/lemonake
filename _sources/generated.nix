@@ -314,15 +314,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "5e4edc9857df103a39b9f54cc5edc36d90d49644";
+    version = "49ab1af5425a5e93d79c8e7494a409cd6316e8cc";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "5e4edc9857df103a39b9f54cc5edc36d90d49644";
+      rev = "49ab1af5425a5e93d79c8e7494a409cd6316e8cc";
       fetchSubmodules = false;
-      sha256 = "sha256-3HnGBXU/f8qumxNj7bWimdXvzD2ki165LaE64bCb0t0=";
+      sha256 = "sha256-Ndj4HvJaz4sqC7pYMymo8zoKqgbEfuIBbfCnKQ8wEyc=";
     };
-    date = "2025-08-11";
+    date = "2025-08-12";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -374,25 +374,25 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "afb71b1985d8598db23ec415cfb4e5ac67730084";
+    version = "dd5e608fd1e3f81922af51de5fccce2d7dcf2908";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "afb71b1985d8598db23ec415cfb4e5ac67730084";
+      rev = "dd5e608fd1e3f81922af51de5fccce2d7dcf2908";
       fetchSubmodules = false;
-      sha256 = "sha256-+tbvKZ4GjHeCH2WPKXYS4kQGiDLeKFwBhClV9XUjX24=";
+      sha256 = "sha256-/SFPHEnkXGIMekYpQp7JeGDfgn5gGs7L3sJL36HYXUE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-git-afb71b1985d8598db23ec415cfb4e5ac67730084/Cargo.lock;
+      lockFile = ./wlx-overlay-s-git-dd5e608fd1e3f81922af51de5fccce2d7dcf2908/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
-        "wlx-capture-0.5.3" = "sha256-1R5R9a9MSCWZ+S8GXu2oMBodoy9CCmCfAwH1eXBPqno=";
+        "wlx-capture-0.5.4" = "sha256-M8yOxmD8rseiYR6FJnoToHeKLkdgJNqnE6STppDi+cI=";
         "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
         "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
       };
     };
-    date = "2025-07-26";
+    date = "2025-08-12";
   };
   xrizer = {
     pname = "xrizer";
