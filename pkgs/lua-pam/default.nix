@@ -1,10 +1,11 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager;
+in
+{
   flake.overlays = {
     lua-pam = final: prev: {
-      lua-pam-git = let
-        package = getPackage "lua-pam-git" prev;
-      in
-      prev.callPackage ./package.nix { inherit (package) version src; };
+      lua-pam-git = packager "lua-pam-git" ./package.nix prev { };
     };
   };
 }

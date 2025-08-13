@@ -1,28 +1,15 @@
-{ lib, getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) overlayPackager;
+in
+{
   flake.overlays = {
     picom = final: prev: {
-      picom = let
-        package = getPackage "picom" prev;
-      in
-      prev.picom.overrideAttrs {
-        inherit (package) src;
-        version = (lib.removePrefix "v" package.version);
-      };
+      picom = overlayPackager "picom" "picom" prev { };
 
-      picom-tag = let
-        package = getPackage "picom-tag" prev;
-      in
-      prev.picom.overrideAttrs {
-        inherit (package) src;
-        version = (lib.removePrefix "v" package.version);
-      };
+      picom-tag = overlayPackager "picom-tag" "picom" prev { };
 
-      picom-git = let
-        package = getPackage "picom-git" prev;
-      in
-      prev.picom.overrideAttrs {
-        inherit (package) version src;
-
+      picom-git = overlayPackager "picom-git" "picom" prev {
         nativeInstallCheckInputs = [ ];
       };
     };

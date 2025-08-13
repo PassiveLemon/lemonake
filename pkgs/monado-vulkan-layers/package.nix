@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers";
     platforms = platforms.linux;
     license = licenses.boost;
-    maintainers = with maintainers; [ scrumplex passivelemon ];
+    maintainers = with maintainers; [ passivelemon ];
     sourceProvenance = with sourceTypes; [ fromSource ];
   };
 })

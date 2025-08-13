@@ -1,22 +1,13 @@
-{ lib, getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager;
+in
+{
   flake.overlays = {
     adgobye = final: prev: {
-      adgobye = let
-        package = getPackage "adgobye" prev;
-      in
-      prev.callPackage ./package.nix {
-        inherit (package) src;
-        version = (lib.removePrefix "v" package.version);
-      };
+      adgobye = packager "adgobye" ./package.nix prev { };
 
-      adgobye-git = let
-        package = getPackage "adgobye-git" prev;
-      in
-      prev.callPackage ./package.nix {
-        inherit (package) src;
-        # Some manipulation of the version string to pass the "is not a valid version string" check
-        version = "0-${package.version}";
-      };
+      adgobye-git = packager "adgobye-git" ./package.nix prev { };
     };
   };
 }

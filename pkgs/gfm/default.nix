@@ -1,15 +1,13 @@
-{ getPackage, ... }: {
+{ lib, ... }:
+let
+  inherit (lib) packager;
+in
+{
   flake.overlays = {
     gfm = final: prev: {
-      gfm = let
-        package = getPackage "tilp2-gfm" prev;
-      in
-      prev.callPackage ./package.nix { inherit (package) version src; };
+      gfm = packager "tilp2-gfm" ./package.nix prev { };
 
-      gfm-git = let
-        package = getPackage "tilp2-gfm-git" prev;
-      in
-      prev.callPackage ./package.nix { inherit (package) version src; };
+      gfm-git = packager "tilp2-gfm-git" ./package.nix prev { };
     };
   };
 }
