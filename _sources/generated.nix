@@ -136,15 +136,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "c97008cd3af9fabeca2276156763fe21e12f3e58";
+    version = "1b78521bac5c2a959b62690a912973943593cb23";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "c97008cd3af9fabeca2276156763fe21e12f3e58";
+      rev = "1b78521bac5c2a959b62690a912973943593cb23";
       fetchSubmodules = false;
-      sha256 = "sha256-jeriuODAEdiCNPJhNPoJMLsuqYPPmEQbXhYM19BDXA0=";
+      sha256 = "sha256-tqIMFIFw0Av7LskxlGPZFafT7vecL/37IyDQkgW4xjw=";
     };
-    date = "2025-08-14";
+    date = "2025-08-19";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -314,15 +314,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "bce3e498e8e5fee7f42c3b44ecdd7cecab75c0af";
+    version = "c2f23223a237ad2cfeb8dbaca35efe503e37aa92";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "bce3e498e8e5fee7f42c3b44ecdd7cecab75c0af";
+      rev = "c2f23223a237ad2cfeb8dbaca35efe503e37aa92";
       fetchSubmodules = false;
-      sha256 = "sha256-HqjahsRPcWlJkYOYnYco5ETImGZnyUmAtL2XK+XBRqw=";
+      sha256 = "sha256-cHdru4MCk/CCwCM14LPYXbN0kiU2sgBEedEPmJF0sIw=";
     };
-    date = "2025-08-16";
+    date = "2025-08-18";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -413,20 +413,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "76e01ac8ad79fed226a883985daa3cbe61271ca7";
+    version = "3dea65a03a2ff579ea69cf84acb29f8c12072b3d";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "76e01ac8ad79fed226a883985daa3cbe61271ca7";
+      rev = "3dea65a03a2ff579ea69cf84acb29f8c12072b3d";
       fetchSubmodules = false;
-      sha256 = "sha256-o6/uGbczYp5t6trjFIltZAMSM61adn+BvNb1fBhBSsk=";
+      sha256 = "sha256-Dxr8/mL1Dw1O4ARViquT0M5Zj1Ye7WeBryUoqizbqyk=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-76e01ac8ad79fed226a883985daa3cbe61271ca7/Cargo.lock;
+      lockFile = ./xrizer-git-3dea65a03a2ff579ea69cf84acb29f8c12072b3d/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-07-29";
+    date = "2025-08-17";
   };
 }
