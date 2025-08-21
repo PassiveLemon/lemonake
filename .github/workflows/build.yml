@@ -33,18 +33,20 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
 
-    - name: Build non-redistributable packages
       # https://www.reddit.com/r/NixOS/comments/vohopf/is_there_an_easy_way_to_build_all_the_packages_of/
       # Potential future solution: https://github.com/NixOS/nix/issues/7165
       # x86_64-linux is currently the only supported architecture
+    - name: Build non-redistributable packages
       run: |
         nix eval .#nonRedistributablePackages --json | jq '."x86_64-linux"[]' | xargs -I {} nix build .#{} --keep-going
 
-    - name: Build redistributable packages for Cachix
+    - name: Set up Cachix
       uses: cachix/cachix-action@v15
       with:
         name: passivelemon
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: |
+
+    - name: Build redistributable packages for Cachix
+      run: |
         nix eval .#redistributablePackages --json | jq '."x86_64-linux"[]' | xargs -I {} nix build .#{} --keep-going
 
