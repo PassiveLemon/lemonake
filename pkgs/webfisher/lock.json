@@ -5,11 +5,11 @@
       "packages": [
         "libevdev"
       ],
-      "path": "/nix/store/ah8xajfp2qwmial57157c15a84k2d479-source",
-      "rev": "c509da320c45b3b77c2da2d45e695511ff457ba0",
-      "sha256": "0k3n1q6251d462lpnnq31zqz86wbb3n8cm4jlcvh37qsy4hjibxx",
+      "path": "/nix/store/hvy91ipp9p9az57nc2i25q6ws8w8a15n-source",
+      "rev": "4d9b3581df1b95ffc400ae965958039e0687f1d0",
+      "sha256": "18nlr740jzb1s0hc3ggzgm79l6989s5i7y00vib9fri7z2hc2ra9",
       "srcDir": "",
-      "url": "https://github.com/PassiveLemon/libevdev-nim/archive/c509da320c45b3b77c2da2d45e695511ff457ba0.tar.gz"
+      "url": "https://github.com/PassiveLemon/libevdev-nim/archive/4d9b3581df1b95ffc400ae965958039e0687f1d0.tar.gz"
     },
     {
       "method": "fetchzip",
@@ -22,7 +22,18 @@
       "sha256": "16npqgmi2qawjxaddj9ax15rfpdc7sqc37i2r5vg23lyr6znq4wc",
       "srcDir": "",
       "url": "https://github.com/nim-lang/x11/archive/29aca5e519ebf5d833f63a6a2769e62ec7bfb83a.tar.gz"
+    },
+    {
+      "method": "fetchzip",
+      "packages": [
+        "winim"
+      ],
+      "path": "/nix/store/qp2iv7zxx76yai75kqv7x9qhcf3n5x33-source",
+      "ref": "3.9.4",
+      "rev": "6fdee629140baa0d7060ddf86662457d11f50d35",
+      "sha256": "1v5jcylcsgk2x2aylzdk9fgyygjylz1ikmp2xxj6prck7wk6kxdv",
+      "srcDir": "",
+      "url": "https://github.com/khchen/winim/archive/6fdee629140baa0d7060ddf86662457d11f50d35.tar.gz"
     }
   ]
 }
-
