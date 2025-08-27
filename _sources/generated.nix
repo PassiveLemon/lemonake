@@ -314,27 +314,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "8f8e583eb67f9e381fb90b6a23a0a20056ce13a9";
+    version = "9f2aa0157c99e93b4d21877cd89bcfa8d22fb4a1";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "8f8e583eb67f9e381fb90b6a23a0a20056ce13a9";
+      rev = "9f2aa0157c99e93b4d21877cd89bcfa8d22fb4a1";
       fetchSubmodules = false;
-      sha256 = "sha256-vubg6e3E/JlQvYmFUiDTvMpqIfOh3CEob1Nadsrt77E=";
+      sha256 = "sha256-FgSfN17I2zcvnO4p2bxVz6zsoSdB/IWHvud2r/kFOeA=";
     };
-    date = "2025-08-24";
+    date = "2025-08-26";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "5c137fe28b232fe460f9b03defa7749adc32ee48";
+    version = "7a4018e2d89151e60e562fac79eba90ca7a328d8";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "5c137fe28b232fe460f9b03defa7749adc32ee48";
+      rev = "7a4018e2d89151e60e562fac79eba90ca7a328d8";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-4P/ejRAitrYn8hXZPaDOcx27utfm+aVLjtqL6JxZYAg=";
+      sha256 = "sha256-DPIvJb23bK7SDjZr9mK0Wt6Zbo3Ari3Ar8TtPe5QgKY=";
     };
   };
   wivrn-monado = {
@@ -413,20 +413,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "bfaf59725c0f56e24f7b78b4dd6ac09f5859eafc";
+    version = "072476c7fa5f090ee0e8f6a376d4907288e36252";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "bfaf59725c0f56e24f7b78b4dd6ac09f5859eafc";
+      rev = "072476c7fa5f090ee0e8f6a376d4907288e36252";
       fetchSubmodules = false;
-      sha256 = "sha256-Js0wRa7+piI9Hm2gtWoTpixualA4By0M499PfIZ/+BA=";
+      sha256 = "sha256-5DQw3RQopBcVeuEoKlaHo0KUDHslBqor9RDe99DAvH0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-bfaf59725c0f56e24f7b78b4dd6ac09f5859eafc/Cargo.lock;
+      lockFile = ./xrizer-git-072476c7fa5f090ee0e8f6a376d4907288e36252/Cargo.lock;
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-08-23";
+    date = "2025-08-26";
   };
 }
