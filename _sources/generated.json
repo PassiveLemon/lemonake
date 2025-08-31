@@ -225,12 +225,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "nimpad",
-            "rev": "d9dd223ba023338b8930460143585067ab4ffb66",
-            "sha256": "sha256-hSErhWKh2QN4+LnLLdGdqkUa0+WGqEloz7GDkrXNECs=",
+            "rev": "f1997947e6bb959120ed85fb99b008cd7b743630",
+            "sha256": "sha256-UV+aW/FgTZrBX/dq/vlL5O9EyIIEduhcXNEoM50Bnpw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d9dd223ba023338b8930460143585067ab4ffb66"
+        "version": "f1997947e6bb959120ed85fb99b008cd7b743630"
     },
     "opencomposite-git": {
         "cargoLocks": null,
