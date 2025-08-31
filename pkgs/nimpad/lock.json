@@ -1,0 +1,27 @@
+{
+  "depends": [
+    {
+      "method": "fetchzip",
+      "packages": [
+        "libevdev"
+      ],
+      "path": "/nix/store/hvy91ipp9p9az57nc2i25q6ws8w8a15n-source",
+      "rev": "4d9b3581df1b95ffc400ae965958039e0687f1d0",
+      "sha256": "18nlr740jzb1s0hc3ggzgm79l6989s5i7y00vib9fri7z2hc2ra9",
+      "srcDir": "",
+      "url": "https://github.com/PassiveLemon/libevdev-nim/archive/4d9b3581df1b95ffc400ae965958039e0687f1d0.tar.gz"
+    },
+    {
+      "method": "fetchzip",
+      "packages": [
+        "serial"
+      ],
+      "path": "/nix/store/hzcl73yxk0szz1040hzqh72lpnhr74av-source",
+      "ref": "v1.2.0",
+      "rev": "dd0ab807b34bd8221e6c1ac83ed8ffa31bc39d8e",
+      "sha256": "15az19ykjj7dawsljylix7rxlyjv3cd01s8sn5d2nbfd37rqsyiw",
+      "srcDir": "src",
+      "url": "https://github.com/euantorano/serial.nim/archive/dd0ab807b34bd8221e6c1ac83ed8ffa31bc39d8e.tar.gz"
+    }
+  ]
+}

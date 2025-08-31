@@ -190,6 +190,48 @@
         },
         "version": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2"
     },
+    "nimpad": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "nimpad",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "nimpad",
+            "rev": "0.1.0",
+            "sha256": "sha256-hSErhWKh2QN4+LnLLdGdqkUa0+WGqEloz7GDkrXNECs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "0.1.0"
+    },
+    "nimpad-git": {
+        "cargoLocks": null,
+        "date": "2025-08-30",
+        "extract": null,
+        "name": "nimpad-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "PassiveLemon",
+            "repo": "nimpad",
+            "rev": "d9dd223ba023338b8930460143585067ab4ffb66",
+            "sha256": "sha256-hSErhWKh2QN4+LnLLdGdqkUa0+WGqEloz7GDkrXNECs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "d9dd223ba023338b8930460143585067ab4ffb66"
+    },
     "opencomposite-git": {
         "cargoLocks": null,
         "date": "2025-07-21",
@@ -702,13 +744,13 @@
     "xrizer-git": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./xrizer-git-072476c7fa5f090ee0e8f6a376d4907288e36252/Cargo.lock",
+                "./xrizer-git-ffcda1aa1b8cd7e208117ff1632f561e9d8ecdd0/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-08-26",
+        "date": "2025-08-30",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -720,11 +762,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "072476c7fa5f090ee0e8f6a376d4907288e36252",
-            "sha256": "sha256-5DQw3RQopBcVeuEoKlaHo0KUDHslBqor9RDe99DAvH0=",
+            "rev": "ffcda1aa1b8cd7e208117ff1632f561e9d8ecdd0",
+            "sha256": "sha256-6keLXin7h4IveHMHDPnlCja6pN76nhOr0+87k8BgrpM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "072476c7fa5f090ee0e8f6a376d4907288e36252"
+        "version": "ffcda1aa1b8cd7e208117ff1632f561e9d8ecdd0"
     }
 }

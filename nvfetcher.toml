@@ -40,6 +40,14 @@ fetch.github = "RMTT/lua-pam"
 src.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers"
 fetch.git = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
 
+[nimpad]
+src.github = "PassiveLemon/nimpad"
+fetch.github = "PassiveLemon/nimpad"
+
+[nimpad-git]
+src.git = "https://github.com/PassiveLemon/nimpad"
+fetch.github = "PassiveLemon/nimpad"
+
 [opencomposite-git]
 src.git = "https://gitlab.com/znixian/OpenOVR"
 fetch.git = "https://gitlab.com/znixian/OpenOVR.git"

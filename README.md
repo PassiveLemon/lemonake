@@ -47,6 +47,8 @@ Packages:
 - `gfm-git`
 - `lua-pam-git`
 - `monado-vulkan-layers-git`
+- `nimpad`
+- `nimpad-git`
 - `opencomposite-git`
 - `picom`
 - `picom-tag`
