@@ -111,26 +111,26 @@
   };
   nimpad = {
     pname = "nimpad";
-    version = "0.1.0";
+    version = "0.2.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "0.1.0";
+      rev = "0.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-hSErhWKh2QN4+LnLLdGdqkUa0+WGqEloz7GDkrXNECs=";
+      sha256 = "sha256-o/+9iTsg9r9EqsdQWFmt3cvN89wtjPTXvrWnbfB0/xs=";
     };
   };
   nimpad-git = {
     pname = "nimpad-git";
-    version = "f1997947e6bb959120ed85fb99b008cd7b743630";
+    version = "31b04f0e811bd4a78249fc65ac925eb5b112d92d";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "f1997947e6bb959120ed85fb99b008cd7b743630";
+      rev = "31b04f0e811bd4a78249fc65ac925eb5b112d92d";
       fetchSubmodules = false;
-      sha256 = "sha256-UV+aW/FgTZrBX/dq/vlL5O9EyIIEduhcXNEoM50Bnpw=";
+      sha256 = "sha256-zM6T27o+eF2bBf/mXL+5LY5XYf09vX8vJaPQmMCTa3Y=";
     };
-    date = "2025-08-30";
+    date = "2025-08-31";
   };
   opencomposite-git = {
     pname = "opencomposite-git";
@@ -337,15 +337,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "74ff55d5cbad0790146a3c8bbb67a8c28f42f324";
+    version = "5ff85ef7a7704c1220475baf316ba18e19aab65d";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "74ff55d5cbad0790146a3c8bbb67a8c28f42f324";
+      rev = "5ff85ef7a7704c1220475baf316ba18e19aab65d";
       fetchSubmodules = false;
-      sha256 = "sha256-/6yUHs22GfDAxlqR/1B5IgDj8KB0u//xEyNPumnq/RE=";
+      sha256 = "sha256-lbIPo4RNNoFVLEGLqV4OYpUHfad9MZ0/5zSQc1bzMYI=";
     };
-    date = "2025-08-27";
+    date = "2025-08-31";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
