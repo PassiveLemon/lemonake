@@ -76,13 +76,13 @@ in
       };
 
       steam = {
+        package = mkPackageOption pkgs "steam" { };
+
         importOXRRuntimes = mkEnableOption ''
           Sets `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES` system-wide to allow Steam to automatically discover the WiVRn server.
 
           Note that you may have to logout for this variable to be visible
         '';
-
-        package = mkPackageOption pkgs "steam" { };
       };
 
       config = {
@@ -209,8 +209,13 @@ in
         PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES = "1";
       };
       pathsToLink = [ "/share/openxr" ];
-      etc."xdg/openxr/1/active_runtime.json" = mkIf cfg.defaultRuntime {
-        source = "${cfg.package}/share/openxr/1/openxr_wivrn.json";
+      etc = {
+        "wivrn/config.json" = mkIf cfg.config.enable {
+          source = configFile;
+        };
+        "xdg/openxr/1/active_runtime.json" = mkIf cfg.defaultRuntime {
+          source = "${cfg.package}/share/openxr/1/openxr_wivrn.json";
+        };
       };
     };
   };

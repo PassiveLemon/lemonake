@@ -5,6 +5,8 @@
 
 When pairing a headset, the code should popup in your notifications, but if you don't have a notification daemon, you can also find the pairing code through the systemctl logs (`systemctl --user status wivrn`) or the dashboard.
 
+You can find official configuration information [here](https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md)
+
 ## Example usage
 ```nix
 # configuration.nix
@@ -38,5 +40,5 @@ When pairing a headset, the code should popup in your notifications, but if you 
 }
 ```
 > [!NOTE]
-> Note that the application option should be a list with package as the first element, but just using a package also works.
+> Note that the application option should be a list with a package as the first element, but just using a package also works.
 
