@@ -205,10 +205,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton9-22-rtsp17";
+    version = "GE-Proton10-15-rtsp18";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton9-22-rtsp17/GE-Proton9-22-rtsp17.tar.gz";
-      sha256 = "sha256-1zj0y7E9JWrnPC9HllFXos33rsdAt3q+NamoxNTmHHM=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-15-rtsp18/GE-Proton10-15-rtsp18.tar.gz";
+      sha256 = "sha256-sz/HyH/WLZNIpTushlpsuINyWw+QcxaHXdAcSKrTCBk=";
     };
   };
   tilp2-gfm = {
@@ -337,15 +337,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "88ae120c5276cec030bd58477efc6d82564c94c7";
+    version = "509311604c7de5e72ca77889ce9a7c23ddde8ae1";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "88ae120c5276cec030bd58477efc6d82564c94c7";
+      rev = "509311604c7de5e72ca77889ce9a7c23ddde8ae1";
       fetchSubmodules = false;
-      sha256 = "sha256-A615Pqw6+sfZFcMYSj+xyj2pU2KqZNtwVi3rOvxaAP0=";
+      sha256 = "sha256-JSD0p8mRiyzsNlzmvcIyvKdrdmoAcXuhqlzWWItjbQQ=";
     };
-    date = "2025-09-14";
+    date = "2025-09-15";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
