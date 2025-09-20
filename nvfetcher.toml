@@ -134,20 +134,20 @@ fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 [wlx-overlay-s]
 src.github = "galister/wlx-overlay-s"
 fetch.github = "galister/wlx-overlay-s"
-cargo_locks = [ "Cargo.lock" ]
+cargo_lock = [ "Cargo.lock" ]
 
 [wlx-overlay-s-git]
 src.git = "https://github.com/galister/wlx-overlay-s"
 fetch.github = "galister/wlx-overlay-s"
-cargo_locks = [ "Cargo.lock" ]
+cargo_lock = [ "Cargo.lock" ]
 
 [xrizer]
 src.github = "Supreeeme/xrizer"
 fetch.github = "Supreeeme/xrizer"
-cargo_locks = [ "Cargo.lock" ]
+cargo_lock = [ "Cargo.lock" ]
 
 [xrizer-git]
 src.git = "https://github.com/Supreeeme/xrizer"
 fetch.github = "Supreeeme/xrizer"
-cargo_locks = [ "Cargo.lock" ]
+cargo_lock = [ "Cargo.lock" ]
 

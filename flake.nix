@@ -28,7 +28,7 @@
       devShells = {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            nvfetcher act
+            nvfetcher jq act
           ];
         };
       };
