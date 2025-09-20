@@ -92,12 +92,12 @@ fetch.github = "micheal65536/VapoR"
 [wayvr-dashboard]
 src.github = "olekolek1000/wayvr-dashboard"
 fetch.github = "olekolek1000/wayvr-dashboard"
-cargo_locks = [ "src-tauri/Cargo.lock" ]
+cargo_lock = [ "src-tauri/Cargo.lock" ]
 
 [wayvr-dashboard-git]
 src.git = "https://github.com/olekolek1000/wayvr-dashboard"
 fetch.github = "olekolek1000/wayvr-dashboard"
-cargo_locks = [ "src-tauri/Cargo.lock" ]
+cargo_lock = [ "src-tauri/Cargo.lock" ]
 
 [wayvr-dashboard-appimage]
 src.github = "olekolek1000/wayvr-dashboard"
