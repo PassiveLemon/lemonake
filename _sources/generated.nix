@@ -261,6 +261,14 @@
       fetchSubmodules = false;
       sha256 = "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=";
     };
+    cargoLock."src-tauri/Cargo.lock" = {
+      lockFile = ./. + "/sha256-yxnpOO_p8OFqn_zCC4rOx_4mU7pqLcot6pVsYMrkIhI=/src-tauri/Cargo.lock";
+      outputHashes = {
+        "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
+        "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
+        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
+      };
+    };
   };
   wayvr-dashboard-appimage = {
     pname = "wayvr-dashboard-appimage";
@@ -287,6 +295,14 @@
       rev = "580daf23923e7376e6a770b1a8fcf6188bd6db9c";
       fetchSubmodules = false;
       sha256 = "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=";
+    };
+    cargoLock."src-tauri/Cargo.lock" = {
+      lockFile = ./. + "/sha256-yxnpOO_p8OFqn_zCC4rOx_4mU7pqLcot6pVsYMrkIhI=/src-tauri/Cargo.lock";
+      outputHashes = {
+        "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
+        "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
+        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
+      };
     };
     date = "2025-08-27";
   };
