@@ -241,15 +241,15 @@
   };
   vapor-git = {
     pname = "vapor-git";
-    version = "3779d589e5dffc1fbbcce278a63f38150113e2a4";
+    version = "775531f8c6323a3450b05ba2e4e1ef7802d9bafc";
     src = fetchFromGitHub {
       owner = "micheal65536";
       repo = "VapoR";
-      rev = "3779d589e5dffc1fbbcce278a63f38150113e2a4";
+      rev = "775531f8c6323a3450b05ba2e4e1ef7802d9bafc";
       fetchSubmodules = false;
-      sha256 = "sha256-1Bd8wPYpjcaVz6bi7I3Patwoy5Dpe4SxLjCgqcw4dSI=";
+      sha256 = "sha256-JysqSSr2LW7dTzEWX5ntJovJydhA6OjRhzleftj0SKE=";
     };
-    date = "2025-09-18";
+    date = "2025-09-19";
   };
   wayvr-dashboard = {
     pname = "wayvr-dashboard";
@@ -260,14 +260,6 @@
       rev = "0.3.7";
       fetchSubmodules = false;
       sha256 = "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=";
-    };
-    cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./wayvr-dashboard-0.3.7/src-tauri/Cargo.lock;
-      outputHashes = {
-        "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
-        "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
-        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
-      };
     };
   };
   wayvr-dashboard-appimage = {
@@ -295,14 +287,6 @@
       rev = "580daf23923e7376e6a770b1a8fcf6188bd6db9c";
       fetchSubmodules = false;
       sha256 = "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=";
-    };
-    cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./wayvr-dashboard-git-580daf23923e7376e6a770b1a8fcf6188bd6db9c/src-tauri/Cargo.lock;
-      outputHashes = {
-        "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
-        "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
-        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
-      };
     };
     date = "2025-08-27";
   };
@@ -342,15 +326,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "6ddde98714afc8ddaa9cae9ecba7b3dd95017d71";
+    version = "98347fc8322cdad4a1f6ba83f24ac44c859741b7";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "6ddde98714afc8ddaa9cae9ecba7b3dd95017d71";
+      rev = "98347fc8322cdad4a1f6ba83f24ac44c859741b7";
       fetchSubmodules = false;
-      sha256 = "sha256-q+UD7yoO5r3TzCwrAlc70Pivlx6S60ksb2Cqmuvx6mo=";
+      sha256 = "sha256-8oMdHynhv96gBo+yEOiwwfROjpQBRuXKic7HtUT/pe4=";
     };
-    date = "2025-09-18";
+    date = "2025-09-19";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -388,17 +372,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-lWUfhiHRxu72p9ZG2f2fZH6WZECm/fOKcK05MLZV+MI=";
     };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-v25.4.2/Cargo.lock;
-      outputHashes = {
-        "libmonado-1.3.1" = "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=";
-        "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
-        "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
-        "wlx-capture-0.5.2" = "sha256-rw6konHyvUeb9c5Ln+yUgjJIxymiJfaWKLUL8vDqjnM=";
-        "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
-        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
-      };
-    };
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
@@ -409,16 +382,6 @@
       rev = "fbd518952127299dddea91122e0dcb53a0218568";
       fetchSubmodules = false;
       sha256 = "sha256-yT18j0v8MtpXwK4REIwgGDY5HNvxtMY2tqRGE/zF64w=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./wlx-overlay-s-git-fbd518952127299dddea91122e0dcb53a0218568/Cargo.lock;
-      outputHashes = {
-        "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
-        "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
-        "wlx-capture-0.5.4" = "sha256-M8yOxmD8rseiYR6FJnoToHeKLkdgJNqnE6STppDi+cI=";
-        "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
-        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
-      };
     };
     date = "2025-08-13";
   };
@@ -432,12 +395,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-o6/uGbczYp5t6trjFIltZAMSM61adn+BvNb1fBhBSsk=";
     };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-v0.3/Cargo.lock;
-      outputHashes = {
-        "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
-      };
-    };
   };
   xrizer-git = {
     pname = "xrizer-git";
@@ -448,12 +405,6 @@
       rev = "33564b26b7df6950efa3d0f55cd91e20a5e8cb3e";
       fetchSubmodules = false;
       sha256 = "sha256-yjdUrZDaUwiCMtnPbVrEFBI6IzNqbgrdp4CLhR/JSEc=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./xrizer-git-33564b26b7df6950efa3d0f55cd91e20a5e8cb3e/Cargo.lock;
-      outputHashes = {
-        "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
-      };
     };
     date = "2025-09-17";
   };
