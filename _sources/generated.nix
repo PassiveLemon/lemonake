@@ -372,6 +372,17 @@
       fetchSubmodules = false;
       sha256 = "sha256-lWUfhiHRxu72p9ZG2f2fZH6WZECm/fOKcK05MLZV+MI=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-lWUfhiHRxu72p9ZG2f2fZH6WZECm_fOKcK05MLZV+MI=/Cargo.lock";
+      outputHashes = {
+        "libmonado-1.3.1" = "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=";
+        "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
+        "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
+        "wlx-capture-0.5.2" = "sha256-rw6konHyvUeb9c5Ln+yUgjJIxymiJfaWKLUL8vDqjnM=";
+        "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
+        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
+      };
+    };
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
@@ -382,6 +393,16 @@
       rev = "fbd518952127299dddea91122e0dcb53a0218568";
       fetchSubmodules = false;
       sha256 = "sha256-yT18j0v8MtpXwK4REIwgGDY5HNvxtMY2tqRGE/zF64w=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-yT18j0v8MtpXwK4REIwgGDY5HNvxtMY2tqRGE_zF64w=/Cargo.lock";
+      outputHashes = {
+        "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
+        "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
+        "wlx-capture-0.5.4" = "sha256-M8yOxmD8rseiYR6FJnoToHeKLkdgJNqnE6STppDi+cI=";
+        "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
+        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
+      };
     };
     date = "2025-08-13";
   };
@@ -395,6 +416,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-o6/uGbczYp5t6trjFIltZAMSM61adn+BvNb1fBhBSsk=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-o6_uGbczYp5t6trjFIltZAMSM61adn+BvNb1fBhBSsk=/Cargo.lock";
+      outputHashes = {
+        "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
+      };
+    };
   };
   xrizer-git = {
     pname = "xrizer-git";
@@ -405,6 +432,12 @@
       rev = "33564b26b7df6950efa3d0f55cd91e20a5e8cb3e";
       fetchSubmodules = false;
       sha256 = "sha256-yjdUrZDaUwiCMtnPbVrEFBI6IzNqbgrdp4CLhR/JSEc=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-yjdUrZDaUwiCMtnPbVrEFBI6IzNqbgrdp4CLhR_JSEc=/Cargo.lock";
+      outputHashes = {
+        "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
+      };
     };
     date = "2025-09-17";
   };

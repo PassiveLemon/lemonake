@@ -631,7 +631,19 @@
         "version": "7a4018e2d89151e60e562fac79eba90ca7a328d8"
     },
     "wlx-overlay-s": {
-        "cargoLock": null,
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-lWUfhiHRxu72p9ZG2f2fZH6WZECm_fOKcK05MLZV+MI=/Cargo.lock",
+                {
+                    "libmonado-1.3.1": "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=",
+                    "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
+                    "openxr-0.18.0": "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=",
+                    "ovr_overlay-0.0.0": "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=",
+                    "wayvr_ipc-0.1.0": "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=",
+                    "wlx-capture-0.5.2": "sha256-rw6konHyvUeb9c5Ln+yUgjJIxymiJfaWKLUL8vDqjnM="
+                }
+            ]
+        },
         "date": null,
         "extract": null,
         "name": "wlx-overlay-s",
@@ -652,7 +664,18 @@
         "version": "v25.4.2"
     },
     "wlx-overlay-s-git": {
-        "cargoLock": null,
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-yT18j0v8MtpXwK4REIwgGDY5HNvxtMY2tqRGE_zF64w=/Cargo.lock",
+                {
+                    "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
+                    "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=",
+                    "ovr_overlay-0.0.0": "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=",
+                    "wayvr_ipc-0.1.0": "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=",
+                    "wlx-capture-0.5.4": "sha256-M8yOxmD8rseiYR6FJnoToHeKLkdgJNqnE6STppDi+cI="
+                }
+            ]
+        },
         "date": "2025-08-13",
         "extract": null,
         "name": "wlx-overlay-s-git",
@@ -673,7 +696,14 @@
         "version": "fbd518952127299dddea91122e0dcb53a0218568"
     },
     "xrizer": {
-        "cargoLock": null,
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-o6_uGbczYp5t6trjFIltZAMSM61adn+BvNb1fBhBSsk=/Cargo.lock",
+                {
+                    "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
+                }
+            ]
+        },
         "date": null,
         "extract": null,
         "name": "xrizer",
@@ -694,7 +724,14 @@
         "version": "v0.3"
     },
     "xrizer-git": {
-        "cargoLock": null,
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-yjdUrZDaUwiCMtnPbVrEFBI6IzNqbgrdp4CLhR_JSEc=/Cargo.lock",
+                {
+                    "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
+                }
+            ]
+        },
         "date": "2025-09-17",
         "extract": null,
         "name": "xrizer-git",
