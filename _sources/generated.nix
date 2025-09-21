@@ -210,10 +210,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton10-15-rtsp18";
+    version = "GE-Proton10-15-rtsp18-1";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-15-rtsp18/GE-Proton10-15-rtsp18.tar.gz";
-      sha256 = "sha256-sz/HyH/WLZNIpTushlpsuINyWw+QcxaHXdAcSKrTCBk=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-15-rtsp18-1/GE-Proton10-15-rtsp18-1.tar.gz";
+      sha256 = "sha256-SPf8YWmNcGDhh/WTVQ7lET1+UKYKp6sHXhKpKjHKlHM=";
     };
   };
   tilp2-gfm = {
