@@ -56,10 +56,6 @@ stdenv.mkDerivation (finalAttrs: {
   monado = applyPatches {
     src = monadoSrc;
 
-    patches = [
-      ./force-enable-steamvr_lh.patch
-    ];
-
     postPatch = ''
       ${finalAttrs.src}/patches/apply.sh ${finalAttrs.src}/patches/monado/*
     '';
