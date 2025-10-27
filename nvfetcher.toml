@@ -92,11 +92,11 @@ fetch.github = "olekolek1000/wayvr-dashboard"
 cargo_lock = [ "src-tauri/Cargo.lock" ]
 
 [wayvr-dashboard-appimage]
-src.github = "olekolek1000/wayvr-dashboard"
+src.manual = "0.3.7"
 fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard.AppImage"
 
 [wayvr-dashboard-binary]
-src.github = "olekolek1000/wayvr-dashboard"
+src.manual = "0.3.7"
 fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard"
 
 [webfisher]
