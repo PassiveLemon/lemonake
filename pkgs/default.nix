@@ -3,7 +3,6 @@ let
   libLemonake = import ../parts/lib.nix { inherit config lib pkgs; };
 
   overlayPackages = [
-    "adgobye"
     "alcom"
     "autoadb"
     "gdlauncher"

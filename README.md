@@ -36,8 +36,6 @@ Modules:
 
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
-- `adgobye`
-- `adgobye-git`
 - `alcom`
 - `awmtt-git`
 - `gdlauncher` (Alias to `gdlauncher-carbon`)

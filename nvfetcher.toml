@@ -1,11 +1,3 @@
-[adgobye]
-src.github = "AdGoBye/AdGoBye"
-fetch.github = "AdGoBye/AdGoBye"
-
-[adgobye-git]
-src.git = "https://github.com/AdGoBye/AdGoBye"
-fetch.github = "AdGoBye/AdGoBye"
-
 [alcom]
 src.github_tag = "vrc-get/vrc-get"
 src.include_regex = "gui-v(.*)"
