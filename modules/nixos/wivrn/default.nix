@@ -13,6 +13,9 @@ let
   # The application option should be a list with package as the first element, though a single package is also valid.
   # Note that this module depends on the package containing the meta.mainProgram attribute.
 
+  ## I think this should be refactored where the user just needs to add the package to PATH and then can use a string
+  ## for the binary instead of us resolving the path to the executable path. Would need to handle deprecation though.
+
   # Check if an application is provided
   applicationAttrExists = hasAttr "application" cfg.config.json;
   applicationList = toList cfg.config.json.application;
