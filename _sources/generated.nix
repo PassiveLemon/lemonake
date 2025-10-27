@@ -6,29 +6,6 @@
   dockerTools,
 }:
 {
-  adgobye = {
-    pname = "adgobye";
-    version = "v4.0.2+v4IsBrokenPullMe";
-    src = fetchFromGitHub {
-      owner = "AdGoBye";
-      repo = "AdGoBye";
-      rev = "v4.0.2+v4IsBrokenPullMe";
-      fetchSubmodules = false;
-      sha256 = "sha256-YDrSmLNQti6Jk6uljpN47f3GirtStcGuPc0GCz9OTBA=";
-    };
-  };
-  adgobye-git = {
-    pname = "adgobye-git";
-    version = "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b";
-    src = fetchFromGitHub {
-      owner = "AdGoBye";
-      repo = "AdGoBye";
-      rev = "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b";
-      fetchSubmodules = false;
-      sha256 = "sha256-96WEFSWe1YaCAs702md5UTmgovx6FjiFUfr6wnQXnv4=";
-    };
-    date = "2024-10-05";
-  };
   alcom = {
     pname = "alcom";
     version = "1.1.4";
@@ -164,15 +141,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "69539edc0638019e3dd88c67007e90ce7f51174e";
+    version = "a8ef63dbc7543d2951c1a204732f1fe9189aa93c";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "69539edc0638019e3dd88c67007e90ce7f51174e";
+      rev = "a8ef63dbc7543d2951c1a204732f1fe9189aa93c";
       fetchSubmodules = false;
-      sha256 = "sha256-mGEQSbSlurqim6JFhshsqypIDYXcTok8ySPMD/ee2fA=";
+      sha256 = "sha256-LxqopE8l7dQou3es2KUDu/XTjUKjMA9Y+LnErcaVdUU=";
     };
-    date = "2025-08-23";
+    date = "2025-10-25";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -253,16 +230,16 @@
   };
   wayvr-dashboard = {
     pname = "wayvr-dashboard";
-    version = "0.3.7";
+    version = "0.3.8";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "0.3.7";
+      rev = "0.3.8";
       fetchSubmodules = false;
-      sha256 = "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=";
+      sha256 = "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=";
     };
     cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./. + "/sha256-yxnpOO_p8OFqn_zCC4rOx_4mU7pqLcot6pVsYMrkIhI=/src-tauri/Cargo.lock";
+      lockFile = ./. + "/sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=/src-tauri/Cargo.lock";
       outputHashes = {
         "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
         "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
@@ -288,23 +265,23 @@
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
-    version = "580daf23923e7376e6a770b1a8fcf6188bd6db9c";
+    version = "952d92bfedf99f4bc16155394cf9e3fe2f08a8bf";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "580daf23923e7376e6a770b1a8fcf6188bd6db9c";
+      rev = "952d92bfedf99f4bc16155394cf9e3fe2f08a8bf";
       fetchSubmodules = false;
-      sha256 = "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=";
+      sha256 = "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=";
     };
     cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./. + "/sha256-yxnpOO_p8OFqn_zCC4rOx_4mU7pqLcot6pVsYMrkIhI=/src-tauri/Cargo.lock";
+      lockFile = ./. + "/sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=/src-tauri/Cargo.lock";
       outputHashes = {
         "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
         "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
         "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
       };
     };
-    date = "2025-08-27";
+    date = "2025-10-19";
   };
   webfisher = {
     pname = "webfisher";
@@ -342,15 +319,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "1dd0ed4fe34235e7ca127cf72ff898928bce5d27";
+    version = "2204fdd39682cfc052556d58fdb9404dd8ecf63f";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "1dd0ed4fe34235e7ca127cf72ff898928bce5d27";
+      rev = "2204fdd39682cfc052556d58fdb9404dd8ecf63f";
       fetchSubmodules = false;
-      sha256 = "sha256-+3yIwoacXyF4ykN/5dVwO28BLCqofLF0TbSpj/ObTxs=";
+      sha256 = "sha256-YqN423dVFbJ/HhoDMN1IntMt6RcxJ0VumHV+bOhNT5c=";
     };
-    date = "2025-10-13";
+    date = "2025-10-26";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";

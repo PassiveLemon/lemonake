@@ -1,46 +1,4 @@
 {
-    "adgobye": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "adgobye",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "AdGoBye",
-            "repo": "AdGoBye",
-            "rev": "v4.0.2+v4IsBrokenPullMe",
-            "sha256": "sha256-YDrSmLNQti6Jk6uljpN47f3GirtStcGuPc0GCz9OTBA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v4.0.2+v4IsBrokenPullMe"
-    },
-    "adgobye-git": {
-        "cargoLock": null,
-        "date": "2024-10-05",
-        "extract": null,
-        "name": "adgobye-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "AdGoBye",
-            "repo": "AdGoBye",
-            "rev": "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b",
-            "sha256": "sha256-96WEFSWe1YaCAs702md5UTmgovx6FjiFUfr6wnQXnv4=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "9ef438f4bffdc032ea7dc7d1fa7c01f5527ce21b"
-    },
     "alcom": {
         "cargoLock": null,
         "date": null,
@@ -275,7 +233,7 @@
     },
     "picom-git": {
         "cargoLock": null,
-        "date": "2025-08-23",
+        "date": "2025-10-25",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -287,12 +245,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "69539edc0638019e3dd88c67007e90ce7f51174e",
-            "sha256": "sha256-mGEQSbSlurqim6JFhshsqypIDYXcTok8ySPMD/ee2fA=",
+            "rev": "a8ef63dbc7543d2951c1a204732f1fe9189aa93c",
+            "sha256": "sha256-LxqopE8l7dQou3es2KUDu/XTjUKjMA9Y+LnErcaVdUU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "69539edc0638019e3dd88c67007e90ce7f51174e"
+        "version": "a8ef63dbc7543d2951c1a204732f1fe9189aa93c"
     },
     "picom-tag": {
         "cargoLock": null,
@@ -437,7 +395,7 @@
     "wayvr-dashboard": {
         "cargoLock": {
             "src-tauri/Cargo.lock": [
-                "sha256-yxnpOO_p8OFqn_zCC4rOx_4mU7pqLcot6pVsYMrkIhI=/src-tauri/Cargo.lock",
+                "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=/src-tauri/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.0": "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=",
                     "libmonado-1.3.1": "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=",
@@ -457,12 +415,12 @@
             "name": null,
             "owner": "olekolek1000",
             "repo": "wayvr-dashboard",
-            "rev": "0.3.7",
-            "sha256": "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=",
+            "rev": "0.3.8",
+            "sha256": "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.3.7"
+        "version": "0.3.8"
     },
     "wayvr-dashboard-appimage": {
         "cargoLock": null,
@@ -497,7 +455,7 @@
     "wayvr-dashboard-git": {
         "cargoLock": {
             "src-tauri/Cargo.lock": [
-                "sha256-yxnpOO_p8OFqn_zCC4rOx_4mU7pqLcot6pVsYMrkIhI=/src-tauri/Cargo.lock",
+                "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=/src-tauri/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.0": "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=",
                     "libmonado-1.3.1": "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=",
@@ -505,7 +463,7 @@
                 }
             ]
         },
-        "date": "2025-08-27",
+        "date": "2025-10-19",
         "extract": null,
         "name": "wayvr-dashboard-git",
         "passthru": null,
@@ -517,12 +475,12 @@
             "name": null,
             "owner": "olekolek1000",
             "repo": "wayvr-dashboard",
-            "rev": "580daf23923e7376e6a770b1a8fcf6188bd6db9c",
-            "sha256": "sha256-yxnpOO/p8OFqn/zCC4rOx/4mU7pqLcot6pVsYMrkIhI=",
+            "rev": "952d92bfedf99f4bc16155394cf9e3fe2f08a8bf",
+            "sha256": "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "580daf23923e7376e6a770b1a8fcf6188bd6db9c"
+        "version": "952d92bfedf99f4bc16155394cf9e3fe2f08a8bf"
     },
     "webfisher": {
         "cargoLock": null,
@@ -589,7 +547,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-10-13",
+        "date": "2025-10-26",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -601,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "1dd0ed4fe34235e7ca127cf72ff898928bce5d27",
-            "sha256": "sha256-+3yIwoacXyF4ykN/5dVwO28BLCqofLF0TbSpj/ObTxs=",
+            "rev": "2204fdd39682cfc052556d58fdb9404dd8ecf63f",
+            "sha256": "sha256-YqN423dVFbJ/HhoDMN1IntMt6RcxJ0VumHV+bOhNT5c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1dd0ed4fe34235e7ca127cf72ff898928bce5d27"
+        "version": "2204fdd39682cfc052556d58fdb9404dd8ecf63f"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
