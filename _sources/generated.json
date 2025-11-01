@@ -233,7 +233,7 @@
     },
     "picom-git": {
         "cargoLock": null,
-        "date": "2025-10-30",
+        "date": "2025-10-31",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -245,12 +245,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "dce4d9b097b2c59a0d9602c4d89d1e8937268c42",
-            "sha256": "sha256-ibohzTSzN0uToP4+eustoPyagtMn/j4WpDQxBud1RRw=",
+            "rev": "7a4fdd8214f3a1ea2b28efc2a4f44ff07d738ff1",
+            "sha256": "sha256-DKMTfDj1EvwSwzD3+EV1wiXwknmHOrMnDSy1DWvQsaU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dce4d9b097b2c59a0d9602c4d89d1e8937268c42"
+        "version": "7a4fdd8214f3a1ea2b28efc2a4f44ff07d738ff1"
     },
     "picom-tag": {
         "cargoLock": null,
@@ -547,7 +547,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-10-30",
+        "date": "2025-10-31",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "6553036a738659733e0229f1b04f1cee31f6e207",
-            "sha256": "sha256-ulnZ+QckRXM9ssqwXYTp8qcyckWol9+nf5Av+waukS0=",
+            "rev": "e23b571d7e291c376e34c21fee85b9bd65f9c78a",
+            "sha256": "sha256-BUYGV5ZFHS4BZ8+xT8wTiSmVTOXtN69KKS/FmxJgDYM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6553036a738659733e0229f1b04f1cee31f6e207"
+        "version": "e23b571d7e291c376e34c21fee85b9bd65f9c78a"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
