@@ -141,15 +141,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "7a4fdd8214f3a1ea2b28efc2a4f44ff07d738ff1";
+    version = "be577470d9a725d44c397429f66f606ae1f22436";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "7a4fdd8214f3a1ea2b28efc2a4f44ff07d738ff1";
+      rev = "be577470d9a725d44c397429f66f606ae1f22436";
       fetchSubmodules = false;
-      sha256 = "sha256-DKMTfDj1EvwSwzD3+EV1wiXwknmHOrMnDSy1DWvQsaU=";
+      sha256 = "sha256-ipZmfP+LiGZrSr6f7PqLj732JsNR/RZM8NjDDd4nliE=";
     };
-    date = "2025-10-31";
+    date = "2025-11-01";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -319,15 +319,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "e23b571d7e291c376e34c21fee85b9bd65f9c78a";
+    version = "c0dc193247122d1ffb02748373686050e0d1d2c6";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "e23b571d7e291c376e34c21fee85b9bd65f9c78a";
+      rev = "c0dc193247122d1ffb02748373686050e0d1d2c6";
       fetchSubmodules = false;
-      sha256 = "sha256-BUYGV5ZFHS4BZ8+xT8wTiSmVTOXtN69KKS/FmxJgDYM=";
+      sha256 = "sha256-xjPqI/29myvjSHGAA5Z2yJR6dZpDcJ3KIvUamrzF71M=";
     };
-    date = "2025-10-31";
+    date = "2025-11-01";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
