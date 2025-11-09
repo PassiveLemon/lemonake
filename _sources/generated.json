@@ -538,16 +538,16 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "v25.9",
-            "sha256": "sha256-XP0bpXgtira2QIlS0fNEteNP48WnEjBYFM1Xmt2sm5I=",
+            "rev": "v25.11",
+            "sha256": "sha256-jQW9qiYZTLqpwVxNRk6G3cFpRzmBWYR63Di338TpJ/E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v25.9"
+        "version": "v25.11"
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-11-07",
+        "date": "2025-11-08",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "391f69ba17ecb89d943d08b2454206be74ce679e",
-            "sha256": "sha256-TJyFXo1O3elVoFbjY7b0fT1i3czA7R/nsh0tVb+x9Pk=",
+            "rev": "793b0c8d8194618f04896f2e1bf2914f7dbc72b9",
+            "sha256": "sha256-jQW9qiYZTLqpwVxNRk6G3cFpRzmBWYR63Di338TpJ/E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "391f69ba17ecb89d943d08b2454206be74ce679e"
+        "version": "793b0c8d8194618f04896f2e1bf2914f7dbc72b9"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -598,13 +598,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7a4018e2d89151e60e562fac79eba90ca7a328d8",
-            "sha256": "sha256-DPIvJb23bK7SDjZr9mK0Wt6Zbo3Ari3Ar8TtPe5QgKY=",
+            "rev": "06e62fc7d9c5cbcbc43405bb86dfde3bf01ce043",
+            "sha256": "sha256-0ALB9eLY4NAUqNOYZMwpvYnLxVpHsQDJc1er8Txdezs=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
-        "version": "7a4018e2d89151e60e562fac79eba90ca7a328d8"
+        "version": "06e62fc7d9c5cbcbc43405bb86dfde3bf01ce043"
     },
     "wlx-overlay-s": {
         "cargoLock": {
