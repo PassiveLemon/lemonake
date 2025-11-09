@@ -84,7 +84,7 @@ in
         importOXRRuntimes = mkEnableOption ''
           Sets `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES` system-wide to allow Steam to automatically discover the WiVRn server.
 
-          Note that you may have to logout for this variable to be visible
+          You may have to logout for this variable to be visible once enabled
         '';
       };
 
@@ -97,6 +97,8 @@ in
 
             Like upstream, the application option is a list including the application and it's flags. In the case of the NixOS module however, the first element of the list must be a package. The module will assert otherwise.
             The application can be set to a single package because it gets passed to lib.toList, though this will not allow for flags to be passed.
+
+            WiVRn has good default configurations so it is recommended to leave this unconfigured and try the defaults before attempting manual configuration.
 
             See https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md
           '';
@@ -187,13 +189,11 @@ in
       };
     };
 
-    services = {
-      avahi = {
+    services.avahi = mkIf cfg.openFirewall {
+      enable = true;
+      publish = {
         enable = true;
-        publish = {
-          enable = true;
-          userServices = true;
-        };
+        userServices = true;
       };
     };
 
