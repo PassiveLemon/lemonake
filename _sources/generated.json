@@ -538,16 +538,16 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "v25.11",
-            "sha256": "sha256-jQW9qiYZTLqpwVxNRk6G3cFpRzmBWYR63Di338TpJ/E=",
+            "rev": "v25.11.1",
+            "sha256": "sha256-pEKMeRdI9UhdZ+NksRBcF7yPC7Ys2haE+B4PPGQ4beE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v25.11"
+        "version": "v25.11.1"
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-11-09",
+        "date": "2025-11-10",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "1d481f7b771c9d69def2ded2435cf636238e6e47",
-            "sha256": "sha256-f/yvGTjKWCaeorg0pS1cJ1R+n8CiHlovwsagEje07eI=",
+            "rev": "ffd5cf882a11fcac7046438fdfd01841381d485f",
+            "sha256": "sha256-IQOLlaKAQlw+unL6NNUjVOo3zD+OgpkbnKMeM7XTJjg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1d481f7b771c9d69def2ded2435cf636238e6e47"
+        "version": "ffd5cf882a11fcac7046438fdfd01841381d485f"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -702,13 +702,13 @@
     "xrizer-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-vbaXL3YYVjX73wZX7Bri6Ubh+kx9oXbFScOw_j9kyII=/Cargo.lock",
+                "sha256-M84sgCuluEe3B+jb74KNvA4xDgyNI5LDtVCG+Xogf+I=/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-11-04",
+        "date": "2025-11-09",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -720,11 +720,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "c77db6ca400a30e7f43b43a1f19a73f5452470d8",
-            "sha256": "sha256-vbaXL3YYVjX73wZX7Bri6Ubh+kx9oXbFScOw/j9kyII=",
+            "rev": "63647870696196b9fd10667c6823850a92ae8f74",
+            "sha256": "sha256-M84sgCuluEe3B+jb74KNvA4xDgyNI5LDtVCG+Xogf+I=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c77db6ca400a30e7f43b43a1f19a73f5452470d8"
+        "version": "63647870696196b9fd10667c6823850a92ae8f74"
     }
 }
