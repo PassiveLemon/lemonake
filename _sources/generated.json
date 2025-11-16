@@ -547,7 +547,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-11-14",
+        "date": "2025-11-15",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "59281c970bc963e2ed0421815ccdde641266b5a7",
-            "sha256": "sha256-kzBjlQ9e2F4yNNIkHZnjJ0PobQBZxJPiPFVhuM7TUPk=",
+            "rev": "11abd8d9fef1c444933b38a06ef7cffb45911602",
+            "sha256": "sha256-GqHsQmBEndq0Sixz7U3LYDIFQm1QcMEp1NIosAzb0oQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "59281c970bc963e2ed0421815ccdde641266b5a7"
+        "version": "11abd8d9fef1c444933b38a06ef7cffb45911602"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -578,13 +578,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "06e62fc7d9c5cbcbc43405bb86dfde3bf01ce043",
-            "sha256": "sha256-0ALB9eLY4NAUqNOYZMwpvYnLxVpHsQDJc1er8Txdezs=",
+            "rev": "7d5fa81a91340ced18a3e012ebcf5da7f9a6903c",
+            "sha256": "sha256-2JoiXstPUl5bK8xK8F4csSQOOm7b+ut9acSwK24zPTo=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
-        "version": "06e62fc7d9c5cbcbc43405bb86dfde3bf01ce043"
+        "version": "7d5fa81a91340ced18a3e012ebcf5da7f9a6903c"
     },
     "wivrn-monado": {
         "cargoLock": null,
@@ -702,13 +702,13 @@
     "xrizer-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-1mwwPsT7m72cxURq4+_WAsNZheq8ekOGyOOdnQU+mKg=/Cargo.lock",
+                "sha256-M58+sP_4avz9YMWICBS1Na99mcWM7Q+1uHd1hMJB7jA=/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-11-11",
+        "date": "2025-11-15",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -720,11 +720,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "c1b0ec0caaf1eaf0aef4f1e771804cb4225349a4",
-            "sha256": "sha256-1mwwPsT7m72cxURq4+/WAsNZheq8ekOGyOOdnQU+mKg=",
+            "rev": "af5e95a021508683954bf3cd19bf52b569928e16",
+            "sha256": "sha256-M58+sP/4avz9YMWICBS1Na99mcWM7Q+1uHd1hMJB7jA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c1b0ec0caaf1eaf0aef4f1e771804cb4225349a4"
+        "version": "af5e95a021508683954bf3cd19bf52b569928e16"
     }
 }
