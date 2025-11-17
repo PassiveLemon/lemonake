@@ -8,10 +8,10 @@
 {
   alcom = {
     pname = "alcom";
-    version = "1.1.5-beta.1";
+    version = "1.1.5";
     src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.5-beta.1/alcom-1.1.5-beta.1-x86_64.AppImage";
-      sha256 = "sha256-kIwlJWrRe2GCjBFgksfK3sDSiM0aAMc4+T6zUdYFDl8=";
+      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.5/alcom-1.1.5-x86_64.AppImage";
+      sha256 = "sha256-I61gHXlLfQ9vjI/k4uiKuwuBLXtBLpr9U/oxBLLd/nQ=";
     };
   };
   animdl-git = {
@@ -319,15 +319,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "11abd8d9fef1c444933b38a06ef7cffb45911602";
+    version = "1393ff0f117746f43e54c2105f1c3ccf3aa96e7f";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "11abd8d9fef1c444933b38a06ef7cffb45911602";
+      rev = "1393ff0f117746f43e54c2105f1c3ccf3aa96e7f";
       fetchSubmodules = false;
-      sha256 = "sha256-GqHsQmBEndq0Sixz7U3LYDIFQm1QcMEp1NIosAzb0oQ=";
+      sha256 = "sha256-jCZK8D9KSY6REsMrYATBiFEtN1gb4bdNz4asz2tbeUU=";
     };
-    date = "2025-11-15";
+    date = "2025-11-16";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -418,20 +418,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "af5e95a021508683954bf3cd19bf52b569928e16";
+    version = "072a4afd38cf7f6689f218275f1dbe2056cafae7";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "af5e95a021508683954bf3cd19bf52b569928e16";
+      rev = "072a4afd38cf7f6689f218275f1dbe2056cafae7";
       fetchSubmodules = false;
-      sha256 = "sha256-M58+sP/4avz9YMWICBS1Na99mcWM7Q+1uHd1hMJB7jA=";
+      sha256 = "sha256-SMcQTCHwfivn8fRTVpEcUUgo3/rKMBld+2SEsQgDIcQ=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-M58+sP_4avz9YMWICBS1Na99mcWM7Q+1uHd1hMJB7jA=/Cargo.lock";
+      lockFile = ./. + "/sha256-SMcQTCHwfivn8fRTVpEcUUgo3_rKMBld+2SEsQgDIcQ=/Cargo.lock";
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-11-15";
+    date = "2025-11-16";
   };
 }
