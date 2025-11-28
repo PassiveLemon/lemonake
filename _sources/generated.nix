@@ -28,10 +28,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.24";
+    version = "2.0.27";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.24__linux__x64.AppImage";
-      sha256 = "sha256-d5ZvWSLA/7mY0540TDLMW9qmEFA5xC6Zd83IWakOmGo=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.27__linux__x64.AppImage";
+      sha256 = "sha256-bpzSFVPIifhG8TWlZlMYLLBAfq6vr0ZIr4UyXwM8d7Q=";
     };
   };
   gdlauncher-legacy = {
@@ -141,15 +141,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "be577470d9a725d44c397429f66f606ae1f22436";
+    version = "90e537110aa7125ad97aa781fdf956c93fa12436";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "be577470d9a725d44c397429f66f606ae1f22436";
+      rev = "90e537110aa7125ad97aa781fdf956c93fa12436";
       fetchSubmodules = false;
-      sha256 = "sha256-ipZmfP+LiGZrSr6f7PqLj732JsNR/RZM8NjDDd4nliE=";
+      sha256 = "sha256-lfusMFzfQwk97a4gyJwxQEuMlo1rWgoQR4H1wgyx7Bg=";
     };
-    date = "2025-11-01";
+    date = "2025-11-27";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -418,16 +418,16 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "afface12cea39555f6fed3ea6555b358ebec57cf";
+    version = "2a5301ae167f4db28ac23a1516bb1846f5ca56d2";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "afface12cea39555f6fed3ea6555b358ebec57cf";
+      rev = "2a5301ae167f4db28ac23a1516bb1846f5ca56d2";
       fetchSubmodules = false;
-      sha256 = "sha256-/dqLcVc8sEWY6zj1GMdY6J83IXRe44WAZXgZwafbBc4=";
+      sha256 = "sha256-a3nflQ/qjVtEHKaQ7/nFf0FD69xv9ViTJzMw7JvN8EY=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-_dqLcVc8sEWY6zj1GMdY6J83IXRe44WAZXgZwafbBc4=/Cargo.lock";
+      lockFile = ./. + "/sha256-a3nflQ_qjVtEHKaQ7_nFf0FD69xv9ViTJzMw7JvN8EY=/Cargo.lock";
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
