@@ -245,12 +245,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "20a158961a15d38ab8cd5067fc10af8177b1eb61",
-            "sha256": "sha256-lpnVaRSA263nI3cesVgL9wLl+6DjV1LSOsCSzzIwoJI=",
+            "rev": "800421acd4bc65b5de2fd29bf49279aa44026256",
+            "sha256": "sha256-05a9zXLEKPYUaSACmmxZRAc+MD6ZYNuI2hRMRW3YAPU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "20a158961a15d38ab8cd5067fc10af8177b1eb61"
+        "version": "800421acd4bc65b5de2fd29bf49279aa44026256"
     },
     "picom-tag": {
         "cargoLock": null,
@@ -266,12 +266,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "v12.5",
-            "sha256": "sha256-H8IbzzrzF1c63MXbw5mqoll3H+vgcSVpijrlSDNkc+o=",
+            "rev": "v13-rc1",
+            "sha256": "sha256-JLtzUsKzc0FpwmvXKYgmRNf+VIQL2sRD3+UO2uoezL0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v12.5"
+        "version": "v13-rc1"
     },
     "poepyautopot": {
         "cargoLock": null,
@@ -547,7 +547,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-12-08",
+        "date": "2025-12-09",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "281dd6000ed843605c24ec3abe766e72e2e31042",
-            "sha256": "sha256-iy1XRSYuFZfw/zlCFLgpjWo9c0eO0Hcc8D9rj9aZINI=",
+            "rev": "bf811ac65d4e2a5bcc828aa8f4cb298af5f8ac9b",
+            "sha256": "sha256-tDgSysEt4vTL2/DcSQYBO7Nw4gROF5vdCNKAnYT4L5E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "281dd6000ed843605c24ec3abe766e72e2e31042"
+        "version": "bf811ac65d4e2a5bcc828aa8f4cb298af5f8ac9b"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
