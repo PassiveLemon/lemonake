@@ -547,7 +547,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2025-12-09",
+        "date": "2025-12-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -559,12 +559,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "bf811ac65d4e2a5bcc828aa8f4cb298af5f8ac9b",
-            "sha256": "sha256-tDgSysEt4vTL2/DcSQYBO7Nw4gROF5vdCNKAnYT4L5E=",
+            "rev": "2057aff19541f4d9117bdbfd49eac74c2da662c8",
+            "sha256": "sha256-TvgHhXoVG20Rk3xDZb7gEIeAjs5kLcCAmlwjgSuA/UA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bf811ac65d4e2a5bcc828aa8f4cb298af5f8ac9b"
+        "version": "2057aff19541f4d9117bdbfd49eac74c2da662c8"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -702,13 +702,13 @@
     "xrizer-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-rBLvg4Bp+Cv17kwPaoiz+VggDxI5LQ0ATZnmrJNKYDg=/Cargo.lock",
+                "sha256-L3beL0T0RJfVnPkP2ynWV1BgWlZEc+DhMIhX5Myjr+w=/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2025-12-10",
+        "date": "2025-12-11",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -720,11 +720,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "50fe7432dd23fb635fa5bca96a1e6f61d56bd84f",
-            "sha256": "sha256-rBLvg4Bp+Cv17kwPaoiz+VggDxI5LQ0ATZnmrJNKYDg=",
+            "rev": "b88f432e26a0400b170fb075e15a49bb364688e8",
+            "sha256": "sha256-L3beL0T0RJfVnPkP2ynWV1BgWlZEc+DhMIhX5Myjr+w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "50fe7432dd23fb635fa5bca96a1e6f61d56bd84f"
+        "version": "b88f432e26a0400b170fb075e15a49bb364688e8"
     }
 }
