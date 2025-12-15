@@ -187,10 +187,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton10-20-rtsp19";
+    version = "GE-Proton10-26-rtsp20";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-20-rtsp19/GE-Proton10-20-rtsp19.tar.gz";
-      sha256 = "sha256-VzUzZjILqndtqi/nLGAXrup2lKoZ7RxGXGoPLo2voHQ=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-26-rtsp20/GE-Proton10-26-rtsp20.tar.gz";
+      sha256 = "sha256-eAJjw575cJlj7qLsPC1LgRsVMW4O754Q6SO7IV74EyE=";
     };
   };
   tilp2-gfm = {
@@ -319,15 +319,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "2057aff19541f4d9117bdbfd49eac74c2da662c8";
+    version = "8e7192c767cc921ea84245f866e7241b62ca9f09";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "2057aff19541f4d9117bdbfd49eac74c2da662c8";
+      rev = "8e7192c767cc921ea84245f866e7241b62ca9f09";
       fetchSubmodules = false;
-      sha256 = "sha256-TvgHhXoVG20Rk3xDZb7gEIeAjs5kLcCAmlwjgSuA/UA=";
+      sha256 = "sha256-TmCutzXbhTFsIYIGtDYtCni4Hzb/ZeOogQ5uxkDKRqo=";
     };
-    date = "2025-12-11";
+    date = "2025-12-14";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -379,25 +379,24 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "b6998d55c157721d5d89e4291da33e02196884da";
+    version = "3ad5c8cbfd3771306bdcde1fa5973920d8cf81ce";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "b6998d55c157721d5d89e4291da33e02196884da";
+      rev = "3ad5c8cbfd3771306bdcde1fa5973920d8cf81ce";
       fetchSubmodules = false;
-      sha256 = "sha256-CVI4YpFOe/GLxCab644QvAOrWZcVjlCsCgzRT381BY0=";
+      sha256 = "sha256-qXo2FETY0UsIqWqBVqCF9AKLFqOKd8uxnW390cDk36w=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-CVI4YpFOe_GLxCab644QvAOrWZcVjlCsCgzRT381BY0=/Cargo.lock";
+      lockFile = ./. + "/sha256-qXo2FETY0UsIqWqBVqCF9AKLFqOKd8uxnW390cDk36w=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
-        "wlx-capture-0.5.4" = "sha256-M8yOxmD8rseiYR6FJnoToHeKLkdgJNqnE6STppDi+cI=";
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
         "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
       };
     };
-    date = "2025-11-30";
+    date = "2025-12-14";
   };
   xrizer = {
     pname = "xrizer";
