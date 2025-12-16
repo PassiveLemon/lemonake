@@ -93,26 +93,26 @@
   };
   nimpad = {
     pname = "nimpad";
-    version = "0.2.0";
+    version = "0.3.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "0.2.0";
+      rev = "0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-o/+9iTsg9r9EqsdQWFmt3cvN89wtjPTXvrWnbfB0/xs=";
+      sha256 = "sha256-V0Ypq6PrnoJUHdt2WuavfnKYRoTXUEffLMzylNJxq1s=";
     };
   };
   nimpad-git = {
     pname = "nimpad-git";
-    version = "31b04f0e811bd4a78249fc65ac925eb5b112d92d";
+    version = "054c8f6bb813ba30852b2c837e87d25072aebcd5";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "31b04f0e811bd4a78249fc65ac925eb5b112d92d";
+      rev = "054c8f6bb813ba30852b2c837e87d25072aebcd5";
       fetchSubmodules = false;
-      sha256 = "sha256-zM6T27o+eF2bBf/mXL+5LY5XYf09vX8vJaPQmMCTa3Y=";
+      sha256 = "sha256-V0Ypq6PrnoJUHdt2WuavfnKYRoTXUEffLMzylNJxq1s=";
     };
-    date = "2025-08-31";
+    date = "2025-12-15";
   };
   opencomposite-git = {
     pname = "opencomposite-git";

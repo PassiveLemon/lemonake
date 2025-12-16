@@ -162,16 +162,16 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "nimpad",
-            "rev": "0.2.0",
-            "sha256": "sha256-o/+9iTsg9r9EqsdQWFmt3cvN89wtjPTXvrWnbfB0/xs=",
+            "rev": "0.3.0",
+            "sha256": "sha256-V0Ypq6PrnoJUHdt2WuavfnKYRoTXUEffLMzylNJxq1s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.2.0"
+        "version": "0.3.0"
     },
     "nimpad-git": {
         "cargoLock": null,
-        "date": "2025-08-31",
+        "date": "2025-12-15",
         "extract": null,
         "name": "nimpad-git",
         "passthru": null,
@@ -183,12 +183,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "nimpad",
-            "rev": "31b04f0e811bd4a78249fc65ac925eb5b112d92d",
-            "sha256": "sha256-zM6T27o+eF2bBf/mXL+5LY5XYf09vX8vJaPQmMCTa3Y=",
+            "rev": "054c8f6bb813ba30852b2c837e87d25072aebcd5",
+            "sha256": "sha256-V0Ypq6PrnoJUHdt2WuavfnKYRoTXUEffLMzylNJxq1s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "31b04f0e811bd4a78249fc65ac925eb5b112d92d"
+        "version": "054c8f6bb813ba30852b2c837e87d25072aebcd5"
     },
     "opencomposite-git": {
         "cargoLock": null,
