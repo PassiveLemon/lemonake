@@ -25,15 +25,17 @@ Add the flake to your inputs:
 ## Features
 Run `nix flake show github:passivelemon/lemonake` to see all outputs. Home Manager modules will show as unknown.
 
+Documentation for certain modules and packages can be found in the docs subdirectory.
+
 Modules:
 - Home Manager (Do not use in NixOS configuration)
   - Can be imported with `inputs.lemonake.homeModules.<module>`
-  - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
+  - `programs.steamvr`
   - `wayland.windowManager.somewm`
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
-  - [`services.autoadb`](./modules/nixos/autoadb/README.md)
-  - [`services.wivrn`](./modules/nixos/wivrn/README.md)
+  - `services.autoadb`
+  - `services.wivrn`
   - `programs.somewm`
 
 Packages:
@@ -63,8 +65,8 @@ Packages:
 - `wayvr-dashboard-git`
 - `webfisher`
 - `webfisher-git`
-- [`wivrn`](./pkgs/wivrn/README.md)
-- [`wivrn-git`](./pkgs/wivrn/README.md)
+- `wivrn`
+- `wivrn-git`
 - `wlx-overlay-s`
 - `wlx-overlay-s-git`
 - `xrizer`
