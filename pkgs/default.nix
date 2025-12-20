@@ -13,6 +13,7 @@ let
     "opencomposite"
     "picom"
     "proton-ge-rtsp"
+    "somewm"
     "tilp2"
     "vapor"
     "wayvr-dashboard"

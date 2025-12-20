@@ -29,10 +29,12 @@ Modules:
 - Home Manager (Do not use in NixOS configuration)
   - Can be imported with `inputs.lemonake.homeModules.<module>`
   - [`programs.steamvr`](./modules/home-manager/steamvr/README.md)
+  - `wayland.windowManager.somewm`
 - NixOS (Do not use in home-manager configuration)
   - Can be imported with `inputs.lemonake.nixosModules.<module>`
   - [`services.autoadb`](./modules/nixos/autoadb/README.md)
   - [`services.wivrn`](./modules/nixos/wivrn/README.md)
+  - `programs.somewm`
 
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
@@ -52,6 +54,8 @@ Packages:
 - `picom-tag`
 - `picom-git`
 - `proton-ge-rtsp` (Please only use with `programs.steam.extraCompatPackages`)
+- `somewm`
+- `somewm-git`
 - `tilp2`
 - `tilp2-git`
 - `vapor-git`

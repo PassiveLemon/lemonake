@@ -2,6 +2,9 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
+    # https://github.com/berberman/nvfetcher/pull/143
+    nvfetcher.url = "github:Red-M/nvfetcher";
+
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
@@ -20,7 +23,7 @@
       ./parts/nonRedistributablePackages.nix
     ];
 
-    perSystem = { self', system, ... }:
+    perSystem = { inputs', system, ... }:
     let
       pkgs = import inputs.nixpkgs { inherit system; };
     in
@@ -28,12 +31,14 @@
       devShells = {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            nvfetcher jq act
+            jq act
+          ] ++ [
+            inputs'.nvfetcher.packages.default
           ];
         };
       };
       packages = {
-        default = pkgs.nvfetcher;
+        default = inputs'.nvfetcher.packages.default;
       };
     };
   };

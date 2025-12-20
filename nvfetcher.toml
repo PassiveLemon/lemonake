@@ -69,6 +69,14 @@ fetch.github = "PassiveLemon/poepyautopot"
 src.github = "SpookySkeletons/proton-ge-rtsp"
 fetch.tarball = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/$ver/$ver.tar.gz"
 
+[somewm]
+src.github = "trip-zip/somewm"
+fetch.github = "trip-zip/somewm"
+
+[somewm-git]
+src.git = "https://github.com/trip-zip/somewm"
+fetch.github = "trip-zip/somewm"
+
 [tilp2-gfm]
 src.github_tag = "debrouxl/tilp_and_gfm"
 fetch.github = "debrouxl/tilp_and_gfm"

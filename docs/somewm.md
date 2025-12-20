@@ -1,0 +1,4 @@
+# SomeWM
+
+Docs WIP
+
