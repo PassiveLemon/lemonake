@@ -54,7 +54,7 @@ jobs:
       # x86_64-linux is currently the only supported architecture
     - name: Build non-redistributable packages
       run: |
-        nix eval .#nonRedistributablePackages --json | jq '."x86_64-linux"[]' | xargs -I {} nix build .#{} --keep-going
+        nix eval .#nonRedistributablePackages --json | jq '."x86_64-linux"[]' | xargs -I {} nix build .#{} --keep-going --max-jobs 1 --cores 0
 
     - name: Set up Cachix
       uses: cachix/cachix-action@v15
@@ -64,5 +64,5 @@ jobs:
 
     - name: Build redistributable packages for Cachix
       run: |
-        nix eval .#redistributablePackages --json | jq '."x86_64-linux"[]' | xargs -I {} nix build .#{} --keep-going
+        nix eval .#redistributablePackages --json | jq '."x86_64-linux"[]' | xargs -I {} nix build .#{} --keep-going --max-jobs 1 --cores 0
 
