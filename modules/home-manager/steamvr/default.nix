@@ -28,28 +28,28 @@ let
   openvrRuntimePackage = (
     if cfg.helperScript.openvrRuntimePackage != ""
     then cfg.helperScript.openvrRuntimePackage
-    else if cfg.helperScript.openvrRuntime == "xrizer"
-    then pkgs.xrizer
+    else if cfg.helperScript.openvrRuntime == "opencomposite"
+    then pkgs.opencomposite
     else if cfg.helperScript.openvrRuntime == "vapor"
-    #then pkgs.vapor
+    # then pkgs.vapor
     then (pkgs.callPackage ../../../pkgs/vapor/package.nix { })
-    else pkgs.opencomposite
+    else pkgs.xrizer # Default to XRizer
   );
   openxrRuntimePackage = (
     if cfg.helperScript.openxrRuntimePackage != ""
     then cfg.helperScript.openxrRuntimePackage
     else if cfg.helperScript.openxrRuntime == "wivrn"
     then pkgs.wivrn
-    else pkgs.monado
+    else pkgs.monado # Default to Monado
   );
 
   vrOverride = (
     if cfg.helperScript.openvrRuntime == "opencomposite"
     then "${openvrRuntimePackage}/lib/opencomposite"
-    else if cfg.helperScript.openvrRuntime == "xrizer"
-    then "${openxrRuntimePackage}/lib/xrizer"
     else if cfg.helperScript.openvrRuntime == "vapor"
     then "${openxrRuntimePackage}/lib/vapor"
+    else if cfg.helperScript.openvrRuntime == "xrizer"
+    then "${openxrRuntimePackage}/lib/xrizer"
     else ""
   );
   xrRuntimeJson = (
