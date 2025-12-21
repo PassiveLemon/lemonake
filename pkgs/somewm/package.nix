@@ -2,7 +2,6 @@
 , src
 , lib
 , stdenv
-, fetchFromGitHub
 , cairo
 , dbus
 , gdk-pixbuf

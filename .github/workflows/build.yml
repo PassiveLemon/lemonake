@@ -17,6 +17,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # https://github.com/actions/runner-images/issues/2840
+    - name: Delete unused files to free disk space
+      run: |
+        sudo rm -rf \
+          /opt/hostedtoolcache \
+          /opt/google/chrome \
+          /opt/microsoft/msedge \
+          /opt/microsoft/powershell \
+          /opt/pipx \
+          /usr/lib/mono \
+          /usr/local/julia* \
+          /usr/local/lib/android \
+          /usr/local/lib/node_modules \
+          /usr/local/share/chromium \
+          /usr/local/share/powershell \
+          /usr/share/dotnet \
+          /usr/share/swift
+
     - name: Checkout code
       uses: actions/checkout@v4
 
