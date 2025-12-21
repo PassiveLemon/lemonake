@@ -24,16 +24,19 @@
 , xwayland
 , gtk3Support ? false
 , gtk3 ? null
-, additionalLuaPackages ? [ ]
-, additionalLuaCPATH ? ""
+, extraLuaModules ? [ ]
+, extraSearchPaths ? [ ]
 }:
-
 assert gtk3Support -> gtk3 != null;
-
 let
   luaEnv = luajit.withPackages (ps: with ps; ([
     lgi
-  ] ++ additionalLuaPackages));
+  ] ++ extraLuaModules));
+
+  getLuaPath = lib: dir: "${lib}/${dir}/lua/${luaEnv.luaversion}";
+  makeSearchPath = lib.concatMapStrings (
+    path: "--add-flags  '--search ${getLuaPath path "share"}' \\" + "--add-flags '--search ${getLuaPath path "lib"}' \\"
+  );
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "somewm";
@@ -75,17 +78,18 @@ stdenv.mkDerivation (finalAttrs: {
     install -m755 somewm $out/bin/somewm
     install -m755 somewm-client $out/bin/somewm-client
 
-    #mkdir -p $out/share/wayland-sessions/
-    #install -m644 somewm.desktop $out/share/wayland-sessions/somewm.desktop
+    mkdir -p $out/share/wayland-sessions/
+    install -m644 somewm.desktop $out/share/wayland-sessions/somewm.desktop
 
     runHook postInstall
   '';
 
   postFixup = ''
-    wrapProgram $out/bin/somewm \
+    mv "$out/bin/somewm" "$out/bin/.somewm-wrapped"
+    makeWrapper "$out/bin/.somewm-wrapped" "$out/bin/somewm" \
       --set GDK_PIXBUF_MODULE_FILE "$GDK_PIXBUF_MODULE_FILE" \
-      --set LUA_CPATH "${luaEnv}/lib/lua/${luaEnv.luaversion}/?.so;${additionalLuaCPATH};;" \
-      --set LUA_PATH "${finalAttrs.src}/lua/?/init.lua;${finalAttrs.src}/lua/?.lua;${luaEnv}/share/lua/${luaEnv.luaversion}/?.lua;;" \
+      --add-flags '--search ${finalAttrs.src}/lua' \
+      ${makeSearchPath ([ luaEnv ] ++ extraSearchPaths)}
       --prefix GI_TYPELIB_PATH : "$GI_TYPELIB_PATH"
   '';
 

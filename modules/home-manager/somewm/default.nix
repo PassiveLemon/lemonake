@@ -15,8 +15,8 @@ in
 
       package = mkPackageOption pkgs "somewm" { };
 
-      systemd = lib.mkOption {
-        type = lib.types.submodule systemdModule;
+      systemd = mkOption {
+        type = types.submodule systemdModule;
       };
     };
   };

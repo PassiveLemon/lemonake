@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 let
-  inherit (lib) mkIf mkEnableOption mkPackageOption mkOption getExe types maintainers;
+  inherit (lib) mkIf mkEnableOption mkPackageOption getExe maintainers;
   cfg = config.programs.somewm;
 in
 {
@@ -9,11 +9,13 @@ in
       enable = mkEnableOption "somewm";
 
       package = mkPackageOption pkgs "somewm" { };
+
+      enableUWSM = mkEnableOption "somewm uwsm entry";
     };
   };
 
   config = mkIf cfg.enable {
-    programs.uwsm = {
+    programs.uwsm = mkIf cfg.enableUWSM {
       enable = true;
       waylandCompositors = {
         somewm = {
@@ -40,5 +42,6 @@ in
       cfg.package
     ];
   };
+  meta.maintainers = with maintainers; [ passivelemon ];
 }
 
