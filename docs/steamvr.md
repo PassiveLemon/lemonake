@@ -1,15 +1,19 @@
 # SteamVR
 Custom module to allow you to override the SteamVR OpenVR and OpenXR runtime.
 
+> [!IMPORTANT]
+> This module should not be used with WiVRn because it automatically manages these same configurations. It only still exists in here for legacy reasons and may be removed in the future.
+
 Use the helper `vr-helper` to launch Steam games with the proper variables set: `vr-helper %command%`.
 
->[!NOTE]
-> Some games like VRChat do not like the `VROVERRIDE`` environment variable, which means you cannot use this script.
+> [!IMPORTANT]
+> Some games like VRChat do not like the `VROVERRIDE` environment variable, which means you cannot use the `vr-helper` script.
 
-Currently, the default runtimes for OpenXR and OpenVR are Monado and OpenComposite respectively. You can set runtime to a blank string `""` to disable that env variable.
+Currently, the default runtimes for OpenXR and OpenVR are Monado and XRizer respectively. You can set runtime to a blank string `""` to disable that env variable.
+Supported runtimes are `monado` and `wivrn` for OpenXR and `opencomposite`, `vapor`, and `xrizer` for OpenVR.
 
->[!NOTE]
-> Tildes (`~`) get expanded to your home path. For example, `~/.local/share/` will literally get evaluated to `/home/(user)/.local/share/`
+> [!NOTE]
+> Tildes (`~`) get expanded to your home path. For example, `~/.local/share/` will literally get evaluated to `/home/<user>/.local/share/`
 
 ## Example usage
 ```nix

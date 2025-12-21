@@ -1,7 +1,7 @@
 # AutoAdb
 [AutoAdb GitHub](https://github.com/rom1v/autoadb)
 
-Everything in the command attribute is turned into a shell script and passed to a systemd service.
+The autoadb service module simply runs autoadb in a systemd service and allows packages to be exposed. Everything in the command attribute is turned into a shell script and passed to the systemd service.
 
 ## Example usage
 ```nix
