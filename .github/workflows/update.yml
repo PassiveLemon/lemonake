@@ -21,7 +21,8 @@ jobs:
     - name: Update flake and sources
       run: | 
         nix flake update
-        nix run github:berberman/nvfetcher
+        # https://github.com/berberman/nvfetcher/pull/143
+        nix run github:Red-M/nvfetcher
 
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
