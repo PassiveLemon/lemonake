@@ -48,6 +48,7 @@ Packages:
 - `gfm`
 - `gfm-git`
 - `lua-pam-git`
+- `lua-pam-luajit-git`
 - `monado-vulkan-layers-git`
 - `nimpad`
 - `nimpad-git`
