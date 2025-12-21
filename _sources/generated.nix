@@ -206,13 +206,13 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "f73a43ff4355255dc214c781f642d5d18c0f2f56";
+    version = "354584fd4c692aca1db7801cf2aa393d9191d09e";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "f73a43ff4355255dc214c781f642d5d18c0f2f56";
+      rev = "354584fd4c692aca1db7801cf2aa393d9191d09e";
       fetchSubmodules = false;
-      sha256 = "sha256-5Uj/b2HXEo8x3VDaAKL00xqmwh3yzbovchkmh3ZsRao=";
+      sha256 = "sha256-n3MyJOjlbfBXJ0h39RFEySQ/HtCdik2ZTIT/+c+Hs9U=";
     };
     date = "2025-12-20";
   };
@@ -342,13 +342,13 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "6fc48c7d4f2a59e0131a477db2f73daf5b85ce75";
+    version = "1a35e1f7fc020ea4f0c1adc24aa5b41f532b8cc8";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "6fc48c7d4f2a59e0131a477db2f73daf5b85ce75";
+      rev = "1a35e1f7fc020ea4f0c1adc24aa5b41f532b8cc8";
       fetchSubmodules = false;
-      sha256 = "sha256-8Z9AVaS9FpassVgpdmy62lym4QM/OdgJfFxCN/Piqyk=";
+      sha256 = "sha256-5ucHQPQPdRlPVAzEGK7BdMi/2wkwSdEAlp+qTcNbOPU=";
     };
     date = "2025-12-20";
   };
@@ -402,16 +402,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "9381ebc7008d85ebe519d9c869e25c964253343e";
+    version = "52ffa0989cf2bdfe0b740cccc9cf4bd545ccfee3";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "9381ebc7008d85ebe519d9c869e25c964253343e";
+      rev = "52ffa0989cf2bdfe0b740cccc9cf4bd545ccfee3";
       fetchSubmodules = false;
-      sha256 = "sha256-Y2TGvZvjaGZb9afyEGJDLnSdzjEsNZuBse/7BAynUFo=";
+      sha256 = "sha256-+ivMea+pdgbOnEE5JTtSQ+eAZBB4dM6fU5US3BWS7J0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-Y2TGvZvjaGZb9afyEGJDLnSdzjEsNZuBse_7BAynUFo=/Cargo.lock";
+      lockFile = ./. + "/sha256-+ivMea+pdgbOnEE5JTtSQ+eAZBB4dM6fU5US3BWS7J0=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
