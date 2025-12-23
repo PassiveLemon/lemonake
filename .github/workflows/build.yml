@@ -16,6 +16,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Don't run the build if the update workflow failed because nothing will have changed
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       # https://github.com/actions/runner-images/issues/2840
     - name: Delete unused files to free disk space
