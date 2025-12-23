@@ -12,6 +12,8 @@ in
         inherit (package) src;
         version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
+
+        patches = [ ];
       };
 
       xrizer-git = let
