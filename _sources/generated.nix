@@ -195,26 +195,26 @@
   };
   somewm = {
     pname = "somewm";
-    version = "0.2.0";
+    version = "0.3.0";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "0.2.0";
+      rev = "0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-vJyR5G0/svcZobca34R17At4KxuQNmTth6Zma/TRR4I=";
+      sha256 = "sha256-PV0xcNgtViI3Sj+Yz+EZzYVR9k5Q5Xf6clGt6BF3ElQ=";
     };
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "2d66fe186b45617e147be103b4d75dd933f11e45";
+    version = "a3dfc145f47fc86c3bfd4960cb41c2471306a9d7";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "2d66fe186b45617e147be103b4d75dd933f11e45";
+      rev = "a3dfc145f47fc86c3bfd4960cb41c2471306a9d7";
       fetchSubmodules = false;
-      sha256 = "sha256-3yc7wln/w/oaD4vhHP/jPZrk+R5NrFE4vSA0ExMauzc=";
+      sha256 = "sha256-PV0xcNgtViI3Sj+Yz+EZzYVR9k5Q5Xf6clGt6BF3ElQ=";
     };
-    date = "2025-12-22";
+    date = "2025-12-23";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -402,23 +402,23 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "ccd75c047cda9867ea9b583f9221265ef20d2bf2";
+    version = "ca814e6ecbc31d4a2780af226cbdf3dcd75d2f6c";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "ccd75c047cda9867ea9b583f9221265ef20d2bf2";
+      rev = "ca814e6ecbc31d4a2780af226cbdf3dcd75d2f6c";
       fetchSubmodules = false;
-      sha256 = "sha256-roQEvByH9bE7TlXT8dqw6mcaCi2fKtUyw/aeWn6p8io=";
+      sha256 = "sha256-5jEnSIFX1NB5yG+UI22FrmaITUqb+lKITNjLNddB8tI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-roQEvByH9bE7TlXT8dqw6mcaCi2fKtUyw_aeWn6p8io=/Cargo.lock";
+      lockFile = ./. + "/sha256-5jEnSIFX1NB5yG+UI22FrmaITUqb+lKITNjLNddB8tI=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
       };
     };
-    date = "2025-12-23";
+    date = "2025-12-24";
   };
   xrizer = {
     pname = "xrizer";

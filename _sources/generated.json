@@ -343,16 +343,16 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "0.2.0",
-            "sha256": "sha256-vJyR5G0/svcZobca34R17At4KxuQNmTth6Zma/TRR4I=",
+            "rev": "0.3.0",
+            "sha256": "sha256-PV0xcNgtViI3Sj+Yz+EZzYVR9k5Q5Xf6clGt6BF3ElQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.2.0"
+        "version": "0.3.0"
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2025-12-22",
+        "date": "2025-12-23",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -364,12 +364,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "2d66fe186b45617e147be103b4d75dd933f11e45",
-            "sha256": "sha256-3yc7wln/w/oaD4vhHP/jPZrk+R5NrFE4vSA0ExMauzc=",
+            "rev": "a3dfc145f47fc86c3bfd4960cb41c2471306a9d7",
+            "sha256": "sha256-PV0xcNgtViI3Sj+Yz+EZzYVR9k5Q5Xf6clGt6BF3ElQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2d66fe186b45617e147be103b4d75dd933f11e45"
+        "version": "a3dfc145f47fc86c3bfd4960cb41c2471306a9d7"
     },
     "tilp2-gfm": {
         "cargoLock": null,
@@ -684,7 +684,7 @@
     "wlx-overlay-s-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-roQEvByH9bE7TlXT8dqw6mcaCi2fKtUyw_aeWn6p8io=/Cargo.lock",
+                "sha256-5jEnSIFX1NB5yG+UI22FrmaITUqb+lKITNjLNddB8tI=/Cargo.lock",
                 {
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=",
@@ -692,7 +692,7 @@
                 }
             ]
         },
-        "date": "2025-12-23",
+        "date": "2025-12-24",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -704,12 +704,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "ccd75c047cda9867ea9b583f9221265ef20d2bf2",
-            "sha256": "sha256-roQEvByH9bE7TlXT8dqw6mcaCi2fKtUyw/aeWn6p8io=",
+            "rev": "ca814e6ecbc31d4a2780af226cbdf3dcd75d2f6c",
+            "sha256": "sha256-5jEnSIFX1NB5yG+UI22FrmaITUqb+lKITNjLNddB8tI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ccd75c047cda9867ea9b583f9221265ef20d2bf2"
+        "version": "ca814e6ecbc31d4a2780af226cbdf3dcd75d2f6c"
     },
     "xrizer": {
         "cargoLock": {
