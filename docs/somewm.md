@@ -5,6 +5,9 @@ This repository features two modules for managing SomeWM, a NixOS module that en
 
 By default, SomeWM will check for your AwesomeWM config at `~/.config/awesome` if it doesn't find one at `~/.config/somewm`. This means that all you need to do is expose any extra libraries to the SomeWM package and it should work nearly flawlessly. If you aren't using the modules in this repository, you can simply append a `--search <path-to-lib>` for each extra library. If you are using the modules in this repository however, you need to override the package to search them. The examples below are shown for the home-manager module but the same package option exists for the NixOS module.
 
+> [!NOTE]
+> SomeWM uses LuaJIT by default, there may be unexpected conflicts when using libraries built on non-JIT Lua.
+
 To expose extra lua libraries from nixpkgs, you can override the package and add them to extraLuaModules:
 ```nix
 # home.nix
@@ -20,7 +23,7 @@ To expose extra lua libraries from nixpkgs, you can override the package and add
 }
 ```
 
-For custom libraries and/or shared objects, you can add those to extraSearchPaths in the same way:
+For custom libraries and/or shared objects, you can add those to extraSearchPaths:
 ```nix
 # home.nix
 {
@@ -29,6 +32,21 @@ For custom libraries and/or shared objects, you can add those to extraSearchPath
     package = (inputs.lemonake.packages.${pkgs.system}.somewm-git.override {
       extraSearchPaths = [
         inputs.lemonake.packages.${pkgs.system}.lua-pam-luajit-git
+      ];
+    };
+  };
+}
+```
+
+For custom GI type library paths, you can add those to extraGITypeLibPaths:
+```nix
+# home.nix
+{
+  wayland.windowManager.somewm = {
+    enable = true;
+    package = (inputs.lemonake.packages.${pkgs.system}.somewm-git.override {
+      extraGITypeLibPaths = with pkgs; [
+        networkmanager upower
       ];
     };
   };

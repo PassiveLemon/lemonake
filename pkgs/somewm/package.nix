@@ -7,6 +7,7 @@
 , gdk-pixbuf
 , glib
 , gobject-introspection
+, gtk3
 , libdrm
 , libinput
 , librsvg
@@ -22,21 +23,24 @@
 , wayland-protocols
 , wlroots_0_19
 , xwayland
-, gtk3Support ? false
-, gtk3 ? null
+, extraGITypeLibPaths ? [ ]
 , extraLuaModules ? [ ]
 , extraSearchPaths ? [ ]
 }:
-assert gtk3Support -> gtk3 != null;
 let
   luaEnv = luajit.withPackages (ps: with ps; ([
     lgi
   ] ++ extraLuaModules));
 
   getLuaPath = lib: dir: "${lib}/${dir}/lua/${luaEnv.luaversion}";
-  makeSearchPath = lib.concatMapStrings (
+  makeSearchPaths = lib.concatMapStrings (
     path: "--add-flags  '--search ${getLuaPath path "share"}' \\" + "--add-flags '--search ${getLuaPath path "lib"}' \\"
   );
+  finalSearchPaths = makeSearchPaths ([ luaEnv ] ++ extraSearchPaths);
+
+  getTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
+  makeGITypeLibPaths = lib.forEach extraGITypeLibPaths getTypeLibPath;
+  finalGITypeLibPaths = lib.concatStringsSep ":" makeGITypeLibPaths;
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "somewm";
@@ -55,6 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
     dbus
     gdk-pixbuf
     glib
+    gtk3
     libdrm
     libinput
     librsvg
@@ -69,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     wayland-protocols
     wlroots_0_19
     xwayland
-  ] ++ lib.optional gtk3Support gtk3;
+  ];
 
   installPhase = ''
     runHook preInstall
@@ -89,8 +94,8 @@ stdenv.mkDerivation (finalAttrs: {
     makeWrapper "$out/bin/.somewm-wrapped" "$out/bin/somewm" \
       --set GDK_PIXBUF_MODULE_FILE "$GDK_PIXBUF_MODULE_FILE" \
       --add-flags '--search ${finalAttrs.src}/lua' \
-      ${makeSearchPath ([ luaEnv ] ++ extraSearchPaths)}
-      --prefix GI_TYPELIB_PATH : "$GI_TYPELIB_PATH"
+      ${finalSearchPaths}
+      --prefix GI_TYPELIB_PATH : $GI_TYPELIB_PATH:${finalGITypeLibPaths}
   '';
 
   meta = with lib; {
