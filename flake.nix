@@ -38,7 +38,14 @@
         };
       };
       packages = {
-        default = inputs'.nvfetcher.packages.default;
+        default = pkgs.writeShellApplication {
+          name = "update";
+          runtimeInputs = [ inputs'.nvfetcher.packages.default ];
+          text = ''
+            nvfetcher -k keyfile.toml
+            exit 0
+          '';
+        };
       };
     };
   };
