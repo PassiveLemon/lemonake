@@ -206,13 +206,13 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "a3dfc145f47fc86c3bfd4960cb41c2471306a9d7";
+    version = "8da5e49b5481b868f479e2dd773172197d0a9e87";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "a3dfc145f47fc86c3bfd4960cb41c2471306a9d7";
+      rev = "8da5e49b5481b868f479e2dd773172197d0a9e87";
       fetchSubmodules = false;
-      sha256 = "sha256-PV0xcNgtViI3Sj+Yz+EZzYVR9k5Q5Xf6clGt6BF3ElQ=";
+      sha256 = "sha256-sgDYijS5E9yFWfgbvHuWDGM3b9UI54hp8I9aGUBxajY=";
     };
     date = "2025-12-23";
   };
