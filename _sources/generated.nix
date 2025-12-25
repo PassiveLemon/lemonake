@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "8da5e49b5481b868f479e2dd773172197d0a9e87";
+    version = "1d5f49f6c7535ad0e5190cfc40cfed429d1edf7f";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "8da5e49b5481b868f479e2dd773172197d0a9e87";
+      rev = "1d5f49f6c7535ad0e5190cfc40cfed429d1edf7f";
       fetchSubmodules = false;
-      sha256 = "sha256-sgDYijS5E9yFWfgbvHuWDGM3b9UI54hp8I9aGUBxajY=";
+      sha256 = "sha256-YXoMhkHaKaZmaaP2g47tFbVnv8FhqgUMP1iuLtwZapM=";
     };
-    date = "2025-12-23";
+    date = "2025-12-24";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -402,16 +402,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "ca814e6ecbc31d4a2780af226cbdf3dcd75d2f6c";
+    version = "3484df0cf774bdf17cb6cec898503c7daa57e8c8";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "ca814e6ecbc31d4a2780af226cbdf3dcd75d2f6c";
+      rev = "3484df0cf774bdf17cb6cec898503c7daa57e8c8";
       fetchSubmodules = false;
-      sha256 = "sha256-5jEnSIFX1NB5yG+UI22FrmaITUqb+lKITNjLNddB8tI=";
+      sha256 = "sha256-E42/TSGRbuwgXBu8QwSd9oNY8p0LsgeajuETAEmYuU4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-5jEnSIFX1NB5yG+UI22FrmaITUqb+lKITNjLNddB8tI=/Cargo.lock";
+      lockFile = ./. + "/sha256-E42_TSGRbuwgXBu8QwSd9oNY8p0LsgeajuETAEmYuU4=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
