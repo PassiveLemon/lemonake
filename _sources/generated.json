@@ -684,7 +684,7 @@
     "wlx-overlay-s-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-E42_TSGRbuwgXBu8QwSd9oNY8p0LsgeajuETAEmYuU4=/Cargo.lock",
+                "sha256-ZUJ_woVQaYR5Iypk+_Obi6NsWNYqMjQBSzBD1aQHHgo=/Cargo.lock",
                 {
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=",
@@ -692,7 +692,7 @@
                 }
             ]
         },
-        "date": "2025-12-24",
+        "date": "2025-12-26",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -704,12 +704,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "3484df0cf774bdf17cb6cec898503c7daa57e8c8",
-            "sha256": "sha256-E42/TSGRbuwgXBu8QwSd9oNY8p0LsgeajuETAEmYuU4=",
+            "rev": "86cbe8f13bf49a3137318bd911dd3d1c466a5ae9",
+            "sha256": "sha256-ZUJ/woVQaYR5Iypk+/Obi6NsWNYqMjQBSzBD1aQHHgo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3484df0cf774bdf17cb6cec898503c7daa57e8c8"
+        "version": "86cbe8f13bf49a3137318bd911dd3d1c466a5ae9"
     },
     "xrizer": {
         "cargoLock": {
