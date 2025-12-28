@@ -352,7 +352,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2025-12-25",
+        "date": "2025-12-26",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -364,12 +364,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "597063f9ace85675f9802a6962902810b763abe8",
-            "sha256": "sha256-LPWZR/A6RR6PcV6bEwxX+8ukI2SS316kqG30hEr80mw=",
+            "rev": "f1cf3d7adef527c672bcd0a4d9fbfe50fb076bfe",
+            "sha256": "sha256-JJZkmSG5zq6I0TrNnx/mdw90ocSOkIt6Uh46T+Vnkow=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "597063f9ace85675f9802a6962902810b763abe8"
+        "version": "f1cf3d7adef527c672bcd0a4d9fbfe50fb076bfe"
     },
     "tilp2-gfm": {
         "cargoLock": null,
@@ -684,7 +684,7 @@
     "wlx-overlay-s-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-ZUJ_woVQaYR5Iypk+_Obi6NsWNYqMjQBSzBD1aQHHgo=/Cargo.lock",
+                "sha256-jqjnKfqeNixfeYQX4zCGgITi5tcLq3MRoYOabhQaUZI=/Cargo.lock",
                 {
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=",
@@ -692,7 +692,7 @@
                 }
             ]
         },
-        "date": "2025-12-26",
+        "date": "2025-12-28",
         "extract": null,
         "name": "wlx-overlay-s-git",
         "passthru": null,
@@ -704,12 +704,12 @@
             "name": null,
             "owner": "galister",
             "repo": "wlx-overlay-s",
-            "rev": "86cbe8f13bf49a3137318bd911dd3d1c466a5ae9",
-            "sha256": "sha256-ZUJ/woVQaYR5Iypk+/Obi6NsWNYqMjQBSzBD1aQHHgo=",
+            "rev": "bab2d54daa749770e942652192acb15eb45e6318",
+            "sha256": "sha256-jqjnKfqeNixfeYQX4zCGgITi5tcLq3MRoYOabhQaUZI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "86cbe8f13bf49a3137318bd911dd3d1c466a5ae9"
+        "version": "bab2d54daa749770e942652192acb15eb45e6318"
     },
     "xrizer": {
         "cargoLock": {
