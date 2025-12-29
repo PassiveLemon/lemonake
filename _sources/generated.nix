@@ -195,13 +195,13 @@
   };
   somewm = {
     pname = "somewm";
-    version = "0.3.0";
+    version = "0.4.0";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "0.3.0";
+      rev = "0.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-PV0xcNgtViI3Sj+Yz+EZzYVR9k5Q5Xf6clGt6BF3ElQ=";
+      sha256 = "sha256-JJZkmSG5zq6I0TrNnx/mdw90ocSOkIt6Uh46T+Vnkow=";
     };
   };
   somewm-git = {
@@ -342,15 +342,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3df615cb8a1a20ff9d00088936dacafb7321a832";
+    version = "832df65d17e27133503fd979a1f80bce1dc2cd26";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3df615cb8a1a20ff9d00088936dacafb7321a832";
+      rev = "832df65d17e27133503fd979a1f80bce1dc2cd26";
       fetchSubmodules = false;
-      sha256 = "sha256-fb9eEej42VenUVEtwb4rKX1C3rQ/4xlylhdbDZHWXu8=";
+      sha256 = "sha256-XSGvFPwQChMju0sBeV/Wdqt/KU9A1ZEBTrcizozDij4=";
     };
-    date = "2025-12-26";
+    date = "2025-12-28";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -402,16 +402,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "bab2d54daa749770e942652192acb15eb45e6318";
+    version = "951abc70b02ad59a5034b2827449bc2a833ccba7";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "bab2d54daa749770e942652192acb15eb45e6318";
+      rev = "951abc70b02ad59a5034b2827449bc2a833ccba7";
       fetchSubmodules = false;
-      sha256 = "sha256-jqjnKfqeNixfeYQX4zCGgITi5tcLq3MRoYOabhQaUZI=";
+      sha256 = "sha256-O/soyj+Xa6a+bC+WrKulk6rVu1ANDNjva8132UOSoUc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-jqjnKfqeNixfeYQX4zCGgITi5tcLq3MRoYOabhQaUZI=/Cargo.lock";
+      lockFile = ./. + "/sha256-O_soyj+Xa6a+bC+WrKulk6rVu1ANDNjva8132UOSoUc=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
