@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "49325399229dd30364ba6b2d65f0abab2b764cb2";
+    version = "5489115a078dd86bcfdd203cba3187a42b99d144";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "49325399229dd30364ba6b2d65f0abab2b764cb2";
+      rev = "5489115a078dd86bcfdd203cba3187a42b99d144";
       fetchSubmodules = false;
-      sha256 = "sha256-1WygDanzLJ3Lgs9P5b4R3ZiZ6xkFNRORyHw5Nb9l2uY=";
+      sha256 = "sha256-pZrohCZj5t0YmVAcLfuZZUdXCSvVawInjYRdtnS3wxU=";
     };
-    date = "2025-12-30";
+    date = "2025-12-31";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -342,15 +342,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "21c04be1f828a0a95062435ebc21319fcce3bf0f";
+    version = "f383eb8e8d24592d0e3b2261bc95e9efbdaccdae";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "21c04be1f828a0a95062435ebc21319fcce3bf0f";
+      rev = "f383eb8e8d24592d0e3b2261bc95e9efbdaccdae";
       fetchSubmodules = false;
-      sha256 = "sha256-zBPdDB4Qld0sUjAA6LIUpMVT8uE/XCe/LBSkwCwAGDo=";
+      sha256 = "sha256-5GP6/Wrtd2spU24cOWqGmereGd2jVG46a6WBvrHyWQY=";
     };
-    date = "2025-12-30";
+    date = "2025-12-31";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -402,23 +402,23 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "951abc70b02ad59a5034b2827449bc2a833ccba7";
+    version = "36f64c5027bf5c6652b0c82387fa0e3d2c2e2eef";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "951abc70b02ad59a5034b2827449bc2a833ccba7";
+      rev = "36f64c5027bf5c6652b0c82387fa0e3d2c2e2eef";
       fetchSubmodules = false;
-      sha256 = "sha256-O/soyj+Xa6a+bC+WrKulk6rVu1ANDNjva8132UOSoUc=";
+      sha256 = "sha256-WH3gUJToSt+4jGbjCD9q33yolrOPQQB21mFretNlGGM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-O_soyj+Xa6a+bC+WrKulk6rVu1ANDNjva8132UOSoUc=/Cargo.lock";
+      lockFile = ./. + "/sha256-WH3gUJToSt+4jGbjCD9q33yolrOPQQB21mFretNlGGM=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
       };
     };
-    date = "2025-12-28";
+    date = "2026-01-01";
   };
   xrizer = {
     pname = "xrizer";
