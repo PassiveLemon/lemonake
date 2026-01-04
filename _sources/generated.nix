@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "042c718f45dde8f87c26caec1cfcd5d6f2382d7d";
+    version = "73d4877e8471871d146904a67ff4f5a79db563e2";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "042c718f45dde8f87c26caec1cfcd5d6f2382d7d";
+      rev = "73d4877e8471871d146904a67ff4f5a79db563e2";
       fetchSubmodules = false;
-      sha256 = "sha256-lRGhxfOMh20bhelr609NKfqXOe4Q7T3+B3YSw9oiHuc=";
+      sha256 = "sha256-OIH1O1P+WHNNef7Wx+4fO1W03efW4BPXxEEOPsOUE8U=";
     };
-    date = "2026-01-02";
+    date = "2026-01-04";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -402,23 +402,23 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "36f64c5027bf5c6652b0c82387fa0e3d2c2e2eef";
+    version = "dd3486f06ba0c1aaf4cf020a4403e7eaedbbf948";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "36f64c5027bf5c6652b0c82387fa0e3d2c2e2eef";
+      rev = "dd3486f06ba0c1aaf4cf020a4403e7eaedbbf948";
       fetchSubmodules = false;
-      sha256 = "sha256-WH3gUJToSt+4jGbjCD9q33yolrOPQQB21mFretNlGGM=";
+      sha256 = "sha256-McKcIDxa6x3F/3PvlJh2cu/hMlXlrlvGiDgFxc74Woc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-WH3gUJToSt+4jGbjCD9q33yolrOPQQB21mFretNlGGM=/Cargo.lock";
+      lockFile = ./. + "/sha256-McKcIDxa6x3F_3PvlJh2cu_hMlXlrlvGiDgFxc74Woc=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
       };
     };
-    date = "2026-01-01";
+    date = "2026-01-04";
   };
   xrizer = {
     pname = "xrizer";
