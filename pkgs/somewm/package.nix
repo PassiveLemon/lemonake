@@ -5,6 +5,7 @@
 , cairo
 , dbus
 , gdk-pixbuf
+, git
 , glib
 , gobject-introspection
 , gtk3
@@ -16,6 +17,8 @@
 , libxkbcommon
 , luajit
 , makeWrapper
+, meson
+, ninja
 , pango
 , pkg-config
 , wayland
@@ -51,13 +54,17 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     gobject-introspection
     makeWrapper
+    meson
+    ninja
     pkg-config
+    wayland-scanner
   ];
 
   buildInputs = [
     cairo
     dbus
     gdk-pixbuf
+    git
     glib
     gtk3
     libdrm
@@ -84,7 +91,7 @@ stdenv.mkDerivation (finalAttrs: {
     install -m755 somewm-client $out/bin/somewm-client
 
     mkdir -p $out/share/wayland-sessions/
-    install -m644 somewm.desktop $out/share/wayland-sessions/somewm.desktop
+    install -m644 $src/somewm.desktop $out/share/wayland-sessions/somewm.desktop
 
     runHook postInstall
   '';
