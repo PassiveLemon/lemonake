@@ -364,12 +364,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "73d4877e8471871d146904a67ff4f5a79db563e2",
-            "sha256": "sha256-OIH1O1P+WHNNef7Wx+4fO1W03efW4BPXxEEOPsOUE8U=",
+            "rev": "a792201954b3e2ff54c9268dba6775c49fe48fcc",
+            "sha256": "sha256-cSKm4bbnC9P1ET+AEJkZjQGx431TBiA9eBYTjDqniG4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "73d4877e8471871d146904a67ff4f5a79db563e2"
+        "version": "a792201954b3e2ff54c9268dba6775c49fe48fcc"
     },
     "tilp2-gfm": {
         "cargoLock": null,
