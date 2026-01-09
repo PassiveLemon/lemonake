@@ -89,24 +89,6 @@ fetch.github = "debrouxl/tilp_and_gfm"
 src.git = "https://github.com/micheal65536/VapoR"
 fetch.github = "micheal65536/VapoR"
 
-[wayvr-dashboard]
-src.github = "olekolek1000/wayvr-dashboard"
-fetch.github = "olekolek1000/wayvr-dashboard"
-cargo_lock = [ "src-tauri/Cargo.lock" ]
-
-[wayvr-dashboard-git]
-src.git = "https://github.com/olekolek1000/wayvr-dashboard"
-fetch.github = "olekolek1000/wayvr-dashboard"
-cargo_lock = [ "src-tauri/Cargo.lock" ]
-
-[wayvr-dashboard-appimage]
-src.manual = "0.3.7"
-fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard.AppImage"
-
-[wayvr-dashboard-binary]
-src.manual = "0.3.7"
-fetch.url = "https://github.com/olekolek1000/wayvr-dashboard/releases/download/$ver/wayvr-dashboard"
-
 [webfisher]
 src.github = "PassiveLemon/webfisher"
 fetch.github = "PassiveLemon/webfisher"
@@ -131,14 +113,14 @@ fetch.github = "WiVRn/WiVRn"
 src.cmd = "curl https://raw.githubusercontent.com/WiVRn/WiVRn/refs/heads/master/monado-rev"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
-[wlx-overlay-s]
-src.github = "galister/wlx-overlay-s"
-fetch.github = "galister/wlx-overlay-s"
+[wayvr]
+src.github = "wlx-team/wayvr"
+fetch.github = "wlx-team/wayvr"
 cargo_lock = [ "Cargo.lock" ]
 
-[wlx-overlay-s-git]
-src.git = "https://github.com/galister/wlx-overlay-s"
-fetch.github = "galister/wlx-overlay-s"
+[wayvr-git]
+src.git = "https://github.com/wlx-team/wayvr"
+fetch.github = "wlx-team/wayvr"
 cargo_lock = [ "Cargo.lock" ]
 
 [xrizer]
