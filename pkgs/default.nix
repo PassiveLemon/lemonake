@@ -16,10 +16,9 @@ let
     "somewm"
     "tilp2"
     "vapor"
-    "wayvr-dashboard"
+    "wayvr"
     "webfisher"
     "wivrn"
-    "wlx-overlay-s"
     "xrizer"
   ];
 
