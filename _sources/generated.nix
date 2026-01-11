@@ -288,23 +288,23 @@
   };
   wayvr-dashboard-git = {
     pname = "wayvr-dashboard-git";
-    version = "952d92bfedf99f4bc16155394cf9e3fe2f08a8bf";
+    version = "f1d43e3fe259854ac6c15cbf37cc2ecf419a4450";
     src = fetchFromGitHub {
       owner = "olekolek1000";
       repo = "wayvr-dashboard";
-      rev = "952d92bfedf99f4bc16155394cf9e3fe2f08a8bf";
+      rev = "f1d43e3fe259854ac6c15cbf37cc2ecf419a4450";
       fetchSubmodules = false;
-      sha256 = "sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=";
+      sha256 = "sha256-okcj0HFQrdk9e5z7Upf84CneK+ZSaxzN8GGU382rP9k=";
     };
     cargoLock."src-tauri/Cargo.lock" = {
-      lockFile = ./. + "/sha256-8Zy+ykPszRbYZrjShPy8zRRdzL0ppLFUcnJerOWPUtc=/src-tauri/Cargo.lock";
+      lockFile = ./. + "/sha256-okcj0HFQrdk9e5z7Upf84CneK+ZSaxzN8GGU382rP9k=/src-tauri/Cargo.lock";
       outputHashes = {
         "keyvalues-parser-0.2.0" = "sha256-LT+WHhan/USzW0EOiuIBPG5j1r9qL4n7Z7ESDxO1xQQ=";
         "libmonado-1.3.1" = "sha256-HYYfpYhyo5VmbUdwMTJuAR+2dnMITIGZIPGX9Qsnc/g=";
         "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
       };
     };
-    date = "2025-10-19";
+    date = "2026-01-10";
   };
   webfisher = {
     pname = "webfisher";
@@ -342,15 +342,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "5bb73100939d907f372129296c6e712336600f64";
+    version = "cdc4a8f3d64164c54760cba04be0255ac9bcf343";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "5bb73100939d907f372129296c6e712336600f64";
+      rev = "cdc4a8f3d64164c54760cba04be0255ac9bcf343";
       fetchSubmodules = false;
-      sha256 = "sha256-El6ANX/I2loamLa+Jq1SMnPXCjYw9o2gQOI8O/KY6Xw=";
+      sha256 = "sha256-Hm8qDEpx8hdecajyIRCLi/uKxEpnnR0bCfFpACBqA1I=";
     };
-    date = "2026-01-09";
+    date = "2026-01-10";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
@@ -380,38 +380,37 @@
   };
   wlx-overlay-s = {
     pname = "wlx-overlay-s";
-    version = "v25.4.2";
+    version = "v26.1.2";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "v25.4.2";
+      rev = "v26.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-lWUfhiHRxu72p9ZG2f2fZH6WZECm/fOKcK05MLZV+MI=";
+      sha256 = "sha256-UZ5zcalez6B+212OqCaEXSoRfhaExuy0W8HX8b4flSU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-lWUfhiHRxu72p9ZG2f2fZH6WZECm_fOKcK05MLZV+MI=/Cargo.lock";
+      lockFile = ./. + "/sha256-UZ5zcalez6B+212OqCaEXSoRfhaExuy0W8HX8b4flSU=/Cargo.lock";
       outputHashes = {
-        "libmonado-1.3.1" = "sha256-8NA8DLfErX44LIXg5fi2xRDyJaofjpQfILQuu0oaIOQ=";
-        "ovr_overlay-0.0.0" = "sha256-NHzESKsghqI98pkQxEmcNkQ9lTfBsqR9/25msbryi6E=";
-        "openxr-0.18.0" = "sha256-ktkbhmExstkNJDYM/HYOwAwv3acex7P9SP0KMAOKhQk=";
-        "wlx-capture-0.5.2" = "sha256-rw6konHyvUeb9c5Ln+yUgjJIxymiJfaWKLUL8vDqjnM=";
+        "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
+        "libmonado-1.3.2" = "sha256-CHkHtpYmo90WmPdgBz92IUb7Y5iuGom5zzjIf+/45Eo=";
         "libspa-0.8.0" = "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=";
-        "wayvr_ipc-0.1.0" = "sha256-ieQaY08Ogl/F3t/p825LBp1lAO3SWH1F8206IPXEgTc=";
+        "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
+        "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "d11b33a57934afef02242f145b2eeb7a4880e987";
+    version = "f059c5668ac9d3f94e559c270f3fe407f27a1fb2";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "d11b33a57934afef02242f145b2eeb7a4880e987";
+      rev = "f059c5668ac9d3f94e559c270f3fe407f27a1fb2";
       fetchSubmodules = false;
-      sha256 = "sha256-l2RRPKV5bN/u+NIWxRUTjfjd0IJ2VUBpawbjAk1AYh4=";
+      sha256 = "sha256-5F6ove6k+A9FoenkoG8EmKB5cwt7DC4wXAlhVtjqxwc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-l2RRPKV5bN_u+NIWxRUTjfjd0IJ2VUBpawbjAk1AYh4=/Cargo.lock";
+      lockFile = ./. + "/sha256-5F6ove6k+A9FoenkoG8EmKB5cwt7DC4wXAlhVtjqxwc=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "libmonado-1.3.2" = "sha256-CHkHtpYmo90WmPdgBz92IUb7Y5iuGom5zzjIf+/45Eo=";
