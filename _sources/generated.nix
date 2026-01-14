@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "37a1fda73b10c0139493962e00de1e8245ed6600";
+    version = "0968ed7bb92f0477533e61135acc4b8bf4d83e05";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "37a1fda73b10c0139493962e00de1e8245ed6600";
+      rev = "0968ed7bb92f0477533e61135acc4b8bf4d83e05";
       fetchSubmodules = false;
-      sha256 = "sha256-+kNvDAJ5OaOksCaZgQRCm0vl8z2fZQChzlFPS4RyIyw=";
+      sha256 = "sha256-Om3P6pcDRc6/mYLzWDoMQOcRXIGuqBcAGFu1Ecov+5Q=";
     };
-    date = "2026-01-12";
+    date = "2026-01-13";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -342,27 +342,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "bf0a1bc184ee4d9ec52903d23d21ccd31b688afe";
+    version = "a49cc3dea850556abe3f80c7a372a687fc462c72";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "bf0a1bc184ee4d9ec52903d23d21ccd31b688afe";
+      rev = "a49cc3dea850556abe3f80c7a372a687fc462c72";
       fetchSubmodules = false;
-      sha256 = "sha256-5vY9Pt3w8Mq1HWlA3eXVCF3dQ8XAmIwWMsN7L3IMkCY=";
+      sha256 = "sha256-fcU/JiG0E3VTaGsKUDTrOWXyfDBBd4522D/wDqh+cJI=";
     };
-    date = "2026-01-11";
+    date = "2026-01-13";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "86a0ea4d3e396d4d03274252c400ddb62d1049b0";
+    version = "93d5848d2f5f835fe29291dc7e0f094f3e02de78";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "86a0ea4d3e396d4d03274252c400ddb62d1049b0";
+      rev = "93d5848d2f5f835fe29291dc7e0f094f3e02de78";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-nlfrx6NRYV9eMs+Rb9JBh+mwucL6v+bB3jBrPsSxh+Q=";
+      sha256 = "sha256-zU8TLRzd4pb9KzVT/xana6rArcSu31wlCD54p7PJ9UY=";
     };
   };
   wivrn-monado = {
@@ -401,16 +401,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "1318f23947e4eae4e463764465cda202143e96c3";
+    version = "c7ebb7492e098cb738938dadbc2969a5619da24f";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "1318f23947e4eae4e463764465cda202143e96c3";
+      rev = "c7ebb7492e098cb738938dadbc2969a5619da24f";
       fetchSubmodules = false;
-      sha256 = "sha256-6Q63buthOpZHEMFmUFCbi50nN4+yDpkZ4Zi+eowhiRs=";
+      sha256 = "sha256-RYd7kCGl4bdVyBwUgknSlt8I6/26fG0za0eK+FsfNhM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-6Q63buthOpZHEMFmUFCbi50nN4+yDpkZ4Zi+eowhiRs=/Cargo.lock";
+      lockFile = ./. + "/sha256-RYd7kCGl4bdVyBwUgknSlt8I6_26fG0za0eK+FsfNhM=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "libmonado-1.3.2" = "sha256-CHkHtpYmo90WmPdgBz92IUb7Y5iuGom5zzjIf+/45Eo=";
