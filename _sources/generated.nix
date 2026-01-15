@@ -28,10 +28,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.27";
+    version = "2.0.28";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.27__linux__x64.AppImage";
-      sha256 = "sha256-bpzSFVPIifhG8TWlZlMYLLBAfq6vr0ZIr4UyXwM8d7Q=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.28__linux__x64.AppImage";
+      sha256 = "sha256-0OS4V5Wyghi+5ZQwvHz/CfNzPuLALjXDq2kAV6mGmkc=";
     };
   };
   gdlauncher-legacy = {
@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "0968ed7bb92f0477533e61135acc4b8bf4d83e05";
+    version = "5980bfd36bb9b23a0647028b5ba2acaf14b09980";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "0968ed7bb92f0477533e61135acc4b8bf4d83e05";
+      rev = "5980bfd36bb9b23a0647028b5ba2acaf14b09980";
       fetchSubmodules = false;
-      sha256 = "sha256-Om3P6pcDRc6/mYLzWDoMQOcRXIGuqBcAGFu1Ecov+5Q=";
+      sha256 = "sha256-vxXTWOC8HUTxfOMD64kQcloc/6bUeZRYn8ueLdUH69o=";
     };
-    date = "2026-01-13";
+    date = "2026-01-14";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -401,16 +401,16 @@
   };
   wlx-overlay-s-git = {
     pname = "wlx-overlay-s-git";
-    version = "c7ebb7492e098cb738938dadbc2969a5619da24f";
+    version = "cd0d49eaf6c859acff4d12fd5de93109b82a69e7";
     src = fetchFromGitHub {
       owner = "galister";
       repo = "wlx-overlay-s";
-      rev = "c7ebb7492e098cb738938dadbc2969a5619da24f";
+      rev = "cd0d49eaf6c859acff4d12fd5de93109b82a69e7";
       fetchSubmodules = false;
-      sha256 = "sha256-RYd7kCGl4bdVyBwUgknSlt8I6/26fG0za0eK+FsfNhM=";
+      sha256 = "sha256-xrFswu1f5U4Pu1QxrjKlXQmOkA6ukzRKg55FmQjX7hs=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-RYd7kCGl4bdVyBwUgknSlt8I6_26fG0za0eK+FsfNhM=/Cargo.lock";
+      lockFile = ./. + "/sha256-xrFswu1f5U4Pu1QxrjKlXQmOkA6ukzRKg55FmQjX7hs=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-ayqRtfSW0Ql5Bqx2uAlugd/rkEBDx8pvwVDvFSsVLyQ=";
         "libmonado-1.3.2" = "sha256-CHkHtpYmo90WmPdgBz92IUb7Y5iuGom5zzjIf+/45Eo=";
@@ -419,7 +419,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-01-13";
+    date = "2026-01-15";
   };
   xrizer = {
     pname = "xrizer";
