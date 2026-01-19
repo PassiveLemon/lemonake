@@ -28,10 +28,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.27";
+    version = "2.0.28";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.27__linux__x64.AppImage";
-      sha256 = "sha256-bpzSFVPIifhG8TWlZlMYLLBAfq6vr0ZIr4UyXwM8d7Q=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.28__linux__x64.AppImage";
+      sha256 = "sha256-0OS4V5Wyghi+5ZQwvHz/CfNzPuLALjXDq2kAV6mGmkc=";
     };
   };
   gdlauncher-legacy = {
@@ -141,15 +141,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "800421acd4bc65b5de2fd29bf49279aa44026256";
+    version = "508608509212cadce894aea7605dde06c6dfc7b8";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "800421acd4bc65b5de2fd29bf49279aa44026256";
+      rev = "508608509212cadce894aea7605dde06c6dfc7b8";
       fetchSubmodules = false;
-      sha256 = "sha256-05a9zXLEKPYUaSACmmxZRAc+MD6ZYNuI2hRMRW3YAPU=";
+      sha256 = "sha256-Y00XpJGRPoe5pcnw4jHasRVf+sSsNQjW9LPb0xflBMI=";
     };
-    date = "2025-12-09";
+    date = "2026-01-17";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "248c726ac706d0ec175f8a17cdb017362fb0ed61";
+    version = "80c15f3d6192029694ec616fc93165535b6d22b2";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "248c726ac706d0ec175f8a17cdb017362fb0ed61";
+      rev = "80c15f3d6192029694ec616fc93165535b6d22b2";
       fetchSubmodules = false;
-      sha256 = "sha256-KMndbI89ExeXIXaW9fg72KUKKutI3ny2/M6qf4giXiw=";
+      sha256 = "sha256-9kUz+hnDHNAr1GuEbc9TUM66thRIk5VoikpY16Bx/OI=";
     };
-    date = "2026-01-05";
+    date = "2026-01-16";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -330,27 +330,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "f58f9c7e0b21501244a1674e3e462afc4cf8874a";
+    version = "317cd6bb91daea6cfbc31d33d51c87fd351043fc";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "f58f9c7e0b21501244a1674e3e462afc4cf8874a";
+      rev = "317cd6bb91daea6cfbc31d33d51c87fd351043fc";
       fetchSubmodules = false;
-      sha256 = "sha256-LAHRSZ30N6S5j5140mNOmPpxI2L8tP8FdRJbBSWlIRo=";
+      sha256 = "sha256-xDWAonb8UWxtxURyhRfypeSOxteeKca3B+GMsEb99vM=";
     };
-    date = "2026-01-07";
+    date = "2026-01-16";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "86a0ea4d3e396d4d03274252c400ddb62d1049b0";
+    version = "93d5848d2f5f835fe29291dc7e0f094f3e02de78";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "86a0ea4d3e396d4d03274252c400ddb62d1049b0";
+      rev = "93d5848d2f5f835fe29291dc7e0f094f3e02de78";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-nlfrx6NRYV9eMs+Rb9JBh+mwucL6v+bB3jBrPsSxh+Q=";
+      sha256 = "sha256-zU8TLRzd4pb9KzVT/xana6rArcSu31wlCD54p7PJ9UY=";
     };
   };
   wivrn-monado = {
@@ -385,21 +385,21 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "01ab72809f2bd5c6494fa77fb08e4229c886da7a";
+    version = "90b317b192f44af5ac228db11e89a5a4e3e5e095";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "01ab72809f2bd5c6494fa77fb08e4229c886da7a";
+      rev = "90b317b192f44af5ac228db11e89a5a4e3e5e095";
       fetchSubmodules = false;
-      sha256 = "sha256-IRhLWlGHywp0kZe5aGmMHAF1zZwva3sGg68eG1E2K9A=";
+      sha256 = "sha256-MtSWiOykhu8SuB0EaARFwFsSkTPeezyBsw9wnkJ2N3s=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-IRhLWlGHywp0kZe5aGmMHAF1zZwva3sGg68eG1E2K9A=/Cargo.lock";
+      lockFile = ./. + "/sha256-MtSWiOykhu8SuB0EaARFwFsSkTPeezyBsw9wnkJ2N3s=/Cargo.lock";
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2025-12-22";
+    date = "2026-01-17";
   };
 }
 
