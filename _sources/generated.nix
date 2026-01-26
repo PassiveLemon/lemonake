@@ -229,15 +229,15 @@
   };
   tilp2-gfm-git = {
     pname = "tilp2-gfm-git";
-    version = "0a525619a07d92734b5eb5ba1d47c56f4de37458";
+    version = "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec";
     src = fetchFromGitHub {
       owner = "debrouxl";
       repo = "tilp_and_gfm";
-      rev = "0a525619a07d92734b5eb5ba1d47c56f4de37458";
+      rev = "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec";
       fetchSubmodules = false;
-      sha256 = "sha256-itPop4GO6ty40iucg31YgHEoK0W05eM+rD9tF+nAugE=";
+      sha256 = "sha256-lR++eEYSO3xcTUVNMustm6Zd4bL2mKO//M0tPDEPen0=";
     };
-    date = "2024-12-01";
+    date = "2026-01-25";
   };
   vapor-git = {
     pname = "vapor-git";
