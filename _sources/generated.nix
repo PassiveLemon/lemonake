@@ -241,15 +241,15 @@
   };
   vapor-git = {
     pname = "vapor-git";
-    version = "3993a084d26f385f8b9c8bcea0f70e27986c92f0";
+    version = "08014062d080272bc192240e7e1ed8b2c6032011";
     src = fetchFromGitHub {
       owner = "micheal65536";
       repo = "VapoR";
-      rev = "3993a084d26f385f8b9c8bcea0f70e27986c92f0";
+      rev = "08014062d080272bc192240e7e1ed8b2c6032011";
       fetchSubmodules = false;
-      sha256 = "sha256-80EZKzaXXZ/XpliYmVW6Y/RYrll2xJ9PVkNxq4t+mno=";
+      sha256 = "sha256-gwg7xSo8cYiqvOhgrbe1/dq85i2nUJtoBOn23qGjGbs=";
     };
-    date = "2026-02-02";
+    date = "2026-02-03";
   };
   wayvr = {
     pname = "wayvr";
@@ -274,16 +274,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "676a96b2cddd4ed088e6d0936785dc4c17ad102f";
+    version = "a22bb2bf1ac4c96e6dafef77acbd12487bf3eca6";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "676a96b2cddd4ed088e6d0936785dc4c17ad102f";
+      rev = "a22bb2bf1ac4c96e6dafef77acbd12487bf3eca6";
       fetchSubmodules = false;
-      sha256 = "sha256-N6E4bYD/SveF2F/OA5eWKTfNKYDeYF6IqthdGluEt9o=";
+      sha256 = "sha256-1Vb6lZrwOSTvbKh1Lk3DSHWfngnQ4HTD+a2D8K74OGI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-N6E4bYD_SveF2F_OA5eWKTfNKYDeYF6IqthdGluEt9o=/Cargo.lock";
+      lockFile = ./. + "/sha256-1Vb6lZrwOSTvbKh1Lk3DSHWfngnQ4HTD+a2D8K74OGI=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "libmonado-1.3.2" = "sha256-CHkHtpYmo90WmPdgBz92IUb7Y5iuGom5zzjIf+/45Eo=";
@@ -292,7 +292,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-02-02";
+    date = "2026-02-04";
   };
   webfisher = {
     pname = "webfisher";
@@ -330,27 +330,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "c693993748a8d34efbcbbe22bbaaa4e19419ac76";
+    version = "25f7a3dddb8183bd43d353120524d903ffeb796f";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "c693993748a8d34efbcbbe22bbaaa4e19419ac76";
+      rev = "25f7a3dddb8183bd43d353120524d903ffeb796f";
       fetchSubmodules = false;
-      sha256 = "sha256-iLNKnvWKTlnXNz7R8unHaRqfLJ6QDnvhfsBq8SPSYgU=";
+      sha256 = "sha256-sEyPEhHkvYGx5LV3sJ+mMQcwmNhKIkJFnAtwVnSxtM8=";
     };
-    date = "2026-02-02";
+    date = "2026-02-03";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "c399c3a15cdafc3af19331f1fc2edd7339436847";
+    version = "317b480450257e2ba24643000b1a2c1505012cf7";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "c399c3a15cdafc3af19331f1fc2edd7339436847";
+      rev = "317b480450257e2ba24643000b1a2c1505012cf7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Q8yciIwQrRNUCQ5tRUdL67w+5ddbdX/zFtxtLEZ014c=";
+      sha256 = "sha256-sz8scctqPxYcZL5fEVu/YSNPhW62swHncU0W2j+KMUs=";
     };
   };
   wivrn-monado = {
@@ -385,20 +385,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "84d24b71d4497fe8142d9d131c4b3f59f723e56d";
+    version = "5ff6a384ac4b936facf407f62e735bb3e9829559";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "84d24b71d4497fe8142d9d131c4b3f59f723e56d";
+      rev = "5ff6a384ac4b936facf407f62e735bb3e9829559";
       fetchSubmodules = false;
-      sha256 = "sha256-VgW7R8+CAWJSEWthquVB12fj4PJygC7TIdG1IxNH5Xs=";
+      sha256 = "sha256-FY2Q2U+Ja3pa9Jfp7HDJdQ1y51/FYM6k8rZH02UAHD4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-VgW7R8+CAWJSEWthquVB12fj4PJygC7TIdG1IxNH5Xs=/Cargo.lock";
+      lockFile = ./. + "/sha256-FY2Q2U+Ja3pa9Jfp7HDJdQ1y51_FYM6k8rZH02UAHD4=/Cargo.lock";
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2026-02-02";
+    date = "2026-02-03";
   };
 }
