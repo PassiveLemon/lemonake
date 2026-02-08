@@ -42,7 +42,7 @@ let
   enabledConfig = optionalString cfg.config.enable "-f ${configFile}";
 
   # Manage server executables and flags
-  serverExec = concatStringsSep " " ([ serverPackageExe "--systemd" enabledConfig ] ++ cfg.extraServerFlags);
+  serverExec = concatStringsSep " " ([ serverPackageExe enabledConfig ] ++ cfg.extraServerFlags);
 in
 {
   options = {
@@ -98,7 +98,7 @@ in
             Like upstream, the application option is a list including the application and it's flags. In the case of the NixOS module however, the first element of the list must be a package. The module will assert otherwise.
             The application can be set to a single package because it gets passed to lib.toList, though this will not allow for flags to be passed.
 
-            WiVRn has good default configurations so it is recommended to leave this unconfigured and try the defaults before attempting manual configuration.
+            WiVRn has good default configurations and most options can be configured at runtime so it is recommended to leave this empty and try the defaults before attempting manual configuration.
 
             See https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md
           '';
@@ -117,7 +117,7 @@ in
                   offset_y = 0.0;
                 }
               ];
-              application = [ pkgs.wlx-overlay-s ];
+              application = [ pkgs.wayvr ];
             }
           '';
         };
@@ -179,6 +179,7 @@ in
               RestrictSUIDSGID = true;
             }
           );
+          # Needs Steam in the PATH to allow launching games from the headset
           path = [ cfg.steam.package ];
           wantedBy = mkIf cfg.autoStart [ "default.target" ];
           restartTriggers = [

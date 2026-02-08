@@ -9,20 +9,26 @@ in
         package = getPackage "wivrn" prev;
         monado = getPackage "wivrn-monado" prev;
       in
-      prev.callPackage ./package.nix {
+      prev.wivrn.overrideAttrs (_: prevAttrs: {
         inherit (package) src;
         version = versionFromPackage package;
-        monadoSrc = monado.src;
-      };
+        monado = prev.applyPatches {
+          inherit (prevAttrs.monado) postPatch;
+          src = monado.src;
+        };
+      });
 
       wivrn-git = let
         package = getPackage "wivrn-git" prev;
         monado = getPackage "wivrn-git-monado" prev;
       in
-      (prev.callPackage ./package.nix {
+      prev.wivrn.overrideAttrs (_: prevAttrs: {
         inherit (package) src;
         version = versionFromPackage package;
-        monadoSrc = monado.src;
+        monado = prev.applyPatches {
+          inherit (prevAttrs.monado) postPatch;
+          src = monado.src;
+        };
       });
     };
   };
