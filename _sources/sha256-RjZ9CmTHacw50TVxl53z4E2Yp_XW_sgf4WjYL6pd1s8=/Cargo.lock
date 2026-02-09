@@ -694,15 +694,12 @@ dependencies = [
  "itertools 0.12.1",
  "lazy_static",
  "lazycell",
- "log",
- "prettyplease",
  "proc-macro2",
  "quote",
  "regex",
  "rustc-hash 1.1.0",
  "shlex",
  "syn 2.0.113",
- "which",
 ]
 
 [[package]]
@@ -812,9 +809,9 @@ checksum = "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495"
 
 [[package]]
 name = "bytes"
-version = "1.11.0"
+version = "1.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b35204fbdc0b3f4446b89fc1ac2cf84a8a68971995d0bf2e925ec7cd960f9cb3"
+checksum = "1e748733b7cbc798e1434b6ac524f0c1ff2ab456fe201501e6497c8417a4fc33"
 
 [[package]]
 name = "calloop"
@@ -2278,15 +2275,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
-name = "home"
-version = "0.5.12"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc627f471c528ff0c4a49e1d5e60450c8f6461dd6d10ba9dcd3a61d3dff7728d"
-dependencies = [
- "windows-sys 0.61.2",
-]
-
-[[package]]
 name = "hound"
 version = "3.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2893,12 +2881,10 @@ checksum = "f9fbbcab51052fe104eb5e5d351cf728d30a5be1fe14d9be8a3b097481fb97de"
 
 [[package]]
 name = "libmonado"
-version = "1.3.2"
-source = "git+https://github.com/technobaboo/libmonado-rs.git?rev=26292e5b14663ee2f089f66f0851438a0c00ee67#26292e5b14663ee2f089f66f0851438a0c00ee67"
+version = "1.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0df3183760954d877b894d42f5c6954837d8a7d7bd5f042409c4175afeaf24ea"
 dependencies = [
- "bindgen",
- "cmake",
- "convert_case 0.6.0",
  "dlopen2",
  "flagset",
  "libc",
@@ -3302,9 +3288,9 @@ dependencies = [
 
 [[package]]
 name = "num-conv"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "51d515d32fb182ee37cda2ccdcb92950d6a3c2893aa280e540671c2cd0f3b1d9"
+checksum = "cf97ec579c3c42f953ef76dbf8d55ac91fb219dde70e49aa4a6b7d74e9919050"
 
 [[package]]
 name = "num-derive"
@@ -3817,7 +3803,7 @@ dependencies = [
 [[package]]
 name = "ovr_overlay"
 version = "0.0.0"
-source = "git+https://github.com/galister/ovr_overlay_oyasumi?rev=8d62c73d5f17e4210d6d0cd52e7f3953eb9b481a#8d62c73d5f17e4210d6d0cd52e7f3953eb9b481a"
+source = "git+https://github.com/galister/ovr_overlay_oyasumi?rev=e477bd2a9e04293ea68c1e7529ef2cb131f32acc#e477bd2a9e04293ea68c1e7529ef2cb131f32acc"
 dependencies = [
  "byteorder",
  "derive_more",
@@ -3832,7 +3818,7 @@ dependencies = [
 [[package]]
 name = "ovr_overlay_sys"
 version = "0.0.0"
-source = "git+https://github.com/galister/ovr_overlay_oyasumi?rev=8d62c73d5f17e4210d6d0cd52e7f3953eb9b481a#8d62c73d5f17e4210d6d0cd52e7f3953eb9b481a"
+source = "git+https://github.com/galister/ovr_overlay_oyasumi?rev=e477bd2a9e04293ea68c1e7529ef2cb131f32acc#e477bd2a9e04293ea68c1e7529ef2cb131f32acc"
 dependencies = [
  "autocxx",
  "autocxx-build",
@@ -5516,30 +5502,30 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.3.44"
+version = "0.3.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "91e7d9e3bb61134e77bde20dd4825b97c010155709965fedf0f49bb138e52a9d"
+checksum = "743bd48c283afc0388f9b8827b976905fb217ad9e647fae3a379a9283c4def2c"
 dependencies = [
  "deranged",
  "itoa",
  "num-conv",
  "powerfmt",
- "serde",
+ "serde_core",
  "time-core",
  "time-macros",
 ]
 
 [[package]]
 name = "time-core"
-version = "0.1.6"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "40868e7c1d2f0b8d73e4a8c7f0ff63af4f6d19be117e90bd73eb1d62cf831c6b"
+checksum = "7694e1cfe791f8d31026952abf09c69ca6f6fa4e1a1229e18988f06a04a12dca"
 
 [[package]]
 name = "time-macros"
-version = "0.2.24"
+version = "0.2.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30cfb0125f12d9c277f35663a0a33f8c30190f4e4574868a330595412d34ebf3"
+checksum = "2e70e4c5a0e0a8a4823ad65dfe1a6930e4f4d756dcd9dd7939022b5e8c501215"
 dependencies = [
  "num-conv",
  "time-core",
@@ -6301,7 +6287,7 @@ dependencies = [
 
 [[package]]
 name = "wayvr"
-version = "26.1.2"
+version = "26.2.0"
 dependencies = [
  "anyhow",
  "ash",
@@ -6375,7 +6361,7 @@ dependencies = [
 
 [[package]]
 name = "wayvrctl"
-version = "26.1.2"
+version = "26.2.0"
 dependencies = [
  "anyhow",
  "clap",
@@ -6439,18 +6425,6 @@ dependencies = [
  "taffy",
  "vulkano",
  "vulkano-shaders",
-]
-
-[[package]]
-name = "which"
-version = "4.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "87ba24419a2078cd2b0f2ede2691b6c66d8e47836da3b6db8265ebad47afbfc7"
-dependencies = [
- "either",
- "home",
- "once_cell",
- "rustix 0.38.44",
 ]
 
 [[package]]
