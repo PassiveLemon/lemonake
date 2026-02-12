@@ -552,16 +552,16 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "v26.2",
-            "sha256": "sha256-wVFC8VDtALHI6e0655Ytc4gNOPnJP65XWNzlhzH2eoc=",
+            "rev": "v26.2.1",
+            "sha256": "sha256-s5SQcQ1giU1boO2W6GdzInmTD669oApLthBc3lwnHbY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v26.2"
+        "version": "v26.2.1"
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-02-10",
+        "date": "2026-02-11",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -573,12 +573,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "6ccf6eaf26d97229b05ef8fe750b8ef9790fbf65",
-            "sha256": "sha256-QcMPt4s5hvWDN92IGRZ3MQ6gmtCffN+siWhja5+oNPY=",
+            "rev": "06d771b89e85733bac9f7a068003c9a80080d307",
+            "sha256": "sha256-JZ29wCsKk2mvMciIUB37aMvv/n7UPqjLtPvBP5fQQN0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6ccf6eaf26d97229b05ef8fe750b8ef9790fbf65"
+        "version": "06d771b89e85733bac9f7a068003c9a80080d307"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -612,13 +612,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "9dcc3e1de2f7449d9757f5db332c867b4d794fb3",
-            "sha256": "sha256-ueg/GDnKP4nRVepdNE3sgK8sYckZc0aaC0CQc3tuxik=",
+            "rev": "723652b545a79609f9f04cb89fcbf807d9d6451a",
+            "sha256": "sha256-wGqvTI/X22apc8XCN3GCGQClHfBW5xk73mZnwWvHtyI=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
-        "version": "9dcc3e1de2f7449d9757f5db332c867b4d794fb3"
+        "version": "723652b545a79609f9f04cb89fcbf807d9d6451a"
     },
     "xrizer": {
         "cargoLock": {
