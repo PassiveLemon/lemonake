@@ -70,7 +70,8 @@ src.github = "SpookySkeletons/proton-ge-rtsp"
 fetch.tarball = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/$ver/$ver.tar.gz"
 
 [somewm]
-src.github = "trip-zip/somewm"
+# Manually pin until a release with this commit is published
+src.manual = "e845d92e5e347a8c21071bc4e9f889fcf00c1fde"
 fetch.github = "trip-zip/somewm"
 
 [somewm-git]

@@ -195,13 +195,13 @@
   };
   somewm = {
     pname = "somewm";
-    version = "0.5.0";
+    version = "e845d92e5e347a8c21071bc4e9f889fcf00c1fde";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "0.5.0";
+      rev = "e845d92e5e347a8c21071bc4e9f889fcf00c1fde";
       fetchSubmodules = false;
-      sha256 = "sha256-7VRV86nxZUoh+38sZ4/n7Tfac4c3IQXa0sD0emcIQ3w=";
+      sha256 = "sha256-0AW3cNiDbI8Hw3PwhPRJ7+TBpAjhctAoZDoax5o2HGs=";
     };
   };
   somewm-git = {
@@ -400,3 +400,4 @@
     date = "2026-02-18";
   };
 }
+
