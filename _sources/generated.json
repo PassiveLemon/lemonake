@@ -352,7 +352,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-02-23",
+        "date": "2026-02-24",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -364,12 +364,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "96980a02508d772980eb2859d5a76feb3039cbb0",
-            "sha256": "sha256-3HLkgwEc+sI/mVvLSPJvBmut9BiryYRNklHPKCw+rro=",
+            "rev": "64c22b7dda57f10d21f66acd0e542ccb3e8c6698",
+            "sha256": "sha256-lpJJdu5CcyPmMtzdaJlRDUPhTj05nZxVAFUnd+iylGs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "96980a02508d772980eb2859d5a76feb3039cbb0"
+        "version": "64c22b7dda57f10d21f66acd0e542ccb3e8c6698"
     },
     "tilp2-gfm": {
         "cargoLock": null,

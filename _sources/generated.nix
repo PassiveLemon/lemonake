@@ -206,15 +206,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "96980a02508d772980eb2859d5a76feb3039cbb0";
+    version = "64c22b7dda57f10d21f66acd0e542ccb3e8c6698";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "96980a02508d772980eb2859d5a76feb3039cbb0";
+      rev = "64c22b7dda57f10d21f66acd0e542ccb3e8c6698";
       fetchSubmodules = false;
-      sha256 = "sha256-3HLkgwEc+sI/mVvLSPJvBmut9BiryYRNklHPKCw+rro=";
+      sha256 = "sha256-lpJJdu5CcyPmMtzdaJlRDUPhTj05nZxVAFUnd+iylGs=";
     };
-    date = "2026-02-23";
+    date = "2026-02-24";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
