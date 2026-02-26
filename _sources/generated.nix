@@ -26,6 +26,18 @@
     };
     date = "2023-10-17";
   };
+  awesome-git = {
+    pname = "awesome-git";
+    version = "39143f036e10c34c0a4a2eb604399fd20cf8376e";
+    src = fetchFromGitHub {
+      owner = "awesomeWM";
+      repo = "awesome";
+      rev = "39143f036e10c34c0a4a2eb604399fd20cf8376e";
+      fetchSubmodules = false;
+      sha256 = "sha256-M9EQV5kwiTeSqZLXQ6uAtMyvOhCQXM9ctgiu2ZRI+QQ=";
+    };
+    date = "2026-02-20";
+  };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
     version = "2.0.28";

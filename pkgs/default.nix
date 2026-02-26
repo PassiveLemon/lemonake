@@ -5,6 +5,7 @@ let
   overlayPackages = [
     "alcom"
     "autoadb"
+    "awesome"
     "gdlauncher"
     "gfm"
     "lua-pam"

@@ -42,6 +42,8 @@ Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
 - `alcom`
 - `awmtt-git`
+- `awesome-git`
+- `awesome-luajit-git`
 - `gdlauncher` (Alias to `gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`

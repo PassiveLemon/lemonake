@@ -8,6 +8,10 @@ fetch.url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v$ver/alco
 src.git = "https://github.com/justfoolingaround/animdl"
 fetch.github = "justfoolingaround/animdl"
 
+[awesome-git]
+src.git = "https://github.com/awesomeWM/awesome"
+fetch.github = "awesomeWM/awesome"
+
 [gdlauncher-legacy]
 src.github = "gorilla-devs/GDLauncher"
 fetch.url = "https://github.com/gorilla-devs/GDLauncher/releases/download/$ver/GDLauncher-linux-setup.AppImage"
