@@ -2,7 +2,7 @@
 , fetchFromGitHub
 , writeShellApplication
 , inotify-tools
-, xorg
+, xorgserver
 }:
 let
   src = fetchFromGitHub {
@@ -17,7 +17,7 @@ writeShellApplication {
 
   runtimeInputs = [
     inotify-tools
-    xorg.xorgserver
+    xorgserver
   ];
 
   text = ''

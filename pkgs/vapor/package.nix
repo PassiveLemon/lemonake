@@ -4,12 +4,12 @@
 , stdenv
 , cmake
 , libGL
+, libX11
 , nlohmann_json
 , openxr-loader
 , pkg-config
 , vulkan-headers
 , vulkan-loader
-, xorg
 }:
 stdenv.mkDerivation {
   pname = "vapor";
@@ -24,11 +24,11 @@ stdenv.mkDerivation {
 
   buildInputs = [
     libGL
+    libX11
     nlohmann_json
     openxr-loader
     vulkan-headers
     vulkan-loader
-    xorg.libX11
   ];
 
   installPhase = ''

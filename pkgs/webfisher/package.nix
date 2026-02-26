@@ -3,7 +3,7 @@
 , lib
 , buildNimPackage
 , libevdev
-, xorg
+, libXext
 }:
 buildNimPackage (finalAttrs: {
   pname = "webfisher";
@@ -15,7 +15,7 @@ buildNimPackage (finalAttrs: {
 
   buildInputs = [
     libevdev
-    xorg.libXext
+    libXext
   ];
 
   meta = with lib; {
