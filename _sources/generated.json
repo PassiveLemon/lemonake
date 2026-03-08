@@ -37,7 +37,7 @@
     },
     "awesome-git": {
         "cargoLock": null,
-        "date": "2026-02-20",
+        "date": "2026-03-08",
         "extract": null,
         "name": "awesome-git",
         "passthru": null,
@@ -49,12 +49,12 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "39143f036e10c34c0a4a2eb604399fd20cf8376e",
-            "sha256": "sha256-M9EQV5kwiTeSqZLXQ6uAtMyvOhCQXM9ctgiu2ZRI+QQ=",
+            "rev": "3298554ec8ed169c2aa7fde6f295dfffeae1f0d8",
+            "sha256": "sha256-14E2ZPQXout7Q+FoDDDEWoYtyHVcfkGleMx+JzNdX88=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "39143f036e10c34c0a4a2eb604399fd20cf8376e"
+        "version": "3298554ec8ed169c2aa7fde6f295dfffeae1f0d8"
     },
     "gdlauncher-carbon": {
         "cargoLock": null,
@@ -373,7 +373,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-03-06",
+        "date": "2026-03-07",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -385,12 +385,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "acd0fa42a3af6e7e3259140175cc217e9fd58a93",
-            "sha256": "sha256-IHXB4S8LcfDHQHfcsuTbYJwJNbpucAzhnfoGNxG12ug=",
+            "rev": "74de5143da86be7afe533efffdc07cdf536e8bb5",
+            "sha256": "sha256-/0it2nzZMdOt7+Vq6JgXj2HngZH3of4SR2zFwYOX8Y4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "acd0fa42a3af6e7e3259140175cc217e9fd58a93"
+        "version": "74de5143da86be7afe533efffdc07cdf536e8bb5"
     },
     "tilp2-gfm": {
         "cargoLock": null,
@@ -489,7 +489,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-XGts_ff+tVQVfCxw0XJPZhRL0K884BKvu+5lb2tixNA=/Cargo.lock",
+                "sha256-P0Z1mC2iV59SmY0ybqjcUWEYfZ9VU_umLF0v9bgLCa0=/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
@@ -498,7 +498,7 @@
                 }
             ]
         },
-        "date": "2026-03-06",
+        "date": "2026-03-08",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -510,12 +510,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "6f9ca5b3b7652a466632835007b95ae7c584ffd7",
-            "sha256": "sha256-XGts/ff+tVQVfCxw0XJPZhRL0K884BKvu+5lb2tixNA=",
+            "rev": "1a74eb150703b134d7e45eb2d91362832e5dd104",
+            "sha256": "sha256-P0Z1mC2iV59SmY0ybqjcUWEYfZ9VU/umLF0v9bgLCa0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6f9ca5b3b7652a466632835007b95ae7c584ffd7"
+        "version": "1a74eb150703b134d7e45eb2d91362832e5dd104"
     },
     "webfisher": {
         "cargoLock": null,
