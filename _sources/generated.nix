@@ -28,13 +28,13 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "3298554ec8ed169c2aa7fde6f295dfffeae1f0d8";
+    version = "81b1efab546fb9689c9cbe6a6a62c4bfc5af5ee9";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "3298554ec8ed169c2aa7fde6f295dfffeae1f0d8";
+      rev = "81b1efab546fb9689c9cbe6a6a62c4bfc5af5ee9";
       fetchSubmodules = false;
-      sha256 = "sha256-14E2ZPQXout7Q+FoDDDEWoYtyHVcfkGleMx+JzNdX88=";
+      sha256 = "sha256-EOe/XGMOsx0rgE/QqukAnEUpH19k7MYg4RbvFGFGIOo=";
     };
     date = "2026-03-08";
   };
@@ -218,13 +218,13 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "74de5143da86be7afe533efffdc07cdf536e8bb5";
+    version = "1f7a0b50bf99bee8650aeabf0b6771b76b6654bc";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "74de5143da86be7afe533efffdc07cdf536e8bb5";
+      rev = "1f7a0b50bf99bee8650aeabf0b6771b76b6654bc";
       fetchSubmodules = false;
-      sha256 = "sha256-/0it2nzZMdOt7+Vq6JgXj2HngZH3of4SR2zFwYOX8Y4=";
+      sha256 = "sha256-Ktec+HqWUL1RXiyBtTlCAFyqRNlREE+03m8Vkb58ZJk=";
     };
     date = "2026-03-07";
   };
