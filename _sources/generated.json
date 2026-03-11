@@ -373,7 +373,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-03-09",
+        "date": "2026-03-10",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -385,12 +385,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "cf90ed9e16df1a822419a6227756e694b50aff8c",
-            "sha256": "sha256-hjJo+tn1dce7gmZnv9SGUrIp+GskuuMm3or2PSwPIuI=",
+            "rev": "d79ac1e2515033f738a3f3ac676106de5fcec3c4",
+            "sha256": "sha256-NfuSnFjaQ6z2QGaTxj9irDifxW8NeHdIptTjBgiT+q0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cf90ed9e16df1a822419a6227756e694b50aff8c"
+        "version": "d79ac1e2515033f738a3f3ac676106de5fcec3c4"
     },
     "tilp2-gfm": {
         "cargoLock": null,
@@ -489,7 +489,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-P0Z1mC2iV59SmY0ybqjcUWEYfZ9VU_umLF0v9bgLCa0=/Cargo.lock",
+                "sha256-H4cTTWyP5C_7MmXIqLac9ezpFrXA7pQA8SYas1Cn2lw=/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
                     "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
@@ -498,7 +498,7 @@
                 }
             ]
         },
-        "date": "2026-03-08",
+        "date": "2026-03-11",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -510,12 +510,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "1a74eb150703b134d7e45eb2d91362832e5dd104",
-            "sha256": "sha256-P0Z1mC2iV59SmY0ybqjcUWEYfZ9VU/umLF0v9bgLCa0=",
+            "rev": "f2c34fba8f96453e05d45c47b7a4e52900f73c3a",
+            "sha256": "sha256-H4cTTWyP5C/7MmXIqLac9ezpFrXA7pQA8SYas1Cn2lw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1a74eb150703b134d7e45eb2d91362832e5dd104"
+        "version": "f2c34fba8f96453e05d45c47b7a4e52900f73c3a"
     },
     "webfisher": {
         "cargoLock": null,
