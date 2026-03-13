@@ -37,7 +37,7 @@
     },
     "awesome-git": {
         "cargoLock": null,
-        "date": "2026-03-08",
+        "date": "2026-03-12",
         "extract": null,
         "name": "awesome-git",
         "passthru": null,
@@ -49,12 +49,12 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "81b1efab546fb9689c9cbe6a6a62c4bfc5af5ee9",
-            "sha256": "sha256-EOe/XGMOsx0rgE/QqukAnEUpH19k7MYg4RbvFGFGIOo=",
+            "rev": "219fa9fc5e57be9c311f6a60bebf20a29043ec54",
+            "sha256": "sha256-T2nnJwWxgYu1bSQzqvYlt8/aqYcwr7umfSlp3eYFKdU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "81b1efab546fb9689c9cbe6a6a62c4bfc5af5ee9"
+        "version": "219fa9fc5e57be9c311f6a60bebf20a29043ec54"
     },
     "gdlauncher-carbon": {
         "cargoLock": null,
@@ -373,7 +373,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-03-11",
+        "date": "2026-03-12",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -385,12 +385,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "0f6bf842e9c54e7ae808a0fc349df903e260ad58",
-            "sha256": "sha256-ElBhVEuhrEjXc/17Tg4C6RsYX2tIhUf4JgX3aub1kr8=",
+            "rev": "28741125b291aa43307006dc8f561348178eb79a",
+            "sha256": "sha256-J/UXuWfwJrpH4QP65zRCplrFUmF2Mvr6awtcAs/nn/w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0f6bf842e9c54e7ae808a0fc349df903e260ad58"
+        "version": "28741125b291aa43307006dc8f561348178eb79a"
     },
     "tilp2-gfm": {
         "cargoLock": null,
