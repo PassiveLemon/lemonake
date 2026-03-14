@@ -28,15 +28,15 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "219fa9fc5e57be9c311f6a60bebf20a29043ec54";
+    version = "9a4b355e14ce96548de93170abdc6a007d76bb2a";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "219fa9fc5e57be9c311f6a60bebf20a29043ec54";
+      rev = "9a4b355e14ce96548de93170abdc6a007d76bb2a";
       fetchSubmodules = false;
-      sha256 = "sha256-T2nnJwWxgYu1bSQzqvYlt8/aqYcwr7umfSlp3eYFKdU=";
+      sha256 = "sha256-EOX2WvqgcUGSVTcx/oVT0+EMZUKZl9NL4Mw/J6tg1WU=";
     };
-    date = "2026-03-12";
+    date = "2026-03-13";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
@@ -340,15 +340,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "b3b2c49da4173c73069ee54839136edad30b859e";
+    version = "2b7409b363da1036a106b718d1eaa496dcf6348a";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "b3b2c49da4173c73069ee54839136edad30b859e";
+      rev = "2b7409b363da1036a106b718d1eaa496dcf6348a";
       fetchSubmodules = false;
-      sha256 = "sha256-6XGNbNZpjWtHQ9B09VeOe+k3UFwGWcQ2MPs9YzE8d6c=";
+      sha256 = "sha256-EWKGO+biIdbU3G9Bn19aZmIOFLO39X/48vYqsQ/e9jQ=";
     };
-    date = "2026-03-11";
+    date = "2026-03-13";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
