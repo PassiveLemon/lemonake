@@ -105,26 +105,26 @@
   };
   nimpad = {
     pname = "nimpad";
-    version = "0.3.1";
+    version = "0.3.2";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "0.3.1";
+      rev = "0.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-FQE0yyZFTAMA8z3nfbyVhYhIdjJ1yUG1UFvZTCFc/Oc=";
+      sha256 = "sha256-reZFSZ0CE7W7SPil9C56JZV6Dtml5vT/DzwFHZHGf44=";
     };
   };
   nimpad-git = {
     pname = "nimpad-git";
-    version = "a52cb5026fcd70fa0fac70a66e44251c2ce1cb27";
+    version = "956b318951d6e41fde9979c850a95ebd498ec4ef";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "a52cb5026fcd70fa0fac70a66e44251c2ce1cb27";
+      rev = "956b318951d6e41fde9979c850a95ebd498ec4ef";
       fetchSubmodules = false;
-      sha256 = "sha256-FQE0yyZFTAMA8z3nfbyVhYhIdjJ1yUG1UFvZTCFc/Oc=";
+      sha256 = "sha256-reZFSZ0CE7W7SPil9C56JZV6Dtml5vT/DzwFHZHGf44=";
     };
-    date = "2026-03-03";
+    date = "2026-03-19";
   };
   opencomposite-git = {
     pname = "opencomposite-git";
@@ -199,10 +199,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton10-33-rtsp21";
+    version = "GE-Proton10-26-rtsp20";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-33-rtsp21/GE-Proton10-33-rtsp21.tar.gz";
-      sha256 = "sha256-S81HT8FBdGONkpn7wFQv0zL4lr4tkUZtC714ShnDves=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-26-rtsp20/GE-Proton10-26-rtsp20.tar.gz";
+      sha256 = "sha256-eAJjw575cJlj7qLsPC1LgRsVMW4O754Q6SO7IV74EyE=";
     };
   };
   somewm = {
@@ -218,15 +218,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "7a87de1dbc62c46f329f64305107306ac0c73570";
+    version = "819287aa42ddc46ac354cf498ad878d1144c2ffb";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "7a87de1dbc62c46f329f64305107306ac0c73570";
+      rev = "819287aa42ddc46ac354cf498ad878d1144c2ffb";
       fetchSubmodules = false;
-      sha256 = "sha256-/ZXFNZE4PT+iaEAVv/oEeEE2d6Dr2HGowQg5bEZnqbM=";
+      sha256 = "sha256-vsGcHRKqQn3W0FJ3HVidc9PrNm9ZXWU9+rzjWd4T3HE=";
     };
-    date = "2026-03-17";
+    date = "2026-03-19";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -285,16 +285,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "635df298fec63c610062fa362b6fb03268efa37a";
+    version = "b0bbc25083c1430fc4f43c109002865b5993bddc";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "635df298fec63c610062fa362b6fb03268efa37a";
+      rev = "b0bbc25083c1430fc4f43c109002865b5993bddc";
       fetchSubmodules = false;
-      sha256 = "sha256-yoRzqanib64kMerA97TgyqIgxnYDF9EHkxTi3A6niMk=";
+      sha256 = "sha256-ttMSub9xcs17c2GFUWaq2EvHsBalYTQUI6ofcPdxgJw=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-yoRzqanib64kMerA97TgyqIgxnYDF9EHkxTi3A6niMk=/Cargo.lock";
+      lockFile = ./. + "/sha256-ttMSub9xcs17c2GFUWaq2EvHsBalYTQUI6ofcPdxgJw=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "libspa-0.8.0" = "sha256-5lfjyCPIcT+pJs8TQfLCZuBBJJBc6OPWCVlI6sT0mNc=";
@@ -302,7 +302,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-03-18";
+    date = "2026-03-20";
   };
   webfisher = {
     pname = "webfisher";
@@ -340,15 +340,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "caa191ff06d0945f539d3789acca5f81f30dcf48";
+    version = "515010aeabcda6c9d5da9618fcc678961097af3d";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "caa191ff06d0945f539d3789acca5f81f30dcf48";
+      rev = "515010aeabcda6c9d5da9618fcc678961097af3d";
       fetchSubmodules = false;
-      sha256 = "sha256-gpmYIbH98mjqWflvydPtPqoY+JFOCUN537J6ZbG+hMM=";
+      sha256 = "sha256-mjMbIgIFN5B+XIKZUTIybHi2I5tL6sFCKsb7JXP3BQk=";
     };
-    date = "2026-03-17";
+    date = "2026-03-18";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
