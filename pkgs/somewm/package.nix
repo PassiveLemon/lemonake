@@ -15,6 +15,7 @@
 , libxcb-util
 , libxcb-wm
 , libxkbcommon
+, linux-pam
 , luajit
 , makeWrapper
 , meson
@@ -73,6 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     libxcb-util
     libxcb-wm
     libxkbcommon
+    linux-pam
     luajit
     luaEnv
     pango
