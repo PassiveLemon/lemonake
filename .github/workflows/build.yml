@@ -38,7 +38,7 @@ jobs:
           /usr/share/swift
 
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Install packages
       run: |
