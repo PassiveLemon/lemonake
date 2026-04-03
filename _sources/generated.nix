@@ -28,15 +28,15 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "f1388f9fc4e071407bfdc59c5964ea1eb79e746c";
+    version = "fa805ab465821c54094126b71a92acf2eba17674";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "f1388f9fc4e071407bfdc59c5964ea1eb79e746c";
+      rev = "fa805ab465821c54094126b71a92acf2eba17674";
       fetchSubmodules = false;
-      sha256 = "sha256-u2QoKo4f2kepH8pwl7hcR5svM6e3BZWyO5aJlllQ/pE=";
+      sha256 = "sha256-bJSJlvj5nbNAzvD13xwb3JAlwyntbMcCYXpA/PyAjGc=";
     };
-    date = "2026-03-17";
+    date = "2026-03-31";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
@@ -199,10 +199,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton10-26-rtsp20";
+    version = "GE-Proton10-33-rtsp22";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-26-rtsp20/GE-Proton10-26-rtsp20.tar.gz";
-      sha256 = "sha256-eAJjw575cJlj7qLsPC1LgRsVMW4O754Q6SO7IV74EyE=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-33-rtsp22/GE-Proton10-33-rtsp22-4.tar.gz";
+      sha256 = "sha256-YmdO4XaEFbq1lWWorZMqFKVQb+bMxDDH/dpwKaq+Qjg=";
     };
   };
   somewm = {
@@ -218,15 +218,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "f719f6c5e9749765b79423b920a38e4840138687";
+    version = "98c32074879b9502f30e8620618aa1ad862c794e";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "f719f6c5e9749765b79423b920a38e4840138687";
+      rev = "98c32074879b9502f30e8620618aa1ad862c794e";
       fetchSubmodules = false;
-      sha256 = "sha256-yLDz5jR6KzZEcT97LPihklr2sagTpjMu98QqWXhxiTM=";
+      sha256 = "sha256-S3AHVOI2WOSoOgxHnhOn3HRICtX+wA3wzOANT08eebE=";
     };
-    date = "2026-03-26";
+    date = "2026-04-03";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -285,24 +285,25 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "a4115f5e4b4613ab085a71e7768f9b3ec139252c";
+    version = "18f99b5dafb66cf7f166840ac6ee348c80851bac";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "a4115f5e4b4613ab085a71e7768f9b3ec139252c";
+      rev = "18f99b5dafb66cf7f166840ac6ee348c80851bac";
       fetchSubmodules = false;
-      sha256 = "sha256-opvrONYoRZlDXFUvC/LJegDAsdlQFw5/wha9bmG9Cj8=";
+      sha256 = "sha256-vlBzBoNH7qo1W6k9LMuNwh9PHhhnotdfWPhc15WmyAI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-opvrONYoRZlDXFUvC_LJegDAsdlQFw5_wha9bmG9Cj8=/Cargo.lock";
+      lockFile = ./. + "/sha256-vlBzBoNH7qo1W6k9LMuNwh9PHhhnotdfWPhc15WmyAI=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "libspa-0.8.0" = "sha256-5lfjyCPIcT+pJs8TQfLCZuBBJJBc6OPWCVlI6sT0mNc=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
+        "libmonado-1.6.0" = "sha256-CzECXfXLip0rS1PjjW24M/6gB3mSlnPwWh5GFcYmiQc=";
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-03-25";
+    date = "2026-04-03";
   };
   webfisher = {
     pname = "webfisher";
@@ -340,15 +341,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "456d65ef8cf2ba9de07308c43f14e7920ea49ace";
+    version = "d1cbb730a277983f9d72a860074ac3a5bdf916b9";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "456d65ef8cf2ba9de07308c43f14e7920ea49ace";
+      rev = "d1cbb730a277983f9d72a860074ac3a5bdf916b9";
       fetchSubmodules = false;
-      sha256 = "sha256-Jus6TZFBvQ1BAmlADqRMYIQqMfrVo9xe2mgTx+aCClE=";
+      sha256 = "sha256-/bcJWW7T8KfgY/OJ3uo5L6v6GnqvRHO9df0gpSjXML4=";
     };
-    date = "2026-03-22";
+    date = "2026-04-03";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
