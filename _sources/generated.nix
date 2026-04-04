@@ -40,10 +40,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.28";
+    version = "2.0.29";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.28__linux__x64.AppImage";
-      sha256 = "sha256-0OS4V5Wyghi+5ZQwvHz/CfNzPuLALjXDq2kAV6mGmkc=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.29__linux__x64.AppImage";
+      sha256 = "sha256-sgcFk1eLdQipBjnXMi2nWH+pAzCTD5eXsyk07roZhXo=";
     };
   };
   gdlauncher-legacy = {
@@ -218,13 +218,13 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "98c32074879b9502f30e8620618aa1ad862c794e";
+    version = "4eff245cf35982e60d4c010ab60c5736516f0db9";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "98c32074879b9502f30e8620618aa1ad862c794e";
+      rev = "4eff245cf35982e60d4c010ab60c5736516f0db9";
       fetchSubmodules = false;
-      sha256 = "sha256-S3AHVOI2WOSoOgxHnhOn3HRICtX+wA3wzOANT08eebE=";
+      sha256 = "sha256-A6MxTthaj0M5ROl2+2GaFORjN+4nAQC6XPHIoT0scwM=";
     };
     date = "2026-04-03";
   };
