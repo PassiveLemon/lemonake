@@ -218,15 +218,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "ad87e2385bc4bca6f1509b1397ec4f0610ecd259";
+    version = "83766e44fa9f656a5f18607a6453ca7179c05f94";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "ad87e2385bc4bca6f1509b1397ec4f0610ecd259";
+      rev = "83766e44fa9f656a5f18607a6453ca7179c05f94";
       fetchSubmodules = false;
-      sha256 = "sha256-nU94n00NADR3bzo40bEIzM/1fCuKqEGnlkAJcWZHhws=";
+      sha256 = "sha256-0D7z9L+RT4WdLZ76L0imxzPiUNWPxlC+N6eveRCuA4c=";
     };
-    date = "2026-04-06";
+    date = "2026-04-07";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -396,20 +396,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "a99ba5b6812f65ef8ca0d93ac4729e1deeb25171";
+    version = "dd7f12103ed27359a60f0ce8c00c8db1dc22099e";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "a99ba5b6812f65ef8ca0d93ac4729e1deeb25171";
+      rev = "dd7f12103ed27359a60f0ce8c00c8db1dc22099e";
       fetchSubmodules = false;
-      sha256 = "sha256-y/K+eXECUi9wGol0IUuIUI9hqhEN8GHaOO5i1xMFNQo=";
+      sha256 = "sha256-uHd9Ph8KcdGY7XU4YrybQaMbQNNia+1DMn42MTTiYfI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-y_K+eXECUi9wGol0IUuIUI9hqhEN8GHaOO5i1xMFNQo=/Cargo.lock";
+      lockFile = ./. + "/sha256-uHd9Ph8KcdGY7XU4YrybQaMbQNNia+1DMn42MTTiYfI=/Cargo.lock";
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2026-03-22";
+    date = "2026-04-07";
   };
 }
