@@ -28,15 +28,15 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "fa805ab465821c54094126b71a92acf2eba17674";
+    version = "994f9d6ed531a7f2fdc0c0cde16a678f7d317a0a";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "fa805ab465821c54094126b71a92acf2eba17674";
+      rev = "994f9d6ed531a7f2fdc0c0cde16a678f7d317a0a";
       fetchSubmodules = false;
-      sha256 = "sha256-bJSJlvj5nbNAzvD13xwb3JAlwyntbMcCYXpA/PyAjGc=";
+      sha256 = "sha256-yNY/tEpLwPDtEr8nzMNfdOW8+pKBLYINyfkLu4XBYKg=";
     };
-    date = "2026-03-31";
+    date = "2026-04-08";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
@@ -218,15 +218,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "83766e44fa9f656a5f18607a6453ca7179c05f94";
+    version = "4c7cb0731ddb10fe3ed0de192a339e6396d552f7";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "83766e44fa9f656a5f18607a6453ca7179c05f94";
+      rev = "4c7cb0731ddb10fe3ed0de192a339e6396d552f7";
       fetchSubmodules = false;
-      sha256 = "sha256-0D7z9L+RT4WdLZ76L0imxzPiUNWPxlC+N6eveRCuA4c=";
+      sha256 = "sha256-wj4hHufj0uw9DEDGjPPWFxsN3HhLf8jk9/RB/vwV6Cs=";
     };
-    date = "2026-04-07";
+    date = "2026-04-08";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
