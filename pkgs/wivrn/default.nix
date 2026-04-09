@@ -28,6 +28,10 @@ in
         monado = prev.applyPatches {
           inherit (prevAttrs.monado) postPatch;
           src = monado.src;
+
+          nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [
+            prev.hexdump
+          ];
         };
       });
     };
