@@ -32,6 +32,10 @@ in
           nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [
             prev.hexdump
           ];
+
+          buildInputs = prevAttrs.buildInputs ++ [
+            prev.qt6.qtbase
+          ];
         };
       });
     };
