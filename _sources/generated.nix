@@ -218,15 +218,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "fb7414672e0bcd9821d01377e1220ede9414afeb";
+    version = "746d59df189cda584f0e95c1871dd2a129540f05";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "fb7414672e0bcd9821d01377e1220ede9414afeb";
+      rev = "746d59df189cda584f0e95c1871dd2a129540f05";
       fetchSubmodules = false;
-      sha256 = "sha256-X+v+ChxZPlYdLrjEnVY4j4cq0cV3/e+DoB6H7Zwv7i8=";
+      sha256 = "sha256-Rlf8M7qT0BroBJ2TkqeN8mEWgtrRhrEHRYye82wSI7s=";
     };
-    date = "2026-04-10";
+    date = "2026-04-11";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -341,15 +341,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "6db5b8aeb3817ff627f54c294a2ce46f29826540";
+    version = "1f6e237f21d6dcef7c6f805046e0c3b5fff40373";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "6db5b8aeb3817ff627f54c294a2ce46f29826540";
+      rev = "1f6e237f21d6dcef7c6f805046e0c3b5fff40373";
       fetchSubmodules = false;
-      sha256 = "sha256-ipsZ7YmgESCweWuP4YyfDryc/tAuPmt9xKCVqVzYNb4=";
+      sha256 = "sha256-/tzuZQuW2a/TIB1h/sPQ/dXqYoifvnaRt724LjstYLk=";
     };
-    date = "2026-04-10";
+    date = "2026-04-11";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
