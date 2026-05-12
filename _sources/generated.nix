@@ -8,23 +8,38 @@
 {
   alcom = {
     pname = "alcom";
-    version = "1.1.5";
-    src = fetchurl {
-      url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v1.1.5/alcom-1.1.5-x86_64.AppImage";
-      sha256 = "sha256-I61gHXlLfQ9vjI/k4uiKuwuBLXtBLpr9U/oxBLLd/nQ=";
+    version = "gui-v1.1.5";
+    src = fetchFromGitHub {
+      owner = "vrc-get";
+      repo = "vrc-get";
+      rev = "gui-v1.1.5";
+      fetchSubmodules = false;
+      sha256 = "sha256-xucU8nXskniHOiuwrtVoZM2FIKNKU45i4DNo6iLjZvM=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-xucU8nXskniHOiuwrtVoZM2FIKNKU45i4DNo6iLjZvM=/Cargo.lock";
+      outputHashes = {
+        
+      };
     };
   };
-  animdl-git = {
-    pname = "animdl-git";
-    version = "c7c3b79198e66695e0bbbc576f9d9b788616957f";
+  alcom-git = {
+    pname = "alcom-git";
+    version = "223be383684c4fcbe1b1d398a6e8117efdbe30dd";
     src = fetchFromGitHub {
-      owner = "justfoolingaround";
-      repo = "animdl";
-      rev = "c7c3b79198e66695e0bbbc576f9d9b788616957f";
+      owner = "vrc-get";
+      repo = "vrc-get";
+      rev = "223be383684c4fcbe1b1d398a6e8117efdbe30dd";
       fetchSubmodules = false;
-      sha256 = "sha256-kn6vCCFhJNlruxoO+PTHVIwTf1E5j1aSdBhrFuGzUq4=";
+      sha256 = "sha256-HZs9OtIeVY+Ype+qebyvHn0XokA9y2QleJjsCKrvrys=";
     };
-    date = "2023-10-17";
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-HZs9OtIeVY+Ype+qebyvHn0XokA9y2QleJjsCKrvrys=/Cargo.lock";
+      outputHashes = {
+        
+      };
+    };
+    date = "2026-05-02";
   };
   awesome-git = {
     pname = "awesome-git";
@@ -285,16 +300,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "c7b16c571372636f4a8f219368fb4f483d64acfc";
+    version = "20743f91eb970fe76f67c3f4844b2205a8e5b1cd";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "c7b16c571372636f4a8f219368fb4f483d64acfc";
+      rev = "20743f91eb970fe76f67c3f4844b2205a8e5b1cd";
       fetchSubmodules = false;
-      sha256 = "sha256-qmbtLz6+wTczsvemXypwOVL6qshS0RPSluTOTKvHi0w=";
+      sha256 = "sha256-iPftqMaC3wOmHHGAow0WrIxySKl8atTh5qQOCl+2ZyY=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-qmbtLz6+wTczsvemXypwOVL6qshS0RPSluTOTKvHi0w=/Cargo.lock";
+      lockFile = ./. + "/sha256-iPftqMaC3wOmHHGAow0WrIxySKl8atTh5qQOCl+2ZyY=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "libspa-0.9.2" = "sha256-BmPyJdRYEz2o36hEE28GaRDVxhJm20cgYx28k0FhaSE=";
@@ -303,7 +318,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-05-13";
+    date = "2026-05-12";
   };
   webfisher = {
     pname = "webfisher";
