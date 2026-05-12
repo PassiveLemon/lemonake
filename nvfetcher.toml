@@ -1,12 +1,13 @@
 [alcom]
 src.github_tag = "vrc-get/vrc-get"
-src.include_regex = "gui-v(.*)"
-src.prefix = "gui-v"
-fetch.url = "https://github.com/vrc-get/vrc-get/releases/download/gui-v$ver/alcom-$ver-x86_64.AppImage"
+src.include_regex = "gui-v.+"
+fetch.github = "vrc-get/vrc-get"
+cargo_lock = [ "Cargo.lock" ]
 
-[animdl-git]
-src.git = "https://github.com/justfoolingaround/animdl"
-fetch.github = "justfoolingaround/animdl"
+[alcom-git]
+src.git = "https://github.com/vrc-get/vrc-get"
+fetch.github = "vrc-get/vrc-get"
+cargo_lock = [ "Cargo.lock" ]
 
 [awesome-git]
 src.git = "https://github.com/awesomeWM/awesome"

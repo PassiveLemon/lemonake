@@ -42,7 +42,7 @@
           name = "update";
           runtimeInputs = [ inputs'.nvfetcher.packages.default ];
           text = ''
-            nvfetcher -k keyfile.toml
+            nvfetcher
             exit 0
           '';
         };

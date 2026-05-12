@@ -41,6 +41,7 @@ Modules:
 Packages:
 - Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
 - `alcom`
+- `alcom-git`
 - `autoadb`
 - `awmtt-git`
 - `awesome-git`
