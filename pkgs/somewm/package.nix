@@ -93,7 +93,10 @@ stdenv.mkDerivation (finalAttrs: {
     install -m755 somewm-client $out/bin/somewm-client
 
     mkdir -p $out/share/wayland-sessions/
-    install -m644 $src/somewm.desktop $out/share/wayland-sessions/somewm.desktop
+    install -m644 $src/somewm.desktop.in $out/share/wayland-sessions/somewm.desktop
+
+    substituteInPlace $out/share/wayland-sessions/somewm.desktop \
+      --replace-fail 'Exec=@exec@' 'Exec=somewm' \
 
     runHook postInstall
   '';
