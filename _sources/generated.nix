@@ -28,22 +28,22 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "994f9d6ed531a7f2fdc0c0cde16a678f7d317a0a";
+    version = "c104846a2cc954ce97077146e5964667c81c2165";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "994f9d6ed531a7f2fdc0c0cde16a678f7d317a0a";
+      rev = "c104846a2cc954ce97077146e5964667c81c2165";
       fetchSubmodules = false;
-      sha256 = "sha256-yNY/tEpLwPDtEr8nzMNfdOW8+pKBLYINyfkLu4XBYKg=";
+      sha256 = "sha256-l3fGfMEy2i4sNOvsxYFB5gsgswJPRLHk35cxQNB1tR0=";
     };
-    date = "2026-04-08";
+    date = "2026-04-23";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.29";
+    version = "2.0.30";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.29__linux__x64.AppImage";
-      sha256 = "sha256-sgcFk1eLdQipBjnXMi2nWH+pAzCTD5eXsyk07roZhXo=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.30__linux__x64.AppImage";
+      sha256 = "sha256-BgvliocGTNtI7s1aN551n+MLyqGTbjGs1PjUkItUtks=";
     };
   };
   gdlauncher-legacy = {
@@ -116,15 +116,15 @@
   };
   nimpad-git = {
     pname = "nimpad-git";
-    version = "956b318951d6e41fde9979c850a95ebd498ec4ef";
+    version = "cabed2ee3e27b9eb2f48ee8c631f33b2f2f23a0d";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "956b318951d6e41fde9979c850a95ebd498ec4ef";
+      rev = "cabed2ee3e27b9eb2f48ee8c631f33b2f2f23a0d";
       fetchSubmodules = false;
-      sha256 = "sha256-reZFSZ0CE7W7SPil9C56JZV6Dtml5vT/DzwFHZHGf44=";
+      sha256 = "sha256-ztox/8VfDPKOyLngJLckNgnW7yaMS8cG+k+geaGa+oQ=";
     };
-    date = "2026-03-19";
+    date = "2026-04-30";
   };
   opencomposite-git = {
     pname = "opencomposite-git";
@@ -199,34 +199,34 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton10-33-rtsp22";
+    version = "GE-Proton10-33-rtsp23-4";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-33-rtsp22/GE-Proton10-33-rtsp22-4.tar.gz";
-      sha256 = "sha256-YmdO4XaEFbq1lWWorZMqFKVQb+bMxDDH/dpwKaq+Qjg=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-33-rtsp23-4/GE-Proton10-33-rtsp23-4.tar.gz";
+      sha256 = "sha256-sP+xNPbeI1jbs081QvFmj48A/yG6IC9ZPZRvGkFZnX0=";
     };
   };
   somewm = {
     pname = "somewm";
-    version = "e845d92e5e347a8c21071bc4e9f889fcf00c1fde";
+    version = "v1.4.1";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "e845d92e5e347a8c21071bc4e9f889fcf00c1fde";
+      rev = "v1.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-0AW3cNiDbI8Hw3PwhPRJ7+TBpAjhctAoZDoax5o2HGs=";
+      sha256 = "sha256-lGxBdBFklh3tRlabn+C6zcX+c/8OFkBNOzEFXaENhQ0=";
     };
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "cb6c2c1ac37f1ad0ab32d867190e2aab435fb5fa";
+    version = "b66d3cf6856e86fea52be691aa0bf809e96cddda";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "cb6c2c1ac37f1ad0ab32d867190e2aab435fb5fa";
+      rev = "b66d3cf6856e86fea52be691aa0bf809e96cddda";
       fetchSubmodules = false;
-      sha256 = "sha256-qSQEGTxslUHUZTFTWObkU+vOLDUyHUrRMNN18PgdDKI=";
+      sha256 = "sha256-5OcHtuOTN+SPTWmPnac4UU1ax0JBmASduU+6gf4r6Pk=";
     };
-    date = "2026-04-14";
+    date = "2026-05-11";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -285,25 +285,25 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "1238808d87e136c9b44649f1e9ff00cb58abfad2";
+    version = "c7b16c571372636f4a8f219368fb4f483d64acfc";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "1238808d87e136c9b44649f1e9ff00cb58abfad2";
+      rev = "c7b16c571372636f4a8f219368fb4f483d64acfc";
       fetchSubmodules = false;
-      sha256 = "sha256-j70SIU8hbgTNWyWAyq/ZTsE2Ukj7IR3bAvwwPfmTits=";
+      sha256 = "sha256-qmbtLz6+wTczsvemXypwOVL6qshS0RPSluTOTKvHi0w=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-j70SIU8hbgTNWyWAyq_ZTsE2Ukj7IR3bAvwwPfmTits=/Cargo.lock";
+      lockFile = ./. + "/sha256-qmbtLz6+wTczsvemXypwOVL6qshS0RPSluTOTKvHi0w=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
-        "libspa-0.8.0" = "sha256-5lfjyCPIcT+pJs8TQfLCZuBBJJBc6OPWCVlI6sT0mNc=";
+        "libspa-0.9.2" = "sha256-BmPyJdRYEz2o36hEE28GaRDVxhJm20cgYx28k0FhaSE=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-04-14";
+    date = "2026-05-13";
   };
   webfisher = {
     pname = "webfisher";
@@ -341,27 +341,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "8f3f2d490045e3a29cf7d2aa49711503af0c7a39";
+    version = "dbb7df207f76b8f4a9fe7ef56634a33be3afa8c0";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "8f3f2d490045e3a29cf7d2aa49711503af0c7a39";
+      rev = "dbb7df207f76b8f4a9fe7ef56634a33be3afa8c0";
       fetchSubmodules = false;
-      sha256 = "sha256-BoSb270K1BsnPKaLbLEnMFyYXQo0xK5BPGoDwzNrjMA=";
+      sha256 = "sha256-6ftc8Fp+fYh8lUpip5LNi/cnlXTZUKaAJKqyb06RtFg=";
     };
-    date = "2026-04-13";
+    date = "2026-05-11";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "ef152c973b94a313e1ba9552162818b5151ac671";
+    version = "6578e7ec7f971deaa96d87c91427f1c4b09c10e4";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "ef152c973b94a313e1ba9552162818b5151ac671";
+      rev = "6578e7ec7f971deaa96d87c91427f1c4b09c10e4";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-M0SQMu1rgY++a+4r0DK//ralFEO5w7I3UrgLecoLO+A=";
+      sha256 = "sha256-x8VuG9N1P0UL3Hy3XSI0gVVyF3sbWIhr6t2iu5Z+Flc=";
     };
   };
   wivrn-monado = {
