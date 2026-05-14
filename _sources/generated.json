@@ -28,11 +28,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-HZs9OtIeVY+Ype+qebyvHn0XokA9y2QleJjsCKrvrys=/Cargo.lock",
+                "sha256-bQhTcqUcMKEfDd3Mj_LU6D7oNinuc7lc0AT_TjT8RmM=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-05-02",
+        "date": "2026-05-14",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -44,12 +44,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "223be383684c4fcbe1b1d398a6e8117efdbe30dd",
-            "sha256": "sha256-HZs9OtIeVY+Ype+qebyvHn0XokA9y2QleJjsCKrvrys=",
+            "rev": "4cac96471398ac912535cde835f59fb12061b820",
+            "sha256": "sha256-bQhTcqUcMKEfDd3Mj/LU6D7oNinuc7lc0AT/TjT8RmM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "223be383684c4fcbe1b1d398a6e8117efdbe30dd"
+        "version": "4cac96471398ac912535cde835f59fb12061b820"
     },
     "awesome-git": {
         "cargoLock": null,
@@ -389,7 +389,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -401,12 +401,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "58915a2db4272886ec6e965c54a598317b6be747",
-            "sha256": "sha256-3ad/zHBbecJYrXJtS/DodRlH4byYT+pWQv85ATVNqSw=",
+            "rev": "48e19a08b98b74fe56dbb4bb9ae5032982fbb4f3",
+            "sha256": "sha256-yuu0drfXsMvLTESeC/Rn63kbyZL3b1aG1034Hx5DZ7o=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "58915a2db4272886ec6e965c54a598317b6be747"
+        "version": "48e19a08b98b74fe56dbb4bb9ae5032982fbb4f3"
     },
     "tilp2-gfm": {
         "cargoLock": null,
@@ -505,7 +505,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-iPftqMaC3wOmHHGAow0WrIxySKl8atTh5qQOCl+2ZyY=/Cargo.lock",
+                "sha256-KTMm8wmX3XgaozT0Odufh6R6xWoU8Vq2AG5bTN6bCLc=/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
@@ -515,7 +515,7 @@
                 }
             ]
         },
-        "date": "2026-05-12",
+        "date": "2026-05-13",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -527,12 +527,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "20743f91eb970fe76f67c3f4844b2205a8e5b1cd",
-            "sha256": "sha256-iPftqMaC3wOmHHGAow0WrIxySKl8atTh5qQOCl+2ZyY=",
+            "rev": "8691cf99d2f1fab1e24dcb46c807e4c534a3377d",
+            "sha256": "sha256-KTMm8wmX3XgaozT0Odufh6R6xWoU8Vq2AG5bTN6bCLc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "20743f91eb970fe76f67c3f4844b2205a8e5b1cd"
+        "version": "8691cf99d2f1fab1e24dcb46c807e4c534a3377d"
     },
     "webfisher": {
         "cargoLock": null,
