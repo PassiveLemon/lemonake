@@ -1,0 +1,72 @@
+name: Cachix build
+on:
+  workflow_call:
+    inputs:
+      set:
+        description: 'Package set (redist, nonredist)'
+        required: true
+        type: string
+      filter:
+        description: 'Package type (release, tag, git)'
+        required: true
+        type: string
+
+jobs:
+  cachix-build:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/runner-images/issues/2840
+      # The Nix store and some builds can use a ton of space
+    - name: Delete unused files to free disk space
+      run: |
+        sudo rm -rf \
+          /opt/google/chrome \
+          /opt/microsoft/msedge \
+          /opt/microsoft/powershell \
+          /opt/pipx \
+          /usr/lib/mono \
+          /usr/local/julia* \
+          /usr/local/lib/android \
+          /usr/local/lib/node_modules \
+          /usr/local/share/chromium \
+          /usr/local/share/powershell \
+          /usr/share/dotnet \
+          /usr/share/swift
+
+    - name: Checkout code
+      uses: actions/checkout@v6
+
+    - name: Install packages
+      run: |
+        sudo apt-get install -y jq
+
+    - name: Install nix
+      uses: cachix/install-nix-action@v31
+      with:
+        nix_path: nixpkgs=channel:nixpkgs-unstable
+        extra_nix_config: |
+          experimental-features = nix-command flakes
+
+    - name: Set up Cachix
+      uses: cachix/cachix-action@v17
+      with:
+        name: passivelemon
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+
+      # https://www.reddit.com/r/NixOS/comments/vohopf/is_there_an_easy_way_to_build_all_the_packages_of/
+      # Potential future solution: https://github.com/NixOS/nix/issues/7165
+      # x86_64-linux is currently the only supported architecture
+
+      # If the filter is empty ("") then only build the packages without a git or tag suffix
+    - name: Build packages for Cachix
+      run: |
+        nix eval .#${{ inputs.set }} --json |
+          jq -r --arg FILTER "${{ inputs.filter }}" \
+            '."x86_64-linux"[]
+              | select(if $FILTER == "" then
+                (contains("-git") or contains("-tag")) | not
+              else
+                endswith($FILTER)
+              end)
+            ' | xargs -rI {} nix build .#{} --keep-going --max-jobs 1 --cores 0
+

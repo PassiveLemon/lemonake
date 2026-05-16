@@ -1,0 +1,30 @@
+name: Build scheduler
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/**'
+      - '_sources/**'
+      - 'pkgs/**'
+      - 'flake.lock'
+  workflow_run:
+    workflows: [ "Update" ]
+    types:
+      - completed
+
+jobs:
+  build-schduler:
+    # Don't run the build if the update workflow failed because nothing will have changed
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        set: [ "nonRedistributablePackages", "redistributablePackages" ]
+        filter: [ "", "-tag", "-git" ]
+    uses: ./.github/workflows/cachix-build.yml
+    secrets: inherit
+    with:
+      set: ${{ matrix.set }}
+      filter: ${{ matrix.filter }}
+
