@@ -18,7 +18,6 @@
     imports = [
       ./modules
       ./pkgs
-      ./parts/devshells.nix
       ./parts/redistributablePackages.nix
       ./parts/nonRedistributablePackages.nix
     ];
