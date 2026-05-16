@@ -28,24 +28,20 @@ Run `nix flake show github:passivelemon/lemonake` to see all outputs. Home Manag
 Documentation for certain modules and packages can be found in the docs subdirectory.
 
 Modules:
-- Home Manager (Do not use in NixOS configuration)
-  - Can be imported with `inputs.lemonake.homeModules.<module>`
+- Home Manager (Can be imported with `inputs.lemonake.homeModules.<module>`)
   - `programs.steamvr`
   - `wayland.windowManager.somewm`
-- NixOS (Do not use in home-manager configuration)
-  - Can be imported with `inputs.lemonake.nixosModules.<module>`
+- NixOS (Can be imported with `inputs.lemonake.nixosModules.<module>`)
   - `services.autoadb`
-  - `services.wivrn`
   - `programs.somewm`
 
-Packages:
-- Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`
+Packages (Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`):
 - `alcom`
 - `alcom-git`
 - `autoadb`
-- `awmtt-git`
 - `awesome-git`
 - `awesome-luajit-git`
+- `awmtt-git`
 - `gdlauncher` (Alias to `gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
@@ -60,20 +56,18 @@ Packages:
 - `picom`
 - `picom-tag`
 - `picom-git`
-- `proton-ge-rtsp` (Please only use with `programs.steam.extraCompatPackages`)
+- `proton-ge-rtsp` (Only use in `programs.steam.extraCompatPackages`)
 - `somewm`
 - `somewm-git`
 - `tilp2`
 - `tilp2-git`
 - `vapor-git`
-- `wayvr-dashboard`
-- `wayvr-dashboard-git`
+- `wayvr`
+- `wayvr-git`
 - `webfisher`
 - `webfisher-git`
 - `wivrn`
 - `wivrn-git`
-- `wlx-overlay-s`
-- `wlx-overlay-s-git`
 - `xrizer`
 - `xrizer-git`
 
