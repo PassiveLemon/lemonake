@@ -28,15 +28,13 @@ in
         monado = prev.applyPatches {
           inherit (prevAttrs.monado) postPatch;
           src = monado.src;
-
-          nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [
-            prev.hexdump
-          ];
-
-          buildInputs = prevAttrs.buildInputs ++ [
-            prev.qt6.qtbase
-          ];
         };
+        nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [
+          prev.hexdump
+        ];
+        cmakeFlags = prevAttrs.cmakeFlags ++ [
+          (prev.lib.cmakeFeature "GIT_COMMIT" package.version)
+        ];
       });
     };
   };
