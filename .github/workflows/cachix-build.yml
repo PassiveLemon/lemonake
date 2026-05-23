@@ -48,6 +48,7 @@ jobs:
           experimental-features = nix-command flakes
 
     - name: Set up Cachix
+      if: ${{ inputs.set == "redistributablePackages" }}
       uses: cachix/cachix-action@v17
       with:
         name: passivelemon
