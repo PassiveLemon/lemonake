@@ -14,7 +14,7 @@ on:
       - completed
 
 jobs:
-  build-schduler:
+  build-scheduler:
     # Don't run the build if the update workflow failed because nothing will have changed
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     strategy:

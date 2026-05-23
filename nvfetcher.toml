@@ -18,7 +18,7 @@ src.github = "gorilla-devs/GDLauncher"
 fetch.url = "https://github.com/gorilla-devs/GDLauncher/releases/download/$ver/GDLauncher-linux-setup.AppImage"
 
 [gdlauncher-carbon]
-src.cmd = "curl https://gdlauncher.com/download/linux | awk 'match($0,/GDLauncher__([0-9]*\\.[0-9]*\\.[0-9]*)/,a){print a[1]}'"
+src.cmd = "curl -s https://gdlauncher.com/ | awk 'match($0,/([0-9]+\\.[0-9]+\\.[0-9]+)/,a){print a[1]; exit}'"
 fetch.url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__$ver__linux__x64.AppImage"
 
 [hd2pystratmacro]
