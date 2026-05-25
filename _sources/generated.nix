@@ -25,21 +25,21 @@
   };
   alcom-git = {
     pname = "alcom-git";
-    version = "17a28fa60907acd9fb96d16f4f03ca3433423020";
+    version = "089427cbfae2a72fcecdc10fbf5b0c2ed3f3ac8d";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "17a28fa60907acd9fb96d16f4f03ca3433423020";
+      rev = "089427cbfae2a72fcecdc10fbf5b0c2ed3f3ac8d";
       fetchSubmodules = false;
-      sha256 = "sha256-7tqUTFxxwNcyuL3/jEAAmVVXi2f23v9ZYr8zhULemIM=";
+      sha256 = "sha256-2VdCFaHjIGslghFv1bFURamFgTiq70JH8/2JrA2Eg+A=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-7tqUTFxxwNcyuL3_jEAAmVVXi2f23v9ZYr8zhULemIM=/Cargo.lock";
+      lockFile = ./. + "/sha256-2VdCFaHjIGslghFv1bFURamFgTiq70JH8_2JrA2Eg+A=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-05-24";
+    date = "2026-05-25";
   };
   awesome-git = {
     pname = "awesome-git";

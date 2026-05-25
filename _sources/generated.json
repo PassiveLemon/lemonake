@@ -28,11 +28,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-7tqUTFxxwNcyuL3_jEAAmVVXi2f23v9ZYr8zhULemIM=/Cargo.lock",
+                "sha256-2VdCFaHjIGslghFv1bFURamFgTiq70JH8_2JrA2Eg+A=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-05-24",
+        "date": "2026-05-25",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -44,12 +44,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "17a28fa60907acd9fb96d16f4f03ca3433423020",
-            "sha256": "sha256-7tqUTFxxwNcyuL3/jEAAmVVXi2f23v9ZYr8zhULemIM=",
+            "rev": "089427cbfae2a72fcecdc10fbf5b0c2ed3f3ac8d",
+            "sha256": "sha256-2VdCFaHjIGslghFv1bFURamFgTiq70JH8/2JrA2Eg+A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "17a28fa60907acd9fb96d16f4f03ca3433423020"
+        "version": "089427cbfae2a72fcecdc10fbf5b0c2ed3f3ac8d"
     },
     "awesome-git": {
         "cargoLock": null,
