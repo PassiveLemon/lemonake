@@ -2,7 +2,7 @@
     "alcom": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-pBveIimlpRkfUTEGIBEuALNYkze35PZdKHEY0VSf_wc=/Cargo.lock",
+                "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock",
                 {}
             ]
         },
@@ -18,17 +18,17 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "gui-v1.1.6-beta.1",
-            "sha256": "sha256-pBveIimlpRkfUTEGIBEuALNYkze35PZdKHEY0VSf/wc=",
+            "rev": "gui-v1.1.6-beta.2",
+            "sha256": "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "gui-v1.1.6-beta.1"
+        "version": "gui-v1.1.6-beta.2"
     },
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-2VdCFaHjIGslghFv1bFURamFgTiq70JH8_2JrA2Eg+A=/Cargo.lock",
+                "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock",
                 {}
             ]
         },
@@ -44,12 +44,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "089427cbfae2a72fcecdc10fbf5b0c2ed3f3ac8d",
-            "sha256": "sha256-2VdCFaHjIGslghFv1bFURamFgTiq70JH8/2JrA2Eg+A=",
+            "rev": "a7e19a64795204725d63ac9d69dc5679113d959a",
+            "sha256": "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "089427cbfae2a72fcecdc10fbf5b0c2ed3f3ac8d"
+        "version": "a7e19a64795204725d63ac9d69dc5679113d959a"
     },
     "awesome-git": {
         "cargoLock": null,
