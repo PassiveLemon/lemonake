@@ -25,21 +25,21 @@
   };
   alcom-git = {
     pname = "alcom-git";
-    version = "a7e19a64795204725d63ac9d69dc5679113d959a";
+    version = "dd9673c2cbe13ffaec52b1b949c67082db4bcc60";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "a7e19a64795204725d63ac9d69dc5679113d959a";
+      rev = "dd9673c2cbe13ffaec52b1b949c67082db4bcc60";
       fetchSubmodules = false;
-      sha256 = "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=";
+      sha256 = "sha256-nZakaCe4Nr4pUkC6CQ/CTfdgQv2gUdbVZ6zhOr6FDBU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock";
+      lockFile = ./. + "/sha256-nZakaCe4Nr4pUkC6CQ_CTfdgQv2gUdbVZ6zhOr6FDBU=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-05-25";
+    date = "2026-05-27";
   };
   awesome-git = {
     pname = "awesome-git";
@@ -233,15 +233,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "6c9b83b44e1bafa8f9a92a536cbfbae9bd6a70d4";
+    version = "1eefa3b6e1c0d24824355550be31906c04531a7e";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "6c9b83b44e1bafa8f9a92a536cbfbae9bd6a70d4";
+      rev = "1eefa3b6e1c0d24824355550be31906c04531a7e";
       fetchSubmodules = false;
-      sha256 = "sha256-xNarLteN4B78ZOVHXnOE0yS10hl20C+bcgIYFrNHz3Y=";
+      sha256 = "sha256-rCrIidh32ezdeIj3Pefevutn60DZtmr/q6ErzANVXqU=";
     };
-    date = "2026-05-20";
+    date = "2026-05-26";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -356,15 +356,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "18d685976eb007a2e26e0f835fe6a49469f8a3d6";
+    version = "3cd64e458e387d855b41fbd5314e880bcb4d72c1";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "18d685976eb007a2e26e0f835fe6a49469f8a3d6";
+      rev = "3cd64e458e387d855b41fbd5314e880bcb4d72c1";
       fetchSubmodules = false;
-      sha256 = "sha256-Z0helVU3Qlubet4f6x76d4L7SuIzvOXqVbY3aL56f+w=";
+      sha256 = "sha256-lZYwi6czGQhisNLsafzuU3wMwSncipm/+MtgVvJv5I8=";
     };
-    date = "2026-05-20";
+    date = "2026-05-27";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";

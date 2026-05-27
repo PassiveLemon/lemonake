@@ -28,11 +28,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock",
+                "sha256-nZakaCe4Nr4pUkC6CQ_CTfdgQv2gUdbVZ6zhOr6FDBU=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-05-25",
+        "date": "2026-05-27",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -44,12 +44,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "a7e19a64795204725d63ac9d69dc5679113d959a",
-            "sha256": "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=",
+            "rev": "dd9673c2cbe13ffaec52b1b949c67082db4bcc60",
+            "sha256": "sha256-nZakaCe4Nr4pUkC6CQ/CTfdgQv2gUdbVZ6zhOr6FDBU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a7e19a64795204725d63ac9d69dc5679113d959a"
+        "version": "dd9673c2cbe13ffaec52b1b949c67082db4bcc60"
     },
     "awesome-git": {
         "cargoLock": null,
@@ -389,7 +389,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-05-20",
+        "date": "2026-05-26",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -401,12 +401,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "6c9b83b44e1bafa8f9a92a536cbfbae9bd6a70d4",
-            "sha256": "sha256-xNarLteN4B78ZOVHXnOE0yS10hl20C+bcgIYFrNHz3Y=",
+            "rev": "1eefa3b6e1c0d24824355550be31906c04531a7e",
+            "sha256": "sha256-rCrIidh32ezdeIj3Pefevutn60DZtmr/q6ErzANVXqU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6c9b83b44e1bafa8f9a92a536cbfbae9bd6a70d4"
+        "version": "1eefa3b6e1c0d24824355550be31906c04531a7e"
     },
     "tilp2-gfm": {
         "cargoLock": null,
@@ -599,7 +599,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-05-20",
+        "date": "2026-05-27",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -611,12 +611,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "18d685976eb007a2e26e0f835fe6a49469f8a3d6",
-            "sha256": "sha256-Z0helVU3Qlubet4f6x76d4L7SuIzvOXqVbY3aL56f+w=",
+            "rev": "3cd64e458e387d855b41fbd5314e880bcb4d72c1",
+            "sha256": "sha256-lZYwi6czGQhisNLsafzuU3wMwSncipm/+MtgVvJv5I8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "18d685976eb007a2e26e0f835fe6a49469f8a3d6"
+        "version": "3cd64e458e387d855b41fbd5314e880bcb4d72c1"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
