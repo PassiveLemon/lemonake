@@ -1,30 +1,4 @@
 {
-    "alcom": {
-        "cargoLock": {
-            "Cargo.lock": [
-                "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock",
-                {}
-            ]
-        },
-        "date": null,
-        "extract": null,
-        "name": "alcom",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vrc-get",
-            "repo": "vrc-get",
-            "rev": "gui-v1.1.6-beta.2",
-            "sha256": "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "gui-v1.1.6-beta.2"
-    },
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
@@ -50,6 +24,32 @@
             "type": "github"
         },
         "version": "dd9673c2cbe13ffaec52b1b949c67082db4bcc60"
+    },
+    "alcom-tag": {
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock",
+                {}
+            ]
+        },
+        "date": null,
+        "extract": null,
+        "name": "alcom-tag",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "vrc-get",
+            "repo": "vrc-get",
+            "rev": "gui-v1.1.6-beta.2",
+            "sha256": "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "gui-v1.1.6-beta.2"
     },
     "awesome-git": {
         "cargoLock": null,
@@ -164,26 +164,6 @@
             "type": "github"
         },
         "version": "373de20d6784f77d59abc1ffc1d0302f28ed46cd"
-    },
-    "monado-vulkan-layers-git": {
-        "cargoLock": null,
-        "date": "2024-02-21",
-        "extract": null,
-        "name": "monado-vulkan-layers-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2",
-            "sha256": "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git"
-        },
-        "version": "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2"
     },
     "nimpad": {
         "cargoLock": null,
@@ -611,12 +591,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "3cd64e458e387d855b41fbd5314e880bcb4d72c1",
-            "sha256": "sha256-lZYwi6czGQhisNLsafzuU3wMwSncipm/+MtgVvJv5I8=",
+            "rev": "cef62ddeb54e55f138c458424c9de37c0f0616c3",
+            "sha256": "sha256-L4/53dPFbf3S0JlxTT0aML25b9BbQBRITPC0oslsXwU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3cd64e458e387d855b41fbd5314e880bcb4d72c1"
+        "version": "cef62ddeb54e55f138c458424c9de37c0f0616c3"
     },
     "wivrn-git-monado": {
         "cargoLock": null,

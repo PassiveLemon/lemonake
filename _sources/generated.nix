@@ -6,23 +6,6 @@
   dockerTools,
 }:
 {
-  alcom = {
-    pname = "alcom";
-    version = "gui-v1.1.6-beta.2";
-    src = fetchFromGitHub {
-      owner = "vrc-get";
-      repo = "vrc-get";
-      rev = "gui-v1.1.6-beta.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock";
-      outputHashes = {
-        
-      };
-    };
-  };
   alcom-git = {
     pname = "alcom-git";
     version = "dd9673c2cbe13ffaec52b1b949c67082db4bcc60";
@@ -40,6 +23,23 @@
       };
     };
     date = "2026-05-27";
+  };
+  alcom-tag = {
+    pname = "alcom-tag";
+    version = "gui-v1.1.6-beta.2";
+    src = fetchFromGitHub {
+      owner = "vrc-get";
+      repo = "vrc-get";
+      rev = "gui-v1.1.6-beta.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock";
+      outputHashes = {
+        
+      };
+    };
   };
   awesome-git = {
     pname = "awesome-git";
@@ -103,20 +103,6 @@
       sha256 = "sha256-AFCAudWQa3UiNvum4Ir6SY1WhGMaBSjgKyu6jG5efAA=";
     };
     date = "2023-11-26";
-  };
-  monado-vulkan-layers-git = {
-    pname = "monado-vulkan-layers-git";
-    version = "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2";
-    src = fetchgit {
-      url = "https://gitlab.freedesktop.org/monado/utilities/vulkan-layers.git";
-      rev = "ae43cdcbd25c56e3481bbc8a0ce2bfcebba9f7c2";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-QabYVKcenW+LQ+QSjUoQOLOQAVHdjE0YXd+1WsdzNPc=";
-    };
-    date = "2024-02-21";
   };
   nimpad = {
     pname = "nimpad";
@@ -356,13 +342,13 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3cd64e458e387d855b41fbd5314e880bcb4d72c1";
+    version = "cef62ddeb54e55f138c458424c9de37c0f0616c3";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3cd64e458e387d855b41fbd5314e880bcb4d72c1";
+      rev = "cef62ddeb54e55f138c458424c9de37c0f0616c3";
       fetchSubmodules = false;
-      sha256 = "sha256-lZYwi6czGQhisNLsafzuU3wMwSncipm/+MtgVvJv5I8=";
+      sha256 = "sha256-L4/53dPFbf3S0JlxTT0aML25b9BbQBRITPC0oslsXwU=";
     };
     date = "2026-05-27";
   };
