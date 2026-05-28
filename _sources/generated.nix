@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "dd9673c2cbe13ffaec52b1b949c67082db4bcc60";
+    version = "f45ee6514e86c3d645b3d4aed8af59a5d3053582";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "dd9673c2cbe13ffaec52b1b949c67082db4bcc60";
+      rev = "f45ee6514e86c3d645b3d4aed8af59a5d3053582";
       fetchSubmodules = false;
-      sha256 = "sha256-nZakaCe4Nr4pUkC6CQ/CTfdgQv2gUdbVZ6zhOr6FDBU=";
+      sha256 = "sha256-TZxTX4g1eQmHh4j/vkriV2sPf/2gA2QAimU3mZC7tic=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-nZakaCe4Nr4pUkC6CQ_CTfdgQv2gUdbVZ6zhOr6FDBU=/Cargo.lock";
+      lockFile = ./. + "/sha256-TZxTX4g1eQmHh4j_vkriV2sPf_2gA2QAimU3mZC7tic=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-05-27";
+    date = "2026-05-28";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -397,20 +397,20 @@
   };
   xrizer-git = {
     pname = "xrizer-git";
-    version = "aecde1eb65906f5ac250ad10c62393fe3a1b92e7";
+    version = "fd3bd80a46dd330e8814a87a985c9676e3ea41ad";
     src = fetchFromGitHub {
       owner = "Supreeeme";
       repo = "xrizer";
-      rev = "aecde1eb65906f5ac250ad10c62393fe3a1b92e7";
+      rev = "fd3bd80a46dd330e8814a87a985c9676e3ea41ad";
       fetchSubmodules = false;
-      sha256 = "sha256-8YGQvA9ZPXXuXRGWc5i00UYAiAYLoJed4qwpKWEhZOY=";
+      sha256 = "sha256-zIo5EnA9EzpKpKmHWncKvsWz06vcBWMMymfenhgxsG8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-8YGQvA9ZPXXuXRGWc5i00UYAiAYLoJed4qwpKWEhZOY=/Cargo.lock";
+      lockFile = ./. + "/sha256-zIo5EnA9EzpKpKmHWncKvsWz06vcBWMMymfenhgxsG8=/Cargo.lock";
       outputHashes = {
         "openxr-0.19.0" = "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8=";
       };
     };
-    date = "2026-05-25";
+    date = "2026-05-27";
   };
 }

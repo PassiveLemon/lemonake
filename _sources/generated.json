@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-nZakaCe4Nr4pUkC6CQ_CTfdgQv2gUdbVZ6zhOr6FDBU=/Cargo.lock",
+                "sha256-TZxTX4g1eQmHh4j_vkriV2sPf_2gA2QAimU3mZC7tic=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-05-27",
+        "date": "2026-05-28",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "dd9673c2cbe13ffaec52b1b949c67082db4bcc60",
-            "sha256": "sha256-nZakaCe4Nr4pUkC6CQ/CTfdgQv2gUdbVZ6zhOr6FDBU=",
+            "rev": "f45ee6514e86c3d645b3d4aed8af59a5d3053582",
+            "sha256": "sha256-TZxTX4g1eQmHh4j/vkriV2sPf/2gA2QAimU3mZC7tic=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dd9673c2cbe13ffaec52b1b949c67082db4bcc60"
+        "version": "f45ee6514e86c3d645b3d4aed8af59a5d3053582"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -669,13 +669,13 @@
     "xrizer-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-8YGQvA9ZPXXuXRGWc5i00UYAiAYLoJed4qwpKWEhZOY=/Cargo.lock",
+                "sha256-zIo5EnA9EzpKpKmHWncKvsWz06vcBWMMymfenhgxsG8=/Cargo.lock",
                 {
                     "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
                 }
             ]
         },
-        "date": "2026-05-25",
+        "date": "2026-05-27",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -687,11 +687,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "aecde1eb65906f5ac250ad10c62393fe3a1b92e7",
-            "sha256": "sha256-8YGQvA9ZPXXuXRGWc5i00UYAiAYLoJed4qwpKWEhZOY=",
+            "rev": "fd3bd80a46dd330e8814a87a985c9676e3ea41ad",
+            "sha256": "sha256-zIo5EnA9EzpKpKmHWncKvsWz06vcBWMMymfenhgxsG8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "aecde1eb65906f5ac250ad10c62393fe3a1b92e7"
+        "version": "fd3bd80a46dd330e8814a87a985c9676e3ea41ad"
     }
 }
