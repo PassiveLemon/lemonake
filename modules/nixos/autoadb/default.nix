@@ -57,9 +57,7 @@ in
       };
     };
 
-    programs.adb.enable = true;
-
-    environment.systemPackages = [ cfg.package ];
+    environment.systemPackages = [ cfg.package pkgs.android-tools ];
   };
   meta.maintainers = with maintainers; [ passivelemon ];
 }
