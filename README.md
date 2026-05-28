@@ -1,9 +1,7 @@
 # lemonake
-This is my collection of packages and modules in a flake.
+My collection of packages and modules in a flake. This is mostly just for myself so I don't have to wait for the whole Nixpkgs review process which can take days.
 
-Some of these are already in Nixpkgs or in the process of getting merged but I provide faster updates here.
-
-Packages and the flake are automatically updated every day and pushed to Cachix.
+The inputs are updated every day. Each package is built and pushed to Cachix if redistributable.
 
 ## Usage
 Add the flake to your inputs:
@@ -25,17 +23,19 @@ Add the flake to your inputs:
 ## Features
 Run `nix flake show github:passivelemon/lemonake` to see all outputs. Home Manager modules will show as unknown.
 
+The only architecture currently supported is `x86_64-linux`. Others may be supported in the future.
+
 Documentation for certain modules and packages can be found in the docs subdirectory.
 
 Modules:
-- Home Manager (Can be imported with `inputs.lemonake.homeModules.<module>`)
-  - `programs.steamvr`
-  - `wayland.windowManager.somewm`
-- NixOS (Can be imported with `inputs.lemonake.nixosModules.<module>`)
-  - `services.autoadb`
-  - `programs.somewm`
+- Home Manager (`inputs.lemonake.homeModules.<module>`)
+  - SteamVR (`programs.steamvr`)
+  - SomeWM (`wayland.windowManager.somewm`)
+- NixOS (`inputs.lemonake.nixosModules.<module>`)
+  - AutoADB (`services.autoadb`)
+  - SomeWM (`programs.somewm`)
 
-Packages (Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`):
+Packages (`inputs.lemonake.packages.<system>.<package>`):
 - `alcom-tag` (`-git`)
 - `autoadb`
 - `awesome-git`
@@ -44,37 +44,28 @@ Packages (Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`)
 - `gdlauncher` (Alias to `gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
-- `gfm`
-- `gfm-git`
+- `gfm` (`-git`)
 - `lua-pam-git`
 - `lua-pam-luajit-git`
-- `nimpad`
-- `nimpad-git`
+- `nimpad` (`-git`)
 - `opencomposite-git`
-- `picom`
-- `picom-tag`
-- `picom-git`
+- `picom` (`-tag` `-git`)
 - `proton-ge-rtsp` (Only use in `programs.steam.extraCompatPackages`)
-- `somewm`
-- `somewm-git`
-- `tilp2`
-- `tilp2-git`
+- `somewm` (`-git`)
+- `tilp2` (`-git`)
 - `vapor-git`
-- `wayvr`
-- `wayvr-git`
-- `webfisher`
-- `webfisher-git`
-- `wivrn`
-- `wivrn-git`
-- `xrizer`
-- `xrizer-git`
+- `wayvr` (`-git`)
+- `webfisher` (`-git`)
+- `wivrn` (`-git`)
+- `xrizer` (`-git`)
 
-Naming scheme:
-- Latest release: `<package>`
-- Latest tag: `<package>-tag`
-- Latest commit: `<package>-git`
+Source types:
+  - Release: No suffix, only the latest stable release
+  - Tag: `-tag` suffix, may include pre-releases
+  - Git: `-git` suffix, the latest commit
 
-The only architecture currently supported is `x86_64-linux`. Others may be supported in the future.
+If a package has multiple sources, the other suffixes will be in parenthesis.
+Git source packages often fail to build due to outdated packaging so they may not get cached until fixed.
 
 ## Binary cache
 ```nix
