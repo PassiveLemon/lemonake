@@ -49,7 +49,6 @@ Packages (Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`)
 - `gfm-git`
 - `lua-pam-git`
 - `lua-pam-luajit-git`
-- `monado-vulkan-layers-git`
 - `nimpad`
 - `nimpad-git`
 - `opencomposite-git`

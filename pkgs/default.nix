@@ -9,7 +9,6 @@ let
     "gdlauncher"
     "gfm"
     "lua-pam"
-    "monado-vulkan-layers"
     "nimpad"
     "opencomposite"
     "picom"
