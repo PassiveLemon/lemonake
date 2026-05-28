@@ -1,6 +1,9 @@
 name: Update
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'nvfetcher.toml'
   schedule:
   - cron: '0 2 * * *'
 
