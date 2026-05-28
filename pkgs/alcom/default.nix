@@ -5,8 +5,8 @@ in
 {
   flake.overlays = {
     alcom = final: prev: {
-      alcom = let
-        package = getPackage "alcom" prev;
+      alcom-tag = let
+        package = getPackage "alcom-tag" prev;
       in
       prev.alcom.overrideAttrs {
         inherit (package) src;

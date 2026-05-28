@@ -1,4 +1,4 @@
-[alcom]
+[alcom-tag]
 src.github_tag = "vrc-get/vrc-get"
 src.include_regex = "gui-v.+"
 fetch.github = "vrc-get/vrc-get"

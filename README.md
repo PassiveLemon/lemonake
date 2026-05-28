@@ -36,8 +36,7 @@ Modules:
   - `programs.somewm`
 
 Packages (Can be added with `inputs.lemonake.packages.${pkgs.system}.<package>`):
-- `alcom`
-- `alcom-git`
+- `alcom-tag` (`-git`)
 - `autoadb`
 - `awesome-git`
 - `awesome-luajit-git`
