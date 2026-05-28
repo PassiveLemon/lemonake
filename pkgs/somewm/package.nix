@@ -30,10 +30,14 @@
 , extraGITypeLibPaths ? [ ]
 , extraLuaModules ? [ ]
 , extraSearchPaths ? [ ]
+# Common extra dependencies, not required
+, networkmanager
+, upower
+, playerctl
 }:
 let
   luaEnv = luajit.withPackages (ps: with ps; ([
-    lgi
+    lgi # Required
   ] ++ extraLuaModules));
 
   getLuaPath = lib: dir: "${lib}/${dir}/lua/${luaEnv.luaversion}";
@@ -43,7 +47,9 @@ let
   finalSearchPaths = makeSearchPaths ([ luaEnv ] ++ extraSearchPaths);
 
   getTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
-  makeGITypeLibPaths = lib.forEach extraGITypeLibPaths getTypeLibPath;
+  makeGITypeLibPaths = lib.forEach (extraGITypeLibPaths ++ [
+    networkmanager upower playerctl
+  ]) getTypeLibPath;
   finalGITypeLibPaths = lib.concatStringsSep ":" makeGITypeLibPaths;
 in
 stdenv.mkDerivation (finalAttrs: {
