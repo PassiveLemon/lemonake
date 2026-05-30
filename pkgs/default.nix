@@ -6,6 +6,7 @@ let
     "alcom"
     "autoadb"
     "awesome"
+    "awmtt"
     "gdlauncher"
     "gfm"
     "lua-pam"
