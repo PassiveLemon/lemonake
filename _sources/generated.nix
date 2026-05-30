@@ -8,16 +8,16 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "6f8cd53159c46d83b3336f04cfa940d44ee4e3da";
+    version = "09c8190634b8ddde7f75c9f85c580c7772306612";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "6f8cd53159c46d83b3336f04cfa940d44ee4e3da";
+      rev = "09c8190634b8ddde7f75c9f85c580c7772306612";
       fetchSubmodules = false;
-      sha256 = "sha256-RUqvn9nBxuXD5vfu1dnAi6cReRnJWRpVIbC88iVJE8Q=";
+      sha256 = "sha256-H89+2TBnfblSp9U7NRjuZZMXfGsZr4fNj5WK48JMb4Y=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-RUqvn9nBxuXD5vfu1dnAi6cReRnJWRpVIbC88iVJE8Q=/Cargo.lock";
+      lockFile = ./. + "/sha256-H89+2TBnfblSp9U7NRjuZZMXfGsZr4fNj5WK48JMb4Y=/Cargo.lock";
       outputHashes = {
         
       };
@@ -26,16 +26,16 @@
   };
   alcom-tag = {
     pname = "alcom-tag";
-    version = "gui-v1.1.6-beta.2";
+    version = "gui-v1.1.6-rc.0";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "gui-v1.1.6-beta.2";
+      rev = "gui-v1.1.6-rc.0";
       fetchSubmodules = false;
-      sha256 = "sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP/4=";
+      sha256 = "sha256-eZBwjVoRVQ2NRJxEKtVs6ZTS7KZh9xwA8fy/xbYbsn0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-JQk9kLfVSJ57VZdyAZZAX96F+TwBLdP3nYP4keteP_4=/Cargo.lock";
+      lockFile = ./. + "/sha256-eZBwjVoRVQ2NRJxEKtVs6ZTS7KZh9xwA8fy_xbYbsn0=/Cargo.lock";
       outputHashes = {
         
       };
