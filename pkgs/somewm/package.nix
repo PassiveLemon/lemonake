@@ -91,29 +91,24 @@ stdenv.mkDerivation (finalAttrs: {
     xwayland
   ];
 
-  installPhase = ''
-    runHook preInstall
+  mesonFlags = [ "-Dsystemd=disabled" ];
 
-    mkdir -p $out/bin/
-    install -m755 somewm $out/bin/somewm
-    install -m755 somewm-client $out/bin/somewm-client
-
+  postInstall = ''
     mkdir -p $out/share/wayland-sessions/
     install -m644 $src/somewm.desktop.in $out/share/wayland-sessions/somewm.desktop
+  '';
+
+  # --search $src/lua -> Awesome library
+  # --search $src/lib -> liblgi_closure_guard.so
+  postFixup = ''
+    wrapProgram $out/bin/somewm \
+      --add-flags '--search $src/lua' \
+      --add-flags '--search $out/lib' \
+      ${finalSearchPaths}
+      --prefix GI_TYPELIB_PATH : $GI_TYPELIB_PATH:${finalGITypeLibPaths}
 
     substituteInPlace $out/share/wayland-sessions/somewm.desktop \
       --replace-fail 'Exec=@exec@' 'Exec=somewm' \
-
-    runHook postInstall
-  '';
-
-  postFixup = ''
-    mv "$out/bin/somewm" "$out/bin/.somewm-wrapped"
-    makeWrapper "$out/bin/.somewm-wrapped" "$out/bin/somewm" \
-      --set GDK_PIXBUF_MODULE_FILE "$GDK_PIXBUF_MODULE_FILE" \
-      --add-flags '--search ${finalAttrs.src}/lua' \
-      ${finalSearchPaths}
-      --prefix GI_TYPELIB_PATH : $GI_TYPELIB_PATH:${finalGITypeLibPaths}
   '';
 
   meta = with lib; {
