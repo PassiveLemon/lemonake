@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-H89+2TBnfblSp9U7NRjuZZMXfGsZr4fNj5WK48JMb4Y=/Cargo.lock",
+                "sha256-LHr1c3Ar4Ivj5Y6ek3HmA9U67lLdjocZs1YXDjFvfsI=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-05-30",
+        "date": "2026-06-02",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "09c8190634b8ddde7f75c9f85c580c7772306612",
-            "sha256": "sha256-H89+2TBnfblSp9U7NRjuZZMXfGsZr4fNj5WK48JMb4Y=",
+            "rev": "4634c42410e02365dc837de9d7e794786f0d16b0",
+            "sha256": "sha256-LHr1c3Ar4Ivj5Y6ek3HmA9U67lLdjocZs1YXDjFvfsI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "09c8190634b8ddde7f75c9f85c580c7772306612"
+        "version": "4634c42410e02365dc837de9d7e794786f0d16b0"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -250,7 +250,7 @@
     },
     "picom-git": {
         "cargoLock": null,
-        "date": "2026-02-07",
+        "date": "2026-06-01",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -262,12 +262,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "e5bbe6702375af762fe290db51b050ccf5a53fda",
-            "sha256": "sha256-4JAzxqs7EEpgUYm1x2fkgygBzyTApKIpSG3klGbcz5U=",
+            "rev": "bef564e2b4df509fb801147679da913c3012aa31",
+            "sha256": "sha256-MQbHJkpLS5D7241nTxr4jbB49CE474a1PC3qEQjc5cc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e5bbe6702375af762fe290db51b050ccf5a53fda"
+        "version": "bef564e2b4df509fb801147679da913c3012aa31"
     },
     "picom-tag": {
         "cargoLock": null,

@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "09c8190634b8ddde7f75c9f85c580c7772306612";
+    version = "4634c42410e02365dc837de9d7e794786f0d16b0";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "09c8190634b8ddde7f75c9f85c580c7772306612";
+      rev = "4634c42410e02365dc837de9d7e794786f0d16b0";
       fetchSubmodules = false;
-      sha256 = "sha256-H89+2TBnfblSp9U7NRjuZZMXfGsZr4fNj5WK48JMb4Y=";
+      sha256 = "sha256-LHr1c3Ar4Ivj5Y6ek3HmA9U67lLdjocZs1YXDjFvfsI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-H89+2TBnfblSp9U7NRjuZZMXfGsZr4fNj5WK48JMb4Y=/Cargo.lock";
+      lockFile = ./. + "/sha256-LHr1c3Ar4Ivj5Y6ek3HmA9U67lLdjocZs1YXDjFvfsI=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-05-30";
+    date = "2026-06-02";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -154,15 +154,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "e5bbe6702375af762fe290db51b050ccf5a53fda";
+    version = "bef564e2b4df509fb801147679da913c3012aa31";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "e5bbe6702375af762fe290db51b050ccf5a53fda";
+      rev = "bef564e2b4df509fb801147679da913c3012aa31";
       fetchSubmodules = false;
-      sha256 = "sha256-4JAzxqs7EEpgUYm1x2fkgygBzyTApKIpSG3klGbcz5U=";
+      sha256 = "sha256-MQbHJkpLS5D7241nTxr4jbB49CE474a1PC3qEQjc5cc=";
     };
-    date = "2026-02-07";
+    date = "2026-06-01";
   };
   picom-tag = {
     pname = "picom-tag";
