@@ -36,11 +36,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        set: [ "nonRedistributablePackages", "redistributablePackages" ]
-        filter: [ "", "-tag", "-git" ]
+        set: [ "nonRedistributable", "redistributable" ]
+        type: [ "release", "tag", "git" ]
     uses: ./.github/workflows/cachix-build.yml
     secrets: inherit
     with:
       set: ${{ matrix.set }}
-      filter: ${{ matrix.filter }}
+      type: ${{ matrix.type }}
 

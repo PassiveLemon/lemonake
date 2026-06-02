@@ -4,14 +4,14 @@ let
   inherit (flake-parts-lib) mkTransposedPerSystemModule;
 in
 mkTransposedPerSystemModule {
-  name = "redistributablePackages";
+  name = "CIPackageSets";
   option = mkOption {
-    type = types.listOf types.str;
+    type = types.attrs;
     default = { };
     description = ''
-      An attribute set of packages with a redistributable license.
+      An attribute set of package lists for CI
     '';
   };
-  file = ./parts/redistributablePackages.nix;
+  file = ./parts/CIPackageSets.nix;
 }
 

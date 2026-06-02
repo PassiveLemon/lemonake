@@ -18,8 +18,7 @@
     imports = [
       ./modules
       ./pkgs
-      ./parts/redistributablePackages.nix
-      ./parts/nonRedistributablePackages.nix
+      ./parts/CIPackageSets.nix
     ];
 
     perSystem = { inputs', system, ... }:

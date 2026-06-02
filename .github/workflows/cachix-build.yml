@@ -6,7 +6,7 @@ on:
         description: 'Package set (redist, nonredist)'
         required: true
         type: string
-      filter:
+      type:
         description: 'Package type (release, tag, git)'
         required: true
         type: string
@@ -54,20 +54,8 @@ jobs:
         name: passivelemon
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
 
-      # https://www.reddit.com/r/NixOS/comments/vohopf/is_there_an_easy_way_to_build_all_the_packages_of/
-      # Potential future solution: https://github.com/NixOS/nix/issues/7165
       # x86_64-linux is currently the only supported architecture
-
-      # If the filter is empty ("") then only build the packages without a git or tag suffix
     - name: Build packages for Cachix
       run: |
-        nix eval .#${{ inputs.set }} --json |
-          jq -r --arg FILTER "${{ inputs.filter }}" \
-            '."x86_64-linux"[]
-              | select(if $FILTER == "" then
-                (contains("-git") or contains("-tag")) | not
-              else
-                endswith($FILTER)
-              end)
-            ' | xargs -rI {} nix build .#{} --keep-going --max-jobs 1 --cores 0
+        nix eval .#CIPackageSets.x86_64-linux.${{ inputs.set }}.${{ inputs.type }} --json | jq '.[]' | xargs -rI {} nix build .#{} --keep-going --max-jobs 1 --cores 0
 
