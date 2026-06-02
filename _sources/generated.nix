@@ -8,16 +8,16 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "4634c42410e02365dc837de9d7e794786f0d16b0";
+    version = "2c36473e6e0501bbc008da083499103049033f16";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "4634c42410e02365dc837de9d7e794786f0d16b0";
+      rev = "2c36473e6e0501bbc008da083499103049033f16";
       fetchSubmodules = false;
-      sha256 = "sha256-LHr1c3Ar4Ivj5Y6ek3HmA9U67lLdjocZs1YXDjFvfsI=";
+      sha256 = "sha256-5j+AT3fcUrrs9nnW3Qgfa5Qw2Legngp/kqNJfVbO93k=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-LHr1c3Ar4Ivj5Y6ek3HmA9U67lLdjocZs1YXDjFvfsI=/Cargo.lock";
+      lockFile = ./. + "/sha256-5j+AT3fcUrrs9nnW3Qgfa5Qw2Legngp_kqNJfVbO93k=/Cargo.lock";
       outputHashes = {
         
       };
@@ -26,16 +26,16 @@
   };
   alcom-tag = {
     pname = "alcom-tag";
-    version = "gui-v1.1.6-rc.0";
+    version = "gui-v1.1.6";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "gui-v1.1.6-rc.0";
+      rev = "gui-v1.1.6";
       fetchSubmodules = false;
-      sha256 = "sha256-eZBwjVoRVQ2NRJxEKtVs6ZTS7KZh9xwA8fy/xbYbsn0=";
+      sha256 = "sha256-TpVHE3e3dMdBOtPVKomKvg5tQf42QWik18k5oVD2Hms=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-eZBwjVoRVQ2NRJxEKtVs6ZTS7KZh9xwA8fy_xbYbsn0=/Cargo.lock";
+      lockFile = ./. + "/sha256-TpVHE3e3dMdBOtPVKomKvg5tQf42QWik18k5oVD2Hms=/Cargo.lock";
       outputHashes = {
         
       };
@@ -106,26 +106,26 @@
   };
   nimpad = {
     pname = "nimpad";
-    version = "0.3.2";
+    version = "0.3.3";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "0.3.2";
+      rev = "0.3.3";
       fetchSubmodules = false;
-      sha256 = "sha256-reZFSZ0CE7W7SPil9C56JZV6Dtml5vT/DzwFHZHGf44=";
+      sha256 = "sha256-DIinHIzQQZjQOSXJOmfbagVbEMyC1PT00UXCIF/fCC0=";
     };
   };
   nimpad-git = {
     pname = "nimpad-git";
-    version = "cabed2ee3e27b9eb2f48ee8c631f33b2f2f23a0d";
+    version = "b02261b2046ff72a1c2d5d14ed55ca3c497ed17d";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "cabed2ee3e27b9eb2f48ee8c631f33b2f2f23a0d";
+      rev = "b02261b2046ff72a1c2d5d14ed55ca3c497ed17d";
       fetchSubmodules = false;
-      sha256 = "sha256-ztox/8VfDPKOyLngJLckNgnW7yaMS8cG+k+geaGa+oQ=";
+      sha256 = "sha256-DIinHIzQQZjQOSXJOmfbagVbEMyC1PT00UXCIF/fCC0=";
     };
-    date = "2026-04-30";
+    date = "2026-06-02";
   };
   opencomposite-git = {
     pname = "opencomposite-git";
