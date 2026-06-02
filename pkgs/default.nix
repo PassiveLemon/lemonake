@@ -1,44 +1,28 @@
 { self, inputs, config, lib, pkgs, ... }:
 let
-  inherit (lib) map foldl';
+  inherit (lib) readDir attrNames filterAttrs map foldl';
   libLemonake = import ../parts/lib.nix { inherit config lib pkgs; };
 
-  overlayPackages = [
-    "alcom"
-    "autoadb"
-    "awesome"
-    "awmtt"
-    "gdlauncher"
-    "gfm"
-    "lua-pam"
-    "nimpad"
-    "opencomposite"
-    "picom"
-    "proton-ge-rtsp"
-    "somewm"
-    "tilp2"
-    "vapor"
-    "wayvr"
-    "webfisher"
-    "wivrn"
-    "xrizer"
-  ];
+  pkgsDir = readDir "${./.}";
 
-  overlayPaths = map (name: (libLemonake.subImport ./${name})) overlayPackages;
+  overlayPkgs = attrNames (filterAttrs (_: type: type == "directory") pkgsDir);
+
+  overlayImports = map (name: (libLemonake.subImport ./${name})) overlayPkgs;
+
+  updateOverlays = map (name: self.overlays.${name}) overlayPkgs;
+
+  # Overlay final and prev are here, updateOverlays could become input to apply different overlays, say for aarch64 and/or darwin
+  genOverlay = final: prev: foldl' (acc: f: acc // (f final prev)) { } updateOverlays;
 in
 {
   imports = [
     ./ci.nix
-  ] ++ overlayPaths;
+  ] ++ overlayImports;
 
   flake.overlays = {
     default = self.overlays.linux;
 
-    linux = final: prev:
-      let
-        overlayFns = map (name: self.overlays.${name}) overlayPackages;
-      in
-        foldl' (acc: f: acc // (f final prev)) { } overlayFns;
+    linux = genOverlay;
   };
 
   perSystem = { system, ... }:
