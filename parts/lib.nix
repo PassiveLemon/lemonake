@@ -22,20 +22,20 @@ extend (final: _: {
     else final.versionRemovePrefix pkg.version
   );
 
-  packager = pname: path: pkgs: overrideSet:
+  packager = pname: path: pkgs:
     let
       pkg = final.getPackage pname pkgs;
       src = pkg.src;
       version = final.versionFromPackage pkg;
     in
-    (pkgs.callPackage path { inherit version src; }).overrideAttrs overrideSet;
+    pkgs.callPackage path { inherit version src; };
 
-  overlayPackager = pname: overridePkg: pkgs: overrideSet:
+  overlayPackager = pname: overridePkg: pkgs:
     let
       pkg = final.getPackage pname pkgs;
       src = pkg.src;
       version = final.versionFromPackage pkg;
     in
-    (pkgs.${overridePkg}.overrideAttrs { inherit version src; }).overrideAttrs overrideSet;
+    pkgs.${overridePkg}.overrideAttrs { inherit version src; };
 })
 
