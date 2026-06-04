@@ -219,15 +219,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "f9eb34f91a8f26e8bdf73e2d493f9a5c640a7d1f";
+    version = "af4a4cec6e89e92ff3770c1ca56f565ca432149c";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "f9eb34f91a8f26e8bdf73e2d493f9a5c640a7d1f";
+      rev = "af4a4cec6e89e92ff3770c1ca56f565ca432149c";
       fetchSubmodules = false;
-      sha256 = "sha256-Rfe2wOnBoYyVr8VQrUP4wwwwBq+Kk5k9KGR2nlTJwyI=";
+      sha256 = "sha256-TOmC4UEw08lPM3UrYhUaNAryCywzzQ+dmNbpvqJuOLE=";
     };
-    date = "2026-06-02";
+    date = "2026-06-03";
   };
   tilp2-gfm = {
     pname = "tilp2-gfm";
@@ -286,16 +286,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "1591466a8de9723946f8ad28a6cc6249382c1434";
+    version = "6dc76c881f7b61eb5a26a960d31cf008ed2560bb";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "1591466a8de9723946f8ad28a6cc6249382c1434";
+      rev = "6dc76c881f7b61eb5a26a960d31cf008ed2560bb";
       fetchSubmodules = false;
-      sha256 = "sha256-mxRw+BFmFFN/URkHtYaxm8znqTzvRNDsTjJ5qML8h3E=";
+      sha256 = "sha256-WQB7/eWJfl0jGpL0ELhjjL75SPhFV1uDFVkDGXRoc9Y=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-mxRw+BFmFFN_URkHtYaxm8znqTzvRNDsTjJ5qML8h3E=/Cargo.lock";
+      lockFile = ./. + "/sha256-WQB7_eWJfl0jGpL0ELhjjL75SPhFV1uDFVkDGXRoc9Y=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "libspa-0.9.2" = "sha256-BmPyJdRYEz2o36hEE28GaRDVxhJm20cgYx28k0FhaSE=";
@@ -304,7 +304,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-05-17";
+    date = "2026-06-03";
   };
   webfisher = {
     pname = "webfisher";
