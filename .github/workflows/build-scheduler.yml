@@ -14,25 +14,9 @@ on:
       - completed
 
 jobs:
-  # The update workflow finishing will trigger a build so don't run the build workflow if both were to be triggered
-  changes:
-    runs-on: ubuntu-latest
-    outputs:
-      nvfetcher: ${{ steps.filter.outputs.nvfetcher }}
-    steps:
-      - uses: actions/checkout@v6
-
-      - uses: dorny/paths-filter@v4
-        id: filter
-        with:
-          filters: |
-            nvfetcher:
-              - 'nvfetcher.toml'
-
   build-scheduler:
-    needs: changes
     # Don't run the build if the update workflow failed because nothing will have changed
-    if: ${{ (github.event_name != 'workflow_run' && needs.changes.outputs.nvfetcher != 'true') || github.event.workflow_run.conclusion == 'success'}}
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     strategy:
       fail-fast: false
       matrix:
