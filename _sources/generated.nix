@@ -92,6 +92,18 @@
     };
     date = "2024-12-30";
   };
+  lite-xl-git = {
+    pname = "lite-xl-git";
+    version = "234fa0998016f3da9eb9ceaf3c4bc79b93462276";
+    src = fetchFromGitHub {
+      owner = "lite-xl";
+      repo = "lite-xl";
+      rev = "234fa0998016f3da9eb9ceaf3c4bc79b93462276";
+      fetchSubmodules = false;
+      sha256 = "sha256-gpGMl0R7sMBIzR0fYx3SjyN59InWQ7+5uPieQ+4GC1U=";
+    };
+    date = "2026-03-11";
+  };
   lua-pam-git = {
     pname = "lua-pam-git";
     version = "373de20d6784f77d59abc1ffc1d0302f28ed46cd";

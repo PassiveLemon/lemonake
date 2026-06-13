@@ -29,6 +29,10 @@ fetch.github = "PassiveLemon/hd2pystratmacro"
 src.git = "https://github.com/PassiveLemon/hd2pystratmacro"
 fetch.github = "PassiveLemon/hd2pystratmacro"
 
+[lite-xl-git]
+src.git = "https://github.com/lite-xl/lite-xl"
+fetch.github = "lite-xl/lite-xl"
+
 [lua-pam-git]
 src.git = "https://github.com/RMTT/lua-pam"
 fetch.github = "RMTT/lua-pam"
