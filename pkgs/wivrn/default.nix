@@ -16,6 +16,16 @@ in
           inherit (prevAttrs.monado) postPatch;
           src = monado.src;
         };
+        # https://github.com/NixOS/nixpkgs/pull/531078
+        nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [
+          prev.hexdump
+        ];
+        buildInputs = prevAttrs.buildInputs ++ [
+          prev.kdePackages.kirigami-addons
+        ];
+        cmakeFlags = prevAttrs.cmakeFlags ++ [
+          (prev.lib.cmakeFeature "GIT_COMMIT" package.version)
+        ];
       });
 
       wivrn-git = let
@@ -29,9 +39,6 @@ in
           inherit (prevAttrs.monado) postPatch;
           src = monado.src;
         };
-        nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [
-          prev.hexdump
-        ];
         cmakeFlags = prevAttrs.cmakeFlags ++ [
           (prev.lib.cmakeFeature "GIT_COMMIT" package.version)
         ];
