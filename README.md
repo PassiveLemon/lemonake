@@ -44,19 +44,19 @@ Packages (`inputs.lemonake.packages.<system>.<package>`):
 - `gdlauncher` (Alias to `gdlauncher-carbon`)
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
-- `gfm` (`-git`)
+- `gfm-git`
 - `lite-xl-git`
 - `lua-pam-git`
 - `lua-pam-luajit-git`
-- `nimpad` (`-git`)
+- `nimpad`
 - `opencomposite-git`
 - `picom` (`-tag` `-git`)
 - `proton-ge-rtsp` (Only use in `programs.steam.extraCompatPackages`)
 - `somewm` (`-git`)
-- `tilp2` (`-git`)
+- `tilp2-git`
 - `vapor-git`
 - `wayvr` (`-git`)
-- `webfisher` (`-git`)
+- `webfisher`
 - `wivrn` (`-git`)
 - `xrizer` (`-git`)
 

@@ -41,10 +41,6 @@ fetch.github = "RMTT/lua-pam"
 src.github = "PassiveLemon/nimpad"
 fetch.github = "PassiveLemon/nimpad"
 
-[nimpad-git]
-src.git = "https://github.com/PassiveLemon/nimpad"
-fetch.github = "PassiveLemon/nimpad"
-
 [opencomposite-git]
 src.git = "https://gitlab.com/znixian/OpenOVR"
 fetch.git = "https://gitlab.com/znixian/OpenOVR.git"
@@ -82,10 +78,6 @@ fetch.github = "trip-zip/somewm"
 src.git = "https://github.com/trip-zip/somewm"
 fetch.github = "trip-zip/somewm"
 
-[tilp2-gfm]
-src.github_tag = "debrouxl/tilp_and_gfm"
-fetch.github = "debrouxl/tilp_and_gfm"
-
 [tilp2-gfm-git]
 src.git = "https://github.com/debrouxl/tilp_and_gfm"
 fetch.github = "debrouxl/tilp_and_gfm"
@@ -96,10 +88,6 @@ fetch.github = "micheal65536/VapoR"
 
 [webfisher]
 src.github = "PassiveLemon/webfisher"
-fetch.github = "PassiveLemon/webfisher"
-
-[webfisher-git]
-src.git = "https://github.com/PassiveLemon/webfisher"
 fetch.github = "PassiveLemon/webfisher"
 
 [wivrn]
