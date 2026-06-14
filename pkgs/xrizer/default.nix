@@ -1,5 +1,6 @@
 { lib, ... }:
 let
+  inherit (lib) getLib;
   inherit (lib) getPackage versionFromPackage; # Custom
 in
 {
@@ -12,19 +13,19 @@ in
         inherit (package) src;
         version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
-
-        patches = [ ];
       };
 
       xrizer-git = let
         package = getPackage "xrizer-git" prev;
       in
-      prev.xrizer.overrideAttrs {
+      final.xrizer.overrideAttrs {
         inherit (package) src;
         version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
-
-        patches = [ ];
+        postPatch = ''
+          substituteInPlace src/graphics_backends/gl.rs \
+            --replace-fail 'libGLX.so.0' '${getLib prev.libGL}/lib/libGLX.so.0'
+        '';
       };
     };
   };
