@@ -1,6 +1,7 @@
 { lib, ... }:
 let
-  inherit (lib) getPackage removePrefix;
+  inherit (lib) removePrefix;
+  inherit (lib) getPackage; # Custom
 in
 {
   flake.overlays = {

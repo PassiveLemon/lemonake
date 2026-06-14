@@ -1,6 +1,6 @@
 { lib, ... }:
 let
-  inherit (lib) overlayPackager;
+  inherit (lib) overlayPackager; # Custom
 in
 {
   flake.overlays = {

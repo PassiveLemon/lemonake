@@ -1,6 +1,6 @@
 { lib, ... }:
 let
-  inherit (lib) getPackage versionFromPackage;
+  inherit (lib) getPackage versionFromPackage; # Custom
 in
 {
   flake.overlays = {
