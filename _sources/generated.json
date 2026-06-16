@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-5j+AT3fcUrrs9nnW3Qgfa5Qw2Legngp_kqNJfVbO93k=/Cargo.lock",
+                "sha256-ArMpqldx_xw10ZwmChRQsGDwsH8wL2H+lLu0g2b_7Jc=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-06-02",
+        "date": "2026-06-15",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "2c36473e6e0501bbc008da083499103049033f16",
-            "sha256": "sha256-5j+AT3fcUrrs9nnW3Qgfa5Qw2Legngp/kqNJfVbO93k=",
+            "rev": "dbd479fbc99ab66cb161c2a646e0c143d045b38c",
+            "sha256": "sha256-ArMpqldx/xw10ZwmChRQsGDwsH8wL2H+lLu0g2b/7Jc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2c36473e6e0501bbc008da083499103049033f16"
+        "version": "dbd479fbc99ab66cb161c2a646e0c143d045b38c"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -207,27 +207,6 @@
         },
         "version": "0.3.3"
     },
-    "nimpad-git": {
-        "cargoLock": null,
-        "date": "2026-06-02",
-        "extract": null,
-        "name": "nimpad-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "PassiveLemon",
-            "repo": "nimpad",
-            "rev": "b02261b2046ff72a1c2d5d14ed55ca3c497ed17d",
-            "sha256": "sha256-DIinHIzQQZjQOSXJOmfbagVbEMyC1PT00UXCIF/fCC0=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "b02261b2046ff72a1c2d5d14ed55ca3c497ed17d"
-    },
     "opencomposite-git": {
         "cargoLock": null,
         "date": "2025-07-21",
@@ -409,27 +388,6 @@
         },
         "version": "ba36e32ae6a901ae5ac85fcd2bbfb4230901d199"
     },
-    "tilp2-gfm": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "tilp2-gfm",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "debrouxl",
-            "repo": "tilp_and_gfm",
-            "rev": "1.18",
-            "sha256": "sha256-/XkxEfWzJiOkM5aoenp/GQSkkNg9qoXkFtcj/nenFEw=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "1.18"
-    },
     "tilp2-gfm-git": {
         "cargoLock": null,
         "date": "2026-01-25",
@@ -556,27 +514,6 @@
         },
         "version": "1.3.2"
     },
-    "webfisher-git": {
-        "cargoLock": null,
-        "date": "2025-12-18",
-        "extract": null,
-        "name": "webfisher-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "PassiveLemon",
-            "repo": "webfisher",
-            "rev": "61db58d91fbd764bc068bf17b3379f84440a4991",
-            "sha256": "sha256-XC7ORlL8yyv3/KdyAlppmCasnBdKC4N7itMZF/NWmj8=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "61db58d91fbd764bc068bf17b3379f84440a4991"
-    },
     "wivrn": {
         "cargoLock": null,
         "date": null,
@@ -600,7 +537,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-06-14",
+        "date": "2026-06-15",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -612,12 +549,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "29b1770ba0b15d9409899a49d39d128ddb4dfd2e",
-            "sha256": "sha256-kE8+a8/+wfPwbRbo8GNa4QtHC6YCGUpw/Cr5EXrhSi4=",
+            "rev": "79d57a35d765abc27da7cf4a246b1a66b1982349",
+            "sha256": "sha256-Fb4bjg93Op8CvWZVuO7jULOHi7VizUaV9eARWga7pdY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "29b1770ba0b15d9409899a49d39d128ddb4dfd2e"
+        "version": "79d57a35d765abc27da7cf4a246b1a66b1982349"
     },
     "wivrn-git-monado": {
         "cargoLock": null,

@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "2c36473e6e0501bbc008da083499103049033f16";
+    version = "dbd479fbc99ab66cb161c2a646e0c143d045b38c";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "2c36473e6e0501bbc008da083499103049033f16";
+      rev = "dbd479fbc99ab66cb161c2a646e0c143d045b38c";
       fetchSubmodules = false;
-      sha256 = "sha256-5j+AT3fcUrrs9nnW3Qgfa5Qw2Legngp/kqNJfVbO93k=";
+      sha256 = "sha256-ArMpqldx/xw10ZwmChRQsGDwsH8wL2H+lLu0g2b/7Jc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-5j+AT3fcUrrs9nnW3Qgfa5Qw2Legngp_kqNJfVbO93k=/Cargo.lock";
+      lockFile = ./. + "/sha256-ArMpqldx_xw10ZwmChRQsGDwsH8wL2H+lLu0g2b_7Jc=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-06-02";
+    date = "2026-06-15";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -127,18 +127,6 @@
       sha256 = "sha256-DIinHIzQQZjQOSXJOmfbagVbEMyC1PT00UXCIF/fCC0=";
     };
   };
-  nimpad-git = {
-    pname = "nimpad-git";
-    version = "b02261b2046ff72a1c2d5d14ed55ca3c497ed17d";
-    src = fetchFromGitHub {
-      owner = "PassiveLemon";
-      repo = "nimpad";
-      rev = "b02261b2046ff72a1c2d5d14ed55ca3c497ed17d";
-      fetchSubmodules = false;
-      sha256 = "sha256-DIinHIzQQZjQOSXJOmfbagVbEMyC1PT00UXCIF/fCC0=";
-    };
-    date = "2026-06-02";
-  };
   opencomposite-git = {
     pname = "opencomposite-git";
     version = "cff07db75c4823afe93ed7027b03d5f7bc86f164";
@@ -241,17 +229,6 @@
     };
     date = "2026-06-09";
   };
-  tilp2-gfm = {
-    pname = "tilp2-gfm";
-    version = "1.18";
-    src = fetchFromGitHub {
-      owner = "debrouxl";
-      repo = "tilp_and_gfm";
-      rev = "1.18";
-      fetchSubmodules = false;
-      sha256 = "sha256-/XkxEfWzJiOkM5aoenp/GQSkkNg9qoXkFtcj/nenFEw=";
-    };
-  };
   tilp2-gfm-git = {
     pname = "tilp2-gfm-git";
     version = "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec";
@@ -329,18 +306,6 @@
       sha256 = "sha256-lWkrRm0eqcjsezJSTrcNrV6CL0qoGBadLXGD97NB2pg=";
     };
   };
-  webfisher-git = {
-    pname = "webfisher-git";
-    version = "61db58d91fbd764bc068bf17b3379f84440a4991";
-    src = fetchFromGitHub {
-      owner = "PassiveLemon";
-      repo = "webfisher";
-      rev = "61db58d91fbd764bc068bf17b3379f84440a4991";
-      fetchSubmodules = false;
-      sha256 = "sha256-XC7ORlL8yyv3/KdyAlppmCasnBdKC4N7itMZF/NWmj8=";
-    };
-    date = "2025-12-18";
-  };
   wivrn = {
     pname = "wivrn";
     version = "v26.6";
@@ -354,15 +319,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "29b1770ba0b15d9409899a49d39d128ddb4dfd2e";
+    version = "79d57a35d765abc27da7cf4a246b1a66b1982349";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "29b1770ba0b15d9409899a49d39d128ddb4dfd2e";
+      rev = "79d57a35d765abc27da7cf4a246b1a66b1982349";
       fetchSubmodules = false;
-      sha256 = "sha256-kE8+a8/+wfPwbRbo8GNa4QtHC6YCGUpw/Cr5EXrhSi4=";
+      sha256 = "sha256-Fb4bjg93Op8CvWZVuO7jULOHi7VizUaV9eARWga7pdY=";
     };
-    date = "2026-06-14";
+    date = "2026-06-15";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
