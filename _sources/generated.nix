@@ -243,15 +243,15 @@
   };
   vapor-git = {
     pname = "vapor-git";
-    version = "a22d2809dc5a4f490dc5ad20174579428ac95fae";
+    version = "31fd7e0b50d8568b1a2e6eaf94101b7d4bb6c99f";
     src = fetchFromGitHub {
       owner = "micheal65536";
       repo = "VapoR";
-      rev = "a22d2809dc5a4f490dc5ad20174579428ac95fae";
+      rev = "31fd7e0b50d8568b1a2e6eaf94101b7d4bb6c99f";
       fetchSubmodules = false;
-      sha256 = "sha256-h2Thp44y39XWGFBv+vwLelh6FxcoFpi9kskLMnw1x1Q=";
+      sha256 = "sha256-hWXKbaQ4ns44CqVtQ7oVvbL3kQNGjRIwItFXXn9f/Ws=";
     };
-    date = "2026-06-16";
+    date = "2026-06-17";
   };
   wayvr = {
     pname = "wayvr";
@@ -319,15 +319,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "fc394dc3b948e709ed2ea765db25bc624c9c2ee2";
+    version = "51e887ed1f9b488ecdd7781a4843018498873bfb";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "fc394dc3b948e709ed2ea765db25bc624c9c2ee2";
+      rev = "51e887ed1f9b488ecdd7781a4843018498873bfb";
       fetchSubmodules = false;
-      sha256 = "sha256-NV2GnmQATn28zoXuzE97VamHRGr66Y1y16RBnxKUmY0=";
+      sha256 = "sha256-qTNLrAtRsP5NDAgnRc3haCh8UHWStq7jhLI/9PRy8M0=";
     };
-    date = "2026-06-16";
+    date = "2026-06-17";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
