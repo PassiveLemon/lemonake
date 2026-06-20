@@ -71,13 +71,13 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "db7ab200ea291ebe3faf5908b99568c0b0fe4622";
+    version = "f5da5cb64fbe8c97b5d7eece03357d70f0c0427a";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "db7ab200ea291ebe3faf5908b99568c0b0fe4622";
+      rev = "f5da5cb64fbe8c97b5d7eece03357d70f0c0427a";
       fetchSubmodules = true;
-      sha256 = "sha256-rtckEINqcnbMfMqMgG5mMAq2o4dz7ODRKs/+guycP4A=";
+      sha256 = "sha256-N1IbRaKd4oYPzF5/MDMAgGnb+uIw+dOqffaZHewniEM=";
     };
     date = "2026-06-20";
   };
