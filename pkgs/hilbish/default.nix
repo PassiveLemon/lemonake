@@ -12,8 +12,6 @@ in
       hilbish-midnight = (overlayPackager "hilbish-midnight" "hilbish" prev).overrideAttrs {
         pname = "hilbish-midnight";
         vendorHash = "sha256-cbcob4b5pqaC/KbzXhFtLF5gsm9Ky364T98xZRlVQP8=";
-        # Fails to open .hilbish-history
-        doCheck = false;
       };
     };
   };
