@@ -102,47 +102,47 @@
         },
         "version": "v1.1.30"
     },
-    "hd2pystratmacro": {
+    "hilbish-git": {
         "cargoLock": null,
-        "date": null,
+        "date": "2026-06-20",
         "extract": null,
-        "name": "hd2pystratmacro",
+        "name": "hilbish-git",
         "passthru": null,
         "pinned": false,
         "src": {
             "deepClone": false,
-            "fetchSubmodules": false,
+            "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "owner": "PassiveLemon",
-            "repo": "hd2pystratmacro",
-            "rev": "1.0.2",
-            "sha256": "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=",
+            "owner": "sammy-ette",
+            "repo": "Hilbish",
+            "rev": "db7ab200ea291ebe3faf5908b99568c0b0fe4622",
+            "sha256": "sha256-rtckEINqcnbMfMqMgG5mMAq2o4dz7ODRKs/+guycP4A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.0.2"
+        "version": "db7ab200ea291ebe3faf5908b99568c0b0fe4622"
     },
-    "hd2pystratmacro-git": {
+    "hilbish-midnight": {
         "cargoLock": null,
-        "date": "2024-12-30",
+        "date": "2026-06-20",
         "extract": null,
-        "name": "hd2pystratmacro-git",
+        "name": "hilbish-midnight",
         "passthru": null,
         "pinned": false,
         "src": {
             "deepClone": false,
-            "fetchSubmodules": false,
+            "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "owner": "PassiveLemon",
-            "repo": "hd2pystratmacro",
-            "rev": "48da6bd37369277ed92ba1fe8a1fdb5acc330a79",
-            "sha256": "sha256-D1x4GcAaovvrkIa0FCQS/MApu0X/RD1qCcI8pB31HOc=",
+            "owner": "sammy-ette",
+            "repo": "Hilbish",
+            "rev": "db5288a1e278a0338d90fd4676c004fac32b694a",
+            "sha256": "sha256-pVCiOsFnlvVUnRuGWfEK9TCy7k4xoVadWoZj2sbCRbk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "48da6bd37369277ed92ba1fe8a1fdb5acc330a79"
+        "version": "db5288a1e278a0338d90fd4676c004fac32b694a"
     },
     "lite-xl-git": {
         "cargoLock": null,
@@ -289,48 +289,6 @@
             "type": "github"
         },
         "version": "v13"
-    },
-    "poepyautopot": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "poepyautopot",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "PassiveLemon",
-            "repo": "poepyautopot",
-            "rev": "1.3.6",
-            "sha256": "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "1.3.6"
-    },
-    "poepyautopot-git": {
-        "cargoLock": null,
-        "date": "2024-12-30",
-        "extract": null,
-        "name": "poepyautopot-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "PassiveLemon",
-            "repo": "poepyautopot",
-            "rev": "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b",
-            "sha256": "sha256-odcC4KTImfJMWxtn8xAqwTbalcvUuxTw/DivAjvhyUw=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b"
     },
     "proton-ge-rtsp": {
         "cargoLock": null,

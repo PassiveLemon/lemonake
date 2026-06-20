@@ -71,27 +71,27 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "710dbc9a18d8382a07968e70b2a0bc49f68f73ae";
+    version = "db7ab200ea291ebe3faf5908b99568c0b0fe4622";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "710dbc9a18d8382a07968e70b2a0bc49f68f73ae";
+      rev = "db7ab200ea291ebe3faf5908b99568c0b0fe4622";
       fetchSubmodules = true;
-      sha256 = "sha256-xRHDx0DbKcn69Eaofl9owkzOCYEH9Euo78THn5KQlhQ=";
+      sha256 = "sha256-rtckEINqcnbMfMqMgG5mMAq2o4dz7ODRKs/+guycP4A=";
     };
-    date = "2026-06-19";
+    date = "2026-06-20";
   };
   hilbish-midnight = {
     pname = "hilbish-midnight";
-    version = "c57ee2dca16a213a89e709bcca3c4a0fcb6586ae";
+    version = "db5288a1e278a0338d90fd4676c004fac32b694a";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "c57ee2dca16a213a89e709bcca3c4a0fcb6586ae";
+      rev = "db5288a1e278a0338d90fd4676c004fac32b694a";
       fetchSubmodules = true;
-      sha256 = "sha256-BBUzOmAbHtqBeukmRQ29w2E91IIL4j8oc/syeiMDGno=";
+      sha256 = "sha256-pVCiOsFnlvVUnRuGWfEK9TCy7k4xoVadWoZj2sbCRbk=";
     };
-    date = "2026-06-19";
+    date = "2026-06-20";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -175,29 +175,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-g+ercK7yTtTgnPRLgIcQeDbKOmZDkfq3oflN6AyoAXU=";
     };
-  };
-  poepyautopot = {
-    pname = "poepyautopot";
-    version = "1.3.6";
-    src = fetchFromGitHub {
-      owner = "PassiveLemon";
-      repo = "poepyautopot";
-      rev = "1.3.6";
-      fetchSubmodules = false;
-      sha256 = "sha256-XCyDONNJQwDT1RzpDKkOOPYmo9gzZhwgxP37kScEVLA=";
-    };
-  };
-  poepyautopot-git = {
-    pname = "poepyautopot-git";
-    version = "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b";
-    src = fetchFromGitHub {
-      owner = "PassiveLemon";
-      repo = "poepyautopot";
-      rev = "c63a7c2edbcffdb73a45e1ef88d4f4dde652595b";
-      fetchSubmodules = false;
-      sha256 = "sha256-odcC4KTImfJMWxtn8xAqwTbalcvUuxTw/DivAjvhyUw=";
-    };
-    date = "2024-12-30";
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
@@ -392,4 +369,3 @@
     date = "2026-06-11";
   };
 }
-
