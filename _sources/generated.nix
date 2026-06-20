@@ -69,28 +69,29 @@
       sha256 = "sha256-4cXT3exhoMAK6gW3Cpx1L7cm9Xm0FK912gGcRyLYPwM=";
     };
   };
-  hd2pystratmacro = {
-    pname = "hd2pystratmacro";
-    version = "1.0.2";
+  hilbish-git = {
+    pname = "hilbish-git";
+    version = "710dbc9a18d8382a07968e70b2a0bc49f68f73ae";
     src = fetchFromGitHub {
-      owner = "PassiveLemon";
-      repo = "hd2pystratmacro";
-      rev = "1.0.2";
-      fetchSubmodules = false;
-      sha256 = "sha256-SarYj6e3a9x45kWJNPFxSTfnsuxvfF40JD5e8efHxTw=";
+      owner = "sammy-ette";
+      repo = "Hilbish";
+      rev = "710dbc9a18d8382a07968e70b2a0bc49f68f73ae";
+      fetchSubmodules = true;
+      sha256 = "sha256-xRHDx0DbKcn69Eaofl9owkzOCYEH9Euo78THn5KQlhQ=";
     };
+    date = "2026-06-19";
   };
-  hd2pystratmacro-git = {
-    pname = "hd2pystratmacro-git";
-    version = "48da6bd37369277ed92ba1fe8a1fdb5acc330a79";
+  hilbish-midnight = {
+    pname = "hilbish-midnight";
+    version = "c57ee2dca16a213a89e709bcca3c4a0fcb6586ae";
     src = fetchFromGitHub {
-      owner = "PassiveLemon";
-      repo = "hd2pystratmacro";
-      rev = "48da6bd37369277ed92ba1fe8a1fdb5acc330a79";
-      fetchSubmodules = false;
-      sha256 = "sha256-D1x4GcAaovvrkIa0FCQS/MApu0X/RD1qCcI8pB31HOc=";
+      owner = "sammy-ette";
+      repo = "Hilbish";
+      rev = "c57ee2dca16a213a89e709bcca3c4a0fcb6586ae";
+      fetchSubmodules = true;
+      sha256 = "sha256-BBUzOmAbHtqBeukmRQ29w2E91IIL4j8oc/syeiMDGno=";
     };
-    date = "2024-12-30";
+    date = "2026-06-19";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -391,3 +392,4 @@
     date = "2026-06-11";
   };
 }
+

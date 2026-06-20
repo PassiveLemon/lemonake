@@ -45,6 +45,8 @@ Packages (`inputs.lemonake.packages.<system>.<package>`):
 - `gdlauncher-carbon`
 - `gdlauncher-legacy`
 - `gfm-git`
+- `hilbish-git`
+- `hilbish-midnight`
 - `lite-xl-git`
 - `lua-pam-git`
 - `lua-pam-luajit-git`

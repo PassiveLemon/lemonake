@@ -21,13 +21,16 @@ fetch.url = "https://github.com/gorilla-devs/GDLauncher/releases/download/$ver/G
 src.cmd = "curl -s https://gdlauncher.com/ | awk 'match($0,/([0-9]+\\.[0-9]+\\.[0-9]+)/,a){print a[1]; exit}'"
 fetch.url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__$ver__linux__x64.AppImage"
 
-[hd2pystratmacro]
-src.github = "PassiveLemon/hd2pystratmacro"
-fetch.github = "PassiveLemon/hd2pystratmacro"
+[hilbish-midnight]
+src.git = "https://github.com/sammy-ette/Hilbish/"
+src.branch = "midnight-edition"
+fetch.github = "sammy-ette/Hilbish"
+git.fetchSubmodules = true
 
-[hd2pystratmacro-git]
-src.git = "https://github.com/PassiveLemon/hd2pystratmacro"
-fetch.github = "PassiveLemon/hd2pystratmacro"
+[hilbish-git]
+src.git = "https://github.com/sammy-ette/Hilbish"
+fetch.github = "sammy-ette/Hilbish"
+git.fetchSubmodules = true
 
 [lite-xl-git]
 src.git = "https://github.com/lite-xl/lite-xl"
@@ -57,14 +60,6 @@ fetch.github = "yshui/picom"
 [picom-git]
 src.git = "https://github.com/yshui/picom"
 fetch.github = "yshui/picom"
-
-[poepyautopot]
-src.github = "PassiveLemon/poepyautopot"
-fetch.github = "PassiveLemon/poepyautopot"
-
-[poepyautopot-git]
-src.git = "https://github.com/PassiveLemon/poepyautopot"
-fetch.github = "PassiveLemon/poepyautopot"
 
 [proton-ge-rtsp]
 src.github = "SpookySkeletons/proton-ge-rtsp"
