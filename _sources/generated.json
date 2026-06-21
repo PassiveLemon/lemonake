@@ -137,12 +137,12 @@
             "name": null,
             "owner": "sammy-ette",
             "repo": "Hilbish",
-            "rev": "db5288a1e278a0338d90fd4676c004fac32b694a",
-            "sha256": "sha256-pVCiOsFnlvVUnRuGWfEK9TCy7k4xoVadWoZj2sbCRbk=",
+            "rev": "0c13e81c5da221c36650f9f68d4296e78cdb26fd",
+            "sha256": "sha256-xLhtft7fp8l9NA9iYq3pZsoiofVHski2L3HRo0ymA2c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "db5288a1e278a0338d90fd4676c004fac32b694a"
+        "version": "0c13e81c5da221c36650f9f68d4296e78cdb26fd"
     },
     "lite-xl-git": {
         "cargoLock": null,
@@ -369,7 +369,7 @@
     },
     "vapor-git": {
         "cargoLock": null,
-        "date": "2026-06-18",
+        "date": "2026-06-20",
         "extract": null,
         "name": "vapor-git",
         "passthru": null,
@@ -381,12 +381,12 @@
             "name": null,
             "owner": "micheal65536",
             "repo": "VapoR",
-            "rev": "fb9f462385cd74fb7f53473031011f4451e37e4c",
-            "sha256": "sha256-ZHulRZ7su41z64vUXep68fI3iPDZhaqwWAcgtf0OM8A=",
+            "rev": "d69579dc53ecb9957af6a03a40650a6c0bcd08e5",
+            "sha256": "sha256-2ZyMrFVHws7a1dwrVwW1+s5Mr7KP2BbzLhRDFP0RXS8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "fb9f462385cd74fb7f53473031011f4451e37e4c"
+        "version": "d69579dc53ecb9957af6a03a40650a6c0bcd08e5"
     },
     "wayvr": {
         "cargoLock": {
