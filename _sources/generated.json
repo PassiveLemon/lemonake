@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-l57EZ62_UrpHxVA5K9XBYn1c37spFyzS4IxfyOAp38w=/Cargo.lock",
+                "sha256-tVOxnj9uwSp_3LJ+EQ_oU+ltETyEqaAgof2NIHGKOwQ=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-06-18",
+        "date": "2026-06-23",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "9a1044df51a907e6b1808dd0d39241f5c3095f1c",
-            "sha256": "sha256-l57EZ62/UrpHxVA5K9XBYn1c37spFyzS4IxfyOAp38w=",
+            "rev": "f0d2498a4419aafc926906fce64db3a8665a371f",
+            "sha256": "sha256-tVOxnj9uwSp/3LJ+EQ/oU+ltETyEqaAgof2NIHGKOwQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9a1044df51a907e6b1808dd0d39241f5c3095f1c"
+        "version": "f0d2498a4419aafc926906fce64db3a8665a371f"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -318,16 +318,16 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "v1.4.1",
-            "sha256": "sha256-lGxBdBFklh3tRlabn+C6zcX+c/8OFkBNOzEFXaENhQ0=",
+            "rev": "v1.4.2",
+            "sha256": "sha256-gjth2sPsXBn+NGGhRpjQ4WWhO2K5t/RqDooNfEvsR/E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.1"
+        "version": "v1.4.2"
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-06-19",
+        "date": "2026-06-22",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -339,12 +339,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "9b680d6651d5011ba954b26e199f9be51409b354",
-            "sha256": "sha256-W5cH/hZ5V2yAzZOai78EJX4UyQpc/floP9tWWHrCH6s=",
+            "rev": "20cf7f3211c58a0707519f4bc98b980c229c12cd",
+            "sha256": "sha256-telkGsp8biDHi69KNgwSccKT+6APZKVq2q+erWPU3A0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9b680d6651d5011ba954b26e199f9be51409b354"
+        "version": "20cf7f3211c58a0707519f4bc98b980c229c12cd"
     },
     "tilp2-gfm-git": {
         "cargoLock": null,

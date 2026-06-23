@@ -2494,6 +2494,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "itertools"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8b4baf93f58d4425749ca49a51c50ebab072c5df6994d08fed93541c331481dc"
+dependencies = [
+ "either",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2753,9 +2762,9 @@ dependencies = [
 
 [[package]]
 name = "log"
-version = "0.4.30"
+version = "0.4.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "616ec5685824bcc94416c6d4a7a446eea774a31efd7062c8480ba6fd06d7a6e5"
+checksum = "0ceec5bc11778974d1bcb055b18002eba7f4b3518b6a0081b3af5f21666da9ad"
 
 [[package]]
 name = "log-panics"
@@ -5090,9 +5099,9 @@ dependencies = [
 
 [[package]]
 name = "sysinfo"
-version = "0.39.3"
+version = "0.39.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "21d0d938c10fcda3e897e28aaddf4ab462375d411f4378cd63b1c945f69aba96"
+checksum = "2c8bd2130a9b60bee2581bf82cfe89ee836424d1f37dcfa4ce21509611684673"
 dependencies = [
  "libc",
  "memchr",
@@ -6192,7 +6201,7 @@ dependencies = [
  "futures",
  "home",
  "indexmap 2.14.0",
- "itertools",
+ "itertools 0.15.0",
  "log",
  "reqwest",
  "serde",
@@ -6220,7 +6229,7 @@ dependencies = [
  "futures",
  "hex",
  "indexmap 2.14.0",
- "itertools",
+ "itertools 0.15.0",
  "log",
  "log-panics",
  "minisign-verify",
@@ -6275,7 +6284,7 @@ dependencies = [
  "futures",
  "hex",
  "indexmap 2.14.0",
- "itertools",
+ "itertools 0.14.0",
  "opool",
  "rand 0.9.4",
  "slab",
@@ -6298,7 +6307,7 @@ dependencies = [
  "futures",
  "hex",
  "indexmap 2.14.0",
- "itertools",
+ "itertools 0.15.0",
  "lazy_static",
  "log",
  "pin-project-lite",
@@ -7493,7 +7502,7 @@ dependencies = [
  "flate2",
  "fs_extra",
  "indexmap 2.14.0",
- "itertools",
+ "itertools 0.15.0",
  "minisign",
  "object 0.39.1",
  "plist",
