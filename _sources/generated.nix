@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "f0d2498a4419aafc926906fce64db3a8665a371f";
+    version = "6348ba6592a5b726e809269bffba466e1b470c7e";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "f0d2498a4419aafc926906fce64db3a8665a371f";
+      rev = "6348ba6592a5b726e809269bffba466e1b470c7e";
       fetchSubmodules = false;
-      sha256 = "sha256-tVOxnj9uwSp/3LJ+EQ/oU+ltETyEqaAgof2NIHGKOwQ=";
+      sha256 = "sha256-YyJ9A+yWjjPedFtxbTgGGI1xT6hPBek0j1//x+0BCBc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-tVOxnj9uwSp_3LJ+EQ_oU+ltETyEqaAgof2NIHGKOwQ=/Cargo.lock";
+      lockFile = ./. + "/sha256-YyJ9A+yWjjPedFtxbTgGGI1xT6hPBek0j1__x+0BCBc=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-06-23";
+    date = "2026-06-24";
   };
   alcom-tag = {
     pname = "alcom-tag";
