@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-YyJ9A+yWjjPedFtxbTgGGI1xT6hPBek0j1__x+0BCBc=/Cargo.lock",
+                "sha256-uVUoLsvl4MW5Ox9FXwjNilC_U64gtnWzg4DEZ5KqGNc=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-06-24",
+        "date": "2026-06-25",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "6348ba6592a5b726e809269bffba466e1b470c7e",
-            "sha256": "sha256-YyJ9A+yWjjPedFtxbTgGGI1xT6hPBek0j1//x+0BCBc=",
+            "rev": "14265beb11698866eac08d441301240b8a8896bf",
+            "sha256": "sha256-uVUoLsvl4MW5Ox9FXwjNilC/U64gtnWzg4DEZ5KqGNc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6348ba6592a5b726e809269bffba466e1b470c7e"
+        "version": "14265beb11698866eac08d441301240b8a8896bf"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -327,7 +327,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-06-22",
+        "date": "2026-06-24",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -339,12 +339,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "20cf7f3211c58a0707519f4bc98b980c229c12cd",
-            "sha256": "sha256-telkGsp8biDHi69KNgwSccKT+6APZKVq2q+erWPU3A0=",
+            "rev": "1fe3d400fb3de12df49c18f7079017a7fadd43a4",
+            "sha256": "sha256-KE1JC4nfduy8n+JkCQJIm6FGTdh1g5RqKzeFZOT5WOA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "20cf7f3211c58a0707519f4bc98b980c229c12cd"
+        "version": "1fe3d400fb3de12df49c18f7079017a7fadd43a4"
     },
     "tilp2-gfm-git": {
         "cargoLock": null,
