@@ -8,16 +8,16 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "14265beb11698866eac08d441301240b8a8896bf";
+    version = "8a2dea6e268d93d075817a8c6fc6f49e1239e68a";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "14265beb11698866eac08d441301240b8a8896bf";
+      rev = "8a2dea6e268d93d075817a8c6fc6f49e1239e68a";
       fetchSubmodules = false;
-      sha256 = "sha256-uVUoLsvl4MW5Ox9FXwjNilC/U64gtnWzg4DEZ5KqGNc=";
+      sha256 = "sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-uVUoLsvl4MW5Ox9FXwjNilC_U64gtnWzg4DEZ5KqGNc=/Cargo.lock";
+      lockFile = ./. + "/sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=/Cargo.lock";
       outputHashes = {
         
       };
@@ -26,16 +26,16 @@
   };
   alcom-tag = {
     pname = "alcom-tag";
-    version = "gui-v1.1.6";
+    version = "gui-v1.1.7-beta.1";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "gui-v1.1.6";
+      rev = "gui-v1.1.7-beta.1";
       fetchSubmodules = false;
-      sha256 = "sha256-TpVHE3e3dMdBOtPVKomKvg5tQf42QWik18k5oVD2Hms=";
+      sha256 = "sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-TpVHE3e3dMdBOtPVKomKvg5tQf42QWik18k5oVD2Hms=/Cargo.lock";
+      lockFile = ./. + "/sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=/Cargo.lock";
       outputHashes = {
         
       };
@@ -43,15 +43,15 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "c104846a2cc954ce97077146e5964667c81c2165";
+    version = "26454fb55b4bc90491054a03a248f336a51ac96b";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "c104846a2cc954ce97077146e5964667c81c2165";
+      rev = "26454fb55b4bc90491054a03a248f336a51ac96b";
       fetchSubmodules = false;
-      sha256 = "sha256-l3fGfMEy2i4sNOvsxYFB5gsgswJPRLHk35cxQNB1tR0=";
+      sha256 = "sha256-qvDiwNoRArsyOH9/eZOULIq5urjH4bVxWcWj49jkoYA=";
     };
-    date = "2026-04-23";
+    date = "2026-06-25";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
@@ -178,10 +178,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "GE-Proton10-33-rtsp23-4";
+    version = "proton-rtsp-11.0-20260609-1";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton10-33-rtsp23-4/GE-Proton10-33-rtsp23-4.tar.gz";
-      sha256 = "sha256-sP+xNPbeI1jbs081QvFmj48A/yG6IC9ZPZRvGkFZnX0=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/proton-rtsp-11.0-20260609-1/proton-rtsp-11.0-20260609-1.tar.gz";
+      sha256 = "sha256-/YrUjR/Ynb0clNpXSaSlfpnqJ76ZfTYP9LR/WHHCMgk=";
     };
   };
   somewm = {
@@ -221,15 +221,15 @@
   };
   vapor-git = {
     pname = "vapor-git";
-    version = "d69579dc53ecb9957af6a03a40650a6c0bcd08e5";
+    version = "663e5e4dd9cc2768361a648ce38b9e438b7794ff";
     src = fetchFromGitHub {
       owner = "micheal65536";
       repo = "VapoR";
-      rev = "d69579dc53ecb9957af6a03a40650a6c0bcd08e5";
+      rev = "663e5e4dd9cc2768361a648ce38b9e438b7794ff";
       fetchSubmodules = false;
-      sha256 = "sha256-2ZyMrFVHws7a1dwrVwW1+s5Mr7KP2BbzLhRDFP0RXS8=";
+      sha256 = "sha256-TMZZ0odQ43s/LaDxcWCeVh3t20d3gYoZZOgyynMUCFI=";
     };
-    date = "2026-06-20";
+    date = "2026-06-25";
   };
   wayvr = {
     pname = "wayvr";
@@ -297,15 +297,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "3eb94d05185db6e7bad899160c7c6d1ae6d46df6";
+    version = "75e015804091fd3a8e83fdd062f3122ca71d1b0d";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "3eb94d05185db6e7bad899160c7c6d1ae6d46df6";
+      rev = "75e015804091fd3a8e83fdd062f3122ca71d1b0d";
       fetchSubmodules = false;
-      sha256 = "sha256-29M0U1VOqLn8OCMwURVjzPi1zQTJngV+gsdti22QYqI=";
+      sha256 = "sha256-eBsq1sbWEEYovea3GoTkGjlBoLw7nosTLeaT5SsHn1M=";
     };
-    date = "2026-06-19";
+    date = "2026-06-25";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
