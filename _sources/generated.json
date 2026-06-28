@@ -104,7 +104,7 @@
     },
     "hilbish-git": {
         "cargoLock": null,
-        "date": "2026-06-20",
+        "date": "2026-06-27",
         "extract": null,
         "name": "hilbish-git",
         "passthru": null,
@@ -116,16 +116,16 @@
             "name": null,
             "owner": "sammy-ette",
             "repo": "Hilbish",
-            "rev": "f5da5cb64fbe8c97b5d7eece03357d70f0c0427a",
-            "sha256": "sha256-N1IbRaKd4oYPzF5/MDMAgGnb+uIw+dOqffaZHewniEM=",
+            "rev": "6cd7cd3de64ec5dc6929821d70ac826d5163212d",
+            "sha256": "sha256-5ZTONKutMroGPwk6a/r3RH3rKh0AvQWRpbnRWS11X84=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f5da5cb64fbe8c97b5d7eece03357d70f0c0427a"
+        "version": "6cd7cd3de64ec5dc6929821d70ac826d5163212d"
     },
     "hilbish-midnight": {
         "cargoLock": null,
-        "date": "2026-06-20",
+        "date": "2026-06-27",
         "extract": null,
         "name": "hilbish-midnight",
         "passthru": null,
@@ -137,12 +137,12 @@
             "name": null,
             "owner": "sammy-ette",
             "repo": "Hilbish",
-            "rev": "0c13e81c5da221c36650f9f68d4296e78cdb26fd",
-            "sha256": "sha256-xLhtft7fp8l9NA9iYq3pZsoiofVHski2L3HRo0ymA2c=",
+            "rev": "3c99665e75d46247540de870d54e8e78cbdb7851",
+            "sha256": "sha256-rMw/fRD3O1vQdtZwwZylhHon+1i9jqVUXJF5o1pIOsE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0c13e81c5da221c36650f9f68d4296e78cdb26fd"
+        "version": "3c99665e75d46247540de870d54e8e78cbdb7851"
     },
     "lite-xl-git": {
         "cargoLock": null,
@@ -422,7 +422,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-OLd7QKag_hsZ57o8jXMTBI0mAqHzaBMkn197ZUhybuA=/Cargo.lock",
+                "sha256-dVIs6gPDMBpKQIzq71f1ez+he_hmBEccbb3iLeEjyz4=/Cargo.lock",
                 {
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
@@ -432,7 +432,7 @@
                 }
             ]
         },
-        "date": "2026-06-21",
+        "date": "2026-06-28",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -444,12 +444,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "5723c3c1df31b332a54f59161762d41dd3bd4ff2",
-            "sha256": "sha256-OLd7QKag/hsZ57o8jXMTBI0mAqHzaBMkn197ZUhybuA=",
+            "rev": "3c8f878ede150f0ae65485e59eee7ecb0ca5526e",
+            "sha256": "sha256-dVIs6gPDMBpKQIzq71f1ez+he/hmBEccbb3iLeEjyz4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5723c3c1df31b332a54f59161762d41dd3bd4ff2"
+        "version": "3c8f878ede150f0ae65485e59eee7ecb0ca5526e"
     },
     "webfisher": {
         "cargoLock": null,
@@ -495,7 +495,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-06-25",
+        "date": "2026-06-27",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -507,12 +507,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "75e015804091fd3a8e83fdd062f3122ca71d1b0d",
-            "sha256": "sha256-eBsq1sbWEEYovea3GoTkGjlBoLw7nosTLeaT5SsHn1M=",
+            "rev": "4fd59be90a528832d64072b806ffaa12370678c1",
+            "sha256": "sha256-UCO/dgwp7P9/5ObQ1kDCeXheoEiqppXDqd+Cemvt2Bw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "75e015804091fd3a8e83fdd062f3122ca71d1b0d"
+        "version": "4fd59be90a528832d64072b806ffaa12370678c1"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
