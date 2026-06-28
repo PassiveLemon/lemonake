@@ -17,7 +17,7 @@ in
         npmDeps = prev.fetchNpmDeps {
           inherit (package) src;
           sourceRoot = "${package.src.name}/vrc-get-gui";
-          hash = "sha256-VyA2c2659Kg1DjLmmtvSAivltdraSBNArIu1XGENGmQ=";
+          hash = "sha256-wkwnD3ctr9lILwtxuCrCGdE06j8JC9hRyru9dnbyuok=";
         };
       };
 
@@ -28,6 +28,11 @@ in
         inherit (package) src;
         version = "0-unstable-${package.date}";
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
+        npmDeps = prev.fetchNpmDeps {
+          inherit (package) src;
+          sourceRoot = "${package.src.name}/vrc-get-gui";
+          hash = "sha256-wkwnD3ctr9lILwtxuCrCGdE06j8JC9hRyru9dnbyuok=";
+        };
       };
     };
   };
