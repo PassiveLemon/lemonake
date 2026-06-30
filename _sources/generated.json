@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=/Cargo.lock",
+                "sha256-wXoGbxWKo2hTFdeKzm4EFPWqzBc9Aq53TdDjXmsqjfk=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-06-25",
+        "date": "2026-06-29",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "8a2dea6e268d93d075817a8c6fc6f49e1239e68a",
-            "sha256": "sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=",
+            "rev": "b87840564a4239da6b1c552f3f09c33b4c05ca76",
+            "sha256": "sha256-wXoGbxWKo2hTFdeKzm4EFPWqzBc9Aq53TdDjXmsqjfk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8a2dea6e268d93d075817a8c6fc6f49e1239e68a"
+        "version": "b87840564a4239da6b1c552f3f09c33b4c05ca76"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -104,7 +104,7 @@
     },
     "hilbish-git": {
         "cargoLock": null,
-        "date": "2026-06-27",
+        "date": "2026-06-29",
         "extract": null,
         "name": "hilbish-git",
         "passthru": null,
@@ -116,12 +116,12 @@
             "name": null,
             "owner": "sammy-ette",
             "repo": "Hilbish",
-            "rev": "6cd7cd3de64ec5dc6929821d70ac826d5163212d",
-            "sha256": "sha256-5ZTONKutMroGPwk6a/r3RH3rKh0AvQWRpbnRWS11X84=",
+            "rev": "c444682b543210563d4e174d3ecc8932b2879f4d",
+            "sha256": "sha256-tSfKb99ffdft8cSa5yNq9ow52W+ko5lHEopgEFdDxFg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6cd7cd3de64ec5dc6929821d70ac826d5163212d"
+        "version": "c444682b543210563d4e174d3ecc8932b2879f4d"
     },
     "hilbish-midnight": {
         "cargoLock": null,
