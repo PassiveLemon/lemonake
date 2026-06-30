@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "8a2dea6e268d93d075817a8c6fc6f49e1239e68a";
+    version = "b87840564a4239da6b1c552f3f09c33b4c05ca76";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "8a2dea6e268d93d075817a8c6fc6f49e1239e68a";
+      rev = "b87840564a4239da6b1c552f3f09c33b4c05ca76";
       fetchSubmodules = false;
-      sha256 = "sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=";
+      sha256 = "sha256-wXoGbxWKo2hTFdeKzm4EFPWqzBc9Aq53TdDjXmsqjfk=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-U6lapfDUX010QQCVsXtJSm29n5zuthNcpxgDOm0aIac=/Cargo.lock";
+      lockFile = ./. + "/sha256-wXoGbxWKo2hTFdeKzm4EFPWqzBc9Aq53TdDjXmsqjfk=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-06-25";
+    date = "2026-06-29";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -71,15 +71,15 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "6cd7cd3de64ec5dc6929821d70ac826d5163212d";
+    version = "c444682b543210563d4e174d3ecc8932b2879f4d";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "6cd7cd3de64ec5dc6929821d70ac826d5163212d";
+      rev = "c444682b543210563d4e174d3ecc8932b2879f4d";
       fetchSubmodules = true;
-      sha256 = "sha256-5ZTONKutMroGPwk6a/r3RH3rKh0AvQWRpbnRWS11X84=";
+      sha256 = "sha256-tSfKb99ffdft8cSa5yNq9ow52W+ko5lHEopgEFdDxFg=";
     };
-    date = "2026-06-27";
+    date = "2026-06-29";
   };
   hilbish-midnight = {
     pname = "hilbish-midnight";
