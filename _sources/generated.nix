@@ -71,15 +71,15 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "c444682b543210563d4e174d3ecc8932b2879f4d";
+    version = "5f08e81b5ba8f0bb3a9c4990c4021eb58a10870e";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "c444682b543210563d4e174d3ecc8932b2879f4d";
+      rev = "5f08e81b5ba8f0bb3a9c4990c4021eb58a10870e";
       fetchSubmodules = true;
-      sha256 = "sha256-tSfKb99ffdft8cSa5yNq9ow52W+ko5lHEopgEFdDxFg=";
+      sha256 = "sha256-WPvcYyl5uzU2cgQFcMAfpAsEeAl66bEGZ8lByXmkb7U=";
     };
-    date = "2026-06-29";
+    date = "2026-06-30";
   };
   hilbish-midnight = {
     pname = "hilbish-midnight";
@@ -253,16 +253,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "da394ec2c70a5b0879897911a528c5d0493a91c4";
+    version = "6a24399a9ccec228e7e5cc1a68689b01a94f8d0a";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "da394ec2c70a5b0879897911a528c5d0493a91c4";
+      rev = "6a24399a9ccec228e7e5cc1a68689b01a94f8d0a";
       fetchSubmodules = false;
-      sha256 = "sha256-GUZpM4KPlQcO4Dj0gbuBUq9XDm392jUz/YmTsry592I=";
+      sha256 = "sha256-cpabvJnOSemc86muF9527v7RXjdV5ubIoFIqrvj4Grc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-GUZpM4KPlQcO4Dj0gbuBUq9XDm392jUz_YmTsry592I=/Cargo.lock";
+      lockFile = ./. + "/sha256-cpabvJnOSemc86muF9527v7RXjdV5ubIoFIqrvj4Grc=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "libspa-0.9.2" = "sha256-BmPyJdRYEz2o36hEE28GaRDVxhJm20cgYx28k0FhaSE=";
@@ -271,7 +271,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-06-29";
+    date = "2026-06-30";
   };
   webfisher = {
     pname = "webfisher";
