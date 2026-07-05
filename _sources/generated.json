@@ -422,7 +422,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-4wzkL30gtcPx0ujuGagvItG3vFb64n7SPOWXB41ULvA=/Cargo.lock",
+                "sha256-cmYke9JqN+MktWJb_l2J0acmZBawG60TPXKdrTDgfDE=/Cargo.lock",
                 {
                     "dav1d-sys-0.8.3": "sha256-IOM81qJCE2oLtDK/89NU42BxD3ySi3lsch3fA+xMTDA=",
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
@@ -432,7 +432,7 @@
                 }
             ]
         },
-        "date": "2026-07-03",
+        "date": "2026-07-05",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -444,12 +444,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "6aba32ae058e408574b64ca25345d6092d49f0ba",
-            "sha256": "sha256-4wzkL30gtcPx0ujuGagvItG3vFb64n7SPOWXB41ULvA=",
+            "rev": "1f79f231c076c9f9d2591058dbe585fa4723be0d",
+            "sha256": "sha256-cmYke9JqN+MktWJb/l2J0acmZBawG60TPXKdrTDgfDE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6aba32ae058e408574b64ca25345d6092d49f0ba"
+        "version": "1f79f231c076c9f9d2591058dbe585fa4723be0d"
     },
     "webfisher": {
         "cargoLock": null,
