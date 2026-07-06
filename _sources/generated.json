@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-8TFVBm+S5H481mXzySkLz6mhbxgn+UURrVKyZkO_tmE=/Cargo.lock",
+                "sha256-shLh6zsTEmBXuR2vlHAvBtpieEz74KRwHnS+H1roVTM=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "b177847a04a11f49a2b49cc1b2434f572fed6896",
-            "sha256": "sha256-8TFVBm+S5H481mXzySkLz6mhbxgn+UURrVKyZkO/tmE=",
+            "rev": "64a9be8481316139cef1fc4d0a1d7b34a02ee931",
+            "sha256": "sha256-shLh6zsTEmBXuR2vlHAvBtpieEz74KRwHnS+H1roVTM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b177847a04a11f49a2b49cc1b2434f572fed6896"
+        "version": "64a9be8481316139cef1fc4d0a1d7b34a02ee931"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -391,10 +391,11 @@
     "wayvr": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-v1Wkelru825KV+ciXD9esLq39oTyMm_Z4rRbN+jjviY=/Cargo.lock",
+                "sha256-I5DsATwXUxpbrdxXuKmXjuyPfLbADLmos+FpG4j34v8=/Cargo.lock",
                 {
+                    "dav1d-sys-0.8.3": "sha256-IOM81qJCE2oLtDK/89NU42BxD3ySi3lsch3fA+xMTDA=",
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
-                    "libspa-0.8.0": "sha256-Gub2F/Gwia8DjFqUsM8e4Yr2ff92AwrWrszsws3X3sM=",
+                    "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=",
                     "vulkano-0.35.2": "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI="
                 }
@@ -412,17 +413,17 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "v26.2.1",
-            "sha256": "sha256-v1Wkelru825KV+ciXD9esLq39oTyMm/Z4rRbN+jjviY=",
+            "rev": "v26.7.0",
+            "sha256": "sha256-I5DsATwXUxpbrdxXuKmXjuyPfLbADLmos+FpG4j34v8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v26.2.1"
+        "version": "v26.7.0"
     },
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-M5GF2QY1+WMKQS82FT3XVS2ikCBZrjZzKHwlteqPwOg=/Cargo.lock",
+                "sha256-I5DsATwXUxpbrdxXuKmXjuyPfLbADLmos+FpG4j34v8=/Cargo.lock",
                 {
                     "dav1d-sys-0.8.3": "sha256-IOM81qJCE2oLtDK/89NU42BxD3ySi3lsch3fA+xMTDA=",
                     "keyvalues-parser-0.2.2": "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=",
@@ -444,12 +445,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "17dcc8e0cb8bf5a4b2ceca5dbf82fce6be78c331",
-            "sha256": "sha256-M5GF2QY1+WMKQS82FT3XVS2ikCBZrjZzKHwlteqPwOg=",
+            "rev": "afdf744e81dfdb420b4163f15ba9a255325379c8",
+            "sha256": "sha256-I5DsATwXUxpbrdxXuKmXjuyPfLbADLmos+FpG4j34v8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "17dcc8e0cb8bf5a4b2ceca5dbf82fce6be78c331"
+        "version": "afdf744e81dfdb420b4163f15ba9a255325379c8"
     },
     "webfisher": {
         "cargoLock": null,
