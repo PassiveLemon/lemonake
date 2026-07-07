@@ -254,16 +254,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "afdf744e81dfdb420b4163f15ba9a255325379c8";
+    version = "730b546e84ecbee2ff89133a74f5d21864b52cbf";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "afdf744e81dfdb420b4163f15ba9a255325379c8";
+      rev = "730b546e84ecbee2ff89133a74f5d21864b52cbf";
       fetchSubmodules = false;
-      sha256 = "sha256-I5DsATwXUxpbrdxXuKmXjuyPfLbADLmos+FpG4j34v8=";
+      sha256 = "sha256-xwsbptBr1cSgfvjpoJfmMd/zYnD09+V/PXv9A2l2nck=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-I5DsATwXUxpbrdxXuKmXjuyPfLbADLmos+FpG4j34v8=/Cargo.lock";
+      lockFile = ./. + "/sha256-xwsbptBr1cSgfvjpoJfmMd_zYnD09+V_PXv9A2l2nck=/Cargo.lock";
       outputHashes = {
         "dav1d-sys-0.8.3" = "sha256-IOM81qJCE2oLtDK/89NU42BxD3ySi3lsch3fA+xMTDA=";
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
@@ -272,7 +272,7 @@
         "keyvalues-parser-0.2.2" = "sha256-WHl1JUXoIMsKNkmboRWy1wohY5YNDTpGp7s8l0h3yos=";
       };
     };
-    date = "2026-07-06";
+    date = "2026-07-07";
   };
   webfisher = {
     pname = "webfisher";
