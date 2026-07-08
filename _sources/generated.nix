@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "64a9be8481316139cef1fc4d0a1d7b34a02ee931";
+    version = "3b77bfaae4e1d3e76fc438523930551dfc5e4b7e";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "64a9be8481316139cef1fc4d0a1d7b34a02ee931";
+      rev = "3b77bfaae4e1d3e76fc438523930551dfc5e4b7e";
       fetchSubmodules = false;
-      sha256 = "sha256-shLh6zsTEmBXuR2vlHAvBtpieEz74KRwHnS+H1roVTM=";
+      sha256 = "sha256-PrBaGAesV+rjF4srw7M7C92H+D2salr+HzOBR6CQIPo=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-shLh6zsTEmBXuR2vlHAvBtpieEz74KRwHnS+H1roVTM=/Cargo.lock";
+      lockFile = ./. + "/sha256-PrBaGAesV+rjF4srw7M7C92H+D2salr+HzOBR6CQIPo=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-07-07";
+    date = "2026-07-08";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -197,15 +197,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "e865143989405f33795a70f89330d1512deee428";
+    version = "bd232b194133efd63f4fe8740682cf90ab35a0cb";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "e865143989405f33795a70f89330d1512deee428";
+      rev = "bd232b194133efd63f4fe8740682cf90ab35a0cb";
       fetchSubmodules = false;
-      sha256 = "sha256-FqsI3ikkWNOAA/vadePAh1bDkn9xeuQdm5eCILP5/cI=";
+      sha256 = "sha256-u4mXhHKPRe8gUHdq340C+bIXAjJDLq01rxx1uomipJk=";
     };
-    date = "2026-07-05";
+    date = "2026-07-07";
   };
   tilp2-gfm-git = {
     pname = "tilp2-gfm-git";
@@ -254,16 +254,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "730b546e84ecbee2ff89133a74f5d21864b52cbf";
+    version = "80237d36cd9b4f5503d15a10d1c1470f41d54dd9";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "730b546e84ecbee2ff89133a74f5d21864b52cbf";
+      rev = "80237d36cd9b4f5503d15a10d1c1470f41d54dd9";
       fetchSubmodules = false;
-      sha256 = "sha256-xwsbptBr1cSgfvjpoJfmMd/zYnD09+V/PXv9A2l2nck=";
+      sha256 = "sha256-tOPLQ1cXu7P0xh37IQWFcrjjmABI00asEtfWQmB/MD4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-xwsbptBr1cSgfvjpoJfmMd_zYnD09+V_PXv9A2l2nck=/Cargo.lock";
+      lockFile = ./. + "/sha256-tOPLQ1cXu7P0xh37IQWFcrjjmABI00asEtfWQmB_MD4=/Cargo.lock";
       outputHashes = {
         "dav1d-sys-0.8.3" = "sha256-IOM81qJCE2oLtDK/89NU42BxD3ySi3lsch3fA+xMTDA=";
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
