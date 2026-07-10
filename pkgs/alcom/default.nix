@@ -17,7 +17,7 @@ in
         npmDeps = prev.fetchNpmDeps {
           inherit (package) src;
           sourceRoot = "${package.src.name}/vrc-get-gui";
-          hash = "sha256-wkwnD3ctr9lILwtxuCrCGdE06j8JC9hRyru9dnbyuok=";
+          hash = "sha256-flWM2ctaGak/KaTZ5sCj3Z28vIqOeiX8VJMTaIxg2fw=";
         };
       };
 
@@ -31,7 +31,7 @@ in
         npmDeps = prev.fetchNpmDeps {
           inherit (package) src;
           sourceRoot = "${package.src.name}/vrc-get-gui";
-          hash = "sha256-wkwnD3ctr9lILwtxuCrCGdE06j8JC9hRyru9dnbyuok=";
+          hash = "sha256-flWM2ctaGak/KaTZ5sCj3Z28vIqOeiX8VJMTaIxg2fw=";
         };
       };
     };
