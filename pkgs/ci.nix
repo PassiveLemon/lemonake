@@ -6,12 +6,12 @@ in
   perSystem = { system, ... }:
   let
     testLicense = license:
-      license ? redistributable &&
+      (license ? redistributable) &&
       license.redistributable;
 
     isRedistributable = pkg:
-      pkg ? meta &&
-      pkg.meta ? license &&
+      (pkg ? meta) &&
+      (pkg.meta ? license) &&
       (if isList pkg.meta.license
       then all testLicense pkg.meta.license
       else testLicense pkg.meta.license);

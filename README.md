@@ -52,6 +52,7 @@ Packages (`inputs.lemonake.packages.<system>.<package>`):
 - `lua-pam-luajit-git`
 - `nimpad`
 - `opencomposite-git`
+- `outsource`
 - `picom` (`-tag` `-git`)
 - `proton-ge-rtsp` (Only use in `programs.steam.extraCompatPackages`)
 - `somewm` (`-git`)

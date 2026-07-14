@@ -36,14 +36,7 @@
         };
       };
       packages = {
-        default = pkgs.writeShellApplication {
-          name = "update";
-          runtimeInputs = [ inputs'.nvfetcher.packages.default ];
-          text = ''
-            nvfetcher
-            exit 0
-          '';
-        };
+        default = inputs'.nvfetcher.packages.default;
       };
     };
   };

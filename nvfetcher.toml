@@ -49,6 +49,10 @@ src.git = "https://gitlab.com/znixian/OpenOVR"
 fetch.git = "https://gitlab.com/znixian/OpenOVR.git"
 git.fetchSubmodules = true
 
+[outsource]
+src.github = "PassiveLemon/outsource"
+fetch.github = "PassiveLemon/outsource"
+
 [picom]
 src.github = "yshui/picom"
 fetch.github = "yshui/picom"

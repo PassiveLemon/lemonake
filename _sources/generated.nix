@@ -142,6 +142,17 @@
     };
     date = "2025-07-21";
   };
+  outsource = {
+    pname = "outsource";
+    version = "0.2.0";
+    src = fetchFromGitHub {
+      owner = "PassiveLemon";
+      repo = "outsource";
+      rev = "0.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-CV+hgwgIIyrLdjIC41SplrShWXL2y9Qdt/oeHI1Jmbk=";
+    };
+  };
   picom = {
     pname = "picom";
     version = "v13";
