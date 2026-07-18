@@ -55,10 +55,10 @@
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
-    version = "2.0.30";
+    version = "2.0.34";
     src = fetchurl {
-      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.30__linux__x64.AppImage";
-      sha256 = "sha256-BgvliocGTNtI7s1aN551n+MLyqGTbjGs1PjUkItUtks=";
+      url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.34__linux__x64.AppImage";
+      sha256 = "sha256-SYhcWZRw6N3I/g1AKIqHHTbPkJyc3DkdwDoPBllF4bU=";
     };
   };
   gdlauncher-legacy = {
@@ -144,13 +144,13 @@
   };
   outsource = {
     pname = "outsource";
-    version = "0.2.0";
+    version = "0.3.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "outsource";
-      rev = "0.2.0";
+      rev = "0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-CV+hgwgIIyrLdjIC41SplrShWXL2y9Qdt/oeHI1Jmbk=";
+      sha256 = "sha256-4IT+19/JM0rmWd5LpQ1x8PT8M2i8bAUais/JvZA1f34=";
     };
   };
   picom = {

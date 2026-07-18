@@ -81,11 +81,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-BgvliocGTNtI7s1aN551n+MLyqGTbjGs1PjUkItUtks=",
+            "sha256": "sha256-SYhcWZRw6N3I/g1AKIqHHTbPkJyc3DkdwDoPBllF4bU=",
             "type": "url",
-            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.30__linux__x64.AppImage"
+            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.34__linux__x64.AppImage"
         },
-        "version": "2.0.30"
+        "version": "2.0.34"
     },
     "gdlauncher-legacy": {
         "cargoLock": null,
@@ -241,12 +241,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "outsource",
-            "rev": "0.2.0",
-            "sha256": "sha256-CV+hgwgIIyrLdjIC41SplrShWXL2y9Qdt/oeHI1Jmbk=",
+            "rev": "0.3.0",
+            "sha256": "sha256-4IT+19/JM0rmWd5LpQ1x8PT8M2i8bAUais/JvZA1f34=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.2.0"
+        "version": "0.3.0"
     },
     "picom": {
         "cargoLock": null,
