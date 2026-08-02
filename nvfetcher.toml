@@ -21,12 +21,6 @@ fetch.url = "https://github.com/gorilla-devs/GDLauncher/releases/download/$ver/G
 src.cmd = "curl -s https://gdlauncher.com/ | awk 'match($0,/([0-9]+\\.[0-9]+\\.[0-9]+)/,a){print a[1]; exit}'"
 fetch.url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__$ver__linux__x64.AppImage"
 
-[hilbish-midnight]
-src.git = "https://github.com/sammy-ette/Hilbish/"
-src.branch = "midnight-edition"
-fetch.github = "sammy-ette/Hilbish"
-git.fetchSubmodules = true
-
 [hilbish-git]
 src.git = "https://github.com/sammy-ette/Hilbish"
 fetch.github = "sammy-ette/Hilbish"

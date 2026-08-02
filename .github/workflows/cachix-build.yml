@@ -1,4 +1,5 @@
 name: Cachix build
+
 on:
   workflow_call:
     inputs:
