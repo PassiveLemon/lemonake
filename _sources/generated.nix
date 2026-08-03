@@ -132,13 +132,13 @@
   };
   outsource = {
     pname = "outsource";
-    version = "0.3.0";
+    version = "0.3.1";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "outsource";
-      rev = "0.3.0";
+      rev = "0.3.1";
       fetchSubmodules = false;
-      sha256 = "sha256-4IT+19/JM0rmWd5LpQ1x8PT8M2i8bAUais/JvZA1f34=";
+      sha256 = "sha256-y2y6Rmoz3KfIXkCcDRMOzuwY5Jxt9x9AdF2pnRYTAps=";
     };
   };
   picom = {
@@ -196,15 +196,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "6de5e1ef32820b4b8e894269d223564329230e2a";
+    version = "4b99af8d010ed25f0330a9469f80f40742366002";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "6de5e1ef32820b4b8e894269d223564329230e2a";
+      rev = "4b99af8d010ed25f0330a9469f80f40742366002";
       fetchSubmodules = false;
-      sha256 = "sha256-t5PXxwLtMw15pi8/XCit5eYHK/Vc4N5fiaRHZCCQCwQ=";
+      sha256 = "sha256-xURn34eB753fzbiK4anl8JCoLotqcHe4FoA8ZSn48lo=";
     };
-    date = "2026-07-26";
+    date = "2026-08-03";
   };
   tilp2-gfm-git = {
     pname = "tilp2-gfm-git";
@@ -252,16 +252,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "3ae01f59d17646a72203523c7b29d1b82ac1bbd1";
+    version = "98f800c644719d3f23a20e50bd3237c29a8082cb";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "3ae01f59d17646a72203523c7b29d1b82ac1bbd1";
+      rev = "98f800c644719d3f23a20e50bd3237c29a8082cb";
       fetchSubmodules = false;
-      sha256 = "sha256-tfPpz5O1/ej7nIaYbs5C9nzW54Kc4eelJr5NznDBi74=";
+      sha256 = "sha256-hsdqLkr4xSWSGEc0PUJV83vwlgIMS4SpwWC1uQUK3Vg=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-tfPpz5O1_ej7nIaYbs5C9nzW54Kc4eelJr5NznDBi74=/Cargo.lock";
+      lockFile = ./. + "/sha256-hsdqLkr4xSWSGEc0PUJV83vwlgIMS4SpwWC1uQUK3Vg=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
