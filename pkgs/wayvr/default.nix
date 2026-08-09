@@ -23,8 +23,8 @@ in
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
 
         buildInputs = prevAttrs.buildInputs ++ [
-          prev.libinput
-          prev.udev
+          final.libinput
+          final.udev
         ];
       });
     };

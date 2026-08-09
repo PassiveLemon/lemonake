@@ -14,7 +14,7 @@ in
         version = removePrefix "gui-v" package.version;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
         patches = [ ];
-        npmDeps = prev.fetchNpmDeps {
+        npmDeps = final.fetchNpmDeps {
           inherit (package) src;
           sourceRoot = "${package.src.name}/vrc-get-gui";
           hash = "sha256-flWM2ctaGak/KaTZ5sCj3Z28vIqOeiX8VJMTaIxg2fw=";
@@ -28,7 +28,7 @@ in
         inherit (package) src;
         version = "0-unstable-${package.date}";
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
-        npmDeps = prev.fetchNpmDeps {
+        npmDeps = final.fetchNpmDeps {
           inherit (package) src;
           sourceRoot = "${package.src.name}/vrc-get-gui";
           hash = "sha256-flWM2ctaGak/KaTZ5sCj3Z28vIqOeiX8VJMTaIxg2fw=";

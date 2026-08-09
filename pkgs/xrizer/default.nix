@@ -24,7 +24,7 @@ in
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
         postPatch = ''
           substituteInPlace src/graphics_backends/gl.rs \
-            --replace-fail 'libGLX.so.0' '${getLib prev.libGL}/lib/libGLX.so.0'
+            --replace-fail 'libGLX.so.0' '${getLib final.libGL}/lib/libGLX.so.0'
         '';
       };
     };
