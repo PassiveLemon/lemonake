@@ -7,11 +7,7 @@ in
     somewm = final: prev: {
       somewm = packager "somewm" ./package.nix prev;
 
-      somewm-git = (packager "somewm-git" ./package.nix prev).overrideAttrs (prevAttrs: {
-        buildInputs = prevAttrs.buildInputs ++ [
-          prev.wlroots_0_20
-        ];
-      });
+      somewm-git = packager "somewm-git" ./package.nix prev;
     };
   };
 }

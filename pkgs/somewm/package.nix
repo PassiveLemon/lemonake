@@ -25,7 +25,7 @@
 , wayland
 , wayland-scanner
 , wayland-protocols
-, wlroots_0_19
+, wlroots_0_20
 , xwayland
 , extraGITypeLibPaths ? [ ]
 , extraLuaModules ? [ ]
@@ -87,7 +87,7 @@ stdenv.mkDerivation (finalAttrs: {
     wayland
     wayland-scanner
     wayland-protocols
-    wlroots_0_19
+    wlroots_0_20
     xwayland
   ];
 
