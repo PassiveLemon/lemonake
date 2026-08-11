@@ -12,20 +12,19 @@ in
         inherit (package) src;
         version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
+        buildInputs = prevAttrs.buildInputs ++ [
+          final.libinput
+          final.udev
+        ];
       });
 
       wayvr-git = let
         package = getPackage "wayvr-git" prev;
       in
-      prev.wayvr.overrideAttrs (prevAttrs: {
+      final.wayvr.overrideAttrs (prevAttrs: {
         inherit (package) src;
         version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
-
-        buildInputs = prevAttrs.buildInputs ++ [
-          final.libinput
-          final.udev
-        ];
       });
     };
   };
