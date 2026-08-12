@@ -71,8 +71,13 @@ fetch.github = "trip-zip/somewm"
 src.git = "https://github.com/trip-zip/somewm"
 fetch.github = "trip-zip/somewm"
 
+[tilibs-git]
+src.git = "https://github.com/debrouxl/tilibs"
+fetch.github = "debrouxl/tilibs"
+
 [tilp2-gfm-git]
 src.git = "https://github.com/debrouxl/tilp_and_gfm"
+src.branch = "gtk3"
 fetch.github = "debrouxl/tilp_and_gfm"
 
 [vapor-git]

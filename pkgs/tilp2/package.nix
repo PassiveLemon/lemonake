@@ -1,47 +1,61 @@
 { version
 , src
+, tilibsVersion
+, tilibsSrc
 , lib
 , stdenv
-, autoreconfHook
-, gfm
+, cmake
 , glib
-, gnome2
-, gtk2
-, intltool
+, gtk3
 , libticables2
 , libticalcs2
 , libticonv
 , libtifiles2
 , pkg-config
 }:
-stdenv.mkDerivation {
+let
+  libticables' = libticables2.overrideAttrs {
+    version = tilibsVersion;
+    src = tilibsSrc;
+    sourceRoot = "source/libticables/trunk";
+    patches = [ ];
+  };
+  libticonv' = libticonv.overrideAttrs {
+    version = tilibsVersion;
+    src = tilibsSrc;
+    sourceRoot = "source/libticonv/trunk";
+  };
+  libtifiles' = libtifiles2.overrideAttrs {
+    version = tilibsVersion;
+    src = tilibsSrc;
+    sourceRoot = "source/libtifiles/trunk";
+  };
+in stdenv.mkDerivation {
   pname = "tilp2";
   inherit version src;
 
-  sourceRoot = "source/tilp/trunk";
-
   nativeBuildInputs = [
-    autoreconfHook
-    intltool
+    cmake
     pkg-config
   ];
 
   buildInputs = [
-    gfm
     glib
-    gnome2.libglade
-    gtk2
-    libticables2
+    gtk3
+    libticables'
     libticalcs2
-    libticonv
-    libtifiles2
+    libticonv'
+    libtifiles'
+  ];
+
+  cmakeFlags = [
+    (lib.cmakeBool "BUILD_USING_GTK3" true)
   ];
 
   meta = with lib; {
     description = "Transfer data between Texas Instruments graphing calculators and a computer";
-    homepage = "http://lpg.ticalc.org/prj_tilp/";
-    changelog = "http://lpg.ticalc.org/prj_tilp/news.html";
-    license = licenses.gpl2Plus;
+    homepage = "https://github.com/debrouxl/tilp_and_gfm/";
+    license = licenses.unfree;
     maintainers = with maintainers; [ passivelemon ];
     platforms = platforms.linux;
     mainProgram = "tilp";

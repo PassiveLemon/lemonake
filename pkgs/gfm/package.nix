@@ -3,13 +3,14 @@
 , lib
 , stdenv
 , autoreconfHook
+, cmake
 , glib
-, gnome2
-, gtk2
+, gtk3
 , libticables2
 , libticalcs2
 , libticonv
 , libtifiles2
+, ninja
 , pkg-config
 }:
 stdenv.mkDerivation {
@@ -20,17 +21,22 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [
     autoreconfHook
+    cmake
+    ninja
     pkg-config
   ];
 
   buildInputs = [
     glib
-    gnome2.libglade
-    gtk2
+    gtk3
     libticables2
     libticalcs2
     libticonv
     libtifiles2
+  ];
+
+  cmakeFlags = [
+    (lib.cmakeBool "BUILD_USING_GTK3" true)
   ];
 
   NIX_CFLAGS_COMPILE = "-I${libticables2}/include/tilp2";

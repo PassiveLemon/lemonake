@@ -206,17 +206,29 @@
     };
     date = "2026-08-10";
   };
+  tilibs-git = {
+    pname = "tilibs-git";
+    version = "791d2535813fa7ffef8f9feadf110998d4ae57fb";
+    src = fetchFromGitHub {
+      owner = "debrouxl";
+      repo = "tilibs";
+      rev = "791d2535813fa7ffef8f9feadf110998d4ae57fb";
+      fetchSubmodules = false;
+      sha256 = "sha256-fVHKG4XywiXbRq4BPRqF3yfFeKACa4rJuU5z8I+WQx4=";
+    };
+    date = "2026-01-21";
+  };
   tilp2-gfm-git = {
     pname = "tilp2-gfm-git";
-    version = "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec";
+    version = "d971022b3efb113bb933f71e6b86bd657c320dc1";
     src = fetchFromGitHub {
       owner = "debrouxl";
       repo = "tilp_and_gfm";
-      rev = "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec";
+      rev = "d971022b3efb113bb933f71e6b86bd657c320dc1";
       fetchSubmodules = false;
-      sha256 = "sha256-lR++eEYSO3xcTUVNMustm6Zd4bL2mKO//M0tPDEPen0=";
+      sha256 = "sha256-FmfabPqL1E5QtaniVOw+X/V325njHv6m4vJtwo9JtYM=";
     };
-    date = "2026-01-25";
+    date = "2026-01-11";
   };
   vapor-git = {
     pname = "vapor-git";
@@ -365,3 +377,4 @@
     date = "2026-08-01";
   };
 }
+
