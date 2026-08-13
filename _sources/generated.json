@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-8WpNtUlHr_em4Dq8V6bbNd6RdrM7gR40PYemCuQIiM0=/Cargo.lock",
+                "sha256-3nhLQK8PJyBV15i4eXDeyT4efphrLSz3o0GTrrnafbQ=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-07-28",
+        "date": "2026-08-13",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "52eb97eddbf27b03772e0137adb74fc7122d8ced",
-            "sha256": "sha256-8WpNtUlHr/em4Dq8V6bbNd6RdrM7gR40PYemCuQIiM0=",
+            "rev": "9c9b0a852453987193288050c4793eec0547c8af",
+            "sha256": "sha256-3nhLQK8PJyBV15i4eXDeyT4efphrLSz3o0GTrrnafbQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "52eb97eddbf27b03772e0137adb74fc7122d8ced"
+        "version": "9c9b0a852453987193288050c4793eec0547c8af"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -346,9 +346,30 @@
         },
         "version": "4ade670ad98cfd695285e9bf77ee1f0db5cbd930"
     },
+    "tilibs-git": {
+        "cargoLock": null,
+        "date": "2026-01-21",
+        "extract": null,
+        "name": "tilibs-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "debrouxl",
+            "repo": "tilibs",
+            "rev": "791d2535813fa7ffef8f9feadf110998d4ae57fb",
+            "sha256": "sha256-fVHKG4XywiXbRq4BPRqF3yfFeKACa4rJuU5z8I+WQx4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "791d2535813fa7ffef8f9feadf110998d4ae57fb"
+    },
     "tilp2-gfm-git": {
         "cargoLock": null,
-        "date": "2026-01-25",
+        "date": "2026-01-11",
         "extract": null,
         "name": "tilp2-gfm-git",
         "passthru": null,
@@ -360,12 +381,12 @@
             "name": null,
             "owner": "debrouxl",
             "repo": "tilp_and_gfm",
-            "rev": "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec",
-            "sha256": "sha256-lR++eEYSO3xcTUVNMustm6Zd4bL2mKO//M0tPDEPen0=",
+            "rev": "d971022b3efb113bb933f71e6b86bd657c320dc1",
+            "sha256": "sha256-FmfabPqL1E5QtaniVOw+X/V325njHv6m4vJtwo9JtYM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "4a399bc491b2d2d9fdab76d23d7cf87a43b0beec"
+        "version": "d971022b3efb113bb933f71e6b86bd657c320dc1"
     },
     "vapor-git": {
         "cargoLock": null,
