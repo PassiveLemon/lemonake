@@ -8,16 +8,16 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "9c9b0a852453987193288050c4793eec0547c8af";
+    version = "14d73d018bdc90c5b005064eb10f8e9714fa8409";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "9c9b0a852453987193288050c4793eec0547c8af";
+      rev = "14d73d018bdc90c5b005064eb10f8e9714fa8409";
       fetchSubmodules = false;
-      sha256 = "sha256-3nhLQK8PJyBV15i4eXDeyT4efphrLSz3o0GTrrnafbQ=";
+      sha256 = "sha256-KJxuQ12zPMu83MML54ePB+o12vD9hFv0DDGaEbypoj8=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-3nhLQK8PJyBV15i4eXDeyT4efphrLSz3o0GTrrnafbQ=/Cargo.lock";
+      lockFile = ./. + "/sha256-KJxuQ12zPMu83MML54ePB+o12vD9hFv0DDGaEbypoj8=/Cargo.lock";
       outputHashes = {
         
       };
