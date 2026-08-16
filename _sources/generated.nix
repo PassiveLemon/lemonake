@@ -177,10 +177,10 @@
   };
   proton-ge-rtsp = {
     pname = "proton-ge-rtsp";
-    version = "proton-rtsp-11.0-20260609-1";
+    version = "proton-rtsp-11.0-20260609-2";
     src = fetchTarball {
-      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/proton-rtsp-11.0-20260609-1/proton-rtsp-11.0-20260609-1.tar.gz";
-      sha256 = "sha256-/YrUjR/Ynb0clNpXSaSlfpnqJ76ZfTYP9LR/WHHCMgk=";
+      url = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/proton-rtsp-11.0-20260609-2/proton-rtsp-11.0-20260609-2.tar.gz";
+      sha256 = "sha256-Nw+4d6My86KfdUvOS78+f04T/VaLzQaAZuZLSoaYTaY=";
     };
   };
   somewm = {
