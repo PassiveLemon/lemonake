@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-KJxuQ12zPMu83MML54ePB+o12vD9hFv0DDGaEbypoj8=/Cargo.lock",
+                "sha256-LsDF_zEyQshbr+u37xToHdYTUQJCgtExo6WOu8GmtYo=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-08-13",
+        "date": "2026-08-17",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "14d73d018bdc90c5b005064eb10f8e9714fa8409",
-            "sha256": "sha256-KJxuQ12zPMu83MML54ePB+o12vD9hFv0DDGaEbypoj8=",
+            "rev": "0a58ab48994e8d6966a153f17f12390205b22561",
+            "sha256": "sha256-LsDF/zEyQshbr+u37xToHdYTUQJCgtExo6WOu8GmtYo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "14d73d018bdc90c5b005064eb10f8e9714fa8409"
+        "version": "0a58ab48994e8d6966a153f17f12390205b22561"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -81,11 +81,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-AU4lu1nU/120FUWNG6Ee1ecRLFg1Ait9Lq8o0xONKDU=",
+            "sha256": "sha256-3XwB8zPOX83zxpPiRtLoKb+CBJF6ax7y3WfQyEXbAzY=",
             "type": "url",
-            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.38__linux__x64.AppImage"
+            "url": "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.40__linux__x64.AppImage"
         },
-        "version": "2.0.38"
+        "version": "2.0.40"
     },
     "gdlauncher-legacy": {
         "cargoLock": null,
@@ -442,7 +442,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-0llU19bFJJ4yJvA6eGzOzyW8TnnurTS9js3_r+UAVCQ=/Cargo.lock",
+                "sha256-atbo3GL2zm7DirIYxdFSRCnPIYyvYJ6wIZRTgvldoE0=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=",
@@ -450,7 +450,7 @@
                 }
             ]
         },
-        "date": "2026-08-10",
+        "date": "2026-08-16",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -462,12 +462,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "cb3aa42bd91aeda0e4d0de91593a6f878350c757",
-            "sha256": "sha256-0llU19bFJJ4yJvA6eGzOzyW8TnnurTS9js3/r+UAVCQ=",
+            "rev": "5079f31c4028a91b405197f620e0457f30baf151",
+            "sha256": "sha256-atbo3GL2zm7DirIYxdFSRCnPIYyvYJ6wIZRTgvldoE0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cb3aa42bd91aeda0e4d0de91593a6f878350c757"
+        "version": "5079f31c4028a91b405197f620e0457f30baf151"
     },
     "webfisher": {
         "cargoLock": null,
@@ -513,7 +513,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-08-11",
+        "date": "2026-08-16",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -525,12 +525,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "874ee96589251c1187b729a148933b08159fa21b",
-            "sha256": "sha256-ejUZJQKr+x0zWH/sIp/6A4JoXSXF6YlBdcIK4oB4g54=",
+            "rev": "57da74d69f1fe2cddf3124eaccab6a5603b7281b",
+            "sha256": "sha256-z+7JuHSlyf6O5+8cgRsF4ioohGoTgi+wD19WxGUhZLQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "874ee96589251c1187b729a148933b08159fa21b"
+        "version": "57da74d69f1fe2cddf3124eaccab6a5603b7281b"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
