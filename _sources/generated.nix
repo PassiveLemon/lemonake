@@ -71,15 +71,15 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "3affec856c2216ae1c4856d849367ea557c5dc93";
+    version = "8c35952f035256f97eb855f7948af019ee8a785f";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "3affec856c2216ae1c4856d849367ea557c5dc93";
+      rev = "8c35952f035256f97eb855f7948af019ee8a785f";
       fetchSubmodules = true;
-      sha256 = "sha256-+7CqdEDu1ZatrCYeLBQJxkv/4uv6Adn/Dbh+6fYd6cE=";
+      sha256 = "sha256-x/e5xTd4PIlCZRx4ab16AtwSVHhZhIUAYPOCDstck9U=";
     };
-    date = "2026-07-24";
+    date = "2026-08-17";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -196,15 +196,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "96989c7431138cdbb35fae1b6ee1d00a34b7bbe8";
+    version = "c41b45e987e3b7dfbc1f80a247c84ea0929aed64";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "96989c7431138cdbb35fae1b6ee1d00a34b7bbe8";
+      rev = "c41b45e987e3b7dfbc1f80a247c84ea0929aed64";
       fetchSubmodules = false;
-      sha256 = "sha256-YbeHSXAA6s5yykDBG6CytgkVevh5HhAIdHGczGe+cNQ=";
+      sha256 = "sha256-bMQ6FaJktM2YDkpzvUIHoZiwXi8MYDI3jb8F2Ild6N0=";
     };
-    date = "2026-08-14";
+    date = "2026-08-17";
   };
   tilibs-git = {
     pname = "tilibs-git";
@@ -305,15 +305,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "57da74d69f1fe2cddf3124eaccab6a5603b7281b";
+    version = "e604848409f16e598f7722fdd85d4dc1d683fc98";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "57da74d69f1fe2cddf3124eaccab6a5603b7281b";
+      rev = "e604848409f16e598f7722fdd85d4dc1d683fc98";
       fetchSubmodules = false;
-      sha256 = "sha256-z+7JuHSlyf6O5+8cgRsF4ioohGoTgi+wD19WxGUhZLQ=";
+      sha256 = "sha256-0ZWTa+efXQh70xNhKZOJK8TzhpC6gYHBzTXLrdCqfro=";
     };
-    date = "2026-08-16";
+    date = "2026-08-17";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
