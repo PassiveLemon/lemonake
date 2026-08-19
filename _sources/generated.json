@@ -104,7 +104,7 @@
     },
     "hilbish-git": {
         "cargoLock": null,
-        "date": "2026-08-17",
+        "date": "2026-08-18",
         "extract": null,
         "name": "hilbish-git",
         "passthru": null,
@@ -116,12 +116,12 @@
             "name": null,
             "owner": "sammy-ette",
             "repo": "Hilbish",
-            "rev": "8c35952f035256f97eb855f7948af019ee8a785f",
-            "sha256": "sha256-x/e5xTd4PIlCZRx4ab16AtwSVHhZhIUAYPOCDstck9U=",
+            "rev": "12713ebc54044495a4fbf8edf6177a5bab010729",
+            "sha256": "sha256-qWY57sHG58l8piTscGO3Nt0yEq0I4+RhjlH6vLszpJ4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8c35952f035256f97eb855f7948af019ee8a785f"
+        "version": "12713ebc54044495a4fbf8edf6177a5bab010729"
     },
     "lite-xl-git": {
         "cargoLock": null,
@@ -327,7 +327,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-08-17",
+        "date": "2026-08-18",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -339,12 +339,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "c41b45e987e3b7dfbc1f80a247c84ea0929aed64",
-            "sha256": "sha256-bMQ6FaJktM2YDkpzvUIHoZiwXi8MYDI3jb8F2Ild6N0=",
+            "rev": "94edd250eac858fc16d85738d314b95c6e676a5f",
+            "sha256": "sha256-VB3q4vrDXyKcy60qEgviba2n8S2eIiixJiQSzZlCRwY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c41b45e987e3b7dfbc1f80a247c84ea0929aed64"
+        "version": "94edd250eac858fc16d85738d314b95c6e676a5f"
     },
     "tilibs-git": {
         "cargoLock": null,

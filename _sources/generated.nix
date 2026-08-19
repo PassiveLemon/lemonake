@@ -71,15 +71,15 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "8c35952f035256f97eb855f7948af019ee8a785f";
+    version = "12713ebc54044495a4fbf8edf6177a5bab010729";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "8c35952f035256f97eb855f7948af019ee8a785f";
+      rev = "12713ebc54044495a4fbf8edf6177a5bab010729";
       fetchSubmodules = true;
-      sha256 = "sha256-x/e5xTd4PIlCZRx4ab16AtwSVHhZhIUAYPOCDstck9U=";
+      sha256 = "sha256-qWY57sHG58l8piTscGO3Nt0yEq0I4+RhjlH6vLszpJ4=";
     };
-    date = "2026-08-17";
+    date = "2026-08-18";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -196,15 +196,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "c41b45e987e3b7dfbc1f80a247c84ea0929aed64";
+    version = "94edd250eac858fc16d85738d314b95c6e676a5f";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "c41b45e987e3b7dfbc1f80a247c84ea0929aed64";
+      rev = "94edd250eac858fc16d85738d314b95c6e676a5f";
       fetchSubmodules = false;
-      sha256 = "sha256-bMQ6FaJktM2YDkpzvUIHoZiwXi8MYDI3jb8F2Ild6N0=";
+      sha256 = "sha256-VB3q4vrDXyKcy60qEgviba2n8S2eIiixJiQSzZlCRwY=";
     };
-    date = "2026-08-17";
+    date = "2026-08-18";
   };
   tilibs-git = {
     pname = "tilibs-git";
