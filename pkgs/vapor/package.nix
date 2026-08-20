@@ -31,16 +31,6 @@ stdenv.mkDerivation {
     vulkan-loader
   ];
 
-  installPhase = ''
-    runHook preInstall
-
-    mkdir -p $out/lib/vapor/bin/linux64
-    cp src/vrclient.so $out/lib/
-    ln -s "$out/lib/vrclient.so" "$out/lib/vapor/bin/linux64/vrclient.so"
-
-    runHook postInstall
-  '';
-
   meta = with lib; {
     description = "an implementation of an OpenVR runtime on top of OpenXR";
     homepage = "https://github.com/micheal65536/VapoR/";
