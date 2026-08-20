@@ -196,15 +196,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "94edd250eac858fc16d85738d314b95c6e676a5f";
+    version = "f8d69b8710fede2a20a25524aefc8b6e1b7ff7ec";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "94edd250eac858fc16d85738d314b95c6e676a5f";
+      rev = "f8d69b8710fede2a20a25524aefc8b6e1b7ff7ec";
       fetchSubmodules = false;
-      sha256 = "sha256-VB3q4vrDXyKcy60qEgviba2n8S2eIiixJiQSzZlCRwY=";
+      sha256 = "sha256-soqkIC/vzO+9uh14ELYzp1oqm0b0aEChGIzMpUCRFv0=";
     };
-    date = "2026-08-18";
+    date = "2026-08-19";
   };
   tilibs-git = {
     pname = "tilibs-git";
