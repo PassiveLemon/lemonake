@@ -43,15 +43,15 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "ef525c2ec7c9a675209157aafdcb3d2da3692a9e";
+    version = "c5f2b4bb31dbac6a78c54938148faf7183a57f54";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "ef525c2ec7c9a675209157aafdcb3d2da3692a9e";
+      rev = "c5f2b4bb31dbac6a78c54938148faf7183a57f54";
       fetchSubmodules = false;
-      sha256 = "sha256-Lldt772BLYlz/auvI2DJgIWNp37Ecb0me7WL0sijybE=";
+      sha256 = "sha256-fRnJwVx6Lw6xxNHAsSfUfowbsEgctHRHPVXN97Mk0Vs=";
     };
-    date = "2026-07-26";
+    date = "2026-08-22";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
@@ -263,23 +263,23 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "5079f31c4028a91b405197f620e0457f30baf151";
+    version = "69dbf331c8d71607e4c7cc4d631ff9504c49ecf6";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "5079f31c4028a91b405197f620e0457f30baf151";
+      rev = "69dbf331c8d71607e4c7cc4d631ff9504c49ecf6";
       fetchSubmodules = false;
-      sha256 = "sha256-atbo3GL2zm7DirIYxdFSRCnPIYyvYJ6wIZRTgvldoE0=";
+      sha256 = "sha256-7CVwbCCIhIMgRRJfJPMQ5iWNz07EgA8MwEoJZYL+Ma4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-atbo3GL2zm7DirIYxdFSRCnPIYyvYJ6wIZRTgvldoE0=/Cargo.lock";
+      lockFile = ./. + "/sha256-7CVwbCCIhIMgRRJfJPMQ5iWNz07EgA8MwEoJZYL+Ma4=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-08-16";
+    date = "2026-08-22";
   };
   webfisher = {
     pname = "webfisher";
