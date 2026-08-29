@@ -53,7 +53,7 @@
     },
     "awesome-git": {
         "cargoLock": null,
-        "date": "2026-08-22",
+        "date": "2026-08-28",
         "extract": null,
         "name": "awesome-git",
         "passthru": null,
@@ -65,12 +65,12 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "c5f2b4bb31dbac6a78c54938148faf7183a57f54",
-            "sha256": "sha256-fRnJwVx6Lw6xxNHAsSfUfowbsEgctHRHPVXN97Mk0Vs=",
+            "rev": "0a5e50cf7ee214fae47159e0e976ab4a78d2ed4f",
+            "sha256": "sha256-GUX1jHdLpEe9hfABBVgaoHc+l83/uZ+IP+3zdHb/U7E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c5f2b4bb31dbac6a78c54938148faf7183a57f54"
+        "version": "0a5e50cf7ee214fae47159e0e976ab4a78d2ed4f"
     },
     "gdlauncher-carbon": {
         "cargoLock": null,
@@ -104,7 +104,7 @@
     },
     "hilbish-git": {
         "cargoLock": null,
-        "date": "2026-08-18",
+        "date": "2026-08-28",
         "extract": null,
         "name": "hilbish-git",
         "passthru": null,
@@ -116,12 +116,12 @@
             "name": null,
             "owner": "sammy-ette",
             "repo": "Hilbish",
-            "rev": "12713ebc54044495a4fbf8edf6177a5bab010729",
-            "sha256": "sha256-qWY57sHG58l8piTscGO3Nt0yEq0I4+RhjlH6vLszpJ4=",
+            "rev": "dfc2015e3bfe4929deba9ac897a6cef29cbd1e17",
+            "sha256": "sha256-y6wAuAUVVWEKKVD50HzZCStKe/EbPY6LwmuiBmbBQSg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "12713ebc54044495a4fbf8edf6177a5bab010729"
+        "version": "dfc2015e3bfe4929deba9ac897a6cef29cbd1e17"
     },
     "lite-xl-git": {
         "cargoLock": null,
@@ -318,16 +318,16 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "v1.4.4",
-            "sha256": "sha256-3odeW0sncWlf3cX78ZO3gM2EXhAY/tubcgZBHqj2ZqA=",
+            "rev": "v2.0.0",
+            "sha256": "sha256-uJTwpnY7XOdfRX1qXXNCb6Tc/bcQWh/gqWuHRx8ezuw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.4"
+        "version": "v2.0.0"
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-08-23",
+        "date": "2026-08-28",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -339,12 +339,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "109012248963858762bb1af3d17f56afb71e6d59",
-            "sha256": "sha256-7/GIKTmlnhAQTiM82k6KJfN36iav3IS6CtxTuT5A3pE=",
+            "rev": "aa0d531a7bc0c275a3609b5f85abd8ca545cbc5e",
+            "sha256": "sha256-uJTwpnY7XOdfRX1qXXNCb6Tc/bcQWh/gqWuHRx8ezuw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "109012248963858762bb1af3d17f56afb71e6d59"
+        "version": "aa0d531a7bc0c275a3609b5f85abd8ca545cbc5e"
     },
     "tilibs-git": {
         "cargoLock": null,
@@ -442,7 +442,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-7CVwbCCIhIMgRRJfJPMQ5iWNz07EgA8MwEoJZYL+Ma4=/Cargo.lock",
+                "sha256-RWaFO2CGexio7rh9faabHSN1+UHu0tgHHvo7dU7kqHo=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=",
@@ -450,7 +450,7 @@
                 }
             ]
         },
-        "date": "2026-08-22",
+        "date": "2026-08-28",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -462,12 +462,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "69dbf331c8d71607e4c7cc4d631ff9504c49ecf6",
-            "sha256": "sha256-7CVwbCCIhIMgRRJfJPMQ5iWNz07EgA8MwEoJZYL+Ma4=",
+            "rev": "9d3546b0c48d653f63f072f69f88cfe5e93aeb4e",
+            "sha256": "sha256-RWaFO2CGexio7rh9faabHSN1+UHu0tgHHvo7dU7kqHo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "69dbf331c8d71607e4c7cc4d631ff9504c49ecf6"
+        "version": "9d3546b0c48d653f63f072f69f88cfe5e93aeb4e"
     },
     "webfisher": {
         "cargoLock": null,

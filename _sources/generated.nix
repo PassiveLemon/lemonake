@@ -43,15 +43,15 @@
   };
   awesome-git = {
     pname = "awesome-git";
-    version = "c5f2b4bb31dbac6a78c54938148faf7183a57f54";
+    version = "0a5e50cf7ee214fae47159e0e976ab4a78d2ed4f";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "c5f2b4bb31dbac6a78c54938148faf7183a57f54";
+      rev = "0a5e50cf7ee214fae47159e0e976ab4a78d2ed4f";
       fetchSubmodules = false;
-      sha256 = "sha256-fRnJwVx6Lw6xxNHAsSfUfowbsEgctHRHPVXN97Mk0Vs=";
+      sha256 = "sha256-GUX1jHdLpEe9hfABBVgaoHc+l83/uZ+IP+3zdHb/U7E=";
     };
-    date = "2026-08-22";
+    date = "2026-08-28";
   };
   gdlauncher-carbon = {
     pname = "gdlauncher-carbon";
@@ -71,15 +71,15 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "12713ebc54044495a4fbf8edf6177a5bab010729";
+    version = "dfc2015e3bfe4929deba9ac897a6cef29cbd1e17";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "12713ebc54044495a4fbf8edf6177a5bab010729";
+      rev = "dfc2015e3bfe4929deba9ac897a6cef29cbd1e17";
       fetchSubmodules = true;
-      sha256 = "sha256-qWY57sHG58l8piTscGO3Nt0yEq0I4+RhjlH6vLszpJ4=";
+      sha256 = "sha256-y6wAuAUVVWEKKVD50HzZCStKe/EbPY6LwmuiBmbBQSg=";
     };
-    date = "2026-08-18";
+    date = "2026-08-28";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -185,26 +185,26 @@
   };
   somewm = {
     pname = "somewm";
-    version = "v1.4.4";
+    version = "v2.0.0";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "v1.4.4";
+      rev = "v2.0.0";
       fetchSubmodules = false;
-      sha256 = "sha256-3odeW0sncWlf3cX78ZO3gM2EXhAY/tubcgZBHqj2ZqA=";
+      sha256 = "sha256-uJTwpnY7XOdfRX1qXXNCb6Tc/bcQWh/gqWuHRx8ezuw=";
     };
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "109012248963858762bb1af3d17f56afb71e6d59";
+    version = "aa0d531a7bc0c275a3609b5f85abd8ca545cbc5e";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "109012248963858762bb1af3d17f56afb71e6d59";
+      rev = "aa0d531a7bc0c275a3609b5f85abd8ca545cbc5e";
       fetchSubmodules = false;
-      sha256 = "sha256-7/GIKTmlnhAQTiM82k6KJfN36iav3IS6CtxTuT5A3pE=";
+      sha256 = "sha256-uJTwpnY7XOdfRX1qXXNCb6Tc/bcQWh/gqWuHRx8ezuw=";
     };
-    date = "2026-08-23";
+    date = "2026-08-28";
   };
   tilibs-git = {
     pname = "tilibs-git";
@@ -263,23 +263,23 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "69dbf331c8d71607e4c7cc4d631ff9504c49ecf6";
+    version = "9d3546b0c48d653f63f072f69f88cfe5e93aeb4e";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "69dbf331c8d71607e4c7cc4d631ff9504c49ecf6";
+      rev = "9d3546b0c48d653f63f072f69f88cfe5e93aeb4e";
       fetchSubmodules = false;
-      sha256 = "sha256-7CVwbCCIhIMgRRJfJPMQ5iWNz07EgA8MwEoJZYL+Ma4=";
+      sha256 = "sha256-RWaFO2CGexio7rh9faabHSN1+UHu0tgHHvo7dU7kqHo=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-7CVwbCCIhIMgRRJfJPMQ5iWNz07EgA8MwEoJZYL+Ma4=/Cargo.lock";
+      lockFile = ./. + "/sha256-RWaFO2CGexio7rh9faabHSN1+UHu0tgHHvo7dU7kqHo=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-08-22";
+    date = "2026-08-28";
   };
   webfisher = {
     pname = "webfisher";
