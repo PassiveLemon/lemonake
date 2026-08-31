@@ -208,15 +208,15 @@
   };
   tilibs-git = {
     pname = "tilibs-git";
-    version = "791d2535813fa7ffef8f9feadf110998d4ae57fb";
+    version = "6b05504e663b7310f77f876ef4286f504091860f";
     src = fetchFromGitHub {
       owner = "debrouxl";
       repo = "tilibs";
-      rev = "791d2535813fa7ffef8f9feadf110998d4ae57fb";
+      rev = "6b05504e663b7310f77f876ef4286f504091860f";
       fetchSubmodules = false;
-      sha256 = "sha256-fVHKG4XywiXbRq4BPRqF3yfFeKACa4rJuU5z8I+WQx4=";
+      sha256 = "sha256-/No5bjUgv7bKJcQMMOlk+QgvUJ/EO4cFIpi6tQlKtqA=";
     };
-    date = "2026-01-21";
+    date = "2026-08-30";
   };
   tilp2-gfm-git = {
     pname = "tilp2-gfm-git";
@@ -305,13 +305,13 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "ed1e751f0076a87576a713dee95e33a29f7264bd";
+    version = "1085f79072a4ec881ede46092402c9428f60775f";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "ed1e751f0076a87576a713dee95e33a29f7264bd";
+      rev = "1085f79072a4ec881ede46092402c9428f60775f";
       fetchSubmodules = false;
-      sha256 = "sha256-9WYjAtmVcx+z84kMA4lGX2sTYbqcF2PS9DWyKoTxwmA=";
+      sha256 = "sha256-Dj4Nf04E1zp2bvdVsZ1ycHPFhZ0UiDD6tt1Uj/jw+54=";
     };
     date = "2026-08-30";
   };
