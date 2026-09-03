@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "511ef68024ea6d9b36c871d194350940edf7b4e5";
+    version = "1ce7393c5acbbf58993678f8d8ef4675842ccbdf";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "511ef68024ea6d9b36c871d194350940edf7b4e5";
+      rev = "1ce7393c5acbbf58993678f8d8ef4675842ccbdf";
       fetchSubmodules = false;
-      sha256 = "sha256-oWTHMiyp0HWn7bh/0rH72Wm4iZOlF7yW+YCHgzxIFh4=";
+      sha256 = "sha256-spY5o2ezgpo4QI5DxXYXg4TlG4Kx+ByXDssuVay0X6c=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-oWTHMiyp0HWn7bh_0rH72Wm4iZOlF7yW+YCHgzxIFh4=/Cargo.lock";
+      lockFile = ./. + "/sha256-spY5o2ezgpo4QI5DxXYXg4TlG4Kx+ByXDssuVay0X6c=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-08-25";
+    date = "2026-09-03";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -263,23 +263,23 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "d318831ecce40d4d9e1f71b334e02089f5090051";
+    version = "b45c68cb592258ca04156d5679f09e1a59aac2ed";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "d318831ecce40d4d9e1f71b334e02089f5090051";
+      rev = "b45c68cb592258ca04156d5679f09e1a59aac2ed";
       fetchSubmodules = false;
-      sha256 = "sha256-87dYBUlImtIOoWTNQfwNTX97Q9D5AImtU1Ar80B8Z1U=";
+      sha256 = "sha256-sWHIXPgh4ACYDy0gfh3q9WlAfa0Q/5sPybwcK5XXuOI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-87dYBUlImtIOoWTNQfwNTX97Q9D5AImtU1Ar80B8Z1U=/Cargo.lock";
+      lockFile = ./. + "/sha256-sWHIXPgh4ACYDy0gfh3q9WlAfa0Q_5sPybwcK5XXuOI=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-08-30";
+    date = "2026-09-03";
   };
   webfisher = {
     pname = "webfisher";

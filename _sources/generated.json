@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-oWTHMiyp0HWn7bh_0rH72Wm4iZOlF7yW+YCHgzxIFh4=/Cargo.lock",
+                "sha256-spY5o2ezgpo4QI5DxXYXg4TlG4Kx+ByXDssuVay0X6c=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-08-25",
+        "date": "2026-09-03",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "511ef68024ea6d9b36c871d194350940edf7b4e5",
-            "sha256": "sha256-oWTHMiyp0HWn7bh/0rH72Wm4iZOlF7yW+YCHgzxIFh4=",
+            "rev": "1ce7393c5acbbf58993678f8d8ef4675842ccbdf",
+            "sha256": "sha256-spY5o2ezgpo4QI5DxXYXg4TlG4Kx+ByXDssuVay0X6c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "511ef68024ea6d9b36c871d194350940edf7b4e5"
+        "version": "1ce7393c5acbbf58993678f8d8ef4675842ccbdf"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -442,7 +442,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-87dYBUlImtIOoWTNQfwNTX97Q9D5AImtU1Ar80B8Z1U=/Cargo.lock",
+                "sha256-sWHIXPgh4ACYDy0gfh3q9WlAfa0Q_5sPybwcK5XXuOI=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=",
@@ -450,7 +450,7 @@
                 }
             ]
         },
-        "date": "2026-08-30",
+        "date": "2026-09-03",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -462,12 +462,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "d318831ecce40d4d9e1f71b334e02089f5090051",
-            "sha256": "sha256-87dYBUlImtIOoWTNQfwNTX97Q9D5AImtU1Ar80B8Z1U=",
+            "rev": "b45c68cb592258ca04156d5679f09e1a59aac2ed",
+            "sha256": "sha256-sWHIXPgh4ACYDy0gfh3q9WlAfa0Q/5sPybwcK5XXuOI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d318831ecce40d4d9e1f71b334e02089f5090051"
+        "version": "b45c68cb592258ca04156d5679f09e1a59aac2ed"
     },
     "webfisher": {
         "cargoLock": null,
