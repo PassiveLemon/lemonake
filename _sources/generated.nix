@@ -132,13 +132,13 @@
   };
   outsource = {
     pname = "outsource";
-    version = "0.3.1";
+    version = "0.3.2";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "outsource";
-      rev = "0.3.1";
+      rev = "0.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-y2y6Rmoz3KfIXkCcDRMOzuwY5Jxt9x9AdF2pnRYTAps=";
+      sha256 = "sha256-OT1TEr2ATDswC8twROYhtt4hcl4CT/pvXoiu60qT8yo=";
     };
   };
   picom = {
@@ -263,23 +263,23 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "b45c68cb592258ca04156d5679f09e1a59aac2ed";
+    version = "f0a1b82db5d967c18c733d4cb2e46efeba849e3b";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "b45c68cb592258ca04156d5679f09e1a59aac2ed";
+      rev = "f0a1b82db5d967c18c733d4cb2e46efeba849e3b";
       fetchSubmodules = false;
-      sha256 = "sha256-sWHIXPgh4ACYDy0gfh3q9WlAfa0Q/5sPybwcK5XXuOI=";
+      sha256 = "sha256-RK7Y+xL6b4Z9pVN7tYvFKeSiSUOCVK4DK/7PUlXsM1g=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-sWHIXPgh4ACYDy0gfh3q9WlAfa0Q_5sPybwcK5XXuOI=/Cargo.lock";
+      lockFile = ./. + "/sha256-RK7Y+xL6b4Z9pVN7tYvFKeSiSUOCVK4DK_7PUlXsM1g=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-09-03";
+    date = "2026-09-05";
   };
   webfisher = {
     pname = "webfisher";
