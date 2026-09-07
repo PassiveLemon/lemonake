@@ -220,12 +220,12 @@
             "name": null,
             "owner": "PassiveLemon",
             "repo": "outsource",
-            "rev": "0.3.2",
-            "sha256": "sha256-OT1TEr2ATDswC8twROYhtt4hcl4CT/pvXoiu60qT8yo=",
+            "rev": "0.3.3",
+            "sha256": "sha256-uo74363jZnm2YwfBJCkggF1ErSdHzZCBMwyXrNO0XTA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.3.2"
+        "version": "0.3.3"
     },
     "picom": {
         "cargoLock": null,
@@ -348,7 +348,7 @@
     },
     "tilibs-git": {
         "cargoLock": null,
-        "date": "2026-08-30",
+        "date": "2026-09-06",
         "extract": null,
         "name": "tilibs-git",
         "passthru": null,
@@ -360,12 +360,12 @@
             "name": null,
             "owner": "debrouxl",
             "repo": "tilibs",
-            "rev": "6b05504e663b7310f77f876ef4286f504091860f",
-            "sha256": "sha256-/No5bjUgv7bKJcQMMOlk+QgvUJ/EO4cFIpi6tQlKtqA=",
+            "rev": "466f325b23d71353d6c71e0387c10d488d01345a",
+            "sha256": "sha256-0CGOt6VCSG8y1ERiQXGzPNmXKHTXI/sRRBAQ3sA7nEw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6b05504e663b7310f77f876ef4286f504091860f"
+        "version": "466f325b23d71353d6c71e0387c10d488d01345a"
     },
     "tilp2-gfm-git": {
         "cargoLock": null,
@@ -442,7 +442,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-RK7Y+xL6b4Z9pVN7tYvFKeSiSUOCVK4DK_7PUlXsM1g=/Cargo.lock",
+                "sha256-kSR+PVg4I0WG_2xinapvQUPc36WxnsIKV8l4BUmtvro=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=",
@@ -450,7 +450,7 @@
                 }
             ]
         },
-        "date": "2026-09-05",
+        "date": "2026-09-06",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -462,12 +462,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "f0a1b82db5d967c18c733d4cb2e46efeba849e3b",
-            "sha256": "sha256-RK7Y+xL6b4Z9pVN7tYvFKeSiSUOCVK4DK/7PUlXsM1g=",
+            "rev": "40811f219e475bb3afd98610ab1cb7648bd352d5",
+            "sha256": "sha256-kSR+PVg4I0WG/2xinapvQUPc36WxnsIKV8l4BUmtvro=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f0a1b82db5d967c18c733d4cb2e46efeba849e3b"
+        "version": "40811f219e475bb3afd98610ab1cb7648bd352d5"
     },
     "webfisher": {
         "cargoLock": null,
