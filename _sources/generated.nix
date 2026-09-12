@@ -263,23 +263,23 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "40811f219e475bb3afd98610ab1cb7648bd352d5";
+    version = "9b9d1b9f8aa0f1aef6f7ec4228f6b4f71423570d";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "40811f219e475bb3afd98610ab1cb7648bd352d5";
+      rev = "9b9d1b9f8aa0f1aef6f7ec4228f6b4f71423570d";
       fetchSubmodules = false;
-      sha256 = "sha256-kSR+PVg4I0WG/2xinapvQUPc36WxnsIKV8l4BUmtvro=";
+      sha256 = "sha256-kpf4kyIvFsxYXZEEmXMv7PP0nHkLmWU97hzOavMv5T4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-kSR+PVg4I0WG_2xinapvQUPc36WxnsIKV8l4BUmtvro=/Cargo.lock";
+      lockFile = ./. + "/sha256-kpf4kyIvFsxYXZEEmXMv7PP0nHkLmWU97hzOavMv5T4=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-09-06";
+    date = "2026-09-12";
   };
   webfisher = {
     pname = "webfisher";
