@@ -22,9 +22,6 @@ in
         };
         cmakeFlags = (removeCmakeFlags [ "GIT_DESC" "GIT_COMMIT" ] prevAttrs.cmakeFlags) ++ [
           (cmakeFeature "GIT_TAG" package.version)
-          # Only GIT_TAG should be needed, but the builds fail without the others. However, I don't think they actually do anything when GIT_TAG is present
-          (cmakeFeature "GIT_DESC" package.version)
-          (cmakeFeature "GIT_COMMIT" package.version)
         ];
       });
 
