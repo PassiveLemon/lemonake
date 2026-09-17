@@ -71,15 +71,15 @@
   };
   hilbish-git = {
     pname = "hilbish-git";
-    version = "dfc2015e3bfe4929deba9ac897a6cef29cbd1e17";
+    version = "bb1c0ac58bcee5e3973ae298f43d23010e7eb9a0";
     src = fetchFromGitHub {
       owner = "sammy-ette";
       repo = "Hilbish";
-      rev = "dfc2015e3bfe4929deba9ac897a6cef29cbd1e17";
+      rev = "bb1c0ac58bcee5e3973ae298f43d23010e7eb9a0";
       fetchSubmodules = true;
-      sha256 = "sha256-y6wAuAUVVWEKKVD50HzZCStKe/EbPY6LwmuiBmbBQSg=";
+      sha256 = "sha256-0IffoxGKAhTD2+iQKCaDQ9Ryesy/5gRk1Jexk6dzqs8=";
     };
-    date = "2026-08-28";
+    date = "2026-09-16";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -305,27 +305,27 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "58c0e015a0dc2b8cdcf39cedce4b2a0d86efcecb";
+    version = "c64af3ac90b67ed1692753cdb996371e46de970b";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "58c0e015a0dc2b8cdcf39cedce4b2a0d86efcecb";
+      rev = "c64af3ac90b67ed1692753cdb996371e46de970b";
       fetchSubmodules = false;
-      sha256 = "sha256-17ItDl3tdtcWYMl8x3i3dgwXoj7Ia6VprtBIbHmyn5g=";
+      sha256 = "sha256-2oN3QQa/MlY3hWAyJB2TbhGUTRRo4pazbcQjsohkLs8=";
     };
-    date = "2026-09-15";
+    date = "2026-09-16";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
-    version = "f037264d23e2472a444a157370647fcd601ed81b";
+    version = "09741cbcb45236f4f4f79790ea133cd90d68d5eb";
     src = fetchgit {
       url = "https://gitlab.freedesktop.org/monado/monado.git";
-      rev = "f037264d23e2472a444a157370647fcd601ed81b";
+      rev = "09741cbcb45236f4f4f79790ea133cd90d68d5eb";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-exHbecudAy57szL7kut7/fBYCoekEs3riZzhMtFWS/c=";
+      sha256 = "sha256-3+bdxyXHuaweT/K+Jwh428XNMuZUd1tL2bdFBRIZ/Po=";
     };
   };
   wivrn-monado = {
