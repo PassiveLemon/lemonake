@@ -250,7 +250,7 @@
     },
     "picom-git": {
         "cargoLock": null,
-        "date": "2026-09-20",
+        "date": "2026-09-22",
         "extract": null,
         "name": "picom-git",
         "passthru": null,
@@ -262,12 +262,12 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "12a70e00fd351501f1f3ce26e59288128d4edb16",
-            "sha256": "sha256-FY5AnBahXTmGW6xHpm4DVx7+wAFH1xVcSipSFO10aek=",
+            "rev": "3502b29b8316c368229c25646dde6aff978bab67",
+            "sha256": "sha256-sPsS3NJPr2Q4Gwn4BoOqnt/5uQ6Ijb0bNda1JAaE0qE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "12a70e00fd351501f1f3ce26e59288128d4edb16"
+        "version": "3502b29b8316c368229c25646dde6aff978bab67"
     },
     "picom-tag": {
         "cargoLock": null,
@@ -327,7 +327,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-09-18",
+        "date": "2026-09-21",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -339,12 +339,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "cda5998cd7bc1bf10762e4a8c80fcd8a2aed0b9d",
-            "sha256": "sha256-ORTtsGmueMZlVfqmYm0+MFIksmxPRj1GQdpwql1W6dg=",
+            "rev": "df68ae6243d76fc445a9edb2fa6a39aee97d08b1",
+            "sha256": "sha256-EAJglCjyOOrZZZKGVh6uBH/yTcamRRNy6zvtOCVIRMA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cda5998cd7bc1bf10762e4a8c80fcd8a2aed0b9d"
+        "version": "df68ae6243d76fc445a9edb2fa6a39aee97d08b1"
     },
     "tilibs-git": {
         "cargoLock": null,

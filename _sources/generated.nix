@@ -154,15 +154,15 @@
   };
   picom-git = {
     pname = "picom-git";
-    version = "12a70e00fd351501f1f3ce26e59288128d4edb16";
+    version = "3502b29b8316c368229c25646dde6aff978bab67";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "12a70e00fd351501f1f3ce26e59288128d4edb16";
+      rev = "3502b29b8316c368229c25646dde6aff978bab67";
       fetchSubmodules = false;
-      sha256 = "sha256-FY5AnBahXTmGW6xHpm4DVx7+wAFH1xVcSipSFO10aek=";
+      sha256 = "sha256-sPsS3NJPr2Q4Gwn4BoOqnt/5uQ6Ijb0bNda1JAaE0qE=";
     };
-    date = "2026-09-20";
+    date = "2026-09-22";
   };
   picom-tag = {
     pname = "picom-tag";
@@ -196,15 +196,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "cda5998cd7bc1bf10762e4a8c80fcd8a2aed0b9d";
+    version = "df68ae6243d76fc445a9edb2fa6a39aee97d08b1";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "cda5998cd7bc1bf10762e4a8c80fcd8a2aed0b9d";
+      rev = "df68ae6243d76fc445a9edb2fa6a39aee97d08b1";
       fetchSubmodules = false;
-      sha256 = "sha256-ORTtsGmueMZlVfqmYm0+MFIksmxPRj1GQdpwql1W6dg=";
+      sha256 = "sha256-EAJglCjyOOrZZZKGVh6uBH/yTcamRRNy6zvtOCVIRMA=";
     };
-    date = "2026-09-18";
+    date = "2026-09-21";
   };
   tilibs-git = {
     pname = "tilibs-git";
