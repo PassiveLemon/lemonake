@@ -53,33 +53,13 @@
     };
     date = "2026-08-28";
   };
-  gdlauncher-carbon = {
-    pname = "gdlauncher-carbon";
+  gdlauncher = {
+    pname = "gdlauncher";
     version = "2.0.40";
     src = fetchurl {
       url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__2.0.40__linux__x64.AppImage";
       sha256 = "sha256-3XwB8zPOX83zxpPiRtLoKb+CBJF6ax7y3WfQyEXbAzY=";
     };
-  };
-  gdlauncher-legacy = {
-    pname = "gdlauncher-legacy";
-    version = "v1.1.30";
-    src = fetchurl {
-      url = "https://github.com/gorilla-devs/GDLauncher/releases/download/v1.1.30/GDLauncher-linux-setup.AppImage";
-      sha256 = "sha256-4cXT3exhoMAK6gW3Cpx1L7cm9Xm0FK912gGcRyLYPwM=";
-    };
-  };
-  hilbish-git = {
-    pname = "hilbish-git";
-    version = "07c83a5551a89a21ebc5201edebe0bf857e34b0d";
-    src = fetchFromGitHub {
-      owner = "sammy-ette";
-      repo = "Hilbish";
-      rev = "07c83a5551a89a21ebc5201edebe0bf857e34b0d";
-      fetchSubmodules = true;
-      sha256 = "sha256-weOuWmeufjjof4YeoZu1iuH/B7twkdEV1kvtMWH9QbQ=";
-    };
-    date = "2026-09-17";
   };
   lite-xl-git = {
     pname = "lite-xl-git";
@@ -377,3 +357,4 @@
     date = "2026-09-03";
   };
 }
+

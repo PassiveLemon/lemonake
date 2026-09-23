@@ -102,6 +102,7 @@
         },
         "version": "v1.1.30"
     },
+<<<<<<< HEAD
     "hilbish-git": {
         "cargoLock": null,
         "date": "2026-09-17",
@@ -123,6 +124,8 @@
         },
         "version": "07c83a5551a89a21ebc5201edebe0bf857e34b0d"
     },
+=======
+>>>>>>> 2a4d58c (chore: remove hilbish and gdlauncher-legacy)
     "lite-xl-git": {
         "cargoLock": null,
         "date": "2026-03-11",
@@ -627,3 +630,4 @@
         "version": "0989a7fac2d1efb7ea82f5fe1a8ed30c3eeb9596"
     }
 }
+

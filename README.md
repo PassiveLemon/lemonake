@@ -41,11 +41,7 @@ Packages (`inputs.lemonake.packages.<system>.<package>`):
 - `awesome-git`
 - `awesome-luajit-git`
 - `awmtt-git`
-- `gdlauncher` (Alias to `gdlauncher-carbon`)
-- `gdlauncher-carbon`
-- `gdlauncher-legacy`
-- `hilbish-git`
-- `hilbish-midnight`
+- `gdlauncher`
 - `lite-xl-git`
 - `lua-pam-git`
 - `lua-pam-luajit-git`
