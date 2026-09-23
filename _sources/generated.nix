@@ -87,13 +87,13 @@
   };
   nimpad = {
     pname = "nimpad";
-    version = "0.3.3";
+    version = "0.4.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "0.3.3";
+      rev = "0.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-DIinHIzQQZjQOSXJOmfbagVbEMyC1PT00UXCIF/fCC0=";
+      sha256 = "sha256-K9YDTUlP1KW2s9vofPqGR8h2GSCxjQqY5Y8gg+TLrvk=";
     };
   };
   opencomposite-git = {
@@ -176,15 +176,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "df68ae6243d76fc445a9edb2fa6a39aee97d08b1";
+    version = "f526337cef84669b0d5ce6c5fdda100ef4f671c0";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "df68ae6243d76fc445a9edb2fa6a39aee97d08b1";
+      rev = "f526337cef84669b0d5ce6c5fdda100ef4f671c0";
       fetchSubmodules = false;
-      sha256 = "sha256-EAJglCjyOOrZZZKGVh6uBH/yTcamRRNy6zvtOCVIRMA=";
+      sha256 = "sha256-cdcjibxcFp2FIqgLVDKN9Fp/tONRsbJ01egHLFyvWnI=";
     };
-    date = "2026-09-21";
+    date = "2026-09-23";
   };
   tilibs-git = {
     pname = "tilibs-git";
