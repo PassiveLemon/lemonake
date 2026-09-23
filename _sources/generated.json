@@ -72,11 +72,11 @@
         },
         "version": "0a5e50cf7ee214fae47159e0e976ab4a78d2ed4f"
     },
-    "gdlauncher-carbon": {
+    "gdlauncher": {
         "cargoLock": null,
         "date": null,
         "extract": null,
-        "name": "gdlauncher-carbon",
+        "name": "gdlauncher",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -87,45 +87,6 @@
         },
         "version": "2.0.40"
     },
-    "gdlauncher-legacy": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "gdlauncher-legacy",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-4cXT3exhoMAK6gW3Cpx1L7cm9Xm0FK912gGcRyLYPwM=",
-            "type": "url",
-            "url": "https://github.com/gorilla-devs/GDLauncher/releases/download/v1.1.30/GDLauncher-linux-setup.AppImage"
-        },
-        "version": "v1.1.30"
-    },
-<<<<<<< HEAD
-    "hilbish-git": {
-        "cargoLock": null,
-        "date": "2026-09-17",
-        "extract": null,
-        "name": "hilbish-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "sammy-ette",
-            "repo": "Hilbish",
-            "rev": "07c83a5551a89a21ebc5201edebe0bf857e34b0d",
-            "sha256": "sha256-weOuWmeufjjof4YeoZu1iuH/B7twkdEV1kvtMWH9QbQ=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "07c83a5551a89a21ebc5201edebe0bf857e34b0d"
-    },
-=======
->>>>>>> 2a4d58c (chore: remove hilbish and gdlauncher-legacy)
     "lite-xl-git": {
         "cargoLock": null,
         "date": "2026-03-11",
@@ -630,4 +591,3 @@
         "version": "0989a7fac2d1efb7ea82f5fe1a8ed30c3eeb9596"
     }
 }
-
