@@ -87,13 +87,13 @@
   };
   nimpad = {
     pname = "nimpad";
-    version = "0.4.0";
+    version = "0.5.0";
     src = fetchFromGitHub {
       owner = "PassiveLemon";
       repo = "nimpad";
-      rev = "0.4.0";
+      rev = "0.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-K9YDTUlP1KW2s9vofPqGR8h2GSCxjQqY5Y8gg+TLrvk=";
+      sha256 = "sha256-xU/doKVtXkeEFjufUZsnO+npA9AsBdnlG34+Hg2IFc4=";
     };
   };
   opencomposite-git = {
