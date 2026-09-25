@@ -165,26 +165,26 @@
   };
   somewm = {
     pname = "somewm";
-    version = "v1.4.5";
+    version = "v1.4.6";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "v1.4.5";
+      rev = "v1.4.6";
       fetchSubmodules = false;
-      sha256 = "sha256-RNSmIV9NXp7qhrPm/R/a6PyIpQwrVn6x20DLuMOOSHo=";
+      sha256 = "sha256-yyjebUW4MkqglCg7zPZSM85KwsU/EKQIKRzCang1sqg=";
     };
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "f526337cef84669b0d5ce6c5fdda100ef4f671c0";
+    version = "d9d9e3c0c9c353f0952246a6c128b45dc84cde30";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "f526337cef84669b0d5ce6c5fdda100ef4f671c0";
+      rev = "d9d9e3c0c9c353f0952246a6c128b45dc84cde30";
       fetchSubmodules = false;
-      sha256 = "sha256-cdcjibxcFp2FIqgLVDKN9Fp/tONRsbJ01egHLFyvWnI=";
+      sha256 = "sha256-0080/xSf6P2kwIOse4TxGRmXNqhZnpcUDX6rrU93qOo=";
     };
-    date = "2026-09-23";
+    date = "2026-09-24";
   };
   tilibs-git = {
     pname = "tilibs-git";
@@ -243,23 +243,23 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "0eab390702785e0faae03fcfe57960e6dd455499";
+    version = "c87bcee358e5ecf5ea0c2bc488e3aab29161da62";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "0eab390702785e0faae03fcfe57960e6dd455499";
+      rev = "c87bcee358e5ecf5ea0c2bc488e3aab29161da62";
       fetchSubmodules = false;
-      sha256 = "sha256-cM/xrwkQkeBhi2A9h1t/Sg8eSOsOAzrYB+mzAXrIoAQ=";
+      sha256 = "sha256-BltMOXb4dCk6iBtVIRe4nXYP5D15tYeu2gTzT4wtmKs=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-cM_xrwkQkeBhi2A9h1t_Sg8eSOsOAzrYB+mzAXrIoAQ=/Cargo.lock";
+      lockFile = ./. + "/sha256-BltMOXb4dCk6iBtVIRe4nXYP5D15tYeu2gTzT4wtmKs=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-hJlMb6hTVxUuZZIDbIXqdOoWWXA56TrUaGQ7LnCKxG4=";
         "vulkano-0.35.2" = "sha256-KsL9NpPtR3iGL4T5TbYeVAeH9RjiKTBtKyn3p1ONwAI=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-09-20";
+    date = "2026-09-25";
   };
   webfisher = {
     pname = "webfisher";
