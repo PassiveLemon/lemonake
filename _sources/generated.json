@@ -488,12 +488,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "1b0d13c431debeed15870ebaf6d94b60f1d1ebfe",
-            "sha256": "sha256-VHMpJWGO0bRh+v0EWmznDUgUIBhB5V4YPJEXiVgz2AQ=",
+            "rev": "7e0bf5efc1f4298b433eff1c6f3d81a1bc401b44",
+            "sha256": "sha256-UfeYkSxH8mP8VOvC7eWNb0drSqqE81lrHBjBLVQwxVE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1b0d13c431debeed15870ebaf6d94b60f1d1ebfe"
+        "version": "7e0bf5efc1f4298b433eff1c6f3d81a1bc401b44"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
