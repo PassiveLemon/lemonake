@@ -8,21 +8,21 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "40d032f3deca08e30991bc724486c240c293baaa";
+    version = "4a12206b023b02c005b5ec56b1e5fa324a21c169";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "40d032f3deca08e30991bc724486c240c293baaa";
+      rev = "4a12206b023b02c005b5ec56b1e5fa324a21c169";
       fetchSubmodules = false;
-      sha256 = "sha256-ZLpzAqNwL5gpdm+S4KdtCR6LMut3kORK7W+X8AE7qVQ=";
+      sha256 = "sha256-ENeYsYhR9u3Lx+wfwubNHRjpDZXwjyplzcew6YG/qVQ=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-ZLpzAqNwL5gpdm+S4KdtCR6LMut3kORK7W+X8AE7qVQ=/Cargo.lock";
+      lockFile = ./. + "/sha256-ENeYsYhR9u3Lx+wfwubNHRjpDZXwjyplzcew6YG_qVQ=/Cargo.lock";
       outputHashes = {
         
       };
     };
-    date = "2026-10-05";
+    date = "2026-10-06";
   };
   alcom-tag = {
     pname = "alcom-tag";
@@ -284,13 +284,13 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "59e4fb075e16d6695e91bab81e71dd0b4800eb43";
+    version = "4ea97485cc0fa86b013b6d28962cef30914a998f";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "59e4fb075e16d6695e91bab81e71dd0b4800eb43";
+      rev = "4ea97485cc0fa86b013b6d28962cef30914a998f";
       fetchSubmodules = false;
-      sha256 = "sha256-2ln5jUMGljLdp5Mgds8Rb0iepQmmdWwf+rAeskraTQE=";
+      sha256 = "sha256-JHPtQgj+k1xY9JY+PS2jx3dElBzEh411lVara8p17x0=";
     };
     date = "2026-10-05";
   };
