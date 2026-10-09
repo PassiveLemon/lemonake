@@ -406,14 +406,14 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-7Wn1JMTg9JUDw+J5V_FVD8qfUzkdAjBbC3Ueha1D7Xw=/Cargo.lock",
+                "sha256-gBdQ0K4i9FTdbIiulkyp2NHBmJV69svY0XBnambL6Ks=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs="
                 }
             ]
         },
-        "date": "2026-10-05",
+        "date": "2026-10-09",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -425,12 +425,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "82565e975f86d4f1b17ef1af32834d288556639e",
-            "sha256": "sha256-7Wn1JMTg9JUDw+J5V/FVD8qfUzkdAjBbC3Ueha1D7Xw=",
+            "rev": "42e9deb54cc5c36037b49237867afa3dc4593f4a",
+            "sha256": "sha256-gBdQ0K4i9FTdbIiulkyp2NHBmJV69svY0XBnambL6Ks=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "82565e975f86d4f1b17ef1af32834d288556639e"
+        "version": "42e9deb54cc5c36037b49237867afa3dc4593f4a"
     },
     "webfisher": {
         "cargoLock": null,
@@ -476,7 +476,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -488,12 +488,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "640e1a540540edaef95b2270cfed3846c85887d4",
-            "sha256": "sha256-lCwO4k/32pYZsjdR7R1tB56Hr2gLviUEmY9KS9Qw6HI=",
+            "rev": "dc14ced68f98d211dccb92a60107177b3278b9ae",
+            "sha256": "sha256-0na2G+/WqaO4XBkCdk/6AMfWV7spxqH5V0oaPsL098A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "640e1a540540edaef95b2270cfed3846c85887d4"
+        "version": "dc14ced68f98d211dccb92a60107177b3278b9ae"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -538,10 +538,8 @@
     "xrizer": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-y_K+eXECUi9wGol0IUuIUI9hqhEN8GHaOO5i1xMFNQo=/Cargo.lock",
-                {
-                    "openxr-0.19.0": "sha256-mljVBbQTq/k7zd/WcE1Sd3gibaJiZ+t7td964clWHd8="
-                }
+                "sha256-o8iZfY2WbaWS6c+RHvhbTePzZZAn0N1Iq39scp4AtRQ=/Cargo.lock",
+                {}
             ]
         },
         "date": null,
@@ -556,21 +554,21 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "v0.5",
-            "sha256": "sha256-y/K+eXECUi9wGol0IUuIUI9hqhEN8GHaOO5i1xMFNQo=",
+            "rev": "v0.6",
+            "sha256": "sha256-o8iZfY2WbaWS6c+RHvhbTePzZZAn0N1Iq39scp4AtRQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.5"
+        "version": "v0.6"
     },
     "xrizer-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-3bp1JYNPUbNwBkjZG2Ex1jtj3L8Vt78wFKhHAPpTD58=/Cargo.lock",
+                "sha256-o8iZfY2WbaWS6c+RHvhbTePzZZAn0N1Iq39scp4AtRQ=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-10-06",
+        "date": "2026-10-08",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -582,11 +580,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "1511bbe75bfa38cb775dd0aae1bfc8d1b8d3efde",
-            "sha256": "sha256-3bp1JYNPUbNwBkjZG2Ex1jtj3L8Vt78wFKhHAPpTD58=",
+            "rev": "a1216c7b53fb562a5bc4de473163e97a483042af",
+            "sha256": "sha256-o8iZfY2WbaWS6c+RHvhbTePzZZAn0N1Iq39scp4AtRQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1511bbe75bfa38cb775dd0aae1bfc8d1b8d3efde"
+        "version": "a1216c7b53fb562a5bc4de473163e97a483042af"
     }
 }
