@@ -36,11 +36,9 @@ Modules:
   - SomeWM (`programs.somewm`)
 
 Packages (`inputs.lemonake.packages.<system>.<package>`):
-- `alcom-tag` (`-git`)
 - `autoadb`
 - `awesome-git`
 - `awesome-luajit-git`
-- `awmtt-git`
 - `gdlauncher`
 - `lite-xl-git`
 - `lua-pam-git`
@@ -76,9 +74,6 @@ Git source packages often fail to build due to outdated packaging so they may no
   };
 }
 ```
-
-## Other
-Any sort of warning or assertion will be removed about 3 months after it was introduced to keep the code clean.
 
 ## Credits
 - [moni-dz/nixpkgs-f2k](https://github.com/moni-dz/nixpkgs-f2k/) for inspiration
