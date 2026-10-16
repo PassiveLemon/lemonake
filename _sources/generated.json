@@ -2,11 +2,11 @@
     "alcom-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-S+v1Ho_qQaQXSqjIGEyt+Fb+SnxIeXzBbU3cIma8Vkw=/Cargo.lock",
+                "sha256-1h9sxmWlzC1V9Kbgvb3TMmveFivN88lJTf30C4eE1Jg=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-10-15",
+        "date": "2026-10-16",
         "extract": null,
         "name": "alcom-git",
         "passthru": null,
@@ -18,12 +18,12 @@
             "name": null,
             "owner": "vrc-get",
             "repo": "vrc-get",
-            "rev": "cfb663d3b1cf6fcaa58f2b28948a1c12222bfa23",
-            "sha256": "sha256-S+v1Ho/qQaQXSqjIGEyt+Fb+SnxIeXzBbU3cIma8Vkw=",
+            "rev": "89a99aef9423a95fda32092200878ebe377cda9b",
+            "sha256": "sha256-1h9sxmWlzC1V9Kbgvb3TMmveFivN88lJTf30C4eE1Jg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cfb663d3b1cf6fcaa58f2b28948a1c12222bfa23"
+        "version": "89a99aef9423a95fda32092200878ebe377cda9b"
     },
     "alcom-tag": {
         "cargoLock": {
@@ -291,7 +291,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-10-14",
+        "date": "2026-10-16",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -303,12 +303,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "fd467a9bcc5a39472934397e2d18f752983ed303",
-            "sha256": "sha256-ZwWL+ljBB4Els5HXExmncHqJ2v47gmyKiAfdPRPUIFk=",
+            "rev": "a846107cdf397b2b5a0dac857c1f4f6473da8b26",
+            "sha256": "sha256-3e/AxRbD7z0VpBXSzRBXM861i+db05AjIUh5zNg+Djw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "fd467a9bcc5a39472934397e2d18f752983ed303"
+        "version": "a846107cdf397b2b5a0dac857c1f4f6473da8b26"
     },
     "tilibs-git": {
         "cargoLock": null,
@@ -476,7 +476,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-10-11",
+        "date": "2026-10-15",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -488,12 +488,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "bc3e374b96705cb61e11442d1a14d4a7af39506c",
-            "sha256": "sha256-1sWs+ME7OJ1wSa+Q8NLjAYwHAyQ0ZGpLV9lbf1L4Prw=",
+            "rev": "650ca30874de3f21e54eb0fa9b530cb642728d40",
+            "sha256": "sha256-tAmTJjH+I1JGn6bzpsgu2yOrG38MGvrlmCJcvqIaBkE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bc3e374b96705cb61e11442d1a14d4a7af39506c"
+        "version": "650ca30874de3f21e54eb0fa9b530cb642728d40"
     },
     "wivrn-git-monado": {
         "cargoLock": null,
@@ -507,13 +507,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "09741cbcb45236f4f4f79790ea133cd90d68d5eb",
-            "sha256": "sha256-3+bdxyXHuaweT/K+Jwh428XNMuZUd1tL2bdFBRIZ/Po=",
+            "rev": "8b259763fdd23c46592fd4cdd30b4eea997d4b70",
+            "sha256": "sha256-yGkuD2jAG/ACSGkH1Cz8o23wHLtEqtNCUe2kS5OyC68=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.freedesktop.org/monado/monado.git"
         },
-        "version": "09741cbcb45236f4f4f79790ea133cd90d68d5eb"
+        "version": "8b259763fdd23c46592fd4cdd30b4eea997d4b70"
     },
     "wivrn-monado": {
         "cargoLock": null,
