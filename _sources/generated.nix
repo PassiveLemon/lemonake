@@ -8,16 +8,16 @@
 {
   alcom-git = {
     pname = "alcom-git";
-    version = "2e2caa2552d311a81be4096fb73b85aad11263cd";
+    version = "792c02db169fd4a3c7c0fee8751900e9c32efd05";
     src = fetchFromGitHub {
       owner = "vrc-get";
       repo = "vrc-get";
-      rev = "2e2caa2552d311a81be4096fb73b85aad11263cd";
+      rev = "792c02db169fd4a3c7c0fee8751900e9c32efd05";
       fetchSubmodules = false;
-      sha256 = "sha256-A7h7U+Iwxyc9facs9C1ClDjbW/7OaI/Y+oFdNzCHKrw=";
+      sha256 = "sha256-dxLw2GK6pzPhiO67PzQTN3EgAYkAVBWki/W8JaV3DBU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-A7h7U+Iwxyc9facs9C1ClDjbW_7OaI_Y+oFdNzCHKrw=/Cargo.lock";
+      lockFile = ./. + "/sha256-dxLw2GK6pzPhiO67PzQTN3EgAYkAVBWki_W8JaV3DBU=/Cargo.lock";
       outputHashes = {
         
       };
@@ -165,26 +165,26 @@
   };
   somewm = {
     pname = "somewm";
-    version = "v2.0.1";
+    version = "v2.1.0";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "v2.0.1";
+      rev = "v2.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-E1992ZcMchbvwrcm5O7DNPYEoL7tugTxM8NSqQO5zPY=";
+      sha256 = "sha256-PHAajYsWYxle/7IdFSX8oEkxr3sDMXOHg5R84s5yh60=";
     };
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "f909bd956362ee8cf6ebb2c18e3b3416845f7b45";
+    version = "ea3a2a1a9edfa4de670c46865d9e177dd7d51e20";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "f909bd956362ee8cf6ebb2c18e3b3416845f7b45";
+      rev = "ea3a2a1a9edfa4de670c46865d9e177dd7d51e20";
       fetchSubmodules = false;
-      sha256 = "sha256-PHAajYsWYxle/7IdFSX8oEkxr3sDMXOHg5R84s5yh60=";
+      sha256 = "sha256-HRuPGjXmUcYIAgC1uIZM/zjew/AJMkxi6qwMn6K0Yvg=";
     };
-    date = "2026-10-18";
+    date = "2026-10-19";
   };
   tilibs-git = {
     pname = "tilibs-git";
