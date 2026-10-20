@@ -1,14 +1,3 @@
-[alcom-tag]
-src.github_tag = "vrc-get/vrc-get"
-src.include_regex = "gui-v.+"
-fetch.github = "vrc-get/vrc-get"
-cargo_lock = [ "Cargo.lock" ]
-
-[alcom-git]
-src.git = "https://github.com/vrc-get/vrc-get"
-fetch.github = "vrc-get/vrc-get"
-cargo_lock = [ "Cargo.lock" ]
-
 [awesome-git]
 src.git = "https://github.com/awesomeWM/awesome"
 fetch.github = "awesomeWM/awesome"
@@ -58,9 +47,17 @@ fetch.tarball = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/down
 src.github = "trip-zip/somewm"
 fetch.github = "trip-zip/somewm"
 
+[somewm-wlroots]
+src.cmd = "curl -s https://api.github.com/repos/trip-zip/somewm/releases/latest | jq -r '.tag_name' | xargs -I {} curl -s https://raw.githubusercontent.com/trip-zip/somewm/{}/subprojects/wlroots.wrap | awk 'match($0,/source_hash/,a){print $3}'"
+fetch.url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz" # This archive is not actually used
+
 [somewm-git]
 src.git = "https://github.com/trip-zip/somewm"
 fetch.github = "trip-zip/somewm"
+
+[somewm-git-wlroots]
+src.cmd = "curl -s https://raw.githubusercontent.com/trip-zip/somewm/refs/heads/main/subprojects/wlroots.wrap | awk 'match($0,/source_hash/,a){print $3}'"
+fetch.url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz" # This archive is not actually used
 
 [tilibs-git]
 src.git = "https://github.com/debrouxl/tilibs"
@@ -84,7 +81,7 @@ src.github = "WiVRn/WiVRn"
 fetch.github = "WiVRn/WiVRn"
 
 [wivrn-monado]
-src.cmd = "curl -s https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r '.tag_name' | xargs -I {} curl https://raw.githubusercontent.com/WiVRn/WiVRn/{}/monado-rev"
+src.cmd = "curl -s https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r '.tag_name' | xargs -I {} curl -s https://raw.githubusercontent.com/WiVRn/WiVRn/{}/monado-rev"
 fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
 
 [wivrn-git]

@@ -1,7 +1,10 @@
 { version
 , src
+, wlrHash
+, wlrVer
 , lib
 , stdenv
+, fetchurl
 , cairo
 , dbus
 , gdk-pixbuf
@@ -9,9 +12,16 @@
 , glib
 , gobject-introspection
 , gtk3
+, hwdata
+, lcms2
+, libdisplay-info
 , libdrm
+, libgbm
 , libinput
+, libliftoff
 , librsvg
+, libxcb-errors
+, libxcb-render-util
 , libxcb-util
 , libxcb-wm
 , libxkbcommon
@@ -22,10 +32,10 @@
 , ninja
 , pango
 , pkg-config
+, seatd
 , wayland
 , wayland-scanner
 , wayland-protocols
-, wlroots_0_20
 , xwayland
 , extraGITypeLibPaths ? [ ]
 , extraLuaModules ? [ ]
@@ -51,12 +61,23 @@ let
     networkmanager upower playerctl
   ]) getTypeLibPath;
   finalGITypeLibPaths = lib.concatStringsSep ":" makeGITypeLibPaths;
+
+  # Supply the wlroots archive for the wlroots.wrap
+  wlrootsSrc = fetchurl {
+    url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/${wlrVer}/downloads/wlroots-${wlrVer}.tar.gz";
+    sha256 = wlrHash;
+  };
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "somewm";
   inherit version src;
 
   strictDeps = true;
+
+  preConfigure = ''
+    mkdir -p subprojects/packagecache
+    cp ${wlrootsSrc} subprojects/packagecache/wlroots-${wlrVer}.tar.gz
+  '';
 
   nativeBuildInputs = [
     gobject-introspection
@@ -74,9 +95,16 @@ stdenv.mkDerivation (finalAttrs: {
     git
     glib
     gtk3
+    hwdata
+    lcms2
+    libdisplay-info
     libdrm
+    libgbm
     libinput
+    libliftoff
     librsvg
+    libxcb-errors
+    libxcb-render-util
     libxcb-util
     libxcb-wm
     libxkbcommon
@@ -84,10 +112,10 @@ stdenv.mkDerivation (finalAttrs: {
     luajit
     luaEnv
     pango
+    seatd
     wayland
     wayland-scanner
     wayland-protocols
-    wlroots_0_20
     xwayland
   ];
 
@@ -98,11 +126,11 @@ stdenv.mkDerivation (finalAttrs: {
     install -m644 $src/somewm.desktop.in $out/share/wayland-sessions/somewm.desktop
   '';
 
-  # --search $src/lua -> Awesome library
-  # --search $src/lib -> liblgi_closure_guard.so
+  # --search $out/share/somewm/lua -> Awesome library
+  # --search $out/lib -> liblgi_closure_guard.so
   postFixup = ''
     wrapProgram $out/bin/somewm \
-      --add-flags '--search $src/lua' \
+      --add-flags '--search $out/share/somewm/lua' \
       --add-flags '--search $out/lib' \
       ${finalSearchPaths}
       --prefix GI_TYPELIB_PATH : $GI_TYPELIB_PATH:${finalGITypeLibPaths}

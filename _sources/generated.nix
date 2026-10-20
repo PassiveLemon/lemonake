@@ -186,6 +186,22 @@
     };
     date = "2026-10-20";
   };
+  somewm-git-wlroots = {
+    pname = "somewm-git-wlroots";
+    version = "80c567d2ed4efb2cfa6b077f22c7a710d9c78ba4e185a75e8694001114af0733";
+    src = fetchurl {
+      url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz";
+      sha256 = "sha256-gMVn0u1O+yz6awd/IsenENnHi6ThhadehpQAERSvBzM=";
+    };
+  };
+  somewm-wlroots = {
+    pname = "somewm-wlroots";
+    version = "80c567d2ed4efb2cfa6b077f22c7a710d9c78ba4e185a75e8694001114af0733";
+    src = fetchurl {
+      url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz";
+      sha256 = "sha256-gMVn0u1O+yz6awd/IsenENnHi6ThhadehpQAERSvBzM=";
+    };
+  };
   tilibs-git = {
     pname = "tilibs-git";
     version = "6dba390e7390c4b98ae96287b39a3971c331fbef";
@@ -356,3 +372,4 @@
     date = "2026-10-14";
   };
 }
+
