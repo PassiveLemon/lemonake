@@ -1,56 +1,4 @@
 {
-    "alcom-git": {
-        "cargoLock": {
-            "Cargo.lock": [
-                "sha256-dxLw2GK6pzPhiO67PzQTN3EgAYkAVBWki_W8JaV3DBU=/Cargo.lock",
-                {}
-            ]
-        },
-        "date": "2026-10-19",
-        "extract": null,
-        "name": "alcom-git",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vrc-get",
-            "repo": "vrc-get",
-            "rev": "792c02db169fd4a3c7c0fee8751900e9c32efd05",
-            "sha256": "sha256-dxLw2GK6pzPhiO67PzQTN3EgAYkAVBWki/W8JaV3DBU=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "792c02db169fd4a3c7c0fee8751900e9c32efd05"
-    },
-    "alcom-tag": {
-        "cargoLock": {
-            "Cargo.lock": [
-                "sha256-86oR2+qKCmgkQMROq_RZDsSYINzdG5U08dmPznzMSzg=/Cargo.lock",
-                {}
-            ]
-        },
-        "date": null,
-        "extract": null,
-        "name": "alcom-tag",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vrc-get",
-            "repo": "vrc-get",
-            "rev": "gui-v1.1.8",
-            "sha256": "sha256-86oR2+qKCmgkQMROq/RZDsSYINzdG5U08dmPznzMSzg=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "gui-v1.1.8"
-    },
     "awesome-git": {
         "cargoLock": null,
         "date": "2026-08-28",
@@ -303,12 +251,42 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "35e21e4410b09cc9115766cc07a62bce7c19cc91",
-            "sha256": "sha256-lSN+V6yUjs/Kn2oBULSnR+NM7I2+oUjR2y0DVLBlYw8=",
+            "rev": "6eaa61e4c39db85d74e1c0d2cf6093dc974ae81c",
+            "sha256": "sha256-p66yGjjnDrRQpBw9snXhP5zN6/nzkkYsc0iP6uyBvjI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "35e21e4410b09cc9115766cc07a62bce7c19cc91"
+        "version": "6eaa61e4c39db85d74e1c0d2cf6093dc974ae81c"
+    },
+    "somewm-git-wlroots": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "somewm-git-wlroots",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-gMVn0u1O+yz6awd/IsenENnHi6ThhadehpQAERSvBzM=",
+            "type": "url",
+            "url": "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz"
+        },
+        "version": "80c567d2ed4efb2cfa6b077f22c7a710d9c78ba4e185a75e8694001114af0733"
+    },
+    "somewm-wlroots": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "somewm-wlroots",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-gMVn0u1O+yz6awd/IsenENnHi6ThhadehpQAERSvBzM=",
+            "type": "url",
+            "url": "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz"
+        },
+        "version": "80c567d2ed4efb2cfa6b077f22c7a710d9c78ba4e185a75e8694001114af0733"
     },
     "tilibs-git": {
         "cargoLock": null,
@@ -406,14 +384,14 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-QjPZYGydnkOk62kVBjqirUHS8J6yUK2PLPP0C3J5K98=/Cargo.lock",
+                "sha256-GHRLZM9OE0MQA8qOY4AQLl6aVFe5nzUnvSMiTWRkDj0=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs="
                 }
             ]
         },
-        "date": "2026-10-18",
+        "date": "2026-10-21",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -425,12 +403,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "adf852971fa06afcf859dfe8d734493ed1d7004e",
-            "sha256": "sha256-QjPZYGydnkOk62kVBjqirUHS8J6yUK2PLPP0C3J5K98=",
+            "rev": "dff4b0067a46fcadcb8738899cacc2b08c443049",
+            "sha256": "sha256-GHRLZM9OE0MQA8qOY4AQLl6aVFe5nzUnvSMiTWRkDj0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "adf852971fa06afcf859dfe8d734493ed1d7004e"
+        "version": "dff4b0067a46fcadcb8738899cacc2b08c443049"
     },
     "webfisher": {
         "cargoLock": null,
@@ -564,11 +542,11 @@
     "xrizer-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-_UiAJhKrMN2gYD3aVeORtI196xzjs61cK_FLyHPizZw=/Cargo.lock",
+                "sha256-Z08LRGOfSXEaKWj2Vc0ZWQ_YGXCqlDhc0sP9dwPEbGg=/Cargo.lock",
                 {}
             ]
         },
-        "date": "2026-10-14",
+        "date": "2026-10-20",
         "extract": null,
         "name": "xrizer-git",
         "passthru": null,
@@ -580,11 +558,11 @@
             "name": null,
             "owner": "Supreeeme",
             "repo": "xrizer",
-            "rev": "63fc7eb3f80bba2277b48c023d2af569cc6e6453",
-            "sha256": "sha256-/UiAJhKrMN2gYD3aVeORtI196xzjs61cK/FLyHPizZw=",
+            "rev": "0519ded7421e608805d710be01fdc51303eda16a",
+            "sha256": "sha256-Z08LRGOfSXEaKWj2Vc0ZWQ/YGXCqlDhc0sP9dwPEbGg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "63fc7eb3f80bba2277b48c023d2af569cc6e6453"
+        "version": "0519ded7421e608805d710be01fdc51303eda16a"
     }
 }
