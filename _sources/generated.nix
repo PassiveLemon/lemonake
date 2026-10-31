@@ -141,15 +141,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "57c4186a6dc01e694a510561f9c6c54a6324e48a";
+    version = "e8ebb5c3649f21d5cb4fac1958443532ef27cd76";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "57c4186a6dc01e694a510561f9c6c54a6324e48a";
+      rev = "e8ebb5c3649f21d5cb4fac1958443532ef27cd76";
       fetchSubmodules = false;
-      sha256 = "sha256-fhxwMavU11qz2tjIQZ2bF7IyBQBoecU0kGTo/rw/tig=";
+      sha256 = "sha256-NiySn2p+CcAlR5SWr2r+Ynrh15oL+vERwuIWYMfzVqE=";
     };
-    date = "2026-10-28";
+    date = "2026-10-30";
   };
   somewm-git-wlroots = {
     pname = "somewm-git-wlroots";
@@ -224,23 +224,24 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "58ac4bcd84a71659244774ffe5a0475fdbab8f51";
+    version = "ef7e5f61ebb962b2385b88a85033c48a167a046e";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "58ac4bcd84a71659244774ffe5a0475fdbab8f51";
+      rev = "ef7e5f61ebb962b2385b88a85033c48a167a046e";
       fetchSubmodules = false;
-      sha256 = "sha256-GcsSMrCU2QUlOzfMj/cGXEfUHngQqUK2Vt/m+HGHCJU=";
+      sha256 = "sha256-q5iseDul/ea/JM9HjUhsbxCWe5Yr/P0/I/HF8gmNS7M=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-GcsSMrCU2QUlOzfMj_cGXEfUHngQqUK2Vt_m+HGHCJU=/Cargo.lock";
+      lockFile = ./. + "/sha256-q5iseDul_ea_JM9HjUhsbxCWe5Yr_P0_I_HF8gmNS7M=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs=";
+        "smithay-0.7.0" = "sha256-cxSemsoLLg5i7ZLELph4pvUckEpO2osaqnzf0oeKCiI=";
         "rxscreen-0.1.7" = "sha256-SgPz+dQCo2Pz5sJ4AtHFdBnBUhx3k8aJADHA2rjkc2k=";
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-10-29";
+    date = "2026-10-31";
   };
   webfisher = {
     pname = "webfisher";
