@@ -37,7 +37,7 @@
     },
     "lite-xl-git": {
         "cargoLock": null,
-        "date": "2026-03-11",
+        "date": "2026-11-02",
         "extract": null,
         "name": "lite-xl-git",
         "passthru": null,
@@ -49,12 +49,12 @@
             "name": null,
             "owner": "lite-xl",
             "repo": "lite-xl",
-            "rev": "234fa0998016f3da9eb9ceaf3c4bc79b93462276",
-            "sha256": "sha256-gpGMl0R7sMBIzR0fYx3SjyN59InWQ7+5uPieQ+4GC1U=",
+            "rev": "95ace879a17a9b88c2003ea49e649e1d54d7426f",
+            "sha256": "sha256-Rb6Hv6WKVH9HzQQlJ9TScU7btttTk1oX6JdWP2yRIL4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "234fa0998016f3da9eb9ceaf3c4bc79b93462276"
+        "version": "95ace879a17a9b88c2003ea49e649e1d54d7426f"
     },
     "lua-pam-git": {
         "cargoLock": null,
@@ -239,7 +239,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-10-31",
+        "date": "2026-11-02",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -251,12 +251,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "57ae72c880a7b395b3cadedfec5ee1fe6b8dc06a",
-            "sha256": "sha256-dPB0jCqsP5vIwytX5kYXH2rvxcmKrzbitHlK7gxJaEs=",
+            "rev": "8edb69dd0fdae0772c91ba4071c4500190cf82c5",
+            "sha256": "sha256-GJEOWCqlqj9Gudc48iW8eN1hLxXPJ+W5HlA8ntIrHdA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "57ae72c880a7b395b3cadedfec5ee1fe6b8dc06a"
+        "version": "8edb69dd0fdae0772c91ba4071c4500190cf82c5"
     },
     "somewm-git-wlroots": {
         "cargoLock": null,
@@ -384,7 +384,7 @@
     "wayvr-git": {
         "cargoLock": {
             "Cargo.lock": [
-                "sha256-q5iseDul_ea_JM9HjUhsbxCWe5Yr_P0_I_HF8gmNS7M=/Cargo.lock",
+                "sha256-R17rhJuTsg2lHIZ5p6qy3EJtU_eltQsejgm4IU+x7Ts=/Cargo.lock",
                 {
                     "libmonado-1.6.0": "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=",
                     "ovr_overlay-0.0.0": "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs=",
@@ -393,7 +393,7 @@
                 }
             ]
         },
-        "date": "2026-10-31",
+        "date": "2026-11-02",
         "extract": null,
         "name": "wayvr-git",
         "passthru": null,
@@ -405,12 +405,12 @@
             "name": null,
             "owner": "wlx-team",
             "repo": "wayvr",
-            "rev": "ef7e5f61ebb962b2385b88a85033c48a167a046e",
-            "sha256": "sha256-q5iseDul/ea/JM9HjUhsbxCWe5Yr/P0/I/HF8gmNS7M=",
+            "rev": "e64d531a9ca22fa129e5668e867eee1df7b70ee2",
+            "sha256": "sha256-R17rhJuTsg2lHIZ5p6qy3EJtU/eltQsejgm4IU+x7Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ef7e5f61ebb962b2385b88a85033c48a167a046e"
+        "version": "e64d531a9ca22fa129e5668e867eee1df7b70ee2"
     },
     "webfisher": {
         "cargoLock": null,

@@ -28,15 +28,15 @@
   };
   lite-xl-git = {
     pname = "lite-xl-git";
-    version = "234fa0998016f3da9eb9ceaf3c4bc79b93462276";
+    version = "95ace879a17a9b88c2003ea49e649e1d54d7426f";
     src = fetchFromGitHub {
       owner = "lite-xl";
       repo = "lite-xl";
-      rev = "234fa0998016f3da9eb9ceaf3c4bc79b93462276";
+      rev = "95ace879a17a9b88c2003ea49e649e1d54d7426f";
       fetchSubmodules = false;
-      sha256 = "sha256-gpGMl0R7sMBIzR0fYx3SjyN59InWQ7+5uPieQ+4GC1U=";
+      sha256 = "sha256-Rb6Hv6WKVH9HzQQlJ9TScU7btttTk1oX6JdWP2yRIL4=";
     };
-    date = "2026-03-11";
+    date = "2026-11-02";
   };
   lua-pam-git = {
     pname = "lua-pam-git";
@@ -141,15 +141,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "57ae72c880a7b395b3cadedfec5ee1fe6b8dc06a";
+    version = "8edb69dd0fdae0772c91ba4071c4500190cf82c5";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "57ae72c880a7b395b3cadedfec5ee1fe6b8dc06a";
+      rev = "8edb69dd0fdae0772c91ba4071c4500190cf82c5";
       fetchSubmodules = false;
-      sha256 = "sha256-dPB0jCqsP5vIwytX5kYXH2rvxcmKrzbitHlK7gxJaEs=";
+      sha256 = "sha256-GJEOWCqlqj9Gudc48iW8eN1hLxXPJ+W5HlA8ntIrHdA=";
     };
-    date = "2026-10-31";
+    date = "2026-11-02";
   };
   somewm-git-wlroots = {
     pname = "somewm-git-wlroots";
@@ -224,16 +224,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "ef7e5f61ebb962b2385b88a85033c48a167a046e";
+    version = "e64d531a9ca22fa129e5668e867eee1df7b70ee2";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "ef7e5f61ebb962b2385b88a85033c48a167a046e";
+      rev = "e64d531a9ca22fa129e5668e867eee1df7b70ee2";
       fetchSubmodules = false;
-      sha256 = "sha256-q5iseDul/ea/JM9HjUhsbxCWe5Yr/P0/I/HF8gmNS7M=";
+      sha256 = "sha256-R17rhJuTsg2lHIZ5p6qy3EJtU/eltQsejgm4IU+x7Ts=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-q5iseDul_ea_JM9HjUhsbxCWe5Yr_P0_I_HF8gmNS7M=/Cargo.lock";
+      lockFile = ./. + "/sha256-R17rhJuTsg2lHIZ5p6qy3EJtU_eltQsejgm4IU+x7Ts=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs=";
         "smithay-0.7.0" = "sha256-cxSemsoLLg5i7ZLELph4pvUckEpO2osaqnzf0oeKCiI=";
@@ -241,7 +241,7 @@
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-10-31";
+    date = "2026-11-02";
   };
   webfisher = {
     pname = "webfisher";
