@@ -37,7 +37,7 @@
     },
     "lite-xl-git": {
         "cargoLock": null,
-        "date": "2026-11-02",
+        "date": "2026-11-03",
         "extract": null,
         "name": "lite-xl-git",
         "passthru": null,
@@ -49,12 +49,12 @@
             "name": null,
             "owner": "lite-xl",
             "repo": "lite-xl",
-            "rev": "95ace879a17a9b88c2003ea49e649e1d54d7426f",
-            "sha256": "sha256-Rb6Hv6WKVH9HzQQlJ9TScU7btttTk1oX6JdWP2yRIL4=",
+            "rev": "b303a0fe831648de38f1402d8a9c515aa65429ff",
+            "sha256": "sha256-URMzJNknWpULr4Jks3BLBBXqUshHoyZfz7lj/ULwxQk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "95ace879a17a9b88c2003ea49e649e1d54d7426f"
+        "version": "b303a0fe831648de38f1402d8a9c515aa65429ff"
     },
     "lua-pam-git": {
         "cargoLock": null,
@@ -239,7 +239,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-11-02",
+        "date": "2026-11-03",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -251,12 +251,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "8edb69dd0fdae0772c91ba4071c4500190cf82c5",
-            "sha256": "sha256-GJEOWCqlqj9Gudc48iW8eN1hLxXPJ+W5HlA8ntIrHdA=",
+            "rev": "f137c1fc5945854c090f6cd29ab4bc7827ac0958",
+            "sha256": "sha256-/Cl0wsmTW+FmkY4iMyn4GRF5ynwjeyT6v2ninkjpLgM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8edb69dd0fdae0772c91ba4071c4500190cf82c5"
+        "version": "f137c1fc5945854c090f6cd29ab4bc7827ac0958"
     },
     "somewm-git-wlroots": {
         "cargoLock": null,
@@ -456,7 +456,7 @@
     },
     "wivrn-git": {
         "cargoLock": null,
-        "date": "2026-10-28",
+        "date": "2026-11-04",
         "extract": null,
         "name": "wivrn-git",
         "passthru": null,
@@ -468,12 +468,12 @@
             "name": null,
             "owner": "WiVRn",
             "repo": "WiVRn",
-            "rev": "49b4ab96c62232e488842830368c29e7a468902c",
-            "sha256": "sha256-Uzj/IGSF5+Q5hY+DbrkRxZdpY75VyyY2TqEX/Y1GaB0=",
+            "rev": "bae0cc33267f559f2a524bbdddb8b7f97ce07cfb",
+            "sha256": "sha256-3OLPcrSYNjd8H7XeL1kcSpxqY+LEtVKT8Y7CnTt4Dcw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "49b4ab96c62232e488842830368c29e7a468902c"
+        "version": "bae0cc33267f559f2a524bbdddb8b7f97ce07cfb"
     },
     "wivrn-git-monado": {
         "cargoLock": null,

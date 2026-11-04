@@ -28,15 +28,15 @@
   };
   lite-xl-git = {
     pname = "lite-xl-git";
-    version = "95ace879a17a9b88c2003ea49e649e1d54d7426f";
+    version = "b303a0fe831648de38f1402d8a9c515aa65429ff";
     src = fetchFromGitHub {
       owner = "lite-xl";
       repo = "lite-xl";
-      rev = "95ace879a17a9b88c2003ea49e649e1d54d7426f";
+      rev = "b303a0fe831648de38f1402d8a9c515aa65429ff";
       fetchSubmodules = false;
-      sha256 = "sha256-Rb6Hv6WKVH9HzQQlJ9TScU7btttTk1oX6JdWP2yRIL4=";
+      sha256 = "sha256-URMzJNknWpULr4Jks3BLBBXqUshHoyZfz7lj/ULwxQk=";
     };
-    date = "2026-11-02";
+    date = "2026-11-03";
   };
   lua-pam-git = {
     pname = "lua-pam-git";
@@ -141,15 +141,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "8edb69dd0fdae0772c91ba4071c4500190cf82c5";
+    version = "f137c1fc5945854c090f6cd29ab4bc7827ac0958";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "8edb69dd0fdae0772c91ba4071c4500190cf82c5";
+      rev = "f137c1fc5945854c090f6cd29ab4bc7827ac0958";
       fetchSubmodules = false;
-      sha256 = "sha256-GJEOWCqlqj9Gudc48iW8eN1hLxXPJ+W5HlA8ntIrHdA=";
+      sha256 = "sha256-/Cl0wsmTW+FmkY4iMyn4GRF5ynwjeyT6v2ninkjpLgM=";
     };
-    date = "2026-11-02";
+    date = "2026-11-03";
   };
   somewm-git-wlroots = {
     pname = "somewm-git-wlroots";
@@ -267,15 +267,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "49b4ab96c62232e488842830368c29e7a468902c";
+    version = "bae0cc33267f559f2a524bbdddb8b7f97ce07cfb";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "49b4ab96c62232e488842830368c29e7a468902c";
+      rev = "bae0cc33267f559f2a524bbdddb8b7f97ce07cfb";
       fetchSubmodules = false;
-      sha256 = "sha256-Uzj/IGSF5+Q5hY+DbrkRxZdpY75VyyY2TqEX/Y1GaB0=";
+      sha256 = "sha256-3OLPcrSYNjd8H7XeL1kcSpxqY+LEtVKT8Y7CnTt4Dcw=";
     };
-    date = "2026-10-28";
+    date = "2026-11-04";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
