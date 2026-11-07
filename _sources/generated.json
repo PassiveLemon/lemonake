@@ -1,7 +1,7 @@
 {
     "awesome-git": {
         "cargoLock": null,
-        "date": "2026-10-30",
+        "date": "2026-11-06",
         "extract": null,
         "name": "awesome-git",
         "passthru": null,
@@ -13,12 +13,12 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "c463e19ef9c2b01a4b49eea59001fe8e423a8296",
-            "sha256": "sha256-IJK7IOrmXtcfuGJXK+xd4bW5xbyB9Ojo9HpffDpDNVU=",
+            "rev": "0fbd646fd625771c96d6ff8fec6cfe3c3b99163f",
+            "sha256": "sha256-EqcScVwDGomR0MhG1K1n2YKFBWGVZLpsAbWFMzL0fns=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c463e19ef9c2b01a4b49eea59001fe8e423a8296"
+        "version": "0fbd646fd625771c96d6ff8fec6cfe3c3b99163f"
     },
     "gdlauncher": {
         "cargoLock": null,
@@ -230,16 +230,16 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "v2.1.1",
-            "sha256": "sha256-fhxwMavU11qz2tjIQZ2bF7IyBQBoecU0kGTo/rw/tig=",
+            "rev": "v2.1.2",
+            "sha256": "sha256-G+8p2Mz1u45b+7qjo+H9sLRy2Yv3FQ8S7rTuwhDey3E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.1"
+        "version": "v2.1.2"
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-11-03",
+        "date": "2026-11-07",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -251,12 +251,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "f137c1fc5945854c090f6cd29ab4bc7827ac0958",
-            "sha256": "sha256-/Cl0wsmTW+FmkY4iMyn4GRF5ynwjeyT6v2ninkjpLgM=",
+            "rev": "87691c4a1139863e399f960328e42afc81f5bd5f",
+            "sha256": "sha256-vgEFRLX5Ty9YslpeCJFbZPgO0fMTRp+subfqbiUDSCM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f137c1fc5945854c090f6cd29ab4bc7827ac0958"
+        "version": "87691c4a1139863e399f960328e42afc81f5bd5f"
     },
     "somewm-git-wlroots": {
         "cargoLock": null,

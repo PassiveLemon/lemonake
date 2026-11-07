@@ -8,15 +8,15 @@
 {
   awesome-git = {
     pname = "awesome-git";
-    version = "c463e19ef9c2b01a4b49eea59001fe8e423a8296";
+    version = "0fbd646fd625771c96d6ff8fec6cfe3c3b99163f";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "c463e19ef9c2b01a4b49eea59001fe8e423a8296";
+      rev = "0fbd646fd625771c96d6ff8fec6cfe3c3b99163f";
       fetchSubmodules = false;
-      sha256 = "sha256-IJK7IOrmXtcfuGJXK+xd4bW5xbyB9Ojo9HpffDpDNVU=";
+      sha256 = "sha256-EqcScVwDGomR0MhG1K1n2YKFBWGVZLpsAbWFMzL0fns=";
     };
-    date = "2026-10-30";
+    date = "2026-11-06";
   };
   gdlauncher = {
     pname = "gdlauncher";
@@ -130,26 +130,26 @@
   };
   somewm = {
     pname = "somewm";
-    version = "v2.1.1";
+    version = "v2.1.2";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "v2.1.1";
+      rev = "v2.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-fhxwMavU11qz2tjIQZ2bF7IyBQBoecU0kGTo/rw/tig=";
+      sha256 = "sha256-G+8p2Mz1u45b+7qjo+H9sLRy2Yv3FQ8S7rTuwhDey3E=";
     };
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "f137c1fc5945854c090f6cd29ab4bc7827ac0958";
+    version = "87691c4a1139863e399f960328e42afc81f5bd5f";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "f137c1fc5945854c090f6cd29ab4bc7827ac0958";
+      rev = "87691c4a1139863e399f960328e42afc81f5bd5f";
       fetchSubmodules = false;
-      sha256 = "sha256-/Cl0wsmTW+FmkY4iMyn4GRF5ynwjeyT6v2ninkjpLgM=";
+      sha256 = "sha256-vgEFRLX5Ty9YslpeCJFbZPgO0fMTRp+subfqbiUDSCM=";
     };
-    date = "2026-11-03";
+    date = "2026-11-07";
   };
   somewm-git-wlroots = {
     pname = "somewm-git-wlroots";
