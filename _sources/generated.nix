@@ -141,31 +141,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "87691c4a1139863e399f960328e42afc81f5bd5f";
+    version = "5b6b77bb7ea2db80f810c30286a4e64a98355764";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "87691c4a1139863e399f960328e42afc81f5bd5f";
+      rev = "5b6b77bb7ea2db80f810c30286a4e64a98355764";
       fetchSubmodules = false;
-      sha256 = "sha256-vgEFRLX5Ty9YslpeCJFbZPgO0fMTRp+subfqbiUDSCM=";
+      sha256 = "sha256-UtjS2blrq5E/RXGBm7EAuWr+Cra/wl/+FDMq+1ylkFg=";
     };
-    date = "2026-11-07";
-  };
-  somewm-git-wlroots = {
-    pname = "somewm-git-wlroots";
-    version = "80c567d2ed4efb2cfa6b077f22c7a710d9c78ba4e185a75e8694001114af0733";
-    src = fetchurl {
-      url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz";
-      sha256 = "sha256-gMVn0u1O+yz6awd/IsenENnHi6ThhadehpQAERSvBzM=";
-    };
-  };
-  somewm-wlroots = {
-    pname = "somewm-wlroots";
-    version = "80c567d2ed4efb2cfa6b077f22c7a710d9c78ba4e185a75e8694001114af0733";
-    src = fetchurl {
-      url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/0.20.2/downloads/wlroots-0.20.2.tar.gz";
-      sha256 = "sha256-gMVn0u1O+yz6awd/IsenENnHi6ThhadehpQAERSvBzM=";
-    };
+    date = "2026-11-08";
   };
   tilibs-git = {
     pname = "tilibs-git";
@@ -339,3 +323,4 @@
     date = "2026-11-05";
   };
 }
+

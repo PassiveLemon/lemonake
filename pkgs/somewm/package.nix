@@ -1,10 +1,7 @@
 { version
 , src
-, wlrHash
-, wlrVer
 , lib
 , stdenv
-, fetchurl
 , cairo
 , dbus
 , gdk-pixbuf
@@ -36,6 +33,7 @@
 , wayland
 , wayland-scanner
 , wayland-protocols
+, wlroots_0_20
 , xwayland
 , extraGITypeLibPaths ? [ ]
 , extraLuaModules ? [ ]
@@ -61,23 +59,12 @@ let
     networkmanager upower playerctl
   ]) getTypeLibPath;
   finalGITypeLibPaths = lib.concatStringsSep ":" makeGITypeLibPaths;
-
-  # Supply the wlroots archive for the wlroots.wrap
-  wlrootsSrc = fetchurl {
-    url = "https://gitlab.freedesktop.org/wlroots/wlroots/-/releases/${wlrVer}/downloads/wlroots-${wlrVer}.tar.gz";
-    sha256 = wlrHash;
-  };
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "somewm";
   inherit version src;
 
   strictDeps = true;
-
-  preConfigure = ''
-    mkdir -p subprojects/packagecache
-    cp ${wlrootsSrc} subprojects/packagecache/wlroots-${wlrVer}.tar.gz
-  '';
 
   nativeBuildInputs = [
     gobject-introspection
@@ -116,6 +103,7 @@ stdenv.mkDerivation (finalAttrs: {
     wayland
     wayland-scanner
     wayland-protocols
+    wlroots_0_20
     xwayland
   ];
 
