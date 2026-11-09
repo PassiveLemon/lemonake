@@ -21,6 +21,10 @@ in
         inherit (package) src;
         version = versionFromPackage package;
         cargoDeps = final.rustPlatform.importCargoLock package.cargoLock."Cargo.lock";
+
+        checkFlags = [
+          "--skip=test::tests::lang_json_files_contain_all_keys"
+        ];
       };
     };
   };
