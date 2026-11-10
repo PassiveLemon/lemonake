@@ -37,7 +37,7 @@
     },
     "lite-xl-git": {
         "cargoLock": null,
-        "date": "2026-11-08",
+        "date": "2026-11-10",
         "extract": null,
         "name": "lite-xl-git",
         "passthru": null,
@@ -49,12 +49,12 @@
             "name": null,
             "owner": "lite-xl",
             "repo": "lite-xl",
-            "rev": "2802ca12282cca83a128598e852b1000845f5a17",
-            "sha256": "sha256-U0nm2Nt24MDoxqSH11JKRyd+pWKiFCBQgeAw32r7pL0=",
+            "rev": "b5411b608ac3328a7203a00463bb11c2727ebe69",
+            "sha256": "sha256-psSd3bgAMk40oM9yBdVkaREdSYUHy9OiNPvlTMBIwzA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2802ca12282cca83a128598e852b1000845f5a17"
+        "version": "b5411b608ac3328a7203a00463bb11c2727ebe69"
     },
     "lua-pam-git": {
         "cargoLock": null,
@@ -239,7 +239,7 @@
     },
     "somewm-git": {
         "cargoLock": null,
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "extract": null,
         "name": "somewm-git",
         "passthru": null,
@@ -251,12 +251,12 @@
             "name": null,
             "owner": "trip-zip",
             "repo": "somewm",
-            "rev": "5b6b77bb7ea2db80f810c30286a4e64a98355764",
-            "sha256": "sha256-UtjS2blrq5E/RXGBm7EAuWr+Cra/wl/+FDMq+1ylkFg=",
+            "rev": "eed90740c09c4e4a88cbeed592b2e089976c5769",
+            "sha256": "sha256-Or2uqSfZhq+7mIDQEfHQwl83VHPNqRGSc+Z3C5pqiBc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5b6b77bb7ea2db80f810c30286a4e64a98355764"
+        "version": "eed90740c09c4e4a88cbeed592b2e089976c5769"
     },
     "tilibs-git": {
         "cargoLock": null,

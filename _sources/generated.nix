@@ -28,15 +28,15 @@
   };
   lite-xl-git = {
     pname = "lite-xl-git";
-    version = "2802ca12282cca83a128598e852b1000845f5a17";
+    version = "b5411b608ac3328a7203a00463bb11c2727ebe69";
     src = fetchFromGitHub {
       owner = "lite-xl";
       repo = "lite-xl";
-      rev = "2802ca12282cca83a128598e852b1000845f5a17";
+      rev = "b5411b608ac3328a7203a00463bb11c2727ebe69";
       fetchSubmodules = false;
-      sha256 = "sha256-U0nm2Nt24MDoxqSH11JKRyd+pWKiFCBQgeAw32r7pL0=";
+      sha256 = "sha256-psSd3bgAMk40oM9yBdVkaREdSYUHy9OiNPvlTMBIwzA=";
     };
-    date = "2026-11-08";
+    date = "2026-11-10";
   };
   lua-pam-git = {
     pname = "lua-pam-git";
@@ -141,15 +141,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "5b6b77bb7ea2db80f810c30286a4e64a98355764";
+    version = "eed90740c09c4e4a88cbeed592b2e089976c5769";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "5b6b77bb7ea2db80f810c30286a4e64a98355764";
+      rev = "eed90740c09c4e4a88cbeed592b2e089976c5769";
       fetchSubmodules = false;
-      sha256 = "sha256-UtjS2blrq5E/RXGBm7EAuWr+Cra/wl/+FDMq+1ylkFg=";
+      sha256 = "sha256-Or2uqSfZhq+7mIDQEfHQwl83VHPNqRGSc+Z3C5pqiBc=";
     };
-    date = "2026-11-08";
+    date = "2026-11-09";
   };
   tilibs-git = {
     pname = "tilibs-git";
