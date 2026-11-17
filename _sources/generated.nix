@@ -141,15 +141,15 @@
   };
   somewm-git = {
     pname = "somewm-git";
-    version = "6f63c6b590c221e709f1173064283cb4c9c56421";
+    version = "62cb792ee404b52214b5e7044d122c5ed51a35fb";
     src = fetchFromGitHub {
       owner = "trip-zip";
       repo = "somewm";
-      rev = "6f63c6b590c221e709f1173064283cb4c9c56421";
+      rev = "62cb792ee404b52214b5e7044d122c5ed51a35fb";
       fetchSubmodules = false;
-      sha256 = "sha256-AIATbkwm0VzodrBqTN3QrgWudGD3ku7vMYqa1deVNjs=";
+      sha256 = "sha256-xiqR4BmdQRNI8HeBv6RQoNx3OyEWKntMpkqqG/c3MX0=";
     };
-    date = "2026-11-15";
+    date = "2026-11-16";
   };
   tilibs-git = {
     pname = "tilibs-git";
@@ -208,16 +208,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "721e5a7790073156c45afb8b5dda4c70bee9368f";
+    version = "489386d067e647c9c3baf3d69fa2e437071b5e43";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "721e5a7790073156c45afb8b5dda4c70bee9368f";
+      rev = "489386d067e647c9c3baf3d69fa2e437071b5e43";
       fetchSubmodules = false;
-      sha256 = "sha256-rY5+xnxkaO3plU2r6WbLyzXpNVcN6EFKz2zB4ArnUfI=";
+      sha256 = "sha256-ApwJTm56SnsFw0+HIxbJi1EclRo9sLNU23evl+A8f/c=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-rY5+xnxkaO3plU2r6WbLyzXpNVcN6EFKz2zB4ArnUfI=/Cargo.lock";
+      lockFile = ./. + "/sha256-ApwJTm56SnsFw0+HIxbJi1EclRo9sLNU23evl+A8f_c=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs=";
         "smithay-0.7.0" = "sha256-cxSemsoLLg5i7ZLELph4pvUckEpO2osaqnzf0oeKCiI=";
@@ -225,7 +225,7 @@
         "libmonado-1.6.0" = "sha256-s0f8CN8eEBOIucbZ8DVY3j9adCC+G6C472JWU7fNor4=";
       };
     };
-    date = "2026-11-15";
+    date = "2026-11-16";
   };
   webfisher = {
     pname = "webfisher";
@@ -251,15 +251,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "63700f05fa14bd27b27c520050178071c3938ce9";
+    version = "04837ba215b90fae63fa49d4166f54cd364e536b";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "63700f05fa14bd27b27c520050178071c3938ce9";
+      rev = "04837ba215b90fae63fa49d4166f54cd364e536b";
       fetchSubmodules = false;
-      sha256 = "sha256-HDUR/rzYbjhz62kB9LkgVIRZ6lXi/b95ooMSp23s/B0=";
+      sha256 = "sha256-NzQIF1m3eDLmTS1A726HKP5s7oxM6dXhh7wNd9fitec=";
     };
-    date = "2026-11-15";
+    date = "2026-11-16";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
