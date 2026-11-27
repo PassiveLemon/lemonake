@@ -28,15 +28,15 @@
   };
   lite-xl-git = {
     pname = "lite-xl-git";
-    version = "b5411b608ac3328a7203a00463bb11c2727ebe69";
+    version = "27093a73dcc9382c866a6b1b1ead77fb20ff980a";
     src = fetchFromGitHub {
       owner = "lite-xl";
       repo = "lite-xl";
-      rev = "b5411b608ac3328a7203a00463bb11c2727ebe69";
+      rev = "27093a73dcc9382c866a6b1b1ead77fb20ff980a";
       fetchSubmodules = false;
-      sha256 = "sha256-psSd3bgAMk40oM9yBdVkaREdSYUHy9OiNPvlTMBIwzA=";
+      sha256 = "sha256-fz5OzYgNXCbOMXVEpG/fKRydp6oNvZQPkIKwfTv7Pus=";
     };
-    date = "2026-11-10";
+    date = "2026-11-27";
   };
   lua-pam-git = {
     pname = "lua-pam-git";
@@ -208,16 +208,16 @@
   };
   wayvr-git = {
     pname = "wayvr-git";
-    version = "cc8843a95a8aaf6adcd9db21b30aaf1438372ef0";
+    version = "b56b4f203f2f8a7a34614ccc09d6b94021ea03fc";
     src = fetchFromGitHub {
       owner = "wlx-team";
       repo = "wayvr";
-      rev = "cc8843a95a8aaf6adcd9db21b30aaf1438372ef0";
+      rev = "b56b4f203f2f8a7a34614ccc09d6b94021ea03fc";
       fetchSubmodules = false;
-      sha256 = "sha256-SVEuVsO+8iLM/lstAFJ4B1kQ23BurOOCuZiI2gV/eDc=";
+      sha256 = "sha256-nWk1glDuqFrT5ZJ7qoz1pjy2WhmzZvJUIKrOP8xxQPs=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-SVEuVsO+8iLM_lstAFJ4B1kQ23BurOOCuZiI2gV_eDc=/Cargo.lock";
+      lockFile = ./. + "/sha256-nWk1glDuqFrT5ZJ7qoz1pjy2WhmzZvJUIKrOP8xxQPs=/Cargo.lock";
       outputHashes = {
         "ovr_overlay-0.0.0" = "sha256-rIAUlsSGHnpuVvGoUwsV+kD63ki3cJinqgntqurgqvs=";
         "smithay-0.7.0" = "sha256-cxSemsoLLg5i7ZLELph4pvUckEpO2osaqnzf0oeKCiI=";
@@ -251,15 +251,15 @@
   };
   wivrn-git = {
     pname = "wivrn-git";
-    version = "2529e0bfa0c71648e3d57b0fd3ac14652bade0d2";
+    version = "15b5ed07e1970fdaaf8b1c573921e4240ff624cf";
     src = fetchFromGitHub {
       owner = "WiVRn";
       repo = "WiVRn";
-      rev = "2529e0bfa0c71648e3d57b0fd3ac14652bade0d2";
+      rev = "15b5ed07e1970fdaaf8b1c573921e4240ff624cf";
       fetchSubmodules = false;
-      sha256 = "sha256-lsoPFWF/2g3G6R8AAQwZ9BgF6aKyfLTumeiQSOapH7g=";
+      sha256 = "sha256-f3tB2tNKQLPbwX+FXediAf5+sshZ0hbcPVxg/Yd/Sjw=";
     };
-    date = "2026-11-24";
+    date = "2026-11-27";
   };
   wivrn-git-monado = {
     pname = "wivrn-git-monado";
