@@ -2,10 +2,6 @@
 src.git = "https://github.com/awesomeWM/awesome"
 fetch.github = "awesomeWM/awesome"
 
-[gdlauncher]
-src.cmd = "curl -s https://gdlauncher.com/ | awk 'match($0,/([0-9]+\\.[0-9]+\\.[0-9]+)/,a){print a[1]; exit}'"
-fetch.url = "https://cdn-raw.gdl.gg/launcher/GDLauncher__$ver__linux__x64.AppImage"
-
 [lite-xl-git]
 src.git = "https://github.com/lite-xl/lite-xl"
 fetch.github = "lite-xl/lite-xl"
@@ -18,30 +14,9 @@ fetch.github = "RMTT/lua-pam"
 src.github = "PassiveLemon/nimpad"
 fetch.github = "PassiveLemon/nimpad"
 
-[opencomposite-git]
-src.git = "https://gitlab.com/znixian/OpenOVR"
-fetch.git = "https://gitlab.com/znixian/OpenOVR.git"
-git.fetchSubmodules = true
-
 [outsource]
 src.github = "PassiveLemon/outsource"
 fetch.github = "PassiveLemon/outsource"
-
-[picom]
-src.github = "yshui/picom"
-fetch.github = "yshui/picom"
-
-[picom-tag]
-src.github_tag = "yshui/picom"
-fetch.github = "yshui/picom"
-
-[picom-git]
-src.git = "https://github.com/yshui/picom"
-fetch.github = "yshui/picom"
-
-[proton-ge-rtsp]
-src.github = "SpookySkeletons/proton-ge-rtsp"
-fetch.tarball = "https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/$ver/$ver.tar.gz"
 
 [somewm]
 src.github = "trip-zip/somewm"
@@ -60,47 +35,7 @@ src.git = "https://github.com/debrouxl/tilp_and_gfm"
 src.branch = "gtk3"
 fetch.github = "debrouxl/tilp_and_gfm"
 
-[vapor-git]
-src.git = "https://github.com/micheal65536/VapoR"
-fetch.github = "micheal65536/VapoR"
-
 [webfisher]
 src.github = "PassiveLemon/webfisher"
 fetch.github = "PassiveLemon/webfisher"
-
-[wivrn]
-src.github = "WiVRn/WiVRn"
-fetch.github = "WiVRn/WiVRn"
-
-[wivrn-monado]
-src.cmd = "curl -s https://api.github.com/repos/WiVRn/WiVRn/releases/latest | jq -r '.tag_name' | xargs -I {} curl -s https://raw.githubusercontent.com/WiVRn/WiVRn/{}/monado-rev"
-fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
-
-[wivrn-git]
-src.git = "https://github.com/WiVRn/WiVRn"
-fetch.github = "WiVRn/WiVRn"
-
-[wivrn-git-monado]
-src.cmd = "curl -s https://raw.githubusercontent.com/WiVRn/WiVRn/refs/heads/master/monado-rev"
-fetch.git = "https://gitlab.freedesktop.org/monado/monado.git"
-
-[wayvr]
-src.github = "wlx-team/wayvr"
-fetch.github = "wlx-team/wayvr"
-cargo_lock = [ "Cargo.lock" ]
-
-[wayvr-git]
-src.git = "https://github.com/wlx-team/wayvr"
-fetch.github = "wlx-team/wayvr"
-cargo_lock = [ "Cargo.lock" ]
-
-[xrizer]
-src.github = "Supreeeme/xrizer"
-fetch.github = "Supreeeme/xrizer"
-cargo_lock = [ "Cargo.lock" ]
-
-[xrizer-git]
-src.git = "https://github.com/Supreeeme/xrizer"
-fetch.github = "Supreeeme/xrizer"
-cargo_lock = [ "Cargo.lock" ]
 

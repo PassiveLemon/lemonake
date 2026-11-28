@@ -28,33 +28,21 @@ The only architecture currently supported is `x86_64-linux`. Others may be suppo
 Documentation for certain modules and packages can be found in the docs subdirectory.
 
 Modules:
-- Home Manager (`inputs.lemonake.homeModules.<module>`)
-  - SteamVR (`programs.steamvr`)
-  - SomeWM (`wayland.windowManager.somewm`)
 - NixOS (`inputs.lemonake.nixosModules.<module>`)
   - AutoADB (`services.autoadb`)
-  - SomeWM (`programs.somewm`)
 
 Packages (`inputs.lemonake.packages.<system>.<package>`):
 - `autoadb`
 - `awesome-git`
 - `awesome-luajit-git`
-- `gdlauncher`
 - `lite-xl-git`
 - `lua-pam-git`
 - `lua-pam-luajit-git`
 - `nimpad`
-- `opencomposite-git`
 - `outsource`
-- `picom` (`-tag` `-git`)
-- `proton-ge-rtsp` (Only use in `programs.steam.extraCompatPackages`)
 - `somewm` (`-git`)
 - `tilp2-git`
-- `vapor-git`
-- `wayvr` (`-git`)
 - `webfisher`
-- `wivrn` (`-git`)
-- `xrizer` (`-git`)
 
 Source types:
   - Release: No suffix, only the latest stable release

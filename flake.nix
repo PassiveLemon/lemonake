@@ -2,9 +2,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
-    # https://github.com/berberman/nvfetcher/pull/143
-    nvfetcher.url = "github:Red-M/nvfetcher/a84b3ce67f1d7acd85b3aa2b9967ab91ed6e7a71";
-
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
@@ -34,9 +31,6 @@
             inputs'.nvfetcher.packages.default
           ];
         };
-      };
-      packages = {
-        default = inputs'.nvfetcher.packages.default;
       };
     };
   };
